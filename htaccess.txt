@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^streams/([^/]+)/([^/]+)/([^/]+) /streams/index.php?server_id=$1&stream_id=$2&stream_format=$3 [NC]

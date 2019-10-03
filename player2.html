@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Flowplayer HLS Demo</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://releases.flowplayer.org/7.0.4/flowplayer.min.js"></script>
+      <script type="text/javascript" src="https://releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://releases.flowplayer.org/7.0.4/skin/skin.css">
+
+  <style id="compiled-css" type="text/css">
+      
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">
+
+
+    window.onload=function(){
+        var player = flowplayer("#player", {
+            clip: {
+                sources: [{
+                    type: "application/x-mpegurl",
+                    src: "http://hub.slipstreamiptv.com/streams/18/33/hd"
+                }]
+            }
+        });
+    }
+
+</script>
+
+</head>
+<body>
+    <div id="player"></div>
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "p71x0yt2"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+</body>
+</html>
