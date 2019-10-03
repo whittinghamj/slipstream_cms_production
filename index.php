@@ -67,7 +67,7 @@ include('inc/global_vars.php');
                 
                 <form action="login.php" method="post">
                     <div class="form-group has-feedback">
-                        <input type="text" class="form-control" placeholder="john.smith@gmail.com" name="email" id="email">
+                        <input type="text" class="form-control" placeholder="username" name="username" id="username">
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">

@@ -893,45 +893,6 @@ function account_details($id)
 
 	$user['avatar'] = get_gravatar($user['email']);
 
-    // get products for this user from whmcs
-    $postfields["username"]             = $whmcs['username'];
-    $postfields["password"]             = $whmcs['password'];
-    $postfields["responsetype"]         = "json";
-    $postfields["action"]               = "getclientsproducts";
-    $postfields["clientid"]             = $id;
-    
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $whmcs['url']);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 100);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_SSLVERSION,3);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
-    $data = curl_exec($ch);
-    curl_close($ch);
-
-    $data = json_decode($data, true);
-
-    // debug($data);
-
-    $user['max_servers'] = 0;
-
-    foreach($data['products']['product'] as $product) {   
-        if (in_array($product['pid'], $product_ids)) {
-            // product match for this platform
-
-            // debug($product);
-
-            $user['max_servers']++;
-
-            if($product['status'] == 'Active'){
-                // $user['max_servers']++;
-            }
-        }
-    }
-
 	return $user;
 }
 
