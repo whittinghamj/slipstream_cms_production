@@ -3,12 +3,12 @@
 $config['version']				= '1.0.0';
 
 // site vars
-$site['url']					= 'https://slipstreamiptv.com/';
-$site['title']					= 'SlipStreamIPTV';
-$site['copyright']				= 'Written by GENEX NETWORKS LLC T/A '.$site['title'].'. <br>Registered in Colorado, USA: 20151830790.';
+$site['url']					= 'http://178.128.40.133:10810/portal/';
+$site['title']					= 'SlipStream CMS';
+$site['copyright']				= 'Written by DeltaColo.';
 
 // logo name vars
-$site['name_long']				= 'SlipStream<b>IPTV</b>';
+$site['name_long']				= 'SlipStream<b>CMS</b>';
 $site['name_short']				= '<b>SS</b>';
 
 
@@ -18,7 +18,7 @@ $whmcs["password"] 				= md5("dje773jeidkdje773jeidk"); # Admin password goes he
 $whmcs['accesskey']				= 'admin1372';
 // product details
 $product_ids = array(
-					62, // 1st server
+					62, // single server license
 					
 					);
 
