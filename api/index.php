@@ -13,7 +13,7 @@ include('/var/www/html/portal/inc/functions.php');
 
 header("Content-Type:application/json; charset=utf-8");
 
-$c = addslashes($_GET['c']);
+$c = get('c');
 switch ($c){
 
 	// stream connection log
