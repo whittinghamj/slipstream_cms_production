@@ -24,15 +24,11 @@ $now 							= time();
 $username 						= post('username');
 $password 						= post('password');
 
-debug($_POST);
-
 $username 						= addslashes($username);
 $password 						= addslashes($password);
 
 $query = $conn->query("SELECT * FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
 $user = $query->fetch(PDO::FETCH_ASSOC);
-
-debug($user);
 
 if(isset($user)) {
 	if($user['status'] == 'enabled'){
@@ -43,7 +39,7 @@ if(isset($user)) {
 		go("dashboard.php?c=home");
 	}else{
 		status_message('danger',"Account Status: ".$user['status']);
-		// go("index.php");
+		go("index.php");
 	}
 }else{
 	status_message('danger',"User and / or password incorrect.");

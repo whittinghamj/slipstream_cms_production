@@ -802,7 +802,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `type`, `status`, `username`, `password`, `first_name`, `last_name`, `avatar`, `email`, `max_servers`, `premium_streams`, `addon_dns`, `addon_playlist_manager`, `addon_roku_manager`)
 VALUES
-  (1,'admin','admin','enabled','admin','Admin','User','img/avatar.png','you@example.com',20,'yes','yes','yes','yes');
+  (1,'admin','enabled','admin','admin','Admin','User','img/avatar.png','you@example.com',20,'yes','yes','yes','yes');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
