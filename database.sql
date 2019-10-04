@@ -782,6 +782,7 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `type` varchar(20) NOT NULL DEFAULT 'customer',
+  `status` varchar(20) NOT NULL DEFAULT 'enabled',
   `username` varchar(50) NOT NULL DEFAULT '',
   `password` varchar(50) NOT NULL DEFAULT '',
   `first_name` varchar(50) NOT NULL DEFAULT '',
@@ -799,9 +800,9 @@ CREATE TABLE `users` (
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `users` (`id`, `type`, `username`, `password`, `first_name`, `last_name`, `avatar`, `email`, `max_servers`, `premium_streams`, `addon_dns`, `addon_playlist_manager`, `addon_roku_manager`)
+INSERT INTO `users` (`id`, `type`, `status`, `username`, `password`, `first_name`, `last_name`, `avatar`, `email`, `max_servers`, `premium_streams`, `addon_dns`, `addon_playlist_manager`, `addon_roku_manager`)
 VALUES
-  (1,'admin','admin','admin','Admin','User','img/avatar.png','you@example.com',20,'yes','yes','yes','yes');
+  (1,'admin','admin','enabled','admin','Admin','User','img/avatar.png','you@example.com',20,'yes','yes','yes','yes');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
