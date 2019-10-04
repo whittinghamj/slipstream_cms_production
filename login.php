@@ -33,7 +33,7 @@ $query = $conn->query("SELECT * FROM `users` WHERE `username` = '".$username."' 
 if($query !== FALSE) {
 	$user = $query->fetch(PDO::FETCH_ASSOC);
 	debug($user);
-	die()
+	die();
 	if(isset($user)) {
 		if($user['status'] == 'enabled'){
 			$_SESSION['logged_in']					= true;
