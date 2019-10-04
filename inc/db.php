@@ -1,8 +1,8 @@
 <?php
 
-$host			= 'localhost';
+$host			= '127.0.0.1';
 $db 			= 'slipstream_hub';
-$username 		= 'root';
+$username 		= 'slipstream';
 $password 		= 'admin1372';
 
 $dsn			= "mysql:host=$host;dbname=$db";
