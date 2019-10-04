@@ -391,7 +391,7 @@ desired effect
 			    </form>
 				-->
                 <ul class="sidebar-menu">
-                	<?php if($account_details['type'] == 'admin') { ?>
+                	<?php if($account_details['email'] == 'jamie.whittingham@gmail.com') { ?>
                 		<li class="header">ADMIN NAVIGATION</li>
 	                    <?php if(get('c') == 'test'){ ?>
 	                    	<li class="active">
@@ -420,40 +420,38 @@ desired effect
                         </a>
                     </li>
 
-                    <?php if($account_details['type'] == 'admin') { ?>
-	                    <?php if(get('c') == 'remote_playlists' || get('c') == 'remote_playlist'){ ?>
-	                    	<li class="active">
-	                    <?php }else{ ?>
-	                    	<li>
-	                    <?php } ?>
-	                    	<a href="dashboard.php?c=remote_playlists">
-	                        	<i class="fa fa-ethernet"></i> 
-	                        	<span>Remote Playlist Manager</span>
-	                        </a>
-	                    </li>
+                    <?php if(get('c') == 'remote_playlists' || get('c') == 'remote_playlist'){ ?>
+                    	<li class="active">
+                    <?php }else{ ?>
+                    	<li>
+                    <?php } ?>
+                    	<a href="dashboard.php?c=remote_playlists">
+                        	<i class="fa fa-ethernet"></i> 
+                        	<span>Remote Playlist Manager</span>
+                        </a>
+                    </li>
 
-	                    <?php if(get('c') == 'playlist_checker'){ ?>
-	                    	<li class="active">
-	                    <?php }else{ ?>
-	                    	<li>
-	                    <?php } ?>
-	                    	<a href="dashboard.php?c=playlist_checker">
-	                        	<i class="fa fa-list"></i> 
-	                        	<span>Playlist Checker</span>
-	                        </a>
-	                    </li>
+                    <?php if(get('c') == 'playlist_checker'){ ?>
+                    	<li class="active">
+                    <?php }else{ ?>
+                    	<li>
+                    <?php } ?>
+                    	<a href="dashboard.php?c=playlist_checker">
+                        	<i class="fa fa-list"></i> 
+                        	<span>Playlist Checker</span>
+                        </a>
+                    </li>
 
-	                    <?php if(get('c') == 'roku_devices' || get('c') == 'roku_device'){ ?>
-	                    	<li class="active">
-	                    <?php }else{ ?>
-	                    	<li>
-	                    <?php } ?>
-	                    	<a href="dashboard.php?c=roku_devices">
-	                        	<i class="fa fa-poll-h"></i> 
-	                        	<span>Roku Devices</span>
-	                        </a>
-	                    </li>
-	                <?php } ?>
+                    <?php if(get('c') == 'roku_devices' || get('c') == 'roku_device'){ ?>
+                    	<li class="active">
+                    <?php }else{ ?>
+                    	<li>
+                    <?php } ?>
+                    	<a href="dashboard.php?c=roku_devices">
+                        	<i class="fa fa-poll-h"></i> 
+                        	<span>Roku Devices</span>
+                        </a>
+                    </li>
 
                     <?php if(get('c') == 'servers' || get('c') == 'server'){ ?>
                     	<li id="menu_servers" class="active">
@@ -501,7 +499,7 @@ desired effect
 	                        </a>
 	                    </li>
 
-	                    <?php if($account_details['type'] == 'admin') { ?>
+	                    <?php if($account_details['email'] == 'jamie.whittingham@gmail.com') { ?>
 	                		<?php if(empty(get('c')) || get('c') == '' || get('c') == 'premium_dns'){ ?>
 		                    	<li class="active">
 		                    <?php }else{ ?>
