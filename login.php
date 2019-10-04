@@ -29,7 +29,7 @@ $password 						= post('password');
 // $email 							= addslashes($email);
 // $password 						= addslashes($password);
 
-$query = $conn->query("SELECT `id`,`type` FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
+$query = $conn->query("SELECT `id`,`type`,`status` FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
 if($query !== FALSE) {
 	$user = $query->fetch(PDO::FETCH_ASSOC);
 	if(isset($user)) {
