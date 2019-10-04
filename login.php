@@ -30,7 +30,7 @@ $password 						= addslashes($password);
 $query = $conn->query("SELECT * FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
 $user = $query->fetch(PDO::FETCH_ASSOC);
 
-if(isset($user)) {
+if(isset($user['id'])) {
 	if($user['status'] == 'enabled'){
 		$_SESSION['logged_in']					= true;
 		$_SESSION['account']['id']				= $user['id'];
