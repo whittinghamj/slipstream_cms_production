@@ -327,7 +327,7 @@ CREATE TABLE `headend_servers` (
 LOCK TABLES `headend_servers` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `users` (`user_id`, `uuid`, `name`)
+INSERT INTO `headend_servers` (`user_id`, `uuid`, `name`)
 VALUES
   (1,'e762b280f732f173efb1c0db32a7c756','Main Server');
 
@@ -805,11 +805,15 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
 INSERT INTO `users` (`id`, `type`, `status`, `username`, `password`, `first_name`, `last_name`, `avatar`, `email`, `max_servers`, `premium_streams`, `addon_dns`, `addon_playlist_manager`, `addon_roku_manager`)
 VALUES
   (1,'admin','enabled','admin','admin','Admin','User','img/avatar.png','you@example.com',20,'yes','yes','yes','yes');
+
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
 
 # Dump of table vod
 # ------------------------------------------------------------
