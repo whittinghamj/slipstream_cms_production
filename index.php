@@ -66,10 +66,11 @@ include('inc/global_vars.php');
         <div class="col-lg-6">
             <div class="login-box">
                 <div id="login_form">
-                    <center>
-                        <h3>Admin Login</h3>
-                    </center>
                     <div class="login-box-body">
+                        <center>
+                            <h3>Admin Login</h3>
+                        </center>
+
                         <p class="login-box-msg">Sign in</p>
                         
                         <div id="status_message"></div>
@@ -103,6 +104,7 @@ include('inc/global_vars.php');
                         <center>
                             <h3>Reseller Login</h3>
                         </center>
+                        
                         <p class="login-box-msg">Sign in</p>
                         
                         <div id="status_message"></div>
