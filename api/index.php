@@ -7,9 +7,9 @@ ini_set('error_reporting', E_ALL);
 
 // $data['version']			= '1.0.0';
 
-include('/data/wwwroot/default/inc/db.php');
-include('/data/wwwroot/default/inc/global_vars.php');
-include('/data/wwwroot/default/inc/functions.php');
+include('/var/www/html/portal/inc/db.php');
+include('/var/www/html/portal/inc/global_vars.php');
+include('/var/www/html/portal/inc/functions.php');
 
 header("Content-Type:application/json; charset=utf-8");
 
@@ -271,16 +271,16 @@ function checkin()
 		// store json array for quicker acessing for clients later
 		file_put_contents('/data/wwwroot/defaul//config/'.$headend['id'].'_mumudvb.conf', $data['post']['mumudvb_config_file']);
 
-		$update = $conn->exec("UPDATE `headend_servers` SET `mumudvb_config_file` = '/data/wwwroot/default/config/".$headend['id']."_mumudvb.conf' WHERE `uuid` = '".$data['post']['uuid']."' ");
+		$update = $conn->exec("UPDATE `headend_servers` SET `mumudvb_config_file` = '/var/www/html/portal/config/".$headend['id']."_mumudvb.conf' WHERE `uuid` = '".$data['post']['uuid']."' ");
 	}else{
 		$update = $conn->exec("UPDATE `headend_servers` SET `mumudvb_config_file` = 'no_data' WHERE `uuid` = '".$data['post']['uuid']."' ");
 	}
 
 	if(isset($data['post']['tvheadend_config_file']) && !empty($data['post']['tvheadend_config_file'])) {
 		// store json array for quicker acessing for clients later
-		file_put_contents('/data/wwwroot/default/config/'.$headend['id'].'_tvheadend.conf', $data['post']['tvheadend_config_file']);
+		file_put_contents('/var/www/html/portal/config/'.$headend['id'].'_tvheadend.conf', $data['post']['tvheadend_config_file']);
 
-		$update = $conn->exec("UPDATE `headend_servers` SET `tvheadend_config_file` = '/data/wwwroot/default/config/".$headend['id']."_tvheadend.conf' WHERE `uuid` = '".$data['post']['uuid']."' ");
+		$update = $conn->exec("UPDATE `headend_servers` SET `tvheadend_config_file` = '/var/www/html/portal/config/".$headend['id']."_tvheadend.conf' WHERE `uuid` = '".$data['post']['uuid']."' ");
 	}else{
 		$update = $conn->exec("UPDATE `headend_servers` SET `tvheadend_config_file` = 'no_data' WHERE `uuid` = '".$data['post']['uuid']."' ");
 	}
@@ -777,7 +777,7 @@ function stream_progress()
 		$req .= $key.$value;
 	}
 
-	file_put_contents('/data/wwwroot/default/logs'.$_GET['stream_id'].'_progress.log', $req);
+	file_put_contents('/var/www/html/portal/logs'.$_GET['stream_id'].'_progress.log', $req);
 	*/
 }
 
