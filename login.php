@@ -26,7 +26,7 @@ $password 						= post('password');
 
 debug($_POST);
 
-$email 							= addslashes($email);
+$username 						= addslashes($username);
 $password 						= addslashes($password);
 
 $query = $conn->query("SELECT * FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
