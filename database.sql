@@ -325,13 +325,13 @@ CREATE TABLE `headend_servers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 LOCK TABLES `headend_servers` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `headend_servers` DISABLE KEYS */;
 
 INSERT INTO `headend_servers` (`user_id`, `uuid`, `name`)
 VALUES
   (1,'e762b280f732f173efb1c0db32a7c756','Main Server');
 
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+/*!40000 ALTER TABLE `headend_servers` ENABLE KEYS */;
 UNLOCK TABLES;
 
 # Dump of table headend_stats_history
