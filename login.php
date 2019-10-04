@@ -26,31 +26,27 @@ $password 						= post('password');
 
 debug($_POST);
 
-// $email 							= addslashes($email);
-// $password 						= addslashes($password);
+$email 							= addslashes($email);
+$password 						= addslashes($password);
 
 $query = $conn->query("SELECT * FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
-if($query !== FALSE) {
-	$user = $query->fetch(PDO::FETCH_ASSOC);
-	debug($user);
-	die();
-	if(isset($user)) {
-		if($user['status'] == 'enabled'){
-			$_SESSION['logged_in']					= true;
-			$_SESSION['account']['id']				= $user['id'];
-			$_SESSION['account']['type']			= $user['type'];		
+$user = $query->fetch(PDO::FETCH_ASSOC);
 
-			go("dashboard.php?c=home");
-		}else{
-			status_message('danger',"Account Status: ".$user['status']);
-			go("index.php");
-		}
+error_log(print_r($user));
+
+if(isset($user)) {
+	if($user['status'] == 'enabled'){
+		$_SESSION['logged_in']					= true;
+		$_SESSION['account']['id']				= $user['id'];
+		$_SESSION['account']['type']			= $user['type'];		
+
+		go("dashboard.php?c=home");
 	}else{
-		status_message('danger',"User and / or password incorrect.");
+		status_message('danger',"Account Status: ".$user['status']);
 		go("index.php");
 	}
 }else{
-	status_message('danger',"Error, contact support.");
+	status_message('danger',"User and / or password incorrect.");
 	go("index.php");
 }
 
