@@ -29,9 +29,11 @@ $password 						= post('password');
 // $email 							= addslashes($email);
 // $password 						= addslashes($password);
 
-$query = $conn->query("SELECT `id`,`type`,`status` FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
+$query = $conn->query("SELECT * FROM `users` WHERE `username` = '".$username."' AND `password` = '".$password."' ");
 if($query !== FALSE) {
 	$user = $query->fetch(PDO::FETCH_ASSOC);
+	debug($user);
+	die()
 	if(isset($user)) {
 		if($user['status'] == 'enabled'){
 			$_SESSION['logged_in']					= true;
