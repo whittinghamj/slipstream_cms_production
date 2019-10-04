@@ -24,7 +24,7 @@ $now 							= time();
 $username 						= post('username');
 $password 						= post('password');
 
-// debug($_POST);
+debug($_POST);
 
 // $email 							= addslashes($email);
 // $password 						= addslashes($password);
