@@ -1942,7 +1942,7 @@ desired effect
         <?php } ?>
 
         <?php function servers(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $server_modals = ''; ?>
         	<?php $reinstall_modals = ''; ?>
 
@@ -2209,15 +2209,15 @@ desired effect
 																                <div class="row">
 																			    	<div class="col-lg-12">
 																					 	Server: CPU Transcoding: <br>
-																					 	<code>wget -N --no-check-certificate http://hub.slipstreamiptv.com/downloads/install_cpu.sh && bash install_cpu.sh '.$headend['uuid'].'</code> 
+																					 	<code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install_cpu.sh && bash install_cpu.sh '.$headend['uuid'].'</code> 
 																					 	<br>
 																					 	<br>
 																					 	Server: CPU / GPU Transcoding: <br>
-																					 	<code>wget -N --no-check-certificate http://hub.slipstreamiptv.com/downloads/install_gpu.sh && bash install_gpu.sh '.$headend['uuid'].' gpu</code> 
+																					 	<code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install_gpu.sh && bash install_gpu.sh '.$headend['uuid'].' gpu</code> 
 																					 	<!--
 																					 	<br>
 																					 	<br>
-																					 	Server: Raspberry Pi 3/4: CPU / GPU Transcoding: <br><code>wget -N --no-check-certificate http://hub.slipstreamiptv.com/downloads/install.sh && bash install.sh '.$headend['uuid'].' cpu</code>
+																					 	Server: Raspberry Pi 3/4: CPU / GPU Transcoding: <br><code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install.sh && bash install.sh '.$headend['uuid'].' cpu</code>
 																					 	-->
 																					</div>
 																				</div>
@@ -3337,836 +3337,6 @@ desired effect
             </div>
         <?php } ?>
 
-        <?php function streams_old(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
-        	<?php $modal_streams = ''; ?>
-        	<?php $reinstall_modals = ''; ?>
-        	<?php $web_player_links = ''; ?>
-        	<?php $server_id = get('server_id'); ?>
-        	<?php $source_domain = get('source_domain'); ?>
-
-        	<?php
-	        	$query = $conn->query("SELECT `id`,`name`,`gpu_stats` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
-				if($query !== FALSE) {
-					$headends = $query->fetchAll(PDO::FETCH_ASSOC);
-				}
-
-				$query = $conn->query("SELECT * FROM `stream_categories` WHERE `user_id` = '".$_SESSION['account']['id']."' ");
-				if($query !== FALSE) {
-					$categories = $query->fetchAll(PDO::FETCH_ASSOC);
-				}
-			?>
-            <div class="content-wrapper">
-				
-                <div id="status_message"></div>
-                            	
-                <section class="content-header">
-                    <h1>Streams <!-- <small>Optional description</small> --></h1>
-                    <ol class="breadcrumb">
-                        <li class="active"><a href="dashboard.php">Dashboard</a></li>
-                        <li class="active">Streams</li>
-                    </ol>
-                </section>
-
-                <!-- Main content -->
-				<section class="content">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="box box-primary">
-								<div class="box-body">
-									<div class="form-inline pull-right">
-										<!-- 
-										<a href="actions.php?a=export_m3u" class="btn btn-primary btn-flat">
-											<i class="fas fa-download"></i> Download Playlist
-										</a>
-										-->
-										<a href="actions.php?a=streams_restart_all" class="btn btn-warning btn-flat" onclick="return confirm('Are you sure? \nPlease allow up to 5 minutes for all streams to restart.')">
-											<i class="fas fa-sync"></i> Restart All Streams
-										</a>
-										<a href="actions.php?a=streams_stop_all" class="btn btn-danger btn-flat" onclick="return confirm('Are you sure? \nPlease allow up to 2 minutes for all streams to stop.')">
-											<i class="fas fa-pause"></i> Stop All Streams
-										</a>
-										<a href="actions.php?a=streams_start_all" class="btn btn-success btn-flat" onclick="return confirm('Are you sure? \nPlease allow up to 5 minutes for all streams to start.')">
-											<i class="fas fa-play"></i> Start All Streams
-										</a>
-										<button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#analyse_stream_modal">Analyse Stream</button>
-										<select id="server" name="server" class="form-control" onchange="streams_set_server(this);">
-											<option value="0">Filter by Server / Reset</option>
-											<?php
-												foreach($headends as $headend) {
-													echo '<option value="'.$headend['id'].'" '.($server_id==$headend['id'] ? 'selected' : '').'>'.$headend['name'].'</option>';
-												}
-											?>
-										</select>
-										<select id="source_domain" name="source_domain" class="form-control" onchange="streams_set_domain(this);">
-											<option value="0">Filter by Source Domain / Reset</option>
-											<?php
-												$source_urls = array();
-												foreach($streams as $stream) {
-													$source_url = parse_url($stream['source'], PHP_URL_HOST);
-													$source_urls[] = $source_url;
-												}
-
-												if(isset($source_urls[0])) {
-													$source_urls_count = array_count_values($source_urls);
-
-													foreach($source_urls_count as $key => $value) {
-														echo '<option value="'.$key.'" '.($source_domain==$key ? 'selected' : '').'>'.$key.'</option>';
-											        }
-											    }
-											?>
-										</select>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="box box-primary">
-		            			<div class="box-header">
-		              				<h3 class="box-title">
-		              					Streams
-		              				</h3>
-		              				<div class="pull-right">
-										<button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_stream_modal">New Input Stream</button>
-										<button type="button" class="btn btn-default btn-xs btn-flat" data-toggle="modal" data-target="#import_streams_modal">Import Input Streams</button>
-									</div>
-		            			</div>
-								<div class="box-body">
-									<div class="modal fade" id="web_player" role="dialog">
-									    <div class="modal-dialog modal-lg">
-									        <div class="modal-content">
-									            <div class="modal-header">
-									                <button type="button" class="close" data-dismiss="modal">&times;</button>
-									                <h4 class="modal-title">Web Player</h4>
-									            </div>
-									            <div class="modal-body">
-									            	<div class="row">
-									            		<div class="col-lg-12">
-									            			<div class="form-group">
-																<label>Select a Stream</label>
-																<select id="web_player_stream_select" class="form-control" onchange="web_player_start(this)">
-																	<option value="nothing">Choose One</option>
-																</select>
-															</div>
-									            		</div>
-									            	</div>
-
-									            	<div class="row">
-									            		<div class="col-lg-12">
-									            			<script type="text/javascript" src="https://releases.flowplayer.org/7.0.4/flowplayer.min.js"></script>
-    														<script type="text/javascript" src="https://releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
-    														<link rel="stylesheet" type="text/css" href="https://releases.flowplayer.org/7.0.4/skin/skin.css">
-
-    														<script type="text/javascript">
-														      	flowplayer(function (api) {
-																   	api.on("load ready", function (e, api, video) {
-																    	var log = $("<p/>").text(e.type + ": " + video.src + ", duration: " + (video.duration || "not available"));
-																    	$("#log").append(log);
-																   });
-																});
-														    </script>
-														    <div id="player" class="flowplayer fp-slim hidden">
-	   															<video>
-																	<source type="mpegurl" src="http://hub.slipstreamiptv.com/streams/18/73/sd">
-	   															</video>
-															</div>
- 
- 															<div id="web_player_warning" class="callout callout-warning">
-																This is an experimental feature. Not all streams will play even if they are online and working normally. H.265 encoded streams are not supported in the web player.
-															</div>
-
-															<div id="log" class="hidden"></div>
-									            		</div>
-									            	</div>
-
-									            </div>
-									            <div class="modal-footer">
-									                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									            </div>
-									        </div>
-									    </div>
-									</div>
-
-									<div class="modal fade" id="analyse_stream_modal" role="dialog">
-									    <div class="modal-dialog modal-lg">
-									        <div class="modal-content">
-									            <div class="modal-header">
-									                <button type="button" class="close" data-dismiss="modal">&times;</button>
-									                <h4 class="modal-title">Analyse Stream</h4>
-									            </div>
-									            <div class="modal-body">
-									            	<span id="analyse_stream_working" class="hidden">
-									            		<center>
-									            			<img src="assets/images/ajax-loader.gif" alt="" height="25px">
-									            		</center>
-									            	</span>
-
-									            	<span id="analyse_stream_form" class="">
-										                <center>
-										                	<p>Enter your full source URL below and we will analyse it for you.</p>
-										                </center>
-										                <div class="row">
-													    	<div class="col-lg-12">
-															    <div class="form-group">
-																	<!-- <label class="col-md-2 control-label" for="analyse_stream_url">URL</label> -->
-																	<div class="col-md-12">
-																		<input type="text" class="form-control" id="analyse_stream_url" name="analyse_stream_url" placeholder="Enter full stream URL. Example: http://server.com/stream_id" required="">
-																	</div>
-																</div>
-															</div>
-														</div>
-														<br><br>
-														<div class="row">
-															<div class="col-lg-12">
-																<center>
-																	<button onclick="analyse_stream()" type="button" class="btn btn-success">Analyse Stream</button>
-																</center>
-															</div>
-														</div>
-													</span>
-
-													<span id="analyse_stream_results" class="hidden">
-														<div class="row">
-															<div id="analyse_stream_results_left" class="col-lg-6">
-
-															</div>
-
-															<div id="analyse_stream_results_right" class="col-lg-6">
-
-															</div>
-														</div>
-													</span>
-
-													<span id="analyse_stream_reset" class="hidden">
-														<hr>
-														<center>
-															<button onclick="analyse_stream_reset()" type="button" class="btn btn-success">Analyse Another Stream</button>
-														</center>
-													</span>
-
-									            </div>
-									            <div class="modal-footer">
-									                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									            </div>
-									        </div>
-									    </div>
-									</div>
-
-									<form action="actions.php?a=stream_add" class="form-horizontal form-bordered" method="post">
-										<div class="modal fade" id="new_stream_modal" role="dialog">
-										    <div class="modal-dialog modal-lg">
-										        <div class="modal-content">
-										            <div class="modal-header">
-										                <button type="button" class="close" data-dismiss="modal">&times;</button>
-										                <h4 class="modal-title">Add New Input Stream</h4>
-										            </div>
-										            <div class="modal-body">
-										            	<div class="row">
-															<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-sm-2 control-label">Select Server</label>
-																	<div class="col-sm-10">
-																		<select id="server" name="server" class="form-control">
-																			<option>Select a Server</option>
-																			<?
-																				foreach($headends as $headend) {
-																					echo '<option value="'.$headend['id'].'">'.$headend['name'].'</option>';
-																				}
-																			?>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="row">
-											            	<div class="col-lg-12">
-												            	<div class="form-group">
-																	<label class="col-md-2 control-label" for="analyse_stream_url">Source URL</label>
-																	<div class="col-md-10">
-																		<input type="text" class="form-control" id="add_stream_url" name="add_stream_url" placeholder="http://server.com/stream_id" required="">
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div class="row">
-											            	<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-md-2 control-label" for="name">Stream Name</label>
-																	<div class="col-md-10">
-																		<input type="text" class="form-control" id="name" name="name" placeholder="Stream Name." required="required">
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label class="col-md-2 control-label" for="ffmpeg_re">Video Read-Native</label>
-															<div class="col-md-10">
-																<select id="ffmpeg_re" name="ffmpeg_re" class="form-control">
-																	<option <?php if($stream[0]['ffmpeg_re']=='no'){echo"selected";} ?> value="no">No</option>
-																	<option <?php if($stream[0]['ffmpeg_re']=='yes'){echo"selected";} ?> value="yes">Yes</option>
-																</select>
-															</div>
-														</div>
-										            </div>
-										            <div class="modal-footer">
-										                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										                <button type="submit" class="btn btn-success">Add</button>
-										            </div>
-										        </div>
-										    </div>
-										</div>
-									</form>
-
-									<form action="actions.php?a=import_streams" class="form-horizontal form-bordered" method="post" enctype="multipart/form-data">
-										<div class="modal fade" id="import_streams_modal" role="dialog">
-										    <div class="modal-dialog modal-lg">
-										        <div class="modal-content">
-										            <div class="modal-header">
-										                <button type="button" class="close" data-dismiss="modal">&times;</button>
-										                <h4 class="modal-title">Import Streams</h4>
-										            </div>
-										            <div class="modal-body">
-										            	<div class="row">
-											            	<div class="col-lg-12">
-												            	<div class="form-group">
-																	<label class="col-md-2 control-label" for="analyse_stream_url">Playlist File</label>
-																	<div class="col-md-10">
-																		<input type="file" id="m3u_file" name="m3u_file" required="" class="form-control">
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div class="row">
-															<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-sm-2 control-label">Select Server</label>
-																	<div class="col-sm-10">
-																		<select id="server" name="server" class="form-control">
-																			<option>Select a Server</option>
-																			<?
-																				foreach($headends as $headend) {
-																					echo '<option value="'.$headend['id'].'">'.$headend['name'].'</option>';
-																				}
-																			?>
-																		</select>
-																	</div>
-																</div>
-
-																<div class="form-group">
-																	<label class="col-md-2 control-label" for="ffmpeg_re">Video Read-Native</label>
-																	<div class="col-md-10">
-																		<select id="ffmpeg_re" name="ffmpeg_re" class="form-control">
-																			<option <?php if($stream[0]['ffmpeg_re']=='no'){echo"selected";} ?> value="no">No</option>
-																			<option <?php if($stream[0]['ffmpeg_re']=='yes'){echo"selected";} ?> value="yes">Yes</option>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-										            </div>
-										            <div class="modal-footer">
-										                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										                <button type="submit" class="btn btn-success">Import Streams</button>
-										            </div>
-										        </div>
-										    </div>
-										</div>
-									</form>
-									
-									<table id="streams_in" class="table table-bordered table-striped">
-										<thead>
-											<tr>
-												<th>Stream Name</th>
-												<th>Source</th>
-												<th class="no-sort" width="1px">FPS</th>
-												<th class="no-sort" width="1px">Speed</th>
-												<th class="no-sort" width="1px">Uptime</th>
-												<th class="no-sort" width="1px">Conn</th>
-												<th class="no-sort" width="1px">Task</th>
-												<th class="no-sort" width="80px">Actions</th>
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-
-												if(isset($_GET['server_id']) && $server_id != 0){
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'input' AND `server_id` = '".$server_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}else{
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'input' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}
-												if($query !== FALSE) {
-													$cluster['streams'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-													foreach($cluster['streams'] as $stream) {
-														// get stream data for each headend
-														$query = $conn->query("SELECT `id`,`status`,`name` FROM `headend_servers` WHERE `id` = '".$stream['server_id']."' ");
-														$stream['headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$server_status = '<small class="label bg-red">Offline</small>';
-															$stream['enable'] = 'no';
-														}else{
-															$server_status = '';
-														}
-
-														// count number of related outputs
-														$stream['total_outputs'] = total_stream_outputs($stream['id']);
-
-														// get online clients for this stream
-														$time_shift = time() - 60;
-														$query = $conn->query("SELECT * FROM `streams_connection_logs` WHERE `stream_id` = '".$stream['id']."' AND `timestamp` > '".$time_shift."' ");
-														$stream['online_clients'] = $query->fetchAll(PDO::FETCH_ASSOC);
-														$stream['total_online_clients'] = count($stream['online_clients']);
-														$client_data = '';
-														foreach($stream['online_clients'] as $client) {
-															$client_data .= 'IP: '.$client['client_ip'].'<br>';
-														}
-
-														if($stream['enable'] == 'yes') {
-															if($stream['job_status']=='none'){
-																$current_task = '<small class="label bg-green full-width">Online</small>';
-															}else{
-																$current_task = '<small class="label bg-orange full-width">'.ucwords(str_replace('_', ' ', $stream['job_status'])).'</small>';
-															}
-														}else{
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														echo '
-															<tr id="'.$stream['id'].'_col">
-																<td id="'.$stream['id'].'_col_0">
-																	'.stripslashes($stream['name']).' <br>
-																	<span class="nowrap" style="white-space: nowrap;">
-																		'.$server_status.' '.stripslashes($stream['headend'][0]['name']).'
-																	</span>
-																</td>
-																<td id="'.$stream['id'].'_col_1">
-																	'.stripslashes($stream['source']).'
-																</td>
-																<td id="'.$stream['id'].'_col_2">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['fps'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_3">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['speed'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_4">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['stream_uptime'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_5">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		'.$stream['total_outputs'].'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_6">
-																	'.$current_task.'
-																</td>
-																<td id="'.$stream['id'].'_col_7" class="text-right">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		<!-- <button type="button" class="btn btn-warning btn-xs btn-flat" data-toggle="modal" data-target="#modal_stream_'.$stream['id'].'"><i class="fa fa-globe" aria-hidden="true"></i></button> -->
-																	':'').'
-
-																	'.($stream['status'] == 'online'?'
-																		<a title="Restart Stream" class="btn btn-warning btn-xs btn-flat" href="actions.php?a=stream_restart&stream_id='.$stream['id'].'"><i class="fa fa-sync"></i></a>
-																	':'').'
-
-																	<span id="offline_stream_'.$stream['id'].'" class="'.($stream['enable']=='no' ? '' : 'hidden').'">
-																		<a title="Start Stream" class="btn btn-success btn-xs btn-flat" href="actions.php?a=stream_start&stream_id='.$stream['id'].'">
-																			<i class="fa fa-play" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	<a title="Edit Stream" class="btn btn-info btn-xs btn-flat" href="dashboard.php?c=stream&stream_id='.$stream['id'].'"><i class="fa fa-gears"></i></a>
-
-																	<span id="online_stream_'.$stream['id'].'" class="'.($stream['enable']=='yes' ? '' : 'hidden').'">
-																		<a title="Stop Stream" class="btn btn-danger btn-xs btn-flat" onclick="return confirm(\'Please allow up to 60 seconds for stream to stop.\')" href="actions.php?a=stream_stop&stream_id='.$stream['id'].'">
-																			<i class="fa fa-pause" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	'.($stream['enable'] == 'no'?'
-																		<a title="Delete Stream" class="btn btn-danger btn-xs btn-flat" href="actions.php?a=stream_delete&stream_id='.$stream['id'].'" onclick="return confirm(\'Are you sure?\')"><i class="fa fa-times"></i></a>
-																	':'').'
-																</td>
-															</tr>
-														';
-
-														echo '
-															<div class="modal fade" id="modal_stream_'.$stream['id'].'" role="dialog">
-															    <div class="modal-dialog">
-															        <div class="modal-content">
-															            <div class="modal-header">
-															                <button type="button" class="close" data-dismiss="modal">&times;</button>
-															                <h4 class="modal-title">'.$stream['name'].'</h4>
-															            </div>
-															            <div class="modal-body">
-														            		<div class="form-group">
-															                  	<label for="exampleInputEmail1">Direct Stream URL:</label>
-															                  	<input type="text" class="form-control" value="http://hub.slipstreamiptv.com/streams/'.$stream['server_id'].'/'.$stream['id'].'">
-															                  	<small>Use this stream URL for direct access outside of the SlipStream platform. This is a Copy / Pass-Through stream only and has not been transcoded.</small>
-															                </div>
-															            </div>
-															            <div class="modal-footer">
-															                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-															            </div>
-															        </div>
-															    </div>
-															</div>
-														';
-													}
-												}
-											?>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="box box-primary">
-		            			<div class="box-header">
-		              				<h3 class="box-title">
-		              					Output Streams
-		              				</h3>
-		              				<div class="pull-right">
-		              					<button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_output_stream_modal">New Output Stream</button>
-		              				</div>
-		            			</div>
-								<div class="box-body">
-									<form action="actions.php?a=stream_add_output" class="form-horizontal form-bordered" method="post">
-										<div class="modal fade" id="new_output_stream_modal" role="dialog">
-										    <div class="modal-dialog modal-lg">
-										        <div class="modal-content">
-										            <div class="modal-header">
-										                <button type="button" class="close" data-dismiss="modal">&times;</button>
-										                <h4 class="modal-title">Add New Output Stream</h4>
-										            </div>
-										            <div class="modal-body">
-										            	<div class="row">
-															<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-sm-2 control-label">Source</label>
-																	<div class="col-sm-10">
-																		<select id="source_id" name="source_id" class="form-control">
-																			<option>Select a Source</option>
-																			<?
-																			$query = $conn->query("SELECT `id`,`name`,`server_id` FROM `streams` WHERE `user_id` = '".$_SESSION['account']['id']."' AND `stream_type` = 'input' AND `enable` = 'yes' ORDER BY `name` ASC");
-																			if($query !== FALSE) {
-																				$streams = $query->fetchAll(PDO::FETCH_ASSOC);
-																				foreach($streams as $stream) {
-																					// get headend name
-																					$query = $conn->query("SELECT `id`,`name` FROM `headend_servers` WHERE `id` = '".$stream['server_id']."'  ");
-																					$stream['headend'] = $query->fetch(PDO::FETCH_ASSOC);
-																					echo '<option value="'.$stream['id'].'">'.stripslashes($stream['name']).' on '.$stream['headend']['name'].'</option>';
-																				}
-																			}
-																			?>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div class="row">
-											            	<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-md-2 control-label" for="name">Stream Name</label>
-																	<div class="col-md-10">
-																		<input type="text" class="form-control" id="name" name="name" placeholder="Stream Name." required="required">
-																	</div>
-																</div>
-															</div>
-														</div>
-										            </div>
-										            <div class="modal-footer">
-										                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										                <button type="submit" class="btn btn-success">Add</button>
-										            </div>
-										        </div>
-										    </div>
-										</div>
-									</form>
-
-									<table id="streams_out" class="table table-bordered table-striped">
-										<thead>
-											<tr>
-												<th>Stream Name</th>														<!-- 0 -->
-												<th>Source</th>																<!-- 1 -->
-												<th class="no-sort" width="1px">Codec</th>								<!-- 2 -->
-												<th class="no-sort" width="1px">Res</th>									<!-- 3 -->
-												<th class="no-sort" width="1px">FPS</th>									<!-- 4 -->
-												<th class="no-sort" width="1px">Speed</th>									<!-- 5 -->
-												<th class="no-sort" width="1px">Uptime</th>									<!-- 6 -->
-												<th class="no-sort" width="1px">Conn</th>									<!-- 7 -->
-												<th class="no-sort" width="1px">Task</th>									<!-- 8 -->
-												<th class="no-sort" width="80px">Actions</th>								<!-- 9 -->
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-
-												if(isset($_GET['server_id']) && $server_id != 0){
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'output' AND `server_id` = '".$server_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}else{
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'output' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}
-												if($query !== FALSE) {
-													$cluster['streams'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-													foreach($cluster['streams'] as $stream) {
-														// get stream data for each headend
-														$query = $conn->query("SELECT * FROM `headend_servers` WHERE `id` = '".$stream['server_id']."' ");
-														$stream['headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$server_status = '<small class="label bg-red">Offline</small>';
-															$stream['enable'] = 'no';
-														}else{
-															$server_status = '';
-														}
-
-														// build the streams source internal or link or ?
-														// get source_stream_id details
-														$query = $conn->query("SELECT `name` FROM `streams` WHERE `id` = '".$stream['source_stream_id']."' ");
-														$stream['source_stream'] = $query->fetchAll(PDO::FETCH_ASSOC);
-														
-														// get source_server_id details
-														if($stream['server_id'] != $stream['source_server_id']) {
-															$source_server = stripslashes($stream['headend'][0]['name']);
-														}else{
-															$query = $conn->query("SELECT `name` FROM `headend_servers` WHERE `id` = '".$stream['source_server_id']."' ");
-															$stream['source_headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
-															
-															$source_server = stripslashes($stream['source_headend'][0]['name']);
-														}
-
-														// get online clients for this stream
-														$time_shift = time() - 60;
-														$query = $conn->query("SELECT * FROM `streams_connection_logs` WHERE `stream_id` = '".$stream['id']."' AND `timestamp` > '".$time_shift."' ");
-														$stream['online_clients'] = $query->fetchAll(PDO::FETCH_ASSOC);
-														$stream['total_online_clients'] = count($stream['online_clients']);
-														$client_data = '';
-														foreach($stream['online_clients'] as $client) {
-															$client_data .= 'IP: '.$client['client_ip'].'<br>';
-														}
-
-														if($stream['enable'] == 'yes') {
-															if($stream['job_status']=='none'){
-																$current_task = '<small class="label bg-green full-width">Online</small>';
-															}else{
-																$current_task = '<small class="label bg-orange full-width">'.ucwords(str_replace('_', ' ', $stream['job_status'])).'</small>';
-															}
-														}else{
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														$codecs = strtoupper($stream['video_codec']);
-
-														if($stream['screen_resolution'] == 'copy'){
-															$stream['screen_resolution'] = 'COPY';
-														}
-
-														// get stream category
-														$stream['category'] = '';
-														if(!empty($stream['category_id']) || $stream['category_id'] != 0){
-															foreach($categories as $category){
-																if($category['id'] == $stream['category_id']){
-																	$stream['category'] = '<strong>[ '.$category['name'].' ]</strong>';
-																}
-															}
-														}
-
-														echo '
-															<tr id="'.$stream['id'].'_col">
-																<td id="'.$stream['id'].'_col_0">
-																	'.stripslashes($stream['name']).' '.($stream['fingerprint']=='enable'?'<i class="fas fa-fingerprint"></i>':'').'
-																	'.$stream['category'].'
-																	<br>
-																	'.$server_status.' '.stripslashes($stream['headend'][0]['name']).'
-																</td>
-																<td id="'.$stream['id'].'_col_1">
-																	'.stripslashes($stream['source_stream'][0]['name']).' <br>
-																	'.$source_server.'
-																</td>
-																<td id="'.$stream['id'].'_col_2">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$codecs.'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_3">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['screen_resolution'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_4">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['fps'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_5">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['speed'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_6">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['stream_uptime'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_7">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		'.$stream['total_online_clients'].'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_8">
-																	'.$current_task.'
-																</td>
-																<td id="'.$stream['id'].'_col_9" class="text-right">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		<!-- <button type="button" class="btn btn-warning btn-xs btn-flat" data-toggle="modal" data-target="#modal_stream_'.$stream['id'].'"><i class="fa fa-globe" aria-hidden="true"></i></button> -->
-																	':'').'
-
-																	'.($stream['status'] == 'online'?'
-																		<a title="Restart Stream" class="btn btn-warning btn-xs btn-flat" href="actions.php?a=stream_restart&stream_id='.$stream['id'].'"><i class="fa fa-sync"></i></a>
-																	':'').'
-
-																	<span id="offline_stream_'.$stream['id'].'" class="'.($stream['enable']=='no' ? '' : 'hidden').'">
-																		<a title="Start Stream" class="btn btn-success btn-xs btn-flat" href="actions.php?a=stream_start&stream_id='.$stream['id'].'">
-																			<i class="fa fa-play" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	<a title="Edit Stream" class="btn btn-info btn-xs btn-flat" href="dashboard.php?c=stream&stream_id='.$stream['id'].'"><i class="fa fa-gears"></i></a>
-
-																	<span id="online_stream_'.$stream['id'].'" class="'.($stream['enable']=='yes' ? '' : 'hidden').'">
-																		<a title="Stop Stream" class="btn btn-danger btn-xs btn-flat" onclick="return confirm(\'Please allow up to 60 seconds for stream to stop.\')" href="actions.php?a=stream_stop&stream_id='.$stream['id'].'">
-																			<i class="fa fa-pause" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	'.($stream['enable'] == 'no'?'
-																		<a title="Delete Stream" class="btn btn-danger btn-xs btn-flat" href="actions.php?a=stream_delete&stream_id='.$stream['id'].'" onclick="return confirm(\'Are you sure?\')"><i class="fa fa-times"></i></a>
-																	':'').'
-																</td>
-															</tr>
-														';
-
-														echo '
-															<div class="modal fade" id="modal_stream_'.$stream['id'].'" role="dialog">
-															    <div class="modal-dialog">
-															        <div class="modal-content">
-															            <div class="modal-header">
-															                <button type="button" class="close" data-dismiss="modal">&times;</button>
-															                <h4 class="modal-title">'.$stream['name'].'</h4>
-															            </div>
-															            <div class="modal-body">
-														            		<div class="form-group">
-															                  	<label for="exampleInputEmail1">Transcoded Stream URL:</label>
-															                  	<input type="text" class="form-control" value="http://hub.slipstreamiptv.com/streams/'.$stream['server_id'].'/'.$stream['id'].'">
-															                  	<small><strong>Be careful when using this URL directly. It offers NO protection for end user abuse. <br>This URL should only be used for internal use.</strong></small>
-
-															                </div>
-															            </div>
-															            <div class="modal-footer">
-															                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-															            </div>
-															        </div>
-															    </div>
-															</div>
-														';
-													}
-												}
-											?>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-            </div>
-
-            <script>
-            	// pause on modal close
-			    $('body').on('hidden.bs.modal', '.modal', function () {
-			    	$('#player').addClass('hidden');
-			    	$('#web_player_warning').addClass('hidden');
-					$('video').trigger('pause');
-					$('#log').innerHTML = '';
-					$('#web_player_stream_select').removeAttr('selected');
-				});
-
-            	function web_player_start(selectObject) {
-				    var stream = selectObject.value;
-
-				    if(stream == 'nothing') {
-				    	$('#web_player_warning').addClass('hidden');
-				    	$('#player').addClass('hidden');
-						$('video').trigger('pause');
-						$('#log').innerHTML = '';
-						$('#web_player_stream_select').removeAttr('selected');
-				    } else {
-				    	$('#player').removeClass('hidden');
-				    	$('#web_player_warning').removeClass('hidden');
-						flowplayer(0).load(stream);
-						console.log(stream);
-				    }
-				}
-
-	            <?php 
-	            	$web_player_stream_select = '';
-	            	if(isset($web_player_links) && is_array($web_player_links)) {
-		            	foreach($web_player_links as $web_player_link) {
-		            		// web_player_stream_select
-		            		foreach($web_player_link as $stream) {
-		            			?>
-		            			$("#web_player_stream_select").append(new Option("<?php echo $stream['name']; ?>", "<?php echo $stream['stream']; ?>"));
-		            			<?php
-		            		}
-		            	}
-		            }
-	            ?>
-            </script>
-        <?php } ?>
-
         <?php function streams(){ ?>
         	<?php global $conn, $account_details, $site; ?>
         	<?php $modal_streams = ''; ?>
@@ -4822,817 +3992,6 @@ desired effect
             </div>
         <?php } ?>
 
-        <?php function streams_seperate(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
-        	<?php $modal_streams = ''; ?>
-        	<?php $reinstall_modals = ''; ?>
-        	<?php $web_player_links = ''; ?>
-        	<?php $server_id = get('server_id'); ?>
-
-        	<?php
-	        	$query = $conn->query("SELECT `id`,`name`,`gpu_stats` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
-				if($query !== FALSE) {
-					$headends = $query->fetchAll(PDO::FETCH_ASSOC);
-				}
-
-				$query = $conn->query("SELECT * FROM `stream_categories` WHERE `user_id` = '".$_SESSION['account']['id']."' ");
-				if($query !== FALSE) {
-					$categories = $query->fetchAll(PDO::FETCH_ASSOC);
-				}
-			?>
-            <div class="content-wrapper">
-				
-                <div id="status_message"></div>
-                            	
-                <section class="content-header">
-                    <h1>Streams <!-- <small>Optional description</small> --></h1>
-                    <ol class="breadcrumb">
-                        <li class="active"><a href="dashboard.php">Dashboard</a></li>
-                        <li class="active">Streams</li>
-                    </ol>
-                </section>
-
-                <!-- Main content -->
-				<section class="content">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="box box-primary">
-								<div class="box-body">
-									<div class="form-inline pull-right">
-										<!-- 
-										<a href="actions.php?a=export_m3u" class="btn btn-primary btn-flat">
-											<i class="fas fa-download"></i> Download Playlist
-										</a>
-										-->
-										<a href="actions.php?a=streams_restart_all" class="btn btn-warning btn-flat" onclick="return confirm('Are you sure? \nPlease allow up to 5 minutes for all streams to restart.')">
-											<i class="fas fa-sync"></i> Restart All Streams
-										</a>
-										<a href="actions.php?a=streams_stop_all" class="btn btn-danger btn-flat" onclick="return confirm('Are you sure? \nPlease allow up to 2 minutes for all streams to stop.')">
-											<i class="fas fa-pause"></i> Stop All Streams
-										</a>
-										<a href="actions.php?a=streams_start_all" class="btn btn-success btn-flat" onclick="return confirm('Are you sure? \nPlease allow up to 5 minutes for all streams to start.')">
-											<i class="fas fa-play"></i> Start All Streams
-										</a>
-										<!-- <button type="button" class="btn btn-info btn-flat" data-toggle="modal" data-target="#analyse_stream_modal">Analyse Stream</button> -->
-										<select id="server" name="server" class="form-control" onchange="streams_set_server(this);">
-											<option value="0">Filter by Server / Reset</option>
-											<?php
-												foreach($headends as $headend) {
-													echo '<option value="'.$headend['id'].'" '.($server_id==$headend['id'] ? 'selected' : '').'>'.$headend['name'].'</option>';
-												}
-											?>
-										</select>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="box box-primary">
-		            			<div class="box-header">
-		              				<h3 class="box-title">
-		              					Input Streams
-		              				</h3>
-		              				<div class="pull-right">
-										<button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_stream_modal">New Input Stream</button>
-										<button type="button" class="btn btn-default btn-xs btn-flat" data-toggle="modal" data-target="#import_streams_modal">Import Input Streams</button>
-									</div>
-		            			</div>
-								<div class="box-body">
-									<div class="modal fade" id="web_player" role="dialog">
-									    <div class="modal-dialog modal-lg">
-									        <div class="modal-content">
-									            <div class="modal-header">
-									                <button type="button" class="close" data-dismiss="modal">&times;</button>
-									                <h4 class="modal-title">Web Player</h4>
-									            </div>
-									            <div class="modal-body">
-									            	<div class="row">
-									            		<div class="col-lg-12">
-									            			<div class="form-group">
-																<label>Select a Stream</label>
-																<select id="web_player_stream_select" class="form-control" onchange="web_player_start(this)">
-																	<option value="nothing">Choose One</option>
-																</select>
-															</div>
-									            		</div>
-									            	</div>
-
-									            	<div class="row">
-									            		<div class="col-lg-12">
-									            			<script type="text/javascript" src="https://releases.flowplayer.org/7.0.4/flowplayer.min.js"></script>
-    														<script type="text/javascript" src="https://releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
-    														<link rel="stylesheet" type="text/css" href="https://releases.flowplayer.org/7.0.4/skin/skin.css">
-
-    														<script type="text/javascript">
-														      	flowplayer(function (api) {
-																   	api.on("load ready", function (e, api, video) {
-																    	var log = $("<p/>").text(e.type + ": " + video.src + ", duration: " + (video.duration || "not available"));
-																    	$("#log").append(log);
-																   });
-																});
-														    </script>
-														    <div id="player" class="flowplayer fp-slim hidden">
-	   															<video>
-																	<source type="mpegurl" src="http://hub.slipstreamiptv.com/streams/18/73/sd">
-	   															</video>
-															</div>
- 
- 															<div id="web_player_warning" class="callout callout-warning">
-																This is an experimental feature. Not all streams will play even if they are online and working normally. H.265 encoded streams are not supported in the web player.
-															</div>
-
-															<div id="log" class="hidden"></div>
-									            		</div>
-									            	</div>
-
-									            </div>
-									            <div class="modal-footer">
-									                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									            </div>
-									        </div>
-									    </div>
-									</div>
-
-									<div class="modal fade" id="analyse_stream_modal" role="dialog">
-									    <div class="modal-dialog modal-lg">
-									        <div class="modal-content">
-									            <div class="modal-header">
-									                <button type="button" class="close" data-dismiss="modal">&times;</button>
-									                <h4 class="modal-title">Analyse Stream</h4>
-									            </div>
-									            <div class="modal-body">
-									            	<span id="analyse_stream_working" class="hidden">
-									            		<center>
-									            			<img src="assets/images/ajax-loader.gif" alt="" height="25px">
-									            		</center>
-									            	</span>
-
-									            	<span id="analyse_stream_form" class="">
-										                <center>
-										                	<p>Enter your full source URL below and we will analyse it for you.</p>
-										                </center>
-										                <div class="row">
-													    	<div class="col-lg-12">
-															    <div class="form-group">
-																	<!-- <label class="col-md-2 control-label" for="analyse_stream_url">URL</label> -->
-																	<div class="col-md-12">
-																		<input type="text" class="form-control" id="analyse_stream_url" name="analyse_stream_url" placeholder="Enter full stream URL. Example: http://server.com/stream_id" required="">
-																	</div>
-																</div>
-															</div>
-														</div>
-														<br><br>
-														<div class="row">
-															<div class="col-lg-12">
-																<center>
-																	<button onclick="analyse_stream()" type="button" class="btn btn-success">Analyse Stream</button>
-																</center>
-															</div>
-														</div>
-													</span>
-
-													<span id="analyse_stream_results" class="hidden">
-														<div class="row">
-															<div id="analyse_stream_results_left" class="col-lg-6">
-
-															</div>
-
-															<div id="analyse_stream_results_right" class="col-lg-6">
-
-															</div>
-														</div>
-													</span>
-
-													<span id="analyse_stream_reset" class="hidden">
-														<hr>
-														<center>
-															<button onclick="analyse_stream_reset()" type="button" class="btn btn-success">Analyse Another Stream</button>
-														</center>
-													</span>
-
-									            </div>
-									            <div class="modal-footer">
-									                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									            </div>
-									        </div>
-									    </div>
-									</div>
-
-									<form action="actions.php?a=stream_add" class="form-horizontal form-bordered" method="post">
-										<div class="modal fade" id="new_stream_modal" role="dialog">
-										    <div class="modal-dialog modal-lg">
-										        <div class="modal-content">
-										            <div class="modal-header">
-										                <button type="button" class="close" data-dismiss="modal">&times;</button>
-										                <h4 class="modal-title">Add New Input Stream</h4>
-										            </div>
-										            <div class="modal-body">
-										            	<div class="row">
-															<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-sm-2 control-label">Select Server</label>
-																	<div class="col-sm-10">
-																		<select id="server" name="server" class="form-control" required="">
-																			<option>Select a Server</option>
-																			<?
-																				foreach($headends as $headend) {
-																					echo '<option value="'.$headend['id'].'">'.$headend['name'].'</option>';
-																				}
-																			?>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="row">
-											            	<div class="col-lg-12">
-												            	<div class="form-group">
-																	<label class="col-md-2 control-label" for="analyse_stream_url">Source URL</label>
-																	<div class="col-md-10">
-																		<input type="text" class="form-control" id="add_stream_url" name="add_stream_url" placeholder="http://server.com/stream_id" required="">
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div class="row">
-											            	<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-md-2 control-label" for="name">Stream Name</label>
-																	<div class="col-md-10">
-																		<input type="text" class="form-control" id="name" name="name" placeholder="Stream Name." required="required">
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label class="col-md-2 control-label" for="ffmpeg_re">Video Read-Native</label>
-															<div class="col-md-10">
-																<select id="ffmpeg_re" name="ffmpeg_re" class="form-control">
-																	<option <?php if($stream[0]['ffmpeg_re']=='no'){echo"selected";} ?> value="no">No</option>
-																	<option <?php if($stream[0]['ffmpeg_re']=='yes'){echo"selected";} ?> value="yes">Yes</option>
-																</select>
-															</div>
-														</div>
-										            </div>
-										            <div class="modal-footer">
-										                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										                <button type="submit" class="btn btn-success">Add</button>
-										            </div>
-										        </div>
-										    </div>
-										</div>
-									</form>
-
-									<form action="actions.php?a=import_streams" class="form-horizontal form-bordered" method="post" enctype="multipart/form-data">
-										<div class="modal fade" id="import_streams_modal" role="dialog">
-										    <div class="modal-dialog modal-lg">
-										        <div class="modal-content">
-										            <div class="modal-header">
-										                <button type="button" class="close" data-dismiss="modal">&times;</button>
-										                <h4 class="modal-title">Import Streams</h4>
-										            </div>
-										            <div class="modal-body">
-										            	<div class="row">
-											            	<div class="col-lg-12">
-												            	<div class="form-group">
-																	<label class="col-md-2 control-label" for="analyse_stream_url">Playlist File</label>
-																	<div class="col-md-10">
-																		<input type="file" id="m3u_file" name="m3u_file" required="" class="form-control">
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div class="row">
-															<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-sm-2 control-label">Select Server</label>
-																	<div class="col-sm-10">
-																		<select id="server" name="server" class="form-control">
-																			<option>Select a Server</option>
-																			<?
-																				foreach($headends as $headend) {
-																					echo '<option value="'.$headend['id'].'">'.$headend['name'].'</option>';
-																				}
-																			?>
-																		</select>
-																	</div>
-																</div>
-
-																<div class="form-group">
-																	<label class="col-md-2 control-label" for="ffmpeg_re">Video Read-Native</label>
-																	<div class="col-md-10">
-																		<select id="ffmpeg_re" name="ffmpeg_re" class="form-control">
-																			<option <?php if($stream[0]['ffmpeg_re']=='no'){echo"selected";} ?> value="no">No</option>
-																			<option <?php if($stream[0]['ffmpeg_re']=='yes'){echo"selected";} ?> value="yes">Yes</option>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-										            </div>
-										            <div class="modal-footer">
-										                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										                <button type="submit" class="btn btn-success">Import Streams</button>
-										            </div>
-										        </div>
-										    </div>
-										</div>
-									</form>
-									
-									<table id="streams_in" class="table table-bordered table-striped">
-										<thead>
-											<tr>
-												<th>Stream Name</th>														<!-- 0 -->
-												<th>Source</th>																<!-- 1 -->
-												<th class="no-sort" width="1px">FPS</th>									<!-- 2 -->
-												<th class="no-sort" width="1px">Speed</th>									<!-- 3 -->
-												<th class="no-sort" width="1px">Uptime</th>									<!-- 4 -->
-												<th class="no-sort" width="1px">Conn</th>									<!-- 5 -->
-												<th class="no-sort" width="1px">Task</th>									<!-- 6 -->
-												<th class="no-sort" width="80px">Actions</th>								<!-- 7 -->
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-
-												if(isset($_GET['server_id']) && $server_id != 0){
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'input' AND `server_id` = '".$server_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}else{
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'input' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}
-												if($query !== FALSE) {
-													$cluster['streams'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-													foreach($cluster['streams'] as $stream) {
-														// get stream data for each headend
-														$query = $conn->query("SELECT `id`,`status`,`name` FROM `headend_servers` WHERE `id` = '".$stream['server_id']."' ");
-														$stream['headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$server_status = '<small class="label bg-red">Offline</small>';
-															$stream['enable'] = 'no';
-														}else{
-															$server_status = '';
-														}
-
-														// count number of related outputs
-														$stream['total_outputs'] = total_stream_outputs($stream['id']);
-
-														// get online clients for this stream
-														$time_shift = time() - 60;
-														$query = $conn->query("SELECT * FROM `streams_connection_logs` WHERE `stream_id` = '".$stream['id']."' AND `timestamp` > '".$time_shift."' ");
-														$stream['online_clients'] = $query->fetchAll(PDO::FETCH_ASSOC);
-														$stream['total_online_clients'] = count($stream['online_clients']);
-														$client_data = '';
-														foreach($stream['online_clients'] as $client) {
-															$client_data .= 'IP: '.$client['client_ip'].'<br>';
-														}
-
-														if($stream['enable'] == 'yes') {
-															if($stream['job_status']=='none'){
-																$current_task = '<small class="label bg-green full-width">Online</small>';
-															}else{
-																$current_task = '<small class="label bg-orange full-width">'.ucwords(str_replace('_', ' ', $stream['job_status'])).'</small>';
-															}
-														}else{
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														echo '
-															<tr id="'.$stream['id'].'_col">
-																<td id="'.$stream['id'].'_col_0">
-																	'.stripslashes($stream['name']).' <br>
-																	<span class="nowrap" style="white-space: nowrap;">
-																		'.$server_status.' '.stripslashes($stream['headend'][0]['name']).'
-																	</span>
-																</td>
-																<td id="'.$stream['id'].'_col_1">
-																	'.stripslashes($stream['source']).'
-																</td>
-																<td id="'.$stream['id'].'_col_2">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['fps'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_3">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['speed'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_4">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['stream_uptime'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_5">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		'.$stream['total_outputs'].'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_6">
-																	'.$current_task.'
-																</td>
-																<td id="'.$stream['id'].'_col_7" class="text-right">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		<!-- <button type="button" class="btn btn-warning btn-xs btn-flat" data-toggle="modal" data-target="#modal_stream_'.$stream['id'].'"><i class="fa fa-globe" aria-hidden="true"></i></button> -->
-																	':'').'
-
-																	'.($stream['status'] == 'online'?'
-																		<a title="Restart Stream" class="btn btn-warning btn-xs btn-flat" href="actions.php?a=stream_restart&stream_id='.$stream['id'].'"><i class="fa fa-sync"></i></a>
-																	':'').'
-
-																	<span id="offline_stream_'.$stream['id'].'" class="'.($stream['enable']=='no' ? '' : 'hidden').'">
-																		<a title="Start Stream" class="btn btn-success btn-xs btn-flat" href="actions.php?a=stream_start&stream_id='.$stream['id'].'">
-																			<i class="fa fa-play" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	<a title="Edit Stream" class="btn btn-info btn-xs btn-flat" href="dashboard.php?c=stream&stream_id='.$stream['id'].'"><i class="fa fa-gears"></i></a>
-
-																	<span id="online_stream_'.$stream['id'].'" class="'.($stream['enable']=='yes' ? '' : 'hidden').'">
-																		<a title="Stop Stream" class="btn btn-danger btn-xs btn-flat" onclick="return confirm(\'Please allow up to 60 seconds for stream to stop.\')" href="actions.php?a=stream_stop&stream_id='.$stream['id'].'">
-																			<i class="fa fa-pause" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	'.($stream['enable'] == 'no'?'
-																		<a title="Delete Stream" class="btn btn-danger btn-xs btn-flat" href="actions.php?a=stream_delete&stream_id='.$stream['id'].'" onclick="return confirm(\'Are you sure?\')"><i class="fa fa-times"></i></a>
-																	':'').'
-																</td>
-															</tr>
-														';
-
-														echo '
-															<div class="modal fade" id="modal_stream_'.$stream['id'].'" role="dialog">
-															    <div class="modal-dialog">
-															        <div class="modal-content">
-															            <div class="modal-header">
-															                <button type="button" class="close" data-dismiss="modal">&times;</button>
-															                <h4 class="modal-title">'.$stream['name'].'</h4>
-															            </div>
-															            <div class="modal-body">
-														            		<div class="form-group">
-															                  	<label for="exampleInputEmail1">Direct Stream URL:</label>
-															                  	<input type="text" class="form-control" value="http://hub.slipstreamiptv.com/streams/'.$stream['server_id'].'/'.$stream['id'].'">
-															                  	<small>Use this stream URL for direct access outside of the SlipStream platform. This is a Copy / Pass-Through stream only and has not been transcoded.</small>
-															                </div>
-															            </div>
-															            <div class="modal-footer">
-															                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-															            </div>
-															        </div>
-															    </div>
-															</div>
-														';
-													}
-												}
-											?>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="box box-primary">
-		            			<div class="box-header">
-		              				<h3 class="box-title">
-		              					Output Streams
-		              				</h3>
-		              				<div class="pull-right">
-		              					<button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_output_stream_modal">New Output Stream</button>
-		              				</div>
-		            			</div>
-								<div class="box-body">
-									<form action="actions.php?a=stream_add_output" class="form-horizontal form-bordered" method="post">
-										<div class="modal fade" id="new_output_stream_modal" role="dialog">
-										    <div class="modal-dialog modal-lg">
-										        <div class="modal-content">
-										            <div class="modal-header">
-										                <button type="button" class="close" data-dismiss="modal">&times;</button>
-										                <h4 class="modal-title">Add New Output Stream</h4>
-										            </div>
-										            <div class="modal-body">
-										            	<div class="row">
-															<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-sm-2 control-label">Source</label>
-																	<div class="col-sm-10">
-																		<select id="source_id" name="source_id" class="form-control">
-																			<option>Select a Source</option>
-																			<?
-																			$query = $conn->query("SELECT `id`,`name`,`server_id` FROM `streams` WHERE `user_id` = '".$_SESSION['account']['id']."' AND `stream_type` = 'input' AND `enable` = 'yes' ORDER BY `name` ASC");
-																			if($query !== FALSE) {
-																				$streams = $query->fetchAll(PDO::FETCH_ASSOC);
-																				foreach($streams as $stream) {
-																					// get headend name
-																					$query = $conn->query("SELECT `id`,`name` FROM `headend_servers` WHERE `id` = '".$stream['server_id']."'  ");
-																					$stream['headend'] = $query->fetch(PDO::FETCH_ASSOC);
-																					echo '<option value="'.$stream['id'].'">'.stripslashes($stream['name']).' on '.$stream['headend']['name'].'</option>';
-																				}
-																			}
-																			?>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-														<div class="row">
-											            	<div class="col-lg-12">
-																<div class="form-group">
-																	<label class="col-md-2 control-label" for="name">Stream Name</label>
-																	<div class="col-md-10">
-																		<input type="text" class="form-control" id="name" name="name" placeholder="Stream Name." required="required">
-																	</div>
-																</div>
-															</div>
-														</div>
-										            </div>
-										            <div class="modal-footer">
-										                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-										                <button type="submit" class="btn btn-success">Add</button>
-										            </div>
-										        </div>
-										    </div>
-										</div>
-									</form>
-
-									<table id="streams_out" class="table table-bordered table-striped">
-										<thead>
-											<tr>
-												<th>Stream Name</th>														<!-- 0 -->
-												<th>Source</th>																<!-- 1 -->
-												<th class="no-sort" width="1px">Codec</th>								<!-- 2 -->
-												<th class="no-sort" width="1px">Res</th>									<!-- 3 -->
-												<th class="no-sort" width="1px">FPS</th>									<!-- 4 -->
-												<th class="no-sort" width="1px">Speed</th>									<!-- 5 -->
-												<th class="no-sort" width="1px">Uptime</th>									<!-- 6 -->
-												<th class="no-sort" width="1px">Conn</th>									<!-- 7 -->
-												<th class="no-sort" width="1px">Task</th>									<!-- 8 -->
-												<th class="no-sort" width="80px">Actions</th>								<!-- 9 -->
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-
-												if(isset($_GET['server_id']) && $server_id != 0){
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'output' AND `server_id` = '".$server_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}else{
-													$query = $conn->query("SELECT * FROM `streams` WHERE `stream_type` = 'output' AND `user_id` = '".$_SESSION['account']['id']."' ");
-												}
-												if($query !== FALSE) {
-													$cluster['streams'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-													foreach($cluster['streams'] as $stream) {
-														// get stream data for each headend
-														$query = $conn->query("SELECT * FROM `headend_servers` WHERE `id` = '".$stream['server_id']."' ");
-														$stream['headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$server_status = '<small class="label bg-red">Offline</small>';
-															$stream['enable'] = 'no';
-														}else{
-															$server_status = '';
-														}
-
-														// build the streams source internal or link or ?
-														// get source_stream_id details
-														$query = $conn->query("SELECT `name` FROM `streams` WHERE `id` = '".$stream['source_stream_id']."' ");
-														$stream['source_stream'] = $query->fetchAll(PDO::FETCH_ASSOC);
-														
-														// get source_server_id details
-														if($stream['server_id'] != $stream['source_server_id']) {
-															$source_server = stripslashes($stream['headend'][0]['name']);
-														}else{
-															$query = $conn->query("SELECT `name` FROM `headend_servers` WHERE `id` = '".$stream['source_server_id']."' ");
-															$stream['source_headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
-															
-															$source_server = stripslashes($stream['source_headend'][0]['name']);
-														}
-
-														// get online clients for this stream
-														$time_shift = time() - 60;
-														$query = $conn->query("SELECT * FROM `streams_connection_logs` WHERE `stream_id` = '".$stream['id']."' AND `timestamp` > '".$time_shift."' ");
-														$stream['online_clients'] = $query->fetchAll(PDO::FETCH_ASSOC);
-														$stream['total_online_clients'] = count($stream['online_clients']);
-														$client_data = '';
-														foreach($stream['online_clients'] as $client) {
-															$client_data .= 'IP: '.$client['client_ip'].'<br>';
-														}
-
-														if($stream['enable'] == 'yes') {
-															if($stream['job_status']=='none'){
-																$current_task = '<small class="label bg-green full-width">Online</small>';
-															}else{
-																$current_task = '<small class="label bg-orange full-width">'.ucwords(str_replace('_', ' ', $stream['job_status'])).'</small>';
-															}
-														}else{
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														if($stream['headend'][0]['status'] == 'offline') {
-															$current_task = '<small class="label bg-red full-width">Offline</small>';
-														}
-
-														$codecs = strtoupper($stream['video_codec']);
-
-														if($stream['screen_resolution'] == 'copy'){
-															$stream['screen_resolution'] = 'COPY';
-														}
-
-														// get stream category
-														$stream['category'] = '';
-														if(!empty($stream['category_id']) || $stream['category_id'] != 0){
-															foreach($categories as $category){
-																if($category['id'] == $stream['category_id']){
-																	$stream['category'] = '<strong>[ '.$category['name'].' ]</strong>';
-																}
-															}
-														}
-
-														echo '
-															<tr id="'.$stream['id'].'_col">
-																<td id="'.$stream['id'].'_col_0">
-																	'.stripslashes($stream['name']).' '.($stream['fingerprint']=='enable'?'<i class="fas fa-fingerprint"></i>':'').'
-																	'.$stream['category'].'
-																	<br>
-																	'.$server_status.' '.stripslashes($stream['headend'][0]['name']).'
-																</td>
-																<td id="'.$stream['id'].'_col_1">
-																	'.stripslashes($stream['source_stream'][0]['name']).' <br>
-																	'.$source_server.'
-																</td>
-																<td id="'.$stream['id'].'_col_2">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$codecs.'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_3">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['screen_resolution'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_4">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['fps'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_5">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['speed'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_6">
-																	'.($stream['enable'] == 'yes'?'
-																		'.($stream['job_status']=='none' ?'
-																			'.$stream['stream_uptime'].'
-																		':'').'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_7">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		'.$stream['total_online_clients'].'
-																	':'').'
-																</td>
-																<td id="'.$stream['id'].'_col_8">
-																	'.$current_task.'
-																</td>
-																<td id="'.$stream['id'].'_col_9" class="text-right">
-																	'.($stream['enable'] == 'yes' && $stream['job_status']=='none'?'
-																		<!-- <button type="button" class="btn btn-warning btn-xs btn-flat" data-toggle="modal" data-target="#modal_stream_'.$stream['id'].'"><i class="fa fa-globe" aria-hidden="true"></i></button> -->
-																	':'').'
-
-																	'.($stream['status'] == 'online'?'
-																		<a title="Restart Stream" class="btn btn-warning btn-xs btn-flat" href="actions.php?a=stream_restart&stream_id='.$stream['id'].'"><i class="fa fa-sync"></i></a>
-																	':'').'
-
-																	<span id="offline_stream_'.$stream['id'].'" class="'.($stream['enable']=='no' ? '' : 'hidden').'">
-																		<a title="Start Stream" class="btn btn-success btn-xs btn-flat" href="actions.php?a=stream_start&stream_id='.$stream['id'].'">
-																			<i class="fa fa-play" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	<a title="Edit Stream" class="btn btn-info btn-xs btn-flat" href="dashboard.php?c=stream&stream_id='.$stream['id'].'"><i class="fa fa-gears"></i></a>
-
-																	<span id="online_stream_'.$stream['id'].'" class="'.($stream['enable']=='yes' ? '' : 'hidden').'">
-																		<a title="Stop Stream" class="btn btn-danger btn-xs btn-flat" onclick="return confirm(\'Please allow up to 60 seconds for stream to stop.\')" href="actions.php?a=stream_stop&stream_id='.$stream['id'].'">
-																			<i class="fa fa-pause" aria-hidden="true"></i>
-																		</a>
-																	</span>
-
-																	'.($stream['enable'] == 'no'?'
-																		<a title="Delete Stream" class="btn btn-danger btn-xs btn-flat" href="actions.php?a=stream_delete&stream_id='.$stream['id'].'" onclick="return confirm(\'Are you sure?\')"><i class="fa fa-times"></i></a>
-																	':'').'
-																</td>
-															</tr>
-														';
-
-														echo '
-															<div class="modal fade" id="modal_stream_'.$stream['id'].'" role="dialog">
-															    <div class="modal-dialog">
-															        <div class="modal-content">
-															            <div class="modal-header">
-															                <button type="button" class="close" data-dismiss="modal">&times;</button>
-															                <h4 class="modal-title">'.$stream['name'].'</h4>
-															            </div>
-															            <div class="modal-body">
-														            		<div class="form-group">
-															                  	<label for="exampleInputEmail1">Transcoded Stream URL:</label>
-															                  	<input type="text" class="form-control" value="http://hub.slipstreamiptv.com/streams/'.$stream['server_id'].'/'.$stream['id'].'">
-															                  	<small><strong>Be careful when using this URL directly. It offers NO protection for end user abuse. <br>This URL should only be used for internal use.</strong></small>
-
-															                </div>
-															            </div>
-															            <div class="modal-footer">
-															                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-															            </div>
-															        </div>
-															    </div>
-															</div>
-														';
-													}
-												}
-											?>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-            </div>
-
-            <script>
-            	// pause on modal close
-			    $('body').on('hidden.bs.modal', '.modal', function () {
-			    	$('#player').addClass('hidden');
-			    	$('#web_player_warning').addClass('hidden');
-					$('video').trigger('pause');
-					$('#log').innerHTML = '';
-					$('#web_player_stream_select').removeAttr('selected');
-				});
-
-            	function web_player_start(selectObject) {
-				    var stream = selectObject.value;
-
-				    if(stream == 'nothing') {
-				    	$('#web_player_warning').addClass('hidden');
-				    	$('#player').addClass('hidden');
-						$('video').trigger('pause');
-						$('#log').innerHTML = '';
-						$('#web_player_stream_select').removeAttr('selected');
-				    } else {
-				    	$('#player').removeClass('hidden');
-				    	$('#web_player_warning').removeClass('hidden');
-						flowplayer(0).load(stream);
-						console.log(stream);
-				    }
-				}
-
-	            <?php 
-	            	$web_player_stream_select = '';
-	            	if(isset($web_player_links) && is_array($web_player_links)) {
-		            	foreach($web_player_links as $web_player_link) {
-		            		// web_player_stream_select
-		            		foreach($web_player_link as $stream) {
-		            			?>
-		            			$("#web_player_stream_select").append(new Option("<?php echo $stream['name']; ?>", "<?php echo $stream['stream']; ?>"));
-		            			<?php
-		            		}
-		            	}
-		            }
-	            ?>
-            </script>
-        <?php } ?>
-
         <?php function stream(){ ?>
         	<?php global $conn, $account_details, $site; ?>
         	<?php $stream_id = get('stream_id'); ?>
@@ -5746,15 +4105,6 @@ desired effect
 											<input type="hidden" name="stream_type" value="<?php echo $stream[0]['stream_type']; ?>">
 											<div class="row">
 												<div class="col-lg-12">
-													<?php if($_SESSION['account']['id'] == 1 && $stream[0]['enable'] == 'yes'){ ?>
-														<!-- direct stream url -->
-														<div class="form-group">
-															<label class="col-md-3 control-label" for="name">Direct Stream URL: </label>
-															<div class="col-md-9">
-															<input type="text" class="form-control" value="http://hub.slipstreamiptv.com/streams/<?php echo $stream[0]['server_id']; ?>/<?php echo $stream[0]['id']; ?>">
-															</div>
-														</div>
-													<?php } ?>
 													<section class="panel">
 														<header class="panel-heading">
 															<div class="panel-actions"></div>
@@ -6572,7 +4922,7 @@ desired effect
 																	}
 
 																	// build stream_url
-																	$stream_url = 'http://hub.slipstreamiptv.com/cdn_streams/'.$stream['stream_headend'][0]['server_id'].'/'.$stream['stream_headend'][0]['id'];
+																	$stream_url = 'http://'.$global_settings['cms_access_url'].'/cdn_streams/'.$stream['stream_headend'][0]['server_id'].'/'.$stream['stream_headend'][0]['id'];
 																}else{
 																	$display_pid = '';
 																}
@@ -7922,7 +6272,7 @@ desired effect
 														            	<p>Please run the following command as <strong><u>root</u></strong> to install or reinstall SlipStream on server "'.$headend['name'].'"</p>
 														                <div class="row">
 																	    	<div class="col-lg-12">
-																			    <code>wget -N --no-check-certificate http://hub.slipstreamiptv.com/downloads/install.sh && bash install.sh '.$headend['uuid'].'</code>
+																			    <code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install.sh && bash install.sh '.$headend['uuid'].'</code>
 																			</div>
 																		</div>
 														            </div>
@@ -7988,10 +6338,10 @@ desired effect
 										<tbody>
 											<?php
 												// get all channel icons
-												foreach (glob("/data/wwwroot/default/content/channel_icons/*.png") as $filename) {
+												foreach (glob("/var/www/html/portal/content/channel_icons/*.png") as $filename) {
 												    // echo "$filename size " . filesize($filename) . "\n";
 
-												    $filename_short 	= str_replace('/data/wwwroot/default/content/channel_icons/', '', $filename);
+												    $filename_short 	= str_replace('/var/www/html/portl/content/channel_icons/', '', $filename);
 													$filesize 			= filesize($filename);
 													$filesize 			= formatSizeUnits($filesize);
 
@@ -8198,7 +6548,6 @@ desired effect
 															$total_episodes = count($channel_files);
 
 															if(empty($channel['cover_photo']) || is_null($channel['cover_photo'])){
-																// $channel['cover_photo'] = 'http://hub.slipstreamiptv.com/img/no_image_available.jpg';
 																$channel['cover_photo'] = '';
 															}
 
@@ -8917,7 +7266,7 @@ desired effect
 														foreach($vods as $vod) {
 
 															if(empty($vod['cover_photo']) || is_null($vod['cover_photo'])){
-																$vod['cover_photo'] = 'http://hub.slipstreamiptv.com/img/no_image_available.jpg';
+																$vod['cover_photo'] = 'http://'.$global_settings['cms_access_url'].'/img/no_image_available.jpg';
 															}
 
 															foreach($headends as $headend) {
@@ -9060,7 +7409,7 @@ desired effect
 															$total_episodes = count($series_files);
 
 															if(empty($series['cover_photo']) || is_null($series['cover_photo'])){
-																$series['cover_photo'] = 'http://hub.slipstreamiptv.com/img/no_image_available.jpg';
+																$series['cover_photo'] = 'http://'.$global_settings['cms_access_url'].'/no_image_available.jpg';
 															}
 
 															foreach($headends as $headend) {
@@ -9689,7 +8038,7 @@ desired effect
 
 														// $remote_playlist_content = remote_content($playlist['url']);
 
-														$remote_playlist_content 		= @file_get_contents("http://hub.slipstreamiptv.com/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
+														$remote_playlist_content 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
 				  										$remote_playlist_content 		= json_decode($remote_playlist_content, true);
 
 														if(!isset($remote_playlist_content['status'])) {
@@ -9756,7 +8105,7 @@ desired effect
 
 				if($playlist){
 					// parse the playlist
-					$streams_raw 		= @file_get_contents("http://hub.slipstreamiptv.com/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
+					$streams_raw 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
 				  	$streams 			= json_decode($streams_raw, true);
 				  	asort($streams);
 				}
@@ -10246,7 +8595,7 @@ desired effect
 
 				if($playlist){
 					// parse the playlist
-					$streams_raw 		= @file_get_contents("http://hub.slipstreamiptv.com/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
+					$streams_raw 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
 				  	$streams 			= json_decode($streams_raw, true);
 				  	asort($streams);
 				}
@@ -10617,8 +8966,8 @@ desired effect
 												$status = '<span class="label label-info full-width" style="width: 100%;">'.ucfirst($import['status']).'</span>';
 											}
 
-											if(file_exists("/data/wwwroot/default/xc_uploads/".$_SESSION['account']['id']."/".$import['filename'])){
-												$filesize = filesize("/data/wwwroot/default/xc_uploads/".$_SESSION['account']['id']."/".$import['filename']);
+											if(file_exists("/var/www/html/portal/xc_uploads/".$_SESSION['account']['id']."/".$import['filename'])){
+												$filesize = filesize("/var/www/html/portal/xc_uploads/".$_SESSION['account']['id']."/".$import['filename']);
 												$filesize = formatSizeUnits($filesize);
 											}else{
 												$filesize = '';
@@ -11909,7 +10258,7 @@ desired effect
 							console.log("Server UUID: " + data[i].server_uuid);
 
 							if(data[i].status == 'added') {
-								document.getElementById('new_server_results').innerHTML = 'Server: CPU Transcoding: <br><code>wget -N --no-check-certificate http://hub.slipstreamiptv.com/downloads/install_cpu.sh && bash install_cpu.sh '+data[i].server_uuid+'</code> <br><br>Server: CPU / GPU Transcoding: <br><code>wget -N --no-check-certificate http://hub.slipstreamiptv.com/downloads/install_gpu.sh && bash install_gpu.sh '+data[i].server_uuid+'</code>';
+								document.getElementById('new_server_results').innerHTML = 'Server: CPU Transcoding: <br><code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install_cpu.sh && bash install_cpu.sh '+data[i].server_uuid+'</code> <br><br>Server: CPU / GPU Transcoding: <br><code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install_gpu.sh && bash install_gpu.sh '+data[i].server_uuid+'</code>';
 							}else{
 								document.getElementById('new_server_results').innerHTML = '<strong>ERROR:</strong '+ data[i].error;
 							}
@@ -12291,7 +10640,7 @@ desired effect
 
     				$('#add_stream_url').val('');
 
-    				console.log('API URL: http://hub.slipstreamiptv.com/actions.php?a=inspect_remote_playlist&id='+val);
+    				console.log('API URL: http://'.$global_settings['cms_access_url'].'/actions.php?a=inspect_remote_playlist&id='+val);
 
 	    			var div_id = $('#add_stream_url_list');
 
@@ -12334,9 +10683,9 @@ desired effect
 
 			    <?php if(isset($_GET['source_domain'])){ ?>
 			    	var source_domain = '<?php echo get('source_domain'); ?>';
-					window.location.href = "http://hub.slipstreamiptv.com/dashboard.php?c=streams&server_id="+server_id+"&source_domain="+source_domain;
+					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&server_id="+server_id+"&source_domain="+source_domain;
 				<?php }else{ ?>
-					window.location.href = "http://hub.slipstreamiptv.com/dashboard.php?c=streams&server_id="+server_id;
+					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&server_id="+server_id;
 				<?php } ?>
 			}
 
@@ -12345,9 +10694,9 @@ desired effect
 
 			    <?php if(isset($_GET['server_id'])){ ?>
 			    	var server_id = '<?php echo get('server_id'); ?>';
-					window.location.href = "http://hub.slipstreamiptv.com/dashboard.php?c=streams&source_domain="+source_domain+"&server_id="+server_id;
+					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&source_domain="+source_domain+"&server_id="+server_id;
 				<?php }else{ ?>
-					window.location.href = "http://hub.slipstreamiptv.com/dashboard.php?c=streams&source_domain="+source_domain;
+					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&source_domain="+source_domain;
 				<?php } ?>
 			}
 
@@ -12668,7 +11017,7 @@ desired effect
 					$.ajax({
 						cache: false,
 						type: "GET",
-				        url:'http://hub.slipstreamiptv.com/actions.php?a=cdn_stream_start&stream_id=' + stream_id + '&server_id=' + server_id,
+				        url:'http://'.$global_settings['cms_access_url'].'/actions.php?a=cdn_stream_start&stream_id=' + stream_id + '&server_id=' + server_id,
 						success: function(sources) {
 							new PNotify({
 								title: 'Success!',
@@ -12707,7 +11056,7 @@ desired effect
 			function cdn_streams_set_server(selectObject) {
 			    var server_id = selectObject.value; 
 
-			    window.location.href = "http://hub.slipstreamiptv.com/dashboard.php?c=cdn_streams&server_id=" + server_id;
+			    window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=cdn_streams&server_id=" + server_id;
 			}
 
 			// data tables > cdn_streams
@@ -13001,7 +11350,7 @@ desired effect
     		function channels_set_server(selectObject) {
 			    var server_id = selectObject.value; 
 
-			    window.location.href = "http://hub.slipstreamiptv.com/dashboard.php?c=channels&server_id=" + server_id;
+			    window.location.href = "dashboard.php?c=channels&server_id=" + server_id;
 			}
 
     		// data tables > channels
