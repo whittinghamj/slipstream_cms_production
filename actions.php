@@ -20,6 +20,11 @@ switch ($a)
 		test();
 		break;
 
+	// global_settings
+	case "global_settings":
+		global_settings();
+		break;
+
 
 	// headend functions
 	case "ajax_headends":
@@ -515,6 +520,35 @@ function test(){
 	print_r($data);
 }
 
+function global_settings()
+{
+	global $conn;
+
+	$cms_domain_name 	= post('cms_domain_name');
+	$cms_domain_name 	= addslashes($cms_domain_name);
+	$cms_domain_name 	= trim($cms_domain_name);
+
+	$cms_ip 			= post('cms_ip');
+	$cms_ip 			= addslashes($cms_ip);
+	$cms_ip 			= trim($cms_ip);
+
+	$cms_name 			= post('cms_name');
+	$cms_name 			= addslashes($cms_name);
+	$cms_name 			= trim($cms_name);
+
+	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = '".$cms_domain_name."' 	WHERE `config_name` = 'cms_domain_name' ");
+	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = '".$cms_ip."' 				WHERE `config_name` = 'cms_port' ");
+	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = '".$cms_name."' 			WHERE `config_name` = 'cms_name' ");
+
+	// echo '<pre>';
+	// print_r($_POST);
+	// echo '</pre>';
+
+    // log_add("[".$name."] has been updated.");
+    status_message('success',"Global settings have been updated.");
+    go($_SERVER['HTTP_REFERER']);
+}
+
 function server_delete(){
 	global $conn;
 
@@ -654,9 +688,9 @@ function headend_add(){
 	// $ssh_password 		= addslashes($_POST['ssh_password']);
 
 	$insert = $conn->exec("INSERT INTO `headend_servers` 
-        (`user_id`,`uuid`,`name`)
+        (`user_id`,`uuid`,`name`,`http_stream_port`)
         VALUE
-        ('".$_SESSION['account']['id']."', '".$uuid."','".$name."')");
+        ('".$_SESSION['account']['id']."', '".$uuid."','".$name."','".$global_settings['cms_port']."')");
     
     $server_id = $conn->lastInsertId();
 
