@@ -10256,7 +10256,7 @@ desired effect
 							console.log("Server UUID: " + data[i].server_uuid);
 
 							if(data[i].status == 'added') {
-								document.getElementById('new_server_results').innerHTML = 'Server: CPU Transcoding: <br><code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install_cpu.sh && bash install_cpu.sh '+data[i].server_uuid+'</code> <br><br>Server: CPU / GPU Transcoding: <br><code>wget -N --no-check-certificate http://'.$global_settings['cms_access_url'].'/downloads/install_gpu.sh && bash install_gpu.sh '+data[i].server_uuid+'</code>';
+								document.getElementById('new_server_results').innerHTML = 'Server: CPU Transcoding: <br><code>wget -N --no-check-certificate http://<?php echo $global_settings['cms_access_url']; ?>/downloads/install_cpu.sh && bash install_cpu.sh '+data[i].server_uuid+'</code> <br><br>Server: CPU / GPU Transcoding: <br><code>wget -N --no-check-certificate http://<?php echo $global_settings['cms_access_url']; ?>/downloads/install_gpu.sh && bash install_gpu.sh '+data[i].server_uuid+'</code>';
 							}else{
 								document.getElementById('new_server_results').innerHTML = '<strong>ERROR:</strong '+ data[i].error;
 							}
