@@ -10681,9 +10681,9 @@ desired effect
 
 			    <?php if(isset($_GET['source_domain'])){ ?>
 			    	var source_domain = '<?php echo get('source_domain'); ?>';
-					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&server_id="+server_id+"&source_domain="+source_domain;
+					window.location.href = "http://<?php echo $global_settings['cms_access_url']; ?>/dashboard.php?c=streams&server_id="+server_id+"&source_domain="+source_domain;
 				<?php }else{ ?>
-					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&server_id="+server_id;
+					window.location.href = "http://<?php echo $global_settings['cms_access_url']; ?>/dashboard.php?c=streams&server_id="+server_id;
 				<?php } ?>
 			}
 
@@ -10692,9 +10692,9 @@ desired effect
 
 			    <?php if(isset($_GET['server_id'])){ ?>
 			    	var server_id = '<?php echo get('server_id'); ?>';
-					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&source_domain="+source_domain+"&server_id="+server_id;
+					window.location.href = "http://<?php echo $global_settings['cms_access_url']; ?>/dashboard.php?c=streams&source_domain="+source_domain+"&server_id="+server_id;
 				<?php }else{ ?>
-					window.location.href = "http://".$global_settings['cms_access_url']."/dashboard.php?c=streams&source_domain="+source_domain;
+					window.location.href = "http://<?php echo $global_settings['cms_access_url']; ?>/dashboard.php?c=streams&source_domain="+source_domain;
 				<?php } ?>
 			}
 
