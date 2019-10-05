@@ -6298,7 +6298,7 @@ desired effect
         <?php } ?>
 
         <?php function channel_icons(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
             <div class="content-wrapper">
 				
