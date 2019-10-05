@@ -852,6 +852,22 @@ CREATE TABLE `xc_import_jobs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
+DROP TABLE IF EXISTS `global_settings`;
+
+CREATE TABLE `global_settings` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `config_name` varchar(100) DEFAULT NULL,
+  `config_value` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `global_settings` (`id`, `config_name`, `config_value`)
+VALUES
+  (1, 'cms_ip', ''),
+  (2, 'cms_port', ''),
+  (3, 'cms_domain_name', ''),
+  (4, 'cms_name', 'SlipStream CMS');
+
 
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

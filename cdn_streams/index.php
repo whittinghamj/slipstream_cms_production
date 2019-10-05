@@ -2,8 +2,8 @@
 session_start();
 
 // includes
-include('../inc/global_vars.php');
 include('../inc/db.php');
+include('../inc/global_vars.php');
 include('../inc/functions.php');
 
 // make sure server id is set
