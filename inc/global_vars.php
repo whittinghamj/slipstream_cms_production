@@ -22,8 +22,10 @@ foreach($global_settings_temp as $bits){
 
 if(empty($global_settings['cms_domain_name'])){
 	$global_settings['cms_access_url'] 			= $global_settings['cms_ip'].":".$global_settings['cms_port']."/portal";
+	$global_settings['cms_access_url_raw'] 		= $global_settings['cms_ip'].":".$global_settings['cms_port'];
 }else{
 	$global_settings['cms_access_url'] 			= $global_settings['cms_domain_name'].":".$global_settings['cms_port']."/portal";
+	$global_settings['cms_access_url_raw'] 		= $global_settings['cms_domain_name'].":".$global_settings['cms_port'];
 }
 
 if($global_settings['cms_name'] != 'SlipStream CMS'){
