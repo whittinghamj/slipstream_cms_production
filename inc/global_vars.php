@@ -30,4 +30,6 @@ if(empty($global_settings['cms_domain_name'])){
 
 if($global_settings['cms_name'] != 'SlipStream CMS'){
 	$site['title'] 								= $global_settings['cms_name'];
+	$site['name_long'] 							= $global_settings['cms_name'];
+	$site['name_short'] 						= $global_settings['cms_name'];
 }
