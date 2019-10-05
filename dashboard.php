@@ -420,6 +420,17 @@ desired effect
                         </a>
                     </li>
 
+                    <?php if(get('c') == 'global_settings'){ ?>
+                    	<li class="active">
+                    <?php }else{ ?>
+                    	<li>
+                    <?php } ?>
+                    	<a href="dashboard.php?c=global_settings">
+                        	<i class="fa fa-cogs"></i> 
+                        	<span>Global Settings</span>
+                        </a>
+                    </li>
+
                     <?php if(get('c') == 'remote_playlists' || get('c') == 'remote_playlist'){ ?>
                     	<li class="active">
                     <?php }else{ ?>
