@@ -13,5 +13,9 @@ $site['name_short']				= '<b>SS</b>';
 
 // get settings table contents
 
-$query = $conn->query("SELECT * FROM `global_settings` ");
-$global_settings = $query->fetchAll(PDO::FETCH_ASSOC);
+$query = $conn->query("SELECT `config_name`,`config_value` FROM `global_settings` ");
+$global_settings_temp = $query->fetchAll(PDO::FETCH_ASSOC);
+
+foreach($global_settings_temp as $key => $value){
+	$global_settings[$key] = $value;
+}
