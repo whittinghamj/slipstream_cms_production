@@ -6341,7 +6341,7 @@ desired effect
 												foreach (glob("/var/www/html/portal/content/channel_icons/*.png") as $filename) {
 												    // echo "$filename size " . filesize($filename) . "\n";
 
-												    $filename_short 	= str_replace('/var/www/html/portl/content/channel_icons/', '', $filename);
+												    $filename_short 	= str_replace('/var/www/html/portal/content/channel_icons/', '', $filename);
 													$filesize 			= filesize($filename);
 													$filesize 			= formatSizeUnits($filesize);
 
