@@ -3339,17 +3339,15 @@ desired effect
 
         <?php function streams(){ ?>
         	<?php global $conn, $global_settings, $account_details, $site; ?>
-        	<?php $modal_streams = ''; ?>
-        	<?php $reinstall_modals = ''; ?>
-        	<?php $web_player_links = ''; ?>
-        	<?php $server_id = get('server_id'); ?>
-        	<?php $source_domain = get('source_domain'); ?>
+        	<?php $modal_streams 		= ''; ?>
+        	<?php $reinstall_modals 	= ''; ?>
+        	<?php $web_player_links 	= ''; ?>
+        	<?php $server_id 			= get('server_id'); ?>
+        	<?php $source_domain 		= get('source_domain'); ?>
 
         	<?php
-	        	$query = $conn->query("SELECT `id`,`name`,`gpu_stats` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
-				if($query !== FALSE) {
-					$headends = $query->fetchAll(PDO::FETCH_ASSOC);
-				}
+	        	$query = $conn->query("SELECT `id`,`name` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
+				$headends = $query->fetchAll(PDO::FETCH_ASSOC);
 
 				if($server_id){
 					$query = $conn->query("SELECT `id`,`source`,`name` FROM `streams` WHERE `user_id` = '".$_SESSION['account']['id']."' AND `stream_type` = 'input' AND `server_id` = '".$server_id."' ");
