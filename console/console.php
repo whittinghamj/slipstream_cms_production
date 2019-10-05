@@ -50,7 +50,7 @@ if($task == 'node_checks') {
 	console_output("Checking nodes for online / offline status.");
 	$now = time();
 
-	$query = $conn->query("SELECT `id`,`updated` FROM `headend_servers` WHERE `status` != 'installing' ");
+	$query = $conn->query("SELECT `id`,`updated`,`name` FROM `headend_servers` WHERE `status` != 'installing' ");
 	$headends = $query->fetchAll(PDO::FETCH_ASSOC);
 	foreach($headends as $headend) {
 		$time_diff = $now - $headend['updated'];
