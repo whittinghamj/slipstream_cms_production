@@ -73,7 +73,7 @@ if(is_array($customer) && !empty($customer)){
                 $line_bouquets = json_decode($customer['bouquet'], true);
 
                 foreach ($line_bouquets as $bouquet_id) {
-                    $set_bouquet = $db->query('SELECT streams FROM bouquets WHERE id = ' . $bouquet_id);
+                    $set_bouquet = $conn->query('SELECT streams FROM bouquets WHERE id = ' . $bouquet_id);
 
                     if ($set_bouquet[0]['bouquet_streams'] != '') {
                         $bouquet_streams_decode = json_decode($set_bouquet[0]['streams'], true);
@@ -94,7 +94,7 @@ if(is_array($customer) && !empty($customer)){
                             $statement = '';
                         }
 
-                        $set_stream = $db->query('SELECT * FROM streams WHERE stream_id = $stream_id' . $statement);
+                        $set_stream = $conn->query('SELECT * FROM streams WHERE stream_id = $stream_id' . $statement);
 
                         if (0 < count($set_stream)) {
                             $streams['streams'][$set_stream[0]['stream_id']] = $set_stream[0];
@@ -132,7 +132,7 @@ if(is_array($customer) && !empty($customer)){
 
                 foreach ($line_bouquets as $bouquet_id) {
                     $set_bouquet_array = [$bouquet_id];
-                    $set_bouquet = $db->query('SELECT bouquet_series FROM cms_bouquets WHERE bouquet_id = $bouquet_id');
+                    $set_bouquet = $conn->query('SELECT bouquet_series FROM cms_bouquets WHERE bouquet_id = $bouquet_id');
 
                     if ($set_bouquet[0]['bouquet_series'] != '') {
                         $bouquet_series_decode = json_decode($set_bouquet[0]['bouquet_series'], true);
@@ -190,14 +190,14 @@ if(is_array($customer) && !empty($customer)){
                 $series_info = array();
                 $output['info'] = array();
                 $output['episodes'] = array();
-                $set_season = $db->query('
+                $set_season = $conn->query('
                                          SELECT count(cms_serie_episodes.episode_id) as episode_count, 
                                          cms_series.*, 
                                          cms_serie_episodes.* 
                                          FROM cms_serie_episodes 
                                          LEFT JOIN cms_series ON cms_series.serie_id = cms_serie_episodes.serie_id 
                                          WHERE cms_serie_episodes.serie_id = $series_id GROUP BY cms_serie_episodes.serie_episode_season');
-                $set_serie_episode = $db->query('SELECT * FROM cms_serie_episodes WHERE serie_id = $series_id');
+                $set_serie_episode = $conn->query('SELECT * FROM cms_serie_episodes WHERE serie_id = $series_id');
                 $episode_array = array();
 
                 foreach ($set_serie_episode as $get_serie_episode) {
@@ -214,7 +214,7 @@ if(is_array($customer) && !empty($customer)){
                     $output['seasons']['seasons'][] = ['air_date' => '', 'episode_count' => $season_value['episode_count'], 'id' => $season_value['episode_id'], 'name' => 'Season ' . ($season_key + 1), 'overview' => '', 'season_number' => $season_key + 1, 'cover' => $season_value['serie_pic'], 'cover_big' => $season_value['serie_pic']];
                     $output['seasons']['info'] = ['name' => $season_value['serie_name'], 'cover' => $season_value['serie_pic'], 'plot' => $season_value['serie_short_description'] != '' ? base64_decode($season_value['serie_short_description']) : '', 'cast' => '', 'director' => $season_value['serie_director'], 'genre' => $season_value['serie_genre'], 'releaseDate' => $season_value['serie_release_date'], 'last_modified' => '', 'reating' => '', 'rating_5based' => '', 'backdrop_path' => $season_value['serie_pic']];
                     $set_serie_episode_array = [$_REQUEST['series_id'], $season_key + 1];
-                    $set_serie_episode = $db->query('SELECT * FROM cms_serie_episodes WHERE serie_id = ? AND serie_episode_season = ?', $set_serie_episode_array);
+                    $set_serie_episode = $conn->query('SELECT * FROM cms_serie_episodes WHERE serie_id = ? AND serie_episode_season = ?', $set_serie_episode_array);
                     $episode_array = [];
 
                     foreach ($set_serie_episode as $get_serie_episode) {
