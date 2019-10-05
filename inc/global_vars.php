@@ -11,16 +11,7 @@ $site['copyright']				= 'Written by DeltaColo.';
 $site['name_long']				= 'SlipStream<b>CMS</b>';
 $site['name_short']				= '<b>SS</b>';
 
+// get settings table contents
 
-$whmcs['url'] 					= "http://clients.deltacolo.com/includes/api.php"; # URL to WHMCS API file
-$whmcs["username"] 				= "apiuser"; # Admin username goes here
-$whmcs["password"] 				= md5("dje773jeidkdje773jeidk"); # Admin password goes here  
-$whmcs['accesskey']				= 'admin1372';
-// product details
-$product_ids = array(
-					62, // single server license
-					
-					);
-
-$cloudflare['api_key']              = '63591d7026060b416f905718785e3446bc087';
-$cloudflare['email']                = 'aegrant@gmail.com';
+$query = $conn->query("SELECT * FROM `global_settings` ");
+$global_settings = $query->fetchAll(PDO::FETCH_ASSOC);

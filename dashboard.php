@@ -11004,7 +11004,7 @@ desired effect
         <?php } ?>
 
         <?php  function staging(){ ?>
-        	<?php global $conn, $globals, $account_details, $site; ?>
+        	<?php global $conn, $globals, $account_details, $site, $global_settings; ?>
 
             <div class="content-wrapper">
             
@@ -11030,6 +11030,9 @@ desired effect
                         
                     <h4><strong>$account_details</strong></h4>
                         <?php debug($account_details); ?>
+
+                    <h4><strong>$global_settings</strong></h4>
+                        <?php debug($global_settings); ?>
 
                     <h4><strong>$globals</strong></h4>
                         <?php debug($globals); ?>
