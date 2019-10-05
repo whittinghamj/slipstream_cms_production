@@ -16,6 +16,6 @@ $site['name_short']				= '<b>SS</b>';
 $query = $conn->query("SELECT `config_name`,`config_value` FROM `global_settings` ");
 $global_settings_temp = $query->fetchAll(PDO::FETCH_ASSOC);
 
-foreach($global_settings_temp as $key => $value){
-	$global_settings[$key] = $value;
+foreach($global_settings_temp as $bits){
+	$global_settings[$bits['config_name']] = $bits['config_value'];
 }
