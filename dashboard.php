@@ -3338,7 +3338,7 @@ desired effect
         <?php } ?>
 
         <?php function streams(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $modal_streams = ''; ?>
         	<?php $reinstall_modals = ''; ?>
         	<?php $web_player_links = ''; ?>
@@ -10638,7 +10638,7 @@ desired effect
 
     				$('#add_stream_url').val('');
 
-    				console.log('API URL: http://'.$global_settings['cms_access_url'].'/actions.php?a=inspect_remote_playlist&id='+val);
+    				console.log('API URL: http://<?php echo $global_settings['cms_access_url']; ?>/actions.php?a=inspect_remote_playlist&id='+val);
 
 	    			var div_id = $('#add_stream_url_list');
 
