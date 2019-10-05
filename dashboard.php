@@ -4331,6 +4331,8 @@ desired effect
 																					<select id="gpu" name="gpu" class="form-control">
 																						<?php 
 																							foreach($headend[0]['gpu_stats']['gpu'] as $gpu){
+																								$gpu['used_ram'] = str_replace(" MiB", "", $gpu['used_ram']);
+																								$gpu['total_ram'] = str_replace(" MiB", "", $gpu['total_ram']);
 																								?>
 																									<option <?php if($gpu['id']==$stream[0]['gpu']){echo"selected";} ?> value="<?php echo $gpu['id']; ?>">GPU: <?php echo $gpu['id']; ?> - <?php echo $gpu['gpu_name']; ?> 
 																										(<?php echo percentage($gpu['used_ram'], $gpu['total_ram'], 2); ?>% used)
