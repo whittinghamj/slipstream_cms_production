@@ -697,6 +697,11 @@ desired effect
 					my_account();
 					break;
 
+				// global_settings
+				case "global_settings":
+					global_settings();
+					break;
+
 				// transcoding_profiles
 				case "transcoding_profiles":
 					transcoding_profiles();
@@ -1188,6 +1193,300 @@ desired effect
 	                            </div>
 	                        </div>
 	                    </div>
+	                </div>
+
+	                <!--
+                    <div class="row">
+						<div class="col-lg-12">
+							<div class="box box-danger">
+		            			<div class="box-header">
+		              				<h3 class="box-title">
+		              					Reset My Account
+		              				</h3>
+		            			</div>
+								<div class="box-body">
+									<h3><font color="red">!!! WARNING !!!</font></h3>
+									Please be aware that this will remove / reset the following sections of the SlipStream CMS for your account.
+									<ul>ALL Streams</ul>
+									<ul>ALL Bouquets</ul>
+									<ul>ALL Packages</ul>
+									<ul>ALL Customers</ul>
+									<ul>ALL MAG Devices</ul>
+									<ul>ALL Resellers</ul>
+									Your servers will <strong>NOT</strong> be reset and will remain active inside your account..
+									<br>
+									<br>
+									<center>
+										<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('Are you sure?')" href="actions.php?a=reset_account">
+											<i class="fa fa-exclamation-circle">RESET ACCOUNT</i>
+										</a>
+									</center>
+								</div>
+							</div>
+						</div>
+					</div>
+					-->
+
+                    <?php if(get('dev') == 'yes'){ ?>
+	                    <div class="row">
+		                    <div class="col-lg-12">
+								<div class="box box-primary">
+			            			<div class="box-header">
+			              				<h3 class="box-title">
+			              					Account Details Dev
+			              				</h3>
+			              				<div class="pull-right">
+
+										</div>
+			            			</div>
+									<div class="box-body">
+										<?php debug($account_details); ?>
+									</div>
+								</div>
+							</div>
+						</div>
+
+	                    <div class="row">
+		                    <div class="col-lg-12">
+								<div class="box box-primary">
+			            			<div class="box-header">
+			              				<h3 class="box-title">
+			              					My Services
+			              				</h3>
+			              				<div class="pull-right">
+			              					
+										</div>
+			            			</div>
+									<div class="box-body">
+										<?php
+											// lets check their product status for late / non payment
+											$postfields["username"] 			= $whmcs['username'];
+											$postfields["password"] 			= $whmcs['password'];
+											$postfields["responsetype"] 		= "json";
+											$postfields["action"] 				= "getclientsproducts";
+											$postfields["clientid"] 			= $account_details['id'];
+											
+											$ch = curl_init();
+											curl_setopt($ch, CURLOPT_URL, $whmcs['url']);
+											curl_setopt($ch, CURLOPT_POST, 1);
+											curl_setopt($ch, CURLOPT_TIMEOUT, 100);
+											curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+											curl_setopt($ch, CURLOPT_SSLVERSION,3);
+											curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+											curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+											curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
+											$data = curl_exec($ch);
+											curl_close($ch);
+
+											$data = json_decode($data, true);
+
+											// debug($data);
+
+											foreach($data['products']['product'] as $product)
+											{	
+												if (in_array($product['pid'], $product_ids)) {
+												    // product match for this platform
+
+													debug($product);	    
+
+												    /*
+												    if($product['status'] != 'Active'){
+														// forward to billing area
+														$whmcsurl 			= "https://clients.deltacolo.com/dologin.php";
+														$autoauthkey 		= "admin1372";
+														$email 				= $email;
+														
+														$timestamp 			= time(); 
+														$goto 				= "clientarea.php";
+														
+														$hash 				= sha1($email.$timestamp.$autoauthkey);
+														
+														$url 				= $whmcsurl."?email=$email&timestamp=$timestamp&hash=$hash&goto=".urlencode($goto);
+														go($url);
+													}else{
+														$query = $conn->query("SELECT * FROM `users` WHERE `id` = '".$user_id."' ");
+														if($query !== FALSE) {
+															$user = $query->fetch(PDO::FETCH_ASSOC);
+
+															if(!$user){
+																$dt2 = new DateTime("+1 month");
+																$expires_in_one_month = $dt2->format("Y-m-d");
+
+																$insert = $conn->exec("INSERT INTO `users` 
+															        (`id`,`first_name`,`last_name`,`email`,`username`,`password`)
+															        VALUE
+															        ('".$client_data['userid']."',
+															        '".addslashes($client_data['firstname'])."',
+															        '".addslashes($client_data['lastname'])."',
+															        '".$email."',
+															        'user".rand(000000000,999999999)."',
+															        '".$password."'
+															    )");
+
+															    $user['type'] = 'customer';
+
+															    $customer_id = $conn->lastInsertId();
+															}else{
+																$update = $conn->exec("UPDATE `users` SET `first_name` = '".addslashes($client_data['firstname'])."' WHERE `id` = '".$client_data['userid']."' ");
+																$update = $conn->exec("UPDATE `users` SET `last_name` = '".addslashes($client_data['lastname'])."' WHERE `id` = '".$client_data['userid']."' ");
+															}
+
+															$_SESSION['logged_in']					= true;
+															$_SESSION['account']['id']				= $client_data['userid'];
+															$_SESSION['account']['type']			= $user['type'];	
+
+															status_message('success', 'Login successful');
+															go($site['url'].'dashboard.php?c=home');
+														}
+													}
+													*/
+												}
+											}
+										?>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?php } ?>
+                </section>
+            </div>
+        <?php } ?>
+
+       	<?php function global_settings(){ ?>
+        	<?php global $conn, $wp, $global_settings, $account_details, $site, $whmcs, $product_ids; ?>
+            <div class="content-wrapper">
+				
+                <div id="status_message"></div>
+                            	
+                <section class="content-header">
+                    <h1>Global Settings <!-- <small>Optional description</small> --></h1>
+                    <ol class="breadcrumb">
+                        <li><a href="dashboard.php">Dashboard</a></li>
+                        <li class="active">Global Settings</li>
+                    </ol>
+                </section>
+    
+                <section class="content">
+                	<div class="row">
+						<div class="col-lg-12">
+							<div class="box box-primary">
+		            			<div class="box-header">
+		              				<h3 class="box-title">
+		              					Global Settings
+		              				</h3>
+		            			</div>
+								<div class="box-body">
+									<form action="actions.php?a=global_settings" method="post" class="form-horizontal">
+	                                    <div class="form-group">
+	                                        <label for="firstname" class="col-sm-2 control-label">CMS Domain Name</label>
+	                                        <div class="col-sm-10">
+	                                            <input type="text" name="cms_domain_name" id="cms_domain_name" class="form-control" value="<?php echo $global_settings['cms_domain_name']; ?>" required>
+	                                        </div>
+	                                    </div>
+	                                    
+	                                    <div class="form-group">
+	                                        <label for="firstname" class="col-sm-2 control-label">CMS Main IP</label>
+	                                        <div class="col-sm-10">
+	                                            <input type="text" name="cms_ip" id="cms_ip" class="form-control" value="<?php echo $global_settings['cms_ip']; ?>" required>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="form-group">
+	                                        <label for="firstname" class="col-sm-2 control-label">CMS Port Number</label>
+	                                        <div class="col-sm-10">
+	                                            <input type="text" name="cms_port" id="cms_port" class="form-control" value="<?php echo $global_settings['cms_port']; ?>" readonly>
+	                                        </div>
+	                                    </div>
+	                                    
+	                                    <div class="form-group">
+	                                        <div class="col-sm-12">
+	                                            <button type="submit" class="btn btn-success">Submit</button>
+	                                        </div>
+	                                    </div>
+	                                </form>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                    <!--
+	                    <div class="col-lg-6">
+							<div class="box box-primary">
+		            			<div class="box-header">
+		              				<h3 class="box-title">
+		              					Reset Account Sections
+		              				</h3>
+		            			</div>
+								<div class="box-body">
+									<table class="table table-striped mb-none">
+										<thead>
+											<tr>
+												<th class="text-center">Entire Account</th>
+												<th class="text-center">Packages</th>
+												<th class="text-center">Bouquets</th>
+												<th class="text-center">Streams</th>
+												<th class="text-center">Customers</th>
+												<th class="text-center">MAG Devices</th>
+												<th class="text-center">Resellers</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=account">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=packages">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=bouquets">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=streams">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=customers">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=resellers">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+												<td>
+													<center>
+														<a title="Reset Account" class="btn btn-danger btn-flat btn-xl" onclick="return confirm('This action cannot be reversed. Are you sure?')" href="actions.php?a=reset_account&type=mag_devices">
+															<i class="fa fa-exclamation-circle"> Go</i>
+														</a>
+													</center>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+	                            </div>
+	                        </div>
+	                    </div>
+	                	-->
 	                </div>
 
 	                <!--
