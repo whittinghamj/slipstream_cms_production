@@ -4035,7 +4035,7 @@ function ajax_customer_line()
 
 function ajax_customer_lines()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$user_id = $_SESSION['account']['id'];
 

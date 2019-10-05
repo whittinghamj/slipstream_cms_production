@@ -19,3 +19,9 @@ $global_settings_temp = $query->fetchAll(PDO::FETCH_ASSOC);
 foreach($global_settings_temp as $bits){
 	$global_settings[$bits['config_name']] = $bits['config_value'];
 }
+
+if(empty($global_settings['cms_domain_name'])){
+	$global_settings['cms_access_url'] = $global_settings['cms_ip'];
+}else{
+	$global_settings['cms_access_url'] = $global_settings['cms_domain_name'];
+}

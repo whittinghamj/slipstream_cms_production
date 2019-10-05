@@ -1337,7 +1337,7 @@ desired effect
         <?php } ?>
 
         <?php function customers(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $customer_modals = ''; ?>
 
         	<?php 
