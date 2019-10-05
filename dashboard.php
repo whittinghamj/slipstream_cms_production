@@ -4274,7 +4274,6 @@ desired effect
 																		<div class="col-md-9">
 																			<select id="transcoding_profile_id" name="transcoding_profile_id" class="form-control" onchange="stream_set_transcode_or_restream(this);">
 																				<option <?php if($stream[0]['transcoding_profile_id']=='0'){echo"selected";} ?> value="0">Manual Settings</option>
-																				
 																				<?php 
 																					if(is_array($transcoding_profiles)) {
 																						foreach ($transcoding_profiles as $transcoding_profile) {
@@ -4301,7 +4300,6 @@ desired effect
 																				<select id="cpu_gpu" name="cpu_gpu" class="form-control" onchange="stream_set_transcode_hardware(this);">
 																					<option <?php if($stream[0]['cpu_gpu']=='copy'){echo"selected";} ?> value="copy">Copy / Pass-Through</option>
 																					<option <?php if($stream[0]['cpu_gpu']=='cpu'){echo"selected";} ?> value="cpu">CPU / Processor</option>
-																					
 																					<?php 
 																						if(is_array($headend[0]['gpu_stats'])) {
 																							?>
