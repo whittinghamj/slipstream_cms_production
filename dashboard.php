@@ -10267,7 +10267,7 @@ desired effect
 							console.log("Server UUID: " + data[i].server_uuid);
 
 							if(data[i].status == 'added') {
-								document.getElementById('new_server_results').innerHTML = 'Node Server Install:<br><code>wget -N --no-check-certificate http://slipstreamiptv.com/downloads/install_node.sh && bash install_node.sh</code><br><br><strong>CMS Server Address:</strong> <?php echo $global_settings['cms_access_url_raw'];?> <br><strong>CMS Server Port:</strong> <?php echo $global_settings['cms_port'];?> <br><strong>CMS Node Server UUID Key:</strong> '+data[i].server_uuid+' <br>';
+								document.getElementById('new_server_results').innerHTML = 'Node Server Install:<br><code>wget -N --no-check-certificate http://slipstreamiptv.com/downloads/install_node.sh && bash install_node.sh</code><br><br><strong>CMS Server Address:</strong> <?php echo $global_settings['cms_access_url_raw'];?> <br><strong>CMS Server Port:</strong> <?php echo $global_settings['cms_port'];?> <br><strong>New Server UUID Key:</strong> '+data[i].server_uuid+' <br>';
 							}else{
 								document.getElementById('new_server_results').innerHTML = '<strong>ERROR:</strong '+ data[i].error;
 							}
