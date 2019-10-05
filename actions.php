@@ -536,6 +536,10 @@ function global_settings()
 	$cms_name 			= addslashes($cms_name);
 	$cms_name 			= trim($cms_name);
 
+	if(empty($cms_name)){
+		$cms_name = 'SlipStream CMS';
+	}
+
 	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = '".$cms_domain_name."' 	WHERE `config_name` = 'cms_domain_name' ");
 	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = '".$cms_ip."' 				WHERE `config_name` = 'cms_port' ");
 	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = '".$cms_name."' 			WHERE `config_name` = 'cms_name' ");

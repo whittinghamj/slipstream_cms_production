@@ -1401,7 +1401,7 @@ desired effect
 	                                    <div class="form-group">
 	                                        <label for="firstname" class="col-sm-2 control-label">CMS Brand Name</label>
 	                                        <div class="col-sm-10">
-	                                            <input type="text" name="cms_name" id="cms_name" class="form-control" value="<?php echo $global_settings['cms_name']; ?>" readonly>
+	                                            <input type="text" name="cms_name" id="cms_name" class="form-control" value="<?php echo $global_settings['cms_name']; ?>" required>
 	                                        </div>
 	                                    </div>
 	                                    
