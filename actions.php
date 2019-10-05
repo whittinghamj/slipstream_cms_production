@@ -678,14 +678,19 @@ function ajax_headend(){
 }
 
 function headend_add(){
-	global $conn;
+	global $conn, $global_settings;
 
 	header("Content-Type:application/json; charset=utf-8");
 
 	$uuid 					= md5(time());
 
-	$name 					= addslashes($_GET['name']);
+	$name 					= post('name');
+	$name 					= addslashes($name);
 	$name 					= trim($name);
+
+	if(empty($name)){
+		$name = 'Node Server';
+	}
 
 	// $ip_address 			= addslashes($_GET['ip_address']);
 	// $ssh_port			= addslashes($_POST['ssh_port']);
