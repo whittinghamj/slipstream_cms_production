@@ -136,7 +136,7 @@ class mag_device extends BaseClass {
         switch($require_action){
             case "handshake":
                 $data = $this->_MAG_DATA;
-                $data["js"]
+                $data["js"]["token"] = strtoupper(md5(mktime(1) . uniqid()));
             case "get_profile":
                 $slipstream = array_merge($this->_MAG_DATA["get_profile"], $this->table_columns); // This is going to be a problem.
                 $slipstream["status"] = 1;
