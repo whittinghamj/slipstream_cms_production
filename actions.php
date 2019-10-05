@@ -1703,7 +1703,7 @@ function import_streams()
 	}
 
   	// read the uploaded m3u into an array
-  	$streams_raw 		= @file_get_contents("http://hub.slipstreamiptv.com/actions.php?a=inspect_m3u&url=http://hub.slipstreamiptv.com/m3u_uploads/".$_SESSION['account']['id'].'-'.str_replace(' ', '_',basename( $_FILES["m3u_file"]["name"])));
+  	$streams_raw 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u&url=http://".$global_settings['cms_access_url']."/m3u_uploads/".$_SESSION['account']['id'].'-'.str_replace(' ', '_',basename( $_FILES["m3u_file"]["name"])));
   	$streams 			= json_decode($streams_raw, true);
 	
 	foreach($streams as $stream) {
@@ -2040,7 +2040,7 @@ function analyse_stream()
 			// lets grab a screenshot
 			$random_img = md5($url);
 			$data[0]['screenshot_path'] = "/home2/slipstream/public_html/hub/screenshots/".$random_img.".png";
-			$data[0]['screenshot_url'] = "http://hub.slipstreamiptv.com/screenshots/".$random_img.".png";
+			$data[0]['screenshot_url'] = "http://".$global_settings['cms_access_url']."/screenshots/".$random_img.".png";
 			$screenshot = shell_exec("/etc/ffmpeg/ffmpeg -y -i '".$url."' -f image2 -vframes 1 /home2/slipstream/public_html/hub/screenshots/".$random_img.".png");
 			
 			$count = 1;
@@ -2321,7 +2321,7 @@ function export_m3u()
 		// $stream['headend'] = $query->fetchAll(PDO::FETCH_ASSOC);
 
 		print "#EXTINF:-1,".strtoupper($stream['stream_type'])." SOURCE - ".stripslashes($stream['name']).$new_line;
-		print "http://hub.slipstreamiptv.com/streams/".$stream['server_id']."/".$stream['id'].$new_line;
+		print "http://".$global_settings['cms_access_url']."/streams/".$stream['server_id']."/".$stream['id'].$new_line;
 	}
 }
 
@@ -3998,7 +3998,7 @@ function ajax_customer_line()
 		$content .= '<div class="form-group">';
 		$content .= '<label class="col-md-3 control-label" for="simple_m3u">M3U</label>';
 		$content .= '<div class="col-md-9">';
-		$content .= '<input type="text" class="form-control" value="http://slipstreamiptv.com/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u">';
+		$content .= '<input type="text" class="form-control" value="http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u">';
 		$content .= '</div>';
 		$content .= '</div>';
 		$content .= '</div>';
@@ -4009,7 +4009,7 @@ function ajax_customer_line()
 		$content .= '<div class="form-group">';
 		$content .= '<label class="col-md-3 control-label" for="advanced_m3u">M3U with Options</label>';
 		$content .= '<div class="col-md-9">';
-		$content .= '<input type="text" class="form-control" value="http://slipstreamiptv.com/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u">';
+		$content .= '<input type="text" class="form-control" value="http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u">';
 		$content .= '</div>';
 		$content .= '</div>';
 		$content .= '</div>';
@@ -4020,7 +4020,7 @@ function ajax_customer_line()
 		$content .= '<div class="form-group">';
 		$content .= '<label class="col-md-3 control-label" for="enigma">Enigma 2.0 Autscript - HLS</label>';
 		$content .= '<div class="col-md-9">';
-		$content .= '<input type="text" class="form-control" value="wget -O /etc/enigma2/iptv.sh \'http://slipstreamiptv.com/customers/'.$customer['username'].'/'.$customer['password'].'/enigma\' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh">';
+		$content .= '<input type="text" class="form-control" value="wget -O /etc/enigma2/iptv.sh \'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/enigma\' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh">';
 		$content .= '</div>';
 		$content .= '</div>';
 		$content .= '</div>';
@@ -4103,9 +4103,9 @@ function ajax_customer_lines()
 
 			$output[$count]['actions'] 						= '<a title="View / Edit" class="btn btn-info btn-flat btn-xs" href="dashboard.php?c=customer&customer_id='.$customer['id'].'"><i class="fa fa-gears"></i></a><a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=customer_delete&customer_id='.$customer['id'].'"><i class="fa fa-times"></i></a>';
 
-			$output[$count]['source_m3u'] 					= 'http://slipstreamiptv.com/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u';
-			$output[$count]['source_m3u8'] 					= 'http://slipstreamiptv.com/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u';
-			$output[$count]['source_enigma_autoscript'] 	= "wget -O /etc/enigma2/iptv.sh 'http://slipstreamiptv.com/customers/".$customer['username']."/".$customer['password']."/enigma' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh";
+			$output[$count]['source_m3u'] 					= 'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u';
+			$output[$count]['source_m3u8'] 					= 'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u';
+			$output[$count]['source_enigma_autoscript'] 	= "wget -O /etc/enigma2/iptv.sh 'http://'.$global_settings['cms_access_url'].'/customers/".$customer['username']."/".$customer['password']."/enigma' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh";
 
 			$count++;
 		}
