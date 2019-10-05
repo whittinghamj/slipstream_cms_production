@@ -2,8 +2,8 @@
 
 include('/var/www/html/portal/inc/db.php');
 include('/var/www/html/portal/inc/global_vars.php');
-include('/var/www/html/portal/functions.php');
-include('/var/www/html/portal//php_colors.php');
+include('/var/www/html/portal/inc/functions.php');
+include('/var/www/html/portal/inc/php_colors.php');
 
 date_default_timezone_set('UTC');
 
