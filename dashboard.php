@@ -3507,7 +3507,7 @@ desired effect
 												<div class="col-sm-10">
 													<select id="server" name="server" class="form-control">
 														<option>Select a Server</option>
-														<?
+														<?php
 															foreach($headends as $headend) {
 																echo '<option value="'.$headend['id'].'">'.$headend['name'].'</option>';
 															}
@@ -3526,7 +3526,7 @@ desired effect
 													<div class="col-md-10">
 														<select id="remote_playlist" name="remote_playlist" class="form-control" onchange="stream_add_playlist_get(this.value);">
 															<option value="manual">Enter Source URL Manually</option>
-															<?
+															<?php
 																foreach($playlists as $playlist) {
 																	echo '<option value="'.$playlist['id'].'">'.$playlist['name'].'</option>';
 																}
