@@ -4248,7 +4248,7 @@ desired effect
 																	<label class="col-sm-3 control-label" for="source_stream_id">Source Stream</label>
 																	<div class="col-sm-9">
 																		<select id="source_stream_id" name="source_stream_id" class="form-control">
-																			<?
+																			<?php
 																			$query = $conn->query("SELECT `id`,`name`,`server_id`,`source_type` FROM `streams` WHERE `user_id` = '".$_SESSION['account']['id']."' AND `stream_type` = 'input' ORDER BY `source_type`,`name` ASC");
 																			if($query !== FALSE) {
 																				$streams = $query->fetchAll(PDO::FETCH_ASSOC);
