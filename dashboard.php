@@ -4019,7 +4019,7 @@ desired effect
 			<?php
 				$query = $conn->query("SELECT * FROM `headend_servers` WHERE `id` = '".$stream[0]['server_id']."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 				$headend = $query->fetchAll(PDO::FETCH_ASSOC);
-				$headend['gpu_stats'] = json_decode($headend['gpu_stats'], true);
+				$headend[0]['gpu_stats'] = json_decode($headend[0]['gpu_stats'], true);
 			?>
 
 			<?php
