@@ -4012,9 +4012,14 @@ desired effect
 				}
 			?>
 
-			<?php $headend_raw 				= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
-			<?php error_log("http://".$global_settings['cms_access_url']."/actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
-			<?php $headend 					= json_decode($headend_raw, true); ?>
+			<?php // $headend_raw 				= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
+			<?php // error_log("http://".$global_settings['cms_access_url']."/actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
+			<?php // $headend 					= json_decode($headend_raw, true); ?>
+
+			<?php
+				$query = $conn->query("SELECT * FROM `headend_servers` WHERE `id` = '".$stream[0]['server_id']."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+				$headend = $query->fetchAll(PDO::FETCH_ASSOC);
+			?>
 
 			<?php
 				$dehash_padding 				= explode('-', $stream[0]['dehash_padding']);
