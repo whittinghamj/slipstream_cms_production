@@ -6373,8 +6373,6 @@ desired effect
 					</div>
 				</section>
             </div>
-
-            <?php echo $reinstall_modals; ?>
         <?php } ?>
 
         <?php function channels(){ ?>
