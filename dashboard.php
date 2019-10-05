@@ -6356,10 +6356,10 @@ desired effect
 																Size: '.$filesize.' | Dimensions: '.$width.'px x '.$height.'px
 															</td>
 															<td>
-																<code>https://slipstreamiptv.com/content/channel_icons/'.$filename_short.'</code>
+																<code>http://'.$global_settings['cms_access_url'].'/content/channel_icons/'.$filename_short.'</code>
 															</td>
 															<td>
-																<a href="https://slipstreamiptv.com/content/channel_icons/'.$filename_short.'" target="_blank">View</a>
+																<a href="http://'.$global_settings['cms_access_url'].'/content/channel_icons/'.$filename_short.'" target="_blank">View</a>
 															</td>
 														</tr>
 													';														
