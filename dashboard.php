@@ -4008,7 +4008,7 @@ desired effect
 				}
 			?>
 
-			<?php $headend_raw 				= @file_get_contents($site['url']."actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
+			<?php $headend_raw 				= @file_get_contents("actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
 			<?php $headend 					= json_decode($headend_raw, true); ?>
 
 			<?php
