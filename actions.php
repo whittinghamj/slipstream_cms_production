@@ -4105,7 +4105,7 @@ function ajax_customer_lines()
 
 			$output[$count]['source_m3u'] 					= 'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u';
 			$output[$count]['source_m3u8'] 					= 'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u';
-			$output[$count]['source_enigma_autoscript'] 	= "wget -O /etc/enigma2/iptv.sh 'http://'.$global_settings['cms_access_url'].'/customers/".$customer['username']."/".$customer['password']."/enigma' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh";
+			$output[$count]['source_enigma_autoscript'] 	= "wget -O /etc/enigma2/iptv.sh 'http://".$global_settings['cms_access_url']."/customers/".$customer['username']."/".$customer['password']."/enigma' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh";
 
 			$count++;
 		}
