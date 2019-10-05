@@ -17,11 +17,15 @@ $query = $conn->query("SELECT `config_name`,`config_value` FROM `global_settings
 $global_settings_temp = $query->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($global_settings_temp as $bits){
-	$global_settings[$bits['config_name']] = $bits['config_value'];
+	$global_settings[$bits['config_name']] 		= $bits['config_value'];
 }
 
 if(empty($global_settings['cms_domain_name'])){
-	$global_settings['cms_access_url'] = $global_settings['cms_ip'].":".$global_settings['cms_port'];
+	$global_settings['cms_access_url'] 			= $global_settings['cms_ip'].":".$global_settings['cms_port'];
 }else{
-	$global_settings['cms_access_url'] = $global_settings['cms_domain_name'].":".$global_settings['cms_port'];
+	$global_settings['cms_access_url'] 			= $global_settings['cms_domain_name'].":".$global_settings['cms_port'];
+}
+
+if($global_settings['cms_name'] != 'SlipStream CMS'){
+	$site['title'] 								= $global_settings['cms_name'];
 }
