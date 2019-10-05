@@ -3993,10 +3993,10 @@ desired effect
         <?php } ?>
 
         <?php function stream(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $stream_id = get('stream_id'); ?>
 
-			<?php $stream_raw 				= @file_get_contents($site['url']."actions.php?a=ajax_stream&stream_id=".$stream_id); ?>
+			<?php $stream_raw 				= @file_get_contents($global_settings['cms_access_url']."/actions.php?a=ajax_stream&stream_id=".$stream_id); ?>
 			<?php $stream 					= json_decode($stream_raw, true); ?>
 			<?php 
 				if($stream[0]['stream_type'] == 'output'){ 
@@ -4008,7 +4008,7 @@ desired effect
 				}
 			?>
 
-			<?php $headend_raw 				= @file_get_contents("actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
+			<?php $headend_raw 				= @file_get_contents($global_settings['cms_access_url']."/actions.php?a=ajax_headend&server_id=".$stream[0]['server_id']); ?>
 			<?php $headend 					= json_decode($headend_raw, true); ?>
 
 			<?php
