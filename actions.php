@@ -4103,9 +4103,9 @@ function ajax_customer_lines()
 
 			$output[$count]['actions'] 						= '<a title="View / Edit" class="btn btn-info btn-flat btn-xs" href="dashboard.php?c=customer&customer_id='.$customer['id'].'"><i class="fa fa-gears"></i></a><a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=customer_delete&customer_id='.$customer['id'].'"><i class="fa fa-times"></i></a>';
 
-			$output[$count]['source_m3u'] 					= 'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u';
-			$output[$count]['source_m3u8'] 					= 'http://'.$global_settings['cms_access_url'].'/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u';
-			$output[$count]['source_enigma_autoscript'] 	= "wget -O /etc/enigma2/iptv.sh 'http://".$global_settings['cms_access_url']."/customers/".$customer['username']."/".$customer['password']."/enigma' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh";
+			$output[$count]['source_m3u'] 					= 'http://'.$global_settings['cms_access_url_raw'].':'.$global_settings['cms_port'].'/customers/'.$customer['username'].'/'.$customer['password'].'/simple_m3u';
+			$output[$count]['source_m3u8'] 					= 'http://'.$global_settings['cms_access_url'].':'.$global_settings['cms_port'].'/customers/'.$customer['username'].'/'.$customer['password'].'/advanced_m3u';
+			$output[$count]['source_enigma_autoscript'] 	= "wget -O /etc/enigma2/iptv.sh 'http://".$global_settings['cms_access_url'].":".$global_settings['cms_port']."/customers/".$customer['username']."/".$customer['password']."/enigma' && chmod 777 /etc/enigma2/iptv.sh && /etc/enigma2/iptv.sh";
 
 			$count++;
 		}
