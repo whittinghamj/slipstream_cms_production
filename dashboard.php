@@ -3996,8 +3996,12 @@ desired effect
         	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $stream_id = get('stream_id'); ?>
 
-			<?php $stream_raw 				= @file_get_contents($global_settings['cms_access_url']."/actions.php?a=ajax_stream&stream_id=".$stream_id); ?>
-			<?php $stream 					= json_decode($stream_raw, true); ?>
+			<?php // $stream_raw 				= @file_get_contents($global_settings['cms_access_url']."/actions.php?a=ajax_stream&stream_id=".$stream_id); ?>
+			<?php // $stream 					= json_decode($stream_raw, true); ?>
+			<?php
+				$query = $conn->query("SELECT * FROM `streams` WHERE `id` = '".$stream_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+				$stream = $query->fetchAll(PDO::FETCH_ASSOC);
+			?>
 			<?php 
 				if($stream[0]['stream_type'] == 'output'){ 
 					$query = $conn->query("SELECT `id`,`name` FROM `streams` WHERE `id` = '".$stream[0]['source_stream_id']."' ");
