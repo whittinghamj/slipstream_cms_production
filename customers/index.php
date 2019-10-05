@@ -174,7 +174,7 @@ if($type == 'flussonic') {
 			}else{
 				print '#EXTINF:-1,'.stripslashes($stream['name']).$stream['source_type'].'['.strtoupper($stream['status']).']'.$new_line;
 			}
-			print "http://slipstreamiptv.com/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
+			print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
 		}
 	}
 
@@ -185,7 +185,7 @@ if($type == 'flussonic') {
 
 		foreach($channels as $channel) {
 			print '#EXTINF:-1,'.stripslashes($channel['name']).$new_line;
-			print "http://slipstreamiptv.com/customer_channels/".$customer['username']."/".$customer['password']."/".$channel['server_id']."/".$channel['id'].$new_line;
+			print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_channels/".$customer['username']."/".$customer['password']."/".$channel['server_id']."/".$channel['id'].$new_line;
 		}
 	}
 
@@ -205,7 +205,7 @@ if($type == 'flussonic') {
 
 				foreach($series_files as $series_file) {
 					print '#EXTINF:-1,'.stripslashes($series_file['name']).$new_line;
-					print "http://slipstreamiptv.com/customer_series/".$customer['username']."/".$customer['password']."/".$series['server_id']."/".$series_file['id'].$new_line;
+					print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_series/".$customer['username']."/".$customer['password']."/".$series['server_id']."/".$series_file['id'].$new_line;
 				}
 			}
 		}
@@ -226,7 +226,7 @@ if($type == 'flussonic') {
 				}
 
 				print '#EXTINF:-1,'.stripslashes($vod['name']).$new_line;
-				print "http://slipstreamiptv.com/customer_vod/".$customer['username']."/".$customer['password']."/".$vod['server_id']."/".$vod['id'].$new_line;
+				print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_vod/".$customer['username']."/".$customer['password']."/".$vod['server_id']."/".$vod['id'].$new_line;
 			}
 		}
 	}
@@ -283,7 +283,7 @@ if($type == 'flussonic') {
 					print '#EXTINF:-1 tvg-ID="'.stripslashes($stream['name']).'" tvg-name="'.stripslashes($stream['name']).'" tvg-logo="'.$logo.'" group-title="LIVE: '.$stream_category['name'].'",'.stripslashes($stream['name']).$stream['source_type'].'['.strtoupper($stream['status']).']'.$new_line;
 				}
 			}
-			print "http://slipstreamiptv.com/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
+			print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
 		}
 	}
 
@@ -295,7 +295,7 @@ if($type == 'flussonic') {
 		foreach($channels as $channel) {
 			// print '#EXTINF:-1,'.stripslashes($channel['name']).$new_line;
 			print '#EXTINF:-1 tvg-ID="" tvg-name="'.stripslashes($channel['name']).'" tvg-logo="'.$channel['cover_photo'].'" group-title="24/7 Channels",'.stripslashes($channel['name']).$new_line;
-			print "http://slipstreamiptv.com/customer_channels/".$customer['username']."/".$customer['password']."/".$channel['server_id']."/".$channel['id'].$new_line;
+			print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_channels/".$customer['username']."/".$customer['password']."/".$channel['server_id']."/".$channel['id'].$new_line;
 		}
 	}
 
@@ -317,7 +317,7 @@ if($type == 'flussonic') {
 
 					print '#EXTINF:-1 tvg-ID="" tvg-name="'.stripslashes($series['name']).'" tvg-logo="'.$series['cover_photo'].'" group-title="SERIES: '.stripslashes($series['name']).'",'.stripslashes($series['name']).' > '.stripslashes($series_file['name']).$new_line;
 					
-					print "http://slipstreamiptv.com/customer_series/".$customer['username']."/".$customer['password']."/".$series['server_id']."/".$series_file['id'].$new_line;
+					print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_series/".$customer['username']."/".$customer['password']."/".$series['server_id']."/".$series_file['id'].$new_line;
 				}
 			}
 		}
@@ -338,7 +338,7 @@ if($type == 'flussonic') {
 				}
 
 				print '#EXTINF:-1 tvg-ID="" tvg-name="'.stripslashes($vod['name']).'" tvg-logo="'.$logo.'" group-title="VOD",'.stripslashes($vod['name']).$new_line;
-				print "http://slipstreamiptv.com/customer_vod/".$customer['username']."/".$customer['password']."/".$vod['server_id']."/".$vod['id'].$new_line;
+				print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_vod/".$customer['username']."/".$customer['password']."/".$vod['server_id']."/".$vod['id'].$new_line;
 			}
 		}
 	}
@@ -346,7 +346,7 @@ if($type == 'flussonic') {
 	header("Content-type: text/plain");
 	header("Content-Disposition: attachment; filename=iptv.sh");
 
-	$template = file_get_contents('http://slipstreamiptv.com/downloads/enigma_autoscript_template.txt');
+	$template = file_get_contents("http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/downloads/enigma_autoscript_template.txt");
 
 	$template = str_replace('{$USERNAME}', $username, $template);
 	$template = str_replace('{$PASSWORD}', $password, $template);
@@ -374,7 +374,7 @@ if($type == 'flussonic') {
 	$streams = $query->fetchAll(PDO::FETCH_ASSOC);
 
 	foreach($streams as $stream) {
-		print "#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//hub.slipstreamiptv.com/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].'.ts'.$new_line;
+		print "#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].'.ts'.$new_line;
 		print "#DESCRIPTION ".stripslashes($stream['name']).$new_line;
 	}
 }else{
