@@ -1,9 +1,9 @@
 <?php
 
-include('/data/wwwroot/default/inc/global_vars.php');
-include('/data/wwwroot/default/inc/db.php');
-include('/data/wwwroot/default/inc/functions.php');
-include('/data/wwwroot/default/inc//php_colors.php');
+include('/var/www/html/portal/inc/db.php');
+include('/var/www/html/portal/inc/global_vars.php');
+include('/var/www/html/portal/functions.php');
+include('/var/www/html/portal//php_colors.php');
 
 date_default_timezone_set('UTC');
 
