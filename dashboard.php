@@ -4152,8 +4152,8 @@ desired effect
 																<label class="col-sm-3 control-label">Server</label>
 																<div class="col-sm-9">
 																	<select id="server_id" name="server_id" class="form-control">
-																		<?
-																		$query = $conn->query("SELECT `id`,`name`,`gpu_stats` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
+																		<?php
+																		$query = $conn->query("SELECT `id`,`name` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
 																		if($query !== FALSE) {
 																			$headends = $query->fetchAll(PDO::FETCH_ASSOC);
 																			foreach($headends as $server) {
@@ -4211,7 +4211,7 @@ desired effect
 																	<div class="col-sm-9">
 																		<select id="category_id" name="category_id" class="form-control">
 																			<option <?php if($stream[0]['category_id']=='0'){echo"selected";} ?> value="0">None</option>
-																			<?
+																			<?php
 																			$query = $conn->query("SELECT * FROM `stream_categories` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
 																			if($query !== FALSE) {
 																				$categories = $query->fetchAll(PDO::FETCH_ASSOC);
