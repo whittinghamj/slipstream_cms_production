@@ -400,7 +400,7 @@ if($type == 'flussonic') {
 
 		echo 'Bouquet ID: '.$bouquet.'<br>';
 		// get streams for this bouquet
-		$query 						= $conn->query("SELECT `streams` FROM `bouquets` WHERE `id` = '".$bouquet['id']."'");
+		$query 						= $conn->query("SELECT `streams` FROM `bouquets` WHERE `id` = '".$bouquet."'");
 		$temp_bouquet 				= $query->fetch(PDO::FETCH_ASSOC);
 		$temp_bouquet['streams'] 	= explode(",", $temp_bouquet['streams']);
 
