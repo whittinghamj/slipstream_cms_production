@@ -866,7 +866,9 @@ VALUES
   (1, 'cms_ip', ''),
   (2, 'cms_port', ''),
   (3, 'cms_domain_name', ''),
-  (4, 'cms_name', 'SlipStream CMS');
+  (4, 'cms_name', 'SlipStream CMS'),
+  (5, 'cms_terms_accepted', 'no'),
+  (6, 'WHMCS', 'aHR0cDovL2NsaWVudHMuZGVsdGFjb2xvLmNvbS9tb2R1bGVzL3NlcnZlcnMvbGljZW5zaW5nL3ZlcmlmeS5waHA=');
 
 
 
