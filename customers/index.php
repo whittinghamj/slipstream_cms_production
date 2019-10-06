@@ -390,6 +390,8 @@ if($type == 'flussonic') {
 	// #EXTINF:-1,CHANNEL NAME
 	// http://link.to.stream
 
+	debug($customer);
+
 	// print "#EXTM3U".$new_line;
 
 	// build live tv list
