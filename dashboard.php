@@ -3949,7 +3949,7 @@ desired effect
 												<div class="col-sm-10">
 													<select id="server" name="server" class="form-control">
 														<option>Select a Server</option>
-														<?
+														<?php
 															foreach($headends as $headend) {
 																echo '<option value="'.$headend['id'].'">'.$headend['name'].'</option>';
 															}
