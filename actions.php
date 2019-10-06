@@ -526,7 +526,7 @@ function test(){
 
 function global_settings()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$cms_domain_name 	= post('cms_domain_name');
 	$cms_domain_name 	= addslashes($cms_domain_name);
@@ -558,7 +558,7 @@ function global_settings()
 }
 
 function server_delete(){
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id = get('server_id');
 
@@ -592,7 +592,7 @@ function server_delete(){
 }
 
 function ajax_headends(){
-	global $conn;
+	global $conn, $global_settings;
 
 	header("Content-Type:application/json; charset=utf-8");
 
@@ -631,7 +631,7 @@ function ajax_headends(){
 }
 
 function ajax_headend(){
-	global $conn;
+	global $conn, $global_settings;
 
 	header("Content-Type:application/json; charset=utf-8");
 
@@ -729,7 +729,7 @@ function headend_add(){
 
 function headend_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id 			= $_POST['server_id'];
 	$name 				= addslashes($_POST['name']);
@@ -759,7 +759,7 @@ function headend_update()
 
 function ajax_sources_audio()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id = $_GET['server_id'];
 
@@ -775,7 +775,7 @@ function ajax_sources_audio()
 
 function ajax_source_video()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$source_id = $_GET['source_id'];
 
@@ -791,7 +791,7 @@ function ajax_source_video()
 
 function ajax_streams_list()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$user_id = $_SESSION['account']['id'];
 
@@ -1189,7 +1189,7 @@ function ajax_streams_list()
 
 function job_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 
 	$server_id 			= addslashes($_GET['server_id']);
@@ -1222,7 +1222,7 @@ function job_add()
 
 function ajax_logs()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	header("Content-Type:application/json; charset=utf-8");
 
@@ -1246,7 +1246,7 @@ function ajax_logs()
 
 function source_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$source_id 						= $_POST['source_id'];
 
@@ -1281,7 +1281,7 @@ function source_update()
 
 function source_stop()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$source_id = get('source_id');
 
@@ -1292,7 +1292,7 @@ function source_stop()
 
 function source_start()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$source_id = get('source_id');
 
@@ -1303,7 +1303,7 @@ function source_start()
 
 function source_scan()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$source_id = $_GET['source_id'];
 
@@ -1338,7 +1338,7 @@ function source_scan()
 
 function ajax_stream()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	header("Content-Type:application/json; charset=utf-8");
 
@@ -1368,7 +1368,7 @@ function ajax_stream()
 
 function stream_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id 						= addslashes($_POST['stream_id']);
 
@@ -1504,7 +1504,7 @@ function stream_update()
 
 function stream_update_fingerprint()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id 						= addslashes($_POST['stream_id']);
 
@@ -1530,7 +1530,7 @@ function stream_update_fingerprint()
 
 function stream_update_dehash()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id 						= addslashes($_POST['stream_id']);
 
@@ -1586,7 +1586,7 @@ function stream_restart()
 
 function stream_stop()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id = get('stream_id');
 
@@ -1613,7 +1613,7 @@ function stream_stop()
 
 function stream_start()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id = get('stream_id');
 
@@ -1642,7 +1642,7 @@ function stream_start()
 
 function stream_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$rand 				= md5(rand(00000,99999).time());
 	
@@ -1706,7 +1706,7 @@ function stream_add()
 
 function import_streams()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	// handle file upload
 	$target_dir = "m3u_uploads/";
@@ -1821,7 +1821,7 @@ function import_streams()
 
 function stream_add_output()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$rand 				= md5(rand(00000,99999).time());
 	
@@ -1858,7 +1858,7 @@ function stream_add_output()
 
 function stream_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id = get('stream_id');
 
@@ -2000,7 +2000,7 @@ function inspect_m3u_encoded()
 
 function inspect_remote_playlist()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	header('Content-Type: application/json');
 
@@ -2123,7 +2123,7 @@ function analyse_stream()
 
 function cdn_stream_start()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id = get('server_id');
 	$stream_id = get('stream_id');
@@ -2148,7 +2148,7 @@ function cdn_stream_start()
 
 function cdn_stream_stop()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$stream_id = get('stream_id');
 	$server_id = get('server_id');
@@ -2177,7 +2177,7 @@ function cdn_stream_stop()
 
 function acl_rule_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id 		= post( 'server_id' );
 	$ip_address 	= post( 'ip_address' );
@@ -2201,7 +2201,7 @@ function acl_rule_add()
 
 function acl_rule_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$rule_id = get('rule_id');
 
@@ -2294,7 +2294,7 @@ function stream_disable_format()
 
 function streams_restart_all()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$data['action'] = 'streams_restart_all';
 	$data['command'] = '';
@@ -2322,7 +2322,7 @@ function streams_restart_all()
 
 function streams_stop_all()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$update = $conn->exec("UPDATE `streams` SET `enable` = 'no' WHERE `user_id` = '".$_SESSION['account']['id']."' ");
 	$update = $conn->exec("UPDATE `streams` SET `fps` = '' WHERE `user_id` = '".$_SESSION['account']['id']."' ");
@@ -2336,7 +2336,7 @@ function streams_stop_all()
 
 function streams_start_all()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	// set enable = 'yes' for all streams
 	$update = $conn->exec("UPDATE `streams` SET `enable` = 'yes' WHERE `user_id` = '".$_SESSION['account']['id']."' ");
@@ -2351,7 +2351,7 @@ function streams_start_all()
 
 function export_m3u()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	//Generate text file on the fly
 	header("Content-type: text/plain");
@@ -2382,7 +2382,7 @@ function export_m3u()
 
 function my_account_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$firstname 				= addslashes($_POST['firstname']);
 	$lastname 				= addslashes($_POST['lastname']);
@@ -2409,7 +2409,7 @@ function my_account_update()
 
 function customer_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 		
 	$first_name 		= addslashes($_POST['first_name']);
 	$first_name 		= trim($first_name);
@@ -2483,7 +2483,7 @@ function customer_add()
 
 function customer_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$customer_id 		= addslashes($_POST['customer_id']);
 
@@ -2552,7 +2552,7 @@ function customer_update()
 
 function customer_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$customer_id = get('customer_id');
 
@@ -2565,7 +2565,7 @@ function customer_delete()
 
 function transcoding_profile_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$name 				= addslashes($_POST['name']);
 	$name 				= trim($name);
@@ -2588,7 +2588,7 @@ function transcoding_profile_add()
 
 function transcoding_profile_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$profile_id 		= $_POST['profile_id'];
 	$name 				= $_POST['name'];
@@ -2620,7 +2620,7 @@ function transcoding_profile_update()
 
 function transcoding_profile_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$profile_id = get('profile_id');
 
@@ -2713,7 +2713,7 @@ function restart_transcoding_profile_streams()
 
 function stream_category_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$name 				= addslashes($_POST['name']);
 
@@ -2733,7 +2733,7 @@ function stream_category_add()
 
 function stream_category_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$category_id = get('category_id');
 
@@ -2752,7 +2752,7 @@ function stream_category_delete()
 
 function tv_series_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$server_id			= addslashes($_POST['server_id']);
 	if(empty($_POST['server_id']) || $_POST['server_id'] == 0){
@@ -2811,7 +2811,7 @@ function tv_series_add()
 
 function tv_series_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$series_id 						= addslashes($_POST['series_id']);
 
@@ -2837,7 +2837,7 @@ function tv_series_update()
 
 function tv_series_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$series_id = get('series_id');
 
@@ -2851,7 +2851,7 @@ function tv_series_delete()
 
 function tv_series_episode_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$server_id			= addslashes($_POST['server_id']);
 
@@ -2889,7 +2889,7 @@ function tv_series_episode_add()
 
 function tv_series_update_order()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	foreach($_POST['order'] as $key => $value) {
 		$update = $conn->exec("UPDATE `tv_series_files` SET `order` = '".addslashes($value)."' WHERE `id` = '".$key."' AND `user_id` = '".$_SESSION['account']['id']."' ");
@@ -2906,7 +2906,7 @@ function tv_series_update_order()
 
 function tv_series_start()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$series_id = get('series_id');
 
@@ -2919,7 +2919,7 @@ function tv_series_start()
 
 function tv_series_stop()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$series_id = get('series_id');
 
@@ -2932,7 +2932,7 @@ function tv_series_stop()
 
 function vod_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$server_id			= addslashes($_POST['server_id']);
 	if(empty($_POST['server_id']) || $_POST['server_id'] == 0){
@@ -2995,7 +2995,7 @@ function vod_add()
 
 function vod_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$vod_id 						= addslashes($_POST['vod_id']);
 
@@ -3039,7 +3039,7 @@ function vod_update()
 
 function vod_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$vod_id = get('vod_id');
 
@@ -3052,7 +3052,7 @@ function vod_delete()
 
 function channel_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$server_id			= addslashes($_POST['server_id']);
 	if(empty($_POST['server_id']) || $_POST['server_id'] == 0){
@@ -3111,7 +3111,7 @@ function channel_add()
 
 function channel_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id 							= addslashes($_POST['id']);
 
@@ -3137,7 +3137,7 @@ function channel_update()
 
 function channel_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3151,7 +3151,7 @@ function channel_delete()
 
 function channel_episode_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id			= addslashes($_POST['server_id']);
 
@@ -3191,7 +3191,7 @@ function channel_episode_add()
 
 function channel_episode_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3204,7 +3204,7 @@ function channel_episode_delete()
 
 function channel_episode_delete_all()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3216,7 +3216,7 @@ function channel_episode_delete_all()
 
 function channel_episode_scan_folder()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id			= addslashes($_POST['server_id']);
 
@@ -3296,7 +3296,7 @@ function channel_episode_scan_folder()
 
 function channel_update_order()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	foreach($_POST['order'] as $key => $value) {
 		$update = $conn->exec("UPDATE `channels_files` SET `order` = '".addslashes($value)."' WHERE `id` = '".$key."' AND `user_id` = '".$_SESSION['account']['id']."' ");
@@ -3317,7 +3317,7 @@ function channel_update_order()
 
 function channel_start()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3332,7 +3332,7 @@ function channel_start()
 
 function channel_stop()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3346,7 +3346,7 @@ function channel_stop()
 
 function dns_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 		
 	$server_id 			= addslashes($_POST['server_id']);
 	$query 				= $conn->query("SELECT `wan_ip_address` FROM `headend_servers` WHERE `id` = '".$server_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
@@ -3390,7 +3390,7 @@ function dns_add()
 
 function dns_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$customer_id 		= addslashes($_POST['customer_id']);
 	$status 			= addslashes($_POST['status']);
@@ -3418,7 +3418,7 @@ function dns_update()
 
 function dns_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3583,7 +3583,7 @@ function stream_multi_options()
 
 function channels_stop_all()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$update = $conn->exec("UPDATE `channels` SET `enable` = 'no' 		WHERE `user_id` = '".$_SESSION['account']['id']."' ");
 	$update = $conn->exec("UPDATE `channels` SET `uptime` = ''			WHERE `user_id` = '".$_SESSION['account']['id']."' ");
@@ -3594,7 +3594,7 @@ function channels_stop_all()
 
 function channels_start_all()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	// set enable = 'yes' for all streams
 	$update = $conn->exec("UPDATE `channels` SET `enable` = 'yes' WHERE `user_id` = '".$_SESSION['account']['id']."' ");
@@ -3607,7 +3607,7 @@ function channels_start_all()
 
 function bulk_update_sources()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$old_source_url = get('old_source_url');
 	$new_source_url = get('new_source_url');
@@ -3620,7 +3620,7 @@ function bulk_update_sources()
 
 function remote_playlist_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$name 				= addslashes($_POST['name']);
 	$name 				= trim($name);
@@ -3644,7 +3644,7 @@ function remote_playlist_add()
 
 function remote_playlist_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$customer_id 		= addslashes($_POST['customer_id']);
 	$status 			= addslashes($_POST['status']);
@@ -3672,7 +3672,7 @@ function remote_playlist_update()
 
 function remote_playlist_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3684,7 +3684,7 @@ function remote_playlist_delete()
 
 function roku_device_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$server_id 			= addslashes($_POST['server']);
 
@@ -3718,7 +3718,7 @@ function roku_device_add()
 
 function roku_device_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$device_id 			= addslashes($_POST['device_id']);
 	$server_id 			= addslashes($_POST['server_id']);
@@ -3741,7 +3741,7 @@ function roku_device_update()
 
 function roku_device_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$id = get('id');
 
@@ -3753,7 +3753,7 @@ function roku_device_delete()
 
 function playlist_checker()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$url 				= addslashes($_POST['playlist_url']);
 	$url 				= trim($url);
@@ -3766,7 +3766,7 @@ function playlist_checker()
 
 function ajax_stream_checker()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	header("Content-Type:application/json; charset=utf-8");
 
@@ -3798,7 +3798,7 @@ function ajax_stream_checker()
 
 function reseller_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 		
 	$first_name 		= addslashes($_POST['first_name']);
 	$last_name 			= addslashes($_POST['last_name']);
@@ -3832,7 +3832,7 @@ function reseller_add()
 
 function reseller_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$reseller_id 		= addslashes($_POST['reseller_id']);
 	$status 			= addslashes($_POST['status']);
@@ -3862,7 +3862,7 @@ function reseller_update()
 
 function reseller_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$reseller_id = get('reseller_id');
 
@@ -3925,7 +3925,7 @@ function xc_import(){
 
 function reset_account()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$user_id			= $_SESSION['account']['id'];
 	$type 				= $_GET['type'];
@@ -3963,7 +3963,7 @@ function reset_account()
 
 function bouquet_add()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$name 				= addslashes($_POST['name']);
 
@@ -3983,7 +3983,7 @@ function bouquet_add()
 
 function bouquet_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$bouquet_id 		= addslashes($_POST['bouquet_id']);
 	
@@ -3998,7 +3998,7 @@ function bouquet_update()
 
 function bouquet_streams_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$bouquet_id 		= addslashes($_POST['bouquet_id']);
 	
@@ -4021,7 +4021,7 @@ function bouquet_streams_update()
 
 function bouquet_streams_order_update()
 {
-	global $conn;
+	global $conn, $global_settings;
 	
 	$bouquet_id 		= addslashes($_GET['bouquet_id']);
 
@@ -4039,7 +4039,7 @@ function bouquet_streams_order_update()
 
 function bouquet_delete()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$bouquet_id = get('bouquet_id');
 
@@ -4057,7 +4057,7 @@ function bouquet_delete()
 
 function ajax_customer_line()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$customer_id = get('customer_id');
 
@@ -4217,7 +4217,7 @@ function ajax_http_proxy(){
 
 function accept_terms()
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = 'yes' WHERE `config_name` = 'cms_terms_accepted' ");
 
