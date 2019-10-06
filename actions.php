@@ -1784,7 +1784,7 @@ function import_streams()
 		        '".$server_id."',
 		        'input',
 		        '".$name."',
-		        'yes',
+		        'no',
 		        '".$source."',
 		        'cpu',
 		        'analysing',
