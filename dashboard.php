@@ -1841,6 +1841,7 @@ desired effect
 			<?php 
 				$query = $conn->query("SELECT * FROM `customers` WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 				$customer = $query->fetch(PDO::FETCH_ASSOC);
+				$customer_bouquets = explode(",", $customer['bouquet']);
 			?>
 			
 			<?php 
@@ -1907,6 +1908,7 @@ desired effect
 															<?php if(isset($_GET['dev']) && $_GET['dev'] == 'yes') { ?>
 																<pre>
 																	<?php print_r($customer); ?>
+																	<?php print_r($customer_bouquets); ?>
 																	<?php print_r($bouquets); ?>
 																</pre>
 															<?php } ?>
@@ -1946,10 +1948,10 @@ desired effect
 															<div class="form-group">
 																<label class="col-md-2 control-label" for="username">Login</label>
 																<div class="col-md-5">
-																	<input type="text" class="form-control" id="username" name="username" value="<?php echo stripslashes($customer['username']); ?>">
+																	<input type="text" class="form-control" id="username" name="username" value="<?php echo stripslashes($customer['username']); ?>" required>
 																</div>
 																<div class="col-md-5">
-																	<input type="text" class="form-control" id="password" name="password" value="<?php echo stripslashes($customer['password']); ?>">
+																	<input type="text" class="form-control" id="password" name="password" value="<?php echo stripslashes($customer['password']); ?>" required>
 																</div>
 															</div>
 
@@ -1957,7 +1959,7 @@ desired effect
 															<div class="form-group">
 																<label class="col-md-2 control-label" for="max_connections">Connections</label>
 																<div class="col-md-4">
-																	<input type="text" class="form-control" id="max_connections" name="max_connections" value="<?php echo stripslashes($customer['max_connections']); ?>" required="">
+																	<input type="text" class="form-control" id="max_connections" name="max_connections" value="<?php echo stripslashes($customer['max_connections']); ?>" required>
 																</div>
 
 																<label class="col-md-2 control-label" for="expire_date">Expire Date</label>
@@ -1971,7 +1973,10 @@ desired effect
 																<div class="col-md-10">
 																	<select id="bouquets" name="bouquets[]" class="form-control" multiple="">
 																		<?php if(is_array($bouquets)){ foreach($bouquets as $bouquet){ ?>
-																			<option value="<?php echo $bouquet['id']; ?>"><?php echo stripslashes($bouquet['name']); ?></option>
+																			<option 
+																				value="<?php echo $bouquet['id']; ?>" 
+																				<?php if
+																			><?php echo stripslashes($bouquet['name']); ?></option>
 																		<?php } } ?>
 																	</select>
 																</div>
