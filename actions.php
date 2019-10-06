@@ -2491,6 +2491,11 @@ function customer_update()
 	$notes 				= addslashes($_POST['notes']);
 	$notes 				= trim($notes);
 
+	$bouquets 			= $_POST['bouquets'];
+	if(!empty($bouquets)){
+		$bouquets 			= implode(",", $bouquets);
+	}
+
 	$live_content 		= 'on';
 	$channel_content 	= 'on';
 	$vod_content 		= 'on';
@@ -2504,19 +2509,19 @@ function customer_update()
 		// $expire_bits 		= explode('-', $expire_date);
 		// $expire_date		= $expire_bits[1].'/'.$expire_bits[2].'/'.$expire_bits[0];
 		
-		$update = $conn->exec("UPDATE `customers` SET `status` = '".$status."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `first_name` = '".$first_name."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `last_name` = '".$last_name."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `email` = '".$email."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `username` = '".$username."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `password` = '".$password."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `expire_date` = '".$expire_date."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `max_connections` = '".$max_connections."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `notes` = '".$notes."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-
-		$update = $conn->exec("UPDATE `customers` SET `live_content` = '".$live_content."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `channel_content` = '".$channel_content."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `vod_content` = '".$vod_content."' WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `status` = '".$status."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `first_name` = '".$first_name."'				WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `last_name` = '".$last_name."' 				WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `email` = '".$email."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `username` = '".$username."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `password` = '".$password."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `expire_date` = '".$expire_date."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `max_connections` = '".$max_connections."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `notes` = '".$notes."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `live_content` = '".$live_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `channel_content` = '".$channel_content."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `vod_content` = '".$vod_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `bouquet` = '".$bouquets."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 
 		status_message('success',"Customer account has been updated.");
 	}
