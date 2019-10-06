@@ -6173,8 +6173,8 @@ desired effect
 													foreach($categories as $category) {
 
 														echo '
-															<tr id="'.$category['id'].'_col">
-																<td id="'.$rule['id'].'_col_0">'.stripslashes($category['name']).'</td>
+															<tr>
+																<td>'.stripslashes($category['name']).'</td>
 
 																<td style="vertical-align: middle;">
 																	<a title="Delete Category" onclick="return confirm(\'Are you sure?\')" class="btn btn-danger btn-flat btn-xs" href="actions.php?a=stream_category_delete&category_id='.$category['id'].'"><i class="fa fa-times"></i></a>
