@@ -6192,8 +6192,6 @@ desired effect
 					</div>
 				</section>
             </div>
-
-            <?php echo $reinstall_modals; ?>
         <?php } ?>
 
         <?php function current_connections(){ ?>
