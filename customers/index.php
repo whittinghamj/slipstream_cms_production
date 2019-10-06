@@ -412,6 +412,8 @@ if($type == 'flussonic') {
 		}
 	}
 
+
+	echo "master_bouquet <br>";
 	debug($master_bouquet);
 
 
