@@ -870,7 +870,7 @@ desired effect
 		?>
         
         <?php function home(){ ?>
-        	<?php global $conn, $globals, $account_details, $site; ?>
+        	<?php global $conn, $globals, $global_settings, $account_details, $site; ?>
 
             <div class="content-wrapper">
 				
@@ -1044,7 +1044,7 @@ desired effect
         <?php } ?>
         
         <?php function my_account(){ ?>
-        	<?php global $conn, $wp, $account_details, $site, $whmcs, $product_ids; ?>
+        	<?php global $conn, $wp, $global_settings, $account_details, $site, $whmcs, $product_ids; ?>
             <div class="content-wrapper">
 				
                 <div id="status_message"></div>
@@ -1655,7 +1655,6 @@ desired effect
 
         <?php function customers(){ ?>
         	<?php global $conn, $global_settings, $account_details, $site; ?>
-        	<?php $customer_modals = ''; ?>
 
         	<?php 
         		$query = $conn->query("SELECT `id`,`name` FROM `bouquets` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ");
@@ -1842,7 +1841,7 @@ desired effect
         <?php } ?>
 
         <?php function customer(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $customer_id = get('customer_id'); ?>
 
 			<?php 
@@ -2021,7 +2020,7 @@ desired effect
         <?php } ?>
 
         <?php function resellers(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $reseller_modals = ''; ?>
 
             <div class="content-wrapper">
@@ -2605,7 +2604,7 @@ desired effect
         <?php } ?>
 
         <?php function server(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $server_id	 	= get('server_id'); ?>
 			<?php $headend_raw 		= remote_content($site['url']."actions.php?a=ajax_headend&server_id=".$server_id); ?>
 			<?php $headend 			= json_decode($headend_raw, true); ?>
@@ -5159,7 +5158,7 @@ desired effect
         <?php } ?>
 
         <?php function cdn_streams(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $modal_streams = ''; ?>
 			<?php $server_id = get('server_id'); ?>
 			<?php $category_name = get('category'); ?>
@@ -5350,7 +5349,7 @@ desired effect
         <?php } ?>
 
         <?php function transcoding_profiles(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
             <div class="content-wrapper">
 				
@@ -5485,7 +5484,7 @@ desired effect
         <?php } ?>
 
         <?php function transcoding_profile(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $profile_id = get('profile_id'); ?>
 
         	<?php
@@ -6117,7 +6116,7 @@ desired effect
         <?php } ?>
 
         <?php function stream_categories(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
             <div class="content-wrapper">
 				
@@ -6213,7 +6212,7 @@ desired effect
         <?php } ?>
 
         <?php function current_connections(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
             <div class="content-wrapper">
 				
                 <div id="status_message"></div>
@@ -6386,7 +6385,7 @@ desired effect
         <?php } ?>
 
         <?php function security(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $acl_rules_modals = ''; ?>
 
             <div class="content-wrapper">
@@ -6547,7 +6546,7 @@ desired effect
         <?php } ?>
 
         <?php function downloads(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
             <div class="content-wrapper">
 				
@@ -6718,7 +6717,7 @@ desired effect
         <?php } ?>
 
         <?php function channels(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
         	<?php $server_id = get('server_id'); ?>
 
@@ -6978,7 +6977,7 @@ desired effect
         <?php } ?>
 
         <?php function channel_edit(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $id = get('id'); ?>
 
 			<?php
@@ -7250,7 +7249,7 @@ desired effect
         <?php } ?>
 
         <?php function tv_series_edit(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $series_id = get('id'); ?>
 
 			<?php
@@ -7483,7 +7482,7 @@ desired effect
         <?php } ?>
 
         <?php function vod(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
         	<?php
 	        	$query = $conn->query("SELECT `id`,`name`,`gpu_stats` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
@@ -7825,7 +7824,7 @@ desired effect
         <?php } ?>
 
         <?php function vod_edit(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $vod_id = get('id'); ?>
 
 			<?php
@@ -8046,7 +8045,7 @@ desired effect
         <?php } ?>
 
         <?php function premium_dns(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $dns_modals = ''; ?>
 
         	<?php
@@ -8239,7 +8238,7 @@ desired effect
         <?php } ?>
 
         <?php function remote_playlists(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $playlists_modals = ''; ?>
 
         	<?php
@@ -8378,6 +8377,8 @@ desired effect
 
 														// $remote_playlist_content = remote_content($playlist['url']);
 
+														error_log("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
+
 														$remote_playlist_content 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
 				  										$remote_playlist_content 		= json_decode($remote_playlist_content, true);
 
@@ -8435,7 +8436,7 @@ desired effect
         <?php } ?>
 
         <?php function remote_playlist(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $playlist_id = get('playlist_id'); ?>
         	<?php
         		$query = $conn->query("SELECT * FROM `remote_playlists` WHERE `id` = '".$playlist_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
@@ -8577,7 +8578,7 @@ desired effect
         <?php } ?>
 
         <?php function roku_devices(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $devices_modals = ''; ?>
         	<?php
         		$query = $conn->query("SELECT `id`,`name` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ASC");
@@ -8925,7 +8926,7 @@ desired effect
         <?php } ?>
 
         <?php function roku_device(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $playlist_id = get('playlist_id'); ?>
         	<?php
         		$query = $conn->query("SELECT * FROM `remote_playlists` WHERE `id` = '".$playlist_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
@@ -9059,7 +9060,7 @@ desired effect
         <?php } ?>
         
         <?php function playlist_checker(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
             <div class="content-wrapper">
 				
@@ -9108,7 +9109,7 @@ desired effect
         <?php } ?>
 
         <?php function playlist_checker_results(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
 
         	<?php $url = base64_decode(get('url')); ?>
 
@@ -9205,7 +9206,7 @@ desired effect
         <?php } ?>
 
         <?php function xc_import(){ ?>
-        	<?php global $conn, $account_details, $site, $whmcs, $product_ids; ?>
+        	<?php global $conn, $global_settings, $account_details, $site, $whmcs, $product_ids; ?>
             <div class="content-wrapper">
 				
                 <div id="status_message"></div>
@@ -9363,7 +9364,7 @@ desired effect
         <?php } ?>
 
         <?php function stream_bouquets(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $bouquets_modals = ''; ?>
 
         	<?php 
@@ -9478,7 +9479,7 @@ desired effect
         <?php } ?>
 
         <?php function stream_bouquet(){ ?>
-        	<?php global $conn, $account_details, $site; ?>
+        	<?php global $conn, $global_settings, $account_details, $site; ?>
         	<?php $bouquet_id = get('bouquet_id'); ?>
 
 			<?php 
