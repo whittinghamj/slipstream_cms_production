@@ -5,6 +5,7 @@ cd /var/www/html/portal && git pull git@github.com:whittinghamj/slipstream_cms_s
 
 # confirm folder permissions
 chmod 777 /var/www/html/portal/m3u_uploads
+chmod 777 /var/www/html/portal/xc_uploads
 
 # mysql status check
 UP=$(pgrep mysql | wc -l);
