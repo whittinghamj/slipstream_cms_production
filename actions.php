@@ -1344,6 +1344,8 @@ function ajax_stream()
 
 	$stream_id = get('stream_id');
 
+	$output = array();
+
 	$query = $conn->query("SELECT * FROM `streams` WHERE `id` = '".$stream_id."' ");
 	if($query !== FALSE) {
 		$streams = $query->fetchAll(PDO::FETCH_ASSOC);
