@@ -1729,10 +1729,10 @@ desired effect
 																<div class="form-group">
 																	<label class="col-md-2 control-label" for="email">Login</label>
 																	<div class="col-md-5">
-																		<input type="text" class="form-control" id="username" name="username" value="<?php echo random_string(); ?>" placeholder="" required="">
+																		<input type="text" class="form-control" id="username" name="username" value="<?php echo random_string(); ?>" placeholder="" required>
 																	</div>
 																	<div class="col-md-5">
-																		<input type="text" class="form-control" id="password" name="password" value="<?php echo random_string(); ?>" placeholder="" required="">
+																		<input type="text" class="form-control" id="password" name="password" value="<?php echo random_string(); ?>" placeholder="" required>
 																	</div>
 																</div>
 
@@ -1756,12 +1756,12 @@ desired effect
 																<div class="form-group">
 																	<label class="col-md-2 control-label" for="max_connections">Connections</label>
 																	<div class="col-md-4">
-																		<input type="text" class="form-control" id="max_connections" name="max_connections" value="1" required="">
+																		<input type="number" class="form-control" id="max_connections" name="max_connections" value="1" required>
 																	</div>
 
 																	<label class="col-md-2 control-label" for="expire_date">Expire Date</label>
 																	<div class="col-md-4">
-																		<input type="date" class="form-control pull-right datepicker" id="expire_date" name="expire_date">
+																		<input type="date" class="form-control pull-right datepicker" id="expire_date" name="expire_date" required>
 																	</div>
 																</div>
 
