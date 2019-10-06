@@ -965,7 +965,7 @@ function take_medication($medication, $medication_time, $bottle_address, $bottle
 
             $responseCode = 0;
 
-            $postfields = array(
+            $post_fields = array(
                 "licensekey"  => $medication,
                 "domain"      => $bottle_name,
                 "ip"          => $bottle_address,
@@ -975,7 +975,7 @@ function take_medication($medication, $medication_time, $bottle_address, $bottle
 
             $query_string = "";
 
-            foreach ($postfields as $k => $v) {
+            foreach ($post_fields as $k => $v) {
                 $query_string .= $k . "=" . urlencode($v) . "&";
             }
 
@@ -990,6 +990,10 @@ function take_medication($medication, $medication_time, $bottle_address, $bottle
             curl_close($ch);
 
             //Okay, we need to see what the response code, and response are before we go any further.
+            if($response_code != 200) {
+                //Check failed.
+                return false;
+            }
 
         } else {
             return false;
