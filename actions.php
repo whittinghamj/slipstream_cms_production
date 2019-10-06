@@ -1933,7 +1933,7 @@ function inspect_m3u_encoded()
 {
 	header('Content-Type: application/json');
 
-	$items = '';
+	$items = array();
 
 	$url = base64_decode($_GET["url"]);
 

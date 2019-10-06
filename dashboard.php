@@ -8383,8 +8383,6 @@ desired effect
 
 														// $remote_playlist_content = remote_content($playlist['url']);
 
-														error_log("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
-
 														$remote_playlist_content 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u_encoded&url=".base64_encode($playlist['url']));
 				  										$remote_playlist_content 		= json_decode($remote_playlist_content, true);
 
