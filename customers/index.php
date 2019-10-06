@@ -405,7 +405,7 @@ if($type == 'flussonic') {
 		}
 	}
 
-
+	debug($_GET);
 	debug($master_bouquet);
 
 
