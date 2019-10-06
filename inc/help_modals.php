@@ -204,9 +204,7 @@
                 <p>
     <h2>Welcome to SlipStream CMS</h2>
         <p>These terms and conditions outline the rules and regulations for the use of SlipStream CMS's Website.</p> <br /> 
-        <span style="text-transform: capitalize;"> SlipStream CMS</span> is located at:<br /> 
-        <address><br />
-        </address>
+
         <p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use SlipStream CMS's website 
         if you do not accept all of the terms and conditions stated on this page.</p>
         <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice
