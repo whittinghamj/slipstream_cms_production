@@ -301,7 +301,7 @@ desired effect
 |---------------------------------------------------------|
 -->
 
-<body class="hold-transition skin-blue sidebar-mini">  
+<body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
             <a href="dashboard.php" class="logo">
@@ -11782,5 +11782,13 @@ desired effect
     <?php } ?>
 
     <?php include('inc/help_modals.php'); ?>
+
+    <?php if($global_settings['cms_terms_accepted'] == 'no'){ ?>
+		<script>
+			$(window).on('load',function(){
+		        $('#modal-terms').modal({backdrop: 'static', keyboard: false});
+		    });
+		</script>
+	<?php } ?>
 </body>
 </html>
