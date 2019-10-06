@@ -242,7 +242,7 @@ if($task == 'xc_imports') {
 		}
 
 		// remove database and create it again
-		$delete = $conn->exec("DROP DATABASE [IF EXISTS] `slipstream_xc_staging`;");
+		$delete = $conn->exec("DROP DATABASE IF EXISTS `slipstream_xc_staging`;");
 		$delete = $conn->exec("CREATE DATABASE `slipstream_xc_staging`;");
 
 		// import DB
