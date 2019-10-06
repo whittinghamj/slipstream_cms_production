@@ -1955,7 +1955,7 @@ desired effect
 															<div class="form-group">
 																<label class="col-md-2 control-label" for="username">Login</label>
 																<div class="col-md-5">
-																	<input type="text" class="form-control" id="username" name="username" value="<?php echo stripslashes($customer['username']); ?>" required>
+																	<input type="text" class="form-control" id="username" name="username" value="<?php echo stripslashes($customer['username']); ?>" readonly>
 																</div>
 																<div class="col-md-5">
 																	<input type="text" class="form-control" id="password" name="password" value="<?php echo stripslashes($customer['password']); ?>" required>
