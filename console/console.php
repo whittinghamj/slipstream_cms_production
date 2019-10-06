@@ -220,7 +220,7 @@ if($task == 'xc_imports') {
 	console_output("Xtream-Codes Import Manager.");
 	$now = time();
 
-	$query = $conn->query("SELECT * FROM `slipstream_hub`.`xc_import_jobs` WHERE `status` = 'pending' LIMIT 1");
+	$query = $conn->query("SELECT * FROM `slipstream_cms`.`xc_import_jobs` WHERE `status` = 'pending' LIMIT 1");
 	$import = $query->fetch(PDO::FETCH_ASSOC);
 
 	if(!empty($import)){
@@ -229,47 +229,17 @@ if($task == 'xc_imports') {
 		
 		console_output("Starting Import Job: ".$import['id']);
 		console_output("User: ".$import['user_id']);
-		console_output("Filename: /data/wwwroot/default/xc_uploads/".$user_id."/".$import['filename']);
+		console_output("Filename: /var/www/html/portal/xc_uploads/".$user_id."/".$import['filename']);
 		
-		$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'importing' WHERE `id` = '".$import['id']."' ");
+		$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'importing' WHERE `id` = '".$import['id']."' ");
 
 		// sanity checks
-		if(!file_exists("/data/wwwroot/default/xc_uploads/".$user_id."/".$import['filename'])){
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Unable to find file.' WHERE `id` = '".$import['id']."' ");
+		if(!file_exists("/var/www/html/portal/xc_uploads/".$user_id."/".$import['filename'])){
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Unable to find file.' WHERE `id` = '".$import['id']."' ");
 			console_output("File does not exist or we cannot read it.");
 			die();
 		}
-
-		// echo "cat /data/slipstream/".$user_id."/".$import['filename'] . " | grep phpMyAdmin | wc -l \n";
-
-		/*
-		$check_phpmyadmin = exec("cat /data/slipstream/".$user_id."/".$import['filename'] . " | grep phpMyAdmin | wc -l");
-		if($check_phpmyadmin != 0){
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'This backup was generated using phpMyAdmin which is not supported. Please export a fresh backup using the command line tool called mysqldump and try again.' WHERE `id` = '".$import['id']."' ");
-			console_output("phpMyAdmin export found.");
-			die();
-		}
-		$check_streams = exec("cat /data/slipstream/".$user_id."/".$import['filename'] . " | grep 'INSERT INTO `streams`' | wc -l");
-		if($check_streams == 0){
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'This backup does not contain any streams. Please export a fresh backup using the command line tool called mysqldump and try again.' WHERE `id` = '".$import['id']."' ");
-			console_output("No streams found in file.");
-			die();
-		}
-		$check_customers = exec("cat /data/slipstream/".$user_id."/".$import['filename'] . " | grep 'INSERT INTO `users`' | wc -l");
-		if($check_streams == 0){
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'This backup does not contain any users / customers. Please export a fresh backup using the command line tool called mysqldump and try again.' WHERE `id` = '".$import['id']."' ");
-			console_output("No users / customers found in file.");
-			die();
-		}
-		*/
-
-		// get streams to import
-		// exec("cat /data/slipstream/".$user_id."/".$import['filename']." | grep 'INSERT INTO `streams`' > /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i 's/INSERT INTO `streams` VALUES/INSERT INTO `".$user_id."_xc_streams` VALUES/g' /data/slipstream/".$user_id."/sql_streams.txt");
 
 		// remove database and create it again
 		$delete = $conn->exec("DROP DATABASE `slipstream_xc_staging`;");
@@ -277,16 +247,16 @@ if($task == 'xc_imports') {
 
 		// import DB
 		console_output("Importing Xtream-Codes SQL Dump file.");
-		console_output("/usr/local/mariadb/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hlocalhost slipstream_xc_staging < /data/wwwroot/default/xc_uploads/".$user_id."/".$import['filename']."");
-		exec("(/usr/local/mariadb/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hlocalhost slipstream_xc_staging < /data/wwwroot/default/xc_uploads/".$user_id."/".$import['filename'].") 2>&1", $output, $result);
+		console_output("/usr/bin/mysql -u slipstream -padmin1372 -hlocalhost slipstream_xc_staging < /var/www/html/portal/xc_uploads/".$user_id."/".$import['filename']."");
+		exec("(/usr/bin/mysql -u slipstream -padmin1372 -hlocalhost slipstream_xc_staging < /var/www/html/portal/xc_uploads/".$user_id."/".$import['filename'].") 2>&1", $output, $result);
 
 		// more sanity checks
 		try {
         	$result = $conn->query("SELECT * FROM `slipstream_xc_staging`.`streams` LIMIT 1");
 	    } catch (Exception $e) {
 	        // We got an exception == table not found
-	        $update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a streams table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
+	        $update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a streams table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
 			console_output("missing streams table.");
 			die();
 	    }
@@ -294,8 +264,8 @@ if($task == 'xc_imports') {
         	$result = $conn->query("SELECT * FROM `slipstream_xc_staging`.`users` LIMIT 1");
 	    } catch (Exception $e) {
 	        // We got an exception == table not found
-	        $update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a users table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
+	        $update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a users table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
 			console_output("missing users table.");
 			die();
 	    }
@@ -303,8 +273,8 @@ if($task == 'xc_imports') {
         	$result = $conn->query("SELECT * FROM `slipstream_xc_staging`.`reg_users` LIMIT 1");
 	    } catch (Exception $e) {
 	        // We got an exception == table not found
-	        $update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a reg_users table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
+	        $update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a reg_users table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
 			console_output("missing reg_users table.");
 			die();
 	    }
@@ -312,8 +282,8 @@ if($task == 'xc_imports') {
         	$result = $conn->query("SELECT * FROM `slipstream_xc_staging`.`bouquets` LIMIT 1");
 	    } catch (Exception $e) {
 	        // We got an exception == table not found
-	        $update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a bouquets table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
+	        $update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a bouquets table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
 			console_output("missing bouquets table.");
 			die();
 	    }
@@ -321,49 +291,19 @@ if($task == 'xc_imports') {
         	$result = $conn->query("SELECT * FROM `slipstream_xc_staging`.`mag_devices` LIMIT 1");
 	    } catch (Exception $e) {
 	        // We got an exception == table not found
-	        $update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a mag_devices table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
+	        $update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Your backup does not contain a mag_devices table. Try making a new backup and uploading it again. Do NOT trim anything but LOG files.' WHERE `id` = '".$import['id']."' ");
 			console_output("missing mag_devices table.");
 			die();
 	    }
 
-		// get table create and streams
-		// echo("sed -n -e '/DROP TABLE.*`streams`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// echo("sed -i 's/DROP TABLE IF EXISTS `streams`;/ /' /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// echo("sed -i 's/CREATE TABLE `streams` (/CREATE TABLE `".$user_id."_xc_streams` (/' /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// echo("sed -i 's/LOCK TABLES `streams` WRITE;/ /' /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// echo("sed -i 's/INSERT INTO `streams` VALUES/INSERT INTO `".$user_id."_xc_streams` VALUES/g' /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// echo("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// echo("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_streams.txt \n");
-		// die();
-
-		// exec("sed -n -e '/DROP TABLE.*`streams`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i 's/DROP TABLE IF EXISTS `streams`;/ /' /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i 's/CREATE TABLE `streams` (/CREATE TABLE `".$user_id."_xc_streams` (/' /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i 's/LOCK TABLES `streams` WRITE;/ /' /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i 's/INSERT INTO `streams` VALUES/INSERT INTO `".$user_id."_xc_streams` VALUES/g' /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_streams.txt");
-		// exec("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_streams.txt");
-
-		// delete table first
-		// $drop = $conn->exec("DROP TABLE IF EXISTS `slipstream_xc_staging`.`streams`;");
-
-		// import streams into new temp table
-		// console_output("Importing: streams");
-		// exec("(/usr/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hdb01.he.us.slipstreamiptv.com slipstream_hub < /data/slipstream/".$user_id."/sql_streams.txt) 2>&1", $output, $result);
-
-		// var_dump($result);
-		// echo "<br />";
-		// var_dump($output);
-		// echo "<br />";
-
 		// get first server id
-		$query = $conn->query("SELECT `id` FROM `slipstream_hub`.`headend_servers` WHERE `user_id` = '".$user_id."' LIMIT 1");
+		$query = $conn->query("SELECT `id` FROM `slipstream_cms`.`headend_servers` WHERE `user_id` = '".$user_id."' LIMIT 1");
 		$server = $query->fetch(PDO::FETCH_ASSOC);
 		$server_id = $server['id'];
 		if(empty($server_id)){
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
-			$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `error_message` = 'Please add your first server first.' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'error' WHERE `id` = '".$import['id']."' ");
+			$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `error_message` = 'Please add your first server first.' WHERE `id` = '".$import['id']."' ");
 			console_output("Please add your first server first.");
 			die();
 		}
@@ -398,7 +338,7 @@ if($task == 'xc_imports') {
 			$logo 				= addslashes($xc_stream['stream_icon']);
 
 		    // add input stream
-			$insert = $conn->exec("INSERT INTO `slipstream_hub`.`streams` 
+			$insert = $conn->exec("INSERT INTO `slipstream_cms`.`streams` 
 		        (`user_id`,`server_id`,`stream_type`,`name`,`enable`,`source`,`cpu_gpu`,`job_status`,`ffmpeg_re`,`logo`)
 		        VALUE
 		        ('".$user_id."',
@@ -416,7 +356,7 @@ if($task == 'xc_imports') {
 		    $stream_id = $conn->lastInsertId();
 
 		    // add output stream
-		    $insert = $conn->exec("INSERT INTO `slipstream_hub`.`streams` 
+		    $insert = $conn->exec("INSERT INTO `slipstream_cms`.`streams` 
 		        (`user_id`,`enable`,`server_id`,`stream_type`,`name`,`source_server_id`,`source_stream_id`,`old_xc_id`,`logo`)
 		        VALUE
 		        ('".$user_id."',
@@ -434,23 +374,6 @@ if($task == 'xc_imports') {
 		}
 		echo "\n";
 
-		// get packages to import
-		// console_output("Extracting: packages");
-		// exec("sed -n -e '/DROP TABLE.*`packages`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_packages.txt");
-		// exec("sed -i 's/DROP TABLE IF EXISTS `packages`;/ /' /data/slipstream/".$user_id."/sql_packages.txt");
-		// exec("sed -i 's/CREATE TABLE `packages` (/CREATE TABLE `".$user_id."_xc_packages` (/' /data/slipstream/".$user_id."/sql_packages.txt");
-		// exec("sed -i 's/LOCK TABLES `packages` WRITE;/ /' /data/slipstream/".$user_id."/sql_packages.txt");
-		// exec("sed -i 's/INSERT INTO `packages` VALUES/INSERT INTO `".$user_id."_xc_packages` VALUES/g' /data/slipstream/".$user_id."/sql_packages.txt");
-		// exec("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_packages.txt");
-		// exec("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_packages.txt");
-
-		// delete table first
-		// $drop = $conn->exec("DROP TABLE IF EXISTS `".$user_id."_xc_packages`;");
-
-		// import packages into new temp table
-		// console_output("Importing: packages");
-		// exec("(/usr/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hdb01.he.us.slipstreamiptv.com slipstream_hub < /data/slipstream/".$user_id."/sql_packages.txt) 2>&1", $output, $result);
-
 		// convert xc packages to ss packages
 		$query = $conn->query("SELECT * FROM `slipstream_xc_staging`.`packages` ");
 		$xc_packages = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -460,7 +383,7 @@ if($task == 'xc_imports') {
 		foreach($xc_packages as $xc_package){
 			$xc_package['bouquets'] = str_replace(array("[","]"), "", $xc_package['bouquets']);
 
-			$insert = $conn->exec("INSERT INTO `slipstream_hub`.`packages` 
+			$insert = $conn->exec("INSERT INTO `slipstream_cms`.`packages` 
 		        (`user_id`,`name`,`is_trial`,`credits`,`trial_duration`,`official_duration`,`bouquets`,`old_xc_id`)
 		        VALUE
 		        ('".$user_id."',
@@ -477,23 +400,6 @@ if($task == 'xc_imports') {
 		}
 		echo "\n";
 
-		// get bouquets to import
-		// console_output("Extracting: bouquets");
-		// exec("sed -n -e '/DROP TABLE.*`bouquets`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_bouquets.txt");
-		// exec("sed -i 's/DROP TABLE IF EXISTS `bouquets`;/ /' /data/slipstream/".$user_id."/sql_bouquets.txt");
-		// exec("sed -i 's/CREATE TABLE `bouquets` (/CREATE TABLE `".$user_id."_xc_bouquets` (/' /data/slipstream/".$user_id."/sql_bouquets.txt");
-		// exec("sed -i 's/LOCK TABLES `bouquets` WRITE;/ /' /data/slipstream/".$user_id."/sql_bouquets.txt");
-		// exec("sed -i 's/INSERT INTO `bouquets` VALUES/INSERT INTO `".$user_id."_xc_bouquets` VALUES/g' /data/slipstream/".$user_id."/sql_bouquets.txt");
-		// exec("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_bouquets.txt");
-		// exec("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_bouquets.txt");
-
-		// delete table first
-		// $drop = $conn->exec("DROP TABLE IF EXISTS `".$user_id."_xc_bouquets`;");
-
-		// import bouquets into new temp table
-		// console_output("Importing: bouquets");
-		// exec("(/usr/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hdb01.he.us.slipstreamiptv.com slipstream_hub < /data/slipstream/".$user_id."/sql_bouquets.txt) 2>&1", $output, $result);
-
 		// convert xc bouquet to ss packages
 		$query = $conn->query("SELECT * FROM `slipstream_xc_staging`.`bouquets` ");
 		$xc_bouquets = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -506,14 +412,14 @@ if($task == 'xc_imports') {
 			$old_streams = explode(",", $xc_bouquet['streams']);
 
 			foreach($old_streams as $old_stream){
-				$query = $conn->query("SELECT `id` FROM `slipstream_hub`.`streams` WHERE `user_id` = '".$user_id."' AND `old_xc_id` = '".$old_stream."' ");
+				$query = $conn->query("SELECT `id` FROM `slipstream_cms`.`streams` WHERE `user_id` = '".$user_id."' AND `old_xc_id` = '".$old_stream."' ");
 				$temp_stream = $query->fetch(PDO::FETCH_ASSOC);
 				$new_streams[] = $temp_stream['id'];
 			}
 
 			$xc_bouquet['streams'] = implode(",", $new_streams);
 
-			$insert = $conn->exec("INSERT IGNORE INTO `slipstream_hub`.`bouquets` 
+			$insert = $conn->exec("INSERT IGNORE INTO `slipstream_cms`.`bouquets` 
 		        (`user_id`,`name`,`streams`,`old_xc_id`)
 		        VALUE
 		        ('".$user_id."',
@@ -525,23 +431,6 @@ if($task == 'xc_imports') {
 		    echo ".";
 		}
 		echo "\n";
-
-		// get users (resellers mostly) to import
-		// console_output("Extracting: resellers");
-		// exec("sed -n -e '/DROP TABLE.*`reg_users`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_reg_users.txt");
-		// exec("sed -i 's/DROP TABLE IF EXISTS `reg_users`;/ /' /data/slipstream/".$user_id."/sql_reg_users.txt");
-		// exec("sed -i 's/CREATE TABLE `reg_users` (/CREATE TABLE `".$user_id."_xc_reg_users` (/' /data/slipstream/".$user_id."/sql_reg_users.txt");
-		// exec("sed -i 's/LOCK TABLES `reg_users` WRITE;/ /' /data/slipstream/".$user_id."/sql_reg_users.txt");
-		// exec("sed -i 's/INSERT INTO `reg_users` VALUES/INSERT INTO `".$user_id."_xc_reg_users` VALUES/g' /data/slipstream/".$user_id."/sql_reg_users.txt");
-		// exec("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_reg_users.txt");
-		// exec("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_reg_users.txt");
-
-		// delete table first
-		// $drop = $conn->exec("DROP TABLE IF EXISTS `".$user_id."_xc_reg_users`;");
-
-		// import users into new temp table
-		// console_output("Importing: resellers");
-		// exec("(/usr/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hdb01.he.us.slipstreamiptv.com slipstream_hub < /data/slipstream/".$user_id."/sql_reg_users.txt) 2>&1", $output, $result);
 
 		// convert xc users to ss customers
 		$query = $conn->query("SELECT * FROM `slipstream_xc_staging`.`reg_users` ");
@@ -558,7 +447,7 @@ if($task == 'xc_imports') {
 
 			$password = md5(time().rand(0,9));
 
-			$insert = $conn->exec("INSERT INTO `slipstream_hub`.`resellers` 
+			$insert = $conn->exec("INSERT INTO `slipstream_cms`.`resellers` 
 		        (`status`,`updated`,`user_id`,`group_id`,`email`,`username`,`password`,`credits`)
 		        VALUE
 		        ('".addslashes($xc_reg_user['status'])."',
@@ -574,23 +463,6 @@ if($task == 'xc_imports') {
 		    echo ".";
 		}
 		echo "\n";
-
-		// get customers to import
-		// console_output("Extracting: customers");
-		// exec("sed -n -e '/DROP TABLE.*`users`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_users.txt");
-		// exec("sed -i 's/DROP TABLE IF EXISTS `users`;/ /' /data/slipstream/".$user_id."/sql_users.txt");
-		// exec("sed -i 's/CREATE TABLE `users` (/CREATE TABLE `".$user_id."_xc_users` (/' /data/slipstream/".$user_id."/sql_users.txt");
-		// exec("sed -i 's/LOCK TABLES `users` WRITE;/ /' /data/slipstream/".$user_id."/sql_users.txt");
-		// exec("sed -i 's/INSERT INTO `users` VALUES/INSERT INTO `".$user_id."_xc_users` VALUES/g' /data/slipstream/".$user_id."/sql_users.txt");
-		// exec("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_users.txt");
-		// exec("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_users.txt");
-
-		// delete table first
-		// $drop = $conn->exec("DROP TABLE IF EXISTS `".$user_id."_xc_users`;");
-
-		// import users into new temp table
-		// console_output("Importing: customers");
-		// exec("(/usr/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hdb01.he.us.slipstreamiptv.com slipstream_hub < /data/slipstream/".$user_id."/sql_users.txt) 2>&1", $output, $result);
 
 		// convert xc users to ss customers
 		$query = $conn->query("SELECT `id`,`exp_date`,`created_by`,`username`,`password`,`bouquet`,`max_connections`,`admin_notes`,`reseller_notes` FROM `slipstream_xc_staging`.`users` ");
@@ -613,7 +485,7 @@ if($task == 'xc_imports') {
 			$xc_old_owner = $query->fetch(PDO::FETCH_ASSOC);
 			$new_owner_username = $xc_old_owner['username'];
 
-			$query = $conn->query("SELECT `id` FROM `slipstream_hub`.`resellers` WHERE `user_id` = '".$user_id."' AND `username` = '".$new_owner_username."' ");
+			$query = $conn->query("SELECT `id` FROM `slipstream_cms`.`resellers` WHERE `user_id` = '".$user_id."' AND `username` = '".$new_owner_username."' ");
 			$new_owner = $query->fetch(PDO::FETCH_ASSOC);
 			$reseller_id = $new_owner['id'];
 
@@ -622,14 +494,14 @@ if($task == 'xc_imports') {
 			$old_bouquets = explode(",", $xc_user['bouquet']);
 
 			foreach($old_bouquets as $old_bouquet){
-				$query = $conn->query("SELECT `id` FROM `slipstream_hub`.`bouquets` WHERE `user_id` = '".$user_id."' AND `old_xc_id` = '".$old_bouquet."' ");
+				$query = $conn->query("SELECT `id` FROM `slipstream_cms`.`bouquets` WHERE `user_id` = '".$user_id."' AND `old_xc_id` = '".$old_bouquet."' ");
 				$temp_bouquet = $query->fetch(PDO::FETCH_ASSOC);
 				$new_bouquets[] = $temp_bouquet['id'];
 			}
 
 			$xc_user['bouquet'] = implode(",", $new_bouquets);
 
-			$insert = $conn->exec("INSERT IGNORE INTO `slipstream_hub`.`customers` 
+			$insert = $conn->exec("INSERT IGNORE INTO `slipstream_cms`.`customers` 
 		        (`status`,`user_id`,`reseller_id`,`username`,`password`,`expire_date`,`live_content`,`bouquet`,`max_connections`,`notes`,`reseller_notes`,`old_xc_id`)
 		        VALUE
 		        ('".$customer_status."',
@@ -653,23 +525,6 @@ if($task == 'xc_imports') {
 		}
 		echo "\n";
 
-		// get mag devices to import
-		// console_output("Extracting: mag_devices");
-		// exec("sed -n -e '/DROP TABLE.*`mag_devices`/,/UNLOCK TABLES/p' /data/slipstream/".$user_id."/".$import['filename']." > /data/slipstream/".$user_id."/sql_mag_devices.txt");
-		// exec("sed -i 's/DROP TABLE IF EXISTS `mag_devices`;/ /' /data/slipstream/".$user_id."/sql_mag_devices.txt");
-		// exec("sed -i 's/CREATE TABLE `mag_devices` (/CREATE TABLE `".$user_id."_mag_devices` (/' /data/slipstream/".$user_id."/sql_mag_devices.txt");
-		// exec("sed -i 's/LOCK TABLES `mag_devices` WRITE;/ /' /data/slipstream/".$user_id."/sql_mag_devices.txt");
-		// exec("sed -i 's/INSERT INTO `mag_devices` VALUES/INSERT INTO `".$user_id."_mag_devices` VALUES/g' /data/slipstream/".$user_id."/sql_mag_devices.txt");
-		// exec("sed -i '/ALTER/d' /data/slipstream/".$user_id."/sql_mag_devices.txt");
-		// exec("sed -i 's/UNLOCK TABLES;/ /' /data/slipstream/".$user_id."/sql_mag_devices.txt");
-
-		// delete table first
-		// $drop = $conn->exec("DROP TABLE IF EXISTS `".$user_id."_mag_devices`;");
-
-		// import packages into new temp table
-		// console_output("Importing: mag_devices");
-		// exec("(/usr/bin/mysql -u slipstream -padmin1372Dextor\!\#\&@Mimi\!\#\&@ -hdb01.he.us.slipstreamiptv.com slipstream_hub < /data/slipstream/".$user_id."/sql_mag_devices.txt) 2>&1", $output, $result);
-
 		// convert mag_devices to ss customers
 		$query = $conn->query("SELECT `user_id`,`mag_id`,`mac`,`bright`,`aspect` FROM `slipstream_xc_staging`.`mag_devices` ");
 		$xc_mags = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -681,14 +536,14 @@ if($task == 'xc_imports') {
 			$old_customer_id = $xc_mag['user_id'];
 
 			// get new customer_id
-			$query = $conn->query("SELECT `id` FROM `slipstream_hub`.`customers` WHERE `user_id` = '".$user_id."' AND `old_xc_id` = '".$old_customer_id."' ");
+			$query = $conn->query("SELECT `id` FROM `slipstream_cms`.`customers` WHERE `user_id` = '".$user_id."' AND `old_xc_id` = '".$old_customer_id."' ");
 			$customer = $query->fetch(PDO::FETCH_ASSOC);
 
 			if(empty($customer)){
 				$customer['id'] = 0;
 			}
 
-			$insert = $conn->exec("INSERT INTO `slipstream_hub`.`mag_devices` 
+			$insert = $conn->exec("INSERT INTO `slipstream_cms`.`mag_devices` 
 		        (`user_id`,`customer_id`,`mac`,`aspect`,`old_xc_id`)
 		        VALUE
 		        ('".$user_id."',
@@ -703,9 +558,8 @@ if($task == 'xc_imports') {
 		echo "\n";
 
 		// remove files
-		// exec("rm -rf /data/slipstream/".$user_id."/sql_*");
 
-		$update = $conn->exec("UPDATE `slipstream_hub`.`xc_import_jobs` SET `status` = 'complete' WHERE `id` = '".$import['id']."' ");
+		$update = $conn->exec("UPDATE `slipstream_cms`.`xc_import_jobs` SET `status` = 'complete' WHERE `id` = '".$import['id']."' ");
 	}
 
 	console_output("Finished.");
