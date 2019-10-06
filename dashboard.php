@@ -8300,6 +8300,12 @@ desired effect
 										</div>
 			            			</div>
 									<div class="box-body">
+										<?php if(isset($_GET['dev'])) { ?>
+											<hr>
+											<pre>
+												<?php print_r($playlists); ?>
+											</pre>
+										<?php } ?>
 										<form action="actions.php?a=remote_playlist_add" class="form-horizontal form-bordered" method="post">
 											<div class="modal fade" id="new_platlist_modal" role="dialog">
 											    <div class="modal-dialog">
