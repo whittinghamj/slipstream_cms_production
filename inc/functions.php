@@ -929,6 +929,10 @@ function filesize_formatted($path)
 
 function percentage($val1, $val2, $precision)
 {
+    // sanity - remove non-number chars
+    $val1 = preg_replace("/[^0-9]/", "", $val1);
+    $val2 = preg_replace("/[^0-9]/", "", $val2);
+
 	$division = $val1 / $val2;
 	$res = $division * 100;
 	$res = round($res, $precision);
