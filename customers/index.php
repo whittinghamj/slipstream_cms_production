@@ -402,6 +402,8 @@ if($type == 'flussonic') {
 		$temp_bouquet 				= $query->fetch(PDO::FETCH_ASSOC);
 		$temp_bouquet['streams'] 	= explode(",", $temp_bouquet['streams']);
 
+		debug($temp_bouquet);
+
 		// add each stream into a master bouquet
 		foreach($temp_bouquet['streams'] as $stream){
 			$master_bouquet[] = $stream['id'];
