@@ -1752,64 +1752,70 @@ function import_streams()
 	}
 
   	// read the uploaded m3u into an array
+  	error_log("----- M3U URL");
+  	error_log("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u&url=http://".$global_settings['cms_access_url']."/m3u_uploads/".$_SESSION['account']['id'].'-'.str_replace(' ', '_',basename( $_FILES["m3u_file"]["name"])));
+  	error_log("----- M3U URL");
   	$streams_raw 		= @file_get_contents("http://".$global_settings['cms_access_url']."/actions.php?a=inspect_m3u&url=http://".$global_settings['cms_access_url']."/m3u_uploads/".$_SESSION['account']['id'].'-'.str_replace(' ', '_',basename( $_FILES["m3u_file"]["name"])));
   	$streams 			= json_decode($streams_raw, true);
-	
-	foreach($streams as $stream) {
-		$rand 				= md5(rand(00000,99999).time());
-		
-		$name 				= addslashes($stream['title']);
-		$name 				= str_replace(array(':',';'), '', $name);
-		$name 				= trim($name);
+	if(is_array($streams)){
+		foreach($streams as $stream) {
+			$rand 				= md5(rand(00000,99999).time());
+			
+			$name 				= addslashes($stream['title']);
+			$name 				= str_replace(array(':',';'), '', $name);
+			$name 				= trim($name);
 
-		$source 			= addslashes($stream['url']);
-		$source 			= trim($source);
-		$source 			= str_replace(' ', '', $source);
-		
-		$server_id			= addslashes($_POST['server']);
+			$source 			= addslashes($stream['url']);
+			$source 			= trim($source);
+			$source 			= str_replace(' ', '', $source);
+			
+			$server_id			= addslashes($_POST['server']);
 
-		$ffmpeg_re			= $_POST['ffmpeg_re'];
+			$ffmpeg_re			= $_POST['ffmpeg_re'];
 
-		if(!isset($stream['tvlogo']) || empty($stream['tvlogo'])){
-			$stream['tvlogo'] = '';
-		}
+			if(!isset($stream['tvlogo']) || empty($stream['tvlogo'])){
+				$stream['tvlogo'] = '';
+			}
 
-		$insert = $conn->exec("INSERT INTO `streams` 
-	        (`user_id`,`server_id`,`stream_type`,`name`,`enable`,`source`,`cpu_gpu`,`job_status`,`ffmpeg_re`,`logo`)
-	        VALUE
-	        ('".$_SESSION['account']['id']."',
-	        '".$server_id."',
-	        'input',
-	        '".$name."',
-	        'yes',
-	        '".$source."',
-	        'cpu',
-	        'analysing',
-	        '".$ffmpeg_re."',
-	        '".$stream['tvlogo']."'
-	    )");
+			$insert = $conn->exec("INSERT INTO `streams` 
+		        (`user_id`,`server_id`,`stream_type`,`name`,`enable`,`source`,`cpu_gpu`,`job_status`,`ffmpeg_re`,`logo`)
+		        VALUE
+		        ('".$_SESSION['account']['id']."',
+		        '".$server_id."',
+		        'input',
+		        '".$name."',
+		        'yes',
+		        '".$source."',
+		        'cpu',
+		        'analysing',
+		        '".$ffmpeg_re."',
+		        '".$stream['tvlogo']."'
+		    )");
 
-	    $stream_id = $conn->lastInsertId();
+		    $stream_id = $conn->lastInsertId();
 
-	    // add output stream
-	    $insert = $conn->exec("INSERT INTO `streams` 
-	        (`user_id`,`enable`,`server_id`,`stream_type`,`name`,`source_server_id`,`source_stream_id`)
-	        VALUE
-	        ('".$_SESSION['account']['id']."',
-	        'yes',
-	        '".$server_id."',
-	        'output',
-	        '".$name."',
-	        '".$server_id."',
-	        '".$stream_id."'
-	    )");
-    }
+		    // add output stream
+		    $insert = $conn->exec("INSERT INTO `streams` 
+		        (`user_id`,`enable`,`server_id`,`stream_type`,`name`,`source_server_id`,`source_stream_id`)
+		        VALUE
+		        ('".$_SESSION['account']['id']."',
+		        'yes',
+		        '".$server_id."',
+		        'output',
+		        '".$name."',
+		        '".$server_id."',
+		        '".$stream_id."'
+		    )");
+	    }
 
-    // remove upload file
-    shell_exec("rm -rf " . $target_file);
+	    // remove upload file
+	    // shell_exec("rm -rf " . $target_file);
 
-	// log_add("Streams has been imported.");
-	status_message('success',"All streams have been imported.");
+		// log_add("Streams has been imported.");
+		status_message('success',"All streams have been imported.");
+	}else{
+		status_message('danger',"No streams found in the uploaded file or something else went wrong.");
+	}
 	go($_SERVER['HTTP_REFERER']);
 }
 
