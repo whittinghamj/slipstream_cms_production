@@ -155,28 +155,53 @@ if($type == 'flussonic') {
 	// #EXTINF:-1,CHANNEL NAME
 	// http://link.to.stream
 
+	// debug($_GET);
+	// debug($customer);
+
 	print "#EXTM3U".$new_line;
 
 	// build live tv list
-	if($customer['live_content'] == 'on'){
-		$query = $conn->query("SELECT `id`,`server_id`,`name`,`status`,`source_type` FROM `streams` WHERE `stream_type` = 'output' AND `user_id` = '".$customer['user_id']."' ORDER BY `name` ASC");
-		$streams = $query->fetchAll(PDO::FETCH_ASSOC);
+	foreach($customer['bouquet'] as $bouquet){
 
-		foreach($streams as $stream) {
-			if($stream['source_type'] == 'hidden'){
-				$stream['source_type'] = '';
-			}else{
-				// $stream['source_type'] = ' ('.strtoupper($stream['source_type']).') ';
-				$stream['source_type'] = '';
-			}
+		// echo 'Bouquet ID: '.$bouquet.'<br>';
+		// get streams for this bouquet
+		$query 						= $conn->query("SELECT `streams` FROM `bouquets` WHERE `id` = '".$bouquet."'");
+		$temp_bouquet 				= $query->fetch(PDO::FETCH_ASSOC);
+		$temp_bouquet['streams'] 	= explode(",", $temp_bouquet['streams']);
 
-			if($stream['status'] == 'online'){
-				print '#EXTINF:-1,'.stripslashes($stream['name']).$stream['source_type'].''.$new_line;
-			}else{
-				print '#EXTINF:-1,'.stripslashes($stream['name']).$stream['source_type'].'['.strtoupper($stream['status']).']'.$new_line;
-			}
-			print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
+		// debug($temp_bouquet);
+
+		// add each stream into a master bouquet
+		foreach($temp_bouquet['streams'] as $stream){
+			$temp_master_bouquet[] = $stream;
 		}
+	}
+
+	$master_bouquet = array_unique($temp_master_bouquet);
+
+	$master_bouquet = implode(",", $master_bouquet);
+
+	// echo "master_bouquet <br>";
+	// debug($master_bouquet);
+
+	// get details for each 
+	$query = $conn->query("SELECT `id`,`server_id`,`name`,`status`,`source_type` FROM `streams` WHERE `id` IN (".$master_bouquet.") ");
+	$streams = $query->fetchAll(PDO::FETCH_ASSOC);
+
+	foreach($streams as $stream) {
+		if($stream['source_type'] == 'hidden'){
+			$stream['source_type'] = '';
+		}else{
+			// $stream['source_type'] = ' ('.strtoupper($stream['source_type']).') ';
+			$stream['source_type'] = '';
+		}
+
+		if($stream['status'] == 'online'){
+			print '#EXTINF:-1,'.stripslashes($stream['name']).$stream['source_type'].''.$new_line;
+		}else{
+			print '#EXTINF:-1,'.stripslashes($stream['name']).$stream['source_type'].'['.strtoupper($stream['status']).']'.$new_line;
+		}
+		print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
 	}
 
 	// build channel list
