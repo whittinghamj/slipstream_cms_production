@@ -1975,8 +1975,10 @@ desired effect
 																		<?php if(is_array($bouquets)){ foreach($bouquets as $bouquet){ ?>
 																			<option 
 																				value="<?php echo $bouquet['id']; ?>" 
-																				
-																			><?php echo stripslashes($bouquet['name']); ?></option>
+																				<?php if(in_array($bouquet['name'], $customer_bouquets)){ echo 'selected'; } ?>
+																			>
+																				<?php echo stripslashes($bouquet['name']); ?>
+																			</option>
 																		<?php } } ?>
 																	</select>
 																</div>
