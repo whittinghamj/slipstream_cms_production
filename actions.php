@@ -2490,8 +2490,8 @@ function customer_update()
 	$email 				= addslashes($_POST['email']);
 	$email 				= trim($email);
 
-	$username			= addslashes($_POST['username']);
-	$username 			= trim($username);
+	// $username			= addslashes($_POST['username']);
+	// $username 			= trim($username);
 
 	$password 			= addslashes($_POST['password']);
 	$password 			= trim($password);
@@ -2504,8 +2504,8 @@ function customer_update()
 	$notes 				= addslashes($_POST['notes']);
 	$notes 				= trim($notes);
 
-	$reseller_notes 	= addslashes($_POST['reseller_notes']);
-	$reseller_notes 	= trim($reseller_notes);
+	// $reseller_notes 	= addslashes($_POST['reseller_notes']);
+	// $reseller_notes 	= trim($reseller_notes);
 
 	$bouquets 			= $_POST['bouquets'];
 	if(!empty($bouquets)){
@@ -2517,31 +2517,25 @@ function customer_update()
 	$vod_content 		= 'on';
 
 	// check if username is already in use
-	$query = $conn->query("SELECT `id` FROM `customers` WHERE `username` = '".$username."' ");
-	$existing_customer = $query->fetch(PDO::FETCH_ASSOC);
-	if(isset($existing_customer['id'])){
-		status_message('danger',"Username '".$username."' is not available.");
-	}else{
-		// $expire_bits 		= explode('-', $expire_date);
-		// $expire_date		= $expire_bits[1].'/'.$expire_bits[2].'/'.$expire_bits[0];
-		
-		$update = $conn->exec("UPDATE `customers` SET `status` = '".$status."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `first_name` = '".$first_name."'				WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `last_name` = '".$last_name."' 				WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `email` = '".$email."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `username` = '".$username."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `password` = '".$password."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `expire_date` = '".$expire_date."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `max_connections` = '".$max_connections."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `notes` = '".$notes."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `reseller_notes` = '".$reseller_notes."' 		WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `live_content` = '".$live_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `channel_content` = '".$channel_content."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `vod_content` = '".$vod_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
-		$update = $conn->exec("UPDATE `customers` SET `bouquet` = '".$bouquets."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	// $expire_bits 		= explode('-', $expire_date);
+	// $expire_date		= $expire_bits[1].'/'.$expire_bits[2].'/'.$expire_bits[0];
+	
+	$update = $conn->exec("UPDATE `customers` SET `status` = '".$status."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `first_name` = '".$first_name."'				WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `last_name` = '".$last_name."' 				WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `email` = '".$email."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	// $update = $conn->exec("UPDATE `customers` SET `username` = '".$username."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `password` = '".$password."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `expire_date` = '".$expire_date."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `max_connections` = '".$max_connections."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `notes` = '".$notes."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `reseller_notes` = '".$reseller_notes."' 		WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `live_content` = '".$live_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `channel_content` = '".$channel_content."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `vod_content` = '".$vod_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+	$update = $conn->exec("UPDATE `customers` SET `bouquet` = '".$bouquets."' 					WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 
-		status_message('success',"Customer account has been updated.");
-	}
+	status_message('success',"Customer account has been updated.");
 	go($_SERVER['HTTP_REFERER']);
 }
 
