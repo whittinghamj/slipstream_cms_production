@@ -390,6 +390,7 @@ if($type == 'flussonic') {
 	// #EXTINF:-1,CHANNEL NAME
 	// http://link.to.stream
 
+	debug($_GET);
 	debug($customer);
 
 	// print "#EXTM3U".$new_line;
@@ -407,7 +408,6 @@ if($type == 'flussonic') {
 		}
 	}
 
-	debug($_GET);
 	debug($master_bouquet);
 
 
