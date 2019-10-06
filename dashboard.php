@@ -1729,10 +1729,10 @@ desired effect
 																<div class="form-group">
 																	<label class="col-md-2 control-label" for="email">Login</label>
 																	<div class="col-md-5">
-																		<input type="text" class="form-control" id="username" name="username" value="username<?php echo rand('11111','99999'); ?>" placeholder="" required="">
+																		<input type="text" class="form-control" id="username" name="username" value="<?php echo random_string(); ?>" placeholder="" required="">
 																	</div>
 																	<div class="col-md-5">
-																		<input type="text" class="form-control" id="password" name="password" value="password<?php echo rand('11111','99999'); ?>" placeholder="" required="">
+																		<input type="text" class="form-control" id="password" name="password" value="<?php echo random_string(); ?>" placeholder="" required="">
 																	</div>
 																</div>
 
@@ -1762,13 +1762,14 @@ desired effect
 																	<label class="col-md-2 control-label" for="expire_date">Expire Date</label>
 																	<div class="col-md-4">
 																		<input type="date" class="form-control pull-right datepicker" id="expire_date" name="expire_date">
+																		<small>Leaving this as the default will create an unlimited / no expire date customer account. This can be changed at any time in the future by editing this field.</small>
 																	</div>
 																</div>
 
 																<div class="form-group">
 																	<label class="col-md-2 control-label" for="bouquets">Bouquets</label>
 																	<div class="col-md-10">
-																		<select id="bouquets" name="bouquets[]" class="form-control" multiple="">
+																		<select id="bouquets" name="bouquets[]" class="form-control" multiple="" required>
 																			<?php if(is_array($bouquets)){ foreach($bouquets as $bouquet){ ?>
 																				<option value="<?php echo $bouquet['id']; ?>"><?php echo stripslashes($bouquet['name']); ?></option>
 																			<?php } } ?>
