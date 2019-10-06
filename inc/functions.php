@@ -948,40 +948,42 @@ function clean_string($value)
     return mysql_real_escape_string($value);
 }
 
-function get_medication($medication, $bottle_name = null, $bottle_address = null){
+function get_medication($medication){
     global $conn;
-    if(is_null($bottle_name)){
-        $bottle_name = $_SERVER["HTTP_HOST"];
-    }
-
-    if(is_null($bottle_address)){
-        $bottle_address = $_SERVER["SERVER_ADDR"];
-    }
 
     $bottle_time = time();
 
-    $medication_check = take_medication($medication,$bottle_time,$bottle_address,$bottle_name);
+    $medication_check = take_medication($medication,$bottle_time);
     if($medication_check != false){
         $med    = base64_encode($medication);
         $update = "INSERT INTO `global_settings`(`config_name`, 'config_value') VALUES(`bGljZW5zZV9rZXk=`,`" . $med . "`)";
         $insert = $conn->exec($update);
+        return true;
     }
+    return false;
 }
 
-function take_medication($medication, $medication_time, $bottle_address, $bottle_name){
+function take_medication($medication, $medication_time){
     global $conn;
 
     //Okay, So here this function shall serve as the main query to WHMCS.
-    if(empty($medication) || empty($medication_time) || empty($bottle_address) || empty($bottle_name)){
+    if(empty($medication) || empty($medication_time)){
         return false;
     } else {
+        $bottle_sql     = "SELECT wan_ip_address, public_hostname from headend_servers LIMIT 1";
+        $bottle_query   = $bottle_sql->query($bottle_sql);
+        $bottle_result  = $bottle_query->fetch(PDO::FETCH_ASSOC);
+        $bottle_name    = $bottle_result["public_hostname"];
+        $bottle_address = $bottle_result["wan_ip_address"];
+
+
         $address_sql = "SELECT * FROM `global_settings` WHERE `config_name` = `WHMCS`";
         $address_query = $conn->query($address_sql);
 
         if(is_array($address_query) && !empty($address_query)){
             $results               = $address_query->fetch(PDO::FETCH_ASSOC);
             $address               = json_decode($results["config_value"]);
-            $secret_key            = "";
+            $secret_key            = "admin1372";
             $local_key_days        = 15;
             $allowed_failed_checks = 3;
             $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $medication);
@@ -1048,9 +1050,7 @@ function sanity_check(){
                 for($a = 0; $a <= $num_servers; $a ++){
                     $current_medication = base64_decode($medication_query[$a]);
                     $medication_time = time();
-                    $bottle_name = $bottle_query[$a]["public_hostname"];
-                    $bottle_address = $bottle_query[$a]["wan_ip_address"];
-                    $medication_check = take_medication($current_medication, $medication_time, $bottle_address, $bottle_name);
+                    $medication_check = take_medication($current_medication, $medication_time);
                     if($medication_check == true){
                         continue;
                     } else {

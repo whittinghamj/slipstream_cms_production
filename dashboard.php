@@ -861,6 +861,10 @@ desired effect
 				case "stream_bouquet":
 					stream_bouquet();
 					break;
+
+                case "licensing":
+                    licensing();
+                    break;
 					
 				// home
 				default:
@@ -9818,6 +9822,113 @@ desired effect
                 </section>
             </div>
         <?php } ?>
+
+        <?php function licensing(){ ?>
+        <?php global $conn, $global_settings, $account_details, $site; ?>
+
+        <?php
+        $query = $conn->query("SELECT `id`,`name` FROM `bouquets` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ");
+        $bouquets = $query->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+
+        <style>
+            td.details-control {
+                background: url('img/details_open.png') no-repeat center center;
+                cursor: pointer;
+            }
+            tr.shown td.details-control {
+                background: url('img/details_close.png') no-repeat center center;
+            }
+        </style>
+
+        <div class="content-wrapper">
+
+            <div id="status_message"></div>
+
+            <section class="content-header">
+                <h1>Customers <!-- <small>Optional description</small> --></h1>
+                <ol class="breadcrumb">
+                    <li class="active"><a href="dashboard.php">Dashboard</a></li>
+                    <li class="active">Customers</li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <h3 class="box-title">
+                                    Customers
+                                </h3>
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_customer_modal">Add A License</button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <form action="actions.php?a=license_add" class="form-horizontal form-bordered" method="post">
+                                    <div class="modal fade" id="new_license_modal" role="dialog">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">Add New License Key</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-2 control-label" for="email">Email</label>
+                                                                <div class="col-md-10">
+                                                                    <input type="text" class="form-control" id="email" name="license-key" value="" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-success">Add License</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <table id="example" class="display" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="no-sort" width="1px">
+                                                <input type="checkbox" id="checkAll" />
+                                            </th>
+                                            <th class="no-sort" width="1px">Expand</th>
+                                            <th class="no-sort" width="1px">ID</th>
+                                            <th style="white-space: nowrap;" width="1px">Status</th>
+                                            <th style="white-space: nowrap;" width="100px">Licnese Key</th>
+                                            <th class="no-sort" style="white-space: nowrap;" width="100px">Expires</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th class="no-sort" width="1px">
+                                                <input type="checkbox" id="checkAll" />
+                                            </th>
+                                            <th class="no-sort" width="1px">Expand</th>
+                                            <th class="no-sort" width="1px">ID</th>
+                                            <th style="white-space: nowrap;" width="1px">Status</th>
+                                            <th style="white-space: nowrap;" width="100px">License Key</th>
+                                            <th class="no-sort" style="white-space: nowrap;" width="100px">Expires</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <?php } ?>
 
         <footer class="main-footer">
             <div class="pull-right hidden-xs">
