@@ -397,6 +397,8 @@ if($type == 'flussonic') {
 
 	// build live tv list
 	foreach($customer['bouquet'] as $bouquet){
+
+		echo 'Bouquet ID: '.$bouquet.'<br>';
 		// get streams for this bouquet
 		$query 						= $conn->query("SELECT `streams` FROM `bouquets` WHERE `id` = '".$bouquet['id']."'");
 		$temp_bouquet 				= $query->fetch(PDO::FETCH_ASSOC);
