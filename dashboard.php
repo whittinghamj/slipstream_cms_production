@@ -9229,7 +9229,7 @@ desired effect
                         <div class="tab-content">
                             <form name="upload_form" id="upload_form" enctype="multipart/form-data" method="post">
                                 This is an experimental import function only. We offer <strong>NO WARRANTY</strong> or promise of it working.<br><br>
-                                Please upload your Xtream-Codes v2 database backup. Files can be up to 100MB. The larger the file, the longer the process will take. Even when the upload reports 100%, please do not close or navigate away from this window. Either wait for the green text to say UPLOAD COMPLETE or an error is reported on screen. If there is an error then please copy and paste it and open a support ticket. <br><br>
+                                Please upload your Xtream-Codes v2 database backup. Files can be up to 1GB. The larger the file, the longer the process will take. Even when the upload reports 100%, please do not close or navigate away from this window. Either wait for the green text to say UPLOAD COMPLETE or an error is reported on screen. If there is an error then please copy and paste it and open a support ticket. <br><br>
                                 <H4>How to shrink and export your database.</H4><br>
                                 SSH into your server and then copy &amp; paste the following commands one at a time.<br>
                                 <br>
