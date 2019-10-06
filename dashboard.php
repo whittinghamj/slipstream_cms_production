@@ -1973,10 +1973,7 @@ desired effect
 																<div class="col-md-10">
 																	<select id="bouquets" name="bouquets[]" class="form-control" multiple="">
 																		<?php if(is_array($bouquets)){ foreach($bouquets as $bouquet){ ?>
-																			<option 
-																				value="<?php echo $bouquet['id']; ?>" 
-																				<?php if(in_array($bouquet['id'], $customer_bouquets)){ echo 'selected'; } ?>
-																			>
+																			<option value="<?php echo $bouquet['id']; ?>" <?php if(in_array($bouquet['id'], $customer_bouquets)){ echo 'selected'; } ?>>
 																				<?php echo stripslashes($bouquet['name']); ?>
 																			</option>
 																		<?php } } ?>
