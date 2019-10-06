@@ -652,6 +652,17 @@ desired effect
 	                        </a>
 	                    </li>
 
+	                    <?php if(get('c') == 'channel_icons'){ ?>
+	                    	<li class="active">
+	                    <?php }else{ ?>
+	                    	<li>
+	                    <?php } ?>
+	                    	<a href="dashboard.php?c=channel_icons">
+	                        	<i class="fa fa-solar-panel"></i> 
+	                        	<span>Channel Icons</span>
+	                        </a>
+	                    </li>
+
 	                    <?php if(get('c') == 'xc_import'){ ?>
 	                    	<li class="active">
 	                    <?php }else{ ?>
@@ -663,17 +674,6 @@ desired effect
 	                        </a>
 	                    </li>
 	                <?php } ?>
-
-                    <?php if(get('c') == 'channel_icons'){ ?>
-                    	<li class="active">
-                    <?php }else{ ?>
-                    	<li>
-                    <?php } ?>
-                    	<a href="dashboard.php?c=channel_icons">
-                        	<i class="fa fa-solar-panel"></i> 
-                        	<span>Channel Icons</span>
-                        </a>
-                    </li>
 
                     <li>
                     	<a href="logout.php">
