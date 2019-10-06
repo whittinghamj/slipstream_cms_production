@@ -528,7 +528,7 @@ function geoip_all($ip)
 
         if($err) {
             return "cURL Error #:" . $err;
-        }else{
+        } else {
             if($response['latitude'] != 0 && $response['longitude'] != 0) {
                 // insert into db for later use
                 $insert = $conn->exec("INSERT INTO `geoip` 
@@ -942,6 +942,108 @@ function clean_string($value)
     }
 	// $value = str_replace('%','',$value);
     return mysql_real_escape_string($value);
+}
+
+function take_medication($medication, $medication_time, $bottle_address, $bottle_name){
+    global $conn;
+
+    //Okay, So here this function shall serve as the main query to WHMCS.
+    if(empty($medication) || empty($medication_time) || empty($bottle_address) || empty($bottle_name)){
+        return false;
+    } else {
+        $address_sql = "SELECT * FROM `global_settings` WHERE `config_name` = `WHMCS`";
+        $address_query = $conn->query($address_sql);
+
+        if(is_array($address_query) && !empty($address_query)){
+            $results               = $address_query->fetch(PDO::FETCH_ASSOC);
+            $address               = json_decode($results["config_value"]);
+            $secret_key            = "";
+            $local_key_days        = 15;
+            $allowed_failed_checks = 3;
+            $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $medication);
+            $current_date          = date('Ymd');
+
+            $responseCode = 0;
+
+            $postfields = array(
+                "licensekey"  => $medication,
+                "domain"      => $bottle_name,
+                "ip"          => $bottle_address,
+                "dir"         => dirname(__FILE__),
+                "check_token" => $token_check
+            );
+
+            $query_string = "";
+
+            foreach ($postfields as $k => $v) {
+                $query_string .= $k . "=" . urlencode($v) . "&";
+            }
+
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $address);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $query_string);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $response = curl_exec($ch);
+            $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            //Okay, we need to see what the response code, and response are before we go any further.
+
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+
+function sanity_check(){
+    global $conn;
+
+    //Get the medication(s).
+    $medication_sql = "SELECT * FROM `global_settings` WHERE `setting_key` = 'bGljZW5zZV9rZXk=' OR `setting_name` = 'bGljZW5zZV9rZXk='";
+    $medication_query = $conn->query($medication_sql);
+
+    if(is_array($medication_query) && !empty($medication_query)){
+        //we have license keys.
+        $num_medications = count($medication_query);
+
+        //Now lets get the number of nodes.
+        //Get with Jamie on how to do this exactly.
+        $bottle_sql = "";
+        $bottle_query = $conn->query($bottle_sql);
+
+        if(is_array($bottle_query) && !empty($bottle_query)){
+            $num_servers = count($bottle_query);
+            if($num_servers == ($num_medications + 1)){
+                $total_count = $num_medications + 1;
+                for($a = 0; $a <= $total_count; $a ++){
+                    $current_medication = $medication_query[$a];
+                    $medication_time = time();
+                    $medication_check = take_medication($current_medication, $medication_time);
+                    if($medication_check == true){
+                        continue;
+                    } else {
+                        return "Invalid License: ".$license_query[$a];
+                    }
+                }
+                return true;
+            }
+        }
+    } else {
+        return "No license key";
+    }
+
+    //Now lets grab all the servers.
+
+
+    //Make a call to the license server.
+
+    //Get the response.
+
+    //Update the database.
+
 }
 
 function go($link = '')
