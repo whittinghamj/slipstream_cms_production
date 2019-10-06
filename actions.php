@@ -25,6 +25,10 @@ switch ($a)
 		global_settings();
 		break;
 
+	case "accept_terms":
+		accept_terms();
+		break;
+
 
 	// headend functions
 	case "ajax_headends":
@@ -4182,4 +4186,13 @@ function ajax_http_proxy(){
 	$data = @file_get_contents($url);
 
 	echo $data;
+}
+
+function accept_terms()
+{
+	global $conn;
+
+	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = 'yes' WHERE `config_name` = 'cms_terms_accepted' ");
+
+    go($_SERVER['HTTP_REFERER']);
 }
