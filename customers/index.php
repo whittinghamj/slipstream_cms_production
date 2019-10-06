@@ -380,8 +380,8 @@ if($type == 'flussonic') {
 	}
 }elseif($type == 'dev') {
 	//Generate text file on the fly
-	//header("Content-type: text/plain");
-	//header("Content-Disposition: attachment; filename=playlist.m3u");
+	header("Content-type: text/plain");
+	header("Content-Disposition: attachment; filename=playlist.m3u");
 
 	$new_line = "\n";
 
