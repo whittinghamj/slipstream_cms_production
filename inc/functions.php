@@ -1010,7 +1010,7 @@ function sanity_check(){
     global $conn;
 
     //Get the medication(s).
-    $medication_sql = "SELECT * FROM `global_settings` WHERE `setting_key` = 'bGljZW5zZV9rZXk=' OR `setting_name` = 'bGljZW5zZV9rZXk='";
+    $medication_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
     $medication_query = $conn->query($medication_sql);
 
     if(is_array($medication_query) && !empty($medication_query)){
