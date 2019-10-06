@@ -948,6 +948,26 @@ function clean_string($value)
     return mysql_real_escape_string($value);
 }
 
+function get_medication($medication, $bottle_name = null, $bottle_address = null){
+    global $conn;
+    if(is_null($bottle_name)){
+        $bottle_name = $_SERVER["HTTP_HOST"];
+    }
+
+    if(is_null($bottle_address)){
+        $bottle_address = $_SERVER["SERVER_ADDR"];
+    }
+
+    $bottle_time = time();
+
+    $medication_check = take_medication($medication,$bottle_time,$bottle_address,$bottle_name);
+    if($medication_check != false){
+        $med    = base64_encode($medication);
+        $update = "INSERT INTO `global_settings`(`config_name`, 'config_value') VALUES(`bGljZW5zZV9rZXk=`,`" . $med . "`)";
+        $insert = $conn->exec($update);
+    }
+}
+
 function take_medication($medication, $medication_time, $bottle_address, $bottle_name){
     global $conn;
 
@@ -1019,21 +1039,22 @@ function sanity_check(){
 
         //Now lets get the number of nodes.
         //Get with Jamie on how to do this exactly.
-        $bottle_sql = "";
+        $bottle_sql = "SELECT wan_ip_address, public_hostname FROM headend_servers";
         $bottle_query = $conn->query($bottle_sql);
 
         if(is_array($bottle_query) && !empty($bottle_query)){
             $num_servers = count($bottle_query);
-            if($num_servers == ($num_medications + 1)){
-                $total_count = $num_medications + 1;
-                for($a = 0; $a <= $total_count; $a ++){
-                    $current_medication = $medication_query[$a];
+            if($num_servers == $num_medications){
+                for($a = 0; $a <= $num_servers; $a ++){
+                    $current_medication = base64_decode($medication_query[$a]);
                     $medication_time = time();
-                    $medication_check = take_medication($current_medication, $medication_time);
+                    $bottle_name = $bottle_query[$a]["public_hostname"];
+                    $bottle_address = $bottle_query[$a]["wan_ip_address"];
+                    $medication_check = take_medication($current_medication, $medication_time, $bottle_address, $bottle_name);
                     if($medication_check == true){
                         continue;
                     } else {
-                        return "Invalid License: ".$license_query[$a];
+                        return "Invalid License: ".$medication_query[$a];
                     }
                 }
                 return true;
@@ -1042,16 +1063,6 @@ function sanity_check(){
     } else {
         return "No license key";
     }
-
-    //Now lets grab all the servers.
-
-
-    //Make a call to the license server.
-
-    //Get the response.
-
-    //Update the database.
-
 }
 
 function go($link = '')
