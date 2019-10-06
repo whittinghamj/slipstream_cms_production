@@ -1777,9 +1777,16 @@ desired effect
 																</div>
 
 																<div class="form-group">
-																	<label class="col-md-2 control-label" for="notes">Notes</label>
+																	<label class="col-md-2 control-label" for="notes">Admin Notes</label>
 																	<div class="col-md-10">
 																		<textarea class="form-control" id="notes" name="notes"></textarea>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label class="col-md-2 control-label" for="reseller_notes">Reseller Notes</label>
+																	<div class="col-md-10">
+																		<textarea class="form-control" id="reseller_notes" name="reseller_notes"></textarea>
 																	</div>
 																</div>
 															</div>
@@ -1982,9 +1989,16 @@ desired effect
 															</div>
 
 															<div class="form-group">
-																<label class="col-md-2 control-label" for="notes">Notes</label>
+																<label class="col-md-2 control-label" for="notes">Admin Notes</label>
 																<div class="col-md-10">
 																	<textarea class="form-control" id="notes" name="notes"><?php echo stripslashes($customer['notes']); ?></textarea>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label class="col-md-2 control-label" for="reseller_notes">Reseller Notes</label>
+																<div class="col-md-10">
+																	<textarea class="form-control" id="reseller_notes" name="reseller_notes"><?php echo stripslashes($customer['reseller_notes']); ?></textarea>
 																</div>
 															</div>
 														</div>

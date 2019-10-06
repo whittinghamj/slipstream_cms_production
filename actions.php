@@ -2404,7 +2404,10 @@ function customer_add()
 	global $conn;
 		
 	$first_name 		= addslashes($_POST['first_name']);
+	$first_name 		= trim($first_name);
+
 	$last_name 			= addslashes($_POST['last_name']);
+	$last_name 			= trim($last_name);
 
 	$email 				= addslashes($_POST['email']);
 	$email 				= trim($email);
@@ -2422,6 +2425,9 @@ function customer_add()
 
 	$notes 				= addslashes($_POST['notes']);
 	$notes 				= trim($notes);
+
+	$reseller_notes 	= addslashes($_POST['reseller_notes']);
+	$reseller_notes 	= trim($reseller_notes);
 
 	$live_content 		= 'on';
 	$channel_content 	= 'on';
@@ -2442,7 +2448,7 @@ function customer_add()
 		// $expire_date		= $expire_bits[2].'/'.$expire_bits[0].'/'.$expire_bits[1];
 		
 		$insert = $conn->exec("INSERT INTO `customers` 
-	        (`user_id`,`updated`,`first_name`,`last_name`,`email`,`username`,`password`,`max_connections`,`expire_date`,`notes`,`live_content`,`channel_content`,`vod_content`,`bouquet`)
+	        (`user_id`,`updated`,`first_name`,`last_name`,`email`,`username`,`password`,`max_connections`,`expire_date`,`notes`,`reseller_notes`,`live_content`,`channel_content`,`vod_content`,`bouquet`)
 	        VALUE
 	        ('".$_SESSION['account']['id']."',
 	        '".time()."',
@@ -2454,6 +2460,7 @@ function customer_add()
 	        '".$max_connections."',
 	        '".$expire_date."',
 	        '".$notes."',
+	        '".$reseller_notes."',
 	        '".$live_content."',
 	        '".$channel_content."',
 	        '".$vod_content."',
@@ -2471,9 +2478,14 @@ function customer_update()
 	global $conn;
 	
 	$customer_id 		= addslashes($_POST['customer_id']);
+
 	$status 			= addslashes($_POST['status']);
+
 	$first_name 		= addslashes($_POST['first_name']);
+	$first_name 		= trim($first_name);
+
 	$last_name 			= addslashes($_POST['last_name']);
+	$last_name 			= trim($last_name);
 
 	$email 				= addslashes($_POST['email']);
 	$email 				= trim($email);
@@ -2488,8 +2500,12 @@ function customer_update()
 	$max_connections 	= trim($max_connections);
 
 	$expire_date 		= addslashes($_POST['expire_date']);
+	
 	$notes 				= addslashes($_POST['notes']);
 	$notes 				= trim($notes);
+
+	$reseller_notes 	= addslashes($_POST['reseller_notes']);
+	$reseller_notes 	= trim($reseller_notes);
 
 	$bouquets 			= $_POST['bouquets'];
 	if(!empty($bouquets)){
@@ -2518,6 +2534,7 @@ function customer_update()
 		$update = $conn->exec("UPDATE `customers` SET `expire_date` = '".$expire_date."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 		$update = $conn->exec("UPDATE `customers` SET `max_connections` = '".$max_connections."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 		$update = $conn->exec("UPDATE `customers` SET `notes` = '".$notes."' 						WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
+		$update = $conn->exec("UPDATE `customers` SET `reseller_notes` = '".$reseller_notes."' 		WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 		$update = $conn->exec("UPDATE `customers` SET `live_content` = '".$live_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 		$update = $conn->exec("UPDATE `customers` SET `channel_content` = '".$channel_content."' 	WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
 		$update = $conn->exec("UPDATE `customers` SET `vod_content` = '".$vod_content."' 			WHERE `id` = '".$customer_id."' AND `user_id` = '".$_SESSION['account']['id']."' ");
