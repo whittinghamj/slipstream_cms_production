@@ -438,7 +438,6 @@ if($type == 'flussonic') {
 		}
 		print "http://".$global_settings['cms_access_url_raw'].":".$global_settings['cms_port']."/customer_streams/".$customer['username']."/".$customer['password']."/".$stream['server_id']."/".$stream['id'].$new_line;
 	}
-	*/
 	
 	// build channel list
 	/*
