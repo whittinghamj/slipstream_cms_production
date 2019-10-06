@@ -412,8 +412,10 @@ if($type == 'flussonic') {
 		}
 	}
 
+	$master_bouquet = array_unique($temp_master_bouquet);
+
 	echo "master_bouquet <br>";
-	debug($temp_master_bouquet);
+	debug($master_bouquet);
 
 
 
