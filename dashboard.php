@@ -1762,7 +1762,6 @@ desired effect
 																	<label class="col-md-2 control-label" for="expire_date">Expire Date</label>
 																	<div class="col-md-4">
 																		<input type="date" class="form-control pull-right datepicker" id="expire_date" name="expire_date">
-																		<small>Leaving this as the default will create an unlimited / no expire date customer account. This can be changed at any time in the future by editing this field.</small>
 																	</div>
 																</div>
 
