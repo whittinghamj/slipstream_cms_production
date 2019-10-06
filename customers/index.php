@@ -407,11 +407,10 @@ if($type == 'flussonic') {
 		debug($temp_bouquet);
 
 		// add each stream into a master bouquet
-		foreach($temp_bouquet as $stream){
-			$master_bouquet[] = $stream;
+		foreach($temp_bouquet['streams'] as $stream){
+			$temp_master_bouquet[] = $stream;
 		}
 	}
-
 
 	echo "master_bouquet <br>";
 	debug($master_bouquet);
