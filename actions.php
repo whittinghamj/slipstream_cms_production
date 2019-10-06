@@ -2504,6 +2504,9 @@ function customer_update()
 	$notes 				= addslashes($_POST['notes']);
 	$notes 				= trim($notes);
 
+	$reseller_notes 	= addslashes($_POST['reseller_notes']);
+	$reseller_notes 	= trim($reseller_notes);
+
 	// $reseller_notes 	= addslashes($_POST['reseller_notes']);
 	// $reseller_notes 	= trim($reseller_notes);
 
