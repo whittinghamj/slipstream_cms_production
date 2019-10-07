@@ -1035,10 +1035,10 @@ function take_medication($medication, $medication_time = '0')
                 $query_string .= $k . "=" . urlencode($v) . "&";
             }
 
-            error_log("============================== WHMCS ==================================\n\n");
-            error_log($address . "\n");
-            error_log($query_string . "\n\n");
-            error_log("============================== WHMCS ==================================\n\n");
+            error_log("============================== WHMCS ==================================");
+            error_log($address);
+            error_log($query_string);
+            error_log("============================== WHMCS ==================================");
 
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $address);
@@ -1050,10 +1050,10 @@ function take_medication($medication, $medication_time = '0')
             $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
 
-            error_log("============================== WHMCS Said ==================================\n\n");
-            error_log($response . "\n");
-            error_log($response_code . "\n\n");
-            error_log("============================== WHMCS Said ==================================\n\n");
+            error_log("============================== WHMCS Said ==================================");
+            error_log($response);
+            error_log($response_code);
+            error_log("============================== WHMCS Said ==================================");
 
             //Okay, we need to see what the response code, and response are before we go any further.
             if($response_code != 200) {
@@ -1064,6 +1064,7 @@ function take_medication($medication, $medication_time = '0')
 
         } else {
             $global_settings['lockdown'] == true;
+            $global_settings['lockdown_message'] = '<strong>Billing Portal Office</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
             return false;
         }
     //}
