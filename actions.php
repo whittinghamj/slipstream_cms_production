@@ -4246,7 +4246,7 @@ function license_add()
 	$insert = $conn->exec("INSERT INTO `global_settings` 
         (`config_name`,`config_value`)
         VALUE
-        ('GljZW5zZV9rZXk=','".$encoded_license."')");
+        ('bGljZW5zZV9rZXk=','".$encoded_license."')");
     
 	// log_add("Stream Category has been added.");
 	status_message('success',"License '".$license."' has been added.");
