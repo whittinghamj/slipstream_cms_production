@@ -1100,7 +1100,7 @@ function sanity_check()
             // server cheat, too many servers
             error_log("Too many servers.");
             $global_settings['lockdown'] = true;
-            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br>You seem to have more servers than licenses. Go and buy another license.';
+            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$num_servers.' <br><strong>Total Licenses:</strong> '.$num_medications.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
         }elseif($num_servers == $num_medications){
             error_log("servers = licenses");
             for($a = 0; $a <= $num_servers; $a++){
