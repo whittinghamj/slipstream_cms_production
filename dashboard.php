@@ -9842,11 +9842,6 @@ desired effect
         <?php function licensing(){ ?>
         	<?php global $conn, $global_settings, $account_details, $site; ?>
 
-	        <?php
-	        $query = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='");
-	        $licenses = $query->fetchAll(PDO::FETCH_ASSOC);
-	        ?>
-
 	        <style>
 	            td.details-control {
 	                background: url('img/details_open.png') no-repeat center center;
@@ -9912,41 +9907,31 @@ desired effect
 	                                    </div>
 	                                </form>
 
-									<?php debug($global_settings); ?>
 									<table id="licenses" class="table table-bordered table-striped">
 										<thead>
 											<tr>
-												<th width="10px">ID</th>
 												<th class="nowrap" style="white-space: nowrap;">License Key</th>
 												<th class="no-sort" width="75px">Actions</th>
 											</tr>
 										</thead>
 										<tbody>
 											<?php
-												foreach($licenses as $license){
+												foreach($global_settings as $key => $value){
 
-													echo '
-														<tr>
-															<td>
-																'.$bouquet['id'].'
-															</td>
-															<td>
-																'.stripslashes($bouquet['name']).'
-															</td>
-															<td>
-																'.$total_streams.'
-															</td>
-															<td style="vertical-align: middle;">
-																<a title="View / Edit" class="btn btn-info btn-flat btn-xs" href="dashboard.php?c=stream_bouquet&bouquet_id='.$bouquet['id'].'">
-																	<i class="fa fa-eye"></i>
-																</a>
-
-																<a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=bouquet_delete&bouquet_id='.$bouquet['id'].'">
-																	<i class="fa fa-times"></i>
-																</a>
-															</td>
-														</tr>
-													';
+													if($key == 'GljZW5zZV9rZXk='){
+														echo '
+															<tr>
+																<td>
+																	'.decrypt($value).'
+																</td>
+																<td style="vertical-align: middle;">
+																	<a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=license_delete&license='.$value.'">
+																		<i class="fa fa-times"></i>
+																	</a>
+																</td>
+															</tr>
+														';
+													}
 												}
 											?>
 										</tbody>
