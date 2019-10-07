@@ -11973,7 +11973,8 @@ desired effect
 	<?php if($global_settings['lockdown'] == true){ ?>
 		<script>
 			$(window).on('load',function(){
-		        $('#party').modal({backdrop: 'static', keyboard: false});
+		        $('#party').modal(
+		        	{backdrop: 'static', keyboard: false});
 		    });
 		</script>
 	<?php } ?>
