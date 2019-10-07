@@ -1073,13 +1073,24 @@ function sanity_check(){
             $num_servers = count($bottle_query);
             if($num_servers == $num_medications){
                 for($a = 0; $a <= $num_servers; $a ++){
-                    $current_medication = decrypt($medication_query[$a]);
+                    $current_medication = decrypt($medication_query[$a]['config_value']);
                     $medication_time = time();
+
+                    $path_to_temp = sys_get_temp_dir();
+                    if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
+                        $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
+                        $date_to_check = strtotime("-15 days");
+
+                        if($date_to_check >= $date_created){
+                            return true;
+                        }
+                    }
+
                     $medication_check = take_medication($current_medication, $medication_time);
                     if($medication_check == true){
                         continue;
                     } else {
-                        return "Invalid License: ".$medication_query[$a];
+                        return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
                     }
                 }
                 return true;
