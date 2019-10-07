@@ -9746,11 +9746,7 @@ desired effect
 
 					<hr>
 
-					Leased-becffddc56d9b6f5 = <?php echo encrypt('Leased-becffddc56d9b6f5'); ?>
-
-					<br>
-
-					gZqWqJqZYpeamJubmZmYamuZbpdrm2o= = <?php echo decrypt('gZqWqJqZYpeamJubmZmYamuZbpdrm2o='); ?>
+					http://clients.deltacolo.com/modules/servers/licensing/verify.php = <?php echo encrypt('http://clients.deltacolo.com/modules/servers/licensing/verify.php'); ?>
 
 					<style type="text/css">
 						#github-link {
