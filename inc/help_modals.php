@@ -98,7 +98,7 @@
 </div>
 
 <div class="modal fade" id="party">
-    <div class="modal-dialog" style="width: 80%;">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">System Lockdown</h4>
