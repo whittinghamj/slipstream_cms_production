@@ -115,8 +115,6 @@
                 </center>
             </div>
             <div class="modal-footer">
-                <!-- <a href="actions.php?a=accept_terms" class="btn btn-success">Accept</a> -->
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
         </div>
     </div>
