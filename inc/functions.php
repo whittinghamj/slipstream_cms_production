@@ -999,11 +999,11 @@ function take_medication($medication, $medication_time = '')
     //if(empty($medication) || empty($medication_time)){
     //    return false;
     //} else {
-        $bottle_sql     = "SELECT wan_ip_address, public_hostname from headend_servers LIMIT 1";
-        $bottle_query   = $bottle_sql->query($bottle_sql);
-        $bottle_result  = $bottle_query->fetch(PDO::FETCH_ASSOC);
-        $bottle_name    = $bottle_result["public_hostname"];
-        $bottle_address = $bottle_result["wan_ip_address"];
+        // $bottle_sql     = "SELECT `wan_ip_address`,`public_hostname` FROM `headend_servers` LIMIT 1";
+        // $bottle_query   = $bottle_sql->query($bottle_sql);
+        // $bottle_result  = $bottle_query->fetch(PDO::FETCH_ASSOC);
+        // $bottle_name    = $bottle_result["public_hostname"];
+        // $bottle_address = $bottle_result["wan_ip_address"];
 
 
         $address_sql = "SELECT * FROM `global_settings` WHERE `config_name` = `WHMCS`";
