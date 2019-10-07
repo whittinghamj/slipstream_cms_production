@@ -1023,8 +1023,8 @@ function take_medication($medication, $medication_time = '')
 
             $post_fields = array(
                 "licensekey"  => $medication,
-                "domain"      => $bottle_name,
-                "ip"          => $bottle_address,
+                //"domain"      => $bottle_name,
+                //"ip"          => $bottle_address,
                 "dir"         => dirname(__FILE__),
                 "check_token" => $token_check
             );
