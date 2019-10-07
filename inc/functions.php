@@ -1032,6 +1032,11 @@ function take_medication($medication, $medication_time){
                 $query_string .= $k . "=" . urlencode($v) . "&";
             }
 
+            error_log("============================== WHMCS ==================================\n\n");
+            error_log($address . "\n");
+            error_log($query_string . "\n\n");
+            error_log("============================== WHMCS ==================================\n\n");
+
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $address);
             curl_setopt($ch, CURLOPT_POST, 1);
