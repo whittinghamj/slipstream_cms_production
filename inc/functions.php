@@ -1080,6 +1080,7 @@ function sanity_check()
     //Get the medication(s).
     $medication_sql   = "SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ";
     $medication_query = $conn->query($medication_sql);
+    $medication_query = $medication_query->fetch(PDO::FETCH_ASSOC);
     error_log("medication_sql start");
     error_log($medication_sql);
     error_log("medication_sql end");
@@ -1093,7 +1094,7 @@ function sanity_check()
 
         //Now lets get the number of nodes.
         //Get with Jamie on how to do this exactly.
-        $bottle_sql    = "SELECT count(*) FROM headend_servers";
+        $bottle_sql    = "SELECT count(`id`) FROM headend_servers";
         $bottle_query  = $conn->query($bottle_sql);
         $bottle_result = $bottle_query->fetch(PDO::FETCH_ASSOC);
         $num_servers   = $bottle_result["count"];
