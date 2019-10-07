@@ -1006,11 +1006,12 @@ function take_medication($medication, $medication_time = '')
         // $bottle_address = $bottle_result["wan_ip_address"];
 
 
-        $address_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'WHMCS' ";
-        $address_query = $conn->query($address_sql);
+        $address_sql            = "SELECT * FROM `global_settings` WHERE `config_name` = 'WHMCS' ";
+        $address_query          = $conn->query($address_sql);
+        $results                = $address_query->fetch(PDO::FETCH_ASSOC);
 
-        if(is_array($address_query) && !empty($address_query)){
-            $results               = $address_query->fetch(PDO::FETCH_ASSOC);
+        if(is_array($results) && !empty($results)){
+            // $results               = $address_query->fetch(PDO::FETCH_ASSOC);
             $address               = decrypt($results["config_value"]);
             $secret_key            = "admin1372";
             $local_key_days        = 15;
