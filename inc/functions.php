@@ -1081,12 +1081,7 @@ function sanity_check()
     $medication_sql   = "SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ";
     $medication_query = $conn->query($medication_sql);
     $medication_query = $medication_query->fetch(PDO::FETCH_ASSOC);
-    error_log("medication_sql start");
-    error_log($medication_sql);
-    error_log("medication_sql end");
-    error_log(debug($medication_query));
     $medication_count = count($medication_query);
-
 
     if(is_array($medication_query) && !empty($medication_query)){
         //we have license keys.
@@ -1094,10 +1089,10 @@ function sanity_check()
 
         //Now lets get the number of nodes.
         //Get with Jamie on how to do this exactly.
-        $bottle_sql    = "SELECT count(`id`) FROM headend_servers";
+        $bottle_sql    = "SELECT `id` FROM headend_servers";
         $bottle_query  = $conn->query($bottle_sql);
-        $bottle_result = $bottle_query->fetch(PDO::FETCH_ASSOC);
-        $num_servers   = $bottle_result["count"];
+        $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
+        $num_servers   = count($bottle_result);
 
         if($num_servers == $num_medications){
 
