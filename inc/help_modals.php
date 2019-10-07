@@ -111,6 +111,7 @@
                 <center>
                     <strong>License Check Failed.</strong> <br>
                     <br>
+                    All features and functions have been suspended.<br>
                     <a href="https://clients.deltacolo.com" target="_blank">Support &amp; Billing Portal</a>
                 </center>
             </div>
