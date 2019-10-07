@@ -9842,6 +9842,11 @@ desired effect
         <?php function licensing(){ ?>
         	<?php global $conn, $global_settings, $account_details, $site; ?>
 
+        	<?php 
+        		$query 		= $conn->query("SELECT * FROM `global_settings` WHERE `config_name` = 'GljZW5zZV9rZXk=' ");
+				$licenses 	= $query->fetchAll(PDO::FETCH_ASSOC);
+			?>
+
 	        <style>
 	            td.details-control {
 	                background: url('img/details_open.png') no-repeat center center;
@@ -9918,22 +9923,20 @@ desired effect
 										</thead>
 										<tbody>
 											<?php
-												foreach($global_settings as $key => $value){
+												foreach($licenses as $licenses){
 
-													if($key == 'GljZW5zZV9rZXk='){
-														echo '
-															<tr>
-																<td>
-																	'.decrypt($value).'
-																</td>
-																<td style="vertical-align: middle;">
-																	<a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=license_delete&license='.$value.'">
-																		<i class="fa fa-times"></i>
-																	</a>
-																</td>
-															</tr>
-														';
-													}
+													echo '
+														<tr>
+															<td>
+																'.decrypt($licenses['config_value']).'
+															</td>
+															<td style="vertical-align: middle;">
+																<a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=license_delete&license='.$value.'">
+																	<i class="fa fa-times"></i>
+																</a>
+															</td>
+														</tr>
+													';
 												}
 											?>
 										</tbody>
