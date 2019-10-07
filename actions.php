@@ -4240,6 +4240,10 @@ function license_add()
 	$license 				= trim($license);
 	$encoded_license 		= encrypt($license);
 
+	echo '<pre>';
+	echo $license . '<br>';
+	echo $encoded_license . '<br>';
+	die();
 	$insert = $conn->exec("INSERT INTO `global_settings` 
         (`config_name`,`config_value`)
         VALUE
@@ -4256,7 +4260,7 @@ function license_delete()
 
 	$license = get('license');
 
-	$query = $conn->query("DELETE FROM `global_settings` WHERE `config_value` = '".$license."' ");
+	$query = $conn->query("DELETE FROM `global_settings` WHERE `config_name` = 'GljZW5zZV9rZXk=' AND `config_value` = '".$license."' ");
 
 	status_message('success',"License has been deleted.");
 	go($_SERVER['HTTP_REFERER']);
