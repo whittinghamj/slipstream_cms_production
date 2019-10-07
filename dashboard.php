@@ -9923,11 +9923,11 @@ desired effect
 										</thead>
 										<tbody>
 											<?php
-												foreach($licenses as $licenses){
+												foreach($licenses as $license){
 													echo '
 														<tr>
 															<td>
-																'.decrypt($licenses['config_value']).'
+																'.decrypt($license['config_value']).'
 															</td>
 															<td style="vertical-align: middle;">
 																<a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=license_delete&license='.$license['config_value'].'">
