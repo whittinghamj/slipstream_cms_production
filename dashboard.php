@@ -11969,5 +11969,13 @@ desired effect
 		    });
 		</script>
 	<?php } ?>
+
+	<?php if($global_settings['lockdown'] == true){ ?>
+		<script>
+			$(window).on('load',function(){
+		        $('#party').modal({backdrop: 'static', keyboard: false});
+		    });
+		</script>
+	<?php } ?>
 </body>
 </html>
