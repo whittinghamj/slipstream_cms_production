@@ -4236,12 +4236,12 @@ function license_add()
 {
 	global $conn, $global_settings;
 	
-	$license 		= post('license_key');
+	$license 		= get('license');
 
 	$insert = $conn->exec("INSERT INTO `global_settings` 
         (`config_name`,`config_value`)
         VALUE
-        ('GljZW5zZV9rZXk=','".encrypt($license_key)."')");
+        ('GljZW5zZV9rZXk=','".encrypt($license)."')");
     
 	// log_add("Stream Category has been added.");
 	status_message('success',"License has been added.");

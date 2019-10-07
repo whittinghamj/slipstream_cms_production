@@ -9890,9 +9890,9 @@ desired effect
 	                                                    <div class="row">
 	                                                        <div class="col-lg-12">
 	                                                            <div class="form-group">
-	                                                                <label class="col-md-3 control-label" for="license_key">License Key</label>
+	                                                                <label class="col-md-3 control-label" for="license">License Key</label>
 	                                                                <div class="col-md-9">
-	                                                                    <input type="text" class="form-control" id="license_key" name="license_key" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+	                                                                    <input type="text" class="form-control" id="license" name="license" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required>
 	                                                                </div>
 	                                                            </div>
 	                                                        </div>
@@ -9906,6 +9906,8 @@ desired effect
 	                                        </div>
 	                                    </div>
 	                                </form>
+
+	                                <?php debug($global_settings); ?>
 
 									<table id="licenses" class="table table-bordered table-striped">
 										<thead>
