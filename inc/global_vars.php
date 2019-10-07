@@ -35,6 +35,6 @@ if($global_settings['cms_name'] != 'SlipStream CMS'){
 }
 
 $global_settings['lockdown'] 					= false;
-$global_settings['lockdown_message']			= '<strong>License Check Failed.</strong><br><br>All features and functions have been suspended.';
+$global_settings['lockdown_message']			= '<strong>License Check Failed.</strong> <br><br>All features and functions have been suspended.';
 
 unset($global_settings['GljZW5zZV9rZXk=']);
