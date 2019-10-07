@@ -1093,6 +1093,7 @@ function sanity_check()
         $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
         $num_servers   = count($bottle_result);
 
+        error_log(" ");
         error_log("total servers: ".$num_servers);
         error_log("total licenses: ".$num_medications);
 
@@ -1101,8 +1102,8 @@ function sanity_check()
             error_log("Too many servers.");
             $global_settings['lockdown'] = true;
             $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$num_servers.' <br><strong>Total Licenses:</strong> '.$num_medications.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
-        }elseif($num_servers == $num_medications){
-            error_log("servers = licenses");
+        }elseif($num_servers <= $num_medications){
+            error_log("servers <= licenses");
             for($a = 0; $a <= $num_servers; $a++){
                 $current_medication = decrypt($medication_query[$a]["config_value"]);
                 $medication_timme   = time();
