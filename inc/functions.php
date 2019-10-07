@@ -1088,15 +1088,20 @@ function sanity_check()
         $num_medications = count($medication_query);
 
         //Now lets get the number of nodes.
-        //Get with Jamie on how to do this exactly.
         $bottle_sql    = "SELECT `id` FROM headend_servers";
         $bottle_query  = $conn->query($bottle_sql);
         $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
         $num_servers   = count($bottle_result);
 
-        error_log("total servers found: ".$num_servers);
+        error_log("total servers: ".$num_servers);
+        error_log("total licenses: ".$num_medications);
 
         if($num_servers > $num_medications){
+            // server cheat, too many servers
+            error_log("Too many servers.");
+            $global_settings['lockdown'] = true;
+            $global_settings['lockdown_message'] = 'Server cheat. You seem to have more servers than licenses. Go and buy another license.';
+        }elseif($num_servers == $num_medications){
             error_log("servers = licenses");
             for($a = 0; $a <= $num_servers; $a++){
                 $current_medication = decrypt($medication_query[$a]["config_value"]);

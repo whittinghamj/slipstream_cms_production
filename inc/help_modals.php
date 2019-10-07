@@ -108,14 +108,10 @@
                 </h4>
             </div>
             <div class="modal-body">
-                <center>
-                    <strong>License Check Failed.</strong> <br>
-                    <br>
-                    All features and functions have been suspended.<br>
-                    <a href="https://clients.deltacolo.com" target="_blank">Support &amp; Billing Portal</a>
-                </center>
+                <?php echo $global_settings['lockdown_message']; ?>
             </div>
             <div class="modal-footer">
+                <a hre="https://clients.deltacolo.com" class="btn btn-default" >Support &amp; Billing Portal</button>
             </div>
         </div>
     </div>
