@@ -431,6 +431,17 @@ desired effect
                         </a>
                     </li>
 
+                    <?php if(get('c') == 'licensing'){ ?>
+                    	<li class="active">
+                    <?php }else{ ?>
+                    	<li>
+                    <?php } ?>
+                    	<a href="dashboard.php?c=licensing">
+                        	<i class="fa fa-scroll"></i> 
+                        	<span>Licenses</span>
+                        </a>
+                    </li>
+
                     <?php if(get('c') == 'remote_playlists' || get('c') == 'remote_playlist'){ ?>
                     	<li class="active">
                     <?php }else{ ?>
@@ -498,7 +509,6 @@ desired effect
 	                        </a>
 	                    </li>
 
-                	
                 		<?php if(get('c') == 'stream_bouquets' || get('c') == 'stream_bouquets'){ ?>
 	                    	<li class="active">
 	                    <?php }else{ ?>
@@ -9826,109 +9836,120 @@ desired effect
         <?php function licensing(){ ?>
         <?php global $conn, $global_settings, $account_details, $site; ?>
 
-        <?php
-        $query = $conn->query("SELECT `id`,`name` FROM `bouquets` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ");
-        $bouquets = $query->fetchAll(PDO::FETCH_ASSOC);
-        ?>
+	        <style>
+	            td.details-control {
+	                background: url('img/details_open.png') no-repeat center center;
+	                cursor: pointer;
+	            }
+	            tr.shown td.details-control {
+	                background: url('img/details_close.png') no-repeat center center;
+	            }
+	        </style>
 
-        <style>
-            td.details-control {
-                background: url('img/details_open.png') no-repeat center center;
-                cursor: pointer;
-            }
-            tr.shown td.details-control {
-                background: url('img/details_close.png') no-repeat center center;
-            }
-        </style>
+	        <div class="content-wrapper">
 
-        <div class="content-wrapper">
+	            <div id="status_message"></div>
 
-            <div id="status_message"></div>
+	            <section class="content-header">
+	                <h1>Licensing <!-- <small>Optional description</small> --></h1>
+	                <ol class="breadcrumb">
+	                    <li class="active"><a href="dashboard.php">Dashboard</a></li>
+	                    <li class="active">Licensing</li>
+	                </ol>
+	            </section>
 
-            <section class="content-header">
-                <h1>Customers <!-- <small>Optional description</small> --></h1>
-                <ol class="breadcrumb">
-                    <li class="active"><a href="dashboard.php">Dashboard</a></li>
-                    <li class="active">Customers</li>
-                </ol>
-            </section>
+	            <!-- Main content -->
+	            <section class="content">
+	                <div class="row">
+	                    <div class="col-lg-12">
+	                        <div class="box box-primary">
+	                            <div class="box-header">
+	                                <h3 class="box-title">
+	                                    Licensing
+	                                </h3>
+	                                <div class="pull-right">
+	                                    <button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_license_modal">Add A License</button>
+	                                </div>
+	                            </div>
+	                            <div class="box-body">
+	                                <form action="actions.php?a=license_add" class="form-horizontal form-bordered" method="post">
+	                                    <div class="modal fade" id="new_license_modal" role="dialog">
+	                                        <div class="modal-dialog">
+	                                            <div class="modal-content">
+	                                                <div class="modal-header">
+	                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                                                    <h4 class="modal-title">Add New License Key</h4>
+	                                                </div>
+	                                                <div class="modal-body">
+	                                                    <div class="row">
+	                                                        <div class="col-lg-12">
+	                                                            <div class="form-group">
+	                                                                <label class="col-md-2 control-label" for="license-key">License Key</label>
+	                                                                <div class="col-md-10">
+	                                                                    <input type="text" class="form-control" id="license-key" name="license-key" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+	                                                                </div>
+	                                                            </div>
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                                <div class="modal-footer">
+	                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                                                    <button type="submit" class="btn btn-success">Add License</button>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </form>
 
-            <!-- Main content -->
-            <section class="content">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="box box-primary">
-                            <div class="box-header">
-                                <h3 class="box-title">
-                                    Customers
-                                </h3>
-                                <div class="pull-right">
-                                    <button type="button" class="btn btn-success btn-xs btn-flat" data-toggle="modal" data-target="#new_customer_modal">Add A License</button>
-                                </div>
-                            </div>
-                            <div class="box-body">
-                                <form action="actions.php?a=license_add" class="form-horizontal form-bordered" method="post">
-                                    <div class="modal fade" id="new_license_modal" role="dialog">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Add New License Key</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="form-group">
-                                                                <label class="col-md-2 control-label" for="email">Email</label>
-                                                                <div class="col-md-10">
-                                                                    <input type="text" class="form-control" id="email" name="license-key" value="" placeholder="XXXX-XXXX-XXXX-XXXX">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success">Add License</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+	                               <table id="licenses" class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th width="10px">ID</th>
+												<th class="nowrap" style="white-space: nowrap;">License Key</th>
+												<th class="no-sort" width="75px">Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+											<?php
+												foreach($bouquets as $bouquet){
 
-                                <table id="example" class="display" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th class="no-sort" width="1px">
-                                                <input type="checkbox" id="checkAll" />
-                                            </th>
-                                            <th class="no-sort" width="1px">Expand</th>
-                                            <th class="no-sort" width="1px">ID</th>
-                                            <th style="white-space: nowrap;" width="1px">Status</th>
-                                            <th style="white-space: nowrap;" width="100px">Licnese Key</th>
-                                            <th class="no-sort" style="white-space: nowrap;" width="100px">Expires</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th class="no-sort" width="1px">
-                                                <input type="checkbox" id="checkAll" />
-                                            </th>
-                                            <th class="no-sort" width="1px">Expand</th>
-                                            <th class="no-sort" width="1px">ID</th>
-                                            <th style="white-space: nowrap;" width="1px">Status</th>
-                                            <th style="white-space: nowrap;" width="100px">License Key</th>
-                                            <th class="no-sort" style="white-space: nowrap;" width="100px">Expires</th>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    <?php } ?>
+													$total_streams = explode(',', $bouquet['streams']);
+													$total_streams = count($total_streams);
+													$total_streams = number_format($total_streams);
+
+													echo '
+														<tr>
+															<td>
+																'.$bouquet['id'].'
+															</td>
+															<td>
+																'.stripslashes($bouquet['name']).'
+															</td>
+															<td>
+																'.$total_streams.'
+															</td>
+															<td style="vertical-align: middle;">
+																<a title="View / Edit" class="btn btn-info btn-flat btn-xs" href="dashboard.php?c=stream_bouquet&bouquet_id='.$bouquet['id'].'">
+																	<i class="fa fa-eye"></i>
+																</a>
+
+																<a title="Delete" class="btn btn-danger btn-flat btn-xs" onclick="return confirm(\'Are you sure?\')" href="actions.php?a=bouquet_delete&bouquet_id='.$bouquet['id'].'">
+																	<i class="fa fa-times"></i>
+																</a>
+															</td>
+														</tr>
+													';
+												}
+											?>
+										</tbody>
+									</table>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </section>
+	        </div>
+	    <?php } ?>
 
         <footer class="main-footer">
             <div class="pull-right hidden-xs">
@@ -10521,6 +10542,37 @@ desired effect
 					}],
 					"language": {
 						"emptyTable": "No resellers found."
+					},
+			  		"paging": true,
+			  		"processing": true,
+			  		"lengthChange": false,
+			  		"searching": true,
+			  		"ordering": true,
+			  		"info": true,
+			  		"autoWidth": false,
+					"iDisplayLength": 100,
+					search: {
+					   search: '<?php if(isset($_GET['search'])) {echo $_GET['search'];} ?>'
+					}
+				});
+		  	});
+    	</script>
+    <?php } ?>
+
+    <?php if(get('c') == 'licensing') { ?>
+    	<script>
+			// $('.datepicker').datepicker({todayHighlight:true});
+
+    		// data tables > customers
+		  	$(function () {
+				$('#licenses').DataTable({
+					"order": [[ 1, "asc" ]],
+					"columnDefs": [{
+						"targets"  : 'no-sort',
+						"orderable": false,
+					}],
+					"language": {
+						"emptyTable": "No licenses found."
 					},
 			  		"paging": true,
 			  		"processing": true,
