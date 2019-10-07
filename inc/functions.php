@@ -1100,7 +1100,10 @@ function sanity_check()
                 $current_medication = decrypt($medication_query[$a]["config_value"]);
                 $medication_timme   = time();
 
+                error_log("License: ".$current_medication);
+
                 $path_to_temp = sys_get_temp_dir();
+                error_log("temp path: ".$path_to_temp);
                 if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
                     $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
                     $date_to_check = strtotime("-15 days");
