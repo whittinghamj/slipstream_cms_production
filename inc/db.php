@@ -1,6 +1,6 @@
 <?php
 
-$host			= '127.0.0.1';
+$host			= 'localhost';
 $db 			= 'slipstream_cms';
 $username 		= 'slipstream';
 $password 		= 'admin1372';
