@@ -1188,7 +1188,9 @@ function sanity_check_2()
         }else{
             // ok looks good, lets check each license
             foreach($licenses as $license){
+                // decrypt the license code
                 $license_key            = decrypt($license['config_value']);
+                
                 error_log("----------{ License Check Start }----------");
                 error_log("License Key Encrypted: ".$license['config_value']);
                 error_log("License Key: ".$license_key);
@@ -1203,10 +1205,19 @@ function sanity_check_2()
                     if($grace_period >= $local_license_created){
                         // grave period is ok, leave it alone for now
                         error_log("Grace period has not expired yet, leave it alone for now.");
+                    }else{
+                        // local file found but its outdated
+                        $whmcs_check = take_medication($license_key, $local_license_created);
+                        if($whmcs_check == false){
+                            $global_settings['lockdown'] = true;
+                            $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
+                            return false;
+                        }
                     }
-                // }else{
+                }else{
+                    error_log("License Key File NOT Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
                     // local file not found, lets hit whmcs
-                    $whmcs_check = take_medication($license_key, $local_license_created);
+                    $whmcs_check = take_medication($license_key, 0);
                     if($whmcs_check == false){
                         $global_settings['lockdown'] = true;
                         $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
