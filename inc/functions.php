@@ -1006,7 +1006,7 @@ function take_medication($medication, $medication_time = '')
         // $bottle_address = $bottle_result["wan_ip_address"];
 
 
-        $address_sql = "SELECT * FROM `global_settings` WHERE `config_name` = `WHMCS`";
+        $address_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'WHMCS' ";
         $address_query = $conn->query($address_sql);
 
         if(is_array($address_query) && !empty($address_query)){
