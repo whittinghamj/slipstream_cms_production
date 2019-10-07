@@ -1075,7 +1075,7 @@ function sanity_check(){
     global $conn, $global_settings;
 
     //Get the medication(s).
-    $medication_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
+    $medication_sql   = "SELECT UNIQUE(`config_value`) FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
     $medication_query = $conn->query($medication_sql);
     $medication_count = count($medication_query);
 
@@ -1090,52 +1090,39 @@ function sanity_check(){
         $bottle_sql    = "SELECT count(*) FROM headend_servers";
         $bottle_query  = $conn->query($bottle_sql);
         $bottle_result = $bottle_query->fetch(PDO::FETCH_ASSOC);
-        $num_servers = $bottle_result["count"];
+        $num_servers   = $bottle_result["count"];
 
+        if($num_servers == $num_medications){
 
-        error_log("\n\n==================================== WHMCS ====================================\n\n");
-        if( $num_servers >= 1 ) {
-            error_log("I have located my servers\n\n");
-        } else {
-            error_log("I'm not finding any servers\n\n");
-        }
-        error_log("==================================== WHMCS ====================================\n\n");
-        /*
+            for($a = 0; $a <= $num_servers; $a++){
+                $current_medication = decrypt($medication_query[$a]["config_value"]);
+                $medication_timme   = time();
 
+                $path_to_temp = sys_get_temp_dir();
+                if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
+                    $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
+                    $date_to_check = strtotime("-15 days");
 
-            if($num_servers == $num_medications){
-                for($a = 0; $a <= $num_servers; $a ++){
-                    $current_medication = decrypt($medication_query[$a]['config_value']);
-                    $medication_time = time();
-
-                    $path_to_temp = sys_get_temp_dir();
-                    if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
-                        $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
-                        $date_to_check = strtotime("-15 days");
-
-                        if($date_to_check >= $date_created){
-                            return true;
-                        }
-                    }
-
-                    $medication_check = take_medication($current_medication, $medication_time);
-                    if($medication_check == true){
-                        continue;
-                    } else {
-                        $global_settings['lockdown'] == true;
-                        return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
+                    if($date_to_check >= $date_created){
+                        return true;
                     }
                 }
-                return true;
+
+                $medication_check = take_medication($current_medication, $medication_time);
+                if($medication_check == true){
+                    continue;
+                } else {
+                    $global_settings['lockdown'] = true;
+                    return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
+                }
             }
-        }
+
+            return true;
     }else{
         error_log("No License Found - Initiating Lockdown");
-        $global_settings['lockdown'] == true;
+        $global_settings['lockdown'] = true;
         return "No License found";
     }
-
-        */
 
 }
 
