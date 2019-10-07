@@ -9911,8 +9911,8 @@ desired effect
 	                                        </div>
 	                                    </div>
 	                                </form>
-	                                
-									<?php debug($licenses); ?>
+
+									<?php debug($global_settings); ?>
 									<table id="licenses" class="table table-bordered table-striped">
 										<thead>
 											<tr>
