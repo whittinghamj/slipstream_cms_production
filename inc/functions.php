@@ -996,9 +996,9 @@ function take_medication($medication, $medication_time)
     global $conn, $global_settings;
 
     //Okay, So here this function shall serve as the main query to WHMCS.
-    if(empty($medication) || empty($medication_time)){
-        return false;
-    } else {
+    //if(empty($medication) || empty($medication_time)){
+    //    return false;
+    //} else {
         $bottle_sql     = "SELECT wan_ip_address, public_hostname from headend_servers LIMIT 1";
         $bottle_query   = $bottle_sql->query($bottle_sql);
         $bottle_result  = $bottle_query->fetch(PDO::FETCH_ASSOC);
@@ -1060,7 +1060,7 @@ function take_medication($medication, $medication_time)
             $global_settings['lockdown'] == true;
             return false;
         }
-    }
+    //}
 
     $current_time = time();
     $file         = encrypt($medication);
