@@ -1152,7 +1152,7 @@ function sanity_check_2()
 
     // set vars
     $path_to_temp       = sys_get_temp_dir();
-    $time               = time();
+    $now                = time();
     $grace_period       = strtotime("-15 days");
 
     // search for licenses
