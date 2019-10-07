@@ -4236,7 +4236,7 @@ function license_add()
 {
 	global $conn, $global_settings;
 	
-	$license 				= get('license');
+	$license 				= post('license');
 	$license 				= trim($license);
 	$encoded_license 		= encrypt($license);
 
