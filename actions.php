@@ -4259,8 +4259,12 @@ function license_delete()
 
 	$license = get('license');
 
-	$query = $conn->query("DELETE FROM `global_settings` WHERE `config_name` = 'GljZW5zZV9rZXk=' AND `config_value` = '".$license."' ");
+	if(empty($license)){
+		status_message('danger',"License was not present.");
+	}else{
+		$query = $conn->query("DELETE FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' AND `config_value` = '".$license."' ");
+		status_message('success',"License has been deleted.");
+	}
 
-	status_message('success',"License has been deleted.");
 	go($_SERVER['HTTP_REFERER']);
 }
