@@ -1186,6 +1186,7 @@ function sanity_check_2()
             // ok looks good, lets check each license
             foreach($licenses as $license){
                 $license_key            = decrypt($license['config_value']);
+                error_log("----------{ License Check Start }----------")
                 error_log("License Key Encrypted: ".$license['config_value']);
                 error_log("License Key: ".$license['config_value']);
 
@@ -1208,6 +1209,8 @@ function sanity_check_2()
                         return false;
                     }
                 }
+
+                error_log("----------{ License Check End }----------")
             }
         }
     }
