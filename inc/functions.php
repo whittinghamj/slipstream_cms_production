@@ -974,7 +974,7 @@ function clean_string($value)
 }
 
 function get_medication($medication){
-    global $conn;
+    global $conn, $global_settings;
 
     $bottle_time = time();
 
@@ -985,11 +985,13 @@ function get_medication($medication){
         $insert = $conn->exec($update);
         return true;
     }
+
+    $global_settings['lockdown'] == true;
     return false;
 }
 
 function take_medication($medication, $medication_time){
-    global $conn;
+    global $conn, $global_settings;
 
     //Okay, So here this function shall serve as the main query to WHMCS.
     if(empty($medication) || empty($medication_time)){
@@ -1043,10 +1045,12 @@ function take_medication($medication, $medication_time){
             //Okay, we need to see what the response code, and response are before we go any further.
             if($response_code != 200) {
                 //Check failed.
+                $global_settings['lockdown'] == true;
                 return false;
             }
 
         } else {
+            $global_settings['lockdown'] == true;
             return false;
         }
     }
@@ -1063,7 +1067,7 @@ function take_medication($medication, $medication_time){
 }
 
 function sanity_check(){
-    global $conn;
+    global $conn, $global_settings;
 
     //Get the medication(s).
     $medication_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
@@ -1099,15 +1103,17 @@ function sanity_check(){
                     if($medication_check == true){
                         continue;
                     } else {
+                        $global_settings['lockdown'] == true;
                         return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
                     }
                 }
                 return true;
             }
         }
-    } else {
-        return "No license key";
     }
+
+    $global_settings['lockdown'] == true;
+    return "No License found";
 }
 
 function go($link = '')
