@@ -9827,8 +9827,8 @@ desired effect
         <?php global $conn, $global_settings, $account_details, $site; ?>
 
         <?php
-        $query = $conn->query("SELECT `id`,`name` FROM `bouquets` WHERE `user_id` = '".$_SESSION['account']['id']."' ORDER BY `name` ");
-        $bouquets = $query->fetchAll(PDO::FETCH_ASSOC);
+        $query = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='");
+        $licenses = $query->fetchAll(PDO::FETCH_ASSOC);
         ?>
 
         <style>
