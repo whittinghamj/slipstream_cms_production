@@ -1095,7 +1095,7 @@ function sanity_check()
         $num_servers   = count($bottle_result);
 
         if($num_servers == $num_medications){
-
+            error_log("servers = licenses");
             for($a = 0; $a <= $num_servers; $a++){
                 $current_medication = decrypt($medication_query[$a]["config_value"]);
                 $medication_timme   = time();
@@ -1122,6 +1122,7 @@ function sanity_check()
             return true;
         }
     }else{
+        error_log("servers != licenses");
         error_log("No License Found - Initiating Lockdown");
         $global_settings['lockdown'] = true;
         return "No License found";
