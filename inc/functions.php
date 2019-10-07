@@ -1009,7 +1009,7 @@ function take_medication($medication, $medication_time){
 
         if(is_array($address_query) && !empty($address_query)){
             $results               = $address_query->fetch(PDO::FETCH_ASSOC);
-            $address               = json_decode($results["config_value"]);
+            $address               = decrypt($results["config_value"]);
             $secret_key            = "admin1372";
             $local_key_days        = 15;
             $allowed_failed_checks = 3;
