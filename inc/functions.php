@@ -1158,7 +1158,7 @@ function sanity_check_2()
     $grace_period       = strtotime("-15 days");
 
     // search for licenses
-    $query              = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ");
+    $query              = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ORDER BY `id` ");
     $licenses           = $query->fetchAll(PDO::FETCH_ASSOC);
     $total_licenses     = count($licenses);
 
