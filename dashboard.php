@@ -9712,6 +9712,7 @@ desired effect
         <?php  function staging(){ ?>
         	<?php global $conn, $globals, $account_details, $site, $global_settings; ?>
 
+        	<?php sanity_check(); ?>
             <div class="content-wrapper">
             
             	<div id="status_message"></div>
@@ -11973,7 +11974,8 @@ desired effect
 	<?php if($global_settings['lockdown'] == true){ ?>
 		<script>
 			$(window).on('load',function(){
-		        $('#party').modal({backdrop: 'static', keyboard: false});
+		        $('#party').modal(
+		        	{backdrop: 'static', keyboard: false});
 		    });
 		</script>
 	<?php } ?>
