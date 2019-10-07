@@ -484,6 +484,14 @@ switch ($a)
 	case "ajax_http_proxy":
 		ajax_http_proxy();
 		break;
+
+	case "license_add":
+		license_add();
+		break;
+
+	case "license_delete":
+		license_delete();
+		break;
 			
 
 // default		
@@ -4222,4 +4230,32 @@ function accept_terms()
 	$update = $conn->exec("UPDATE `global_settings` SET `config_value` = 'yes' WHERE `config_name` = 'cms_terms_accepted' ");
 
     go($_SERVER['HTTP_REFERER']);
+}
+
+function license_add()
+{
+	global $conn, $global_settings;
+	
+	$license 		= post('license_key');
+
+	$insert = $conn->exec("INSERT INTO `global_settings` 
+        (`config_name`,`config_value`)
+        VALUE
+        ('GljZW5zZV9rZXk=','".encrypt($license_key)."')");
+    
+	// log_add("Stream Category has been added.");
+	status_message('success',"License has been added.");
+    go($_SERVER['HTTP_REFERER']);
+}
+
+function license_delete()
+{
+	global $conn, $global_settings;
+
+	$license = get('license');
+
+	$query = $conn->query("DELETE FROM `global_settings` WHERE `config_value` = '".$license."' ");
+
+	status_message('success',"License has been deleted.");
+	go($_SERVER['HTTP_REFERER']);
 }

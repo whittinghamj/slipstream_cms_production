@@ -9890,9 +9890,9 @@ desired effect
 	                                                    <div class="row">
 	                                                        <div class="col-lg-12">
 	                                                            <div class="form-group">
-	                                                                <label class="col-md-2 control-label" for="license-key">License Key</label>
-	                                                                <div class="col-md-10">
-	                                                                    <input type="text" class="form-control" id="license-key" name="license-key" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+	                                                                <label class="col-md-3 control-label" for="license_key">License Key</label>
+	                                                                <div class="col-md-9">
+	                                                                    <input type="text" class="form-control" id="license_key" name="license_key" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required>
 	                                                                </div>
 	                                                            </div>
 	                                                        </div>
