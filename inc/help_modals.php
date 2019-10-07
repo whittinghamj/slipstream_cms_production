@@ -101,11 +101,18 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">System Lockdown</h4>
+                <h4 class="modal-title">
+                    <center>
+                        System Lockdown
+                    </center>
+                </h4>
             </div>
             <div class="modal-body">
-                License Check Failed. <br><br>
-                <a href="https://clients.deltacolo.com" target="_blank">Support &amp; Billing Portal</a>
+                <center>
+                    <strong>License Check Failed.</strong> <br>
+                    <br>
+                    <a href="https://clients.deltacolo.com" target="_blank">Support &amp; Billing Portal</a>
+                </center>
             </div>
             <div class="modal-footer">
                 <!-- <a href="actions.php?a=accept_terms" class="btn btn-success">Accept</a> -->
