@@ -996,75 +996,64 @@ function take_medication($medication, $medication_time = '0')
     global $conn, $global_settings;
 
     //Okay, So here this function shall serve as the main query to WHMCS.
-    //if(empty($medication) || empty($medication_time)){
-    //    return false;
-    //} else {
-        // $bottle_sql     = "SELECT `wan_ip_address`,`public_hostname` FROM `headend_servers` LIMIT 1";
-        // $bottle_query   = $bottle_sql->query($bottle_sql);
-        // $bottle_result  = $bottle_query->fetch(PDO::FETCH_ASSOC);
-        // $bottle_name    = $bottle_result["public_hostname"];
-        // $bottle_address = $bottle_result["wan_ip_address"];
+    $address_sql            = "SELECT * FROM `global_settings` WHERE `config_name` = 'WHMCS' ";
+    $address_query          = $conn->query($address_sql);
+    $results                = $address_query->fetch(PDO::FETCH_ASSOC);
 
+    if(is_array($results) && !empty($results)){
+        // $results               = $address_query->fetch(PDO::FETCH_ASSOC);
+        $address               = decrypt($results["config_value"]);
+        $secret_key            = "admin1372";
+        $local_key_days        = 15;
+        $allowed_failed_checks = 3;
+        $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $medication);
+        $current_date          = date('Ymd');
 
-        $address_sql            = "SELECT * FROM `global_settings` WHERE `config_name` = 'WHMCS' ";
-        $address_query          = $conn->query($address_sql);
-        $results                = $address_query->fetch(PDO::FETCH_ASSOC);
+        $responseCode = 0;
 
-        if(is_array($results) && !empty($results)){
-            // $results               = $address_query->fetch(PDO::FETCH_ASSOC);
-            $address               = decrypt($results["config_value"]);
-            $secret_key            = "admin1372";
-            $local_key_days        = 15;
-            $allowed_failed_checks = 3;
-            $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $medication);
-            $current_date          = date('Ymd');
+        $post_fields = array(
+            "licensekey"  => $medication,
+            //"domain"      => $bottle_name,
+            //"ip"          => $bottle_address,
+            "dir"         => dirname(__FILE__),
+            "check_token" => $token_check
+        );
 
-            $responseCode = 0;
+        $query_string = "";
 
-            $post_fields = array(
-                "licensekey"  => $medication,
-                //"domain"      => $bottle_name,
-                //"ip"          => $bottle_address,
-                "dir"         => dirname(__FILE__),
-                "check_token" => $token_check
-            );
+        foreach ($post_fields as $k => $v) {
+            $query_string .= $k . "=" . urlencode($v) . "&";
+        }
 
-            $query_string = "";
+        error_log("============================== WHMCS Question ==================================");
+        error_log($address);
+        error_log($query_string);
 
-            foreach ($post_fields as $k => $v) {
-                $query_string .= $k . "=" . urlencode($v) . "&";
-            }
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $address);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $query_string);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $response = curl_exec($ch);
+        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
 
-            error_log("============================== WHMCS Question ==================================");
-            error_log($address);
-            error_log($query_string);
+        error_log("============================== WHMCS Answer ==================================");
+        error_log($response);
+        error_log($response_code);
 
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $address);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $query_string);
-            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            $response = curl_exec($ch);
-            $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            curl_close($ch);
-
-            error_log("============================== WHMCS Answer ==================================");
-            error_log($response);
-            error_log($response_code);
-
-            //Okay, we need to see what the response code, and response are before we go any further.
-            if($response_code != 200) {
-                //Check failed.
-                $global_settings['lockdown'] == true;
-                return false;
-            }
-        } else {
+        //Okay, we need to see what the response code, and response are before we go any further.
+        if($response_code != 200) {
+            //Check failed.
             $global_settings['lockdown'] == true;
-            $global_settings['lockdown_message'] = '<strong>Billing Portal Office</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
             return false;
         }
-    //}
+    }else{
+        $global_settings['lockdown'] == true;
+        $global_settings['lockdown_message'] = '<strong>Billing Portal Office</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
+        return false;
+    }
 
     $current_time = time();
     $file         = encrypt($medication);
@@ -1227,6 +1216,8 @@ function sanity_check_2()
 
                 error_log("----------{ License Check End }----------");
                 error_log(" \n");
+
+                sleep(3);
             }
         }
     }
