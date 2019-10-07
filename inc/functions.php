@@ -1096,7 +1096,7 @@ function sanity_check()
 
         error_log("total servers found: ".$num_servers);
 
-        if($num_servers == $num_medications){
+        if($num_servers > $num_medications){
             error_log("servers = licenses");
             for($a = 0; $a <= $num_servers; $a++){
                 $current_medication = decrypt($medication_query[$a]["config_value"]);
@@ -1127,8 +1127,7 @@ function sanity_check()
             return true;
         }
     }else{
-        error_log("servers != licenses");
-        error_log("No License Found - Initiating Lockdown");
+        error_log("Too many servers.");
         $global_settings['lockdown'] = true;
         return "No License found";
     }
