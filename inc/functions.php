@@ -1191,11 +1191,11 @@ function sanity_check_2()
                 $license_key            = decrypt($license['config_value']);
                 error_log("----------{ License Check Start }----------");
                 error_log("License Key Encrypted: ".$license['config_value']);
-                error_log("License Key: ".$license['config_value']);
+                error_log("License Key: ".$license_key);
                 error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
                 // check if local license file exists
-                if(file_exists($path_to_temp . $license['config_value'])){
+                if(file_exists($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value'])){
                     error_log("License Key File Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
                     $local_license_created = filectime($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
@@ -1215,7 +1215,7 @@ function sanity_check_2()
                 }
 
                 error_log("----------{ License Check End }----------");
-                error_log(" ");
+                error_log(" \n");
             }
         }
     }
