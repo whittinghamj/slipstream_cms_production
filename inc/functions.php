@@ -1185,7 +1185,7 @@ function sanity_check_2()
             // ok looks good, lets check each license
             foreach($licenses as $license){
                 $license_key            = decrypt($license['config_value']);
-                error_log("License Key Encrypted: ".$$license['config_value']." \n");
+                error_log("License Key Encrypted: ".$license['config_value']." \n");
                 error_log("License Key: ".$license." \n");
 
                 // check if local license file exists
