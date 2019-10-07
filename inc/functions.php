@@ -1035,10 +1035,9 @@ function take_medication($medication, $medication_time = '0')
                 $query_string .= $k . "=" . urlencode($v) . "&";
             }
 
-            error_log("============================== WHMCS ==================================");
+            error_log("============================== WHMCS Question ==================================");
             error_log($address);
             error_log($query_string);
-            error_log("============================== WHMCS ==================================");
 
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $address);
@@ -1050,10 +1049,9 @@ function take_medication($medication, $medication_time = '0')
             $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
 
-            error_log("============================== WHMCS Said ==================================");
+            error_log("============================== WHMCS Answer ==================================");
             error_log($response);
             error_log($response_code);
-            error_log("============================== WHMCS Said ==================================");
 
             //Okay, we need to see what the response code, and response are before we go any further.
             if($response_code != 200) {
@@ -1061,7 +1059,6 @@ function take_medication($medication, $medication_time = '0')
                 $global_settings['lockdown'] == true;
                 return false;
             }
-
         } else {
             $global_settings['lockdown'] == true;
             $global_settings['lockdown_message'] = '<strong>Billing Portal Office</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
@@ -1202,7 +1199,10 @@ function sanity_check_2()
 
                     $local_license_created = filectime($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
-                    if($grace_period >= $local_license_created){
+                    // cehck grace period
+                    $time_since_call_home = $now - $local_license_created;
+
+                    if($time_since_call_home >= $grace_period){
                         // grave period is ok, leave it alone for now
                         error_log("Grace period has not expired yet, leave it alone for now.");
                     }else{
