@@ -1168,6 +1168,7 @@ function sanity_check_2()
     if($total_licenses == 0){
         $global_settings['lockdown'] = true;
         $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>Unable to find any licenses. Please make sure you entered at least one valid license under the <a href="dashboard.php?c=licensing">license section</a>.';
+        return false;
     }else{
         // search for servers
         $query          = $conn->query("SELECT `id` FROM `headend_servers` ");
@@ -1182,6 +1183,7 @@ function sanity_check_2()
             error_log("Too many servers.");
             $global_settings['lockdown'] = true;
             $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$total_servers.' <br><strong>Total Licenses:</strong> '.$total_licenses.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
+            return false;
         }else{
             // ok looks good, lets check each license
             foreach($licenses as $license){
@@ -1200,13 +1202,13 @@ function sanity_check_2()
                     if($grace_period >= $local_license_created){
                         // grave period is ok, leave it alone for now
                         error_log("Grace period has not expired yet, leave it alone for now.");
-                        return true;
                     }
-                }else{
+                // }else{
                     // local file not found, lets hit whmcs
                     $whmcs_check = take_medication($license_key, $local_license_created);
                     if($whmcs_check == false){
                         $global_settings['lockdown'] = true;
+                        $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
                         return false;
                     }
                 }
