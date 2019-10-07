@@ -9836,6 +9836,7 @@ desired effect
         <?php function licensing(){ ?>
         <?php global $conn, $global_settings, $account_details, $site; ?>
 
+<<<<<<< HEAD
 	        <style>
 	            td.details-control {
 	                background: url('img/details_open.png') no-repeat center center;
@@ -9900,6 +9901,34 @@ desired effect
 	                                        </div>
 	                                    </div>
 	                                </form>
+=======
+        <?php
+        $query = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='");
+        $licenses = $query->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+
+        <style>
+            td.details-control {
+                background: url('img/details_open.png') no-repeat center center;
+                cursor: pointer;
+            }
+            tr.shown td.details-control {
+                background: url('img/details_close.png') no-repeat center center;
+            }
+        </style>
+
+        <div class="content-wrapper">
+
+            <div id="status_message"></div>
+
+            <section class="content-header">
+                <h1>Customers <!-- <small>Optional description</small> --></h1>
+                <ol class="breadcrumb">
+                    <li class="active"><a href="dashboard.php">Dashboard</a></li>
+                    <li class="active">Customers</li>
+                </ol>
+            </section>
+>>>>>>> d2f3298e8d952bec10d6f58d722cce24dbd81b26
 
 	                               <table id="licenses" class="table table-bordered table-striped">
 										<thead>
