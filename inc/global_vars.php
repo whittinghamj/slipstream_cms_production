@@ -33,3 +33,5 @@ if($global_settings['cms_name'] != 'SlipStream CMS'){
 	$site['name_long'] 							= $global_settings['cms_name'];
 	$site['name_short'] 						= $global_settings['cms_name'];
 }
+
+unset($global_settings['GljZW5zZV9rZXk=']);
