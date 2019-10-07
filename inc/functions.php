@@ -1162,7 +1162,8 @@ function sanity_check_2()
     $licenses           = $query->fetchAll(PDO::FETCH_ASSOC);
     $total_licenses     = count($licenses);
 
-    error_log("Licenses Found: ".$total_licenses." \n");
+    error_log(" \n");
+    error_log("Licenses Found: ".$total_licenses);
 
     if($total_licenses == 0){
         $global_settings['lockdown'] = true;
@@ -1173,30 +1174,30 @@ function sanity_check_2()
         $servers        = $query->fetchAll(PDO::FETCH_ASSOC);
         $total_servers  = count($servers);
 
-        error_log("Servers Found: ".$total_servers." \n");
+        error_log("Servers Found: ".$total_servers);
 
         // check for too any servers
         if($total_servers > $total_licenses){
             // too many servers, server cheat
-            error_log("Too many servers. \n");
+            error_log("Too many servers.");
             $global_settings['lockdown'] = true;
             $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$total_servers.' <br><strong>Total Licenses:</strong> '.$total_licenses.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
         }else{
             // ok looks good, lets check each license
             foreach($licenses as $license){
                 $license_key            = decrypt($license['config_value']);
-                error_log("License Key Encrypted: ".$license['config_value']." \n");
-                error_log("License Key: ".$license." \n");
+                error_log("License Key Encrypted: ".$license['config_value']);
+                error_log("License Key: ".$license['config_value']);
 
                 // check if local license file exists
                 if(file_exists($path_to_temp . $license['config_value'])){
-                    error_log("Local License File Found: ".$path_to_temp . $license['config_value']." \n");
+                    error_log("Local License File Found: ".$path_to_temp . $license['config_value']);
 
                     $local_license_created = filectime($path_to_temp . $license['config_value']);
 
                     if($grace_period >= $local_license_created){
                         // grave period is ok, leave it alone for now
-                        error_log("Grace period has not expired yet, leave it alone for now. \n");
+                        error_log("Grace period has not expired yet, leave it alone for now.");
                         return true;
                     }
                 }else{
