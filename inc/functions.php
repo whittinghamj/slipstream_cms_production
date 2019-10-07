@@ -1078,6 +1078,8 @@ function sanity_check(){
     $medication_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
     $medication_query = $conn->query($medication_sql);
 
+    error_log(debug($medication_query));
+
     if(is_array($medication_query) && !empty($medication_query)){
         //we have license keys.
         $num_medications = count($medication_query);
@@ -1115,10 +1117,11 @@ function sanity_check(){
                 return true;
             }
         }
+    }else{
+        error_log("No License Found - Initiating Lockdown")
+        $global_settings['lockdown'] == true;
+        return "No License found";
     }
-
-    $global_settings['lockdown'] == true;
-    return "No License found";
 }
 
 function go($link = '')
