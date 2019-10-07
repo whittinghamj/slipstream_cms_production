@@ -111,7 +111,7 @@
                 <?php echo $global_settings['lockdown_message']; ?>
             </div>
             <div class="modal-footer">
-                <a hre="https://clients.deltacolo.com" class="btn btn-default" >Support &amp; Billing Portal</button>
+                <a hre="https://clients.deltacolo.com" class="btn btn-default" >Support &amp; Billing Portal</a>
             </div>
         </div>
     </div>
