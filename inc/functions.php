@@ -1083,9 +1083,9 @@ function sanity_check()
     error_log("medication_sql start");
     error_log($medication_sql);
     error_log("medication_sql end");
+    error_log(debug($medication_query));
     $medication_count = count($medication_query);
 
-    error_log(debug($medication_query));
 
     if(is_array($medication_query) && !empty($medication_query)){
         //we have license keys.
