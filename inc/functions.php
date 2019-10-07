@@ -1210,65 +1210,8 @@ function sanity_check_2()
             }
         }
     }
-
-    if(is_array($medication_query) && !empty($medication_query)){
-        //we have license keys.
-        $num_medications = count($medication_query);
-
-        //Now lets get the number of nodes.
-        $bottle_sql    = "SELECT `id` FROM headend_servers";
-        $bottle_query  = $conn->query($bottle_sql);
-        $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
-        $num_servers   = count($bottle_result);
-
-        error_log(" ");
-        error_log("total servers: ".$num_servers);
-        error_log("total licenses: ".$num_medications);
-
-        if($num_servers > $num_medications){
-            // server cheat, too many servers
-            error_log("Too many servers.");
-            $global_settings['lockdown'] = true;
-            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$num_servers.' <br><strong>Total Licenses:</strong> '.$num_medications.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
-        }elseif($num_servers <= $num_medications){
-            error_log("servers <= licenses");
-            for($a = 0; $a <= $num_servers; $a++){
-                $current_medication = decrypt($medication_query[$a]["config_value"]);
-                $medication_timme   = time();
-
-                error_log("License: ".$current_medication);
-
-                $path_to_temp = sys_get_temp_dir();
-                
-                error_log("temp path: ".$path_to_temp);
-                
-                if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
-                    $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
-                    $date_to_check = strtotime("-15 days");
-
-                    if($date_to_check >= $date_created){
-                        return true;
-                    }
-                }else{
-                    // hit whmcs
-                    $medication_check = take_medication($current_medication, $date_created);
-                    if($medication_check == true){
-                        continue;
-                    } else {
-                        $global_settings['lockdown'] = true;
-                        return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
-                    }
-                }
-            }
-
-            return true;
-        }
-    }else{
-        error_log("No License found.");
-        $global_settings['lockdown'] = true;
-        return "No License found";
-    }
 }
+
 
 function go($link = '')
 {
