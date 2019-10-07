@@ -4240,10 +4240,9 @@ function license_add()
 	$license 				= trim($license);
 	$encoded_license 		= encrypt($license);
 
-	echo '<pre>';
-	echo $license . '<br>';
-	echo $encoded_license . '<br>';
-	die();
+	error_log($license);
+	error_log($encoded_license);
+
 	$insert = $conn->exec("INSERT INTO `global_settings` 
         (`config_name`,`config_value`)
         VALUE
