@@ -26,7 +26,7 @@ function decrypt($string, $key=5)
 }
 
 function is_customer_connection_allowed($customer_id){
-    global $conn;
+    global $conn, $global_settings;
 
     $time_shift = time() - 10;
 
@@ -168,7 +168,7 @@ function cors()
 
 function get_all_servers_ids()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $query = $conn->query("SELECT `id`,`status` FROM `headend_servers` WHERE `user_id` = '".$_SESSION['account']['id']."'");
     $headends = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -178,7 +178,7 @@ function get_all_servers_ids()
 
 function total_bandwidth()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT `bandwidth_down`,`bandwidth_up`  
@@ -207,7 +207,7 @@ function total_bandwidth()
 
 function total_online_clients()
 {
-    global $conn;
+    global $conn, $global_settings;
     
     $servers = get_all_servers_ids();
 
@@ -258,7 +258,7 @@ function total_online_clients()
 
 function total_customers()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_customers 
@@ -274,7 +274,7 @@ function total_customers()
 
 function total_stream_outputs($id)
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(`id`) as total_outputs 
@@ -290,7 +290,7 @@ function total_stream_outputs($id)
 
 function total_servers()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_servers 
@@ -306,7 +306,7 @@ function total_servers()
 
 function total_online_servers()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_servers 
@@ -323,7 +323,7 @@ function total_online_servers()
 
 function total_offline_servers()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_servers 
@@ -340,7 +340,7 @@ function total_offline_servers()
 
 function total_streams()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_streams 
@@ -356,7 +356,7 @@ function total_streams()
 
 function total_channels()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_channels 
@@ -372,7 +372,7 @@ function total_channels()
 
 function total_vod()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_vod 
@@ -399,7 +399,7 @@ function total_vod()
 
 function total_cdn_streams()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_streams 
@@ -415,7 +415,7 @@ function total_cdn_streams()
 
 function total_firewall_rules()
 {
-    global $conn;
+    global $conn, $global_settings;
 
     $sql = "
         SELECT count(*) as total_firewall_rules 
@@ -431,7 +431,7 @@ function total_firewall_rules()
 
 function geoip($ip)
 {
-    global $conn;
+    global $conn, $global_settings;
 
     // check for existing lat, lng
     $sql = "
@@ -502,7 +502,7 @@ function geoip($ip)
 
 function geoip_all($ip)
 {
-    global $conn;
+    global $conn, $global_settings;
 
     // check for existing lat, lng
     $sql = "
@@ -590,7 +590,7 @@ function get_full_url()
 
 function log_add($message)
 {
-	global $conn;
+	global $conn, $global_settings;
 
 	$message = addslashes($message);
 
@@ -973,7 +973,8 @@ function clean_string($value)
     return mysql_real_escape_string($value);
 }
 
-function get_medication($medication){
+function get_medication($medication)
+{
     global $conn, $global_settings;
 
     $bottle_time = time();
@@ -990,7 +991,8 @@ function get_medication($medication){
     return false;
 }
 
-function take_medication($medication, $medication_time){
+function take_medication($medication, $medication_time)
+{
     global $conn, $global_settings;
 
     //Okay, So here this function shall serve as the main query to WHMCS.
@@ -1071,7 +1073,8 @@ function take_medication($medication, $medication_time){
     return true;
 }
 
-function sanity_check(){
+function sanity_check()
+{
     global $conn, $global_settings;
 
     //Get the medication(s).
@@ -1123,7 +1126,7 @@ function sanity_check(){
         $global_settings['lockdown'] = true;
         return "No License found";
     }
-
+}
 }
 
 function go($link = '')
@@ -1385,9 +1388,6 @@ function get_redirect_target($url)
     return $url;
 }
 
-// FOLLOW ALL REDIRECTS:
-// This makes multiple requests, following each redirect until it reaches the
-// final destination.
 function get_redirect_final_target($url)
 {
     $ch = curl_init($url);
@@ -1412,7 +1412,8 @@ function get_headend($id)
 	}
 }
 
-function random_string($length = 10) {
+function random_string($length = 10)
+{
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
     $randomString = '';
