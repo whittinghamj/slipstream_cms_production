@@ -1080,7 +1080,7 @@ function sanity_check()
     //Get the medication(s).
     $medication_sql   = "SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ";
     $medication_query = $conn->query($medication_sql);
-    $medication_query = $medication_query->fetch(PDO::FETCH_ASSOC);
+    $medication_query = $medication_query->fetchAll(PDO::FETCH_ASSOC);
     $medication_count = count($medication_query);
 
     if(is_array($medication_query) && !empty($medication_query)){
