@@ -1077,6 +1077,7 @@ function sanity_check(){
     //Get the medication(s).
     $medication_sql = "SELECT * FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
     $medication_query = $conn->query($medication_sql);
+    $medication_count = count($medication_query);
 
     error_log(debug($medication_query));
 
@@ -1086,11 +1087,22 @@ function sanity_check(){
 
         //Now lets get the number of nodes.
         //Get with Jamie on how to do this exactly.
-        $bottle_sql = "SELECT wan_ip_address, public_hostname FROM headend_servers";
-        $bottle_query = $conn->query($bottle_sql);
+        $bottle_sql    = "SELECT count(*) FROM headend_servers";
+        $bottle_query  = $conn->query($bottle_sql);
+        $bottle_result = $bottle_query->fetch(PDO::FETCH_ASSOC);
+        $num_servers = $bottle_result["count"];
 
-        if(is_array($bottle_query) && !empty($bottle_query)){
-            $num_servers = count($bottle_query);
+
+        error_log("\n\n==================================== WHMCS ====================================\n\n");
+        if( $num_servers >= 1 ) {
+            error_log("I have located my servers\n\n");
+        } else {
+            error_log("I'm not finding any servers\n\n");
+        }
+        error_log("==================================== WHMCS ====================================\n\n");
+        /*
+
+
             if($num_servers == $num_medications){
                 for($a = 0; $a <= $num_servers; $a ++){
                     $current_medication = decrypt($medication_query[$a]['config_value']);
@@ -1122,6 +1134,9 @@ function sanity_check(){
         $global_settings['lockdown'] == true;
         return "No License found";
     }
+
+        */
+
 }
 
 function go($link = '')
