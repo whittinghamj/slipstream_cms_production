@@ -65,7 +65,8 @@ if($type == 'flussonic') {
 			if($stream['status'] == 'online'){
 				print '#EXTINF:-1,'.stripslashes($stream['name']).$new_line;
 			}else{
-				print '#EXTINF:-1,'.stripslashes($stream['name']).' ['.strtoupper($stream['status']).']'.$new_line;
+				// print '#EXTINF:-1,'.stripslashes($stream['name']).' ['.strtoupper($stream['status']).']'.$new_line;
+				print '#EXTINF:-1,'.stripslashes($stream['name']).$new_line;
 			}
 
 			$query = $conn->query("SELECT `id`,`wan_ip_address`,`public_hostname` FROM `headend_servers` WHERE `id` = '".$stream['server_id']."' ");
