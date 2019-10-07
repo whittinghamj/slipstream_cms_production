@@ -1118,7 +1118,7 @@ function sanity_check(){
             }
         }
     }else{
-        error_log("No License Found - Initiating Lockdown")
+        error_log("No License Found - Initiating Lockdown");
         $global_settings['lockdown'] == true;
         return "No License found";
     }
