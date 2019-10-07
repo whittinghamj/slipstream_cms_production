@@ -9712,7 +9712,7 @@ desired effect
         <?php  function staging(){ ?>
         	<?php global $conn, $globals, $account_details, $site, $global_settings; ?>
 
-        	<?php sanity_check(); ?>
+        	<?php sanity_check_2(); ?>
             <div class="content-wrapper">
             
             	<div id="status_message"></div>

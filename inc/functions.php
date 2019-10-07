@@ -1148,6 +1148,128 @@ function sanity_check()
     }
 }
 
+function sanity_check_2()
+{
+    global $conn, $global_settings;
+
+    // set vars
+    $path_to_temp       = sys_get_temp_dir();
+    $time               = time();
+    $grace_period       = strtotime("-15 days");
+
+    // search for licenses
+    $query              = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ");
+    $licenses           = $query->fetchAll(PDO::FETCH_ASSOC);
+    $total_licenses     = count($licenses);
+
+    error_log("Licenses Found: ".$total_licenses." \n");
+
+    if($total_licenses == 0){
+        $global_settings['lockdown'] = true;
+        $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>Unable to find any licenses. Please make sure you entered at least one valid license under the <a href="dashboard.php?c=licensing">license section</a>.';
+    }else{
+        // search for servers
+        $query          = $conn->query("SELECT `id` FROM `headend_servers` ");
+        $servers        = $query->fetchAll(PDO::FETCH_ASSOC);
+        $total_servers  = count($servers);
+
+        error_log("Servers Found: ".$total_servers." \n");
+
+        // check for too any servers
+        if($total_servers > $total_licenses){
+            // too many servers, server cheat
+            error_log("Too many servers. \n");
+            $global_settings['lockdown'] = true;
+            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$total_servers.' <br><strong>Total Licenses:</strong> '.$total_licenses.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
+        }else{
+            // ok looks good, lets check each license
+            foreach($licenses as $license){
+                $license_key            = decrypt($license['config_value']);
+                error_log("License Key Encrypted: ".$$license['config_value']." \n");
+                error_log("License Key: ".$license." \n");
+
+                // check if local license file exists
+                if(file_exists($path_to_temp . $license['config_value'])){
+                    error_log("Local License File Found: ".$path_to_temp . $license['config_value']." \n");
+
+                    $local_license_created = filectime($path_to_temp . $license['config_value']);
+
+                    if($grace_period >= $local_license_created){
+                        // grave period is ok, leave it alone for now
+                        error_log("Grace period has not expired yet, leave it alone for now. \n");
+                        return true;
+                    }
+                }else{
+                    // local file not found, lets hit whmcs
+                    $whmcs_check = take_medication($license_key, $local_license_created);
+                    if($whmcs_check == false){
+                        $global_settings['lockdown'] = true;
+                        return "Invalid License: ".$license_key);
+                    }
+                }
+            }
+        }
+    }
+
+    if(is_array($medication_query) && !empty($medication_query)){
+        //we have license keys.
+        $num_medications = count($medication_query);
+
+        //Now lets get the number of nodes.
+        $bottle_sql    = "SELECT `id` FROM headend_servers";
+        $bottle_query  = $conn->query($bottle_sql);
+        $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
+        $num_servers   = count($bottle_result);
+
+        error_log(" ");
+        error_log("total servers: ".$num_servers);
+        error_log("total licenses: ".$num_medications);
+
+        if($num_servers > $num_medications){
+            // server cheat, too many servers
+            error_log("Too many servers.");
+            $global_settings['lockdown'] = true;
+            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$num_servers.' <br><strong>Total Licenses:</strong> '.$num_medications.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
+        }elseif($num_servers <= $num_medications){
+            error_log("servers <= licenses");
+            for($a = 0; $a <= $num_servers; $a++){
+                $current_medication = decrypt($medication_query[$a]["config_value"]);
+                $medication_timme   = time();
+
+                error_log("License: ".$current_medication);
+
+                $path_to_temp = sys_get_temp_dir();
+                
+                error_log("temp path: ".$path_to_temp);
+                
+                if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
+                    $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
+                    $date_to_check = strtotime("-15 days");
+
+                    if($date_to_check >= $date_created){
+                        return true;
+                    }
+                }else{
+                    // hit whmcs
+                    $medication_check = take_medication($current_medication, $date_created);
+                    if($medication_check == true){
+                        continue;
+                    } else {
+                        $global_settings['lockdown'] = true;
+                        return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
+                    }
+                }
+            }
+
+            return true;
+        }
+    }else{
+        error_log("No License found.");
+        $global_settings['lockdown'] = true;
+        return "No License found";
+    }
+}
+
 function go($link = '')
 {
 	header("Location: " . $link);
