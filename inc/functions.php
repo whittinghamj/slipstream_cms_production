@@ -980,7 +980,7 @@ function get_medication($medication){
 
     $medication_check = take_medication($medication,$bottle_time);
     if($medication_check != false){
-        $med    = base64_encode($medication);
+        $med    = encrypt($medication);
         $update = "INSERT INTO `global_settings`(`config_name`, 'config_value') VALUES(`bGljZW5zZV9rZXk=`,`" . $med . "`)";
         $insert = $conn->exec($update);
         return true;
@@ -1073,7 +1073,7 @@ function sanity_check(){
             $num_servers = count($bottle_query);
             if($num_servers == $num_medications){
                 for($a = 0; $a <= $num_servers; $a ++){
-                    $current_medication = base64_decode($medication_query[$a]);
+                    $current_medication = decrypt($medication_query[$a]);
                     $medication_time = time();
                     $medication_check = take_medication($current_medication, $medication_time);
                     if($medication_check == true){
