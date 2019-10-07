@@ -1050,6 +1050,15 @@ function take_medication($medication, $medication_time){
             return false;
         }
     }
+
+    $current_time = time();
+    $file         = encrypt($medication);
+    $path         = sys_get_temp_dir();
+    $path_to_file = $path . DIRECTORY_SEPARATOR . $file;
+    $fp           = fopen($path_to_file,"wb");
+    fwrite($fp,$current_time);
+    fclose($fp);
+
     return true;
 }
 
