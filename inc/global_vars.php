@@ -34,6 +34,6 @@ if($global_settings['cms_name'] != 'SlipStream CMS'){
 	$site['name_short'] 						= $global_settings['cms_name'];
 }
 
-$global_settings['lockdown'] = true;
+$global_settings['lockdown'] 					= TRUE;
 
 unset($global_settings['GljZW5zZV9rZXk=']);
