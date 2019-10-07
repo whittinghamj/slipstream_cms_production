@@ -1121,12 +1121,12 @@ function sanity_check()
             }
 
             return true;
+        }
     }else{
         error_log("No License Found - Initiating Lockdown");
         $global_settings['lockdown'] = true;
         return "No License found";
     }
-}
 }
 
 function go($link = '')
