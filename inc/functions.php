@@ -1215,6 +1215,7 @@ function sanity_check_2()
                 }
 
                 error_log("----------{ License Check End }----------");
+                error_log(" ")
             }
         }
     }
