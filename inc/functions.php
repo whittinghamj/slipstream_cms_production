@@ -1204,7 +1204,7 @@ function sanity_check_2()
                     $whmcs_check = take_medication($license_key, $local_license_created);
                     if($whmcs_check == false){
                         $global_settings['lockdown'] = true;
-                        return "Invalid License: ".$license_key);
+                        return false;
                     }
                 }
             }
