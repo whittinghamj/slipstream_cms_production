@@ -1165,6 +1165,7 @@ function sanity_check_2()
         error_log("Servers Found: ".$total_servers);
 
         // check for too any servers
+        /*
         if($total_servers > $total_licenses){
             // too many servers, server cheat
             error_log("Too many servers.");
@@ -1172,6 +1173,7 @@ function sanity_check_2()
             $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$total_servers.' <br><strong>Total Licenses:</strong> '.$total_licenses.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
             return false;
         }else{
+            */
             // ok looks good, lets check each license
             foreach($licenses as $license){
                 // decrypt the license code
@@ -1217,7 +1219,7 @@ function sanity_check_2()
                 error_log("----------{ License Check End }----------");
                 error_log(" \n");
             }
-        }
+        // }
     }
 }
 
