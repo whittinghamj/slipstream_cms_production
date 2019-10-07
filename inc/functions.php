@@ -1094,6 +1094,8 @@ function sanity_check()
         $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
         $num_servers   = count($bottle_result);
 
+        error_log("total servers found: ".$num_servers);
+
         if($num_servers == $num_medications){
             error_log("servers = licenses");
             for($a = 0; $a <= $num_servers; $a++){
