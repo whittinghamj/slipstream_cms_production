@@ -991,7 +991,7 @@ function get_medication($medication)
     return false;
 }
 
-function take_medication($medication, $medication_time = '')
+function take_medication($medication, $medication_time = '0')
 {
     global $conn, $global_settings;
 
@@ -1112,7 +1112,9 @@ function sanity_check()
                 error_log("License: ".$current_medication);
 
                 $path_to_temp = sys_get_temp_dir();
+                
                 error_log("temp path: ".$path_to_temp);
+                
                 if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
                     $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
                     $date_to_check = strtotime("-15 days");
@@ -1120,14 +1122,15 @@ function sanity_check()
                     if($date_to_check >= $date_created){
                         return true;
                     }
-                }
-
-                $medication_check = take_medication($current_medication, 0);
-                if($medication_check == true){
-                    continue;
-                } else {
-                    $global_settings['lockdown'] = true;
-                    return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
+                }else{
+                    // hit whmcs
+                    $medication_check = take_medication($current_medication, $date_created);
+                    if($medication_check == true){
+                        continue;
+                    } else {
+                        $global_settings['lockdown'] = true;
+                        return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
+                    }
                 }
             }
 
