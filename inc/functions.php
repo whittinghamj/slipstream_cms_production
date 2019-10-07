@@ -991,7 +991,7 @@ function get_medication($medication)
     return false;
 }
 
-function take_medication($medication, $medication_time)
+function take_medication($medication, $medication_time = '')
 {
     global $conn, $global_settings;
 
@@ -1121,7 +1121,7 @@ function sanity_check()
                     }
                 }
 
-                $medication_check = take_medication($current_medication, $medication_time);
+                $medication_check = take_medication($current_medication, 0);
                 if($medication_check == true){
                     continue;
                 } else {
