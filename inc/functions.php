@@ -1078,7 +1078,7 @@ function sanity_check()
     global $conn, $global_settings;
 
     //Get the medication(s).
-    $medication_sql   = "SELECT UNIQUE(`config_value`) FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk='";
+    $medication_sql   = "SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ";
     $medication_query = $conn->query($medication_sql);
     $medication_count = count($medication_query);
 
