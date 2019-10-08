@@ -1128,7 +1128,7 @@ function take_medication($licensekey, $localkey='')
         if (!is_array($results)) {
             die("Invalid License Server Response");
         }
-        error_log(print_r($results, true));
+        // error_log(print_r($results, true));
         if ($results['md5hash']) {
             if ($results['md5hash'] != md5($licensing_secret_key . $check_token)) {
                 $results['status'] = "Invalid";
@@ -1145,6 +1145,22 @@ function take_medication($licensekey, $localkey='')
             $data_encoded = $data_encoded . md5($data_encoded . $licensing_secret_key);
             $data_encoded = wordwrap($data_encoded, 80, "\n", true);
             $results['localkey'] = $data_encoded;
+
+            // check for addons (load balancers)
+            if($results["addons"]){
+                $tempresults = explode("|",$results["addons"]);
+                foreach ($tempresults AS $tempresult) {
+                    $tempresults2 = explode(";",$tempresult);
+                    $temparr = array();
+                 
+                    foreach ($tempresults2 AS $tempresult) {
+                        $tempresults3 = explode("=",$tempresult);
+                        $temparr[$tempresults3[0]] = $tempresults3[1];
+                    }
+                 
+                    $results["addons"][] = $temparr;
+                }
+            }
         }
         $results['remotecheck'] = true;
     }
