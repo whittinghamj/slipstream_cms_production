@@ -1165,7 +1165,130 @@ function take_medication($licensekey, $localkey='')
 
 function sanity_check()
 {
-    $whmcs_check = take_medication('Leased-c3da0f407d101863', '');
+    global $conn, $global_settings;
+
+    // set vars
+    $path_to_temp       = sys_get_temp_dir();
+    $now                = time();
+    $grace_period       = strtotime("-15 days");
+
+    // search for licenses
+    $query              = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ORDER BY `id` ");
+    $licenses           = $query->fetchAll(PDO::FETCH_ASSOC);
+    $total_licenses     = count($licenses);
+
+    error_log(" \n");
+    error_log("Licenses Found: ".$total_licenses);
+
+    if($total_licenses == 0){
+        $global_settings['lockdown'] = true;
+        $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>Unable to find any licenses. Please make sure you entered at least one valid license under the <a href="dashboard.php?c=licensing">license section</a>.';
+        return false;
+    }else{
+        // search for servers
+        $query          = $conn->query("SELECT `id` FROM `headend_servers` ");
+        $servers        = $query->fetchAll(PDO::FETCH_ASSOC);
+        $total_servers  = count($servers);
+
+        error_log("Servers Found: ".$total_servers);
+
+        // ok looks good, lets check each license
+        foreach($licenses as $license){
+            // decrypt the license code
+            $license_key            = decrypt($license['config_value']);
+            
+            error_log("----------{ License Check Start }----------");
+            error_log("License Key Encrypted: ".$license['config_value']);
+            error_log("License Key: ".$license_key);
+            error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+
+            // local file found but its outdated
+            $whmcs_check = take_medication($license_key, '');
+            
+            error_log("License status: ".$whmcs_check['status']);
+
+            switch ($whmcs_check['status']) {
+                case "Active":
+                    // get new local key and save it somewhere
+                    $localkeydata = $whmcs_check['localkey'];
+                    $current_time = time();
+                    $file         = encrypt($license_key);
+                    $path         = sys_get_temp_dir();
+                    $path_to_file = $path . DIRECTORY_SEPARATOR . $file;
+                    $fp           = fopen($path_to_file,"wb");
+                    fwrite($fp,$localkeydata);
+                    fclose($fp);
+                    break;
+                case "Invalid":
+                    break;
+                case "Expired":
+                    break;
+                case "Suspended":
+                    break;
+                default:
+                    break;
+            }
+
+            error_log("----------{ License Check End }----------");
+            error_log(" \n");
+        }
+    }
+}
+
+function sanity_check_real()
+{
+    global $conn, $global_settings;
+
+    // set vars
+    $path_to_temp       = sys_get_temp_dir();
+    $now                = time();
+    $grace_period       = strtotime("-15 days");
+
+    // search for licenses
+    $query              = $conn->query("SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ORDER BY `id` ");
+    $licenses           = $query->fetchAll(PDO::FETCH_ASSOC);
+    $total_licenses     = count($licenses);
+
+    error_log(" \n");
+    error_log("Licenses Found: ".$total_licenses);
+
+    if($total_licenses == 0){
+        $global_settings['lockdown'] = true;
+        $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>Unable to find any licenses. Please make sure you entered at least one valid license under the <a href="dashboard.php?c=licensing">license section</a>.';
+        return false;
+    }else{
+        // search for servers
+        $query          = $conn->query("SELECT `id` FROM `headend_servers` ");
+        $servers        = $query->fetchAll(PDO::FETCH_ASSOC);
+        $total_servers  = count($servers);
+
+        error_log("Servers Found: ".$total_servers);
+
+        // ok looks good, lets check each license
+        foreach($licenses as $license){
+            // decrypt the license code
+            $license_key            = decrypt($license['config_value']);
+            
+            error_log("----------{ License Check Start }----------");
+            error_log("License Key Encrypted: ".$license['config_value']);
+            error_log("License Key: ".$license_key);
+            error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+
+            // check if local license file exists
+            if(file_exists($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value'])){
+                error_log("License Key File Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+
+                $local_license_created = filectime($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+
+                // cehck grace period
+                $time_since_call_home = $now - $local_license_created;
+
+                if($time_since_call_home >= $grace_period){
+                    // grave period is ok, leave it alone for now
+                    error_log("Grace period has not expired yet, leave it alone for now.");
+                }else{
+                    // local file found but its outdated
+                    $whmcs_check = take_medication($license_key, '');
                     
                     error_log("License status: ".$whmcs_check['status']);
 
@@ -1190,8 +1313,23 @@ function sanity_check()
                         default:
                             break;
                     }
-}
+                }
+            }else{
+                error_log("License Key File NOT Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+                // local file not found, lets hit whmcs
+                $whmcs_check = take_medication($license_key, 0);
+                if($whmcs_check == false){
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
+                    return false;
+                }
+            }
 
+            error_log("----------{ License Check End }----------");
+            error_log(" \n");
+        }
+    }
+}
 
 function go($link = '')
 {
