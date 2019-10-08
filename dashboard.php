@@ -9745,9 +9745,7 @@ desired effect
                         <?php debug($globals); ?>
 
 					<hr>
-
-					http://clients.deltacolo.com/modules/servers/licensing/verify.php = <?php echo encrypt('http://clients.deltacolo.com/modules/servers/licensing/verify.php'); ?>
-
+					
 					<style type="text/css">
 						#github-link {
 						  position: fixed;

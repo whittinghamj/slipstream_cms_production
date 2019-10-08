@@ -1039,25 +1039,14 @@ function take_medication($medication, $medication_time = '0')
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
+        $results = simplexml_load_string($response);
+
         error_log("============================== WHMCS Answer ==================================");
         error_log($response);
+        error_log(print_r($response));
         error_log($response_code);
 
-        $tempresults = explode("|",$response["addons"]);
-        foreach ($tempresults AS $tempresult) {
-            $tempresults2 = explode(";",$tempresult);
-            $temparr = array();
-
-            foreach ($tempresults2 AS $tempresult) {
-                $tempresults3 = explode("=",$tempresult);
-                $temparr[$tempresults3[0]] = $tempresults3[1];
-            }
-
-            $addons[] = $temparr;
-        }
-
-        error_log(print_r($addons));
-
+        
         //Okay, we need to see what the response code, and response are before we go any further.
         if($response_code != 200) {
             //Check failed.
