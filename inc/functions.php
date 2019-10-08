@@ -1145,19 +1145,18 @@ function take_medication($licensekey, $localkey='')
             $data_encoded = $data_encoded . md5($data_encoded . $licensing_secret_key);
             $data_encoded = wordwrap($data_encoded, 80, "\n", true);
             $results['localkey'] = $data_encoded;
-
-            // check for addons (load balancers)
-            if($results['addons']){
-                $addons = explode("|", $results['addons']);
-                $addon_count = 0;
-                foreach($addons as $addon){
-                    $bits = explode(";", $addon);
-                    $results['addon_servers'][$addon_count] = $bits;
-                    $addon_count++;
-                }
-            }
         }
         $results['remotecheck'] = true;
+        // check for addons (load balancers)
+        if($results['addons']){
+            $addons = explode("|", $results['addons']);
+            $addon_count = 0;
+            foreach($addons as $addon){
+                $bits = explode(";", $addon);
+                $results['addon_servers'][$addon_count] = $bits;
+                $addon_count++;
+            }
+        }
         error_log(print_r($results, true));
     }
     unset($postfields,$data,$matches,$whmcsurl,$licensing_secret_key,$checkdate,$usersip,$localkeydays,$allowcheckfaildays,$md5hash);
