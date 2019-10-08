@@ -1206,8 +1206,7 @@ function sanity_check()
                     // error_log(print_r($bits, true));
 
                     foreach ($bits as $bit) {
-                        $byte = explode("=", $bit);
-                        error_log(print_r($byte, true));
+                        $byte = explode("=", $bit);                        
                         foreach($byte as $golden_egg){
                             $whmcs_check['addon_servers'][$addon_count][$golden_egg[0]] = $golden_egg[1];
                         }
