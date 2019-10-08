@@ -1233,7 +1233,7 @@ function sanity_check()
                 return false;
             }
 
-            // error_log(print_r($addon_servers, true));
+            error_log(print_r($whmcs_check, true));
 
             // error_log("License Status: ".$whmcs_check['status']);
 
