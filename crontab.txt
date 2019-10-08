@@ -3,3 +3,6 @@
 
 # Slipstream CMS Main Server - Customer Checks
 */10 * * * * /usr/bin/flock -w 0 /tmp/console_customer_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php customer_checks > /tmp/cron.customer_checks.log
+
+# Slipstream CMS Main Server - Server Checks
+*/10 * * * * /usr/bin/flock -w 0 /tmp/console_node_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php node_checks > /tmp/cron.customer_checks.log
