@@ -1048,14 +1048,14 @@ function take_medication($license_key, $medication_time = '0')
         }
 
         error_log("============================== WHMCS Answer ==================================");
-        // error_log($response);
+        error_log($response);
         // error_log($response_code);
 
-        $xml        = "<?xml version='1.0'?><response>".$response."</response>";
+        $xml                = "<?xml version='1.0'?><response>".$response."</response>";
                 
         $xml                = simplexml_load_string($xml);
-        $json             = json_encode($xml);
-        $whmcs_reply      = json_decode($json, true);
+        $json               = json_encode($xml);
+        $whmcs_reply        = json_decode($json, true);
 
         error_log("License Status: ".$whmcs_reply['status']);
         error_log("License Email: ".$whmcs_reply['email']);
