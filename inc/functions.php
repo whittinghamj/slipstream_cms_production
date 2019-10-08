@@ -1044,7 +1044,7 @@ function take_medication($medication, $medication_time = '0')
         error_log($response_code);
 
 
-        $xml = "<?xml version="1.0"?><response>".$response."</response>";
+        $xml = "<?xml version='1.0'?><response>".$response."</response>";
         error_log($xml);
         $xml = simplexml_load_string($xml);
         $json = json_encode($xml);
