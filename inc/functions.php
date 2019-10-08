@@ -1199,17 +1199,17 @@ function sanity_check()
             if(isset($whmcs_check['addons'])){
                 error_log("Multiple Servers Found");
                 $addons = explode("|", $whmcs_check['addons']);
-                error_log(print_r($addons, true));
+                // error_log(print_r($addons, true));
                 $addon_count = 0;
                 foreach($addons as $addon){
                     $bits = explode(";", $addon);
-                    error_log(print_r($bits, true));
+                    // error_log(print_r($bits, true));
 
                     foreach ($bits as $bit) {
                         $byte = explode("=", $bit);
                         error_log(print_r($byte, true));
-                        foreach($byte as $key => $value){
-                            $whmcs_check['addon_servers'][$addon_count][$key] = $value;
+                        foreach($byte as $golden_egg){
+                            $whmcs_check['addon_servers'][$addon_count][$golden_egg[0]] = $golden_egg[1];
                         }
                     }
 
