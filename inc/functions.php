@@ -1207,7 +1207,7 @@ function sanity_check()
                     $bits = explode(";", $addon);
                     error_log(print_r($bits, true));
 
-                    $addon_servers[] = str_replace("status=", "", $bits[2];
+                    $addon_servers[] = str_replace("status=", "", $bits[2]);
                     
                     $addon_count++;
                 }
