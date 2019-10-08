@@ -1198,6 +1198,8 @@ function sanity_check()
             // check for addons (load balancers)
             if(isset($whmcs_check['addons'])){
                 error_log("Multiple Servers Found");
+                $addon_servers array();
+                
                 $addons = explode("|", $whmcs_check['addons']);
                 // error_log(print_r($addons, true));
                 $addon_count = 0;
@@ -1208,14 +1210,14 @@ function sanity_check()
                     foreach ($bits as $bit) {
                         $byte = explode("=", $bit);                        
                         foreach($byte as $golden_egg){
-                            $whmcs_check['addon_servers'][$addon_count][$golden_egg[0]] = $golden_egg[1];
+                            $addon_servers[$addon_count][$golden_egg[0]] = $golden_egg[1];
                         }
                     }
 
                     $addon_count++;
                 }
             }
-            error_log(print_r($whmcs_check, true));
+            error_log(print_r($addon_servers, true));
 
             error_log("License status: ".$whmcs_check['status']);
 
