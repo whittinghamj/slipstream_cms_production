@@ -1217,11 +1217,13 @@ function sanity_check()
             error_log("License Status: ".$whmcs_check['status']);
 
             // check if any load balancers are not active
-            foreach($addon_servers as $addon_server){
-                if($addon_server != 'Active'){
-                    $global_settings['lockdown'] = true;
-                    $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>At least one of your licenses are marked as '.$addon_server.'. Head over to the <a href="http://clients.deltacolo.com">biling portal</a> to resolve this issue.';
-                    return false;
+            if(is_array($addon_servers){
+                foreach($addon_servers as $addon_server){
+                    if($addon_server != 'Active'){
+                        $global_settings['lockdown'] = true;
+                        $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>At least one of your licenses are marked as '.$addon_server.'. Head over to the <a href="http://clients.deltacolo.com">biling portal</a> to resolve this issue.';
+                        return false;
+                    }
                 }
             }
 
@@ -1237,18 +1239,27 @@ function sanity_check()
                     fwrite($fp,$localkeydata);
                     fclose($fp);
 
-                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown'] = false;
                     break;
                 case "Invalid":
                     $global_settings['lockdown'] = true;
-                    $global_settings['lockdown_message'] = '<strong>Invalid</strong> <br><br>'.$whmcs_check['message'];
+                    $global_settings['lockdown_message'] = $whmcs_check['message'];
                     return false;
                     break;
                 case "Expired":
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>License Expired</strong> <br><br>One of your licenses has expired. Head over to Support &amp; Billing to renew your license.';
+                    return false;
                     break;
                 case "Suspended":
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>License Suspended</strong> <br><br>One of your licenses has been suspended. Head over to Support &amp; Billing to resolve this issue.';
+                    return false;
                     break;
                 default:
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>Unknown Error</strong> <br><br>Something went a little wrong. Please try reloading the page or contact support.';
+                    return false;
                     break;
             }
 
