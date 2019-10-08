@@ -1196,7 +1196,7 @@ function sanity_check()
             $whmcs_check = take_medication($license_key, '');
             
             // check for addons (load balancers)
-            if($whmcs_check['addons']){
+            if(isset($whmcs_check['addons'])){
                 $addons = explode("|", $whmcs_check['addons']);
                 $addon_count = 0;
                 foreach($addons as $addon){
@@ -1206,7 +1206,7 @@ function sanity_check()
                 }
             }
             error_log(print_r($whmcs_check, true));
-            
+
             error_log("License status: ".$whmcs_check['status']);
 
             switch ($whmcs_check['status']) {
