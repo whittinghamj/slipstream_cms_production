@@ -1029,6 +1029,12 @@ function take_medication($medication, $medication_time = '0')
         error_log($address);
         error_log($query_string);
 
+        $response = "<?xml version='1.0'?>".$response;
+
+        $response = simplexml_load_string($response);
+
+        error_log(print_r($response));
+
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $address);
         curl_setopt($ch, CURLOPT_POST, 1);
