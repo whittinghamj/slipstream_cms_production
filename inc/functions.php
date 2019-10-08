@@ -1052,7 +1052,7 @@ function take_medication($medication, $medication_time = '0')
         $json       = json_encode($xml);
         $array      = json_decode($json, true);
 
-        error_log($json);
+        error_log(print_r($array));
         
         //Okay, we need to see what the response code, and response are before we go any further.
         if($response_code != 200) {
