@@ -1196,7 +1196,7 @@ function sanity_check()
             $whmcs_check = take_medication($license_key, '');
             
             // check for addons (load balancers)
-            if(isset($whmcs_check['addons'] && !empty($whmcs_check['addons']))){
+            if(isset($whmcs_check['addons']) && !empty($whmcs_check['addons'])){
                 // error_log("Multiple Servers Found");
                 $addon_servers = array();
 
