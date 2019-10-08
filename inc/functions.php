@@ -991,7 +991,7 @@ function get_medication($medication)
     return false;
 }
 
-function take_medication($license_key, $medication_time = '0')
+function take_medication($licensekey, $localkey='')
 {
     global $conn, $global_settings;
 
@@ -1000,167 +1000,170 @@ function take_medication($license_key, $medication_time = '0')
     $address_query          = $conn->query($address_sql);
     $results                = $address_query->fetch(PDO::FETCH_ASSOC);
 
-    if(is_array($results) && !empty($results)){
-        // $results               = $address_query->fetch(PDO::FETCH_ASSOC);
-        $address               = decrypt($results["config_value"]);
-        $secret_key            = "admin1372";
-        $local_key_days        = 15;
-        $allowed_failed_checks = 3;
-        $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $license_key);
-        $current_date          = date('Ymd');
-
-        $responseCode = 0;
-
-        $post_fields = array(
-            "licensekey"  => $license_key,
-            //"domain"      => $bottle_name,
-            //"ip"          => $bottle_address,
-            "dir"         => dirname(__FILE__),
-            "check_token" => $token_check,
-        );
-
-        $query_string = "";
-
-        foreach ($post_fields as $k => $v) {
-            $query_string .= $k . "=" . urlencode($v) . "&";
-        }
-
-        error_log("============================== WHMCS Question ==================================");
-        error_log($address);
-        error_log($query_string);
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $address);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $query_string);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $response = curl_exec($ch);
-        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-
-        // make sure we got a HTTP/200 status code back
-        if($response_code != 200) {
-            //Check failed.
-            $global_settings['lockdown'] == true;
-            $global_settings['lockdown_message'] = '<strong>Billing Portal Offline</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
-            return false;
-        }
-
-        error_log("============================== WHMCS Answer ==================================");
-        // error_log($response);
-        // error_log($response_code);
-
-        $xml                = "<?xml version='1.0'?><response>".$response."</response>";
-                
-        $xml                = simplexml_load_string($xml);
-        $json               = json_encode($xml);
-        $whmcs_reply        = json_decode($json, true);
-
-        error_log(print_r($whmcs_reply));
-
-        error_log("License Status: ".$whmcs_reply['status']);
-        error_log("License Email: ".$whmcs_reply['email']);
-
-        if(empty($whmcs_reply['email'])){
-            $global_settings['lockdown'] == true;
-            $global_settings['lockdown_message'] = '<strong>Invalid License</strong> <br><br>License: '.$license_key.' <br><br>Check you entered your license correctly and try again.';
-            return false;
-        }
-        
-        //Okay, we need to see what the response code, and response are before we go any further.
-        if($response_code != 200) {
-            //Check failed.
-            $global_settings['lockdown'] == true;
-            return false;
-        }
-    }else{
+    if(!is_array($results) && empty($results)){
         $global_settings['lockdown'] == true;
         $global_settings['lockdown_message'] = '<strong>Billing Portal Offline</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
         return false;
-    }
+    }else{
+        // Enter the url to your WHMCS installation here
+        $whmcsurl               = decrypt($results["config_value"]);
 
-    $current_time = time();
-    $file         = encrypt($medication);
-    $path         = sys_get_temp_dir();
-    $path_to_file = $path . DIRECTORY_SEPARATOR . $file;
-    $fp           = fopen($path_to_file,"wb");
-    fwrite($fp,$current_time);
-    fclose($fp);
+        // Must match what is specified in the MD5 Hash Verification field
+        // of the licensing product that will be used with this check.
+        $licensing_secret_key   = '5ea1d2165c5ed03cadf053bfab87e7ef';
+        
+        // The number of days to wait between performing remote license checks
+        $localkeydays = 1;
+        
+        // The number of days to allow failover for after local key expiry
+        $allowcheckfaildays = 3;
 
-    return true;
-}
+        // -----------------------------------
+        //  -- Do not edit below this line --
+        // -----------------------------------
 
-function sanity_check()
-{
-    global $conn, $global_settings;
-
-    //Get the medication(s).
-    $medication_sql   = "SELECT `config_value` FROM `global_settings` WHERE `config_name` = 'bGljZW5zZV9rZXk=' GROUP BY `config_value` ";
-    $medication_query = $conn->query($medication_sql);
-    $medication_query = $medication_query->fetchAll(PDO::FETCH_ASSOC);
-    $medication_count = count($medication_query);
-
-    if(is_array($medication_query) && !empty($medication_query)){
-        //we have license keys.
-        $num_medications = count($medication_query);
-
-        //Now lets get the number of nodes.
-        $bottle_sql    = "SELECT `id` FROM headend_servers";
-        $bottle_query  = $conn->query($bottle_sql);
-        $bottle_result = $bottle_query->fetchAll(PDO::FETCH_ASSOC);
-        $num_servers   = count($bottle_result);
-
-        error_log(" ");
-        error_log("total servers: ".$num_servers);
-        error_log("total licenses: ".$num_medications);
-
-        if($num_servers > $num_medications){
-            // server cheat, too many servers
-            error_log("Too many servers.");
-            $global_settings['lockdown'] = true;
-            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$num_servers.' <br><strong>Total Licenses:</strong> '.$num_medications.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
-        }elseif($num_servers <= $num_medications){
-            error_log("servers <= licenses");
-            for($a = 0; $a <= $num_servers; $a++){
-                $current_medication = decrypt($medication_query[$a]["config_value"]);
-                $medication_timme   = time();
-
-                error_log("License: ".$current_medication);
-
-                $path_to_temp = sys_get_temp_dir();
-                
-                error_log("temp path: ".$path_to_temp);
-                
-                if(file_exists($path_to_temp . $medication_query[$a]["config_value"])){
-                    $date_created = filectime($path_to_temp . $medication_query[$a]["config_value"]);
-                    $date_to_check = strtotime("-15 days");
-
-                    if($date_to_check >= $date_created){
-                        return true;
-                    }
-                }else{
-                    // hit whmcs
-                    $medication_check = take_medication($current_medication, $date_created);
-                    if($medication_check == true){
-                        continue;
-                    } else {
-                        $global_settings['lockdown'] = true;
-                        return "Invalid License: " . decrypt($medication_query[$a]['config_value']);
+        $check_token = time() . md5(mt_rand(100000000, mt_getrandmax()) . $licensekey);
+        $checkdate = date("Ymd");
+        $domain = $_SERVER['SERVER_NAME'];
+        $usersip = isset($_SERVER['SERVER_ADDR']) ? $_SERVER['SERVER_ADDR'] : $_SERVER['LOCAL_ADDR'];
+        $dirpath = dirname(__FILE__);
+        $verifyfilepath = 'modules/servers/licensing/verify.php';
+        $localkeyvalid = false;
+        if ($localkey) {
+            $localkey = str_replace("\n", '', $localkey); # Remove the line breaks
+            $localdata = substr($localkey, 0, strlen($localkey) - 32); # Extract License Data
+            $md5hash = substr($localkey, strlen($localkey) - 32); # Extract MD5 Hash
+            if ($md5hash == md5($localdata . $licensing_secret_key)) {
+                $localdata = strrev($localdata); # Reverse the string
+                $md5hash = substr($localdata, 0, 32); # Extract MD5 Hash
+                $localdata = substr($localdata, 32); # Extract License Data
+                $localdata = base64_decode($localdata);
+                $localkeyresults = json_decode($localdata, true);
+                $originalcheckdate = $localkeyresults['checkdate'];
+                if ($md5hash == md5($originalcheckdate . $licensing_secret_key)) {
+                    $localexpiry = date("Ymd", mktime(0, 0, 0, date("m"), date("d") - $localkeydays, date("Y")));
+                    if ($originalcheckdate > $localexpiry) {
+                        $localkeyvalid = true;
+                        $results = $localkeyresults;
+                        $validdomains = explode(',', $results['validdomain']);
+                        if (!in_array($_SERVER['SERVER_NAME'], $validdomains)) {
+                            $localkeyvalid = false;
+                            $localkeyresults['status'] = "Invalid";
+                            $results = array();
+                        }
+                        $validips = explode(',', $results['validip']);
+                        if (!in_array($usersip, $validips)) {
+                            $localkeyvalid = false;
+                            $localkeyresults['status'] = "Invalid";
+                            $results = array();
+                        }
+                        $validdirs = explode(',', $results['validdirectory']);
+                        if (!in_array($dirpath, $validdirs)) {
+                            $localkeyvalid = false;
+                            $localkeyresults['status'] = "Invalid";
+                            $results = array();
+                        }
                     }
                 }
             }
-
-            return true;
         }
-    }else{
-        error_log("Too many servers.");
-        $global_settings['lockdown'] = true;
-        return "No License found";
+        if (!$localkeyvalid) {
+            $responseCode = 0;
+            $postfields = array(
+                'licensekey' => $licensekey,
+                'domain' => $domain,
+                'ip' => $usersip,
+                'dir' => $dirpath,
+            );
+            if ($check_token) $postfields['check_token'] = $check_token;
+            $query_string = '';
+            foreach ($postfields AS $k=>$v) {
+                $query_string .= $k.'='.urlencode($v).'&';
+            }
+            if (function_exists('curl_exec')) {
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $whmcsurl . $verifyfilepath);
+                curl_setopt($ch, CURLOPT_POST, 1);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $query_string);
+                curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                $data = curl_exec($ch);
+                $responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+                curl_close($ch);
+            } else {
+                $responseCodePattern = '/^HTTP\/\d+\.\d+\s+(\d+)/';
+                $fp = @fsockopen($whmcsurl, 80, $errno, $errstr, 5);
+                if ($fp) {
+                    $newlinefeed = "\r\n";
+                    $header = "POST ".$whmcsurl . $verifyfilepath . " HTTP/1.0" . $newlinefeed;
+                    $header .= "Host: ".$whmcsurl . $newlinefeed;
+                    $header .= "Content-type: application/x-www-form-urlencoded" . $newlinefeed;
+                    $header .= "Content-length: ".@strlen($query_string) . $newlinefeed;
+                    $header .= "Connection: close" . $newlinefeed . $newlinefeed;
+                    $header .= $query_string;
+                    $data = $line = '';
+                    @stream_set_timeout($fp, 20);
+                    @fputs($fp, $header);
+                    $status = @socket_get_status($fp);
+                    while (!@feof($fp)&&$status) {
+                        $line = @fgets($fp, 1024);
+                        $patternMatches = array();
+                        if (!$responseCode
+                            && preg_match($responseCodePattern, trim($line), $patternMatches)
+                        ) {
+                            $responseCode = (empty($patternMatches[1])) ? 0 : $patternMatches[1];
+                        }
+                        $data .= $line;
+                        $status = @socket_get_status($fp);
+                    }
+                    @fclose ($fp);
+                }
+            }
+            if ($responseCode != 200) {
+                $localexpiry = date("Ymd", mktime(0, 0, 0, date("m"), date("d") - ($localkeydays + $allowcheckfaildays), date("Y")));
+                if ($originalcheckdate > $localexpiry) {
+                    $results = $localkeyresults;
+                } else {
+                    $results = array();
+                    $results['status'] = "Invalid";
+                    $results['description'] = "Remote Check Failed";
+                    return $results;
+                }
+            } else {
+                preg_match_all('/<(.*?)>([^<]+)<\/\\1>/i', $data, $matches);
+                $results = array();
+                foreach ($matches[1] AS $k=>$v) {
+                    $results[$v] = $matches[2][$k];
+                }
+            }
+            if (!is_array($results)) {
+                die("Invalid License Server Response");
+            }
+            if ($results['md5hash']) {
+                if ($results['md5hash'] != md5($licensing_secret_key . $check_token)) {
+                    $results['status'] = "Invalid";
+                    $results['description'] = "MD5 Checksum Verification Failed";
+                    return $results;
+                }
+            }
+            if ($results['status'] == "Active") {
+                $results['checkdate'] = $checkdate;
+                $data_encoded = json_encode($results);
+                $data_encoded = base64_encode($data_encoded);
+                $data_encoded = md5($checkdate . $licensing_secret_key) . $data_encoded;
+                $data_encoded = strrev($data_encoded);
+                $data_encoded = $data_encoded . md5($data_encoded . $licensing_secret_key);
+                $data_encoded = wordwrap($data_encoded, 80, "\n", true);
+                $results['localkey'] = $data_encoded;
+            }
+            $results['remotecheck'] = true;
+        }
+        unset($postfields,$data,$matches,$whmcsurl,$licensing_secret_key,$checkdate,$usersip,$localkeydays,$allowcheckfaildays,$md5hash);
+        return $results;
     }
 }
 
-function sanity_check_2()
+function sanity_check()
 {
     global $conn, $global_settings;
 
@@ -1214,10 +1217,29 @@ function sanity_check_2()
                 }else{
                     // local file found but its outdated
                     $whmcs_check = take_medication($license_key, $local_license_created);
-                    if($whmcs_check == false){
-                        // $global_settings['lockdown'] = true;
-                        // $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
-                        return false;
+                    
+                    error_log("License status: ".$whmcs_check['status']);
+
+                    switch ($whmcs_check['status']) {
+                        case "Active":
+                            // get new local key and save it somewhere
+                            $localkeydata = $whmcs_check['localkey'];
+                            $current_time = time();
+                            $file         = encrypt($license_key);
+                            $path         = sys_get_temp_dir();
+                            $path_to_file = $path . DIRECTORY_SEPARATOR . $file;
+                            $fp           = fopen($path_to_file,"wb");
+                            fwrite($fp,$localkeydata);
+                            fclose($fp);
+                            break;
+                        case "Invalid":
+                            break;
+                        case "Expired":
+                            break;
+                        case "Suspended":
+                            break;
+                        default:
+                            break;
                     }
                 }
             }else{

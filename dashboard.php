@@ -9712,7 +9712,7 @@ desired effect
         <?php  function staging(){ ?>
         	<?php global $conn, $globals, $account_details, $site, $global_settings; ?>
 
-        	<?php sanity_check_2(); ?>
+        	<?php sanity_check(); ?>
             <div class="content-wrapper">
             
             	<div id="status_message"></div>
@@ -9745,7 +9745,7 @@ desired effect
                         <?php debug($globals); ?>
 
 					<hr>
-					
+
 					<style type="text/css">
 						#github-link {
 						  position: fixed;
