@@ -1205,14 +1205,18 @@ function sanity_check()
                 $addon_count = 0;
                 foreach($addons as $addon){
                     $bits = explode(";", $addon);
-                    // error_log(print_r($bits, true));
+                    error_log(print_r($bits, true));
 
+                    // $addon_servers[$addon_count][]
+
+                    /*
                     foreach ($bits as $bit) {
                         $byte = explode("=", $bit);                        
                         foreach($byte as $golden_egg){
                             $addon_servers[$addon_count][] = $golden_egg[1];
                         }
                     }
+                    */
 
                     $addon_count++;
                 }
