@@ -1,100 +1,54 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Changes some global preference settings in Swift Mailer.
- *
- * @author Chris Corbyn
- */
-class Swift_Preferences
-{
-    /** Singleton instance */
-    private static $_instance = null;
-
-    /** Constructor not to be used */
-    private function __construct()
-    {
-    }
-
-    /**
-     * Gets the instance of Preferences.
-     *
-     * @return self
-     */
-    public static function getInstance()
-    {
-        if (!isset(self::$_instance)) {
-            self::$_instance = new self();
-        }
-
-        return self::$_instance;
-    }
-
-    /**
-     * Set the default charset used.
-     *
-     * @param string $charset
-     *
-     * @return $this
-     */
-    public function setCharset($charset)
-    {
-        Swift_DependencyContainer::getInstance()->register('properties.charset')->asValue($charset);
-
-        return $this;
-    }
-
-    /**
-     * Set the directory where temporary files can be saved.
-     *
-     * @param string $dir
-     *
-     * @return $this
-     */
-    public function setTempDir($dir)
-    {
-        Swift_DependencyContainer::getInstance()->register('tempdir')->asValue($dir);
-
-        return $this;
-    }
-
-    /**
-     * Set the type of cache to use (i.e. "disk" or "array").
-     *
-     * @param string $type
-     *
-     * @return $this
-     */
-    public function setCacheType($type)
-    {
-        Swift_DependencyContainer::getInstance()->register('cache')->asAliasOf(sprintf('cache.%s', $type));
-
-        return $this;
-    }
-
-    /**
-     * Set the QuotedPrintable dot escaper preference.
-     *
-     * @param bool $dotEscape
-     *
-     * @return $this
-     */
-    public function setQPDotEscape($dotEscape)
-    {
-        $dotEscape = !empty($dotEscape);
-        Swift_DependencyContainer::getInstance()
-            ->register('mime.qpcontentencoder')
-            ->asNewInstanceOf('Swift_Mime_ContentEncoder_QpContentEncoder')
-            ->withDependencies(array('mime.charstream', 'mime.bytecanonicalizer'))
-            ->addConstructorValue($dotEscape);
-
-        return $this;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

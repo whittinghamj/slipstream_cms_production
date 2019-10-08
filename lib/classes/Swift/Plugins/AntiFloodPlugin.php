@@ -1,141 +1,64 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Reduces network flooding when sending large amounts of mail.
- *
- * @author Chris Corbyn
- */
-class Swift_Plugins_AntiFloodPlugin implements Swift_Events_SendListener, Swift_Plugins_Sleeper
-{
-    /**
-     * The number of emails to send before restarting Transport.
-     *
-     * @var int
-     */
-    private $_threshold;
-
-    /**
-     * The number of seconds to sleep for during a restart.
-     *
-     * @var int
-     */
-    private $_sleep;
-
-    /**
-     * The internal counter.
-     *
-     * @var int
-     */
-    private $_counter = 0;
-
-    /**
-     * The Sleeper instance for sleeping.
-     *
-     * @var Swift_Plugins_Sleeper
-     */
-    private $_sleeper;
-
-    /**
-     * Create a new AntiFloodPlugin with $threshold and $sleep time.
-     *
-     * @param int                   $threshold
-     * @param int                   $sleep     time
-     * @param Swift_Plugins_Sleeper $sleeper   (not needed really)
-     */
-    public function __construct($threshold = 99, $sleep = 0, Swift_Plugins_Sleeper $sleeper = null)
-    {
-        $this->setThreshold($threshold);
-        $this->setSleepTime($sleep);
-        $this->_sleeper = $sleeper;
-    }
-
-    /**
-     * Set the number of emails to send before restarting.
-     *
-     * @param int $threshold
-     */
-    public function setThreshold($threshold)
-    {
-        $this->_threshold = $threshold;
-    }
-
-    /**
-     * Get the number of emails to send before restarting.
-     *
-     * @return int
-     */
-    public function getThreshold()
-    {
-        return $this->_threshold;
-    }
-
-    /**
-     * Set the number of seconds to sleep for during a restart.
-     *
-     * @param int $sleep time
-     */
-    public function setSleepTime($sleep)
-    {
-        $this->_sleep = $sleep;
-    }
-
-    /**
-     * Get the number of seconds to sleep for during a restart.
-     *
-     * @return int
-     */
-    public function getSleepTime()
-    {
-        return $this->_sleep;
-    }
-
-    /**
-     * Invoked immediately before the Message is sent.
-     *
-     * @param Swift_Events_SendEvent $evt
-     */
-    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
-    {
-    }
-
-    /**
-     * Invoked immediately after the Message is sent.
-     *
-     * @param Swift_Events_SendEvent $evt
-     */
-    public function sendPerformed(Swift_Events_SendEvent $evt)
-    {
-        ++$this->_counter;
-        if ($this->_counter >= $this->_threshold) {
-            $transport = $evt->getTransport();
-            $transport->stop();
-            if ($this->_sleep) {
-                $this->sleep($this->_sleep);
-            }
-            $transport->start();
-            $this->_counter = 0;
-        }
-    }
-
-    /**
-     * Sleep for $seconds.
-     *
-     * @param int $seconds
-     */
-    public function sleep($seconds)
-    {
-        if (isset($this->_sleeper)) {
-            $this->_sleeper->sleep($seconds);
-        } else {
-            sleep($seconds);
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

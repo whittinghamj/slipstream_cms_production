@@ -1,67 +1,33 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Analyzes characters for a specific character set.
- *
- * @author Chris Corbyn
- * @author Xavier De Cock <xdecock@gmail.com>
- */
-interface Swift_CharacterReader
-{
-    const MAP_TYPE_INVALID = 0x01;
-    const MAP_TYPE_FIXED_LEN = 0x02;
-    const MAP_TYPE_POSITIONS = 0x03;
-
-    /**
-     * Returns the complete character map.
-     *
-     * @param string $string
-     * @param int    $startOffset
-     * @param array  $currentMap
-     * @param mixed  $ignoredChars
-     *
-     * @return int
-     */
-    public function getCharPositions($string, $startOffset, &$currentMap, &$ignoredChars);
-
-    /**
-     * Returns the mapType, see constants.
-     *
-     * @return int
-     */
-    public function getMapType();
-
-    /**
-     * Returns an integer which specifies how many more bytes to read.
-     *
-     * A positive integer indicates the number of more bytes to fetch before invoking
-     * this method again.
-     *
-     * A value of zero means this is already a valid character.
-     * A value of -1 means this cannot possibly be a valid character.
-     *
-     * @param int[] $bytes
-     * @param int   $size
-     *
-     * @return int
-     */
-    public function validateByteSequence($bytes, $size);
-
-    /**
-     * Returns the number of bytes which should be read to start each character.
-     *
-     * For fixed width character sets this should be the number of octets-per-character.
-     * For multibyte character sets this will probably be 1.
-     *
-     * @return int
-     */
-    public function getInitialByteSize();
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+Eksdw+qWRlUgldUDtoO=

@@ -1,115 +1,49 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * A null KeyCache that does not cache at all.
- *
- * @author Chris Corbyn
- */
-class Swift_KeyCache_NullKeyCache implements Swift_KeyCache
-{
-    /**
-     * Set a string into the cache under $itemKey for the namespace $nsKey.
-     *
-     * @see MODE_WRITE, MODE_APPEND
-     *
-     * @param string $nsKey
-     * @param string $itemKey
-     * @param string $string
-     * @param int    $mode
-     */
-    public function setString($nsKey, $itemKey, $string, $mode)
-    {
-    }
-
-    /**
-     * Set a ByteStream into the cache under $itemKey for the namespace $nsKey.
-     *
-     * @see MODE_WRITE, MODE_APPEND
-     *
-     * @param string                 $nsKey
-     * @param string                 $itemKey
-     * @param Swift_OutputByteStream $os
-     * @param int                    $mode
-     */
-    public function importFromByteStream($nsKey, $itemKey, Swift_OutputByteStream $os, $mode)
-    {
-    }
-
-    /**
-     * Provides a ByteStream which when written to, writes data to $itemKey.
-     *
-     * NOTE: The stream will always write in append mode.
-     *
-     * @param string                $nsKey
-     * @param string                $itemKey
-     * @param Swift_InputByteStream $writeThrough
-     *
-     * @return Swift_InputByteStream
-     */
-    public function getInputByteStream($nsKey, $itemKey, Swift_InputByteStream $writeThrough = null)
-    {
-    }
-
-    /**
-     * Get data back out of the cache as a string.
-     *
-     * @param string $nsKey
-     * @param string $itemKey
-     *
-     * @return string
-     */
-    public function getString($nsKey, $itemKey)
-    {
-    }
-
-    /**
-     * Get data back out of the cache as a ByteStream.
-     *
-     * @param string                $nsKey
-     * @param string                $itemKey
-     * @param Swift_InputByteStream $is      to write the data to
-     */
-    public function exportToByteStream($nsKey, $itemKey, Swift_InputByteStream $is)
-    {
-    }
-
-    /**
-     * Check if the given $itemKey exists in the namespace $nsKey.
-     *
-     * @param string $nsKey
-     * @param string $itemKey
-     *
-     * @return bool
-     */
-    public function hasKey($nsKey, $itemKey)
-    {
-        return false;
-    }
-
-    /**
-     * Clear data for $itemKey in the namespace $nsKey if it exists.
-     *
-     * @param string $nsKey
-     * @param string $itemKey
-     */
-    public function clearKey($nsKey, $itemKey)
-    {
-    }
-
-    /**
-     * Clear all data in the namespace $nsKey if it exists.
-     *
-     * @param string $nsKey
-     */
-    public function clearAll($nsKey)
-    {
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

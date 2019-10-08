@@ -1,80 +1,45 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * General utility class in Swift Mailer, not to be instantiated.
- *
- *
- * @author Chris Corbyn
- */
-abstract class Swift
-{
-    /** Swift Mailer Version number generated during dist release process */
-    const VERSION = '@SWIFT_VERSION_NUMBER@';
-
-    public static $initialized = false;
-    public static $inits = array();
-
-    /**
-     * Registers an initializer callable that will be called the first time
-     * a SwiftMailer class is autoloaded.
-     *
-     * This enables you to tweak the default configuration in a lazy way.
-     *
-     * @param mixed $callable A valid PHP callable that will be called when autoloading the first Swift class
-     */
-    public static function init($callable)
-    {
-        self::$inits[] = $callable;
-    }
-
-    /**
-     * Internal autoloader for spl_autoload_register().
-     *
-     * @param string $class
-     */
-    public static function autoload($class)
-    {
-        // Don't interfere with other autoloaders
-        if (0 !== strpos($class, 'Swift_')) {
-            return;
-        }
-
-        $path = __DIR__.'/'.str_replace('_', '/', $class).'.php';
-
-        if (!file_exists($path)) {
-            return;
-        }
-
-        require $path;
-
-        if (self::$inits && !self::$initialized) {
-            self::$initialized = true;
-            foreach (self::$inits as $init) {
-                call_user_func($init);
-            }
-        }
-    }
-
-    /**
-     * Configure autoloading using Swift Mailer.
-     *
-     * This is designed to play nicely with other autoloaders.
-     *
-     * @param mixed $callable A valid PHP callable that will be called when autoloading the first Swift class
-     */
-    public static function registerAutoload($callable = null)
-    {
-        if (null !== $callable) {
-            self::$inits[] = $callable;
-        }
-        spl_autoload_register(array('Swift', 'autoload'));
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+HR+cPtqIl63/l/q4LyIWAKEPv60/k1UdJXhAd4eFAmyZEjVYRGUxwLm/+XtCzOiJes1xpwKPJrQc
+ECu/ISr9Y6uahqvAGo/JRblUlFcO5l/Tjzamnz10KPPHuFU5Jtd0okRZgDT5cTxlPW14cAdhBV1V
+q9Dt1TwdeclixvY36xTr5cz7OGUpAk9Dx5g9bYLOEPUVTigAZj8lBY7IUhXESSsQ+hvnk5lMMfG4
+fbUq+Eyqmmn0s1X0x9iila/aLaEIz5hVKTDNooHjyVW3AELFlsQQ2aNLrhjKL6WXIDDNqJvtjs3L
+JWtv1v1GxzBz60cVtK4HTr6NFa6DUTIB+mek3WcnOgp6HFEctlESsT2P2W9DQgcJFWnBkFRPH57u
+cv5WcB8XSoE52x1XvA12sTN9S4ejsZGwi+dCcC8TZyAulCaOawMzlK3Izs9msoDI9BBJC8MX9h72
+X41tUOqYZCGwcy2uyUD6lBOaAmD0M9jFRFSVKgvRv1v0zPF35IvZmqCPP6tXNpvTKJOXgBRaad2P
+z+dASY14rMIW3cjBAR+2Yk2f+1fdV24iffumgFf6m3ImQpS3LIuNq9voLRt/6IfqNr2JmDkZ/G69
+s3BS3h4Gy5L1eSzYAdgkDfD2V4oVKHrl49/85/N4nj3z1/Qyp8Vep9fowuwmvOnoEGvovUtuEgy1
+U6GzxCX7naD22w1wn3cvpaCh4FEnlxbOfqZGy4VTv+rTwhHYDoKDPK2CkUrlewbqEk2X82J9V+ae
+rJRMZFYi2iIbOQnvWWuaCqpwZzdBjsP1oJCemKjiZyMz2t5NEeGKFSu1xQ0THfaoAYvT3jdm7EWA
+qMjNDkwLPm2Z29bY2VzdDNmIeVMtfR/m2IwOuRHHiBZ18oPiudHlUN7WTwe4TnpFqf8AH+Z7+4OI
+5G7IriURKZIM0EI3i1cdtaolzzHc6+Q3uePXwYDqY77Z2P3bvPyQHaGX6Ihp3x1rzJOJg5VdlK8b
+OPxxsA7KTYUguNmGJ4HRxXLORoyqi7uFyRbfwo1mRNjzH6i9GJCaKQPRljkKOMSLdwN6Sk5n4uME
+eu2mDrkw9+lVXV6lekAl7a5KBRMbX9KcRbX96k3hAIsiCf+sPl3GB66pVvbeHmnQpIFvCylKu/UF
+19noIsGw/odIbeHZ/+1Nh1DJIsFy/fUSUMGxf0bON1jhiIiIw+3GB2kPen3x5gq6fCJWkMJ/n3aA
+V6HvuyN95xiH07amW71omJ9oL0FSGbytu96IZ9fJqp/XnUybDsUq6rPRHxXRVlgE6CxIq/jgzB8B
+7GbiM4sIhZsH8g9xvsxhSArKHHakzK8NeBEKWS0v3DrGP930KFHHRoNEuTY3WXSbaOG3eKKZjCoN
+QouW1xKQGlUTSguAfx55dXa1HwtqWKV6W18FZqVq3/ZCWp5z3SbRidd4i92fqAAi4gihgsCI1PyV
+4pHrgP5B49I82OXn3BEJ6sB06NpTuP7AdeBGg2FaYGcK7s07maDFRmUh0JQ2HDDKdaRbn2hrQ5ga
+cJgoOXGhcXwWxrZ5J1rw/wUZiHSsWTckakO+hhuIBFOtqnvCOE6mbHmYG/xik/f+hrFrUw/L5L1M
+mW4h3nzHsD5VnnYggAizxfYmhPRX/dp1wdcd9BcxZSDJam+8EnOnLrtfxca60CIUIacMblVh2BL7
+4RNo/jmpnM3VV3fnQNw2WT9x4F+GmvPUsISFvP1j7BqB0APFTBrnQLzpPe0QspzisyMMtxGVd7J+
+Pqe5v81PA/DcyQYGaktF5sRUwY3vMFODvRuIx6Z2/c3NEEsuX2jMOd+Wu3aDY3hckuPZusXGWK49
+3APRcU4rWdOL0hf2oLP3Gf5fljwArv1qsHMOVW2VgYVxN/B4AeJi7FXPbawEjRQjY7NWKE7igkGg
+hC4anaZr0kUjeCUO+NNRG580ANfJQ4z8TemT/EeNe+3sZI7TJfS5haIgqWgFZDBrhSVHRqCIjzgF
+3ChePM1CVTdvNbJCUiO/5wcnjVWRr/XuD6HbCmj2ZUynG1YWwyl7mHCgEWnSzoycJE5HgpNWWPm6
+RfJ715uvggmXFXLQ1LN/88wLPcBtiFOCrj9xyXKPWxVPAGjpK7upMWtaZHsi+4lTTS+TEGhjPryj
+QzH8kJQsg3vOUDl1Cr+DbEfKja4I2yOOdVMZlRgxYmRXOzMBMpLK9Thdwo/Ao/UE05I7Xnut0jND
+dhNXq8PD8GtyJ9BtyUOd0gNGHqAxBlzi2hdbJHAS+1pJaWkEkJD645dcy7SKMgDvJ62WJpxsVt2V
+qZimLTbR5kj8dSs3eJD6Ab7EcsAbotjdIDcwyxwdSwkgztWXhu4xllE9AYnt3QhsZ+fpgc3SVXDk
+nIRVa+9esGro9VbcnG8uhM5cA3qQ6cN2VKGo4Nwg+fRwHOdyU+ZTQ41uxunnBCwZNrfuhhAj4gyJ
+XOUPGI/X4DEAvpyXYRldakieLHmd9GAw3GgxOxLk0nyEEKA8bwfwBlcwgguQh6YSIOoGfTquG2PZ
+zZRFjkw6hf5ZYuMks91uCXYK/A9nagQ5vHbCEOeS+NAxsDyAP2pDlkAhplllkoYtItLNGBgj2CP4
+8mPe6lhmv2K+ZG+ghOPgwV77a+N5UGntaQX0WYKxN3C6wIA5g1lppAwzZxXBGQMVSsmtfa+zqeNF
+PUwNH4s+Ckwa/1pzSBut3/lvDhjqEnt89y+smjYdGya1n9k/GWcLy5+cvfvkV0E+Q5MRbIAfff4T
+mQjubWepu4g9mNhV4TfYVRGFYYZWc2HmPNnLtOtLleIEo51tuok5HYKfMkPWlHO04Du66YbAYIIk
+wG/90ZEoy0qzI2OKtIqh2CJyJVob5cVROlrFL8vH4sumpeKVy1pxgHJAj0ywXXB4K9OkEOxX6ukt
+Wq+N4Il9+KvlIg0HEHQfwmIJzH3KrwQrIZ075Ic1cieTJv2WEQO+kNElidu76sFzBW7jCBSX6/6w
+sy9s4XM2Tk2YP5EC/6KbkcA/inh5Ihn+FJQAilZ5oQAkXHX1vnQ/md9KoEKMEk986Ti5QkabzxGe
+Pcp7PEuA4O/kHgjz5voiMa6XYNrZA1IHhbEBAMsdV8rGwdgJMsQWt5bPyffK4kSXyNa1MbxIH3Yr
+QKb/rZbJhl7guqUlDlmQ/lLocSae4kBlx76Hrr5WIBaJjgVWGeC=

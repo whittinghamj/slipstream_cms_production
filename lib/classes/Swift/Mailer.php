@@ -1,114 +1,55 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Swift Mailer class.
- *
- * @author Chris Corbyn
- */
-class Swift_Mailer
-{
-    /** The Transport used to send messages */
-    private $_transport;
-
-    /**
-     * Create a new Mailer using $transport for delivery.
-     *
-     * @param Swift_Transport $transport
-     */
-    public function __construct(Swift_Transport $transport)
-    {
-        $this->_transport = $transport;
-    }
-
-    /**
-     * Create a new Mailer instance.
-     *
-     * @param Swift_Transport $transport
-     *
-     * @return self
-     */
-    public static function newInstance(Swift_Transport $transport)
-    {
-        return new self($transport);
-    }
-
-    /**
-     * Create a new class instance of one of the message services.
-     *
-     * For example 'mimepart' would create a 'message.mimepart' instance
-     *
-     * @param string $service
-     *
-     * @return object
-     */
-    public function createMessage($service = 'message')
-    {
-        return Swift_DependencyContainer::getInstance()
-            ->lookup('message.'.$service);
-    }
-
-    /**
-     * Send the given Message like it would be sent in a mail client.
-     *
-     * All recipients (with the exception of Bcc) will be able to see the other
-     * recipients this message was sent to.
-     *
-     * Recipient/sender data will be retrieved from the Message object.
-     *
-     * The return value is the number of recipients who were accepted for
-     * delivery.
-     *
-     * @param Swift_Mime_Message $message
-     * @param array              $failedRecipients An array of failures by-reference
-     *
-     * @return int The number of successful recipients. Can be 0 which indicates failure
-     */
-    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
-    {
-        $failedRecipients = (array) $failedRecipients;
-
-        if (!$this->_transport->isStarted()) {
-            $this->_transport->start();
-        }
-
-        $sent = 0;
-
-        try {
-            $sent = $this->_transport->send($message, $failedRecipients);
-        } catch (Swift_RfcComplianceException $e) {
-            foreach ($message->getTo() as $address => $name) {
-                $failedRecipients[] = $address;
-            }
-        }
-
-        return $sent;
-    }
-
-    /**
-     * Register a plugin using a known unique key (e.g. myPlugin).
-     *
-     * @param Swift_Events_EventListener $plugin
-     */
-    public function registerPlugin(Swift_Events_EventListener $plugin)
-    {
-        $this->_transport->registerPlugin($plugin);
-    }
-
-    /**
-     * The Transport used to send messages.
-     *
-     * @return Swift_Transport
-     */
-    public function getTransport()
-    {
-        return $this->_transport;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

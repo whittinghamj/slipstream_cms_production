@@ -1,69 +1,47 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2009 Fabien Potencier
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Replaces the sender of a message.
- *
- * @author Arjen Brouwer
- */
-class Swift_Plugins_ImpersonatePlugin implements Swift_Events_SendListener
-{
-    /**
-     * The sender to impersonate.
-     *
-     * @var string
-     */
-    private $_sender;
-
-    /**
-     * Create a new ImpersonatePlugin to impersonate $sender.
-     *
-     * @param string $sender address
-     */
-    public function __construct($sender)
-    {
-        $this->_sender = $sender;
-    }
-
-    /**
-     * Invoked immediately before the Message is sent.
-     *
-     * @param Swift_Events_SendEvent $evt
-     */
-    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
-    {
-        $message = $evt->getMessage();
-        $headers = $message->getHeaders();
-
-        // save current recipients
-        $headers->addPathHeader('X-Swift-Return-Path', $message->getReturnPath());
-
-        // replace them with the one to send to
-        $message->setReturnPath($this->_sender);
-    }
-
-    /**
-     * Invoked immediately after the Message is sent.
-     *
-     * @param Swift_Events_SendEvent $evt
-     */
-    public function sendPerformed(Swift_Events_SendEvent $evt)
-    {
-        $message = $evt->getMessage();
-
-        // restore original headers
-        $headers = $message->getHeaders();
-
-        if ($headers->has('X-Swift-Return-Path')) {
-            $message->setReturnPath($headers->get('X-Swift-Return-Path')->getAddress());
-            $headers->removeAll('X-Swift-Return-Path');
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

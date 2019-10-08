@@ -1,273 +1,136 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Makes sure a connection to a POP3 host has been established prior to connecting to SMTP.
- *
- * @author Chris Corbyn
- */
-class Swift_Plugins_PopBeforeSmtpPlugin implements Swift_Events_TransportChangeListener, Swift_Plugins_Pop_Pop3Connection
-{
-    /** A delegate connection to use (mostly a test hook) */
-    private $_connection;
-
-    /** Hostname of the POP3 server */
-    private $_host;
-
-    /** Port number to connect on */
-    private $_port;
-
-    /** Encryption type to use (if any) */
-    private $_crypto;
-
-    /** Username to use (if any) */
-    private $_username;
-
-    /** Password to use (if any) */
-    private $_password;
-
-    /** Established connection via TCP socket */
-    private $_socket;
-
-    /** Connect timeout in seconds */
-    private $_timeout = 10;
-
-    /** SMTP Transport to bind to */
-    private $_transport;
-
-    /**
-     * Create a new PopBeforeSmtpPlugin for $host and $port.
-     *
-     * @param string $host
-     * @param int    $port
-     * @param string $crypto as "tls" or "ssl"
-     */
-    public function __construct($host, $port = 110, $crypto = null)
-    {
-        $this->_host = $host;
-        $this->_port = $port;
-        $this->_crypto = $crypto;
-    }
-
-    /**
-     * Create a new PopBeforeSmtpPlugin for $host and $port.
-     *
-     * @param string $host
-     * @param int    $port
-     * @param string $crypto as "tls" or "ssl"
-     *
-     * @return self
-     */
-    public static function newInstance($host, $port = 110, $crypto = null)
-    {
-        return new self($host, $port, $crypto);
-    }
-
-    /**
-     * Set a Pop3Connection to delegate to instead of connecting directly.
-     *
-     * @param Swift_Plugins_Pop_Pop3Connection $connection
-     *
-     * @return $this
-     */
-    public function setConnection(Swift_Plugins_Pop_Pop3Connection $connection)
-    {
-        $this->_connection = $connection;
-
-        return $this;
-    }
-
-    /**
-     * Bind this plugin to a specific SMTP transport instance.
-     *
-     * @param Swift_Transport
-     */
-    public function bindSmtp(Swift_Transport $smtp)
-    {
-        $this->_transport = $smtp;
-    }
-
-    /**
-     * Set the connection timeout in seconds (default 10).
-     *
-     * @param int $timeout
-     *
-     * @return $this
-     */
-    public function setTimeout($timeout)
-    {
-        $this->_timeout = (int) $timeout;
-
-        return $this;
-    }
-
-    /**
-     * Set the username to use when connecting (if needed).
-     *
-     * @param string $username
-     *
-     * @return $this
-     */
-    public function setUsername($username)
-    {
-        $this->_username = $username;
-
-        return $this;
-    }
-
-    /**
-     * Set the password to use when connecting (if needed).
-     *
-     * @param string $password
-     *
-     * @return $this
-     */
-    public function setPassword($password)
-    {
-        $this->_password = $password;
-
-        return $this;
-    }
-
-    /**
-     * Connect to the POP3 host and authenticate.
-     *
-     * @throws Swift_Plugins_Pop_Pop3Exception if connection fails
-     */
-    public function connect()
-    {
-        if (isset($this->_connection)) {
-            $this->_connection->connect();
-        } else {
-            if (!isset($this->_socket)) {
-                if (!$socket = fsockopen(
-                    $this->_getHostString(), $this->_port, $errno, $errstr, $this->_timeout)) {
-                    throw new Swift_Plugins_Pop_Pop3Exception(
-                        sprintf('Failed to connect to POP3 host [%s]: %s', $this->_host, $errstr)
-                    );
-                }
-                $this->_socket = $socket;
-
-                if (false === $greeting = fgets($this->_socket)) {
-                    throw new Swift_Plugins_Pop_Pop3Exception(
-                        sprintf('Failed to connect to POP3 host [%s]', trim($greeting))
-                    );
-                }
-
-                $this->_assertOk($greeting);
-
-                if ($this->_username) {
-                    $this->_command(sprintf("USER %s\r\n", $this->_username));
-                    $this->_command(sprintf("PASS %s\r\n", $this->_password));
-                }
-            }
-        }
-    }
-
-    /**
-     * Disconnect from the POP3 host.
-     */
-    public function disconnect()
-    {
-        if (isset($this->_connection)) {
-            $this->_connection->disconnect();
-        } else {
-            $this->_command("QUIT\r\n");
-            if (!fclose($this->_socket)) {
-                throw new Swift_Plugins_Pop_Pop3Exception(
-                    sprintf('POP3 host [%s] connection could not be stopped', $this->_host)
-                );
-            }
-            $this->_socket = null;
-        }
-    }
-
-    /**
-     * Invoked just before a Transport is started.
-     *
-     * @param Swift_Events_TransportChangeEvent $evt
-     */
-    public function beforeTransportStarted(Swift_Events_TransportChangeEvent $evt)
-    {
-        if (isset($this->_transport)) {
-            if ($this->_transport !== $evt->getTransport()) {
-                return;
-            }
-        }
-
-        $this->connect();
-        $this->disconnect();
-    }
-
-    /**
-     * Not used.
-     */
-    public function transportStarted(Swift_Events_TransportChangeEvent $evt)
-    {
-    }
-
-    /**
-     * Not used.
-     */
-    public function beforeTransportStopped(Swift_Events_TransportChangeEvent $evt)
-    {
-    }
-
-    /**
-     * Not used.
-     */
-    public function transportStopped(Swift_Events_TransportChangeEvent $evt)
-    {
-    }
-
-    private function _command($command)
-    {
-        if (!fwrite($this->_socket, $command)) {
-            throw new Swift_Plugins_Pop_Pop3Exception(
-                sprintf('Failed to write command [%s] to POP3 host', trim($command))
-            );
-        }
-
-        if (false === $response = fgets($this->_socket)) {
-            throw new Swift_Plugins_Pop_Pop3Exception(
-                sprintf('Failed to read from POP3 host after command [%s]', trim($command))
-            );
-        }
-
-        $this->_assertOk($response);
-
-        return $response;
-    }
-
-    private function _assertOk($response)
-    {
-        if (substr($response, 0, 3) != '+OK') {
-            throw new Swift_Plugins_Pop_Pop3Exception(
-                sprintf('POP3 command failed [%s]', trim($response))
-            );
-        }
-    }
-
-    private function _getHostString()
-    {
-        $host = $this->_host;
-        switch (strtolower($this->_crypto)) {
-            case 'ssl':
-                $host = 'ssl://'.$host;
-                break;
-
-            case 'tls':
-                $host = 'tls://'.$host;
-                break;
-        }
-
-        return $host;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

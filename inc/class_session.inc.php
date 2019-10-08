@@ -1,382 +1,181 @@
-<?php
-
-
-/**************************************************************************
- *
- * Title:         Class 'Session' (class_session.inc.php)
- *
- * Version:       1.2
- *
- * Copyright:     (c) 2012 Volker Rubach - All rights reserved
- *
- * Description:   This class provide a secure session handler with
- *                PDO connection to a MySQL database.
- *
- *************************************************************************/
-
-
-class Session
-   { // Beginn class
-
-
-    //-------------------------------------------------------------------------
-    // Constructor
-    //-------------------------------------------------------------------------
-
-    function Session()
-       {
-
-       // CONFIG: MySQL database details
-       $this->dbHost = "127.0.0.1";
-       $this->dbName = "slipstream_hub";
-
-       // CONFIG: MySQL account details
-       $this->dbUser = "whittinghamj";
-       $this->dbPass = "admin1372Dextor!#&@Mimi!#&@";
-
-       // CONFIG: Used session table
-       $this->table  = "user_sessions";
-
-       // CONFIG: Configure PDO attributes
-       $this->confPDO = array(
-                              PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,   // Causes an exception to be thrown
-                              PDO::ATTR_PERSISTENT => false,                 // With TRUE persistent connection activated (connection not closed when script ends)
-                              //PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true    // With TRUE the buffered versions of the MySQL API will be used
-                             );
-
-       // CONFIG: SALT [free random sequence to increase the session security]
-       $this->salt = "admin1372";
-
-       // CONFIG: Target address after session was destroyed
-       $this->location = "http://hub.slipstreamiptv.com";
-
-       // CONFIG: Get domain name
-       $this->domain = str_replace('www.', '', $_SERVER['HTTP_HOST']);
-
-       // CONFIG: Session parameter (php.ini)
-       ini_set( 'session.auto_start', 0 );                // Defines whether the session module starts a session automatically on request startup [Default: '0']
-       ini_set( 'session.name', 'slipstream_hub' );                // Defines the name of the session which is used as cookie name; it should only contain alphanumeric characters [Default: 'PHPSESSID']
-       ini_set( 'session.save_handler', 'files' );         // Defines the name of the handler which is used for storing and retrieving data associated with a session [Default: 'files']
-       ini_set( 'session.gc_probability', 1 );            // Conjunction with session.gc_divisor is used to manage probability that the garbage collection routine is started [Default: '1']
-       ini_set( 'session.gc_divisor', 50 );               // Coupled with session.gc_probability defines the probability that the garbage collection process is started on every session initialization  [Default: '100']
-       ini_set( 'session.gc_maxlifetime', 15*60 );        // Defines the number of seconds after which data will be seen as 'garbage' and potentially cleaned up [Depending on session.gc_probability and session.gc_divisor]
-       ini_set( 'session.use_cookies', 1 );               // Enable ('1') / Disable ('0') cookies to store the session id on the client side [Default: '1']
-       ini_set( 'session.use_only_cookies', 1 );          // Enable ('1') / Disable ('0') to use ONLY cookies to store the session id on the client side [Default: '1']
-       ini_set( 'session.use_trans_sid', 0 );             // Enable ('1') / Disable ('0') transparent sid support [Default: '0']
-       ini_set( 'session.referer_check', '' );            // Contains the substring you want to check each HTTP Referer for [Default: empty string]
-       ini_set( 'session.hash_function', 1 );             // Defines the hash algorithm used to generate the session ID ['0' = MD5 (128 bits) / '1' = SHA-1 (160 bits)]
-       ini_set( 'session.hash_bits_per_character', 6 );   // Defines how many bits are stored in each character when converting the binary hash data to something readable [Possible values are '4', '5' or '6']
-
-       // CONFIG: Cache limiter
-       session_cache_limiter( 'nocache' );                // Specifies the cache control method ('nocache', 'private', 'private_no_expire', or 'public') used for session pages [Default: 'nocache']
-
-       // CONFIG: Cookie parameters
-       session_set_cookie_params(                         // Set cookie parameters defined in the php.ini file. You need to call session_set_cookie_params() for every request and before session_start() is called.
-                                 15*60,                   // Lifetime of the session cookie, defined in seconds [int $lifetime]
-                                 '/',                     // Path on the domain where the cookie will work. Use a single slash ('/') for all paths on the domain [string $path]
-                                 $this->domain            // Cookie domain, for example 'www.php.net'. To make cookies visible on all subdomains then the domain must be prefixed with a dot like '.php.net' [string $domain]
-                                 );
-
-       // Set session handler
-       session_set_save_handler( array( &$this, 'open' ),
-                                 array( &$this, 'close' ),
-                                 array( &$this, 'read' ),
-                                 array( &$this, 'write' ),
-                                 array( &$this, 'destroy' ),
-                                 array( &$this, 'clean' ) );
-
-       // Start session
-       session_start();
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Open database
-    //-------------------------------------------------------------------------
-
-    function open()
-       {
-
-       // Establish connection
-       try
-         {
-         $this->dbc = new PDO( "mysql:host=$this->dbHost;dbname=$this->dbName", $this->dbUser, $this->dbPass, $this->confPDO );
-         }
-
-       // PDO error handling
-       catch( PDOException $errMsg )
-         {
-         return false;
-         }
-
-         if ( $id = session_id() )
-            {
-
-            // Read saved 'fingerprint' of used session
-            try
-              {
-              $stmt = $this->dbc->prepare( "SELECT fingerprint FROM " . $this->table . " WHERE id = :id" );
-              $stmt->execute( array( ':id' => $id ) );
-              $data = $stmt->fetchAll( PDO::FETCH_ASSOC );
-              }
-
-            // PDO error handling
-            catch ( PDOException $errMsg )
-              {
-              $this->dbc = null;
-              return false;
-              }
-
-            // Check if session HIJACKED
-            if ( count( $data ) > 0 )
-               {
-
-               $this->sessfp = ( $data[0] ['fingerprint'] ) ? $data[0] ['fingerprint'] : '';
-
-               // Create 'fingerprint' with current user data
-               $this->security();
-
-               // Comparison of both fingerprints
-               if ( $this->sessfp != $this->fingerprint )
-                  {
-                  $this->destroyHijacked( $id );
-                  header("Location: " . $this->location . ""); 
-                  exit( 0 );
-                  }
-
-               }
-            }
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Close database
-    //-------------------------------------------------------------------------
-
-    // @return   function   [Boolen => True / False]
-
-    function close()
-       {
-
-       $this->dbc = null;
-       return true;
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Read session
-    //-------------------------------------------------------------------------
-
-    // @param   $id    [String => Session ID]
-    // @return  $data  [String => Session data / Empty}
-
-    function read( $id )
-       {
-
-       // Read session data
-       try
-         {
-         $stmt = $this->dbc->prepare( "SELECT data FROM " . $this->table . " WHERE id = :id" );
-         $stmt->execute( array( ':id' => $id ) );
-         $data = $stmt->fetchAll( PDO::FETCH_ASSOC );
-         }
-
-       // PDO error handling
-       catch ( PDOException $errMsg )
-         {
-         $this->dbc = null;
-         return false;
-         }
-
-         // Return session data or space
-         if ( count( $data ) > 0 )
-            {
-            return isset( $data[0] ['data'] ) ? $data[0] ['data'] : '';
-            }
-         else
-            {
-            return '';
-            }
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Write session
-    //-------------------------------------------------------------------------
-
-    // @param    $id            [String    => Session ID]
-    // @param    $fingerprint   [String    => Fingerprint to prevent session hijacking]
-    // @param    $data          [String    => Session data]
-    // @param    $access        [Timestamp => Unix timestamp]
-    // @param    $date          [String    => Human readable timestamp]
-    // @return   function       [Boolen    => True / False]
-
-    function write( $id, $data )
-       {
-
-       // Create 'fingerprint' with current user data
-       $this->security();
-
-       // Write session data
-       try
-         {
-         $stmt = $this->dbc->prepare( "REPLACE INTO " . $this->table . " ( id, fingerprint, data, access, date ) VALUES ( :id, :fingerprint, :data, :access, :date )" );
-         $stmt->execute( array( ':id' => $id, ':fingerprint' => $this->fingerprint, ':data' => $data, ':access' => time(), ':date' => date( "d.m.Y" ) . " " . date( "H:i:s" ) ) );
-         }
-
-       // PDO error handling
-       catch ( PDOException $errMsg )
-         {
-         $this->dbc = null;
-         return false;
-         }
-
-       return true;
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Destroy session
-    //-------------------------------------------------------------------------
-
-    // @param    $id        [String => Session ID]
-    // @return   function   [Boolen => True / False]
-
-    function destroy( $id )
-       {
-
-       session_unset();
-
-       // Delete session
-       try
-         {
-         $stmt = $this->dbc->prepare( "DELETE FROM user_sessions WHERE id = :id" );
-         $stmt->execute( array( ':id' => $id ) );
-         }
-
-       // PDO error handling
-       catch ( PDOException $errMsg )
-         {
-         $this->dbc = null;
-         return false;
-         }
-
-       return true;
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Destroy HIJACKED session absolutely
-    //-------------------------------------------------------------------------
-
-    // @param    $id        [String => Session ID]
-
-    function destroyHijacked( $id )
-       {
-
-       // Invalidate cookie
-       if ( isset( $_COOKIE[session_name()] ) )
-          {
-          setcookie( session_name(), 0, time()-42000, '/', $this->domain);
-          }
-
-       session_write_close();
-       session_unset();
-
-       // Mark session as HIJACKED
-       try
-         {
-         $stmt = $this->dbc->prepare( "REPLACE INTO " . $this->table . " ( id, fingerprint, data, access, date ) VALUES ( :id, :fingerprint, :data, :access, :date )" );
-         $stmt->execute( array( ':id' => $id, ':fingerprint' => 'Session hijacked', ':data' => '', ':access' => 0, ':date' => date( "d.m.Y" ) . " " . date( "H:i:s" ) ) );
-         }
-
-       // PDO error handling
-       catch ( PDOException $errMsg )
-         {
-         $this->dbc = null;
-         return false;
-         }
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // Clean session
-    //-------------------------------------------------------------------------
-
-    // @param    $max       [Integer => session.gc_maxlifetime]
-    // @return   function   [Boolen  => True / False]
-
-    function clean( $max )
-       {
-
-       // Delete old sessions
-       $max = time() - $max;
-       try
-         {
-         $stmt = $this->dbc->prepare( "DELETE FROM " . $this->table . " WHERE access < :max" );
-         $stmt->execute( array( ':max' => $max ) );
-         }
-
-       // PDO error handling
-       catch ( PDOException $errMsg )
-         {
-         $this->dbc = null;
-         return false;
-         }
-
-       return true;
-
-       }
-
-
-    //-------------------------------------------------------------------------
-    // SECURITY [Create 'fingerprint']
-    //-------------------------------------------------------------------------
-
-    // @param    $salt          [String => Free random sequence to increase the session security]
-    // @return   $fingerprint   [String => Composite chain of values [hashed with MD5]
-
-    function security()
-       {
-
-       // Get Host Name
-       exec( 'hostname', $out, $ret );
-       $this->hostname = strtoupper( $out[0] );
-       if ( !isset( $this->hostname ) )
-          {
-          $this->hostname = 'unknown';
-          }
-
-       // Get IP Address (use a netmask of 255.255.0.0 to get the first two blocks only)
-       if ( isset( $_SERVER["HTTP_X_FORWARDED_FOR"] ) )
-          {
-          $this->ipaddr = long2ip( ip2long( $_SERVER["HTTP_X_FORWARDED_FOR"] ) & ip2long( "255.255.0.0" ) );
-          }
-          else
-          {
-          $this->ipaddr = long2ip( ip2long( $_SERVER["REMOTE_ADDR"] ) & ip2long( "255.255.0.0" ) );
-          }
-
-       // Get HTTP User Agent
-       $this->ua = $_SERVER['HTTP_USER_AGENT'];
-       if ( !isset( $this->ua ) )
-          {
-          $this->ua = 'unknown';
-          }
-
-       $this->fingerprint = md5( $this->salt . $this->hostname . $this->ipaddr . $this->ua );
-
-       }
-
-
-    } // End class
-
-
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
 ?>
+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
+Ny1RY8ggwHZ+a0==

@@ -1,78 +1,42 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Creates MIME headers.
- *
- * @author Chris Corbyn
- */
-interface Swift_Mime_HeaderFactory extends Swift_Mime_CharsetObserver
-{
-    /**
-     * Create a new Mailbox Header with a list of $addresses.
-     *
-     * @param string       $name
-     * @param array|string $addresses
-     *
-     * @return Swift_Mime_Header
-     */
-    public function createMailboxHeader($name, $addresses = null);
-
-    /**
-     * Create a new Date header using $timestamp (UNIX time).
-     *
-     * @param string $name
-     * @param int    $timestamp
-     *
-     * @return Swift_Mime_Header
-     */
-    public function createDateHeader($name, $timestamp = null);
-
-    /**
-     * Create a new basic text header with $name and $value.
-     *
-     * @param string $name
-     * @param string $value
-     *
-     * @return Swift_Mime_Header
-     */
-    public function createTextHeader($name, $value = null);
-
-    /**
-     * Create a new ParameterizedHeader with $name, $value and $params.
-     *
-     * @param string $name
-     * @param string $value
-     * @param array  $params
-     *
-     * @return Swift_Mime_ParameterizedHeader
-     */
-    public function createParameterizedHeader($name, $value = null, $params = array());
-
-    /**
-     * Create a new ID header for Message-ID or Content-ID.
-     *
-     * @param string       $name
-     * @param string|array $ids
-     *
-     * @return Swift_Mime_Header
-     */
-    public function createIdHeader($name, $ids = null);
-
-    /**
-     * Create a new Path header with an address (path) in it.
-     *
-     * @param string $name
-     * @param string $path
-     *
-     * @return Swift_Mime_Header
-     */
-    public function createPathHeader($name, $path = null);
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+QMcGf9JGGOnBYS2GVpG2lDEvBuDxpG==

@@ -1,156 +1,86 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * The EventDispatcher which handles the event dispatching layer.
- *
- * @author Chris Corbyn
- */
-class Swift_Events_SimpleEventDispatcher implements Swift_Events_EventDispatcher
-{
-    /** A map of event types to their associated listener types */
-    private $_eventMap = array();
-
-    /** Event listeners bound to this dispatcher */
-    private $_listeners = array();
-
-    /** Listeners queued to have an Event bubbled up the stack to them */
-    private $_bubbleQueue = array();
-
-    /**
-     * Create a new EventDispatcher.
-     */
-    public function __construct()
-    {
-        $this->_eventMap = array(
-            'Swift_Events_CommandEvent' => 'Swift_Events_CommandListener',
-            'Swift_Events_ResponseEvent' => 'Swift_Events_ResponseListener',
-            'Swift_Events_SendEvent' => 'Swift_Events_SendListener',
-            'Swift_Events_TransportChangeEvent' => 'Swift_Events_TransportChangeListener',
-            'Swift_Events_TransportExceptionEvent' => 'Swift_Events_TransportExceptionListener',
-            );
-    }
-
-    /**
-     * Create a new SendEvent for $source and $message.
-     *
-     * @param Swift_Transport $source
-     * @param Swift_Mime_Message
-     *
-     * @return Swift_Events_SendEvent
-     */
-    public function createSendEvent(Swift_Transport $source, Swift_Mime_Message $message)
-    {
-        return new Swift_Events_SendEvent($source, $message);
-    }
-
-    /**
-     * Create a new CommandEvent for $source and $command.
-     *
-     * @param Swift_Transport $source
-     * @param string          $command      That will be executed
-     * @param array           $successCodes That are needed
-     *
-     * @return Swift_Events_CommandEvent
-     */
-    public function createCommandEvent(Swift_Transport $source, $command, $successCodes = array())
-    {
-        return new Swift_Events_CommandEvent($source, $command, $successCodes);
-    }
-
-    /**
-     * Create a new ResponseEvent for $source and $response.
-     *
-     * @param Swift_Transport $source
-     * @param string          $response
-     * @param bool            $valid    If the response is valid
-     *
-     * @return Swift_Events_ResponseEvent
-     */
-    public function createResponseEvent(Swift_Transport $source, $response, $valid)
-    {
-        return new Swift_Events_ResponseEvent($source, $response, $valid);
-    }
-
-    /**
-     * Create a new TransportChangeEvent for $source.
-     *
-     * @param Swift_Transport $source
-     *
-     * @return Swift_Events_TransportChangeEvent
-     */
-    public function createTransportChangeEvent(Swift_Transport $source)
-    {
-        return new Swift_Events_TransportChangeEvent($source);
-    }
-
-    /**
-     * Create a new TransportExceptionEvent for $source.
-     *
-     * @param Swift_Transport          $source
-     * @param Swift_TransportException $ex
-     *
-     * @return Swift_Events_TransportExceptionEvent
-     */
-    public function createTransportExceptionEvent(Swift_Transport $source, Swift_TransportException $ex)
-    {
-        return new Swift_Events_TransportExceptionEvent($source, $ex);
-    }
-
-    /**
-     * Bind an event listener to this dispatcher.
-     *
-     * @param Swift_Events_EventListener $listener
-     */
-    public function bindEventListener(Swift_Events_EventListener $listener)
-    {
-        foreach ($this->_listeners as $l) {
-            // Already loaded
-            if ($l === $listener) {
-                return;
-            }
-        }
-        $this->_listeners[] = $listener;
-    }
-
-    /**
-     * Dispatch the given Event to all suitable listeners.
-     *
-     * @param Swift_Events_EventObject $evt
-     * @param string                   $target method
-     */
-    public function dispatchEvent(Swift_Events_EventObject $evt, $target)
-    {
-        $this->_prepareBubbleQueue($evt);
-        $this->_bubble($evt, $target);
-    }
-
-    /** Queue listeners on a stack ready for $evt to be bubbled up it */
-    private function _prepareBubbleQueue(Swift_Events_EventObject $evt)
-    {
-        $this->_bubbleQueue = array();
-        $evtClass = get_class($evt);
-        foreach ($this->_listeners as $listener) {
-            if (array_key_exists($evtClass, $this->_eventMap)
-                && ($listener instanceof $this->_eventMap[$evtClass])) {
-                $this->_bubbleQueue[] = $listener;
-            }
-        }
-    }
-
-    /** Bubble $evt up the stack calling $target() on each listener */
-    private function _bubble(Swift_Events_EventObject $evt, $target)
-    {
-        if (!$evt->bubbleCancelled() && $listener = array_shift($this->_bubbleQueue)) {
-            $listener->$target($evt);
-            $this->_bubble($evt, $target);
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

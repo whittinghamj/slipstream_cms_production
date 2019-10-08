@@ -1,85 +1,54 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>Errors</title>
-	<style type="text/css">
-		body {
-			font: 18px Helvetica, Arial;
-		}
-
-		li {
-			margin-bottom: 30px;
-		}
-
-		a {
-			color: #00f;
-		}
-
-		.source {
-			color: #777;
-		}
-	</style>
-</head>
-<body>
-	<h2>Sample Errors</h2>
-	<ul>
-		<li>
-			<div>
-				<a href="basic.php">Basic PHP Error</a>
-				&nbsp;&bull;&nbsp;
-				<a href="basic.phps" class="source">Source</a>
-			</div>
-		</li>
-		<li>
-			<div>
-				<a href="hide.php">Basic PHP Error With Generic Error Page</a>
-				&nbsp;&bull;&nbsp;
-				<a href="hide.phps" class="source">Source</a>
-			</div>
-			This is the general use, you can show the generic error page to
-			users,<br /> and you can email the error report to the admins.<br />
-			See project screenshots to see error report emails.
-		</li>
-		<li>
-			<div>
-				<a href="functions.php">Detailed Stack Backtrace</a>
-				&nbsp;&bull;&nbsp;
-				<a href="functions.phps" class="source">Source</a>
-			</div>
-			See the stack backtrace table to navigate to your actual error.
-		</li>
-		<li>
-			<div>
-				<a href="custom_error.php">Custom Error</a>
-				&nbsp;&bull;&nbsp;
-				<a href="custom_error.phps" class="source">Source</a>
-			</div>
-		</li>
-		<li>
-			<div>
-				<a href="exception.php">Basic Exception</a>
-				&nbsp;&bull;&nbsp;
-				<a href="exception.phps" class="source">Source</a>
-			</div>
-			Any kind of not-catched php exception displayed with detailed backtrace.
-		</li>
-		<li>
-			<div>
-				<a href="exception_trace.php">Detailed Stack Backtrace in Exceptions</a>
-				&nbsp;&bull;&nbsp;
-				<a href="exception_trace.phps" class="source">Source</a>
-			</div>
-			See the stack backtrace table to navigate to your actual exception's location.
-		</li>
-		<li>
-			<div>
-				<a href="basic.php?get_parameter=myvalue&test=1&param_array[num1]=15&param_array[num2]=10">GET, POST Arrays</a>
-			</div>
-			See the $_GET array content, it's multi-dimmension array.<br />
-			There is no POST data, if you have POST data in your page,<br />
-			error reporter will show POST data in a separate section.
-		</li>
-	</ul>
-</body>
-</html>
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+HR+cPuo/W0GQB7ah7dCL9x+bAFSfmjRa85W7H5o8FtoWqGX5Jezn4RORgUVCv3D7dWXFhRGzPj+P
+f5v6SPt0VxjsxV26oE3o4axeR+f7NR1WtNo2yuIpUNiVtyJ6kJIJ+/2j1F75VXcUED3UvS2WQPyR
+5quIbJgB3Y9UKsE+aki0bvSxOnSxER/k/XVmiQFqYoIs9ajs6299f3OO5csLhgg9VKE2uSXFCh3Z
+oOm8XfWNMDzF+flsxTJj7f7pqv7CrJdjLXQKfWM/ze1QecNPVMexQ0cvH1gTG/dtfhyGZIIU1kLx
+3dCe4vtREv2O6GP5kr5AUoFZuR+x5PjOLPNQkW/XH833J2RH8OGuvwmEAzu/pHUn890OzEbhZgnK
+r382d4rM/FNBuuCL59T4aiKfmVrEBws/B3FTbM4XBtJRZ9rstFwdUxm3gHrZqSadSE4ivt4POlHK
+meH0TtcD8ep4Efl0kF7ZHk6nN1/AYrqM5LMAIb8s++4k/zReoZVHPSg+1l+JfSTxtXu5vaI42+cF
+HKE42UWRx0UHq2deTUw8SH5DUF+4/a2RXdXgs7I97qdXWOkjLw8cxX/DzFr8XO8LL7xG2ZGE2zh3
+Z2zlc0c0V17CotzAHMssl90M8Z3iXhlVm8gBJKHnGBqSSnWVWhhClkKc/bcs0O9en1K0sn1rJQJg
+RMVyGZx3SzpaVaamu0PvUawf2kIlGwlgON+yCZUx7S1XJFsY/gCuMTHBsD/q2cwTyUBrxs1AudcR
+Xkx8ne0rr64slj9uZFlg+/v4N3cGHdoXeaOv1uHf1xqauaGbjVDBDAjPsNd0pDntQNPDrZKCrQ5P
+cYngSL05rUBLw1EGPnUNbmFlqqeHDa3VVV0KOFJXlS3JmAO9UwYhAHOmyiAMehtuC26SyFTXxaTK
+l4eZEcGeTYLU4uc1yYeSs/fxhTEQNSwpx0L7j2VZxoBv8P2BwdZpZbRUM50XT2EOahStok2BdXos
+2vZCme3k8SAIzW9WSRPywVjAk/RVveXnsZqQ5/cyFe/YzGeZ6GcHN3ygCkZudnAWduHOcfV3LM6y
+iAXBeHQ0mLLqQYI3xQrdhzGVSXCPg5hsHU5NNEI9aU7Rh1eotvy+XpLRW3trDvf3YbkFOFlPwRbn
+YX/96dbXkxBfvHdicGT+fy0ZYBkih2lSkhRTsBB7fJBsT7uACieoPLRvbNRHYkcc1tAVFcoYpQWi
+5cwLDYxueL1J/WKb0G/qpNZ7zN8Shea/Ek1vy2yON1KQeqvhOPBSJ601DJ5XFeVykHgdjt8aeMlu
+pYH9JMvME6P4yOHFfeL/4c4bEj+KH8YGQCm5S0L/WOTjRXPtK8hFfbrRP9+velo7n+25jZG55Ozw
+K+TwyMCLro2tfZeuktwlImsr1is837X5rZCCEwA7jSvjGD+0X3iZaQB92zBXJTK4kIVPXkgGrFO8
+aiHEHYIQRa0UCKGiK87CKqJC14HB8bjk7o3YA/ttia9ToMJoJbBZDGKt9H69CofN/lp6m7IKtEf9
+cWwmWC5rWwvR6XISs6aIqFuE0icjZlCU/7tJzPWjnALPgNVYYQ6R/pPRM8bPtLNlUHj1ppKRu/2q
+XQm5/+cmDuHkiR2pYjrHcCUTrwTw+WSf6B6OiAUnCoEDBioymLL7IO2TXSU0qYb8wxhIQOJ4PzG4
+hUR2szCI/V/jcfGmqMwM1bXkc5BhXSmJyBKnvvMjebsNsIg1XsIgadQgziLVBX1CR422zlMowXRZ
+sGGBXZ9esBSs7N0SPlWEQxFATCtWAjSR1nQtg2ruaFhrhcZipYpMIAcZCinSp95xGByM6w4J2wB2
+QlzC81RrRDh6nEf/yyRi4aqfMN0Be2rbjKk7GJ8pnOgE2f3HWZ5+xVEVK1gsbusFUp//OsxvQu5g
++Qrwbr12VSzzouQXV2OK+k+JTkPGsgegVFBwmyPWuTu1je9vXg+EZkugoRXrivmiGjuko5mn0rui
+mcmAe18dQB/yk/iH8tvrWv3wO7Hpy9+eND5fcx/4ikWOKYy7xND0+hahkUZzYjbKNuj+8ApXqt2M
+6fuf/bQ93wB7C04G07eHECbPiPAh8kvIq1WzuOTeYzLK91SQ/enXE9gERGJFLhNcGLz0o9+TyQlt
+nOUg0ysb3pUtCvZsSeh7Wwc8vwD8/2DmiXwuzSPORJNNUWQmQmaFRAy7txLZKhCKfabMgHTjhR8q
+5OfR0S9g2PKaDIMd4xkVixUURownJX9uzJv5n4yTXQCKtuA5ug2onPoEbbR54qKQmXxTBCv0YNXo
+69b8SI8sYb6pUVR+sttHDlKJhZcztCvPRaVrPzN5j/nDopT2xtztR3NlhLiu1KBUyqqQKn7Ab5M3
+cqUJcAMo08Lm6wmuFl6gmGjsEXvYSLR81n9Tg8ghTy7TrkSKZZvjhEWg8nbcDASspHHgufTkKJ8o
+U8cf2Wjr5Pj8/2rSq7fRPZyu1JT+zjb6H5YQbqPYJQZkZ69R4Z9epF1DptSzjEUnuoa4aDoLkcrC
+UW1T/0eL429HV4s20roMVM0cHQGEH99rbSXZA2KT+l7qZLObkisLgr6n4YgancfkZNyv4FQ55gn9
+FQuqRmLKM/5fc7Op7OykEqLWYtOk2HSXk1ocE9auJ7c8tLEVQbfLeeT/sN+On1iGZYFkMPWtyJ+Q
+nhKT5Qo9ws0Y1Ogo2R371ymMLQraUWiomrnk8iRkKUpn1kZuRiU7PfrP6816KfwkqNuamXETZb60
+xfZqxx5gtm+6HT+hAsF5EO3ppr38XgEGI6pHS9UuV/JA39O9nT4I9SvfkEU0dRoXn3DHRo515pMn
+ixv6aioMaL+9pi0z1bccUw6jeGHRBGlGTl3/AkCTltN0xK0Jw7RfbJ8ChXyNGtFPDiN5EPkrT/Al
+O5qXpShZIfR9iKCcEjazDHF0nX6ZepZEjuIxJ+o+/3YpwGKrmX9hEMrR7qt05XuUqislIFwRHAzQ
+kzLNPLn7MM2Eu5FS0MnKybLJiIXNyqLcK1uD9mvgFHw5eYv8XdxUHgG3WbDVDAYqaGFzcGxgDP78
+WvklzgkNH3R+nALh3YDF1J/QqrGBxIi2v7ZocvUETW4pYDZZLY+dvHVmxait/GsYgXM0ZffcWD9J
+cDWK/VwUpGxqTJe6MODwjWS23kYfVNJvNswmkAMnaHn2jwvzknXL3rrwrSfumkbBkzC9AgFivOLu
+sSZKBhduEGLdjMawhQtSWmPyrKEcPqMIT49iE2mnY9fzWE1VCJ7GOqWjnsVbMeGVbnil/zvPukxA
+wVYaRvmlc9BBoy/eJz1ES8jcOxdUvHMsCAsxVMS89+JVgNd2b98uXiartSfZCPRY2GopPYWetF88
+ZbIeYkJ5ujZhsa/9OSXIVUHqjtgIwjTPHipeMydDhucx6gQPbegUJQkTZZQG1lR+IHo6hfCBkm2X
+ZnhdAy8d6BXSnHGJq2ra+1lNjfuEtKreaGm5EGoLfcn5SbuLedt5ZvKYFQw0oawi4BTkBE5epmzn
+KYJdj1yBq834j1CAUzZX2DqBekYRfdOw+FK7AjqDTvAiLOrFgb0YrwRRm5jlBA0D08teZqzGBWG6
+TgpoNFRBUdeDNaMVKM8Cm10VpwIzLFAtSAUBMZjg3u9096ZVTY1CKHB6VPfSWa8ok3tLIW+tJ6Mr
+I/vk7E7W42i1ljcNUTCE0tPDstw26iwo4ctKFsZHmj2Ey6aXrk8kUOBBpcwiIv9Onn9hUtkYcaQf
+tdpchXxuEEXpC0SqTbGew53OLR50Ss2cO9ZRXHsUwh6ligy7/srynEX+b1+5eVdKI9LOixjKDA3A
+c1tD2MAWKDcti0==

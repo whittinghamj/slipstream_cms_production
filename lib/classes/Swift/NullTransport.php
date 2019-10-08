@@ -1,36 +1,32 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Pretends messages have been sent, but just ignores them.
- *
- * @author Fabien Potencier
- */
-class Swift_NullTransport extends Swift_Transport_NullTransport
-{
-    public function __construct()
-    {
-        call_user_func_array(
-            array($this, 'Swift_Transport_NullTransport::__construct'),
-            Swift_DependencyContainer::getInstance()
-                ->createDependenciesFor('transport.null')
-        );
-    }
-
-    /**
-     * Create a new NullTransport instance.
-     *
-     * @return self
-     */
-    public static function newInstance()
-    {
-        return new self();
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

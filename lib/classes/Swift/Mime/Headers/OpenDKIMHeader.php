@@ -1,133 +1,52 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * An OpenDKIM Specific Header using only raw header datas without encoding.
- *
- * @author De Cock Xavier <xdecock@gmail.com>
- */
-class Swift_Mime_Headers_OpenDKIMHeader implements Swift_Mime_Header
-{
-    /**
-     * The value of this Header.
-     *
-     * @var string
-     */
-    private $_value;
-
-    /**
-     * The name of this Header.
-     *
-     * @var string
-     */
-    private $_fieldName;
-
-    /**
-     * @param string $name
-     */
-    public function __construct($name)
-    {
-        $this->_fieldName = $name;
-    }
-
-    /**
-     * Get the type of Header that this instance represents.
-     *
-     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
-     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
-     *
-     * @return int
-     */
-    public function getFieldType()
-    {
-        return self::TYPE_TEXT;
-    }
-
-    /**
-     * Set the model for the field body.
-     *
-     * This method takes a string for the field value.
-     *
-     * @param string $model
-     */
-    public function setFieldBodyModel($model)
-    {
-        $this->setValue($model);
-    }
-
-    /**
-     * Get the model for the field body.
-     *
-     * This method returns a string.
-     *
-     * @return string
-     */
-    public function getFieldBodyModel()
-    {
-        return $this->getValue();
-    }
-
-    /**
-     * Get the (unencoded) value of this header.
-     *
-     * @return string
-     */
-    public function getValue()
-    {
-        return $this->_value;
-    }
-
-    /**
-     * Set the (unencoded) value of this header.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-        $this->_value = $value;
-    }
-
-    /**
-     * Get the value of this header prepared for rendering.
-     *
-     * @return string
-     */
-    public function getFieldBody()
-    {
-        return $this->_value;
-    }
-
-    /**
-     * Get this Header rendered as a RFC 2822 compliant string.
-     *
-     * @return string
-     */
-    public function toString()
-    {
-        return $this->_fieldName.': '.$this->_value;
-    }
-
-    /**
-     * Set the Header FieldName.
-     *
-     * @see Swift_Mime_Header::getFieldName()
-     */
-    public function getFieldName()
-    {
-        return $this->_fieldName;
-    }
-
-    /**
-     * Ignored.
-     */
-    public function setCharset($charset)
-    {
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+6dUbVMlM39P+q8VNe0AnUQHi3W==

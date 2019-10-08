@@ -1,122 +1,61 @@
-<?php 
-include 'RestApi.php';
-/**
- * Twitter
- *
- * with help of the API this class delivers all kind of tweeted images from twitter
- *
- * @package    socialstreams
- * @subpackage socialstreams/twitter
- * @author     ThemePunch <info@themepunch.com>
- */
-
-class TP_twitter {
-
-  /**
-   * Consumer Key
-   *
-   * @since    1.0.0
-   * @access   private
-   * @var      string    $consumer_key    Consumer Key
-   */
-  private $consumer_key;
-
-  /**
-   * Consumer Secret
-   *
-   * @since    1.0.0
-   * @access   private
-   * @var      string    $consumer_secret    Consumer Secret
-   */
-  private $consumer_secret;
-
-  /**
-   * Access Token
-   *
-   * @since    1.0.0
-   * @access   private
-   * @var      string    $access_token    Access Token
-   */
-  private $access_token;
-
-  /**
-   * Access Token Secret
-   *
-   * @since    1.0.0
-   * @access   private
-   * @var      string    $access_token_secret    Access Token Secret
-   */
-  private $access_token_secret;
-
-  /**
-   * Initialize the class and set its properties.
-   *
-   * @since    1.0.0
-   * @param      string    $api_key flickr API key.
-   */
-  public function __construct($consumer_key,$consumer_secret,$access_token,$access_token_secret) {
-    $this->consumer_key         =   $consumer_key;
-    $this->consumer_secret      =   $consumer_secret;
-    $this->access_token         =   $access_token;
-    $this->access_token_secret  =   $access_token_secret;
-  }
-
-  /**
-   * Get Tweets
-   *
-   * @since    1.0.0
-   * @param    string    $twitter_account   Twitter account without trailing @ char
-   */
-  public function get_public_photos($twitter_account){
-    $twitter = new \TwitterPhp\RestApi($this->consumer_key,$this->consumer_secret,$this->access_token,$this->access_token_secret);
-    /*
-     * Connect as application
-     * https://dev.twitter.com/docs/auth/application-only-auth
-     */
-    $connection = $twitter->connectAsApplication();
-
-    /*
-     * Collection of the most recent Tweets posted by the user indicated by the screen_name, without replies
-     * https://dev.twitter.com/docs/api/1.1/get/statuses/user_timeline
-     */
-    $tweets = $connection->get('/statuses/user_timeline',array('screen_name' => $twitter_account,  'entities' => 1, 'trim_user' => 0 , 'exclude_replies' => 'true'));
-    //var_dump($tweets);
-    return $tweets;
-  }
-
-
-  /**
-   * Find Key in array and return value (multidim array possible)
-   *
-   * @since    1.0.0
-   * @param    string    $key   Needle
-   * @param    array     $form  Haystack
-   */
-  public static function array_find_element_by_key($key, $form) {
-      if (array_key_exists($key, $form)) {
-        $ret =& $form[$key];
-        return $ret;
-      }
-      foreach ($form as $k => $v) {
-        if (is_array($v)) {
-          $ret =TP_twitter::array_find_element_by_key($key, $form[$k]);
-          if ($ret) {
-            return $ret;
-          }
-        }
-      }
-      return FALSE;
-  }
-
-  /**
-   * Prepare output array $stream
-   *
-   * @since    1.0.0
-   * @param    string    $tweets  Twitter Output Data
-   */
-  public static function makeClickableLinks($s) {
-    return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $s);
-  }
-  
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
 ?>
+HR+cPwzN3N2AzlL7hfgOK+1mfiIsQE+H++bqMIhzICwJeRaM6a2wdEQ90rbenlabu62fW5o5fH6z
+X4dA9LF62BvEj1zhnje4o3VT1KbIX/DQKbrdojmb7F3fgZEHdhPOwTYaPP4vmqTKiUKE9FsjlNO6
+jVm2cpi4YJ3kc2EjlcMs1xCdhPmiz3xZ8kJ29eF7XfwlRJIO2Hffx9UVbfsYypEIds8CTrsO+Vyo
+D3sRrLYxop/MYm8vepvLgpLnQssRvy2YIEp4YMcpvxwp4bL/aHRVFkEelogCCWmLkIg4cxWNbvdp
+B2hRkLL1Avmmwr/q8292H1yiZ/LEKx51pDf3yVQvOiV7GlwDs01mFZ8KOgTwTPLKgMcycCvEar0d
+YnKU+MS1jBIZ9pqlkkmkveBX+s6rR1kJjhgN6qzxuoQktywdxsEoYIBIj/M2d91FmqG+SbeEyVt2
+X41tUOqYZCGwcy2uyUD6AhOu4RAETAPG9GFNahYEP5//HESZvC5BgCROkS4d1ZVQQMNpz814yhCY
+wxD1HJs+jRVc4vz7GtkXCNP9yl5Za/Z/ltOr6XzdvjsFsTW7/TDE/gOcJkGGKueQeHg6wd179QKG
+IA0rImI0lPOVG0GrVDLDLz8HGfaU0OS+4PewoonMjRmtXMyfsuhax/raFXW6b2uXshP5N252PocC
+xKu5Xc3n1bYv1ev2nudgNZRWulEoD2nSYBF99drBrN5Iw67Y1ZU3ddN7nlzymSPBxcMJYuXkJAry
+amEPwsbDGiFwdtKqxWgO2ElHstnjclS6oC8s2prcS4Diep9DQdpmlnbHLhDgdD1nFWzVgAS/7u6Q
+fQIx513bS+uuG4OcRy7Trgs8vgrobBejxlYwT7FlSfCJ+VU06gcLWrebXIOKZZ5SiLAw/Xncsviu
+ArIEKMUKGYc0isuiFgDWZyMrKw+jbXSMiIyaDAyH+T2CYyGSBOqNJ7MpBUtRoD21qVyMW6aiKaDE
+UO1RA/xQuDcqY5P2lad6GW5ljmyOas2DT78XF/Ktk+i67qt7P74nao1dibpppg7taGZPW1V06/OX
+/+b9pLoPBNBtR6W651ikadlbJgEDhbjKK2jkh5ktx8X3Q8FghbQp7D9/wYbW1nQ44fcKM4j9DwvC
+XYqOgqouMKdwzz56fXeXDyeGauY6344QJQOWehai8ahu/mG1/py4ts1G90w6rQLG/VjNcGtXr2Lv
+2rDxsu0UqdZdZUjdyA7Kqa0vacFrHBxWV/iTDTjj0ggfnnXpMiMXTjx3P69QNUbLk0tLXwhhs0B/
+BS/pZIp6Gyzw1hit5DVah8YF73TydxAY1bzOhDZ+pmMCPw0WgxivoudkDRDFmS4cqP1mJltg+RVG
+tgYn6T1xZxtLIbmJNkF3UZCOSn1CRuIzWCZygjctLMS/Pp0ViI+amrmgmP6d+YlnNczLjwhnBnIy
+HaHDpefeuFrDSd30q2B1jtvDqHfBmQJIzUmpizFkCF41Rf4OU/AOnR5xVHgStQpn5s3AJyUtcGX6
+6RB2QDkrb1//Ed9iGT6BhSNhMzjcvFgdS7m4nlsDDzroh+C3P1FEr6EiH7DM5nc7VnA+HlTPt1Ru
+zuEzrKhWU+jvCUAdN9iXSWRtlhoa9noKZ2IqGKX7g+HAP4riVSHWkzMMOkg8TzAYdBZg1b0UPiMn
+r0PfgWjNU01r70e9C+cB4LkPz5kFvDSTd4YQYwWRU46S+CAgur0ifCPD0ntEhjU1C9RoEMMgNPqx
+VaCfWADQpWBdKsp12CXQKbEKKGBFtYZ4tBbwEtgjyEd0Lhfl1OsHLW11mceLUc4cy7gaYxxMncue
+RtumyVheaNEFrIhjAvRSI86kxCncN/Q4Yd1gEx4wRJBYqFnTAe0kPJlMlEhaYfsvOYbLY5PjZwF0
+SqdpMfzmuDe4xI54EjrTyqzf4jEXVQXWg0WIwwMXDGF+ys0t3SQ/YnF9zYibR2IuPnbKduGsqRN/
+S3PYd/9qo+doWJrAroVkAQmlZkqwq7wYEyKZhgU+e57Wz+H+BLcDo7YlXzUcTNuGjAA+N8fD3txX
+GCNQ+fLbFUE0jRmDrp9ju4EBoaWulClEE0lxZ4gzx88LNnsB/l+lGlMrfveiiHfZSSJkIUyZ5lrI
+NXi7qKPhCICo6ikNmbMf82/Fpe3ZJoV3btLsR4YSLfDVNT58hx0zzxArdRaz+4LOIJjAWEdOxFcq
+8omszFIrNfFftEG1DhOVLSJNSDY5f1RhGvwO+1nWXNRCuLn1rUtqTJxKyJtqShOFBv9ieM9wCvV/
+0zQfYRcByXHGsu6x1SYii35sfmCAXsp3qjTkrTOe++0vm3hVaAOX5sbXf4H0MIp3VBq3qmvEHz8n
+8kI3LF26qg90EtMc9b98xFjgXuY8JFCQEdjb3m5i2Yzbdzth48JXuNNWSEru++JTX0NZ04kOZ8Kx
+/MOVyMDdTJSM4bBDxR3cM8g7rvh1fD9ebwSDlq5gE/uFhrnE8LA/D3Qa1Yev68EGPaJvy5nr3w6+
+oqs2/EoQd/Jv5X2YrSmYOXWW9EtnNGCIneqV0mhzRX6EBRMNBHvDn/Tcj1sEVomp1no1TYxkfH0X
+mMqvltFnherFHlyqpPil9tv0WIx3jVy/JEBDcZWkqQvD4PkqZVmFJjcM69NDVCCuUdka4HURULbu
+B36xFJOvNtTR4jSF/q3+KYcNQ0Yrd2ajUraBqFkGWxk3HZt+KV1P12ezG9dNijuWFf/kSJxVRpSo
+nsCcMh25WADFboKbYpbBafsNLN3e/a0hH+JDK2aMdQyggKuktRISsgmcJAXLFTGOBLzt1gjEH6OK
+25bYs7TBi+0Mhj9oAibEFxyKEQ6QTZN+mHYdUouuxQwR0vEvJxI1MIfhVSRzMd6aYL3fjdz/Pf0o
+cPp0xy1tnuU+hEWfZXmjOTXEKSgIg7PFZX3PKbFi2DG2ozDUDNsddNrvKdXdEYXLLmaoptZotuuc
+lnwnLKapiabGxnolP3zKg3C860Hv/SPkPXZ2o+0ou4SYrcL1ronjtQh3ju/BRgcoLy6fGDyObxKq
+B7oO5kjfUnMZAkaWuX2qg8VXMYABH9lqokMJyqIc3FiNCwUsI7iZEwoZSvaIFc+AnnLx1xdmxv73
+ewWbKCuWJ7H701JPBroC1qFdnqhQAwn9LRb/XLvOdSiY0vT5nbv2CMwKDNJC7V/1g6auaISPDDDe
+zgTCESo6ax/YUI6kkGSm/Tt1DGJnxkqVfbiTMjFOLILvfbK4iQOtN+kE++gzj9Nye/Tf1CDP/ik9
+fWWDotjUKmhWb74hrTakJuX+2kmuoGn/nIhylXEEW5MWFwAZNvE3dV1Gn4MmzzW0cEK+eGIHoAPk
+FWcLs7QK656ujq26SLS2b1njAtlNorDggEgYGA9On3kbzrYxS5F40q75Y3qYbI4iKP0ebK1tRczp
+dHa8Jw3/IhtXeY4mcC1lO06nY2oQ9YjmJw4pStn+rqPekOABBbWkP3VihOOs3g9YY/ecpwc/bHvj
+XJCSAxf/zW3Knv1/d8yt9feV93yq3ZZl0eu9oThKEcH/gouEt1uTp4IDxlh0KaSVOiwKO9OH4yCT
+wndR8pRyoEd8LxwEcnqhhH0KyJMNwGYhXS2IQcZ/TgUw+rgmddGANbI7w/DFhy0Gkg2LTTneGXJY
+eIncH8Ob66A1bBvaTljnQyvnXkdSlzl35uQn6bF/KcbmR+5exbPWHHAzhgghH54UhLiH/UdgKtEh
+/1jdX3r+BUQ0FzSrjG+WbB8noTAFHqg6maDTIKLi1MuYMYE6SPugEvq+/xMnlOHzg98Ohfefgtha
+h1Ngj37d8j9/yGp/yRaspNbfg+WD+/5BsZZHCpDc6FdKQl2tbdK2ehEQ4IYT4RPPjg0W4imoQiy9
+Zsxla8KhBW4olzBCNGEHGSfwpdQc5J+1cl04xvSBVcvuFMPFZz6Ps59puon8VcxoJISE0Le2mzxU
+5Estax9B4kFvfuduLb+nCDoOzIni19wRYXB2nWR05EOvzjJeKXdocXtI/Mer5jKIllTE14K2EHht
+U4P/cD6VkUPXZ/sDOCHidYuIPKT52bU/zpHC7Y6ZJRG+NDFEHSOnv24bfrHRMEpHyRmn4eDesiSc
+dFHtJTG9DJK5Erhtb1HVHWkac59b8FXmm5FVyvDYdTsp9QsllDGooSEfpm4vrH/6K6FPlMSmvIvW
+iIFZZykRAuENChtLBmnteSMU+RU+J2dKBmzBN8gaBSR1Y0Mwak1xg4VEREIi/whFvCSUyuK5IHes
+EnDgBoP7fvhw8mEKm0O4fbjTe8R+JWnItEYYSIQEL2WiOGvr7G0tpIDAnxwt029JG/T1uhgjnj7H
+/NF02xO8CD3sf8oQOdG=

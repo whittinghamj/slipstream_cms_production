@@ -1,205 +1,205 @@
-<?php
-
-function yourprefix123_check_license($licensekey, $localkey='') {
-
-    // -----------------------------------
-    //  -- Configuration Values --
-    // -----------------------------------
-
-    // Enter the url to your WHMCS installation here
-    $whmcsurl = 'http://clients.deltacolo.com/';
-    // Must match what is specified in the MD5 Hash Verification field
-    // of the licensing product that will be used with this check.
-    $licensing_secret_key = '5ea1d2165c5ed03cadf053bfab87e7ef';
-    // The number of days to wait between performing remote license checks
-    $localkeydays = 1;
-    // The number of days to allow failover for after local key expiry
-    $allowcheckfaildays = 3;
-
-    // -----------------------------------
-    //  -- Do not edit below this line --
-    // -----------------------------------
-
-    $check_token = time() . md5(mt_rand(100000000, mt_getrandmax()) . $licensekey);
-    $checkdate = date("Ymd");
-    $domain = $_SERVER['SERVER_NAME'];
-    $usersip = isset($_SERVER['SERVER_ADDR']) ? $_SERVER['SERVER_ADDR'] : $_SERVER['LOCAL_ADDR'];
-    $dirpath = dirname(__FILE__);
-    $verifyfilepath = 'modules/servers/licensing/verify.php';
-    $localkeyvalid = false;
-    if ($localkey) {
-        $localkey = str_replace("\n", '', $localkey); # Remove the line breaks
-        $localdata = substr($localkey, 0, strlen($localkey) - 32); # Extract License Data
-        $md5hash = substr($localkey, strlen($localkey) - 32); # Extract MD5 Hash
-        if ($md5hash == md5($localdata . $licensing_secret_key)) {
-            $localdata = strrev($localdata); # Reverse the string
-            $md5hash = substr($localdata, 0, 32); # Extract MD5 Hash
-            $localdata = substr($localdata, 32); # Extract License Data
-            $localdata = base64_decode($localdata);
-            $localkeyresults = json_decode($localdata, true);
-            $originalcheckdate = $localkeyresults['checkdate'];
-            if ($md5hash == md5($originalcheckdate . $licensing_secret_key)) {
-                $localexpiry = date("Ymd", mktime(0, 0, 0, date("m"), date("d") - $localkeydays, date("Y")));
-                if ($originalcheckdate > $localexpiry) {
-                    $localkeyvalid = true;
-                    $results = $localkeyresults;
-                    $validdomains = explode(',', $results['validdomain']);
-                    if (!in_array($_SERVER['SERVER_NAME'], $validdomains)) {
-                        $localkeyvalid = false;
-                        $localkeyresults['status'] = "Invalid";
-                        $results = array();
-                    }
-                    $validips = explode(',', $results['validip']);
-                    if (!in_array($usersip, $validips)) {
-                        $localkeyvalid = false;
-                        $localkeyresults['status'] = "Invalid";
-                        $results = array();
-                    }
-                    $validdirs = explode(',', $results['validdirectory']);
-                    if (!in_array($dirpath, $validdirs)) {
-                        $localkeyvalid = false;
-                        $localkeyresults['status'] = "Invalid";
-                        $results = array();
-                    }
-                }
-            }
-        }
-    }
-    if (!$localkeyvalid) {
-        $responseCode = 0;
-        $postfields = array(
-            'licensekey' => $licensekey,
-            'domain' => $domain,
-            'ip' => $usersip,
-            'dir' => $dirpath,
-        );
-        if ($check_token) $postfields['check_token'] = $check_token;
-        $query_string = '';
-        foreach ($postfields AS $k=>$v) {
-            $query_string .= $k.'='.urlencode($v).'&';
-        }
-        if (function_exists('curl_exec')) {
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $whmcsurl . $verifyfilepath);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $query_string);
-            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            $data = curl_exec($ch);
-            $responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            curl_close($ch);
-        } else {
-            $responseCodePattern = '/^HTTP\/\d+\.\d+\s+(\d+)/';
-            $fp = @fsockopen($whmcsurl, 80, $errno, $errstr, 5);
-            if ($fp) {
-                $newlinefeed = "\r\n";
-                $header = "POST ".$whmcsurl . $verifyfilepath . " HTTP/1.0" . $newlinefeed;
-                $header .= "Host: ".$whmcsurl . $newlinefeed;
-                $header .= "Content-type: application/x-www-form-urlencoded" . $newlinefeed;
-                $header .= "Content-length: ".@strlen($query_string) . $newlinefeed;
-                $header .= "Connection: close" . $newlinefeed . $newlinefeed;
-                $header .= $query_string;
-                $data = $line = '';
-                @stream_set_timeout($fp, 20);
-                @fputs($fp, $header);
-                $status = @socket_get_status($fp);
-                while (!@feof($fp)&&$status) {
-                    $line = @fgets($fp, 1024);
-                    $patternMatches = array();
-                    if (!$responseCode
-                        && preg_match($responseCodePattern, trim($line), $patternMatches)
-                    ) {
-                        $responseCode = (empty($patternMatches[1])) ? 0 : $patternMatches[1];
-                    }
-                    $data .= $line;
-                    $status = @socket_get_status($fp);
-                }
-                @fclose ($fp);
-            }
-        }
-        if ($responseCode != 200) {
-            $localexpiry = date("Ymd", mktime(0, 0, 0, date("m"), date("d") - ($localkeydays + $allowcheckfaildays), date("Y")));
-            if ($originalcheckdate > $localexpiry) {
-                $results = $localkeyresults;
-            } else {
-                $results = array();
-                $results['status'] = "Invalid";
-                $results['description'] = "Remote Check Failed";
-                return $results;
-            }
-        } else {
-            preg_match_all('/<(.*?)>([^<]+)<\/\\1>/i', $data, $matches);
-            $results = array();
-            foreach ($matches[1] AS $k=>$v) {
-                $results[$v] = $matches[2][$k];
-            }
-        }
-        if (!is_array($results)) {
-            die("Invalid License Server Response");
-        }
-        if ($results['md5hash']) {
-            if ($results['md5hash'] != md5($licensing_secret_key . $check_token)) {
-                $results['status'] = "Invalid";
-                $results['description'] = "MD5 Checksum Verification Failed";
-                return $results;
-            }
-        }
-        if ($results['status'] == "Active") {
-            $results['checkdate'] = $checkdate;
-            $data_encoded = json_encode($results);
-            $data_encoded = base64_encode($data_encoded);
-            $data_encoded = md5($checkdate . $licensing_secret_key) . $data_encoded;
-            $data_encoded = strrev($data_encoded);
-            $data_encoded = $data_encoded . md5($data_encoded . $licensing_secret_key);
-            $data_encoded = wordwrap($data_encoded, 80, "\n", true);
-            $results['localkey'] = $data_encoded;
-        }
-        $results['remotecheck'] = true;
-    }
-    unset($postfields,$data,$matches,$whmcsurl,$licensing_secret_key,$checkdate,$usersip,$localkeydays,$allowcheckfaildays,$md5hash);
-    return $results;
-}
-
-// Get the license key and local key from storage
-// These are typically stored either in flat files or an SQL database
-
-$licensekey = "Leased-c3da0f407d101863";
-/*
-$localkey = '9tjIxIzNwgDMwIjI6gjOztjIlRXYkt2Ylh2YioTO6M3OicmbpNnblNWasx1cyVmdyV2ccNXZsVHZv1GX
-zNWbodHXlNmc192czNWbodHXzN2bkRHacBFUNFEWcNHduVWb1N2bExFd0FWTcNnclNXVcpzQioDM4ozc
-7ISey9GdjVmcpRGZpxWY2JiO0EjOztjIx4CMuAjL3ITMioTO6M3OiAXaklGbhZnI6cjOztjI0N3boxWY
-j9Gbuc3d3xCdz9GasF2YvxmI6MjM6M3Oi4Wah12bkRWasFmdioTMxozc7ISeshGdu9WTiozN6M3OiUGb
-jl3Yn5WasxWaiJiOyEjOztjI3ATL4ATL4ADMyIiOwEjOztjIlRXYkVWdkRHel5mI6ETM6M3OicDMtcDM
-tgDMwIjI6ATM6M3OiUGdhR2ZlJnI6cjOztjIlNXYlxEI5xGa052bNByUD1ESXJiO5EjOztjIl1WYuR3Y
-1R2byBnI6ETM6M3OicjI6EjOztjIklGdjVHZvJHcioTO6M3Oi02bj5ycj1Ga3BEd0FWbioDNxozc7ICb
-pFWblJiO1ozc7IyUD1ESXBCd0FWTioDMxozc7ISZtFmbkVmclR3cpdWZyJiO0EjOztjIlZXa0NWQiojN
-6M3OiMXd0FGdzJiO2ozc7pjMxoTY8baca0885830a33725148e94e693f3f073294c0558d38e31f844
-c5e399e3c16a';
-*/
-$localkey = '';
-
-// Validate the license key information
-$results = yourprefix123_check_license($licensekey, $localkey);
-
-// Raw output of results for debugging purpose
-echo '<textarea cols="100" rows="20">' . print_r($results, true) . '</textarea>';
-
-// Interpret response
-switch ($results['status']) {
-    case "Active":
-        // get new local key and save it somewhere
-        $localkeydata = $results['localkey'];
-        break;
-    case "Invalid":
-        die("License key is Invalid");
-        break;
-    case "Expired":
-        die("License key is Expired");
-        break;
-    case "Suspended":
-        die("License key is Suspended");
-        break;
-    default:
-        die("Invalid Response");
-        break;
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+Q144EkilXS7Sk9xA5S2JzgYGbHqK7QrJoVcN

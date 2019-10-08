@@ -1,89 +1,40 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * An abstract means of reading and writing data in terms of characters as opposed
- * to bytes.
- *
- * Classes implementing this interface may use a subsystem which requires less
- * memory than working with large strings of data.
- *
- * @author Chris Corbyn
- */
-interface Swift_CharacterStream
-{
-    /**
-     * Set the character set used in this CharacterStream.
-     *
-     * @param string $charset
-     */
-    public function setCharacterSet($charset);
-
-    /**
-     * Set the CharacterReaderFactory for multi charset support.
-     *
-     * @param Swift_CharacterReaderFactory $factory
-     */
-    public function setCharacterReaderFactory(Swift_CharacterReaderFactory $factory);
-
-    /**
-     * Overwrite this character stream using the byte sequence in the byte stream.
-     *
-     * @param Swift_OutputByteStream $os output stream to read from
-     */
-    public function importByteStream(Swift_OutputByteStream $os);
-
-    /**
-     * Import a string a bytes into this CharacterStream, overwriting any existing
-     * data in the stream.
-     *
-     * @param string $string
-     */
-    public function importString($string);
-
-    /**
-     * Read $length characters from the stream and move the internal pointer
-     * $length further into the stream.
-     *
-     * @param int $length
-     *
-     * @return string
-     */
-    public function read($length);
-
-    /**
-     * Read $length characters from the stream and return a 1-dimensional array
-     * containing there octet values.
-     *
-     * @param int $length
-     *
-     * @return int[]
-     */
-    public function readBytes($length);
-
-    /**
-     * Write $chars to the end of the stream.
-     *
-     * @param string $chars
-     */
-    public function write($chars);
-
-    /**
-     * Move the internal pointer to $charOffset in the stream.
-     *
-     * @param int $charOffset
-     */
-    public function setPointer($charOffset);
-
-    /**
-     * Empty the stream and reset the internal pointer.
-     */
-    public function flushContents();
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

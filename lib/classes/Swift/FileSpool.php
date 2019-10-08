@@ -1,208 +1,119 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Stores Messages on the filesystem.
- *
- * @author Fabien Potencier
- * @author Xavier De Cock <xdecock@gmail.com>
- */
-class Swift_FileSpool extends Swift_ConfigurableSpool
-{
-    /** The spool directory */
-    private $_path;
-
-    /**
-     * File WriteRetry Limit.
-     *
-     * @var int
-     */
-    private $_retryLimit = 10;
-
-    /**
-     * Create a new FileSpool.
-     *
-     * @param string $path
-     *
-     * @throws Swift_IoException
-     */
-    public function __construct($path)
-    {
-        $this->_path = $path;
-
-        if (!file_exists($this->_path)) {
-            if (!mkdir($this->_path, 0777, true)) {
-                throw new Swift_IoException(sprintf('Unable to create path "%s".', $this->_path));
-            }
-        }
-    }
-
-    /**
-     * Tests if this Spool mechanism has started.
-     *
-     * @return bool
-     */
-    public function isStarted()
-    {
-        return true;
-    }
-
-    /**
-     * Starts this Spool mechanism.
-     */
-    public function start()
-    {
-    }
-
-    /**
-     * Stops this Spool mechanism.
-     */
-    public function stop()
-    {
-    }
-
-    /**
-     * Allow to manage the enqueuing retry limit.
-     *
-     * Default, is ten and allows over 64^20 different fileNames
-     *
-     * @param int $limit
-     */
-    public function setRetryLimit($limit)
-    {
-        $this->_retryLimit = $limit;
-    }
-
-    /**
-     * Queues a message.
-     *
-     * @param Swift_Mime_Message $message The message to store
-     *
-     * @throws Swift_IoException
-     *
-     * @return bool
-     */
-    public function queueMessage(Swift_Mime_Message $message)
-    {
-        $ser = serialize($message);
-        $fileName = $this->_path.'/'.$this->getRandomString(10);
-        for ($i = 0; $i < $this->_retryLimit; ++$i) {
-            /* We try an exclusive creation of the file. This is an atomic operation, it avoid locking mechanism */
-            $fp = @fopen($fileName.'.message', 'x');
-            if (false !== $fp) {
-                if (false === fwrite($fp, $ser)) {
-                    return false;
-                }
-
-                return fclose($fp);
-            } else {
-                /* The file already exists, we try a longer fileName */
-                $fileName .= $this->getRandomString(1);
-            }
-        }
-
-        throw new Swift_IoException(sprintf('Unable to create a file for enqueuing Message in "%s".', $this->_path));
-    }
-
-    /**
-     * Execute a recovery if for any reason a process is sending for too long.
-     *
-     * @param int $timeout in second Defaults is for very slow smtp responses
-     */
-    public function recover($timeout = 900)
-    {
-        foreach (new DirectoryIterator($this->_path) as $file) {
-            $file = $file->getRealPath();
-
-            if (substr($file, -16) == '.message.sending') {
-                $lockedtime = filectime($file);
-                if ((time() - $lockedtime) > $timeout) {
-                    rename($file, substr($file, 0, -8));
-                }
-            }
-        }
-    }
-
-    /**
-     * Sends messages using the given transport instance.
-     *
-     * @param Swift_Transport $transport        A transport instance
-     * @param string[]        $failedRecipients An array of failures by-reference
-     *
-     * @return int The number of sent e-mail's
-     */
-    public function flushQueue(Swift_Transport $transport, &$failedRecipients = null)
-    {
-        $directoryIterator = new DirectoryIterator($this->_path);
-
-        /* Start the transport only if there are queued files to send */
-        if (!$transport->isStarted()) {
-            foreach ($directoryIterator as $file) {
-                if (substr($file->getRealPath(), -8) == '.message') {
-                    $transport->start();
-                    break;
-                }
-            }
-        }
-
-        $failedRecipients = (array) $failedRecipients;
-        $count = 0;
-        $time = time();
-        foreach ($directoryIterator as $file) {
-            $file = $file->getRealPath();
-
-            if (substr($file, -8) != '.message') {
-                continue;
-            }
-
-            /* We try a rename, it's an atomic operation, and avoid locking the file */
-            if (rename($file, $file.'.sending')) {
-                $message = unserialize(file_get_contents($file.'.sending'));
-
-                $count += $transport->send($message, $failedRecipients);
-
-                unlink($file.'.sending');
-            } else {
-                /* This message has just been catched by another process */
-                continue;
-            }
-
-            if ($this->getMessageLimit() && $count >= $this->getMessageLimit()) {
-                break;
-            }
-
-            if ($this->getTimeLimit() && (time() - $time) >= $this->getTimeLimit()) {
-                break;
-            }
-        }
-
-        return $count;
-    }
-
-    /**
-     * Returns a random string needed to generate a fileName for the queue.
-     *
-     * @param int $count
-     *
-     * @return string
-     */
-    protected function getRandomString($count)
-    {
-        // This string MUST stay FS safe, avoid special chars
-        $base = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-';
-        $ret = '';
-        $strlen = strlen($base);
-        for ($i = 0; $i < $count; ++$i) {
-            $ret .= $base[((int) rand(0, $strlen - 1))];
-        }
-
-        return $ret;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

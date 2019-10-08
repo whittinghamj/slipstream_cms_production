@@ -1,223 +1,59 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * A Message (RFC 2822) object.
- *
- * @author Chris Corbyn
- */
-interface Swift_Mime_Message extends Swift_Mime_MimeEntity
-{
-    /**
-     * Generates a valid Message-ID and switches to it.
-     *
-     * @return string
-     */
-    public function generateId();
-
-    /**
-     * Set the subject of the message.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject);
-
-    /**
-     * Get the subject of the message.
-     *
-     * @return string
-     */
-    public function getSubject();
-
-    /**
-     * Set the origination date of the message as a UNIX timestamp.
-     *
-     * @param int $date
-     */
-    public function setDate($date);
-
-    /**
-     * Get the origination date of the message as a UNIX timestamp.
-     *
-     * @return int
-     */
-    public function getDate();
-
-    /**
-     * Set the return-path (bounce-detect) address.
-     *
-     * @param string $address
-     */
-    public function setReturnPath($address);
-
-    /**
-     * Get the return-path (bounce-detect) address.
-     *
-     * @return string
-     */
-    public function getReturnPath();
-
-    /**
-     * Set the sender of this message.
-     *
-     * If multiple addresses are present in the From field, this SHOULD be set.
-     *
-     * According to RFC 2822 it is a requirement when there are multiple From
-     * addresses, but Swift itself does not require it directly.
-     *
-     * An associative array (with one element!) can be used to provide a display-
-     * name: i.e. array('email@address' => 'Real Name').
-     *
-     * If the second parameter is provided and the first is a string, then $name
-     * is associated with the address.
-     *
-     * @param mixed  $address
-     * @param string $name    optional
-     */
-    public function setSender($address, $name = null);
-
-    /**
-     * Get the sender address for this message.
-     *
-     * This has a higher significance than the From address.
-     *
-     * @return string
-     */
-    public function getSender();
-
-    /**
-     * Set the From address of this message.
-     *
-     * It is permissible for multiple From addresses to be set using an array.
-     *
-     * If multiple From addresses are used, you SHOULD set the Sender address and
-     * according to RFC 2822, MUST set the sender address.
-     *
-     * An array can be used if display names are to be provided: i.e.
-     * array('email@address.com' => 'Real Name').
-     *
-     * If the second parameter is provided and the first is a string, then $name
-     * is associated with the address.
-     *
-     * @param mixed  $addresses
-     * @param string $name      optional
-     */
-    public function setFrom($addresses, $name = null);
-
-    /**
-     * Get the From address(es) of this message.
-     *
-     * This method always returns an associative array where the keys are the
-     * addresses.
-     *
-     * @return string[]
-     */
-    public function getFrom();
-
-    /**
-     * Set the Reply-To address(es).
-     *
-     * Any replies from the receiver will be sent to this address.
-     *
-     * It is permissible for multiple reply-to addresses to be set using an array.
-     *
-     * This method has the same synopsis as {@link setFrom()} and {@link setTo()}.
-     *
-     * If the second parameter is provided and the first is a string, then $name
-     * is associated with the address.
-     *
-     * @param mixed  $addresses
-     * @param string $name      optional
-     */
-    public function setReplyTo($addresses, $name = null);
-
-    /**
-     * Get the Reply-To addresses for this message.
-     *
-     * This method always returns an associative array where the keys provide the
-     * email addresses.
-     *
-     * @return string[]
-     */
-    public function getReplyTo();
-
-    /**
-     * Set the To address(es).
-     *
-     * Recipients set in this field will receive a copy of this message.
-     *
-     * This method has the same synopsis as {@link setFrom()} and {@link setCc()}.
-     *
-     * If the second parameter is provided and the first is a string, then $name
-     * is associated with the address.
-     *
-     * @param mixed  $addresses
-     * @param string $name      optional
-     */
-    public function setTo($addresses, $name = null);
-
-    /**
-     * Get the To addresses for this message.
-     *
-     * This method always returns an associative array, whereby the keys provide
-     * the actual email addresses.
-     *
-     * @return string[]
-     */
-    public function getTo();
-
-    /**
-     * Set the Cc address(es).
-     *
-     * Recipients set in this field will receive a 'carbon-copy' of this message.
-     *
-     * This method has the same synopsis as {@link setFrom()} and {@link setTo()}.
-     *
-     * @param mixed  $addresses
-     * @param string $name      optional
-     */
-    public function setCc($addresses, $name = null);
-
-    /**
-     * Get the Cc addresses for this message.
-     *
-     * This method always returns an associative array, whereby the keys provide
-     * the actual email addresses.
-     *
-     * @return string[]
-     */
-    public function getCc();
-
-    /**
-     * Set the Bcc address(es).
-     *
-     * Recipients set in this field will receive a 'blind-carbon-copy' of this
-     * message.
-     *
-     * In other words, they will get the message, but any other recipients of the
-     * message will have no such knowledge of their receipt of it.
-     *
-     * This method has the same synopsis as {@link setFrom()} and {@link setTo()}.
-     *
-     * @param mixed  $addresses
-     * @param string $name      optional
-     */
-    public function setBcc($addresses, $name = null);
-
-    /**
-     * Get the Bcc addresses for this message.
-     *
-     * This method always returns an associative array, whereby the keys provide
-     * the actual email addresses.
-     *
-     * @return string[]
-     */
-    public function getBcc();
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

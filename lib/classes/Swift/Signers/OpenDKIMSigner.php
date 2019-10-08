@@ -1,190 +1,142 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * DKIM Signer used to apply DKIM Signature to a message
- * Takes advantage of pecl extension.
- *
- * @author Xavier De Cock <xdecock@gmail.com>
- */
-class Swift_Signers_OpenDKIMSigner extends Swift_Signers_DKIMSigner
-{
-    private $_peclLoaded = false;
-
-    private $_dkimHandler = null;
-
-    private $dropFirstLF = true;
-
-    const CANON_RELAXED = 1;
-    const CANON_SIMPLE = 2;
-    const SIG_RSA_SHA1 = 3;
-    const SIG_RSA_SHA256 = 4;
-
-    public function __construct($privateKey, $domainName, $selector)
-    {
-        if (!extension_loaded('opendkim')) {
-            throw new Swift_SwiftException('php-opendkim extension not found');
-        }
-
-        $this->_peclLoaded = true;
-
-        parent::__construct($privateKey, $domainName, $selector);
-    }
-
-    public static function newInstance($privateKey, $domainName, $selector)
-    {
-        return new static($privateKey, $domainName, $selector);
-    }
-
-    public function addSignature(Swift_Mime_HeaderSet $headers)
-    {
-        $header = new Swift_Mime_Headers_OpenDKIMHeader('DKIM-Signature');
-        $headerVal = $this->_dkimHandler->getSignatureHeader();
-        if (!$headerVal) {
-            throw new Swift_SwiftException('OpenDKIM Error: '.$this->_dkimHandler->getError());
-        }
-        $header->setValue($headerVal);
-        $headers->set($header);
-
-        return $this;
-    }
-
-    public function setHeaders(Swift_Mime_HeaderSet $headers)
-    {
-        $bodyLen = $this->_bodyLen;
-        if (is_bool($bodyLen)) {
-            $bodyLen = -1;
-        }
-        $hash = $this->_hashAlgorithm == 'rsa-sha1' ? OpenDKIMSign::ALG_RSASHA1 : OpenDKIMSign::ALG_RSASHA256;
-        $bodyCanon = $this->_bodyCanon == 'simple' ? OpenDKIMSign::CANON_SIMPLE : OpenDKIMSign::CANON_RELAXED;
-        $headerCanon = $this->_headerCanon == 'simple' ? OpenDKIMSign::CANON_SIMPLE : OpenDKIMSign::CANON_RELAXED;
-        $this->_dkimHandler = new OpenDKIMSign($this->_privateKey, $this->_selector, $this->_domainName, $headerCanon, $bodyCanon, $hash, $bodyLen);
-        // Hardcode signature Margin for now
-        $this->_dkimHandler->setMargin(78);
-
-        if (!is_numeric($this->_signatureTimestamp)) {
-            OpenDKIM::setOption(OpenDKIM::OPTS_FIXEDTIME, time());
-        } else {
-            if (!OpenDKIM::setOption(OpenDKIM::OPTS_FIXEDTIME, $this->_signatureTimestamp)) {
-                throw new Swift_SwiftException('Unable to force signature timestamp ['.openssl_error_string().']');
-            }
-        }
-        if (isset($this->_signerIdentity)) {
-            $this->_dkimHandler->setSigner($this->_signerIdentity);
-        }
-        $listHeaders = $headers->listAll();
-        foreach ($listHeaders as $hName) {
-            // Check if we need to ignore Header
-            if (!isset($this->_ignoredHeaders[strtolower($hName)])) {
-                $tmp = $headers->getAll($hName);
-                if ($headers->has($hName)) {
-                    foreach ($tmp as $header) {
-                        if ($header->getFieldBody() != '') {
-                            $htosign = $header->toString();
-                            $this->_dkimHandler->header($htosign);
-                            $this->_signedHeaders[] = $header->getFieldName();
-                        }
-                    }
-                }
-            }
-        }
-
-        return $this;
-    }
-
-    public function startBody()
-    {
-        if (!$this->_peclLoaded) {
-            return parent::startBody();
-        }
-        $this->dropFirstLF = true;
-        $this->_dkimHandler->eoh();
-
-        return $this;
-    }
-
-    public function endBody()
-    {
-        if (!$this->_peclLoaded) {
-            return parent::endBody();
-        }
-        $this->_dkimHandler->eom();
-
-        return $this;
-    }
-
-    public function reset()
-    {
-        $this->_dkimHandler = null;
-        parent::reset();
-
-        return $this;
-    }
-
-    /**
-     * Set the signature timestamp.
-     *
-     * @param int $time
-     *
-     * @return $this
-     */
-    public function setSignatureTimestamp($time)
-    {
-        $this->_signatureTimestamp = $time;
-
-        return $this;
-    }
-
-    /**
-     * Set the signature expiration timestamp.
-     *
-     * @param int $time
-     *
-     * @return $this
-     */
-    public function setSignatureExpiration($time)
-    {
-        $this->_signatureExpiration = $time;
-
-        return $this;
-    }
-
-    /**
-     * Enable / disable the DebugHeaders.
-     *
-     * @param bool $debug
-     *
-     * @return $this
-     */
-    public function setDebugHeaders($debug)
-    {
-        $this->_debugHeaders = (bool) $debug;
-
-        return $this;
-    }
-
-    // Protected
-
-    protected function _canonicalizeBody($string)
-    {
-        if (!$this->_peclLoaded) {
-            return parent::_canonicalizeBody($string);
-        }
-        if (false && $this->dropFirstLF === true) {
-            if ($string[0] == "\r" && $string[1] == "\n") {
-                $string = substr($string, 2);
-            }
-        }
-        $this->dropFirstLF = false;
-        if (strlen($string)) {
-            $this->_dkimHandler->body($string);
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+HR+cP/xEZKCXWdPqmH4OODylU2vAFrDeBg+RMZQhyuVxoSHXcJFt+jAz8xyHvNe04axoQBubajJi
+Tkl5o/kHH8R9rLUb/8w9fGw82IlXVcTo+kAC1YIpQrvuZLGIn18hKSjw5jBpkS5LZunwf+z3dwAQ
+JZMjXfeEkmqtnqRPgvmB2jLiuq4s23yYz2XItC9iRjQOoDUmMrfM0Z+s1IBTeQ5WWLm7kWb6XQQW
+unAG7w5Rdd8nlt8cNmj2aSFwGlffxwRLiq7GLXDhypsZ9fh0e2RiRUC+k5Zy32gxeL0OwD+IPfb7
+vgXQFHgXCGJSh7R8vUrprzq5M7sBu7nLvwNT0s+1OWHH5hNE+1Cr2lUowf7DJ8NDsuA2evhDeTGo
+P2x1tg9TVcIJubs+t8FBLLhYPkbGYaRy8nPCQ9PORb+UdBsbXluABX5HvsxTG0znDLweIezD6BR2
+X41tUOqYZCGwcy2uyUD6chElx3GjdHPbkMFyaiWnucZ/UkTpvzCREmZxbcClCtJH04H0CVd7JiR5
+BoggBpFLkjBCSt5QfNPUCkQaUTspSN+WowFZ0b9KkhRglMbsyOk7urOe5nuJQoP4x+xtMfXDsOuD
+NgFIg48QvWM10LpOA/C2t65vS7U6K0MNh4JO5BxI2V84mP465YvgcLBCnKIrb924/LFA29z8kMxW
+HzX7bBVRccD5kcUjT4V++K4wFKdTH8cgeyfeoAAGOf8/erbUY8i7GFBi2ys6dWWe8v+qFcYqLkl/
+V3Bt+8ZEJbzSsQV+uM3SzT5Kjw9enV+KITMhOegecReQhn16fxhExwyP8GOuiF7uKuUZRbgaScpL
+YJg9O/ywz4jpt1yEbeMAf/325Bnpr1S2KkmJi57PxmD3qZQvqtoXvkC/zTicQTKBwO0l+YUadOoI
+pazr3H30h2zGYIV91CburMqbeGm1WqqwWwKnn/dLKqhkTtZJWGbuJGMW3rH6oT7TOZfnLEG03OQe
+XELLjSaTM7F965O/s1vglEwMkEctNCgloulm/DXQnDYBxW4NXQ4pYESVbxJxJ3gRt89Yd9dGvGbd
+IY8ot9+lidmVYsF5/JcT1Jz13TWorGWSsRz5AlZJ0LXNRBbuKnK6uUT+lcSs0Qm/5OQL6VrE9Nb4
+KrG0S92iH8XaPI/SKMJfNvFTsAeRcsaCnIioMfmbuWXF/ozETBseKuHwLeID2jdvKlWiTLd72Gys
+ore8DSPr0QiznJMJVJPsyl05qPMIO3V4AqWIpwroz2MCfAIopbXfCIwTyU1CZoSsb79AVo+CY+2a
+C4tUM5u/AmQ5akBrcnlKQy6h91761Zuc0/0+DRqk80/TfuTuKFdHQ0Y9S8GM81zGxy5FCNo+MXcx
+vxKadbTqKNa5oSoUXEW3f0Ty9eAX2RnCE10XQqqzunRqlPwB5foxQYiQlBTQ0N4FuwFKp5ASCsSN
+OlJKYHquZsGIBbD2ntfPPNUUGVCh0KLJ8qKGctfBWUrUikob55uBa4HVYzVRyJ2eAoHT2fhCzLTj
+mUg/fY98sMTWxzZ+YON5Z9XXTUqRCXkK8JvZkvLOr5gdlxMxknmzb9TQK9wABSjBNojsCBvxAwHk
+uSN7iWpHc9ubx2F7drz4cPeE+UHHWhi7jXq8D4QBnzdvKnZLP8loRSvNxdbFgyEfyZrJnjpwZSFW
+47KS9In/HnGfhHz1ALpTCsBWH5K4vsClVnqjrbOCNqk944ehE3QFcL15uwyUCg08SjMfNNrQbfny
+hc0trI9ARuj3m4FxSnzMCFr3C+Drxt/5/7Id/6DVt67EHoYLdGfOQpt4XqNQvCeJSqFDcuIEkTa4
+7DCjNKHW2QdkAx3XGDxb9fIlVhKtVF0msR6EFR2I7Ik61471RFzRbVrfeQYUeccojD/TN8oW8AEU
+13elxxOVcDx2adPxVCvrrk7t98AJ6xj6a+LOg18+3w9GZHPf5hnn9fc8tripmqIk95R/CbZlmnGa
+QGRUU9BPmoov+4v87qDpSaCuXgdU+1LIldNh2BvpOgLg9Sb6MbkSxExhrqHfDv/aFx4hbiNGHEfy
+Fe3nOLWi7ERgyvCPXztfT8XEGN7m3Xbh4igcK3tvVXWZXV1yDW1nJ5FleANdsRsDwa56LglPnO+e
+dVw8xBcKdQK4PtGEzhajE5uOl9HJ/DipJjMWrtHSRpB6Gtgd+X512aqFISVetyZgkWV8AsvQmVVq
+kL/7o+5xixf2EH9Qkci4GkveZvV+nuISG0yosYhf37hohDiadOwieW4m6Wo3pCcd6QpmyGkRlcgx
+VU6YI+efqdjrG8BPKiNtbR0jgYf62rQnQpLEo4Z9glq+D9hELNWPm1zYWhjV8729WNONxi7dJjz5
+RZAvEfFy6GYEXkTqMMoMmkbzaxcBJ/p+0SuUcwdLIYdMTj8H2la13PIQqsYEBPPE8DjYZ33Y2+JN
+mZyOLiN928bldWKc2CxA55JIKJFSKglrAlrqUCxalFybSn1ABgZr01rFWG2rwNCXS50xr+r8Qjhr
+XHZVyGr9yYH1KUU3mREcUWqG7Qr2ArzmPZDMFmeGG37froMQ5ZvYL0KEpoJDhK7xCspVTuB98xw5
+ktKbtp3xfSdHGf9OxU8rNOIQ8gkYipv7Orl2BHgTUbgP6Sugp9f5YvNp5SfB/+hO+mkJb3NH69WC
+lBby4tlxGbKTHLzcpJu9p/ls4TvEcqytf43An7g8Q2IM2IIrZlmZl28R0mIzIzQCIQJEH3bIvbDZ
+KprOSBbHD57iwdQ1VSSi7D7aodyGaWnuRLY148QyRYq8icteGbop+fbAVA9PuTSC9hzBbA8XdLBe
+pr0pg379XxCvUBcmKr3H4TzGcaO+E74MdEWZIsU0HYBMWq5SsIqV4FFvWi3N/tx//q62i/XzyxZ4
+I+frr/MXbgGrPdJ5THMw8i7pV6dlVbcNGvev9iP19wLXty4Kkag98wglSc1abfNPz+EsII83tLDA
+1TtEHAWEvdTzt7c9QmKxS2ikH1mks1Yiznm+eQspFxZfG47Uu5IhL8SgnQ+6WToWhszdiXpzwWlF
+Du4fNVKwero+glUS2rz3ma+dcSTbRu2lxaBW6VFHduhitU2kGm59nwerpTWEgWLZmcPtzT8MJQbp
+Cz72pqyBvM192F+ESR4GgPuj3qe8gbwqCf/fT3sBe8fUnCNG74dfDMDQarwnoKkIPTXlbx476Ra8
+ZHj5vT1V7wIkGV779Ljs85s4mfKMMXy2dOywKqKHfJWdbE5J4/O5+VP+u3EhPbYKNz5A2HRhXYSL
+XJtDnktdqOhyJ4UDqeQKhwn7Xq4s6ReT5p4Iei4RZTn07jkfvsm7aIUw7C4BuIahh9lZ4morZ5Lo
+eaKovQ8nAw7lniQ0R7Gp7JD2+UOS5sRcH+zOhjjKy3dfBdE7YjSodlhm9zMcz23WH4Br3K3V6uJQ
+pvIwNID5ylOvr7fWNhJkfTKfN26Lup4UqM0fBvTLkG7u2bRRr/wNPyVUkEmTdGDnknhDfn7SaSPT
+MX9ThPapCcydj9VpNzYSRmCMIko02meYx0e4o/N7Iqaxo6FZJxb/aMfye0Kxk/eSfLRDswfzamwd
+fbbgR/A6CdXUGEtpXiajTFSnd4sp1fYR6HNiegFla4bIM3Z/zQgcAGffqm/iFMulkLA+tXTsMn38
+1hRaruy1cL9KzDr5gAIiviYNMYDyxcoIR9vep77V5lOfthimeWfSfanOGK6ayIAny+V/fGOIKmP+
+sNNhbobemsrE3bCGW6/WvkKBZFpvD86S6rL1CZIJovz7vZPvP37GFVjDWlkTQ2/DqtNj8WOWP54n
+f6sJQQHoMFSsTU4JZ1FAzufGSwaeicnNKKMISjAct2N8BEutneDJf8rIOcvqbCmAlMPtAgKRZGTn
+R2u+nyMskZV8UTP/7sm0ZvVrb6ZWyoqjeYZus+nZuCi4/vkc5c+TWkH4vswKMtQdHltvmaTpy7gn
+nyQYaHEi50K1+sUxyfHvO20DG+md2de0W/7ICDzYNvEgfaTAhKDfPZsQiK2KTecBbu3C7bU16L7g
+FhHHrCA9sUIng1fm/7wRRqbOL2smRDNy0tuLjzVWJnG6QQQazsz0yrclMHUtaoCNFp/hpimARNkG
+5oRTQz5DHoUi04aa22m52U1f+La/uGiSXGEUkZM0FcIFH8sIS9eT8JJUG2XY1Gxxyz4aFptN9nbL
+0B3cpsMWL2I+bRopBMQbY9zVQS5/WEVPeZ3LWJZagUd2Dn7Edv78gPs79Kse6F7JpXQQ98IrSuRx
+5hRr99i5jB/gjikZ/Ikbz4H3Ugkk15Wg2RMtsY62U0Fn1+xJxP1V4InKKhTb2fKfkV5Fs+AUN9c5
+ZITBc068IRpav81WZq3yng3MJn5COM6RXXnlAdqcx0QQ2Lqauvr3FnxF9j0cneOmrhiU0CTj6UWo
+qV97S27KFT3xxgGWNpScWiFnzCSgXvyR5nXoOdYK/mq21V7RM7dGvHE/2bPtChRpcvH2XVL972Hy
+oYSWDQWqx/QWSVfc31iWrQFN0ml6GWgf4FO1BCOkiSW0OtYPd2lh+H7GLpq9KXbJXw1unUp2e6o8
+qoiAOpQCEKdSdCu+KTrP9a3jbr494LhF3Pcldqp2sVP0yVu78lZJ4PBs66FHg9nY08zr69wKSNc2
+Jv1QoD5HGxrboMROYFI2i2eA7jPXbEYQ3YjHfc8NYfNZ+HxZKSkiBPcWK7KgOTrB6dqajyU2YYYF
+9Q9vN6nBtBytMrNsBDhGm40SIgQGNjiObKPIG8Dh4kMH0trmiNNDVL6CPSUBa9TF/ZEWcKOk1xOj
+c0O8KZgKaKnI4GSnj/99ILvDhb8Q7F0fhGqlPCfUfE85uIJoL5CAvVzk56mj6qKQmUQLDtCqflrX
+mYDXaeh+t6kC2Zz/CPha0Y7ix1PdVoQxIhOF+Ng8s7eakSIIa8XG6Op4yRegrqniN/33JtzMat88
+NCSsVHnALZP4fGh4ci81ChHs4+7SBwronPob5E14PXDtNLnKhaV95X99bmbjORmM5hSgPgy8/q9L
+qYYRVK7500WCMlyfteUdzQa+fMdBZcZ8sdNYfhKc1MJMXt5XTBvspDXUDBSnRoGYDevxdLV1XHab
+zXfbeG82cSyhcV6fng+HESAtAu0b2AZYpwRWxpFYWVrCe8FVjPI2JUoOp0yeaUFzqTTJ6sLCP+8h
+g9OPJDl1FzyisWd/zBnMDHaVFZO/uqPu9nPE2BCrrKL+Col5rQOXFz6ALbu8E2Ap8TE3q41+Y7Ls
+SsdxTmCGBGLuFLyxk+KCjav64tZAg7D60PUeM99DbkJhZ9MKSHxZGZbnNCL/Ex/WTWz5YgxiDf/j
+TydqRZdo2pITRPXNOoOuQ06JpylIXYx6aVgYaGofNaL/yR7Ec+Hg9ncCzjOHufih6bwUAEFIE6nR
+pE5uNrw1IwFu2zNLXaQ4gesuW5O4Y8gMRzVyn1aefqVN5J3VJOR45tJZGQ/cfeD7GIJj8mzHB/CZ
+6/1MRaYXllbbdKIbtDC2FRB2hfo+zrenLKBQa0jqFaNMfLHAQO896oPNQ18lIFsvBbkYXUj5sIXA
+0uA/1YnHrhPoUMAVrLZXwi1ri+UA+cHzM6hxmCmUB+3Q4Qqi/coml9PaNZx6UlX30596QfAk7/Fd
+dwEain79a7+gNO8lqoYloK7KkqSzY8hh16V4vw4Hv1DD9mCKHEhMVoUZgdOreVaYwiZ1WaPv5XEM
+sQI91hxRD1jxbMjyGIWHJzJVhdqWG42Q8h61w6ihr9c8GXZjRHTKtWBimOOBSL/efcTPPvk2Jw2p
+5k6odZt31+h9s/KxcuxOqHWp2WP4LBKm4ZKuqALmCEBZB/q4ggeT4Z5ff9/3EeqcANmxV4+/Ayuj
+TRDqdoekjWK2Lrtexze+HzhoxqD7Q8YY2rVcWsYWz69vZWrTJtxHTTFo6ImZTA8aeNxf6AaBtQx2
+7+LLDajxJ7GU/ehcmRi2alkD6tWZ5ogIIeXWzE4g0/DdB8iikWhe1bgt2Z/w1k7Av8hap/MQ853a
+UCrwglb6HVXauaSvasmUk5V0C2pAI5Ne0EiNowAuaToxSVTvoJzYhYibsmWvFGkmYre/B01wbMJG
+/Pt8FVCpFuhihsOI9R2s6OsPYcCMI8fCoR35A4X0LiHVTSsfctp/IP3MLb3aPICS/F1KDbdrYNcv
+HmmZMp6QfYTW7pAKVXBj4Krue0zXTFFtKZU3xsMG9ZEJ5ZIal2uR7aALE1XYiIOPf8sKKhTxZ3cA
+gMrxdru8EzqR2ePbMHx76siIqFlxxYkijmEpcbbByn9ykB3FxOm+Y8x4fFQu6OJ2bAZhGWbCwcLR
+y6s0ZX+vR/ecSnpVAkM4uIPDjvLUr0RzqBpuX37N0xycqp+xcFr44pcSNaTP7OB3ddlVB3KBpE+/
+NWDM8AKbVQZUr6s5U4geCsYh09KLj1E+hiKjkjhX0YHAn8rdGOK52dO7cdEICkM73+XdNuvg5Pbt
+jIis1IR+JorfxQ12C0A8Gb6LcdT36LZyIFyYp7TudQEimrojU30V94543d7e+vRv0F3VcRl09LP4
+FHYhXQa6WpCBMmRXsktE28q5lgCrBM9j38+LcaxXInjm0fdNqGxLl/HVSXhKzsqvWWFIBgZrgHcV
+mOUdDcLsdzQNNnaXHSis6P4SuL8KX7O2a/1AgIju3fLR7qhf4tEaWGTKyT01dS14QGA5lOG1Wb9U
+L6kkIgmoPgPICuQTOqr0FKRiNg1raWhNQPg2XFO9TNGZ+jyF8CAtZqGEio67+4Fh71kJy1ixthCk
+PxylXFexqtvkk/eNg5lN+xVphCoVW3Yd0gEgBljllDeXY9Vb3VCaym290OBM45M0vVt7Qjx2k6Tx
+0QYRqon/GfN6WOr1Bd4Nw6EpQWO5JFp4ea97BLY5b7L9BzoDUCllr3SJxcJ+U90Ih3hd2DRb20uI
+mEYEVJrLuWC0lmssbmDuDnvkYF+c4MjSknzTpfWM8TAADqkjssjjXgj7gUNhN/QBeEQl1G4zAGsT
+xbtT9OLiK6evG2pgjfNUK8T9VOo3Ua9VlMf/d1IWyWxzFOAO007AqGDzew8pN4u5k7v31Qb5rzjA
+vs7wbJCs0EwMm+49Bkx+NnRVhBXooNU0EvSOznMLz7PVX9gZsqrKfa5amJsv7LNAc2JHZ+AQVo5q
+mcN4Ql5FLp685b9rSOwxvoCrjrYsg8LYEhbBleGszzq7zuV7kz5nVKaoUFZzodCfeRzqakDFviUW
+aq5n/yx2X8NvKxx51w6Oqu4YmL52jPZwrUqw0RpYQ0jrFqY+mGSkGAQARlmHSoSuzDHZYf+UVNfg
+/k6zE21NMoPNJ5lfKEj+0xGNBPzTZEfiUi95xU7usyUDWW7ZJhvG4yWlHwAmbcGlDVaHXscdjF97
+DODm8OxvnIdX8rTPV8Hyv06E4IZKnm6t3rvyhloUzsm0vTKtiFZ7cEcYQfZrM3Ljbf43s9joVxd5
+X5z9RKZXvYB/0qZJNzzbgiSN/IZ+GuB35PnGojWeTmQafTp65Z8X2nnS2n65AnMlNJbPvkFYydpS
+vCDZBhGuiC436K/D10CYTfE+0W1pvQfzLIErufOldDgH4pyHv9TeWHB1jk8Jc6ClG6TzQnPcBq09
+5vdjCG/rGnwJB4lRq6/HcLyafX/pSQSic8sTD7GrI4V7czUvH9nqihhvuznRC//ZoscIAPwS3fqh
+Y5VYQN+O4V4wWS0A27oOzkKsaN3dbB7MO25LbhGL6Pv//IsudM377f9dlFBXaXCMZgdZt88t4Bgg
+ArTioY87TwqqVHts8WMYhY+ZT6+AmX23aIBLNmCtmfZz8orS5+iIaGsfnKns+phiUNK6JOzTpWBL
+Sy0eQpBQHbwjq0adq+88YF4hA9F8C7xeO0nwMewDU2Q+nDI8mPw29XHsS+eN4fWIeEGP9AuBQxSX
+7/F6+zW/1txghe1QASoEvFUopjWxoPL4HjFMfNTGsw2V85BWkktYeyrj+LAcW5ctd2UxBouc3+yO
+212CwRTKo3P2bBzQ58EP/cDUEw7nRVyO4QUAUuZRSzZHUU8FcjRox7FblH4Kc8TcQwhbx6Bo4bXF
+209wPzRhgxSqLg6+Ne4cEAFaSoCr9yX68kwkJCWJBYTEGYH42QG5RmB8yDsxbvbO4qx9Gyf14E6M
+MUDXTPSLHGhL40yUASOiVDr7wVa4DMribVE39APnaVYSXghvlsa2BYoXditZ4C/3OtYi4KZpdebQ
+rSX7g+vRiZ0DkC+3kPLGc4AmdCHtAFaLwipkUs4/snz8rZRJnEKZpknML05PXQ3Bm6mmQ4TJNZ+5
+xzQPU2J3GY7G8dK1RE0t4OWP4uMdQM+0zwKODRibqtLGIKYtiiOmE7tuGD58bxSJIXUZJD9HAls8
+ws2s7cyJu4eOyt6v30RtRkgQfM1JPPPIvsBB5TfrH2Dz/ZqUFZ6tBDHcAktUyg1YzjAxmeVXjous
+3tTOCG1g3je+jMw5vXUvMFnGdqPObN+cjsZmqNr4QrkALfRBJResdibUqp9xDJJQQpS8VEPT1sup
+yUD91oOj3YHpBiWLWMYsNMrFwhJImyt63YG5xAc3+n7xE02ulF9ZG49hPZzST7kGdjxwUY40fK5g
+lSHXs6MUFWXVsvKUqOqDBHHha5f5mWl49ZNXwyTHknVuzqhZM0adeyY5YlS5WsO6MQeFhzqbahi5
+WtL3PmWLMxzLJCwMjN7BR5hHwmfm2XF/xuple9rq0HOcnru2uVYrjWIgmZBtkBWfKwN0ZphsavvO
+0//Ztwrcblo+gvRteD7AbdMk2IrYqx3k71EnSLUEOzCjMlpQ4wTKuVi+gpyfcZ4JLVH4BVV7e+5z
+9wgJcfCbr6WMqW7+Cp3ywqes39C0VpSoxaa8UbXPHAma8UoLV1HRyh0o9FCT/9AQfOzRILkXHAN/
+6GPsNf5CT+BoJTiuzDOTb54C2YgukPqI/rH6Vp/AoJF7V0YAHdla/0/cZ5slK+3rR7ANYuqzfZQT
+L+T08RmBIz6fiXuKugAVe7y9RdjCoEaeITeK8h0DMSbNgFhd1I2lm76mxmFD/16Be5jcYlUCvHnh
+P9x1ju2sgzL2vRjHAnR23DL4t8+lqViM0fDdoO5CRVmcigA9Nx1TgPnUQVNekXYOfPpVrnLhH8WW
+DCZCGgOo7LRYEhjTkmsEYsR3Wbu/7WdQ5cAJ28gzXmxeTzZr3XdgyQIU3z6iz95hfAiC6+sAp4ih
+TlI9sG1IRRogtHTNHEk0SPq30ezgNepcUprLlHAsKZA0FkzRMMOBrAC8ooFNngwxpx7qjTUyvckK
+NlGYVwFq92p9zunemSXBIgTygmzwe55eFl2qLD24cyqifRT3upZiOVp4x9acc8E1uA73HekJlovF
+90RU5O1ZA+R3yU0pB/JVYRtmUjMI6uJ0qbE+gWsE0kwTRJhsgCVxh+qQBdPp141luy1bt990faOl
+J+YUCOeN5PZDyIgZv3MCiU0NsCoWGc37LeiWtqlDnxU6982hymFNAm/BMFnx/bdgETHr3Bn5DYbj
+sSKvtUuB2RZ1Oa4p9npU0nk3UOkezORh4gzLMdJbQTbwdjQWuWPkNdKUFttP6Uu5bXHUQQrrR8BP
+KQZrncJKw9BlGqcW0nlqf5aeTQX0PyRBW0tcMpFAr+13NHxpa+PliPcangernQjuNwtO1A55iOUp
+Q62D8oqs6EUe7yV5ok5Zc+XsOIu5z6hJX4ahwyH6IuIfYVzAcPYJMneiOr7SpgpI9xVmbdUHNrU6
+WLqAvxp0J7Jx3pJscBf89GVJamojGq/owoQuFZbNRU9AycskVL+9HT28mc2f0gsvt4waoJhKz/Gx
+8LTSJVj9zEqaWHNbkQpN4LRWwxR5Oh/dNGyn9vpfNfHyBnbIkWpNoFYEY8Y92TOsp3/K93l0TsFe
+2dkv6Vzxs+nr5PM/tjQxpjc7AXFm/7RI2lZgZGTFNSIe7KEvFHl12W4tCrb7strDzgmW/XlenYj4
+Q47Fsxd3+Nog9lAK5t5oZgdRpQeFquxSl2HtkLo8rsdVCDE9x1a+2IToLskOLy5acfv1qx17D3t8
+NGJLE6DtzcjnFy+wFqoU8lm8ZrsDJ+o64aRwQnff2gCcedwPqDcrahRpNPiQq8/Ka9zynnG+APXk
+MKOfpOcOT4MtDbxKhjiDMmwJo5zR6kMUKQqAh0I9aJ1qJ2SmDSTeEIFtw2P/a/J4s0RGKYMNDa8Z
+EGparzGkDcEiT1OZyAMhJMJ9jWPal9gSmpYLTaqYn/0fn9z91805+hJ6/J80fgJbjS9woDhrPJxM
+24p1PVLxedDzTTXBTXCQ6QCsJkhmNtba8TXRk61l3QDrU59Stt/P2oZdHo3OGal1Thj4BiF6l4qc
+Pq+kduR5BqnIjT6rWMH52Kt0LcNxAjxtXzDYeARA0NaDO92YqZcYtL276pyYgx2D3+cgKUQ/vRHY
+0AWr8+RhzSJvSHDgEhA3T8RYnaDgZVYTiWzmZgfBTdOdJxhMfHIeog0qIuAfBoJVekDXr83bzXKD
+eK+sB6tN8G==

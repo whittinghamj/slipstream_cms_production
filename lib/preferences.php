@@ -1,25 +1,46 @@
-<?php
-
-/****************************************************************************/
-/*                                                                          */
-/* YOU MAY WISH TO MODIFY OR REMOVE THE FOLLOWING LINES WHICH SET DEFAULTS  */
-/*                                                                          */
-/****************************************************************************/
-
-$preferences = Swift_Preferences::getInstance();
-
-// Sets the default charset so that setCharset() is not needed elsewhere
-$preferences->setCharset('utf-8');
-
-// Without these lines the default caching mechanism is "array" but this uses a lot of memory.
-// If possible, use a disk cache to enable attaching large attachments etc.
-// You can override the default temporary directory by setting the TMPDIR environment variable.
-if (@is_writable($tmpDir = sys_get_temp_dir())) {
-    $preferences->setTempDir($tmpDir)->setCacheType('disk');
-}
-
-// this should only be done when Swiftmailer won't use the native QP content encoder
-// see mime_deps.php
-if (PHP_VERSION_ID < 50407) {
-    $preferences->setQPDotEscape(false);
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+wf56WHs5vPk8N2z3kEBs4wW=

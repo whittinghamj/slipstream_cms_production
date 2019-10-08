@@ -1,143 +1,64 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * A Path Header in Swift Mailer, such a Return-Path.
- *
- * @author Chris Corbyn
- */
-class Swift_Mime_Headers_PathHeader extends Swift_Mime_Headers_AbstractHeader
-{
-    /**
-     * The address in this Header (if specified).
-     *
-     * @var string
-     */
-    private $_address;
-
-    /**
-     * Creates a new PathHeader with the given $name.
-     *
-     * @param string             $name
-     * @param Swift_Mime_Grammar $grammar
-     */
-    public function __construct($name, Swift_Mime_Grammar $grammar)
-    {
-        $this->setFieldName($name);
-        parent::__construct($grammar);
-    }
-
-    /**
-     * Get the type of Header that this instance represents.
-     *
-     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
-     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
-     *
-     * @return int
-     */
-    public function getFieldType()
-    {
-        return self::TYPE_PATH;
-    }
-
-    /**
-     * Set the model for the field body.
-     * This method takes a string for an address.
-     *
-     * @param string $model
-     *
-     * @throws Swift_RfcComplianceException
-     */
-    public function setFieldBodyModel($model)
-    {
-        $this->setAddress($model);
-    }
-
-    /**
-     * Get the model for the field body.
-     * This method returns a string email address.
-     *
-     * @return mixed
-     */
-    public function getFieldBodyModel()
-    {
-        return $this->getAddress();
-    }
-
-    /**
-     * Set the Address which should appear in this Header.
-     *
-     * @param string $address
-     *
-     * @throws Swift_RfcComplianceException
-     */
-    public function setAddress($address)
-    {
-        if (null === $address) {
-            $this->_address = null;
-        } elseif ('' == $address) {
-            $this->_address = '';
-        } else {
-            $this->_assertValidAddress($address);
-            $this->_address = $address;
-        }
-        $this->setCachedValue(null);
-    }
-
-    /**
-     * Get the address which is used in this Header (if any).
-     *
-     * Null is returned if no address is set.
-     *
-     * @return string
-     */
-    public function getAddress()
-    {
-        return $this->_address;
-    }
-
-    /**
-     * Get the string value of the body in this Header.
-     *
-     * This is not necessarily RFC 2822 compliant since folding white space will
-     * not be added at this stage (see {@link toString()} for that).
-     *
-     * @see toString()
-     *
-     * @return string
-     */
-    public function getFieldBody()
-    {
-        if (!$this->getCachedValue()) {
-            if (isset($this->_address)) {
-                $this->setCachedValue('<'.$this->_address.'>');
-            }
-        }
-
-        return $this->getCachedValue();
-    }
-
-    /**
-     * Throws an Exception if the address passed does not comply with RFC 2822.
-     *
-     * @param string $address
-     *
-     * @throws Swift_RfcComplianceException If address is invalid
-     */
-    private function _assertValidAddress($address)
-    {
-        if (!preg_match('/^'.$this->getGrammar()->getDefinition('addr-spec').'$/D',
-            $address)) {
-            throw new Swift_RfcComplianceException(
-                'Address set in PathHeader does not comply with addr-spec of RFC 2822.'
-                );
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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

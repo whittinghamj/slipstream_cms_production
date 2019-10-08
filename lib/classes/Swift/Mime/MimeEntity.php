@@ -1,117 +1,49 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * A MIME entity, such as an attachment.
- *
- * @author Chris Corbyn
- */
-interface Swift_Mime_MimeEntity extends Swift_Mime_CharsetObserver, Swift_Mime_EncodingObserver
-{
-    /** Main message document; there can only be one of these */
-    const LEVEL_TOP = 16;
-
-    /** An entity which nests with the same precedence as an attachment */
-    const LEVEL_MIXED = 256;
-
-    /** An entity which nests with the same precedence as a mime part */
-    const LEVEL_ALTERNATIVE = 4096;
-
-    /** An entity which nests with the same precedence as embedded content */
-    const LEVEL_RELATED = 65536;
-
-    /**
-     * Get the level at which this entity shall be nested in final document.
-     *
-     * The lower the value, the more outermost the entity will be nested.
-     *
-     * @see LEVEL_TOP, LEVEL_MIXED, LEVEL_RELATED, LEVEL_ALTERNATIVE
-     *
-     * @return int
-     */
-    public function getNestingLevel();
-
-    /**
-     * Get the qualified content-type of this mime entity.
-     *
-     * @return string
-     */
-    public function getContentType();
-
-    /**
-     * Returns a unique ID for this entity.
-     *
-     * For most entities this will likely be the Content-ID, though it has
-     * no explicit semantic meaning and can be considered an identifier for
-     * programming logic purposes.
-     *
-     * If a Content-ID header is present, this value SHOULD match the value of
-     * the header.
-     *
-     * @return string
-     */
-    public function getId();
-
-    /**
-     * Get all children nested inside this entity.
-     *
-     * These are not just the immediate children, but all children.
-     *
-     * @return Swift_Mime_MimeEntity[]
-     */
-    public function getChildren();
-
-    /**
-     * Set all children nested inside this entity.
-     *
-     * This includes grandchildren.
-     *
-     * @param Swift_Mime_MimeEntity[] $children
-     */
-    public function setChildren(array $children);
-
-    /**
-     * Get the collection of Headers in this Mime entity.
-     *
-     * @return Swift_Mime_HeaderSet
-     */
-    public function getHeaders();
-
-    /**
-     * Get the body content of this entity as a string.
-     *
-     * Returns NULL if no body has been set.
-     *
-     * @return string|null
-     */
-    public function getBody();
-
-    /**
-     * Set the body content of this entity as a string.
-     *
-     * @param string $body
-     * @param string $contentType optional
-     */
-    public function setBody($body, $contentType = null);
-
-    /**
-     * Get this entire entity in its string form.
-     *
-     * @return string
-     */
-    public function toString();
-
-    /**
-     * Get this entire entity as a ByteStream.
-     *
-     * @param Swift_InputByteStream $is to write to
-     */
-    public function toByteStream(Swift_InputByteStream $is);
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+2UcowmXZmTUY1qVilm==

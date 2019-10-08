@@ -1,43 +1,30 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Utility Class allowing users to simply check expressions again Swift Grammar.
- *
- * @author  Xavier De Cock <xdecock@gmail.com>
- */
-class Swift_Validate
-{
-    /**
-     * Grammar Object.
-     *
-     * @var Swift_Mime_Grammar
-     */
-    private static $grammar = null;
-
-    /**
-     * Checks if an e-mail address matches the current grammars.
-     *
-     * @param string $email
-     *
-     * @return bool
-     */
-    public static function email($email)
-    {
-        if (self::$grammar === null) {
-            self::$grammar = Swift_DependencyContainer::getInstance()
-                ->lookup('mime.grammar');
-        }
-
-        return (bool) preg_match(
-                '/^'.self::$grammar->getDefinition('addr-spec').'$/D',
-                $email
-            );
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+8ik/depgaKPxu7fpyxiSAnjD

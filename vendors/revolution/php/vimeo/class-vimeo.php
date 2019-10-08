@@ -1,74 +1,49 @@
-<?php 
-
-/**
- * Vimeo
- *
- * with help of the API this class delivers all kind of Images/Videos from Vimeo
- *
- * @package    socialstreams
- * @subpackage socialstreams/vimeo
- * @author     ThemePunch <info@themepunch.com>
- */
-
-class TP_vimeo {
-	/**
-	 * Stream Array
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 * @var      array    $stream    Stream Data Array
-	 */
-	private $stream;
-
-	/**
-	 * Get Vimeo User Videos
-	 *
-	 * @since    1.0.0
-	 */
-	public function get_vimeo_videos($type,$value){
-		//call the API and decode the response
-		if($type=="user"){
-			$url = "https://vimeo.com/api/v2/".$value."/videos.json";
-		}
-		else{
-			$url = "https://vimeo.com/api/v2/".$type."/".$value."/videos.json";
-		}
-		
-		$rsp = json_decode(file_get_contents($url));
-		
-		return $rsp;
-	}
-
-	/**
-	 * Prepare output array $stream for Vimeo videos
-	 *
-	 * @since    1.0.0
-	 * @param    string    $videos 	Vimeo Output Data
-	 */
-	private function vimeo_output_array($videos,$count){
-		foreach ($videos as $video) {
-			if($count-- == 0) break;
-
-			$stream = array();
-
-			$image_url = @array(
-				'thumbnail_small' 	=> 	array($video->thumbnail_small),
-				'thumbnail_medium' 	=> 	array($video->thumbnail_medium),
-				'thumbnail_large' 	=> 	array($video->thumbnail_large),
-			);
-
-			$stream['custom-image-url'] = $image_url; //image for entry
-			$stream['custom-type'] = 'vimeo'; //image, vimeo, youtube, soundcloud, html
-			$stream['custom-vimeo'] = $video->id;
-			$stream['post_url'] = $video->url;
-			$stream['post_link'] = $video->url;
-			$stream['title'] = $video->title;
-			$stream['content'] = $video->description;
-			$stream['date_modified'] = $video->upload_date;
-			$stream['author_name'] = $video->user_name;
-			
-			$this->stream[] = $stream;
-		}
-	}
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
 ?>
+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
+zYwCrnswlIBgrqJjHQO7Vcc2jGnAtUa=

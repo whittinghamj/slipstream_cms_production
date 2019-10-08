@@ -1,117 +1,66 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Stores Messages in a queue.
- *
- * @author Fabien Potencier
- */
-class Swift_Transport_SpoolTransport implements Swift_Transport
-{
-    /** The spool instance */
-    private $_spool;
-
-    /** The event dispatcher from the plugin API */
-    private $_eventDispatcher;
-
-    /**
-     * Constructor.
-     */
-    public function __construct(Swift_Events_EventDispatcher $eventDispatcher, Swift_Spool $spool = null)
-    {
-        $this->_eventDispatcher = $eventDispatcher;
-        $this->_spool = $spool;
-    }
-
-    /**
-     * Sets the spool object.
-     *
-     * @param Swift_Spool $spool
-     *
-     * @return $this
-     */
-    public function setSpool(Swift_Spool $spool)
-    {
-        $this->_spool = $spool;
-
-        return $this;
-    }
-
-    /**
-     * Get the spool object.
-     *
-     * @return Swift_Spool
-     */
-    public function getSpool()
-    {
-        return $this->_spool;
-    }
-
-    /**
-     * Tests if this Transport mechanism has started.
-     *
-     * @return bool
-     */
-    public function isStarted()
-    {
-        return true;
-    }
-
-    /**
-     * Starts this Transport mechanism.
-     */
-    public function start()
-    {
-    }
-
-    /**
-     * Stops this Transport mechanism.
-     */
-    public function stop()
-    {
-    }
-
-    /**
-     * Sends the given message.
-     *
-     * @param Swift_Mime_Message $message
-     * @param string[]           $failedRecipients An array of failures by-reference
-     *
-     * @return int The number of sent e-mail's
-     */
-    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
-    {
-        if ($evt = $this->_eventDispatcher->createSendEvent($this, $message)) {
-            $this->_eventDispatcher->dispatchEvent($evt, 'beforeSendPerformed');
-            if ($evt->bubbleCancelled()) {
-                return 0;
-            }
-        }
-
-        $success = $this->_spool->queueMessage($message);
-
-        if ($evt) {
-            $evt->setResult($success ? Swift_Events_SendEvent::RESULT_SPOOLED : Swift_Events_SendEvent::RESULT_FAILED);
-            $this->_eventDispatcher->dispatchEvent($evt, 'sendPerformed');
-        }
-
-        return 1;
-    }
-
-    /**
-     * Register a plugin.
-     *
-     * @param Swift_Events_EventListener $plugin
-     */
-    public function registerPlugin(Swift_Events_EventListener $plugin)
-    {
-        $this->_eventDispatcher->bindEventListener($plugin);
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+YIsrtoPVc0==

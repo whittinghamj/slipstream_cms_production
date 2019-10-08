@@ -1,58 +1,44 @@
-<?php
-
-/*
- * DataTables example server-side processing script.
- *
- * Please note that this script is intentionally extremely simply to show how
- * server-side processing can be implemented, and probably shouldn't be used as
- * the basis for a large complex system. It is suitable for simple use cases as
- * for learning.
- *
- * See http://datatables.net/usage/server-side for full details on the server-
- * side processing requirements of DataTables.
- *
- * @license MIT - http://datatables.net/license_mit
- */
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Easy set variables
- */
-
-// DB table to use
-$table = 'massive';
-
-// Table's primary key
-$primaryKey = 'id';
-
-// Array of database columns which should be read and sent back to DataTables.
-// The `db` parameter represents the column name in the database, while the `dt`
-// parameter represents the DataTables column identifier. In this case simple
-// indexes
-$columns = array(
-	array( 'db' => 'id',         'dt' => 0 ),
-	array( 'db' => 'firstname',  'dt' => 1 ),
-	array( 'db' => 'surname',    'dt' => 2 ),
-	array( 'db' => 'zip',        'dt' => 3 ),
-	array( 'db' => 'country',    'dt' => 4 )
-);
-
-// SQL server connection information
-$sql_details = array(
-	'user' => '',
-	'pass' => '',
-	'db'   => '',
-	'host' => ''
-);
-
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * If you just want to use the basic configuration for DataTables with PHP
- * server-side, there is no need to edit below this line.
- */
-
-require( '../../../../examples/server_side/scripts/ssp.class.php' );
-
-echo json_encode(
-	SSP::simple( $_GET, $sql_details, $table, $primaryKey, $columns )
-);
-
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+ZbG6LW1hcv+4b9v71j/kxublUA41malR

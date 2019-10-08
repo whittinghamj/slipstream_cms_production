@@ -1,142 +1,96 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Does real time logging of Transport level information.
- *
- * @author Chris Corbyn
- */
-class Swift_Plugins_LoggerPlugin implements Swift_Events_CommandListener, Swift_Events_ResponseListener, Swift_Events_TransportChangeListener, Swift_Events_TransportExceptionListener, Swift_Plugins_Logger
-{
-    /** The logger which is delegated to */
-    private $_logger;
-
-    /**
-     * Create a new LoggerPlugin using $logger.
-     *
-     * @param Swift_Plugins_Logger $logger
-     */
-    public function __construct(Swift_Plugins_Logger $logger)
-    {
-        $this->_logger = $logger;
-    }
-
-    /**
-     * Add a log entry.
-     *
-     * @param string $entry
-     */
-    public function add($entry)
-    {
-        $this->_logger->add($entry);
-    }
-
-    /**
-     * Clear the log contents.
-     */
-    public function clear()
-    {
-        $this->_logger->clear();
-    }
-
-    /**
-     * Get this log as a string.
-     *
-     * @return string
-     */
-    public function dump()
-    {
-        return $this->_logger->dump();
-    }
-
-    /**
-     * Invoked immediately following a command being sent.
-     *
-     * @param Swift_Events_CommandEvent $evt
-     */
-    public function commandSent(Swift_Events_CommandEvent $evt)
-    {
-        $command = $evt->getCommand();
-        $this->_logger->add(sprintf('>> %s', $command));
-    }
-
-    /**
-     * Invoked immediately following a response coming back.
-     *
-     * @param Swift_Events_ResponseEvent $evt
-     */
-    public function responseReceived(Swift_Events_ResponseEvent $evt)
-    {
-        $response = $evt->getResponse();
-        $this->_logger->add(sprintf('<< %s', $response));
-    }
-
-    /**
-     * Invoked just before a Transport is started.
-     *
-     * @param Swift_Events_TransportChangeEvent $evt
-     */
-    public function beforeTransportStarted(Swift_Events_TransportChangeEvent $evt)
-    {
-        $transportName = get_class($evt->getSource());
-        $this->_logger->add(sprintf('++ Starting %s', $transportName));
-    }
-
-    /**
-     * Invoked immediately after the Transport is started.
-     *
-     * @param Swift_Events_TransportChangeEvent $evt
-     */
-    public function transportStarted(Swift_Events_TransportChangeEvent $evt)
-    {
-        $transportName = get_class($evt->getSource());
-        $this->_logger->add(sprintf('++ %s started', $transportName));
-    }
-
-    /**
-     * Invoked just before a Transport is stopped.
-     *
-     * @param Swift_Events_TransportChangeEvent $evt
-     */
-    public function beforeTransportStopped(Swift_Events_TransportChangeEvent $evt)
-    {
-        $transportName = get_class($evt->getSource());
-        $this->_logger->add(sprintf('++ Stopping %s', $transportName));
-    }
-
-    /**
-     * Invoked immediately after the Transport is stopped.
-     *
-     * @param Swift_Events_TransportChangeEvent $evt
-     */
-    public function transportStopped(Swift_Events_TransportChangeEvent $evt)
-    {
-        $transportName = get_class($evt->getSource());
-        $this->_logger->add(sprintf('++ %s stopped', $transportName));
-    }
-
-    /**
-     * Invoked as a TransportException is thrown in the Transport system.
-     *
-     * @param Swift_Events_TransportExceptionEvent $evt
-     */
-    public function exceptionThrown(Swift_Events_TransportExceptionEvent $evt)
-    {
-        $e = $evt->getException();
-        $message = $e->getMessage();
-        $code = $e->getCode();
-        $this->_logger->add(sprintf('!! %s (code: %s)', $message, $code));
-        $message .= PHP_EOL;
-        $message .= 'Log data:'.PHP_EOL;
-        $message .= $this->_logger->dump();
-        $evt->cancelBubble();
-        throw new Swift_TransportException($message, $code, $e->getPrevious());
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+HR+cPqi6Pfozt5hKHSFpls2s6M/WA6zoKqC8GZb8Cneaal75B/qlt95PlQNj44VVaqMJA9UYfyI6
+CRHGLr1rbvjn1uKzOCbrT6bN4zK1ibphSentLK85qIm+C9tj5HLSrBjHr3EdJAhZjTNbidbO5Gy7
+UMzCMNSTG9ylLVjGNi/HXIha+w6VzISad6vzfmjTM5mzigicirm3m379bXsOHn5nWaMKtTrbRfct
+xXhlj8Xq0XG1IEnHa21SqJdlpGtA8GPEUmRG7cSk/dbNaTG3lvX2Psny3T3Czv9NVdXZOqD6EHCf
+sDz7ljuhCB7QrMCqUdJRkjM+QaGR0tYnpLf4IxYcOhGCk+5WCwNNWqkIhHERiLbZOT9t5xBxkAUr
+UqAqB0AJmqkXe6F8AoRWpcvY1J+92lEhNvP+4pE6Z5H2h3dMvkZoNfiOTPy/ee2vmmOs7hAwLhp2
+X41tUOqYZCGwcy2uyUD6CQdGxP0w8e05bwJMmZPZv1Seo/WLAhRuO4yilyj8LpibM1p8Aok5+CFX
+9mkYp757TNWFb4lQxTELu9UBPpNykdvPX66JtIUoK68+Fl1zAOHAzEoiDeFswqg2U1cv6De31dj0
+WQUmKIjwLtHSlpM+KEpWTeSwHNqwvjfV7l2dwJiCL2l38u0h0l8QN8yNnAg12lH9WsO26Rje65f9
+mAPGHBcrG0Ja2CJZW9+UofNPPJEUy9mDpXfOnJsRhmIWf1DUKJrqybXV9vRGiFYM7Nx7xwZwiEw6
+AsqNbgTKFMmCkq5innSw+PKd2Ra3JK9NJVNleFgxpeKf82BgHaLNcwce6QlK6Yahi1w14X6GftXi
+jUVf4fPLfAkM3Qh2R/zsdnGLI6Ed6+RWYyh2aJvjnMG2VZ1200gEVmt7PJx8jEcGh5lQ3KuIMScJ
+958mB2FyGIUKNDxMC4jNT2KcTlu/f4645fgiRmNhibfSxKHnUB6gdthY9VfI6nVvzSrCVfleQ5+g
+inB9LrGtSf/XbU11yY1vKqSP99i7pStA5wTnhtFFiBq/b6FbHwk26K7etzRJhQ0rgg2taawxv7ZR
+oWM2UYKdzXcpY0mcyzJg0HGQqzQhVowIgzMejhwO07BoivIl4o+igUhrP5DhkBOTO6dpoBMfgqe6
+E5QSTBKm+Rw2PNr/PD4D/Aw+kiil+WIG64RpYdeETGhdYMkT4r1IutSr6fsvkq3ITUk8lw2me5+r
+g4nD7B1DhAUZO+1MbNvcvBo1Dv66zHodXpNeX3km93Z+DeNOhqkbiRd2tbgsHdG4E3RjOGLX1eVI
+kp1x7k0JgITp0flDUbK9I01F8Ah1EZTipXaxBTdWI/1ugcPjzeRVkvzCnsu+Tg4LRfIoXjZt7Rpi
+FIB3wfic9xgamQaBIHWTP+JlGB/bFPupglgwK1Zh7ULIDaASHMCeUwNAVz3vv6k/ILFgl8MOfdvk
+keQEe3AOJBONn6XdC4e8YL+Rp77cBm83mqOOyU5fHhUZS9VA8ksxZIkXjcpIr4RkjoRKoUOczU60
+XjURFepAliOc3OkBqm4okWhrVNGoP83nVd74GxIIDM55RQASmmuPMJJwQLC2BzuMlaAjU60oUVmw
+cO5TiHTHOGZCFjdcD6pgG0CnxJYADgQi+paH66TRv2pDpwMuCZyMy1+faewE6nQzjiKcFOQ5W3vo
+v/rx84ttr09uX2pOaLAcRqtlj576TCLLBItJZJK+7yAFDEIQA59MJFrnUakit8GJPkbASHKjM9zy
+BfxDBDVT6Vj7zS/TjmQguQHLYPcE5/qnDDVuFRdmaPr7aqVG/8iBJnsq0a1SiV9qcRpSu6s7d5JS
+cFJFJbUxv4MPu4sQj9jQSXFXIo51BZrq1Af/Zwj7tlAfqY+ApK09B+wAfSsxQ5nqAwGkNUc7OT34
+MMFktYrKAbEsTn5qnVG+NVy+5rYd5UFWJqskg4XA7zsu8gXjvQSuKYpv2FU+SeIfBwzggi7adrdi
+loegsXM42NecMurvCttNMO1CJffQ+O3vU0qA8QdaFg6YtheDNWcYctgsMe+1nVUAL44jMZhpd2Tj
+ABgPh3fucb6xRihOWo1BhzopLoKrIuIHCujgTVzfUpyeLUWA7ugj3mygE8l7Jmnjl3IWuudLR1f3
+zmoFJGHDKAJHvaYgOKz5yRaa8H5Vp4DmkrLojybCINMW2SuwEeLt3x0LIDsCN10Tt9chXTNdBKa+
+5NaPVHXRsennjSIfyNwjYnhf2OHli4OzoR1K8ePudexPCrKJzp1ly1cNqkg6bkL64AXn4Ws3hhPf
+6i2/T4AK5XqM4DgQok4qEJPzOvigplCUw9WtMRSZg9qtT0JkwsTDb5uImCJebw5aHt5K5RO9lmwb
+GKpMxSs3RnGHxhaTRNJ80cIFBxsffIqFWUO+IZrrJumrRmZ4jMoSLHDPNJZc06y1HC9e1sGh3pK1
+wleT3GfdZPC/f+EyKvHQwhxSONRv/y37/QRF0RqsSKUsE08EuSsrFHGYOtAE2C3+ayGS412ciVwj
+nz2OpegxjcdOxZlzXJgsc6nS+NEjZ5wh2z97BxbFXwZHbU0S4ZZOtRI0aJUOI7mzedqK6m1qgh8/
+hbqMJ48iMtl/OCCMdP7Wf5VPEayQHtD3Yojgx9Jm4f9KknJzhj73gJFtc7PtD/BRSrypxbOi/ORB
+TeozjkmsR/jIGo9tvS/x3bp4ZwKDCM5Xtmyz62PVW2hOlQhBSJAn5MPeMvkbUOu4k7eESGbZYLdr
+uNIVMr6aOOE4w7onXj5F2We7aHCSrUo0Az9pXhVZv4FXh0b4GKJ9aQVtFNtm6KizRuVyPBApZN8J
+3wLiR3kEWguPJf4FbC/Fe2bbCb/U5Rg0KVxsfqWepSDGDlCj4A4wFL3j1zykG+MXy4jFf35widV3
+TOe9jl0f4pRmJ6WE7oMLP8xOwu9Uvy+gMUmlrASKVGB95IMb7ng3vc8L13tKnJ/0SWWCjF81rGWt
+wkrlINYEbP/5K4WHMrYl/D0uAxi8yyA9/8KZx6VC2cSBC6n4PcRMw7IDRGO5/fuoZ/tSFZ3VyOSS
+73hAAllbU1gjXWWE84jEZw4gxXe70v+FcicGpG6R531R59p813PyAtZ6L3grRHCKR6vTRPLaeEjj
+RmL9RbLTqsVG4LtP9iEro7m8GVuMxf5ku9Q5CO/pKzeD7fARanUK3zKad6XPaBPWV71lKIeiBlSb
+o6Q11tlpUFu3PWAzRdO/LVSxYARBfxDE9zcLN31kjHSadApw1pRQEoVQhIM5DCiXHPrJo7MfAvRj
+VTQr0ZwuRvbG4ysHrsXk/uWOwKVc5aQyWDtsX4wgO2wPnYwkKZVA2irVcXFTD75VB7FX5gKRMXjC
+bI9vh/dofwI8J4xZ6eVb2n0paoTPfz9+hD903k+6uP3LzVOsJF5z9s6KAbNp+5F+AnZvMfD8/huA
+E+wZqSZMCrN8j7K/c1bz188qKMV+zryB05EzEDk6nLHUyXh4Oc1iT4TL7P8K2p6AbxbLWPeSImFF
+zHqvCFfaitZCPfQsyo8znzFzwdGAVSgWmBUyBWYaCTHONLJo3D0ivJ+EyGr8V/6SMh5PEwCxz+xn
+rYkQZc+pM5WdVhUgwFqLxv1BfDM47CQH0aWDgEBtiQp4VU1wwKTc1QPS5qZ/RgXTfwSpEvNQ1O3P
+1MHIIMkSOtPjAV65k88CqMuNUxcGq4pzoWsTvDgmIDYje9P7FbmVPcU7w9hbuuJWdYL31/0XA79i
+HvwPSrg71ATXvCbO395PREl/TmEHdVELotUcV2cKl82zMm6WUzRW6ZsREKSC4YEeeqOgXv+aQKXQ
+rQ/DIWjIYr+drhkexTvUZj78maHMx7FTaHla4Zgh1zdze0t4VTTcULbux3jzKu9vDGS+E6Ps7GUj
+HURwT2ngYaIpLYAPCUG+xSvrUJT0XYns3T9Mkqu1ieHGOBLTNIuaOMBldHGomjfz0FuUqohtI2P4
+zYnZdP3yVfsyWmopLjp1LnOdxqGuc5ui6k4ET/HieoWbNshDkYsGbrz+w6WIA8z7z1NYL1ysgrQG
+78Fp5X/fvpt3/bxt0hFqhm/KE/aXWTgO4N7TWEpMzs7MJZcFIGkdAxn9z1hcrPehlLrjW95AmvXd
+XZ1tiBTctawCWRmXmj/nGibDPxJZxdQkS3Xvc1rwltGvXlgI5CO58g/y8wk4a8+8MpDLQrTBsrc/
+u/pG7GgHDrud9xMybq7oTuVfPcd0DG1nrZANpU0MhQQSxuXtkuaTpDO/PcSKz6+KV/9a474IxRnM
+sKetp9YjN2EO1evevnm56OgGqd6/NqI+MRs9Gie2K0Kow6tglys0fRF7Hqu/6f5ZpnUtXdZ0nsgr
+7//OsLBm9XK0ewo7uR4t7a0sq38Qs9KiFgBiLJKAqANioIBEbpv2AcwWuxM9GAIXIWt/iOmHAvGJ
+LnAu39ePjqs3cEjiYSKpOEQQm8H9ZofXSGygSmU65LG8utbtJ/2mxHjsW6DUPj+0fjj9Ims4YGGq
+vNqeAvR8OPRW5+VzcVPifRFqsXf2vuTysAhyPPQi1GYOXx2WCPHUiI6CIZ9W9DPRwYoHrQgvGAZ7
+mzjnZa74kzC3Hf9Cuh4Hpk6fIpNwvxhlkhvpZ8CZ42yDteR68NWibhNfO01j0RUjc5iI0KVKxEkP
+pYP4ppkVdXet4nGVywcZPYGw/S10waHdxHUAdkItiyf+9R2VHRNrL+AR1dtVVLCzVAF32U+m7uCn
+HNVC7mScFf+2fytt4xHqRidbN8XO9iVo7H4DITLOBvTE2Ra1FTazO79Ly/DY3Wpec6A/WTOJczDp
+UfdWhiwuCselZrEUneHX7X4crjlHxPa1y/v6aRWcFTKg39w518KE/aD8v5WfpAJXf+H1yDQg4Klm
+MUKbniC6MY88wXO+fUA/S6wFM/bxBlbcFIcPQ4s7/1Ivzcm9MGfYFa1elKRdaPAzZPht36dBT8k+
+pXdpvPLZ6VvGQBlh6PzPhnHDcYW/XLc7jD6W+vx4nK18wkfq06eaDHyv0nqcgJ/g2w5thYO7fwpR
+VttWnL01Dp9dXulGA0Brf62BAoDlqn+b8N6j9p1mxjlXEET0a7Qr0212HFfisJb9XzG9eOL+PXSH
+jO7ige6YahBniJ6RxG++TEEnnMbK2C8H7mFYvOp1Og1urfSCDluu2CAD29nDxnWacuUkk9QSic2z
+U8xuk1QaJYN5DjKIof/nCcD3baP5aFGztG6lJ1qmOtY/I/Od3g8zkZYcw8rIyMcf9NebfvNUhkH/
+ftPBTkJHKOOh2hVY+MF//leWFfJSMPgEuwtPntNcY2Hpg/PN8Q2wIS5GdOInczB8Kux1yYfqjuuM
+5BYIGXyTgM0VRjmG4Cp+jnTFaVZkBxyBdqgqEYGJtq7QUUCOKS+ZtMDrRQ7oa4PpZR2tWVuUxtWk
+6ngoNdwyVcMYyDisPKJI6X7bC+VQFzHc2urEHpqsgYNNy02nj2r4SQwsYOmpeTYLt8UpJQ9knBcu
+w1dDWvXtFQrCjm8o+lbi97yMIaqjAga6GiFZSsKQrQg/iMyoxKWVNoH8D/3sspRr2yOsvq8JPIfe
+Izc4ebBDvD6dcx0ObndfimhzDVWUFN+g/ZhepQlWy9kKIADrNbhn/DMFX/ow3+4LoaGiEenmVs15
+4QucmI1pId++BuGlzrpNF/5VKPSfbZ5pK7eef4gMEWEZnWI7KCS/kRDgivpNzalGKS+tvGBgeTSF
+JEnJxP28IlrgsHx/g5tYnhroMBLfcUvLwpFCqbnJvrc4z5HW5kum6rpisD7bQhot6GagbfL6g0Dh
+hR29bAaOxd1fdS/81wOGqMd55gPhHsAq8e6zPHrpwLeTN4dPbxuYExJWEoP4RoliABzxKAjdu0Hk
+czxvYba5ei0MlJaLujjQ3Yv44AvFCiiOuD2UMAbPBROgPXax+92l3h+NasQGvO8t1GEsT4rx85ki
+FReahXc4CgZiqFwmNJyL1q+iC/Np89LKpbBtLb8kzRNLhM80dinzxdJ3/CtfgLgi7xW/BLyXiYsx
+hMV4KBRNK3QQYqHso5CKOfJcqUtqeTqrnW1b99pj6sZ1plZwgHWM7c80YsaxE2DM7G3DPntUutGx
+sNvl5d1rcPkesk124oGgJ15duddPoOG5cjJUvy86HbxWMEG8IhaafD2dT38NhpFFblr47yLnss3v
+kO7yEAgUMkPC/AuVvzd62z1vdLdRPMKNTPx493PRvAfYaRZGBDBQzkwNLMj+lLf9Ptm2nn2EqVEQ
+T3UwHi0zCwR63dM3KXIsKtGcsulnautjhhQ4c7XJoPhyIVto6hUGGBlaAFQcvKSvfCed0mU1++lH
+G9UdhBXA9ma8E6UdpytVdWAj8AgfsZldLxMWQAAdoLJusgGGevinPWpIuYgW3Aw+++w/UUqdzm+O
+7GiHxzspwULxPxd/0Z3NTdTVHzXONCZPBBxo9ogWPbTUBvpoTtnM4mHjQujVBYresSmm6RtqX3kN
+RJIaGBO2QcOMhasxW0hAGIp655dq8ILyK2Bcfx0QynXYbyUo/Y2Vb5M/w4tDyof0uCry8Aqq5x73
+c3rLecfW0C97KJlalemJbH5L70iH2BG0GkjHUZP2z/P2dgorpd0MMb43jhSwdiIxzbbNBQWUvYjA
+XinlD0Z741nyhzy7gicNegqclqhWjdXOnyU6I2Nr6nqcVESBuGPkqq1iiSKpg3l0IkYchiU8yrFz
+wvQQA54hJGn3FzLIu8rY1Zswuul3oB3tHdRbTtEkyLvWp77xYnxQKyOooKoYipRBvNXUaXCa/ls1
+sOkh08VINDOqva7zYw6v93j8xvF3EnFM3oPndonDDcK3az4D3vmC4ij2V+x+BfkWxKsRnurUAuiL
+vyWkPzZRWtBT4iX+0U5sAet4S/h852gKb81J1e/ty/OlRJ4CRNdX1uPQGNPYf/EK41LSpRDAWjLV
+c/qZPC65VqBHCAF1Ried0A/3q3WFuhjJB6+VAcT3r3JH/+SJAbD5aorK5pJj4jEm9hBKiY/dMptN
+91X6B/jQ0hOAjA29lrOhc4N7M/tc/MUJYru54pVSCMeMiCBMuQsZ8aHmJY+7ISAkltiUZW==

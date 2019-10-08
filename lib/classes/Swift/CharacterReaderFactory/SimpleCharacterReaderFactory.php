@@ -1,124 +1,78 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Standard factory for creating CharacterReaders.
- *
- * @author Chris Corbyn
- */
-class Swift_CharacterReaderFactory_SimpleCharacterReaderFactory implements Swift_CharacterReaderFactory
-{
-    /**
-     * A map of charset patterns to their implementation classes.
-     *
-     * @var array
-     */
-    private static $_map = array();
-
-    /**
-     * Factories which have already been loaded.
-     *
-     * @var Swift_CharacterReaderFactory[]
-     */
-    private static $_loaded = array();
-
-    /**
-     * Creates a new CharacterReaderFactory.
-     */
-    public function __construct()
-    {
-        $this->init();
-    }
-
-    public function __wakeup()
-    {
-        $this->init();
-    }
-
-    public function init()
-    {
-        if (count(self::$_map) > 0) {
-            return;
-        }
-
-        $prefix = 'Swift_CharacterReader_';
-
-        $singleByte = array(
-            'class' => $prefix.'GenericFixedWidthReader',
-            'constructor' => array(1),
-            );
-
-        $doubleByte = array(
-            'class' => $prefix.'GenericFixedWidthReader',
-            'constructor' => array(2),
-            );
-
-        $fourBytes = array(
-            'class' => $prefix.'GenericFixedWidthReader',
-            'constructor' => array(4),
-            );
-
-        // Utf-8
-        self::$_map['utf-?8'] = array(
-            'class' => $prefix.'Utf8Reader',
-            'constructor' => array(),
-            );
-
-        //7-8 bit charsets
-        self::$_map['(us-)?ascii'] = $singleByte;
-        self::$_map['(iso|iec)-?8859-?[0-9]+'] = $singleByte;
-        self::$_map['windows-?125[0-9]'] = $singleByte;
-        self::$_map['cp-?[0-9]+'] = $singleByte;
-        self::$_map['ansi'] = $singleByte;
-        self::$_map['macintosh'] = $singleByte;
-        self::$_map['koi-?7'] = $singleByte;
-        self::$_map['koi-?8-?.+'] = $singleByte;
-        self::$_map['mik'] = $singleByte;
-        self::$_map['(cork|t1)'] = $singleByte;
-        self::$_map['v?iscii'] = $singleByte;
-
-        //16 bits
-        self::$_map['(ucs-?2|utf-?16)'] = $doubleByte;
-
-        //32 bits
-        self::$_map['(ucs-?4|utf-?32)'] = $fourBytes;
-
-        // Fallback
-        self::$_map['.*'] = $singleByte;
-    }
-
-    /**
-     * Returns a CharacterReader suitable for the charset applied.
-     *
-     * @param string $charset
-     *
-     * @return Swift_CharacterReader
-     */
-    public function getReaderFor($charset)
-    {
-        $charset = trim(strtolower($charset));
-        foreach (self::$_map as $pattern => $spec) {
-            $re = '/^'.$pattern.'$/D';
-            if (preg_match($re, $charset)) {
-                if (!array_key_exists($pattern, self::$_loaded)) {
-                    $reflector = new ReflectionClass($spec['class']);
-                    if ($reflector->getConstructor()) {
-                        $reader = $reflector->newInstanceArgs($spec['constructor']);
-                    } else {
-                        $reader = $reflector->newInstance();
-                    }
-                    self::$_loaded[$pattern] = $reader;
-                }
-
-                return self::$_loaded[$pattern];
-            }
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+mIxPUUBQJlPeG9dCWTy6hwcAtiC=

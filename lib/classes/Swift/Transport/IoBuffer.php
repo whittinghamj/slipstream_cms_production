@@ -1,67 +1,40 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Buffers input and output to a resource.
- *
- * @author Chris Corbyn
- */
-interface Swift_Transport_IoBuffer extends Swift_InputByteStream, Swift_OutputByteStream
-{
-    /** A socket buffer over TCP */
-    const TYPE_SOCKET = 0x0001;
-
-    /** A process buffer with I/O support */
-    const TYPE_PROCESS = 0x0010;
-
-    /**
-     * Perform any initialization needed, using the given $params.
-     *
-     * Parameters will vary depending upon the type of IoBuffer used.
-     *
-     * @param array $params
-     */
-    public function initialize(array $params);
-
-    /**
-     * Set an individual param on the buffer (e.g. switching to SSL).
-     *
-     * @param string $param
-     * @param mixed  $value
-     */
-    public function setParam($param, $value);
-
-    /**
-     * Perform any shutdown logic needed.
-     */
-    public function terminate();
-
-    /**
-     * Set an array of string replacements which should be made on data written
-     * to the buffer.
-     *
-     * This could replace LF with CRLF for example.
-     *
-     * @param string[] $replacements
-     */
-    public function setWriteTranslations(array $replacements);
-
-    /**
-     * Get a line of output (including any CRLF).
-     *
-     * The $sequence number comes from any writes and may or may not be used
-     * depending upon the implementation.
-     *
-     * @param int $sequence of last write to scan from
-     *
-     * @return string
-     */
-    public function readLine($sequence);
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+ZFT7EiF04OrioRe7KSnP

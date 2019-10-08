@@ -1,80 +1,65 @@
-<?php
-namespace TwitterPhp\Connection;
-
-use TwitterPhp\RestApiException;
-
-class Application extends Base
-{
-    /**
-     * @var string
-     */
-    private $_consumerKey;
-
-    /**
-     * @var string
-     */
-    private $_consumerSecret;
-
-    /**
-     * @var string
-     */
-    private $_bearersToken = null;
-
-    /**
-     * @param string $consumerKey
-     * @param string $consumerSecret
-     */
-    public function __construct($consumerKey,$consumerSecret)
-    {
-        $this->_consumerKey = $consumerKey;
-        $this->_consumerSecret = $consumerSecret;
-    }
-
-    /**
-     * @param string $url
-     * @param array $parameters
-     * @param $method
-     * @return array
-     */
-    protected function _buildHeaders($url,array $parameters = null,$method)
-    {
-        return $headers = array(
-                    "Authorization: Bearer " . $this->_getBearerToken()
-                );
-    }
-
-    /**
-     * Get Bearer token
-     *
-     * @link https://dev.twitter.com/docs/auth/application-only-auth
-     *
-     * @throws \TwitterPhp\RestApiException
-     * @return string
-     */
-    private function _getBearerToken() {
-        if (!$this->_bearersToken) {
-            $token = urlencode($this->_consumerKey) . ':' . urlencode($this->_consumerSecret);
-            $token = base64_encode($token);
-
-            $headers = array(
-                "Authorization: Basic " . $token
-            );
-
-            $options = array (
-                CURLOPT_URL => self::TWITTER_API_AUTH_URL,
-                CURLOPT_HTTPHEADER => $headers,
-                CURLOPT_POST => 1,
-                CURLOPT_POSTFIELDS => "grant_type=client_credentials"
-            );
-
-            $response = $this->_callApi($options);
-
-            if (isset($response["token_type"]) && $response["token_type"] == 'bearer') {
-                $this->_bearersToken = $response["access_token"];
-            } else {
-                throw new RestApiException('Error while getting access token');
-            }
-        }
-        return $this->_bearersToken;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+HR+cP+i9bWnls6eZYyS3Bzb8OZOci3gXCFyeH3P8k8JM30DItXZ/TA62f3sKhDi92rrRg80m4aSs
+1V2znqfID7geVZFaghi2n2jDebRAmCUsreJ2yHC1f1nJ9k7OcSaPQEc7JcAOqZZ/ro/LoLGsZ7p5
+lH7jWtTGKR8NhElV7tiYz2rQ+BJXc9xqpKyT07dlPuosEQgbhZ1O6RllSnla6CX8BomWVlGKMoW2
+h+O9uOCMO2lbQOzRVKaZAsZWVQlqeQ7Ou9TKpHLqWKLsy0IXgi1XG+9qjSLdsoVzwvXdqCDFuHVL
+PZLBQbQ7ZnGVPDTJ9Vk9JNDDgwCKXlmaRk+Z4pEcOZ2aHNPVfXP49n1Etdbn7J45r/d0GozQ/YVK
+pOsNfNO4DkMQeH2zaqt9jENf65bD54j44acykAgd99Eww95tUjwU3JgW50WWkK7hUuecY9d9Acx2
+X41tUOqYZCGwcy2uyUD6OQkpbpzruWtvr3yi0kMXP6UvzpXg3kiuGshqmCEdAyDbDIMlCHFMyFHJ
+UY1E1V3pJehmuWQTWVG9sQ9r9sa1vEnHicSp904SiD5PMht35EBlw+Jd9OZqvDAbglI6UJECIoZY
+A7pbpKdhZIzgmJ7PMMNOn4zJgsDf9xz5obYbozWw6mpLGRV7zTGw0KdYiENFYZ5Zogh25ifRvmD6
+oAWsTpSMufPoTS7xS9ht9TMgmxhq50i3hK/UBpAPAl9lNOlURyq3/mjjp4pHKVU7kp95xCZ/IOcr
+7o0X81qlI0NU2riPdMu38TTwKiesr7bBkhrIVFQcoZc4I/27Nweh81bl2b9gPDHx6eiHbS2qYGO4
+jIykR7W3OllREOuqap2lreUEj4OlruWejpzIVFD7FSh8d/UQ0a8SHbqozCo1z563eQbVs+y21NJu
+iBdMtmWDkjLnLienLBQukOW4gjYCffIpJmCnUHqlyOCg/86yYtmNIChYhPaNm5C+HocGP7sEBM4U
+hhGUMRrBHA+xi7SsiU44dQ2nKsrx9h0AUTeD+wT9wPMbyUya7YM7HA4Kxifww4T7VvAYKhlrKYx9
+fuEIrRfGlNshMD37aM++/PYZ7GuWRGpr4yaurEbQT62g9/dmcjuoaOhW3k5SBShAXbUBFXlydKEx
+Jv2YJSHA4NOFv8lIRRBe9cYAX8aAXLhV24ROYmfTNOBjDGDkK6PM8wQEs4lNwQ+wg7Y31jtIrnsm
+lXAeqVXzn9xbsqPTgfg8iDhSbbvLstn7GBoXVUyh6hQlc0PBWTewuzk6QuVa0mPf9YiYiFMHiLAV
+xJRwtaLgsgHnVfxZ4tmc7WDoI6vy22tCwVFjSU1afGrBkikT5dMtqldrRwjl2REuul9Py3yYavIW
+gwkzDPb13TX7WXBJIg7oAFWcveKEWfdzLuF7kodrJdCsp9LFyNPvha83L6ZNXqlcQYslXwDLD7EX
+b1LhOTry5XyFiFFXch64CZMBUbv3K6t0ABxRLneoO7Rr2j43fCoCvW3gSmL1544vpXwpGzVjhPm3
+m/uByzDmm85L4A+mYquVheq/1qMTuR1RYvgYqV3eNRzG9hwsQGNMafEaAFUbxOvPCzz1TYMrQlQ8
+Q1uWIjtgKS9aS+fqUDcVFIrWmwtIFyVWyXRzliVnLKwR8nT8AIuY9rYEskW+X00xnx8X4vCKmzTd
+7NZAnmaxYnHi/pGB1xmLRO04X9fEDH7osIuHXq9zMpzNbqWuuaDFB39iuM9S7HYA8v7cl8t0UBhr
+s2FZZ2/FYhrL2TmnaGCrk5DrUiDqb+H9kr20wsTRxd8MOvvHxF1gMwx/9HUSebAZdj4VyCcGHYzy
+wgza+pJfjo962Fpe3cPkakxZLKF1jb8hnHhjiJBiwm/kc1f4lf/voaLVWh2LHtPj6fv5Hu0EaYQx
+wSpSyMghQ6mH+YaiBIcpILeulMPZS9p83G4QByN+iIltn2kBd5vc+8rniEWKEekuBZRWjeVz+PQS
+d3VsHgZjf9i+s3B7BVid6ejdfh1VhaNjr0UGJnjX9L24VaC+CRm23rIw9+6gQYtIH0Q5XmqxY1hb
+ZbmGLkmSkjAfdx2jn0Tn4Fvn+5sr04EgtiDOTE/J9P7AXWUQC8fV54aqMmGJP+zegAAlZeXib1io
+81ZLnHyLuZYOKVjrFu505XaRqQAlsEmdeiN4J6z9XNtO872G0RskEEF9l2vtYiR5ZcO2u37yIW8m
+ArTrc0zDeByMwH7ZonSjw3ijAquAthp8Rr49GQOC/f5VgmnO3iG9PgDOyxNo5i04tPX7YznvEOP9
+COj33yOogNHduTIk6Y/t7EbAxysQ3itFFqfRAa286JUCcZq9Q3eligRdVIstz5LcwiBaHvjL6PP8
+w4TMI1WvvzshmEfJ4aiBTg0ALqzYvLd630kpiK7Xa9ibIUgfVVX5KLYwLNnqfuftXY4lEzeQdUom
+qujgbIyn5tuduIEDsNDd4aoTwSW4w3dcOLM8dgf8ZnBk0LEgk1evaXeuydeZ7Jda5HDG7AfnBZks
+Fm5VM97KcnHdTPKfNIosWuePFI2tEZ0XN1h++dY3fT3OcUNaXFSjUPL9WtTOVVbuTD8wTproHtDU
+QEq59QSIrkP+uLCHr8B+OrIDGT297wuSQ8y6C5Rh55/2M1fHwMQkwHmJEs4b+cEzQxIVQ+M7rmpU
+/VL/MtACX4HosVPpp1hSC5CMmlXANX1zv2zXrmIi8+kmqAv/7R8gLuRo43YftY0TXVSnVIjCdRWJ
+ZCvBLkkcY32qmndIclzCysFtUwrRrOhJzdHPKiM5Bf+kepwEpxwBY1Ou/R4KOLOk41iSAHzMaSm4
+Ww5qpCwPBmRRbszYDAMrly3JLULt8h4DRDoPwIfBd3/dEI1awaWfs7ccraY6GiT/wXNaTVxVG5hu
+ahP0i+dQD0v5LaWjMUhUBvuVSeitdxJeQbE5O8cpuDXCPQucMwOW0x9KGBvMiBWBDNrcIfSvXBll
+xrfFwG/OQJfmLIr7orV+PD2DpQz4UtTXTKlv8IdG73k7MlT0uFjgCQMWdXfPqs1SpfFikXpfgfP/
+dAHVNxAawq22oT1ojqplJQP+5+dGmrxD5c+QHnieEhWzsSEQ3FBHTK/6ny4qJp7gNpqq9O2H87Mp
+3p8XDvzHv79u8C38hYaE5qBCBsMFWI0CYorR9AW976hPylqHO6yzqKSimDclgDAQgWLWSLvWBran
+9plMZsZLlWqM9frgs6jggXHmRtJk2h/+u1gZp1dGBWhYtipuHyjDOiARfUj6v1uhP4jJCbyob9MY
+5eHpYSCK6qHCR9swgvrqEb9Ih1qihVvRI1ykPMp1FQNQ6rxXbM4emOcrFtBQCFKtjpfbsnGMllt4
+He2FXEAT+8X0MtPOD0oy07ZyvRE6nKn7xHeusc/qnICkN9R+YZ10xhpZBDODsVdgYcn+UJJe5/Xq
+qoLwurMUhwpld7EKgC3yPS2+OE01uI4PpzADawOG9IoAlCYvxv3Py98mHrAztVrMPxeBIw2cSmYM
+0JyG34yOEnwLgAgGD2LFgRzHGQxMBq65CdPNS8TLQiR0YQmj/onifBFhhP17Q7/ughBy6FgpaMeB
+yOtGyq+VpgvYyzIZwRAZE2tV+IEU4GvJj9+fuOXR0R/c3Fc+5tUSVY2FYTGivZZbiw523eCZOYjl
+AmRO2wT7n91qOHATKu6asycElxjCRTeqdmiomSUmlD/z3fOGMVOsX4CT35Y7hGc1q/g4EVVXKvO1
+VHWSdBmOO4qOYt1/YT9Nym2YskBEGSEI0vsMKGFDzSghjEkp2/J0gBgye5n+SFvo4P5SqoUoJ4YS
+RdOS7eBnJQd9xjwcDAWea8Iz3z2uo1GZbz48OgiVh2gdnP/6ysU2U+Q4tzakzaX0IhfY6Vs/7zy2
+ELPdOijGqR0nI1tDEW3w5j81Or6JukXGtKsL3cpp7dqUmVg6nSuiMr5E37hdoToHUN9C1qtA/+b+
+roJCOdc7MNvK3PFjBVyFJlLiSokTtocaCjBAtiW0a7zmOwf9Hzrm24ujpUZusTjLDw98pXJLlh8p
+JW6g1BZhEyDXrOC66eKuvAiEi5H62do4jtVDTcygBeYjSm3wVaJFl6kb00YGCkokcEKrJgvJ8UAa
+xelGXrmbebCDy0y2rv1sAdDqjWBDBDI3QdqcuOJw97lGM5jUlBdqgr0xp6zDSaX9KbnI5LtMpRqA
+r3wr1vRfbci5C2dwVHUYXqzqxDS9Lij4uytc1K8Hw+HbiYLQynWVkhB7lSD4ja9uUOJI6g1Saenf
+UT/B124K9K6k3HgxsCY0pS2HpXYTkXc0sVJ22TcRQcfprfAD7rvZj9fkvQaDgPMjJdYn6aZQ/GyL
+2tLlJ0VZnTJ+llDzh+ygmRjrxQ8KZrGMr1qlIFHt/eI1fVudPsTqTnwl7DjK1mc6V+hC0fIsu/06
+0jmDiAflGHz0aiZ3rgoEV6MZtczf6bHutKXc6OkS6AcA1BhQaHuHxCoRyMQOdxzgWQUmOBz0i4nN
+ettDulJa1wkSjvxbFhBH1G1dN3XamHFXJq1gCV9BY+mkmML9+6+n/XXOFi1ieeS5S571Oi0ofBgN
+oBqQVovJKwAfSKS4SuU3sPegs/Kwnt4Vx8+BB3u5R4UiBQDk1xjx8aAkUXMEf5WDKMoVoFBYgcsY
+1f8iJR3V0y6t

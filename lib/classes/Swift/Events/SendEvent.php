@@ -1,129 +1,48 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Generated when a message is being sent.
- *
- * @author Chris Corbyn
- */
-class Swift_Events_SendEvent extends Swift_Events_EventObject
-{
-    /** Sending has yet to occur */
-    const RESULT_PENDING = 0x0001;
-
-    /** Email is spooled, ready to be sent */
-    const RESULT_SPOOLED = 0x0011;
-
-    /** Sending was successful */
-    const RESULT_SUCCESS = 0x0010;
-
-    /** Sending worked, but there were some failures */
-    const RESULT_TENTATIVE = 0x0100;
-
-    /** Sending failed */
-    const RESULT_FAILED = 0x1000;
-
-    /**
-     * The Message being sent.
-     *
-     * @var Swift_Mime_Message
-     */
-    private $_message;
-
-    /**
-     * Any recipients which failed after sending.
-     *
-     * @var string[]
-     */
-    private $_failedRecipients = array();
-
-    /**
-     * The overall result as a bitmask from the class constants.
-     *
-     * @var int
-     */
-    private $_result;
-
-    /**
-     * Create a new SendEvent for $source and $message.
-     *
-     * @param Swift_Transport    $source
-     * @param Swift_Mime_Message $message
-     */
-    public function __construct(Swift_Transport $source, Swift_Mime_Message $message)
-    {
-        parent::__construct($source);
-        $this->_message = $message;
-        $this->_result = self::RESULT_PENDING;
-    }
-
-    /**
-     * Get the Transport used to send the Message.
-     *
-     * @return Swift_Transport
-     */
-    public function getTransport()
-    {
-        return $this->getSource();
-    }
-
-    /**
-     * Get the Message being sent.
-     *
-     * @return Swift_Mime_Message
-     */
-    public function getMessage()
-    {
-        return $this->_message;
-    }
-
-    /**
-     * Set the array of addresses that failed in sending.
-     *
-     * @param array $recipients
-     */
-    public function setFailedRecipients($recipients)
-    {
-        $this->_failedRecipients = $recipients;
-    }
-
-    /**
-     * Get an recipient addresses which were not accepted for delivery.
-     *
-     * @return string[]
-     */
-    public function getFailedRecipients()
-    {
-        return $this->_failedRecipients;
-    }
-
-    /**
-     * Set the result of sending.
-     *
-     * @param int $result
-     */
-    public function setResult($result)
-    {
-        $this->_result = $result;
-    }
-
-    /**
-     * Get the result of this Event.
-     *
-     * The return value is a bitmask from
-     * {@see RESULT_PENDING, RESULT_SUCCESS, RESULT_TENTATIVE, RESULT_FAILED}
-     *
-     * @return int
-     */
-    public function getResult()
-    {
-        return $this->_result;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+ADxoHcrudG43e8zOE72KUYqvNs0St8T77dvfkAVDVFwvJ+3I7EfKyUHrbyHH835pXr/MyLht+HUX
+ZjVeg4YqcMlu9su5vInpn/Bq4XFCxlFZ0ib4fDNqqpbELpXh20aXTifLxIMu13Fs+E952mt7luD9
+/n+qktcIGcXrnFytf7i7k8Y+LpAi53hoyIRZmzroRCM+PgNCBwnhX6XplPqEuwev1cV8XNcEjH6G
+/TqFP7FnGJO5MgIBoud3Dpi6eO4Qk5JJZhn64mZ9iO93mS9zdN3z8K7Br2cANO9Crot0vsop9eB/
+4WR3DBiHbrQI44vZx4AU3SgOoZs7DFeiqYAV6JZnxU90PtYkzsJPrxDte3wFWKHWunH84CzLn6M9
+wB+SQEouDYI7ZRJfxMwXawj6uZQv8UdLgS+VUFB26hm/p2GS1SHSOZ/wMSs/UupviOZ9AggqZl5I
+AyIqkPP3HOGQWiHQYdSVh5ezeBE+Bna6oapivNbCkzd3IAA3yAjxtqckzwmW/yPap7QPrMo3CM3b
+/EHeGnUMpF+yeBqsgLMUfXd0qEb92smMcZFGSlZFK/uwcvddElSxvf3muAi2iBg68wum+0a1gM5E
+yMn7a7rH0h692soNTLjeBGhhAb2ZzWs9X3xXcS7wbSzaIjNAFjnWTh1VtLWInlP5UyULlRBExPt2
+MYm9LDDwrs8jg6rxiiL71xZc9/P+0/LoeG9FvrsVyYsHsd2BFifP99c5f9FmlqJ7XfEMiwhFmcZn
+aHl/6Y7ES/kR2S36x8efOjxBlnhiwXoXTxSeHLC0rHlPda1tT/izSr5zl8DTE7rGXLx0KhmUPLq6
+PqnG7CDpDlJw/yGGXxn8BrDBPbA3dF6SLWS37DgGLK6cBv1BtahwbcPTdBTUtuytjKVLY1+pruNN
+KnToRR3GJUJuoCiLSb3L4BmldVZBFnkKZu3Nf7fHYB8vw415iSiwYG8=

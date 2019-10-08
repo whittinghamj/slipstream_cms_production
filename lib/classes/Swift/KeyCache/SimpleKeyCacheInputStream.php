@@ -1,127 +1,63 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Writes data to a KeyCache using a stream.
- *
- * @author Chris Corbyn
- */
-class Swift_KeyCache_SimpleKeyCacheInputStream implements Swift_KeyCache_KeyCacheInputStream
-{
-    /** The KeyCache being written to */
-    private $_keyCache;
-
-    /** The nsKey of the KeyCache being written to */
-    private $_nsKey;
-
-    /** The itemKey of the KeyCache being written to */
-    private $_itemKey;
-
-    /** A stream to write through on each write() */
-    private $_writeThrough = null;
-
-    /**
-     * Set the KeyCache to wrap.
-     *
-     * @param Swift_KeyCache $keyCache
-     */
-    public function setKeyCache(Swift_KeyCache $keyCache)
-    {
-        $this->_keyCache = $keyCache;
-    }
-
-    /**
-     * Specify a stream to write through for each write().
-     *
-     * @param Swift_InputByteStream $is
-     */
-    public function setWriteThroughStream(Swift_InputByteStream $is)
-    {
-        $this->_writeThrough = $is;
-    }
-
-    /**
-     * Writes $bytes to the end of the stream.
-     *
-     * @param string                $bytes
-     * @param Swift_InputByteStream $is    optional
-     */
-    public function write($bytes, Swift_InputByteStream $is = null)
-    {
-        $this->_keyCache->setString(
-            $this->_nsKey, $this->_itemKey, $bytes, Swift_KeyCache::MODE_APPEND
-            );
-        if (isset($is)) {
-            $is->write($bytes);
-        }
-        if (isset($this->_writeThrough)) {
-            $this->_writeThrough->write($bytes);
-        }
-    }
-
-    /**
-     * Not used.
-     */
-    public function commit()
-    {
-    }
-
-    /**
-     * Not used.
-     */
-    public function bind(Swift_InputByteStream $is)
-    {
-    }
-
-    /**
-     * Not used.
-     */
-    public function unbind(Swift_InputByteStream $is)
-    {
-    }
-
-    /**
-     * Flush the contents of the stream (empty it) and set the internal pointer
-     * to the beginning.
-     */
-    public function flushBuffers()
-    {
-        $this->_keyCache->clearKey($this->_nsKey, $this->_itemKey);
-    }
-
-    /**
-     * Set the nsKey which will be written to.
-     *
-     * @param string $nsKey
-     */
-    public function setNsKey($nsKey)
-    {
-        $this->_nsKey = $nsKey;
-    }
-
-    /**
-     * Set the itemKey which will be written to.
-     *
-     * @param string $itemKey
-     */
-    public function setItemKey($itemKey)
-    {
-        $this->_itemKey = $itemKey;
-    }
-
-    /**
-     * Any implementation should be cloneable, allowing the clone to access a
-     * separate $nsKey and $itemKey.
-     */
-    public function __clone()
-    {
-        $this->_writeThrough = null;
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+maTsl0Aa4teTyDsjdzCZCG==

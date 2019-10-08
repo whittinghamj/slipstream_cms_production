@@ -1,65 +1,53 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Handles Quoted Printable (Q) Header Encoding in Swift Mailer.
- *
- * @author Chris Corbyn
- */
-class Swift_Mime_HeaderEncoder_QpHeaderEncoder extends Swift_Encoder_QpEncoder implements Swift_Mime_HeaderEncoder
-{
-    /**
-     * Creates a new QpHeaderEncoder for the given CharacterStream.
-     *
-     * @param Swift_CharacterStream $charStream to use for reading characters
-     */
-    public function __construct(Swift_CharacterStream $charStream)
-    {
-        parent::__construct($charStream);
-    }
-
-    protected function initSafeMap()
-    {
-        foreach (array_merge(
-            range(0x61, 0x7A), range(0x41, 0x5A),
-            range(0x30, 0x39), array(0x20, 0x21, 0x2A, 0x2B, 0x2D, 0x2F)
-        ) as $byte) {
-            $this->_safeMap[$byte] = chr($byte);
-        }
-    }
-
-    /**
-     * Get the name of this encoding scheme.
-     *
-     * Returns the string 'Q'.
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Q';
-    }
-
-    /**
-     * Takes an unencoded string and produces a QP encoded string from it.
-     *
-     * @param string $string          string to encode
-     * @param int    $firstLineOffset optional
-     * @param int    $maxLineLength   optional, 0 indicates the default of 76 chars
-     *
-     * @return string
-     */
-    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
-    {
-        return str_replace(array(' ', '=20', "=\r\n"), array('_', '_', "\r\n"),
-            parent::encodeString($string, $firstLineOffset, $maxLineLength)
-        );
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
+S3RWX9tbGUCeWIykrhRRplbqSngWJyLvQ0==

@@ -1,183 +1,88 @@
-<?php
-
-/*
- * This file is part of SwiftMailer.
- * (c) 2004-2009 Chris Corbyn
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-/**
- * Redundantly and rotationally uses several Transports when sending.
- *
- * @author Chris Corbyn
- */
-class Swift_Transport_LoadBalancedTransport implements Swift_Transport
-{
-    /**
-     * Transports which are deemed useless.
-     *
-     * @var Swift_Transport[]
-     */
-    private $_deadTransports = array();
-
-    /**
-     * The Transports which are used in rotation.
-     *
-     * @var Swift_Transport[]
-     */
-    protected $_transports = array();
-
-    /**
-     * The Transport used in the last successful send operation.
-     *
-     * @var Swift_Transport
-     */
-    protected $_lastUsedTransport = null;
-
-    // needed as __construct is called from elsewhere explicitly
-    public function __construct()
-    {
-    }
-
-    /**
-     * Set $transports to delegate to.
-     *
-     * @param Swift_Transport[] $transports
-     */
-    public function setTransports(array $transports)
-    {
-        $this->_transports = $transports;
-        $this->_deadTransports = array();
-    }
-
-    /**
-     * Get $transports to delegate to.
-     *
-     * @return Swift_Transport[]
-     */
-    public function getTransports()
-    {
-        return array_merge($this->_transports, $this->_deadTransports);
-    }
-
-    /**
-     * Get the Transport used in the last successful send operation.
-     *
-     * @return Swift_Transport
-     */
-    public function getLastUsedTransport()
-    {
-        return $this->_lastUsedTransport;
-    }
-
-    /**
-     * Test if this Transport mechanism has started.
-     *
-     * @return bool
-     */
-    public function isStarted()
-    {
-        return count($this->_transports) > 0;
-    }
-
-    /**
-     * Start this Transport mechanism.
-     */
-    public function start()
-    {
-        $this->_transports = array_merge($this->_transports, $this->_deadTransports);
-    }
-
-    /**
-     * Stop this Transport mechanism.
-     */
-    public function stop()
-    {
-        foreach ($this->_transports as $transport) {
-            $transport->stop();
-        }
-    }
-
-    /**
-     * Send the given Message.
-     *
-     * Recipient/sender data will be retrieved from the Message API.
-     * The return value is the number of recipients who were accepted for delivery.
-     *
-     * @param Swift_Mime_Message $message
-     * @param string[]           $failedRecipients An array of failures by-reference
-     *
-     * @return int
-     */
-    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
-    {
-        $maxTransports = count($this->_transports);
-        $sent = 0;
-        $this->_lastUsedTransport = null;
-
-        for ($i = 0; $i < $maxTransports
-            && $transport = $this->_getNextTransport(); ++$i) {
-            try {
-                if (!$transport->isStarted()) {
-                    $transport->start();
-                }
-                if ($sent = $transport->send($message, $failedRecipients)) {
-                    $this->_lastUsedTransport = $transport;
-                    break;
-                }
-            } catch (Swift_TransportException $e) {
-                $this->_killCurrentTransport();
-            }
-        }
-
-        if (count($this->_transports) == 0) {
-            throw new Swift_TransportException(
-                'All Transports in LoadBalancedTransport failed, or no Transports available'
-                );
-        }
-
-        return $sent;
-    }
-
-    /**
-     * Register a plugin.
-     *
-     * @param Swift_Events_EventListener $plugin
-     */
-    public function registerPlugin(Swift_Events_EventListener $plugin)
-    {
-        foreach ($this->_transports as $transport) {
-            $transport->registerPlugin($plugin);
-        }
-    }
-
-    /**
-     * Rotates the transport list around and returns the first instance.
-     *
-     * @return Swift_Transport
-     */
-    protected function _getNextTransport()
-    {
-        if ($next = array_shift($this->_transports)) {
-            $this->_transports[] = $next;
-        }
-
-        return $next;
-    }
-
-    /**
-     * Tag the currently used (top of stack) transport as dead/useless.
-     */
-    protected function _killCurrentTransport()
-    {
-        if ($transport = array_pop($this->_transports)) {
-            try {
-                $transport->stop();
-            } catch (Exception $e) {
-            }
-            $this->_deadTransports[] = $transport;
-        }
-    }
-}
+<?php //004fb
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+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
