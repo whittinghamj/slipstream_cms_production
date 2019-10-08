@@ -1128,6 +1128,7 @@ function take_medication($licensekey, $localkey='')
         if (!is_array($results)) {
             die("Invalid License Server Response");
         }
+        error_log(print_r($results, true));
         if ($results['md5hash']) {
             if ($results['md5hash'] != md5($licensing_secret_key . $check_token)) {
                 $results['status'] = "Invalid";
