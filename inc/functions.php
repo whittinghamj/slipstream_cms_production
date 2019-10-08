@@ -1205,10 +1205,12 @@ function sanity_check()
                     $bits = explode(";", $addon);
                     error_log(print_r($bits, true));
 
-                    $bits = explode("=", $bits);
-                    error_log(print_r($bits, true));
-                    foreach($bits as $key => $value){
-                        $whmcs_check['addon_servers'][$addon_count][$key] = $value;
+                    foreach ($bits as $bit) {
+                        $bits = explode("=", $bit);
+                        error_log(print_r($bits, true));
+                        foreach($bits as $key => $value){
+                            $whmcs_check['addon_servers'][$addon_count][$key] = $value;
+                        }
                     }
 
                     $addon_count++;
