@@ -1196,7 +1196,7 @@ function sanity_check()
             $whmcs_check = take_medication($license_key, '');
             
             // check for addons (load balancers)
-            if(isset($whmcs_check['addons'])){
+            if(isset($whmcs_check['addons'] && !empty($whmcs_check['addons']))){
                 // error_log("Multiple Servers Found");
                 $addon_servers = array();
 
@@ -1211,13 +1211,8 @@ function sanity_check()
                     
                     $addon_count++;
                 }
-            }
-            // error_log(print_r($addon_servers, true));
 
-            error_log("License Status: ".$whmcs_check['status']);
-
-            // check if any load balancers are not active
-            if(is_array($addon_servers)){
+                // check if any load balancers are not active
                 foreach($addon_servers as $addon_server){
                     if($addon_server != 'Active'){
                         $global_settings['lockdown'] = true;
@@ -1226,6 +1221,9 @@ function sanity_check()
                     }
                 }
             }
+            // error_log(print_r($addon_servers, true));
+
+            // error_log("License Status: ".$whmcs_check['status']);
 
             switch ($whmcs_check['status']) {
                 case "Active":
