@@ -1210,7 +1210,7 @@ function sanity_check()
                     foreach ($bits as $bit) {
                         $byte = explode("=", $bit);                        
                         foreach($byte as $golden_egg){
-                            $addon_servers[$addon_count][$golden_egg[0]] = $golden_egg[1];
+                            $addon_servers[$addon_count][] = $golden_egg[1];
                         }
                     }
 
