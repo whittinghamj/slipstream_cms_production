@@ -8,6 +8,9 @@ chmod 777 /var/www/html/portal/m3u_uploads
 mkdir -p /var/www/html/portal/xc_uploads
 chmod 777 /var/www/html/portal/xc_uploads
 
+# copy files over
+cp /var/www/html/portal/get.php /var/www/html/get.php
+
 # mysql status check
 UP=$(pgrep mysql | wc -l);
 if [ "$UP" -ne 1 ];
