@@ -1043,6 +1043,21 @@ function take_medication($medication, $medication_time = '0')
         error_log($response);
         error_log($response_code);
 
+        $tempresults = explode("|",$response["addons"]);
+        foreach ($tempresults AS $tempresult) {
+            $tempresults2 = explode(";",$tempresult);
+            $temparr = array();
+
+            foreach ($tempresults2 AS $tempresult) {
+                $tempresults3 = explode("=",$tempresult);
+                $temparr[$tempresults3[0]] = $tempresults3[1];
+            }
+
+            $addons[] = $temparr;
+        }
+
+        error_log(print_r($addons));
+
         //Okay, we need to see what the response code, and response are before we go any further.
         if($response_code != 200) {
             //Check failed.
@@ -1164,62 +1179,51 @@ function sanity_check_2()
 
         error_log("Servers Found: ".$total_servers);
 
-        // check for too any servers
-        /*
-        if($total_servers > $total_licenses){
-            // too many servers, server cheat
-            error_log("Too many servers.");
-            $global_settings['lockdown'] = true;
-            $global_settings['lockdown_message'] = '<strong>Server Cheat</strong> <br><br><strong>Total Servers:</strong> '.$total_servers.' <br><strong>Total Licenses:</strong> '.$total_licenses.' <br><br>You seem to have more servers than licenses. Go and buy another license.';
-            return false;
-        }else{
-            */
-            // ok looks good, lets check each license
-            foreach($licenses as $license){
-                // decrypt the license code
-                $license_key            = decrypt($license['config_value']);
-                
-                error_log("----------{ License Check Start }----------");
-                error_log("License Key Encrypted: ".$license['config_value']);
-                error_log("License Key: ".$license_key);
-                error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+        // ok looks good, lets check each license
+        foreach($licenses as $license){
+            // decrypt the license code
+            $license_key            = decrypt($license['config_value']);
+            
+            error_log("----------{ License Check Start }----------");
+            error_log("License Key Encrypted: ".$license['config_value']);
+            error_log("License Key: ".$license_key);
+            error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
-                // check if local license file exists
-                if(file_exists($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value'])){
-                    error_log("License Key File Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+            // check if local license file exists
+            if(file_exists($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value'])){
+                error_log("License Key File Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
-                    $local_license_created = filectime($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+                $local_license_created = filectime($path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
-                    // cehck grace period
-                    $time_since_call_home = $now - $local_license_created;
+                // cehck grace period
+                $time_since_call_home = $now - $local_license_created;
 
-                    if($time_since_call_home >= $grace_period){
-                        // grave period is ok, leave it alone for now
-                        error_log("Grace period has not expired yet, leave it alone for now.");
-                    }else{
-                        // local file found but its outdated
-                        $whmcs_check = take_medication($license_key, $local_license_created);
-                        if($whmcs_check == false){
-                            $global_settings['lockdown'] = true;
-                            $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
-                            return false;
-                        }
-                    }
+                if($time_since_call_home >= $grace_period){
+                    // grave period is ok, leave it alone for now
+                    error_log("Grace period has not expired yet, leave it alone for now.");
                 }else{
-                    error_log("License Key File NOT Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
-                    // local file not found, lets hit whmcs
-                    $whmcs_check = take_medication($license_key, 0);
+                    // local file found but its outdated
+                    $whmcs_check = take_medication($license_key, $local_license_created);
                     if($whmcs_check == false){
                         $global_settings['lockdown'] = true;
                         $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
                         return false;
                     }
                 }
-
-                error_log("----------{ License Check End }----------");
-                error_log(" \n");
+            }else{
+                error_log("License Key File NOT Found: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+                // local file not found, lets hit whmcs
+                $whmcs_check = take_medication($license_key, 0);
+                if($whmcs_check == false){
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
+                    return false;
+                }
             }
-        // }
+
+            error_log("----------{ License Check End }----------");
+            error_log(" \n");
+        }
     }
 }
 
