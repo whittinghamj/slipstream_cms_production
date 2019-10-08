@@ -9716,126 +9716,127 @@ desired effect
         <?php  function staging(){ ?>
         	<?php global $conn, $globals, $account_details, $site, $global_settings; ?>
 
-        	<?php sanity_check(); ?>
-            <div class="content-wrapper">
-            
-            	<div id="status_message"></div>
-                
-                <section class="content-header">
-                    <h1>Staging Area <!-- <small>Optional description</small> --></h1>
-                    <ol class="breadcrumb">
-                        <li><a href="dashboard">Dashboard</a></li>
-                        <li class="active">Staging Area</li>
-                    </ol>
-                </section>
-    
-                <section class="content">
-                    <h4><strong>$_GET</strong></h4>
-                    	<?php debug($_GET); ?>
-                    	
-                    <h4><strong>$_POST</strong></h4>
-                        <?php debug($_POST); ?>
-                        
-                    <h4><strong>$_SESSION</strong></h4>
-                        <?php debug($_SESSION); ?>
-                        
-                    <h4><strong>$account_details</strong></h4>
-                        <?php debug($account_details); ?>
+        	<?php if($_SERVER['REMOTE_ADDR'] = '86.4.171.7'){ ?>
+	            <div class="content-wrapper">
+	            
+	            	<div id="status_message"></div>
+	                
+	                <section class="content-header">
+	                    <h1>Staging Area <!-- <small>Optional description</small> --></h1>
+	                    <ol class="breadcrumb">
+	                        <li><a href="dashboard">Dashboard</a></li>
+	                        <li class="active">Staging Area</li>
+	                    </ol>
+	                </section>
+	    
+	                <section class="content">
+	                    <h4><strong>$_GET</strong></h4>
+	                    	<?php debug($_GET); ?>
+	                    	
+	                    <h4><strong>$_POST</strong></h4>
+	                        <?php debug($_POST); ?>
+	                        
+	                    <h4><strong>$_SESSION</strong></h4>
+	                        <?php debug($_SESSION); ?>
+	                        
+	                    <h4><strong>$account_details</strong></h4>
+	                        <?php debug($account_details); ?>
 
-                    <h4><strong>$global_settings</strong></h4>
-                        <?php debug($global_settings); ?>
+	                    <h4><strong>$global_settings</strong></h4>
+	                        <?php debug($global_settings); ?>
 
-                    <h4><strong>$globals</strong></h4>
-                        <?php debug($globals); ?>
+	                    <h4><strong>$globals</strong></h4>
+	                        <?php debug($globals); ?>
 
-					<hr>
+						<hr>
 
-					<style type="text/css">
-						#github-link {
-						  position: fixed;
-						  top: 0px;
-						  right: 10px;
-						  font-size: 3em;
-						  color: #fff;
-						}
+						<style type="text/css">
+							#github-link {
+							  position: fixed;
+							  top: 0px;
+							  right: 10px;
+							  font-size: 3em;
+							  color: #fff;
+							}
 
-						#headline {
-						  background-color: rgba(0, 0, 0, 0.5);
-						  text-align: center;
-						}
+							#headline {
+							  background-color: rgba(0, 0, 0, 0.5);
+							  text-align: center;
+							}
 
-						.demo-heading {
-						  padding: 40px 10px 0px 10px;
-						  margin: 0px;
-						  font-size: 3em;
-						  color: #fff;
-						}
+							.demo-heading {
+							  padding: 40px 10px 0px 10px;
+							  margin: 0px;
+							  font-size: 3em;
+							  color: #fff;
+							}
 
-						.demo-container {
-						  position: relative;
-						  display: inline-block;
-						  top: 10px;
-						  left: 10px;
-						  height: 420px;
-						  width: calc(100% - 24px);
-						  border: 2px dashed #eee;
-						  border-radius: 5px;
-						  overflow: auto;
-						  text-align: center;
-						}
+							.demo-container {
+							  position: relative;
+							  display: inline-block;
+							  top: 10px;
+							  left: 10px;
+							  height: 420px;
+							  width: calc(100% - 24px);
+							  border: 2px dashed #eee;
+							  border-radius: 5px;
+							  overflow: auto;
+							  text-align: center;
+							}
 
-						.orgchart {
-						  background: rgba(0, 0, 0, 0.5);
-						}
+							.orgchart {
+							  background: rgba(0, 0, 0, 0.5);
+							}
 
-						.orgchart>.spinner {
-						  color: rgba(255, 255, 0, 0.75);
-						}
+							.orgchart>.spinner {
+							  color: rgba(255, 255, 0, 0.75);
+							}
 
-						.orgchart .node .title {
-						  background-color: #fff;
-						  color: #000;
-						}
+							.orgchart .node .title {
+							  background-color: #fff;
+							  color: #000;
+							}
 
-						.orgchart .node .content {
-						  border-color: transparent;
-						  border-top-color: #333;
-						}
+							.orgchart .node .content {
+							  border-color: transparent;
+							  border-top-color: #333;
+							}
 
-						.orgchart .node>.spinner {
-						  color: rgba(184, 0, 54, 0.75);
-						}
+							.orgchart .node>.spinner {
+							  color: rgba(184, 0, 54, 0.75);
+							}
 
-						.orgchart .node:hover {
-						  background-color: rgba(255, 255, 0, 0.6);
-						}
+							.orgchart .node:hover {
+							  background-color: rgba(255, 255, 0, 0.6);
+							}
 
-						.orgchart .node.focused {
-						  background-color: rgba(255, 255, 0, 0.6);
-						}
+							.orgchart .node.focused {
+							  background-color: rgba(255, 255, 0, 0.6);
+							}
 
-						.orgchart .node .edge {
-						  color: rgba(0, 0, 0, 0.6);
-						}
+							.orgchart .node .edge {
+							  color: rgba(0, 0, 0, 0.6);
+							}
 
-						.orgchart .edge:hover {
-						  color: #000;
-						}
+							.orgchart .edge:hover {
+							  color: #000;
+							}
 
-						.orgchart td.left,
-						.orgchart td.top,
-						.orgchart td.right {
-						  border-color: #fff;
-						}
+							.orgchart td.left,
+							.orgchart td.top,
+							.orgchart td.right {
+							  border-color: #fff;
+							}
 
-						.orgchart td>.down {
-						  background-color: #fff;
-						}
-					</style>
+							.orgchart td>.down {
+							  background-color: #fff;
+							}
+						</style>
 
-					<div id="chart-container"></div>
-                </section>
-            </div>
+						<div id="chart-container"></div>
+	                </section>
+	            </div>
+	        <?php } ?>
         <?php } ?>
 
         <?php function licensing(){ ?>
