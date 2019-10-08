@@ -1017,7 +1017,6 @@ function take_medication($medication, $medication_time = '0')
             //"ip"          => $bottle_address,
             "dir"         => dirname(__FILE__),
             "check_token" => $token_check,
-            'responsetype' => 'json'
         );
 
         $query_string = "";
@@ -1040,11 +1039,8 @@ function take_medication($medication, $medication_time = '0')
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
-        $results = simplexml_load_string($response);
-
         error_log("============================== WHMCS Answer ==================================");
         error_log($response);
-        error_log(print_r($response));
         error_log($response_code);
 
         
