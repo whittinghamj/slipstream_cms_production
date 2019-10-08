@@ -1169,7 +1169,7 @@ function sanity_check()
     $licenses           = $query->fetchAll(PDO::FETCH_ASSOC);
     $total_licenses     = count($licenses);
 
-    error_log(" \n");
+    // error_log(" \n");
     // error_log("Licenses Found: ".$total_licenses);
 
     if($total_licenses == 0){
@@ -1190,9 +1190,9 @@ function sanity_check()
             $license_key            = decrypt($license['config_value']);
             
             error_log("----------{ License Check Start }----------");
-            error_log("License Key Encrypted: ".$license['config_value']);
-            error_log("License Key: ".$license_key);
-            error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
+            // error_log("License Key Encrypted: ".$license['config_value']);
+            // error_log("License Key: ".$license_key);
+            // error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
 
             // local file found but its outdated
             $whmcs_check = take_medication($license_key, '');
@@ -1218,11 +1218,21 @@ function sanity_check()
                 foreach($addon_servers as $addon_server){
                     if($addon_server != 'Active'){
                         $global_settings['lockdown'] = true;
-                        $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>At least one of your licenses are marked as '.$addon_server.'. Head over to the <a href="http://clients.deltacolo.com">biling portal</a> to resolve this issue.';
+                        $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>At least one of your load balancer licenses is marked as '.$addon_server.'. Head over to the Support &amp; Billing to resolve this issue.';
                         return false;
                     }
                 }
+
+                $total_licenses = (count($addon_servers) + 1);
             }
+
+            // lets check servers vs licenses
+            if($total_servers > $total_licenses){
+                $global_settings['lockdown'] = true;
+                $global_settings['lockdown_message'] = '<strong>Too Many Servers</strong> <br><br>You have more servers than licenses. Head over to the Support &amp; Billing to order more licenses.';
+                return false;
+            }
+
             // error_log(print_r($addon_servers, true));
 
             // error_log("License Status: ".$whmcs_check['status']);
