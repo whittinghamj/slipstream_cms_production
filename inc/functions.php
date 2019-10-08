@@ -1203,6 +1203,7 @@ function sanity_check()
                 $addon_count = 0;
                 foreach($addons as $addon){
                     $bits = explode(";", $addon);
+                    error_log(print_r($bits, true));
                     $whmcs_check['addon_servers'][$addon_count] = $bits;
                     $addon_count++;
                 }
