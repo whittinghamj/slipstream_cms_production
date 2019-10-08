@@ -1216,7 +1216,7 @@ function sanity_check()
                     error_log("Grace period has not expired yet, leave it alone for now.");
                 }else{
                     // local file found but its outdated
-                    $whmcs_check = take_medication($license_key, $local_license_created);
+                    $whmcs_check = take_medication($license_key, '');
                     
                     error_log("License status: ".$whmcs_check['status']);
 
