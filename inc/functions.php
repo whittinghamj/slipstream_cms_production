@@ -1163,6 +1163,7 @@ function take_medication($licensekey, $localkey='')
             }
         }
         $results['remotecheck'] = true;
+        error_log(print_r($results, true));
     }
     unset($postfields,$data,$matches,$whmcsurl,$licensing_secret_key,$checkdate,$usersip,$localkeydays,$allowcheckfaildays,$md5hash);
     return $results;
