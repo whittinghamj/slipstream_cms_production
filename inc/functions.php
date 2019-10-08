@@ -991,7 +991,7 @@ function get_medication($medication)
     return false;
 }
 
-function take_medication($medication, $medication_time = '0')
+function take_medication($license_key, $medication_time = '0')
 {
     global $conn, $global_settings;
 
@@ -1006,13 +1006,13 @@ function take_medication($medication, $medication_time = '0')
         $secret_key            = "admin1372";
         $local_key_days        = 15;
         $allowed_failed_checks = 3;
-        $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $medication);
+        $token_check           = time() . md5(mt_rand(1000000000, 9999999999.0) . $license_key);
         $current_date          = date('Ymd');
 
         $responseCode = 0;
 
         $post_fields = array(
-            "licensekey"  => $medication,
+            "licensekey"  => $license_key,
             //"domain"      => $bottle_name,
             //"ip"          => $bottle_address,
             "dir"         => dirname(__FILE__),
@@ -1039,20 +1039,31 @@ function take_medication($medication, $medication_time = '0')
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
+        // make sure we got a HTTP/200 status code back
+        if($response_code != 200) {
+            //Check failed.
+            $global_settings['lockdown'] == true;
+            $global_settings['lockdown_message'] = '<strong>Billing Portal Offline</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
+            return false;
+        }
+
         error_log("============================== WHMCS Answer ==================================");
         // error_log($response);
         // error_log($response_code);
 
-
         $xml        = "<?xml version='1.0'?><response>".$response."</response>";
-        
-        // error_log($xml);
-        
-        $xml        = simplexml_load_string($xml);
-        $json       = json_encode($xml);
-        $array      = json_decode($json, true);
+                
+        $xml                = simplexml_load_string($xml);
+        $json             = json_encode($xml);
+        $whmcs_reply      = json_decode($json, true);
 
-        error_log("License Status: ".$array['status']);
+        error_log("License Status: ".$whmcs_reply['status']);
+
+        if(empty($whmcs_reply['email'])){
+            $global_settings['lockdown'] == true;
+            $global_settings['lockdown_message'] = '<strong>Invalid License</strong> <br><br>License: '.$license_key.' <br><br>Check you entered your license correctly and try again.';
+            return false;
+        }
         
         //Okay, we need to see what the response code, and response are before we go any further.
         if($response_code != 200) {
@@ -1062,7 +1073,7 @@ function take_medication($medication, $medication_time = '0')
         }
     }else{
         $global_settings['lockdown'] == true;
-        $global_settings['lockdown_message'] = '<strong>Billing Portal Office</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
+        $global_settings['lockdown_message'] = '<strong>Billing Portal Offline</strong> <br><br>Unable to contact the billing portal. Check the servers network connection and try again.';
         return false;
     }
 
