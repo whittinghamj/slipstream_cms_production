@@ -336,8 +336,8 @@ function common_xpcom(){
 
         _debug('stb.portal_path:', this.portal_path);
 	
-        // this.ajax_loader = this.portal_protocol+'://'+this.portal_ip+'/portal.php';
-        this.ajax_loader = 'http://mag.slipstreamiptv.com:1202/portal.php';
+        this.ajax_loader = this.portal_protocol+'://'+this.portal_ip+'/portal.php';
+        // this.ajax_loader = 'http://mag.slipstreamiptv.com:1202/portal.php';
 	
         _debug('stb.ajax_loader:', this.ajax_loader);
     };
