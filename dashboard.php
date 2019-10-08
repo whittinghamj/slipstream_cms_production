@@ -788,7 +788,7 @@ desired effect
 
 				// staging
 				case "staging":
-					if($_SERVER['REMOTE_ADDR'] == '86.4.171.8'){
+					if($_SERVER['REMOTE_ADDR'] == '86.4.171.7'){
 						staging();
 					}else{
 						home();
