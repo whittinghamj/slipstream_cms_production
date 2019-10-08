@@ -1217,7 +1217,7 @@ function sanity_check()
             error_log("License Status: ".$whmcs_check['status']);
 
             // check if any load balancers are not active
-            if(is_array($addon_servers){
+            if(is_array($addon_servers)){
                 foreach($addon_servers as $addon_server){
                     if($addon_server != 'Active'){
                         $global_settings['lockdown'] = true;
