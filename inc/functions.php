@@ -1197,7 +1197,7 @@ function sanity_check()
             
             // check for addons (load balancers)
             if(isset($whmcs_check['addons'])){
-                error_log("Multiple Servers Found");
+                // error_log("Multiple Servers Found");
                 $addon_servers = array();
 
                 $addons = explode("|", $whmcs_check['addons']);
@@ -1205,16 +1205,25 @@ function sanity_check()
                 $addon_count = 0;
                 foreach($addons as $addon){
                     $bits = explode(";", $addon);
-                    error_log(print_r($bits, true));
+                    // error_log(print_r($bits, true));
 
                     $addon_servers[] = str_replace("status=", "", $bits[2]);
                     
                     $addon_count++;
                 }
             }
-            error_log(print_r($addon_servers, true));
+            // error_log(print_r($addon_servers, true));
 
-            error_log("License status: ".$whmcs_check['status']);
+            error_log("License Status: ".$whmcs_check['status']);
+
+            // check if any load balancers are not active
+            foreach($addon_servers as $addon_server){
+                if($addon_server != 'Active'){
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>License Error</strong> <br><br>At least one of your licenses are marked as '.$addon_server.'. Head over to the <a href="http://clients.deltacolo.com">biling portal</a> to resolve this issue.';
+                    return false;
+                }
+            }
 
             switch ($whmcs_check['status']) {
                 case "Active":
