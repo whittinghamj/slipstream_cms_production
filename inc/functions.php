@@ -1237,7 +1237,7 @@ function sanity_check()
                     fwrite($fp,$localkeydata);
                     fclose($fp);
 
-                    $global_settings['lockdown'] = false;
+                    $global_settings['lockdown'] = true;
                     break;
                 case "Invalid":
                     $global_settings['lockdown'] = true;
