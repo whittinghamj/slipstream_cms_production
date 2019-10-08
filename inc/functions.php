@@ -1058,6 +1058,7 @@ function take_medication($license_key, $medication_time = '0')
         $whmcs_reply      = json_decode($json, true);
 
         error_log("License Status: ".$whmcs_reply['status']);
+        error_log("License Email: ".$whmcs_reply['email']);
 
         if(empty($whmcs_reply['email'])){
             $global_settings['lockdown'] == true;
@@ -1212,8 +1213,8 @@ function sanity_check_2()
                     // local file found but its outdated
                     $whmcs_check = take_medication($license_key, $local_license_created);
                     if($whmcs_check == false){
-                        $global_settings['lockdown'] = true;
-                        $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
+                        // $global_settings['lockdown'] = true;
+                        // $global_settings['lockdown_message'] = '<strong>Billing Issue</strong> <br><br>Please head over to the <a href="https://clients.deltacolo.com">billing section</a> and resolve any outstanding billing issues.';
                         return false;
                     }
                 }
