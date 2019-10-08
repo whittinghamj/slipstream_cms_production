@@ -1016,7 +1016,8 @@ function take_medication($medication, $medication_time = '0')
             //"domain"      => $bottle_name,
             //"ip"          => $bottle_address,
             "dir"         => dirname(__FILE__),
-            "check_token" => $token_check
+            "check_token" => $token_check,
+            'responsetype' => 'json'
         );
 
         $query_string = "";
