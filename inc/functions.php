@@ -1236,6 +1236,8 @@ function sanity_check()
                     $fp           = fopen($path_to_file,"wb");
                     fwrite($fp,$localkeydata);
                     fclose($fp);
+
+                    $global_settings['lockdown'] = false;
                     break;
                 case "Invalid":
                     $global_settings['lockdown'] = true;
