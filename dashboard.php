@@ -15,6 +15,10 @@ include('inc/db.php');
 include('inc/global_vars.php');
 include('inc/functions.php');
 
+if(get('c') != 'licensing'){
+	sanity_check();
+}
+
 // start timer for page loaded var
 $time = microtime();
 $time = explode(' ', $time);

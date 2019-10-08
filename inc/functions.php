@@ -1182,14 +1182,14 @@ function sanity_check()
         $servers        = $query->fetchAll(PDO::FETCH_ASSOC);
         $total_servers  = count($servers);
 
-        error_log("Servers Found: ".$total_servers);
+        // error_log("Servers Found: ".$total_servers);
 
         // ok looks good, lets check each license
         foreach($licenses as $license){
             // decrypt the license code
             $license_key            = decrypt($license['config_value']);
             
-            error_log("----------{ License Check Start }----------");
+            // error_log("----------{ License Check Start }----------");
             // error_log("License Key Encrypted: ".$license['config_value']);
             // error_log("License Key: ".$license_key);
             // error_log("License Key File: ".$path_to_temp.DIRECTORY_SEPARATOR.$license['config_value']);
@@ -1233,7 +1233,7 @@ function sanity_check()
                 return false;
             }
 
-            error_log(print_r($whmcs_check, true));
+            // error_log(print_r($whmcs_check, true));
 
             // error_log("License Status: ".$whmcs_check['status']);
 
@@ -1273,8 +1273,8 @@ function sanity_check()
                     break;
             }
 
-            error_log("----------{ License Check End }----------");
-            error_log(" \n");
+            // error_log("----------{ License Check End }----------");
+            // error_log(" \n");
         }
     }
 }
