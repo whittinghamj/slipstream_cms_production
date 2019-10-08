@@ -10105,7 +10105,7 @@ desired effect
         <?php unset($_SESSION['alert']); ?>
     <?php } ?>
 
-    <?php if(!isset($_GET['c']) || $_GET['c'] == 'home') { ?>
+    <?php if(get('c') == 'home' || get('c') == 'staging') { ?>
     	<!-- jvectormap  -->
 		<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 		<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
