@@ -1198,8 +1198,8 @@ function sanity_check()
             // check for addons (load balancers)
             if(isset($whmcs_check['addons'])){
                 error_log("Multiple Servers Found");
-                $addon_servers array();
-                
+                $addon_servers = array();
+
                 $addons = explode("|", $whmcs_check['addons']);
                 // error_log(print_r($addons, true));
                 $addon_count = 0;
