@@ -788,7 +788,11 @@ desired effect
 
 				// staging
 				case "staging":
-					staging();
+					if($_SERVER['REMOTE_ADDR'] == '86.4.171.8'){
+						staging();
+					}else{
+						home();
+					}
 					break;
 
 				// downloads
@@ -9716,7 +9720,7 @@ desired effect
         <?php  function staging(){ ?>
         	<?php global $conn, $globals, $account_details, $site, $global_settings; ?>
 
-        	<?php if($_SERVER['REMOTE_ADDR'] == '86.4.171.8'){ ?>
+        	<?php if($_SERVER['REMOTE_ADDR'] == '86.4.171.7'){ ?>
 	            <div class="content-wrapper">
 	            
 	            	<div id="status_message"></div>
