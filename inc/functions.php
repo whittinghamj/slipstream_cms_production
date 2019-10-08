@@ -1029,12 +1029,6 @@ function take_medication($medication, $medication_time = '0')
         error_log($address);
         error_log($query_string);
 
-        $response = "<?xml version='1.0'?>".$response;
-
-        $response = simplexml_load_string($response);
-
-        error_log(print_r($response));
-
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $address);
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -1049,11 +1043,11 @@ function take_medication($medication, $medication_time = '0')
         error_log($response);
         error_log($response_code);
 
-        $p = xml_parser_create();
-        xml_parse_into_struct($p, $response, $vals, $index);
-        xml_parser_free($p);
-        error_log(print_r($index));
-        error_log(print_r($vals));
+        $response = "<?xml version='1.0'?>".$response;
+
+        $response = simplexml_load_string($response);
+
+        error_log(print_r($response));
         
         //Okay, we need to see what the response code, and response are before we go any further.
         if($response_code != 200) {
