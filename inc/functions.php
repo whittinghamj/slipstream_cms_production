@@ -1147,7 +1147,15 @@ function take_medication($licensekey, $localkey='')
             $results['localkey'] = $data_encoded;
 
             // check for addons (load balancers)
-            
+            if($results['addons']){
+                $addons = explode("|", $results['addons']);
+                $addon_count = 0;
+                foreach($addons as $addon){
+                    $bits = explode(";", $addon);
+                    $results['addon_servers'][$addon_count] = $bits;
+                    $addon_count++;
+                }
+            }
         }
         $results['remotecheck'] = true;
         error_log(print_r($results, true));
