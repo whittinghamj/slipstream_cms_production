@@ -1238,6 +1238,9 @@ function sanity_check()
                     fclose($fp);
                     break;
                 case "Invalid":
+                    $global_settings['lockdown'] = true;
+                    $global_settings['lockdown_message'] = '<strong>Invalid</strong> <br><br>'.$whmcs_check['message'];
+                    return false;
                     break;
                 case "Expired":
                     break;
