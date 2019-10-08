@@ -1199,6 +1199,7 @@ function sanity_check()
             if(isset($whmcs_check['addons'])){
                 error_log("Multiple Servers Found");
                 $addons = explode("|", $whmcs_check['addons']);
+                error_log(print_r($addons, true));
                 $addon_count = 0;
                 foreach($addons as $addon){
                     $bits = explode(";", $addon);
