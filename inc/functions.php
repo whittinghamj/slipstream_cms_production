@@ -1043,11 +1043,13 @@ function take_medication($medication, $medication_time = '0')
         error_log($response);
         error_log($response_code);
 
-        $response = "<?xml version='1.0'?>".$response;
+        require('/var/www/html/portal/xmlLib.php');
+    
+        $xml = new XMLToArray($response, array(), array( 'story' => '_array_' ), true, false );
+        error_log(print_r( $xml->getArray() ));
 
-        $response = simplexml_load_string($response);
-
-        error_log(print_r($response));
+        $array = new ArrayToXML( $xml->getArray(), $xml->getReplaced(), $xml->getAttributes() );
+        error_log(print_r( $array->getXML() ));
         
         //Okay, we need to see what the response code, and response are before we go any further.
         if($response_code != 200) {
