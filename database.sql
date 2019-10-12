@@ -32,10 +32,11 @@ CREATE TABLE `bouquets` (
   `id` bigint(30) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
   `name` varchar(100) NOT NULL DEFAULT '',
-  `streams` text DEFAULT NULL,
+  `streams` text,
   `old_xc_id` int(11) DEFAULT NULL,
+  `type` varchar(20) DEFAULT 'live',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
 
 
 
