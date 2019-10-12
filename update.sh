@@ -25,6 +25,8 @@ fi
 mysql -uroot -padmin1372 -e "ALTER TABLE slipstream_cms.bouquets ADD COLUMN IF NOT EXISTS \`type\` VARCHAR(20); ";
 mysql -uroot -padmin1372 -e "UPDATE slipstream_cms.bouquets SET \`type\` = 'live' WHERE \`type\` = '' OR \`type\` IS NULL; ";
 mysql -uroot -padmin1372 -e "DELETE FROM slipstream_cms.headend_servers WHERE user_id = '0'; ";
+mysql -uroot -padmin1372 -e "ALTER TABLE slipstream_cms.bouquets ADD COLUMN IF NOT EXISTS `type` VARCHAR(20); ";
+mysql -uroot -padmin1372 -e "UPDATE slipstream_cms.bouquets SET `type` = 'live' WHERE `type` = '' OR `type` IS NULL; ";
 
 # stalker cleanup
 old_stalker=$(cat /usr/local/nginx/conf/nginx.conf | grep '/home/xapicode/iptv_xapicode/wwwdir/_c;' | wc -l)
