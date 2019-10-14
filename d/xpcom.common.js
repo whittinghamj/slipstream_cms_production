@@ -990,12 +990,12 @@ function common_xpcom(){
             },
 
             function(result){
-                if (result != null){
+//                if (result != null){
                     this.profile = result;
                     //this.user_init(result);
                     this.get_localization();
 
-                }
+//                }
             },
 
             this
