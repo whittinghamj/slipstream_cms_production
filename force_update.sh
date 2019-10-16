@@ -1,7 +1,15 @@
 #!/bin/bash
 
-# bash git update script
+LOG=/tmp/slipstream.log
 
-git fetch --all
+killall nginx >> $LOG
 
-git reset --hard origin/master
+cd /var/www/html/portal >> $LOG
+
+git fetch --all -q >> $LOG
+
+git reset --hard -q origin/master >> $LOG
+
+/usr/local/nginx/sbin/nginx >> $LOG
+
+echo "Done "
