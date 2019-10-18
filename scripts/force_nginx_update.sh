@@ -5,7 +5,8 @@ LOG=/tmp/slipstream.log
 killall nginx >> $LOG
 
 RTMPPORT='1935';
-HTTPPORT=$(cat /usr/local/nginx/conf/nginx.conf | grep listen | sed -n '2p' | sed 's/[^0-9]*//g');
+HTTPPORT_RAW=$(echo "SELECT http_stream_port FROM headend_servers WHERE id = '1' " | mysql slipstream_cms -u slipstream -padmin1372)
+HTTPPORT="$(echo $HTTPPORT_RAW | sed -e "s/http_stream_port //g")";
 
 mv /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx.conf.bak >> $LOG
 
