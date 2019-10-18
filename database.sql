@@ -589,6 +589,19 @@ CREATE TABLE `stream_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
+DROP TABLE IF EXISTS `vod_categories`;
+
+CREATE TABLE `vod_categories` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `name` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `vod_categories` (`id`, `user_id`, `name`)
+VALUES
+  (1, 1, 'General');
+
 
 # Dump of table stream_progress
 # ------------------------------------------------------------

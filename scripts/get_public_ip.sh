@@ -1,0 +1,1 @@
+ifconfig $(route -n |awk '/0[.]0[.]0[.]0/{print $NF;exit}') | awk '/inet/{print $2}'

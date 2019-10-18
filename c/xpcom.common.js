@@ -335,9 +335,9 @@ function common_xpcom(){
         this.portal_path = document.URL.replace(pattern, "$3");
 
         _debug('stb.portal_path:', this.portal_path);
-	
-        this.ajax_loader = this.portal_protocol+'://'+this.portal_ip+'/portal.php';
-	
+
+        this.ajax_loader = this.portal_protocol+'://'+this.portal_ip+'/portal/portal.php';
+
         _debug('stb.ajax_loader:', this.ajax_loader);
     };
 
@@ -419,7 +419,7 @@ function common_xpcom(){
 
     this.update_modules = function(){
         _debug('stb.get_modules');
-        
+
         this.load(
 
             {
@@ -496,9 +496,9 @@ function common_xpcom(){
             this.header_ua_ext.push('Model: ' + this.type);
 
             this.stb_lang = stb.RDir('getenv language').clearnl();
-            
+
             this.timezone = stb.RDir('getenv timezone_conf').clearnl();
-            
+
             this.ntp_server = stb.RDir('getenv ntpurl').clearnl();
 
             this.firmware_version = this.image_version = stb.RDir('ImageVersion').clearnl();
@@ -531,7 +531,7 @@ function common_xpcom(){
 
                 this.header_ua_ext.push('Link: '+link.join(','));
             }
-            
+
         }catch(e){
             _debug(e);
         }
@@ -927,7 +927,7 @@ function common_xpcom(){
                 (params.image_description_contains == '' || this.image_desc.indexOf(params.image_description_contains) != -1) &&
                 (params.hardware_version_contains == ''  || this.hw_version.indexOf(params.hardware_version_contains) != -1)
             )
-           ){
+        ){
 
             _debug('checking conditions 2');
 
@@ -1901,7 +1901,7 @@ function common_xpcom(){
                 }else if(this.cur_place == 'karaoke'){  // Karaoke
                     cur_place_num = 3;
                 }else if(this.cur_place == 'audioclub'){ // Audio Club
-                        cur_place_num = 4;
+                    cur_place_num = 4;
                 }else if (this.cur_place == 'epg_simple' || this.cur_place == 'epg'){ // TV archive
                     cur_place_num = 11;
                 }else{
@@ -2303,7 +2303,7 @@ var screensaver = {
 
     toggle : function(){
         _debug('screensaver.toggle');
-        
+
         if (this.on){
             this.hide();
         }else{
