@@ -1,112 +1,350 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-BgwPssaxBzoWgLCt80==
+<?php
+
+/**
+ * Pure-PHP implementation of RC4.
+ *
+ * Uses mcrypt, if available, and an internal implementation, otherwise.
+ *
+ * PHP versions 4 and 5
+ *
+ * Useful resources are as follows:
+ *
+ *  - {@link http://www.mozilla.org/projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt ARCFOUR Algorithm}
+ *  - {@link http://en.wikipedia.org/wiki/RC4 - Wikipedia: RC4}
+ *
+ * RC4 is also known as ARCFOUR or ARC4.  The reason is elaborated upon at Wikipedia.  This class is named RC4 and not
+ * ARCFOUR or ARC4 because RC4 is how it is referred to in the SSH1 specification.
+ *
+ * Here's a short example of how to use this library:
+ * <code>
+ * <?php
+ *    include 'Crypt/RC4.php';
+ *
+ *    $rc4 = new Crypt_RC4();
+ *
+ *    $rc4->setKey('abcdefgh');
+ *
+ *    $size = 10 * 1024;
+ *    $plaintext = '';
+ *    for ($i = 0; $i < $size; $i++) {
+ *        $plaintext.= 'a';
+ *    }
+ *
+ *    echo $rc4->decrypt($rc4->encrypt($plaintext));
+ * ?>
+ * </code>
+ *
+ * LICENSE: Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @category  Crypt
+ * @package   Crypt_RC4
+ * @author    Jim Wigginton <terrafrost@php.net>
+ * @copyright 2007 Jim Wigginton
+ * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @link      http://phpseclib.sourceforge.net
+ */
+
+/**
+ * Include Crypt_Base
+ *
+ * Base cipher class
+ */
+if (!class_exists('Crypt_Base')) {
+    include_once 'Base.php';
+}
+
+/**#@+
+ * @access private
+ * @see self::_crypt()
+ */
+define('CRYPT_RC4_ENCRYPT', 0);
+define('CRYPT_RC4_DECRYPT', 1);
+/**#@-*/
+
+/**
+ * Pure-PHP implementation of RC4.
+ *
+ * @package Crypt_RC4
+ * @author  Jim Wigginton <terrafrost@php.net>
+ * @access  public
+ */
+class Crypt_RC4 extends Crypt_Base
+{
+    /**
+     * Block Length of the cipher
+     *
+     * RC4 is a stream cipher
+     * so we the block_size to 0
+     *
+     * @see Crypt_Base::block_size
+     * @var int
+     * @access private
+     */
+    var $block_size = 0;
+
+    /**
+     * Key Length (in bytes)
+     *
+     * @see Crypt_RC4::setKeyLength()
+     * @var int
+     * @access private
+     */
+    var $key_length = 128; // = 1024 bits
+
+    /**
+     * The namespace used by the cipher for its constants.
+     *
+     * @see Crypt_Base::const_namespace
+     * @var string
+     * @access private
+     */
+    var $const_namespace = 'RC4';
+
+    /**
+     * The mcrypt specific name of the cipher
+     *
+     * @see Crypt_Base::cipher_name_mcrypt
+     * @var string
+     * @access private
+     */
+    var $cipher_name_mcrypt = 'arcfour';
+
+    /**
+     * Holds whether performance-optimized $inline_crypt() can/should be used.
+     *
+     * @see Crypt_Base::inline_crypt
+     * @var mixed
+     * @access private
+     */
+    var $use_inline_crypt = false; // currently not available
+
+    /**
+     * The Key
+     *
+     * @see self::setKey()
+     * @var string
+     * @access private
+     */
+    var $key = "\0";
+
+    /**
+     * The Key Stream for decryption and encryption
+     *
+     * @see self::setKey()
+     * @var array
+     * @access private
+     */
+    var $stream;
+
+    /**
+     * Default Constructor.
+     *
+     * Determines whether or not the mcrypt extension should be used.
+     *
+     * @see Crypt_Base::Crypt_Base()
+     * @return Crypt_RC4
+     * @access public
+     */
+    function __construct()
+    {
+        parent::__construct(CRYPT_MODE_STREAM);
+    }
+
+    /**
+     * PHP4 compatible Default Constructor.
+     *
+     * @see self::__construct()
+     * @access public
+     */
+    function Crypt_RC4()
+    {
+        $this->__construct();
+    }
+
+    /**
+     * Test for engine validity
+     *
+     * This is mainly just a wrapper to set things up for Crypt_Base::isValidEngine()
+     *
+     * @see Crypt_Base::Crypt_Base()
+     * @param int $engine
+     * @access public
+     * @return bool
+     */
+    function isValidEngine($engine)
+    {
+        if ($engine == CRYPT_ENGINE_OPENSSL) {
+            $this->cipher_name_openssl = 'rc4-40';
+        }
+
+        return parent::isValidEngine($engine);
+    }
+
+    /**
+     * Dummy function.
+     *
+     * Some protocols, such as WEP, prepend an "initialization vector" to the key, effectively creating a new key [1].
+     * If you need to use an initialization vector in this manner, feel free to prepend it to the key, yourself, before
+     * calling setKey().
+     *
+     * [1] WEP's initialization vectors (IV's) are used in a somewhat insecure way.  Since, in that protocol,
+     * the IV's are relatively easy to predict, an attack described by
+     * {@link http://www.drizzle.com/~aboba/IEEE/rc4_ksaproc.pdf Scott Fluhrer, Itsik Mantin, and Adi Shamir}
+     * can be used to quickly guess at the rest of the key.  The following links elaborate:
+     *
+     * {@link http://www.rsa.com/rsalabs/node.asp?id=2009 http://www.rsa.com/rsalabs/node.asp?id=2009}
+     * {@link http://en.wikipedia.org/wiki/Related_key_attack http://en.wikipedia.org/wiki/Related_key_attack}
+     *
+     * @param string $iv
+     * @see self::setKey()
+     * @access public
+     */
+    function setIV($iv)
+    {
+    }
+
+    /**
+     * Sets the key length
+     *
+     * Keys can be between 1 and 256 bytes long.
+     *
+     * @access public
+     * @param int $length
+     */
+    function setKeyLength($length)
+    {
+        if ($length < 8) {
+            $this->key_length = 1;
+        } elseif ($length > 2048) {
+            $this->key_length = 256;
+        } else {
+            $this->key_length = $length >> 3;
+        }
+
+        parent::setKeyLength($length);
+    }
+
+    /**
+     * Encrypts a message.
+     *
+     * @see Crypt_Base::decrypt()
+     * @see self::_crypt()
+     * @access public
+     * @param string $plaintext
+     * @return string $ciphertext
+     */
+    function encrypt($plaintext)
+    {
+        if ($this->engine != CRYPT_ENGINE_INTERNAL) {
+            return parent::encrypt($plaintext);
+        }
+        return $this->_crypt($plaintext, CRYPT_RC4_ENCRYPT);
+    }
+
+    /**
+     * Decrypts a message.
+     *
+     * $this->decrypt($this->encrypt($plaintext)) == $this->encrypt($this->encrypt($plaintext)).
+     * At least if the continuous buffer is disabled.
+     *
+     * @see Crypt_Base::encrypt()
+     * @see self::_crypt()
+     * @access public
+     * @param string $ciphertext
+     * @return string $plaintext
+     */
+    function decrypt($ciphertext)
+    {
+        if ($this->engine != CRYPT_ENGINE_INTERNAL) {
+            return parent::decrypt($ciphertext);
+        }
+        return $this->_crypt($ciphertext, CRYPT_RC4_DECRYPT);
+    }
+
+
+    /**
+     * Setup the key (expansion)
+     *
+     * @see Crypt_Base::_setupKey()
+     * @access private
+     */
+    function _setupKey()
+    {
+        $key = $this->key;
+        $keyLength = strlen($key);
+        $keyStream = range(0, 255);
+        $j = 0;
+        for ($i = 0; $i < 256; $i++) {
+            $j = ($j + $keyStream[$i] + ord($key[$i % $keyLength])) & 255;
+            $temp = $keyStream[$i];
+            $keyStream[$i] = $keyStream[$j];
+            $keyStream[$j] = $temp;
+        }
+
+        $this->stream = array();
+        $this->stream[CRYPT_RC4_DECRYPT] = $this->stream[CRYPT_RC4_ENCRYPT] = array(
+            0, // index $i
+            0, // index $j
+            $keyStream
+        );
+    }
+
+    /**
+     * Encrypts or decrypts a message.
+     *
+     * @see self::encrypt()
+     * @see self::decrypt()
+     * @access private
+     * @param string $text
+     * @param int $mode
+     * @return string $text
+     */
+    function _crypt($text, $mode)
+    {
+        if ($this->changed) {
+            $this->_setup();
+            $this->changed = false;
+        }
+
+        $stream = &$this->stream[$mode];
+        if ($this->continuousBuffer) {
+            $i = &$stream[0];
+            $j = &$stream[1];
+            $keyStream = &$stream[2];
+        } else {
+            $i = $stream[0];
+            $j = $stream[1];
+            $keyStream = $stream[2];
+        }
+
+        $len = strlen($text);
+        for ($k = 0; $k < $len; ++$k) {
+            $i = ($i + 1) & 255;
+            $ksi = $keyStream[$i];
+            $j = ($j + $ksi) & 255;
+            $ksj = $keyStream[$j];
+
+            $keyStream[$i] = $ksj;
+            $keyStream[$j] = $ksi;
+            $text[$k] = $text[$k] ^ chr($keyStream[($ksj + $ksi) & 255]);
+        }
+
+        return $text;
+    }
+}

@@ -1,85 +1,197 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-140XfW==
+<?php
+
+/**
+ * Pure-PHP implementation of AES.
+ *
+ * Uses mcrypt, if available/possible, and an internal implementation, otherwise.
+ *
+ * PHP versions 4 and 5
+ *
+ * NOTE: Since AES.php is (for compatibility and phpseclib-historical reasons) virtually
+ * just a wrapper to Rijndael.php you may consider using Rijndael.php instead of
+ * to save one include_once().
+ *
+ * If {@link self::setKeyLength() setKeyLength()} isn't called, it'll be calculated from
+ * {@link self::setKey() setKey()}.  ie. if the key is 128-bits, the key length will be 128-bits.  If it's 136-bits
+ * it'll be null-padded to 192-bits and 192 bits will be the key length until {@link self::setKey() setKey()}
+ * is called, again, at which point, it'll be recalculated.
+ *
+ * Since Crypt_AES extends Crypt_Rijndael, some functions are available to be called that, in the context of AES, don't
+ * make a whole lot of sense.  {@link self::setBlockLength() setBlockLength()}, for instance.  Calling that function,
+ * however possible, won't do anything (AES has a fixed block length whereas Rijndael has a variable one).
+ *
+ * Here's a short example of how to use this library:
+ * <code>
+ * <?php
+ *    include 'Crypt/AES.php';
+ *
+ *    $aes = new Crypt_AES();
+ *
+ *    $aes->setKey('abcdefghijklmnop');
+ *
+ *    $size = 10 * 1024;
+ *    $plaintext = '';
+ *    for ($i = 0; $i < $size; $i++) {
+ *        $plaintext.= 'a';
+ *    }
+ *
+ *    echo $aes->decrypt($aes->encrypt($plaintext));
+ * ?>
+ * </code>
+ *
+ * LICENSE: Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @category  Crypt
+ * @package   Crypt_AES
+ * @author    Jim Wigginton <terrafrost@php.net>
+ * @copyright 2008 Jim Wigginton
+ * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @link      http://phpseclib.sourceforge.net
+ */
+
+/**
+ * Include Crypt_Rijndael
+ */
+if (!class_exists('Crypt_Rijndael')) {
+    include_once 'Rijndael.php';
+}
+
+/**#@+
+ * @access public
+ * @see self::encrypt()
+ * @see self::decrypt()
+ */
+/**
+ * Encrypt / decrypt using the Counter mode.
+ *
+ * Set to -1 since that's what Crypt/Random.php uses to index the CTR mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Counter_.28CTR.29
+ */
+define('CRYPT_AES_MODE_CTR', CRYPT_MODE_CTR);
+/**
+ * Encrypt / decrypt using the Electronic Code Book mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Electronic_codebook_.28ECB.29
+ */
+define('CRYPT_AES_MODE_ECB', CRYPT_MODE_ECB);
+/**
+ * Encrypt / decrypt using the Code Book Chaining mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29
+ */
+define('CRYPT_AES_MODE_CBC', CRYPT_MODE_CBC);
+/**
+ * Encrypt / decrypt using the Cipher Feedback mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher_feedback_.28CFB.29
+ */
+define('CRYPT_AES_MODE_CFB', CRYPT_MODE_CFB);
+/**
+ * Encrypt / decrypt using the Cipher Feedback mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Output_feedback_.28OFB.29
+ */
+define('CRYPT_AES_MODE_OFB', CRYPT_MODE_OFB);
+/**#@-*/
+
+/**
+ * Pure-PHP implementation of AES.
+ *
+ * @package Crypt_AES
+ * @author  Jim Wigginton <terrafrost@php.net>
+ * @access  public
+ */
+class Crypt_AES extends Crypt_Rijndael
+{
+    /**
+     * The namespace used by the cipher for its constants.
+     *
+     * @see Crypt_Base::const_namespace
+     * @var string
+     * @access private
+     */
+    var $const_namespace = 'AES';
+
+    /**
+     * Dummy function
+     *
+     * Since Crypt_AES extends Crypt_Rijndael, this function is, technically, available, but it doesn't do anything.
+     *
+     * @see Crypt_Rijndael::setBlockLength()
+     * @access public
+     * @param int $length
+     */
+    function setBlockLength($length)
+    {
+        return;
+    }
+
+    /**
+     * Sets the key length
+     *
+     * Valid key lengths are 128, 192, and 256.  If the length is less than 128, it will be rounded up to
+     * 128.  If the length is greater than 128 and invalid, it will be rounded down to the closest valid amount.
+     *
+     * @see Crypt_Rijndael:setKeyLength()
+     * @access public
+     * @param int $length
+     */
+    function setKeyLength($length)
+    {
+        switch ($length) {
+            case 160:
+                $length = 192;
+                break;
+            case 224:
+                $length = 256;
+        }
+        parent::setKeyLength($length);
+    }
+
+    /**
+     * Sets the key.
+     *
+     * Rijndael supports five different key lengths, AES only supports three.
+     *
+     * @see Crypt_Rijndael:setKey()
+     * @see setKeyLength()
+     * @access public
+     * @param string $key
+     */
+    function setKey($key)
+    {
+        parent::setKey($key);
+
+        if (!$this->explicit_key_length) {
+            $length = strlen($key);
+            switch (true) {
+                case $length <= 16:
+                    $this->key_length = 16;
+                    break;
+                case $length <= 24:
+                    $this->key_length = 24;
+                    break;
+                default:
+                    $this->key_length = 32;
+            }
+            $this->_setEngine();
+        }
+    }
+}

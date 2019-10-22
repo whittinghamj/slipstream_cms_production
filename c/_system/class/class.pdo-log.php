@@ -1,56 +1,42 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+<?php
+
+
+class Log
+{
+	private $path = '/logs/';
+
+	public function __construct()
+	{
+		$this->path = dirname(__FILE__) . $this->path;
+	}
+
+	public function write($message, $fileSalt)
+	{
+		$date = new DateTime();
+		$log = $this->path . $date->format('Y-m-d') . '-' . md5($date->format('Y-m-d') . $fileSalt) . '.txt';
+
+		if (is_dir($this->path)) {
+			if (!file_exists($log)) {
+				($fh = fopen($log, 'a+')) || exit('Fatal Error !');
+				$logcontent = 'Time : ' . $date->format('H:i:s') . "\r\n" . $message . "\r\n";
+				fwrite($fh, $logcontent);
+				fclose($fh);
+			}
+			else {
+				$this->edit($log, $date, $message);
+			}
+		}
+		else if (mkdir($this->path, 511) === true) {
+			$this->write($message, $fileSalt);
+		}
+	}
+
+	private function edit($log, $date, $message)
+	{
+		$logcontent = 'Time : ' . $date->format('H:i:s') . "\r\n" . $message . "\r\n\r\n";
+		$logcontent = $logcontent . file_get_contents($log);
+		file_put_contents($log, $logcontent);
+	}
+}
+
 ?>
-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

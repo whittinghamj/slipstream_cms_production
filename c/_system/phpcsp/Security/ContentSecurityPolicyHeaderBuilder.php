@@ -1,270 +1,811 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+/**
+ * Copyright 2015, Martijn Croonen.
+ * All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+namespace Phpcsp\Security;
+
+/**
+ * Class ContentSecurityPolicyBuilder
+ *
+ * A PHP helper class to dynamically construct Content Security Policy headers as defined by the W3C in the
+ * Content Security Policy specification (http://www.w3.org/TR/CSP2/).
+ */
+class ContentSecurityPolicyHeaderBuilder
+{
+    /**
+     * @var string
+     */
+    protected $headerName = 'Content-Security-Policy';
+
+    /**
+     * @var string
+     */
+    protected $reportOnlyHeaderName = 'Content-Security-Policy-Report-Only';
+
+    /**
+     * @var string
+     */
+    protected $legacyXssHeader = 'X-XSS-Protection';
+
+    /**
+     * @var string
+     */
+    protected $legacyFrameOptionsHeader = 'X-Frame-Options';
+
+    /**
+     * These are tokens defined by CSP and have specials meaning. They have to enclosed by quotes in the
+     * CSP value string.
+     *
+     * @var array
+     */
+    protected $directiveValueTokens = ['self', 'unsafe-inline', 'unsafe-eval', 'unsafe-redirect', 'none'];
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-base-uri
+     *
+     * @var string
+     */
+    const DIRECTIVE_BASE_URI = 'base-uri';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-child-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_CHILD_SRC = 'child-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-connect-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_CONNECT_SRC = 'connect-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-default-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_DEFAULT_SRC = 'default-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-font-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_FONT_SRC = 'font-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-form-action
+     *
+     * @var string
+     */
+    const DIRECTIVE_FORM_ACTION = 'form-action';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-frame-ancestors
+     *
+     * @var string
+     */
+    const DIRECTIVE_FRAME_ANCESTORS = 'frame-ancestors';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-frame-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_FRAME_SRC = 'frame-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-img-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_IMG_SRC = 'img-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-media-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_MEDIA_SRC = 'media-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-object-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_OBJECT_SRC = 'object-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-script-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_SCRIPT_SRC = 'script-src';
+
+    /**
+     * Valid CSP directive name. See http://www.w3.org/TR/CSP2/#directive-style-src
+     *
+     * @var string
+     */
+    const DIRECTIVE_STYLE_SRC = 'style-src';
+
+    /**
+     * A list of all valid CSP directives, without those (like reflected-xss) that require a defined set of values.
+     *
+     * @var array
+     */
+    protected $allowedDirectives = [
+        self::DIRECTIVE_BASE_URI,
+        self::DIRECTIVE_CHILD_SRC,
+        self::DIRECTIVE_CONNECT_SRC,
+        self::DIRECTIVE_DEFAULT_SRC,
+        self::DIRECTIVE_FONT_SRC,
+        self::DIRECTIVE_FORM_ACTION,
+        self::DIRECTIVE_FRAME_ANCESTORS,
+        self::DIRECTIVE_FRAME_SRC,
+        self::DIRECTIVE_IMG_SRC,
+        self::DIRECTIVE_MEDIA_SRC,
+        self::DIRECTIVE_OBJECT_SRC,
+        self::DIRECTIVE_SCRIPT_SRC,
+        self::DIRECTIVE_STYLE_SRC
+    ];
+
+    /**
+     * @var string
+     */
+    protected $directiveSeparator = '; ';
+
+    /**
+     * Contains all source sets that have been defined.
+     *
+     * @var array
+     */
+    protected $sourceSets = [];
+
+    /**
+     * Contains all the directives that have been defined and their respective values.
+     *
+     * @var array
+     */
+    protected $directives = [];
+
+    /**
+     * Valid value for the 'referrer' CSP directive. A user-agent should set an empty referrer value when
+     * navigating away from a resource that sets the CSP 'referrer' value to 'none'.
+     *
+     * @var string
+     */
+    const REFERRER_NONE = 'none';
+
+    /**
+     * Valid value for the 'referrer' CSP directive. A user-agent should set an empty referrer value when
+     * navigating to a resource that is net served over TLS from a resource that is served over TLS and sets the
+     * CSP 'referrer' value to 'none-when-downgrading'.
+     *
+     * @var string
+     */
+    const REFERRER_NONE_WHEN_DOWNGRADE = 'none-when-downgrade';
+
+    /**
+     * Valid value for the 'referrer' CSP directive. A user-agent should set the resource's origin as the referrer value
+     * when the resources sets the CSP 'referrer' value to 'origin'.
+     *
+     * @var string
+     */
+    const REFERRER_ORIGIN = 'origin';
+
+    /**
+     * Valid value for the 'referrer' CSP directive. A user-agent should set the resource's origin as the referrer value
+     * when the resource sets the CSP 'referrer' value to 'origin-when-cross-origin' and it is navigating to a resource
+     * from a different origin.
+     *
+     * @var string
+     */
+    const REFERRER_ORIGIN_WHEN_CROSS_ORIGIN = 'origin-when-cross-origin';
+
+    /**
+     * Valid value for the 'referrer' CSP directive. This it the default user-agent behaviour and could potentially
+     * leak information.
+     *
+     * @var string
+     */
+    const REFERRER_UNSAFE_URL = 'unsafe-url';
+
+    /**
+     * All valid values for the 'referrer' CSP directive.
+     *
+     * @var array
+     */
+    protected $referrerValues = [
+        self::REFERRER_NONE,
+        self::REFERRER_NONE_WHEN_DOWNGRADE,
+        self::REFERRER_ORIGIN,
+        self::REFERRER_ORIGIN_WHEN_CROSS_ORIGIN,
+        self::REFERRER_UNSAFE_URL,
+        null
+    ];
+
+    /**
+     * @var string|null
+     */
+    protected $referrerValue = null;
+
+    /**
+     * Valid valid value for the 'reflected-xss' CSP directive. A user agent must disable its active protections against
+     * reflected cross-site scripting attacks for the protected resource. Try to avoid this value.
+     *
+     * @notice Same behaviour as 'X-XSS-Protection: 0'
+     * @var string
+     */
+    const REFLECTED_XSS_ALLOW = 'allow';
+
+    /**
+     * Valid valid value for the 'reflected-xss' CSP directive. A user agent must stop rendering the protected resource
+     * upon detection of reflected script, and instead act as if there was a fatal network error and no resource was
+     * obtained, and report a violation.
+     *
+     * @notice Same behaviour as ' X-XSS-Protection: 1; mode=block'
+     * @var string
+     */
+    const REFLECTED_XSS_BLOCK = 'block';
+
+    /**
+     * Valid valid value for the 'reflected-xss' CSP directive. A user agent must enable its active protections against
+     * reflected cross-site scripting attacks for the protected resource. This might result in filtering script that is
+     * believed to be reflected being filtered or selectively blocking script execution.
+     *
+     * @notice Same behaviour as 'X-XSS-Protection: 1'
+     * @var string
+     */
+    const REFLECTED_XSS_FILTER = 'filter';
+
+    /**
+     * All valid values for the 'reflected-xss' CSP directive. This directive related to the deprecated
+     * 'X-XSS-Protection' header.
+     *
+     * @var array
+     */
+    protected $reflectedXssValues = [
+        self::REFLECTED_XSS_ALLOW,
+        self::REFLECTED_XSS_BLOCK,
+        self::REFLECTED_XSS_FILTER,
+        null
+    ];
+
+    /**
+     * Valid value for the 'X-Frame-Options' header. UA's will refuse to load any resource that sets the value of this
+     * header to 'DENY' as part of Frame, iFrame, Object, Applet, or embed tag.
+     *
+     * @var string
+     */
+    const FRAME_OPTION_DENY = 'DENY';
+
+    /**
+     * Valid value for the 'X-Frame-Options' header. UA's will refuse to load any resource that sets the value of this
+     * header to 'SAMEORIGIN' as part of Frame, iFrame, Object, Applet, or embed tag when the requesting resource is
+     * from a different origin.
+     *
+     * @var string
+     */
+    const FRAME_OPTION_SAME_ORIGIN = 'SAMEORIGIN';
+
+    /**
+     * Valid value for the 'X-Frame-Options' header. UA's will refuse to load any resource that sets the value of this
+     * header to 'ALLOW-FROM [origin]' as part of Frame, iFrame, Object, Applet, or embed tag when the requesting
+     * resource is not within the specified origin.
+     *
+     * @var string
+     */
+    const FRAME_OPTION_ALLOW_FROM = 'ALLOW-FROM %s';
+
+    /**
+     * All valid values for the 'X-Frame-Options' header.
+     *
+     * @var array
+     */
+    protected $FrameOptionsValues = [
+        self::FRAME_OPTION_DENY,
+        self::FRAME_OPTION_SAME_ORIGIN,
+        self::FRAME_OPTION_ALLOW_FROM,
+        null
+    ];
+
+    /**
+     * SHA 256 hash indicator.
+     *
+     * @var string
+     */
+    const HASH_SHA_256 = 'sha256';
+
+    /**
+     * SHA 384 hash indicator.
+     *
+     * @var string
+     */
+    const HASH_SHA_384 = 'sha384';
+
+    /**
+     * SHA 512 hash indicator.
+     *
+     * @var string
+     */
+    const HASH_SHA_512 = 'sha512';
+
+    /**
+     * Supported hash algorithms.
+     *
+     * @var array
+     */
+    protected $hashAlgorithmValues = [
+        self::HASH_SHA_256,
+        self::HASH_SHA_384,
+        self::HASH_SHA_512
+    ];
+
+    /**
+     * Holds the value for the 'X-Frame-Options' header when set.
+     *
+     * @var string|null
+     */
+    protected $frameOptionsValue = null;
+
+    /**
+     * The 'reflected-xss' CSP directive value.
+     *
+     * @notice Defines the same behaviour as the 'X-XSS-Protection' header
+     * @var null
+     */
+    protected $reflectedXssValue = null;
+
+    /**
+     * When false, a report-only CSP header will be served. This means the policy will not be enforced by the UA but
+     * violations will be reported.
+     *
+     * @var bool
+     */
+    protected $enforcePolicy = true;
+
+    /**
+     * When set to a valid URI, the UA will send violation reports to this URI.
+     *
+     * @var null
+     */
+    protected $reportUri = null;
+
+    /**
+     * @var string
+     */
+    protected $upgradeInsecureRequestsDirective = 'upgrade-insecure-requests';
+
+    /**
+     * @var bool
+     */
+    protected $upgradeInsecureRequests = false;
+
+    /**
+     * @param bool $enforce
+     */
+    public function enforcePolicy($enforce)
+    {
+        $this->enforcePolicy = $enforce;
+    }
+
+    /**
+     * @return bool
+     */
+    public function shouldEnforcePolicy()
+    {
+        return $this->enforcePolicy;
+    }
+
+    /**
+     * @param string $policy
+     * @throws InvalidValueException
+     */
+    public function setReferrerPolicy($policy)
+    {
+        if (!in_array($policy, $this->referrerValues)) {
+            throw new InvalidValueException(sprintf(
+                'Tried to set the CSP referrer policy to "%s" which is an invalid value.',
+                $policy
+            ));
+        }
+
+        $this->referrerValue = $policy;
+    }
+
+    /**
+     * @param string $policy
+     * @throws InvalidValueException
+     */
+    public function setReflectedXssPolicy($policy)
+    {
+        if (!in_array($policy, $this->reflectedXssValues)) {
+            throw new InvalidValueException(sprintf(
+                'Tried to set the CSP reflected XSS policy to "%s" which is an invalid value.',
+                $policy
+            ));
+        }
+
+        $this->reflectedXssValue = $policy;
+    }
+
+    /**
+     * @param string $policy
+     * @param string $origin
+     * @throws InvalidValueException
+     */
+    public function setFrameOptions($policy, $origin = '')
+    {
+        if (!in_array($policy, $this->FrameOptionsValues)) {
+            throw new InvalidValueException(sprintf(
+                'Tried to set the X-Frame-Options header to "%s" which is an invalid value.',
+                $policy
+            ));
+        }
+
+        if ($policy == static::FRAME_OPTION_ALLOW_FROM) {
+            $origin = static::extractOrigin($origin);
+
+            if (!$origin) {
+                throw new InvalidOriginException();
+            }
+        }
+
+        $this->frameOptionsValue = trim(sprintf($policy, $origin));
+    }
+
+    /**
+     * @param bool $upgrade
+     */
+    public function setUpgradeInsecureRequests($upgrade)
+    {
+        $this->upgradeInsecureRequests = $upgrade;
+    }
+
+    /**
+     * @param string $uri
+     */
+    public function setReportUri($uri)
+    {
+        $this->reportUri = $uri;
+    }
+
+    /**
+     * @param string $name
+     * @param array $expressions
+     */
+    public function defineSourceSet($name, array $expressions)
+    {
+        $this->sourceSets[$name] = $expressions;
+    }
+
+    /**
+     * @param string $directive
+     * @param string $nonce
+     * @throws InvalidDirectiveException
+     */
+    public function addNonce($directive, $nonce)
+    {
+        if (!in_array($directive, $this->allowedDirectives)) {
+            throw new InvalidDirectiveException('Tried to add a CSP nonce for an invalid directive.');
+        }
+
+        if (!(isset($this->directives[$directive]) && is_array($this->directives[$directive]))) {
+            $this->directives[$directive] = [];
+        }
+
+        if (!(isset($this->directives[$directive]['nonces']) && is_array($this->directives[$directive]['nonces']))) {
+            $this->directives[$directive]['nonces'] = [];
+        }
+
+        $this->directives[$directive]['nonces'][] = $nonce;
+    }
+
+    /**
+     * @param string $directive
+     * @param string $set
+     * @throws InvalidDirectiveException
+     * @throws SourceSetNotFoundException
+     */
+    public function addSourceSet($directive, $set)
+    {
+        if (!in_array($directive, $this->allowedDirectives)) {
+            throw new InvalidDirectiveException(
+                'Tried to add a source set for an CSP invalid directive.'
+            );
+        }
+
+        if (!isset($this->sourceSets[$set])) {
+            throw new SourceSetNotFoundException(sprintf(
+                'Tried to add "%s" as a source set for the "%s" CSP directive but the source set has not been defined',
+                $set,
+                $directive
+            ));
+        }
+
+        if (!(isset($this->directives[$directive]) && is_array($this->directives[$directive]))) {
+            $this->directives[$directive] = [];
+        }
+
+        if (!(isset($this->directives[$directive]['sets']) && is_array($this->directives[$directive]['sets']))) {
+            $this->directives[$directive]['sets'] = [];
+        }
+
+        $this->directives[$directive]['sets'][] = $set;
+    }
+
+    /**
+     * @param string $directive
+     * @param string $expression
+     * @throws InvalidDirectiveException
+     */
+    public function addSourceExpression($directive, $expression)
+    {
+        if (!in_array($directive, $this->allowedDirectives)) {
+            throw new InvalidDirectiveException(
+                'Tried to add a source set for an CSP invalid directive.'
+            );
+        }
+
+        if (!(isset($this->directives[$directive]) && is_array($this->directives[$directive]))) {
+            $this->directives[$directive] = [];
+        }
+
+        if (!(
+            isset($this->directives[$directive]['expressions'])
+            && is_array($this->directives[$directive]['expressions'])
+        )
+        ) {
+            $this->directives[$directive]['expressions'] = [];
+        }
+
+        $this->directives[$directive]['expressions'][] = $expression;
+    }
+
+    /**
+     * Add a hash value to the script-src.
+     *
+     * @param string $type
+     * @param string $hash
+     * @throws InvalidDirectiveException
+     */
+    public function addHash($type, $hash)
+    {
+        $directive = self::DIRECTIVE_SCRIPT_SRC;
+        if (!(isset($this->directives[$directive]) && is_array($this->directives[$directive]))) {
+            $this->directives[$directive] = [];
+        }
+
+        if (!(isset($this->directives[$directive]['hashes']) && is_array($this->directives[$directive]['hashes']))) {
+            $this->directives[$directive]['hashes'] = [];
+        }
+
+        $this->directives[$directive]['hashes'][$type][] = $hash;
+    }
+
+    /**
+     * Returns the CSP header that should be used (enforced mode or report-only mode).
+     *
+     * @return string
+     */
+    public function getHeaderName()
+    {
+        if ($this->shouldEnforcePolicy()) {
+            return $this->headerName;
+        } else {
+            return $this->reportOnlyHeaderName;
+        }
+    }
+
+    /**
+     * Returns the value for the CSP header based on the loaded configuration.
+     *
+     * @return string|null
+     */
+    public function getValue()
+    {
+        $directives = [];
+        foreach ($this->directives as $name => $value) {
+            $directives[] = sprintf('%s %s', $name, $this->parseDirectiveValue($value));
+        }
+
+        if (!is_null($this->reflectedXssValue)) {
+            $directives[] = sprintf('%s %s', 'reflected-xss', $this->reflectedXssValue);
+        }
+
+        if ($this->upgradeInsecureRequests) {
+            $directives[] = $this->upgradeInsecureRequestsDirective;
+        }
+
+        if (!is_null($this->referrerValue)) {
+            $directives[] = sprintf('%s %s', 'referrer', $this->referrerValue);
+        }
+
+        if (!is_null($this->reportUri)) {
+            $directives[] = sprintf('%s %s', 'report-uri', $this->reportUri);
+        }
+
+        // No CSP policies set?
+        if (count($directives) < 1) {
+            return null;
+        }
+
+        return trim(sprintf('%s%s', implode($this->directiveSeparator, $directives), $this->directiveSeparator));
+    }
+
+    /**
+     * @param string $includeLegacy
+     * @return array
+     */
+    public function getHeaders($includeLegacy)
+    {
+        $value = $this->getValue();
+        if (is_null($value)) {
+            $headers = [];
+        } else {
+            $headers[] = [
+                'name'  => $this->getHeaderName(),
+                'value' => $value
+            ];
+        }
+
+        if ($includeLegacy) {
+            return array_merge($headers, $this->getLegacyHeaders());
+        }
+
+        return $headers;
+    }
+
+    /**
+     * @return array
+     */
+    public function getLegacyHeaders()
+    {
+        return array_filter([
+            $this->getLegacyXssHeader($this->reflectedXssValue),
+            $this->getLegacyFrameOptionsHeader()
+        ]);
+    }
+
+    /**
+     * @param array $directive
+     * @return null|string
+     */
+    private function parseDirectiveValue($directive)
+    {
+        $expressions = [];
+
+        if (!(isset($directive) && is_array($directive))) {
+            return null;
+        }
+
+        // Parse the source expressions
+        if (isset($directive['expressions']) && is_array($directive['expressions'])) {
+            $expressions = $directive['expressions'];
+        }
+
+        // Parse the source sets
+        if (isset($directive['sets']) && is_array($directive['sets'])) {
+            foreach ($directive['sets'] as $set) {
+                $expressions = array_merge($expressions, $this->sourceSets[$set]);
+            }
+        }
+
+        // Parse the nonces
+        if (isset($directive['nonces']) && is_array($directive['nonces'])) {
+            foreach ($directive['nonces'] as $nonce) {
+                $expressions[] = sprintf("'nonce-%s'", $nonce);
+            }
+        }
+
+        // Parse the hashes
+        if (isset($directive['hashes']) && is_array($directive['hashes'])) {
+            foreach ($directive['hashes'] as $type => $hashes) {
+                foreach ($hashes as $hash) {
+                    $expressions[] = sprintf("'%s-%s'", $type, base64_encode($hash));
+                }
+            }
+        }
+
+        return trim(implode(' ', array_map(function ($value) {
+            return $this->encodeDirectiveValue($value);
+        }, $expressions)));
+    }
+
+    /**
+     * @param string $value
+     * @return string
+     */
+    public function encodeDirectiveValue($value)
+    {
+        $value = str_replace([';', ','], ['%3B', '%2C'], $value);
+
+        if (in_array($value, $this->directiveValueTokens)) {
+            $value = sprintf("'%s'", $value);
+        }
+
+        return trim($value);
+    }
+
+    /**
+     * Extracts the (serialized) origin from a uri or false on failure.
+     *
+     * @param string $uri
+     * @return false|string
+     */
+    public static function extractOrigin($uri)
+    {
+        $parts = parse_url($uri);
+
+        // parse_url returns false when the uri is seriously malformed
+        if (!is_array($parts)) {
+            return false;
+        }
+
+        if (isset($parts['scheme']) && isset($parts['host'])) {
+            if (isset($parts['port'])) {
+                return sprintf('%s://%s:%s', $parts['scheme'], $parts['host'], $parts['port']);
+            } else {
+                return sprintf('%s://%s', $parts['scheme'], $parts['host']);
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * @param string $reflectedXssValue
+     * @return array
+     */
+    private function getLegacyXssHeader($reflectedXssValue)
+    {
+        $header = [];
+
+        switch ($reflectedXssValue) {
+            case 'allow':
+                $header = [
+                    'name'  => $this->legacyXssHeader,
+                    'value' => '0'
+                ];
+                break;
+
+            case 'filter':
+                $header = [
+                    'name'  => $this->legacyXssHeader,
+                    'value' => '1'
+                ];
+                break;
+
+            case 'block':
+                $header = [
+                    'name'  => $this->legacyXssHeader,
+                    'value' => '1; mode=block'
+                ];
+                break;
+        }
+
+        return $header;
+    }
+
+    /**
+     * @return array
+     */
+    private function getLegacyFrameOptionsHeader()
+    {
+        if (is_null($this->frameOptionsValue)) {
+            return [];
+        }
+
+        return [
+            'name'  => $this->legacyFrameOptionsHeader,
+            'value' => $this->frameOptionsValue
+        ];
+    }
+}

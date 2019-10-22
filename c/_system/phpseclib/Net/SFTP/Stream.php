@@ -1,311 +1,815 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPyvl9MIuzfrBk9gmHmwbfsHhJkD27VPFg6M4rzVEY+NYuB1a/nLtvwp4/kT23hgjmdxOS0S9
-n9wp+XEZhKsLA4xvB0opOKIUX7Dgm37fzqQe9T8XWuO3VL30fKWrx03zbZVdjYm5TBkuMjxzJU4j
-jc2DCL8D7t7kTTE2K0rRMhqZnM8xMhC/DR3uJmFCcok4RqjbX34bbaAvEbQt5SV+XhVUi3EBmRTX
-YoLAjKwmRiTlJ5J5xkNLfVhgbbNYpXy/tH5MNJvUXjhbRoxoHolTUAF90m7qB8V38sSAwVOdt1d7
-5MiF3hN2WgqN63Ylo14YIkp7IK9Nh7w/INW5VyYHOaqarrSVMpQGUHZC6Za/yoSe11DxHQk0yu6n
-OU5KobnYbbShtcOVv2/qceCXdXGms/DzLRw+R1C5688fFtCjwwyznaSoUhUINNALgdRQPBICvEvs
-XQYNL9N6LC0TwZ/8fL746A/PpZsqLPkLg1cC/hxyYL2zevsrP8SUWb7HJS4Dq0Auth+gXzQUdwtB
-AJVRduRgnYr6G75plb1H1MRrvrvBpl5hFQnZi0+8wLdeWO/8R9VQY6tYZ09JL0uSXC+kk5pu4tMZ
-yZClA1uNmDwJneNKOzJYRgaVCYdVo3Qk0H2OxyLYBcYV2Kqs0atxDTFd+ZDQxm1c98SB5Ta3Cdc5
-NF2EUEGlITyc/o0hPzIyrJ8q8J8LMk2Haxpy3cwL6CLD175pdkFmRkrKVKWcE5zSVDVTa7ie537g
-mHg40Gzc1PG/doW3hvMqUhOAYF0GB2NgKbGtji0A0/+q/uNkRaWOHi9e3HX0nnL6VC7zdK+CiEAT
-svLIstF3wo4z4X8+IvStgDp8hZ2f/UiRTce8GsoIUa0W6XPBdZLP16piQlDucIEgyulTSLuiEoAe
-ZswXi2CXank0UqYo/7dgWWVGzkq8yyhq7vLhaArdFudEmvGz2qRYVBHrFl2cYcUARpLdWlW8NrCd
-34F22kQD6p6pa3GqoYznxQQImrtxR85Q4EGesSelDVIc3o0nKmGZJ8aiGfXznLdzl5Dr/EYJDxQe
-x5ccNHsDn7rv58/rdDaeuSfcLKjwTK1VWCSNZX6x9D/sv/K/v8o3C/pq2sBfRiI8cKPNujlrpyv+
-CIhXChpETICVyyOhKxdH1mmBMuXuTHYqHjOToHHr0ylLspzsWGMGd0D2r9315JrzvbIPWDIOT+Cr
-KXMS1HjntW3E8WKJPazedNj8M9IaGWkbrNLzoRfgPPBLPp6VvH30MWWad3tzJ9YV5DLEWt3Kokv5
-/VbKXbnAV9SLk2WxCQ4PkXAv24eoQjM6Yjy79xITKTS4veWJhCyEAs9F0EZxRv0DEV8Jjj0iM0t+
-vam8K1bLlMNWnuPynAsjls0gfD9+7NxwAF2qY+hvCAQD/iq8ZlyYL5lDyBT2zTyP1xrSCeSZ5ttL
-H1IYiKsFJ3Mmj2m5k3FJngfXRi6KaVpMpWH2sFFTlEcejEXDzfBHssYK18kBLlRQQ8RodK5p63AP
-mX+EZlm8VEzi+0FCYMkPoksFODWIO4R/Sr4oXqLqLe4Lt8vxKsq/JccgxGeOcCY7AC56EtidRCKs
-dMZEtN3MIt6dl/FvbVhE4LVvTUhgsFWnABJvYU/fAm/ZhTxG13TOjlrqpm/vSaHYGZlFUDTkRShM
-ew1QdvVjFgh5g277q+uTIIRGE8t/LmN2Cc571WYl6fjr2/kB21mhFL3glzvf6BywT63gipHQXUDz
-DhK3gLj/0H1JixSikkTWmi1x4ePIf1/dBCAS7M4iJ7Mq3lwfFUv82obaGRaQ3oRdCtP++Gl6UPOQ
-PAkvHwqhy+NysDaak4e5e2SVuB1kSTI4BNj2znhMaZQp2Rra1wLpcH9N8ALyH7gyesjsR99qnR6e
-lpFNLVfJw7q8Usq2XJ1OcUio+aNc/feIZBVFyhnOM+GksQvwIec8jZ1rHNR9MMMuAXNne6avpQsv
-gxMbVcNywfTZsFxdgGCnEOsSvXsZfracb1RLjLcm3lCWiL+dS9L9xnFGX/nnuaOis4DCsesfGYuZ
-sR0cOzhFLLQKb3OpHrXF3VJOCAmr13xcPNlFvumtSsaJX3yKafDcPt/mcO0rESjl53MK+v+C8akh
-3eEn9BnIMTK4LJvrtFx7hUsSqhi1Pbmwsb/gxFZd7VIkN4xKQgZcvuwYtz16B9iHyXs55fzcpqpp
-684/HHFn4PyVuOS9cNkLq84s3hBVoPQJi3a2iXK3/DD4ZUDhMe3R7UmTEuZb54bnjUR8iPwEhfCc
-R911VTg5SzNMqwKVv/ISOw++JbKhLdwacG/OxJS8GI+k8fxkNOWWKJBGABfaggt2Q+fBKU+g2qXR
-Q9krpXd3eghKfeRG0TXCVS61p8Lm3CBN0RuCl2NVfgzW+yTvQtPIWV+WxnZ59hpd6YGkHKZT5XWg
-vCSruwtkMxnU7L884jbRWfMayn7EeaVYnvMEh6/Td4TC+lPIAiLv0kFef2QKWCSXVCPfeqYwe/Wv
-TXNSFruIdicoyNS6p1/NWJiZ/ldVxf3heVIZFGjGGKv6lxwyCnq4RjCX7G61DWq3EoyRzJPqluCc
-TG9hVmV/xwWwhZfy9PprljtWSB3XGo2kGRqjQ/OOg5RGq8EHC/OTAF7UyJuUprxUoscki5rMfodO
-Lp2q8cH4ou/8oqF4LrwaMP8cZ/Q8PrV+vI4ibnoMES6V8KkCKzCKd7Vgr9ssomstNx/FuYzQpvhR
-zsdRqP1b5y/1ZB3YRl6N5XRcJcNRpvBCcFSWhP5XViQavjqJ9ia15s5JZa4Cg4R5dRacq/Z2RSCt
-2h/ymGV7K/9bAwe0MDOq/InTJMIInAPy0gPZYl7mElxpdSEMhvR9b2gqpOWpnTTOP7etztvWNi9V
-Ph0qXNcwagbzrQPWiOrC8R0ahBh+KgYqNRSMC3QXKYugGnmxBK6uzqUIDJj5rw6MzC3d07wIeTJY
-AVBVcY36WubEYgFCOM6w/GAqtxMp1lT31e9Na9+9KRAEoKPWDyVy43Hg70mVOjoSjMVzbtAG1rNr
-hrxu7FgULRtQ5z9SJ8HMi5qJCcLRh+Q9uTeUhf3IDxdWI3/W6VzBpLesL5x30LzVUToY4eyBKRGx
-UEfwe+HMA+T/1hGSAggI29kRejoay3h75n/aSAw7elHZXuvPRLU2syJde8khX1g9por5r9kBKsj1
-OnV4QMzWCGLC6lZD6K4xsk3ud+BpBbQDZz2kIO5Zuj6EgJi9hJsvRAWhR25RiO0QxT1vs3urShth
-rzb4B9W9J0QywQX1/v1WI8Il4TAVJRmlNtC3tgB0P9wPP0W3ds3A413sMUxEFygxVzOcPot7M+rj
-lAAYA/sVshtDZcVAdGSpN3VXEoZyZwkBvMTpfJ/Rl6feEoRMa5iaD5Cu8YOAW/TcqyWCIbq6XVQp
-9L/HiAonvq7CiixV1Y/Y89nH1an/sB81hyb9529IKOHwV7nR4kjoiu67N6NMyA3RMdOxKMsuNfXr
-zHF4nTyCq5H+3+6Om8YPn3gsP1sdsXnzBe9gsZOZycBcG+uj85wvrzG0deM9H3vYoS6fyAH2GZsd
-dP/pesTwrMskTcTGkY4Ck9Ap/bOrQZ5ERRxtZJsipCNanK+MyKjzE2h/UVcMnTDz0NeAIpqrGMLs
-UYA6tmfSUoi7pKH6nLOB878vEqiB8r6VcCB9cEoztyEY2xdG9lACcpQpcxRQwjDhHXFn1F8O+seA
-UYyDejM6yzGkM+/BhXiJZhXW3ND8Ac8QydJhHRPEswiiESj9lOPtNer/nGP6Ja5aDtrdai0cQ4yz
-6y7u4Ry5sGIdp+nWC5R0YPpl38P8cb0E55TWLpHABGGcO2K/PaKFhcUTC52RQ5NQZZQT6Yp4wPhw
-84N5izjyE++5XYcvCGD8Ag2EuHGhwr4PjVO1a2jmrVmuod2INQylkwIrd1ztTAk3AL8LXAcF3wBT
-9OvIS4F2zbdY+gla7WhNH3CnBo34/v40db5saAvJgtwFhQYjqrWWZyqZarTQBoJBzSFRrXDjignh
-q+v4roAdutTUBQG4IfnPL5BfdMEGJXs+qQmS9RWfM3gCxTFRMRPvHIf/zNt/RysKWUdzGoaASCo5
-A2sJamXMQ7M8Em//UfPlPGOslQKGVXBLqvAPaLRVEZ4BIrh2gK2q83E8925wAaHZt++jomLbAOHM
-yfPM0YF+A7Q4ItJVYnuwlW5P9lwIcN/qWHatGRUv6x/mZDd9VNmLj8Aq4ImTqNqKnPX0HL61oCDI
-N14rm8gOP/C8hDdIJhLdvamoix1hdCTXUO8C7/XzDP6FDnAE/6buTNQSQ8OQWvqi7YJoCBHDQj26
-o27xU4MhXqbn1xU79OS5gChe6946v7oIZir7SORkySeHwKE4qUSkiCFBHs6RVVCaZIWdUgbv7fBD
-Mmjlc0EjCEu4axhwn4Cg+nDRz+CYViCA3ahbRumLGkbrlh29p2HBdIQDdk+TR9sDT0CqXYypVEpu
-lAwguqk4bGfZ25FMvHUplhfvQUv7U4ntZUP/34f2dliRFSsDALKSSo4YFq0ivuDrFb+bvb6oAdLG
-ZUAYPFE+kZFeM6F0AlYGDAs/X+tMVpX0hOGS4FdCM3qWJn3WNlUw53UkcjNPiI6mMpgUO+7quHCV
-jzM0QbTjATcjNxGja++m5bzmiY0QMcc2G4InoeF55mR/Xc8C33ys8k0+iA12KGsyW3JOlrqsaopU
-Pzdw0t958yObGXNPtRWnp6royK4LwypN8+S9zh9gBem4jvuTpPMtFnIANjiUxx7RlBwRyqk/bpAl
-Okq+wcfQqPFNHUAAx2cBPD/wimUdXQhJLmUJGB+mQMtVvPYfkVWA50v/+dsjAr4WDKvodvydld2P
-5fVBR1yWPPLoABdbc7vwxSCtN2hWR2WqWHbR74wq+VP2eHoWLzSwKA2+By1H9BOUSTA584flTuRG
-usj3NzMAEDXGpcDY2TJbx9W4Lh5vrHb0ulLhBQ4Oc7N87m1aGE4pAJB5/mHVrKF9HKTVcmOIz/px
-mkR+RsSTNPtX4uBVLQdfmAevdmSn/hWdm3dSNBHo3oXG5zIRsDIXMmkBlWiGqfDweq7P7+T1Xdw6
-VyMfowZPC3ttANdUivSWIA2yT6IDogLbxraGtacVQkvfDCt4pptGLHDji8S3LEQAKMsEZp4/b/a6
-SXraDu5dniEG7oYS4VAeXcf/kRBnCQax9IpJxeTdb7mnb6qUvnWSP7+iKiTnNy+XC/Ud8sQu3js0
-OLqPY0BTNxo7JkaKYeT3CjzwFom/d5MTRZ3lszpD1mF9huDx+G3UdfnAoHqAtUBaFHrNump+YhWj
-6pWDeFcS+MvwO46wM83SiCC/C/9MC9/NRu9jNL1ndKxHPUDa/z1pLEqgDp97Qfxgz+APkK3h9aFf
-gse5fcEqhiYxy30nIDke6Ab/2GOSGrhD2dMuBYiNqxaxv04I6s88MEpA4IjeLwXVcRqN+dXWI7kn
-jKsDt50kEVl4I6jXu9jiMk1hIRrn5h/ZI5yZtvVnfKh5kecsQ++0ld20DaDdsqo6I73qSTteTKdg
-IHjKf/bIe5467JdAOKHDTn2yDPFywvtBFub1ZMpk/J7XyzFq929F21QHUceqVQOeT8FsSvBDFhwM
-8u/zlLOnSotj2CnRA6WQqDQM5RFr2//XT9Foj0DSkBscaSCnkHbcb6xBGtNq2xZFi0QxR8wUazhi
-1esEgTiQaGfR/FN8s7ovYScx8gOckfZvaSm7kxrlTACH8w2rkndLi2ft8FjuWF2LZTHcSdqD/teu
-YoYFqyGBEzo5fZ/8eFa5GnMHdXrb/z7sk1aVZyX0JSku0sWYS4gcpm6J28hVIQF/52Elb1C4cdK5
-Nb6wFrw+J/5jY7QqNQ9Fq7bI8kKMClTRA3BYb5s5/e7Ae+dG3g7SID62tqDhD8aX9XeUB8ByGFfO
-I7XcLChbOkVXDMEyvQ7px0abfFLfavVtxV+kuBX4QI8pD/uDl1hRjKvDqCBAEj/Q0hOvTePKDTHw
-YIe8rZSb6qvebIoKEpBTac5RJGv8FRCNm6hlXQTko4MCf4U1IcfRD/y643ZL9SZbfNHHEUxkLO11
-YMGt9birLRaoxp6subUd6TI9x3ynl0IJhw7rLfQrK5MgwmanEvEKTyRMt4aKKU6Y+uLcnSYYKtsd
-rw4vcE1DYIXKnaBKfi36AEUL3pI/jp5iYmZWwAugtXKWQXbe3p5rv2IjyJlU8863u6tYQmDBOftk
-Gdyr1zQdSUPUcYYjWWNTTJ/cttJmtNHlqouXPHI/kZxOsfIsfvJlI/1s+hF3zXB+tbVMmspsRkG4
-gp9EmBdElRwllksX3mfMJrTEDve9Z76xPevkbJZTNhdi2n3vfns9Y2SMYFuhIY5oP+ykLRKVL0Yi
-B3IiVYC0Dxg+CJLpIAhrBfUejnyjC02v6SHvcWPXxj7t7pxH2m3ZN0u4GQcRsqK/d6HuFeegBbMa
-qjvr+Wk0dLhkXSx7+cCWG9wChByqP4d3bx+MVPFWThO6KULR+HH/j53o42W/K/iODD4i2Tk1bEJb
-SFHYliBRVzCkmCwUPAvTQc4AB31/+ustovmNY4M0us8rFNvlCPi9oVJR/Hz2D6Dxc6grfASNsqNS
-7wZwtmX9F+JeoTW1KipDV/oVlP3opi+veWH3NwQVu1LpBuFHEeUxJIzcHruObvqhoFKafrvgmOG4
-SYMsNdFPrfAo/PsUIreglXcfVta9Ws0Osc9kkOeXcu6v0AOmtCyuf5OFb3uea+w7gvR0fVQuLsVw
-55uH7+Mein+MWtAp+xBZW5rIh2UnhwH98e8xtfxlOTOFIgP6KgQvOXfKkyCv7wiXppJ2TdElvobe
-Ms/SK+XaTd/XUaAPDhcGO08ZVDrjl0QKeudkeRT/04THtSC+al7y554vc6aVR7Vt3ojcQBt+6mX0
-CmiSdTgSE8JrHq94EL7npDdUXM1I3tPbbPsw/t2KXVa0DaaV7pX48HAySEREkhio0L1eOj/m/LN1
-oV/BqPe8guAJ3Fs9BJgIEyuH6Fi07aYI3/1i6i/lWa963n2iClVN7+G+5jdHxLkbc57JowUiMFKD
-uXxnOeKuW4mhN4x9Jmvu8TVTI+2WxUtIGwJ7nULbq5a7NTTEGTfUyT1F6bY2uK7J7CSi5O0qE3+8
-kVWgAJarKN7FXuGe1o8hX5ZOfuJmNZSBjj/2oxPF1v1IpxuXlBm/cxMETN5IqM3MXm/gsNWFlZtO
-geb7NeibriXiUw2mZBEoYgaSAXNspdZd0v4GqBTA1b2AFlMoGywy+ko4yIEgmt6+RhEW4nptGmh5
-L53VlIZD2qI4Lst1WfqJjSwq1GEoN/ze+zmgBH5VlEhXbI5LEBci/P4DAxmFnJ76mH6kQd3HxqTY
-qm3MgR1zs6XRyNTVm24KdOjIVHuU3tZKiuy//BZaN1dE62hvRYlHAe2TV1u+wXzcPNz1iOI8AvAw
-0kwS6iv1jMULZNcT081mwCG/EEBbbxlUClEPwUYkRwk9fPHG4b8lcalBKjD7XJESp2PF8kfPIBDq
-w2ZNJMZdlkJq1u2U8XfzEnmSdiiVDv58KZfLAaM7qolpaVVR6V1jPq1N/3c3X6/1v/UwTola9Bp+
-XUqYCSHpO+2PDMFjvZ88lAQ98QgbN9Age2txnjZZWprHxRzxOP0PFfhPV/6ayjUhdDnbfuqjYZRX
-4O43Tas9d51nTckxUd2uvrAGTPcbtROslWvO5uYWBP1K5Gl33tOUGjqFGQ5tCchd+GZduZTQ8PVM
-JjdJO0on1aD1e8d2RstAJgILL2jaBQH7Bnty4ZebOXGvhgMCKOZpJM7zLqopwmU/vWTzRTE4Pqry
-JeUtIJA8aSfL8pzxCP9LvDHokMOPwlglsuC4ApJuezeS/fsflk56lHOonAgyKpxOjUkiqG9MnrCR
-MKwFJUd1e0Xr/atXsLc1aY3h9KU+5t3ZLuAzfFGP2muZ8FtUcEy1Tkq/wx1E7zPvMtam1fQ2j69k
-jGUE0ajAuJS8gaZkO5nSvv7tBHqhChGxmYNMkRQlzmecpnAj8Lb2ooiVNgBBLEwMbVETiYGhX96+
-YrPT6EAhTRIFyrjpbe8Upvr5SI+BUMgYReh5wbCWiDsP0cygVcnOlW1IhIai36gZuUMAdH8S0cdP
-Q/SL8vcc/UdtQgAj+rVDaCP/qLoGdVsE189D28uQ78MO0XUdI69uUyi8dFUai+yRVxRORA7fXExh
-TWC8tJuzcHLeW4k9ZqMRp46RL6S1kITPE5XrGNo1bckvUxE8Sch+wpsc4kbu5Zrd9B56X2vhPjJI
-N6xlMd6FQ410UCTTAx3cdyKnkdcQk3ioqCVbqaoy1Rp00G4pdErsj0gl+4pdfmnDfJGUt1Olwxl7
-61QRCZkwDNHMhzKf0IuYUf/nu6W7yN0jYsYhLll+/vq7aA317Pc3APxkROviolGZnQ3qRxdv7CLr
-pCjAy//5uVLB7kUEpMOilSRv2K8qYwH71zZSYDkrtIWB4v0QqwaFCX/bYcfVxex5TOy1JzUB0W9C
-IkDkN4c70kTSml7BAFQoFgQnA+mLre002qmZQtAA9bTJKqDnkjPqdV9Jqqu9E/yW8nZwNhhsoYNI
-KDXQEHCnY1+D5fvD6MViEcnc688/D9xu2CpgTdxpN5cEQEBv2CQ9OFMWaEiRc0QGbpOodmOZSlIR
-2BhF913bgVDuQS3aKqRJQo8KO+SK6vfHDqp7scD4viJdk0+/6OziY75iWrW5SqACGz0BNJMC8mcl
-eW059nvYlwotk9WGSY3kZl3yza0n5j+hhAAK3RotASN0r+iQnFwK/utDadyS8iw/o5AcY9aG60uV
-JCtAb72z5K0EP4r5OFxyAXaJTWLcj++40G1AR+b8G392zqj0TQB4lZOFGOqmWXwAptKIQIdgsX/t
-v2p/qp3I0AwOnzN5l8YrED6VjMHJY5ahZI1hkVRVQwC5Pyattl6JtSvhap+H2x7hKg7Z8u8xq/V2
-56k4ckmFDKvk02T5kgaspjpZHe8zA4zEob2uQUicyk5ChsWFeMeP7M6sLw+qtCB4WiZ/GXqed9Mw
-jp7gZaj8xshilRLNVLsuQoTCu09sHq/NQPFE+eqx4gLz29/JG+KIpicS+RLMYsZH1A8DCsl+eVIp
-pkE9VaDw3TYz6o+O1DMHK1kE/k6wzUtTQ7nKtvIchPPFUF3M7usMJCh2Q4j3+ZUokzJ2YuENq/PY
-aNZQ85fmuuwxfA56pLcR9DjVH1I1XICbzcCgLQHjb/aQH0iKgWNxjwY12NjsrpPwUWVnooPGgpG+
-vHWplXQ8CX6pKoCbJ/sirk/lUCxqIwbO3SNo0ixKMRA8lUdz81IW8VwGBH0lczE4Nn4updbhnHu6
-iOSgKVG85NVOAm4i+lSr03I0OWCqPHYg1MdJ4K2WVACMSqRYV2YiG5Umv1e/xFcECmViHBlz6kFP
-E3Sd+XqhOK7PSHTn095pYQSsI0G5tVDeAIuKzrLR5ueYponloR3dDAxVYiss6o1fjaOEVTqQfb1u
-ZA206rxurJTb9K6MRQLDbvD22NGTH/5kriRpFu8LDVNvnXEEyR2fuaFhcdie5kyxnpzW4vDiWBRH
-dd7aX8hAjhD/ARJPbYtIMTpPS8Nalc6vNwqCcOmmSuIQsY7MfnD/IzycISOs0PfMK7V+TcAXHFr6
-c87o5GimAlqRwW0MZ2M4lkZlMroY3yKB3I1XotdxM/lexuM7rPtyde0XF+Gz1s4TLqXEdXTRsIEp
-x9sUMsgmyYbUYQ4QpU9ghnfY3H6iL8E/pFTw0InMmadXf08hp1Oz6eDTiZtJwkiGN9A87GAmp3kW
-mWv2LEwz/Kp/2Y+dqfYSDby3wPARLnX2UKeWdSjbLdXv+0xqpTxAnISkGld42qmCTWDkGhZdqvjd
-yRQ155HUQvfr3m+tFhn+ueNd67qtyzUwDgrpnlmzbI3aopUlngUeSDavaymJoEjMSdkdg4KCMnzY
-z21d73FmNX7wjv0AonBw7nagcMfHrYbL5NWCDoCSs5FqvjZUS00COHk+8w5uMWU386+GudqJbWXN
-nbaGonEB1EmQ/jrY4E6xPcTLP08atT7LzYeZnbenkaiF+Mjaj6iow1E8TIMoD4DN+vLqLP4+4b40
-SwH85GW9aLOOMl0NufIsDEWU+J/uymNiM2YcqretGoet+B1pVWjtaI1gTIB5jAysjmfbDEauynou
-/k8k8uK0I0IlUUGnFd3ATkygIt+x9QQmE38iq1jS35iBMkPmXqQ/JqskQeU2gCU58YYEkCV2zic5
-Zw9dnO5tGi7RmBjMs0LwpZTbrvXSTyo0j6yAWkZ02hsPFOJ6h7p4d1NOkUJen6aiAWLk7ll13q6J
-ySHhMRJ9pUn7psCOt4YfRKGM6xAqLKvZJ4JXIYwHAb9UAscHs1/xK/10rVj9inAK9shBabEEzACh
-zcToDxDvl5/+C2740Nh0bHNGrCY84L4MqhmzJyOszv7RlzsTPhIFvcF1U/ra4wBnwQl8uM+//+wg
-2fZQc7RaW+4Jw7EzD+Sf5LVL4ZKO3CzqKQ3mxrxREMtesDILuylRu6+jPEvMfD2J74OoTbwbLtal
-4buWASYWY37HjBnICRyWeeZX7OyM988rO/dH65JqWb0aaZBKe6LzZ1WgbXHy5TpDlW/4BYcNv5t+
-y//tSpzEdR/T6XnRTeujkc6nANoeqsh1+UbwaTVHqdPgYwWCVxnByKyVlORNLXWa57pgaDkQqqJL
-qEAFWgpVAxt/VuuDURtsq27uUaON9Oiz/UqTaWiFJq0L9cfQnsnNX7qLC45JDd3EIMsnBDRTTKPB
-3d1iQp7WUCTEeI3x5rf2ldFtuzmsMNwRKIAOxb+QHnvXUPNfUZY9KztiYpVY2d9OC4GesyvKn82X
-U60OvjkEHxr4E1U7LbJbdkEAEfRvsFXXe6oO1KKok5motRgMutJ/ZTNgZcp1DsCikItbxRHIQlIv
-Uzvb6OCEZIDDTN6hYCid3sEZMNKksUK+E0EOedPNaxLDfvPd8/exOyZmiTv+7X0BDKArXtUkfjD9
-JCQT3bRDWSmmFUqjd1ItvpBjKUF7EPFoweW9lU2hiA4oBISWXsV/46Fb0FAWXfpaM8alLd2pK29P
-gbq6y5ty4sgcDLJqHeKSJboHCsl+jYH+Wvo/1YqRU8a5q2rZ19+amHdSawh4+HSTqgPY31T0aU4o
-pSgHUZTwWG6/4+dy8QA5IdRcrBMS6vnfeqMKtoNDpDj7ovkc8kUdhPcj7X5mMJDr2aTSBomCInit
-zNOfkGetmMlsgNYeg3Tc/pBCAbt2ytsr5/7u1+IDLASZPOZk87zK6i/k71xrX3/Fr88QSOGtuVeM
-4uYRsduOuKhJ6OOpCTymn3zVxXp0rHyCgw+w+FdeaXvavGkOEgJw1P8ERcBlM1d9mTof8vvVN8SD
-TC6k1ZyvXIzK/s1lLrPqLzoRHNAhjAnX3sMVlH+dDXmu+bOQc6HC0MNuTz0PE5AuIPPhhlAc1c9n
-CJQMrIRGmiHdSs6/LkPWajwaOUvUYvdsejGF11xR72x+m9ZliEoBYNLZXo5jnwcSLPsXZ1ZlTWfA
-T1zW8BFZcmDPTcaX6edfVW+EYpJGUKJyaC06PAOjUJrMfLHaYMRpRQqA2nw6/mS+w1OMqEzz3YsX
-xUme6R8pgfR9Sg9x/fgOlUkT1lTizAvE6BmtNo+k57vWiwOqTNxp89t3zLzvejiWUhmv8XdoYJ0s
-eUGw2JK/KO44oprt4X2dgDIRHmRo8eo39iFEODLf4JaLGMzPWQrDAdKLM/d1qsYS0ncnK8QdrjXj
-m+WdBYEy9zgUxrXu0dBrbeOSdZNS++ij4x1Os/qmZekWxMubtKZjQdqx34WLNwresaF6Q0CWx0RD
-TyhbprSnzslAv2sjJoyCU/hNgCJh4Xpq7U0fgNVsR1X2k0MG1Ds1ysGmGgKeQg+4CDMvUjyfog9w
-QwEJi1imE60kZYPxDaA1CEtFP2T1WcHfrj104Y2TeF6GRHwIeGVD6+VKH/3lu3wsGTnEYzPK7pUj
-K/o474xN1/lspEF5d4Melki1DPcs5PkEZ2BvXXSW1TU5WD+uF/axUCSGVidriHg9hgJZ8KYjZ6qS
-OxIlNmh7gjxPCz47EjxzyGy41iNtDQmTXpk9iQ75vYL8qCyrwZJOpsLsifSijTN8TUFjzy7zoJEQ
-ra5sQp6qdKCDHvO8Z5tBLbLhIvb+LUDINHQp543ugu5MHhK/Pzns1GYyAXPdTUkyOAGA7vN2fIjr
-VBSt6xPAdnBP+IZoOplIrhHKhItFLtv9lDqpWQ+G/Jwzf8g8l3DL7GdzczMDSiuRKBrp/vzx20Ao
-EKspz2ybgIA7ak0WsbpQKtJ9WipbQ4LT96+nN/Lxysrc7taa3FWafQY3/wOPm/qNcuQdxu5t0qH2
-xEpcG3jIyjBkUXYKTMKk9jOpeFKmFXc5aKf97tWobiOH9+rHtHj5rdocG0uNf2qSdRsuWX8JR54F
-1w48Mrq7/xTFFTl5biPRSjbZzSWkFJhaz0KmqvuJzs0ilnlmNgS0gFHNI/ZebirHtHSBK9km/x18
-UgXdVxmlMNGNbVpCnQ7ydUQc1DO/+7iSFfmbMnWgAZDAIJ2CUtsWAKYThOIV65tLyyonCqhMS1sg
-Qkiu7dVnsMMzWmW/EXpZdBmIta/YaaD0AnDsHj18ds7/KIz+BaSPglfRJFXKGSH25349qFYL+Und
-FHqlo5BIhljdtDsTPr4vISw9+WeZAyeLJMRmmM8+WuFfExwW8x0ryeQ16EoJpnxyVmcWvc3UlpPU
-hQVTHRDr69u+YSL7sdp/UfdykwDylif4gXeQ7+t+rQ9qVyW7BY7DtoXNv8/iOTjq4atOCrKuXMxV
-UJv2OoDTLj4mDTkUln6DpxI0aHyz4LrFjIHD+wjXj6Wadj/NJx8A57c9mPrFZ5vbL4sxthccHtNI
-jwZN6s6+v0OVV5K+8Czux6gCVG0VNLCv6ezVvSWxuyQjUP0QNnpPgWit6B6cH2nDRD5+nhiq3lzH
-sslKqlpPjOMrz9DlrHeza9iANXDZ7QQKWUaBSUbrv6aG8N8998hAcGEcnupAW1+65VeN66Ua3UpD
-TRA9LlSX+N9iXDPgyD/DxqILhO3T12KUdPl1aw8iCJ/Mu7NBuSJIPTRd1T4aL8WtYhMq6WbzCJDG
-NPt1kOUM7mGTxw4BpysgXVHgthi7H9Abocngtun+RsxP/iUUAYWYao6UFN5aaUyhBY3z5sDHxxX8
-Hjn9ikIAgNRzr7wXlMGjal8kXIYoCPFxGRvxE0o+7EqOcm4r3HMkU6+6GmWQKLfB91YGK2E4KMpp
-KISJ4xthA2LD8uyh8y/AQrtC9GYtxxECtAaJUzhYXGJ0cA05e7WSb+XfMPLxWD4HxA2L2BL0FTDG
-CR0SQYdeUiYHkYugUo65YcplRuP0+0yGoS+xIBZtNQPeDSNNt+2tMdwe9DZ0xzu9n2N47n1W7reV
-J/sTO/8ASgGI9R8Cr31j3Kfz41GqWpQps912YAuHBGd3XRGzuvFIBJyFnmo7gCH0wHRHhOLH4Rzt
-L5Op6DtTIqpgKTHHbe+EXFcE/HkJmgbY2K2ZHCIs9LWpZEo83NvcPHo7YB0Xm1+DN0idw5BXiOV6
-ixasVwccQCWspYGTQ6IfqanYNlpqyeM6aR3ZBqK0A9lqYuvW3yvjywvHgzceGhw4xJavsO077WlA
-M1IMHaawz+lySWHNTFyvLRqGRnk4v4+V6TBTPu/I7GJjMTCaKgnAy+iO02x3Nsp/pOzv6cQ1lv/8
-S2n4elZ7iK5Q1BJLm3LKMQFRxpuCJ5LgBC6sy1IKMauTOrFym9Sm/cy8X6qrfost+Vh206025G1x
-ZJRinA3FPKGHONUMuX2NvAWcTt0LzcQbvxOeVskB/ZMnMakEo67d0GQmcHdsjjGH5YDUnCrJbiti
-C97Frjzz+/kPJXYj6hFG43U10lCOc7irj5ZjcjJ91x4i3N6O48CgeUm+44sFXci/xIjGlqfwrLT0
-ICYwwARhZWesSiY+z862vUHedOoqTH/7mqkJyXn0MwfPiE/dB46XOB7c1l/cT0cOQLEPKutpYZyB
-PsE+5bGLlpLK4QMlSUnE7fJ7+7ekxMqeFbzVxOPgaH3ZICKoXJMMD2QN8Y0a+TAc0PJN14tBsHWH
-/PIYXNBfWcOoxKy+07mT3BpJgSY1p2LmuO3RTgigOlyVL8I+DJ8GKT8ErKsB9pwSKcHmikgQQvUN
-lk8PJ+07sbHrjU5qp2YTCpcnB1xqqz8rifx5ucxsIk8AmU1+erk1kl+jzCH9fuYAmVpvuNiQssKl
-rE3zLmO2BpviAhItv4AGJJ/tz4LPv2/28zdXM/pSrXq7s/t+59xFVTmw4aOEueB3YwWWyfXfZaUW
-z8u3YRbTdxlaJWQWYODIQ4Ojrn/nmIT71bJNvjW2ebAA54lKm9YklwsDw4VPbWSWu5x4ztqCGFpD
-ElCIc/v+5XH4jo5muqH8ISpcEq4pvLQ5cFrViAZkGX0iLJgFC2bfcY4lX7OZHy8EnEI9Eo5ba+Se
-U6ZhL7plaiDBbljma+w3JPKeX11vuRLupgQG291PnEnoUlmCDdlE913yDXyNcuprTpCdmEBd6wlF
-fIHxeAImGbnDw7hDuXNV0Kv2oOMX/cugfSyw3FCt+wN0TzaP2zHSnjbsHLOOdObi8UQKmc8wBTmu
-nFNuf1ujUk16ycXtRpFKI4nEepWjC/hhfSTyAdbant+BE9LAaSKef2/RrcWxScB/vtBnoQEAmbGB
-eCTS7NXOH/UYQrEyz5ylYglZWctmSegT6onLnyJvjZV7faWY5JDfEwANvgux/GWu6tMtA2PEjZ57
-6F7jHRAumvKTOE7vu+kLVilpuDtQZRsWQhJEZUzMrJ7hNKVZD2zWrD/Zh4n9u4vsgGWnPX166466
-EZJEabelA2J+RLekOY2iUMbqsAfLIf+cusUswpsQh7e+h4EHRMYMIA7CgvKDvXxuPv6fMs1iwADR
-WrhzJSKZvKwyrQxXYFPKQRanTe+t705OBGxWgN6U2iNWcQfRQreuU/I64lM+t4ObLKgjjwSvM3th
-7aLp0p+bidgjmiVP0OpHTJZ6FUI0luEOgE5ZINCfsfyPYll3NPZ++Y82z93mBQGVBQN1axdiiIJv
-lrCflqyRyCxUW1Aisy7jQnHHOE/dWLUfxrpxtUZYNVcX5LL309PmboAQ8I0G2dt1Il0IogfeunT/
-wxOTtQ73pUP2axR2mcnoOXY91n2yzRYRY5RNjLD07U6C0CMU/EB6+dedEglj6LCGv3sxGvtp6HiT
-Uto0hiN0ef9V1P5CO/U8CGvDwKylEn51W8XRWnct2Xp4My7piu16opGdACTuVlAfyDJdb+FjRkgW
-+YIOdGSDT2M7+gnow8SIzx33BuITVXeQ6fy3EWWo8Qy2TYmCgJ/GLzDh6BaMde1Jhozb/y0t99t5
-Wy7pVYQs0WA+CHS4N+lLksPx4oL4SwMY0HTupZOZSvt7lBjdai/4I/5feHjKoVDYvj31rvJrjmUB
-G/vPZpWfWVIAF+gR08IR0xUMLe9sbZlw3JTeolNkDSz17hHzS6s+7TQKjzXgv4GsHE9ryuzINbB5
-mdv+3tI9aKdQ2rZPQ418UnTphbSk9qx5ZnP7kqz+QU+0DxF3YgFJ7/WYgzsV9WQ7epQiaau6DZ9f
-ZYlUVREMfZ9XLk5C5X3t50L7MOwYddgLVIswjr07KgQaXE4Dly7fur5NxymcKYILsxHVIifffP4k
-RPBNgYvXyBzQ1TkqBKpfqJLXzgahdXikofOM8/0f6rgKMC4aHC59qjZ5w475mmD6cNUmuR9W9tFH
-+g8t7pQd/i6XHaiF29iY0bHgdxOJve6pWCZCTAvb+E2zLWQBKUMT0bsEONT/W7Pr2b+mhKKJdkX2
-d8XSVSX1v89RlgWpQmbCvmxOfxLQ3aAZmqld5VkktTdwus84umPsIM5eOUc2R09xcJZVp71vby02
-QwDQ+gO0nKI4HpOn4FcuXkq+8+dP8TSm+Pv/LIBcQMIjYZ683ozB7pld0gWIVZvPqBDP9dJzDS7E
-ASpqJYCC4t5/6vUuQd/b4kzzdFCh/n9QPOyKOvN7DRQecEyv0ajNXCrGHbhF8WoIBvczRkZoINOg
-PXtDPPk63g1/2dKLRz7kQE7I5Qx4Kt35z+sbLW+0TeRlCk42OlkKXCXc8t6enoIKi2ax8G8LchXf
-YPhkXeSI2XevDNCBC0S4wXcLLSpQ3UILn9tkjfv/Ew207he+v/hoOp0GJ5QcK0jNnPI74oAxb7YH
-pUdFQVjp0o4Y6mCD79NR94+6c/AFpcIX89QpoGWotAbE450MLAHRt8f5cYAEArQVBw4S6DnSvTyp
-LuZp4WNZAbw2BlhBw7+4imM8jYX6PpUqejAGsdliQWs5VXSoGTU5+1SLsK9DpeY1jVEiD1V0rda+
-DPd680px01ZzQdTp+a823VkWnF7A6fMkQumvL3Tat9flsEblP00bNwsqVmbInyAkGhGDbmwlYbKX
-ayBdA21lMx6WLBulr9rFY6lfNUU/2shr6/KTH3UDeIbhBJBBBwJKtDnKY3IvBkQX6GO698q95cBc
-E6XBj7Kvv3eP7Tij/+cjZIg2UmD2ZKO0m1tmCKxCyLEb6A4LjC4+eCUVuuOQE7W16db5fws9KMWc
-s6yLhTGP85OwPRQD1Bo0MLuJdOSLbnh/6ebvGRBta2B1zCGo0LOGiqbPUknSC4YAw9dmtUoLRHnP
-23IaRcLLgdmxmcREjKLDrtMpdjF+SuyQI2P32Mg0TVEXU47v0DAl5rhX8kiiu6BSJPWE9dUNleJz
-HLDnHQJScIuecvLe7rWfN7AQv24eXqtBU167dfcv6xy6k6LIvAaXHGYMEReAgy1CuOvjSbkSHGA4
-a2zrseY0+QJNAexDoxs1yHJKWE5oLB0h821ZXk0PKpxEC6A4S7SS1x0I8eygk4FZnWN2OZGKVfie
-Z60NiSwsWCYXITK6l9YM/Qco6TfIagUN8UKW/HFoaeTCUkwRAW+Kh+f++7kOSekLt9VqBuIxMIXB
-G9jlwr3mvSfRYfpvKOI1Sz+wXQgAMSBTngNVQTAS/7DpAvxgUz5CNNWsnF75zSOdgm6lJPiYR+Ip
-ClYGyDUkntmEfemlnbE9voWXGjuHyARBIMj/GPTYOvCWwnCob0pQrhWo7eKT43Q6vy6HNw5rzQpR
-TDBMObYcYsVLDoy68KxtBAglHIEXemu9cYMdtIfocnnpKUebXWuhQynJTJCgdKPqka3cT7Q1f6XK
-n8ankmP0JN8kkKwi0AtMIEa+qJx9FbOErCZZBpzcuB4SyQzHmFuhynDm6VLvEDrmHYbEFG4BdsME
-5LMA7mTddcmfNJ9rff+K2DLvRaND1bM5N0cU71O87t28CFPOpX4l4PVE4+1yPrChBstfQ1R80BnV
-k9+AqCar8QWaScqmeO4ljy91ULq68l7UI49sHhhrXTmX1qNNssQQxIElwiD5mOajC0BME92s2XXH
-KHH7h0lcXXvlevkbY6fzEknuTssb/e9L+Tzj5qH7lj6fBmbZSDYXlypFX0R2QoPPVKkpxXkQS18O
-66gKgDFiv7PVH2a+T7n0Ck/T9NmpwdvhlEljbW/+yUXHhQ4B+O5UORc4d4QJ0IR6yFRnB2XPSH3w
-8mLl7FCUjGWAlvJ7HfbSxIkEb+Tnhb1XXbO8K5HADiWkiaJwk4/eVB9baO8KBjvMP4FCY8U+YIe9
-3x4xi7loUort2x/DEtH+DbCpfhjhaBY0XqgkmWbMAH6DwDf1RCbaNVD7ET7yZmXKm2fCm8F2IyHj
-a7FjkT8rM5JoGrM6t/WpnYR4vHSaPyvCC4D1ivshma5z+dcreDH9yK5S8tegTvMqTWN+d8sW0rR/
-8xNEhHmGyKH18dui6c2Ue2F/J0S/G7L0nm83T185o8ck4tQQYh78CzYpN31NTs7V0l8/gALBW8Hk
-6pbs/sQi8BuxqQCF3zeuGSfzARd6N38EO6lDk+fMRZVaZfrX3S5LcKYeOvhs2D6+iji7ZOiEO1bh
-Gl8fjSv2t1+KSW3VU6xu3jTB75gpNv+leJy2jq5op1pas7U1eMlvyxRHVJluj2MNE0oNhsUWJYsC
-/Jy4JfJWGdMv+MCUucs2be8ZD3zfhrrcWoDFQJX3waVXRB+Zq6IMVuMNc/HMztWsG0PFk1shbRwC
-uRO1KxYKrM+ZVDevr9wHHCQ2vq1bxunUvW3t9pWOWAzg+b+gdvDRF/ccPVLgWbBw7yMep00Vl2yF
-e+tmzPzFVaLEj13PpoC6EhksaCbxLBh2E6d1DeS3EpU9zw98pCcRhTIavU20cDxa26VbpBCu5T2C
-Xqq1CfdhXnIXwYXPH7wKxXV9CmZVpU6Q8u0pdAjgcrWnZeemSpgYDT83KTpfcjoqXoAtkKIYRGgX
-x5mEzbh/hoASeW13kSzu9KlXBdLTSAjKK72rsvdCFzrWnTB+eT7t/rk276tDBZYmuIyLM1gBBRQh
-gkI2nHGvbTndUBLKej4e0272UIahgYYqYSF22WpQoLg986Vq+bmCDxESICIrmbyJCAdS6asYLf9n
-+vldqO8fbzjvX0OP9yXVBebJK+LXt6iP1RrmaayhScxeVzEy3FpZZE/iez0HcrSunoOeU5Gff8xh
-ePlCSGz22nK/qunTG+ztB51R4wX4aNUIZxWmFMZc9JqbuiJ7v/ZThiJS9Vl+blK4wtHyEFw/Y24m
-MjdODw9FkmMYS/4dGF83oQ0gFmreNTCgk84axrbSilV83qQSn3waOEkasA297nTdBy5OoIa4IfNk
-8fpNkfrcwA6dQi40lOzlUoNr/lPMiDmQWoeuNQU7lusTKTurlEkT4qsIb4mxWCcGYscPSk6Ilgfe
-+cYQxBPZXXgwyiuA3lWDZGoqzx/2KEJOGvVhhKFUKpwEf1oIWGlE8NQ8qhxQKqh74E10JsReBS3x
-wlvipbI+WtumZ8XNAp/Q07mnJxGlaeD6Ob56DhBogtPnHNHGwboOkSUSaZGR3D8m92FqTqTyl6Kg
-FVEq23DKzx7GLXT51X1GHaXYart8z6L6/BOSrY7mzQ/XPVbfr8/GrGY4PDpJQZHCEEuNZK+1rXYv
-VIl8tei9z4sXUmjwadPBYBk2qdju6x7ngsHc3OlC2iQvGh0hgrl48zan3C+a5oZFvKRyddquDfuX
-mXCMh/DJCq6cxU9tFgRL+H6BKpGBWuuB9NdH9Wy59uYKLoyaoUZ9B7SXJY8cA2vk2NrOFngDp9dR
-diqslEpDEdR8YDqJIDvORVziLlinM27KT8n78o0RMV+VIVK4K0azJlb8poVSLuWkYarjB7uQlv6H
-N5kThEie1CnwVpkiFO7C8bZPEcytU3Q5mpdnFtxtvBZiP0Z9oOnvAAH6g4SRtRctoEOYOgtQUbn7
-/ArJFTPIEqx2NP9DRRRvKAfn5LqDD7Auvyx88Wgi8bS+Q0Pxepd9Z6enZ5gPsfgco8uFeqA6P9Ci
-9bmKdnHLIiwJ6d1TlCwdBibDpRyZEDhoK8Q2CQobhSa+1Knu2kBsqCFZEKH93Td9zv2BWuTpWQT9
-9q+val61ejmHTdFQEp0+oPQqHdh6D9C4WS/aFNzKwYCS4GK8rdVxdDYwrNaLd1L0og454613x+AG
-06SmWDwb/MD4RoqJQtJR45RHKJzOnlP+SpaztoxccX4tt0WRVpl5lTz9srdHeVrh+eW42V4mMk8h
-1uy2EHSPxJUEkj7fc/22/gtxUAN1Yg5X06n/32VH6uYJXnp2BZJrzKnLgHRboALgceoVjXAsB7WE
-UR8q7oY7nqHwEDLfksjo3EehK9AXlg3nLRGVjD8xafNBI4soPJRwu1qtWQBibjj56Ph6wNh8U3xL
-ZMAIS8oA+wxwcgE6rL6vTZeEhkCWsYFwVYRmG2Lni8MC7GWGktABccXhCg2LRV94nvjxg7ve0uW2
-RHH6wSGpJwohh9yFouxoNzg6Bfy8lI7/eRrjHc0VnzMTVoe4yMyzOi/jaR4aPTc+GZVQjFKTYkzE
-+IhJLro5rb8idx91eV55ppTXTRX7r95zlj3XoH9AWD7D+2br2SSKXbVzj0duYVhUu9uK34i/BgFO
-2j2wQ6LgYIDo2yAd3T7Ggcih3fd+XJ04xBlYGc78rlkrTRxbCk6avLku+LNPdk+7a9ExnYFJ2T2l
-IRSgYLfsYKj7LOkGG4vbathlxStVbFOlCpD10V2ZVHvKYVZpB8djuHOxf0ambGgCwCcyxwZLKtDw
-DwY47k1qtcx/IIMcwxv5xRdri20QXF2hE/w6+Cul7TGwRehkqyVq4iPzaSTutv+osnmd1eLhGlrw
-OBoMklFj9U/GTZMT9RsGCPawp7JVzmx3KLxjp5YwM/+Eee7H6MXgypl26mfOjw7jNPWM/K/iYIbf
-T1E7opS9NIu6ez5gAu5X+T+OfUwgdbeU03+UHm498u9wKuK1SNN/Rr8/QlmE7vm6yQh4XRMiVrwB
-og/jOR6UI+z90KETj4G/XjXMO4xM5kGKCyt3JfZ56Rhn178aNCIezuEpR8sV3ybQB+I7vPjG+rbo
-+zyW4Pzl6FONPNZTlKSpCFxNB4CqHbFtkK7q4Vniy/+IXl7EEHxx/PeOdg5PlceExCgjx3GcjD7P
-ZfO/11DJoJuxvjF//eo6Nw3Nk1TNN2AOXDH610NmH+K0VEQhGklbhZBrjE1i+xHVAY9k9fwZ9pKG
-LkoLHg+SabZptH15ZUZdVTSrr9I57240oCZjRdEg7lXamD8qGekKbGy/m4Jj7Z63ftiQJKmNLfbn
-JyQL8BR989h2BN8ring1wHh5MjppwhAW1Rvwhw+gBwGN0scHn5eAFiqkrVA0CtHRb01lDKinMdYa
-WVRPqjGLK2Rc+ftcKc6xrM5fEX4sG0nA5ZAFW7qE1t78RhNQj0XkmZxxSu1F2OJLiojucV9q5Fxw
-e0IOkIUvWFv3xlNNGhFx4uIeJLTY3EbhivIO3oQIQv/lDaRHYVezLSxh1rPV+UfaoTtIyyN76zha
-8SVjgvUPRDL8vtrVoA+bfo0697CKWprGUMU6sB5Bve7dpcBBYd3UXCP7cGJXAm04Ca80EdorjXdN
-4w0IepUIlsDf1NVyciJUqdVJOw1TMVxsb0ZKwKo0fsZbnjDsPIhShG6EW+wo+1gJkYMTWGkVFXc/
-e2Wbl6DW/2obBb+2p/0JACTle3VpSjr8G8Sd1GDYtcxojqpwH2f/NcfNd11F/BHFgCIs+SDZmaK6
-aGXV55Tteb4tD5RNS+309MtdSztU6860jo50vx0iEW9H6k8s/ndkCkF/05LcLB72KWCM6LLKDhqc
-a2Zv4WbNX0fbQkaaS11txAT1fVFiPNBU24QOk7fidQnt4GBnbgz63dXQClx0Nf2Hq7Ue5GVgakas
-J1MUMIBnTt0ZUSPuEx/x1EMEYZtMWOWehuGsjy5/1NFSTW0HuLIXWAMYmDvlsrR7O/hTEPls+Sni
-c/QjVo4SRb3x5fhnI7Ya/4pcdBiCn1ZkvjFRv1kxYYqU1QkTLNww/jdSYYYAAhKmZPoEwhM0TibY
-WHYCuPNSrGZySWPeuLp416UdQXLZIDHoDeJTKqIz3ldZHm5ftiJLZnOMzJ7Hb+pjgvKfwBBixD7K
-sxy01kLN5OJ9Q7RUYEEuwc44tG+GoD8ZVcwNYtYcWH41XWom0G/dT2gIoAofa9tXrRvpSF3jyQwO
-EAKKSfLNYLTmNn/MSPAKFl+SdJGx/nw+ojEXTWL6RZPl+62CVOT4M2sJXAuMHoVnRPGjZ/1cbw9I
-wlZ3IRDGKU/ZJTwaprIJOroB8ib4JteAMi8+6TM+YAS3uz6J74i0CaWmlHY0K4NKLGd1AZr5IeKC
-dc5c1bJC6Rzx1YnPskViKwzyvBnhfWpclqA0xybk/Se7BlWV3xYt2BVxoRyH/yNthPjE1GH+R0x+
-61c518bxrKwxjohsRG+jt/Lq2uCqZC1ZNxUmdiAHuCJaDwAuVMn0aj0AGv5tGNH24xNau7PDlHhR
-GI80yKgOuMtc07SBVti+jyl3/CCDefx9uVuaiZtoCXED/uLKZduPrAIWMK6ba4ssINl/fvaQhHY/
-GyiSLR9PaoD9kB54qTzD2KsC1lT4wfoJryIYmFOxQLlWt51+E8Yo1KqT2/f01qm1gD6KbQB5b9dq
-BapOmY5iBY053ks+1BNGBRsBUSXqSusphLn7fgTiMofIwKr8y4L7EFGtC0uEB5TszAENpF5YQ/kI
-16pche3Kip5I196dWw6kkBVzzyDfDgfRldov4Rsh+MWFqdmYM73CrBy9YJD167Et7BNB4WN4if/u
-bub4gDN+gBIcyTMGnXeKLYBAAo6ZhwWupjoPy1cWqDYSO/WVgeGX9ZSAlrmm2btOJjN/CkRYeDr+
-mq/6Ij6I9MDVe1KQgTj0BN69720I3VDljT6ttLgchnCzkSilflmHmg6Fpe7msHHxpZBCUotDMUo2
-jYK98AUyGblSuoRGagXZniqkB/oDNGGl2gvO186f+l91Lq9s0RiPVpG3TvaufhOPVU/19AH8QMa7
-U5ys883+JdyUxjvjVf2CapdBA+DvmZA6oNDJmALsCmDYUo1u+D6EEdSsaedTsNEHNPZxCuq6lsZN
-poPuXAvZkenaxZFuNfeAmCUizcNzYIIYu0Yaxno0Ren97LMl+Xe5k7gOxV2vKXEIT66sHs05u6GO
-7SWAh4Ax4e33VlxeXBHH7lFdTOvJAmLYos48v/7gn+OngHgXTrcDn3GBlTbsgwRwBibwStWz/wPJ
-gYj1OztdGO2daoI/g2wd21aafRlUZDKtg6AXFYF1oj3CcShzn9GEWi/LL6SbPQtlyK3FMiHYgFRG
-2wu7nXqFOnOtrA3fbK5DJ2JPdrH5tMsxMx/A9ogq4BlkqQdA8i2wceAIY/x0yy82+PI8bDcfTwHb
-KTATR5rciT0Q2rZMtY3VJWFxIUm1OpzP3/1u63ugxGZiSjyeM8LEC9aKYIpbShCt8+NKa1gs0522
-ljTFmaizqu3CI1dmB7F84m7/w6/QdOT4LkbZypHRTqBNEf2H3RcXaM33UNYB7nMkIo5+IfwkzuJw
-osUY6cQPF/b5k5wM4tIYM/Pvmq3bp3fsXr2E3EAZmbSl+TthVLY4g6Lr+Fe4eALrVriTxrRKqERc
-SvhGwRRq+oHwvFuauaZZxmH43b5fCFIGVFCjbdr43ys5QNRiNHFxABZbuf8+Y18haaPrPUb7XoBo
-m1BvmBJ0FbmvhD5XI50WwjjFdr2rbvBKUvVmDuC6t545IE+vJjhAC2kzxTXJyvGFEXqpaNXwLf3/
-MrzD+GR7PrONFWHUO9AQawj9eveBSlLmE4A7W/oTjGfRWng12l3YFOqMfgzYRbJ4FSxCWz5a21dE
-PnEaI28AoGj8WNNnunT/N2LWIXnSO2JDXsM3xzS+mdn7HaxwnMCEjgrBK9zS
+<?php
+
+/**
+ * SFTP Stream Wrapper
+ *
+ * Creates an sftp:// protocol handler that can be used with, for example, fopen(), dir(), etc.
+ *
+ * PHP version 5
+ *
+ * LICENSE: Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @category  Net
+ * @package   Net_SFTP_Stream
+ * @author    Jim Wigginton <terrafrost@php.net>
+ * @copyright 2013 Jim Wigginton
+ * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @link      http://phpseclib.sourceforge.net
+ */
+
+/**
+ * SFTP Stream Wrapper
+ *
+ * @package Net_SFTP_Stream
+ * @author  Jim Wigginton <terrafrost@php.net>
+ * @access  public
+ */
+class Net_SFTP_Stream
+{
+    /**
+     * SFTP instances
+     *
+     * Rather than re-create the connection we re-use instances if possible
+     *
+     * @var array
+     */
+    static $instances;
+
+    /**
+     * SFTP instance
+     *
+     * @var object
+     * @access private
+     */
+    var $sftp;
+
+    /**
+     * Path
+     *
+     * @var string
+     * @access private
+     */
+    var $path;
+
+    /**
+     * Mode
+     *
+     * @var string
+     * @access private
+     */
+    var $mode;
+
+    /**
+     * Position
+     *
+     * @var int
+     * @access private
+     */
+    var $pos;
+
+    /**
+     * Size
+     *
+     * @var int
+     * @access private
+     */
+    var $size;
+
+    /**
+     * Directory entries
+     *
+     * @var array
+     * @access private
+     */
+    var $entries;
+
+    /**
+     * EOF flag
+     *
+     * @var bool
+     * @access private
+     */
+    var $eof;
+
+    /**
+     * Context resource
+     *
+     * Technically this needs to be publically accessible so PHP can set it directly
+     *
+     * @var resource
+     * @access public
+     */
+    var $context;
+
+    /**
+     * Notification callback function
+     *
+     * @var callable
+     * @access public
+     */
+    var $notification;
+
+    /**
+     * Registers this class as a URL wrapper.
+     *
+     * @param string $protocol The wrapper name to be registered.
+     * @return bool True on success, false otherwise.
+     * @access public
+     */
+    static function register($protocol = 'sftp')
+    {
+        if (in_array($protocol, stream_get_wrappers(), true)) {
+            return false;
+        }
+        $class = function_exists('get_called_class') ? get_called_class() : __CLASS__;
+        return stream_wrapper_register($protocol, $class);
+    }
+
+    /**
+     * The Constructor
+     *
+     * @access public
+     */
+    function __construct()
+    {
+        if (defined('NET_SFTP_STREAM_LOGGING')) {
+            echo "__construct()\r\n";
+        }
+
+        if (!class_exists('Net_SFTP')) {
+            include_once 'Net/SFTP.php';
+        }
+    }
+
+    /**
+     * Path Parser
+     *
+     * Extract a path from a URI and actually connect to an SSH server if appropriate
+     *
+     * If "notification" is set as a context parameter the message code for successful login is
+     * NET_SSH2_MSG_USERAUTH_SUCCESS. For a failed login it's NET_SSH2_MSG_USERAUTH_FAILURE.
+     *
+     * @param string $path
+     * @return string
+     * @access private
+     */
+    function _parse_path($path)
+    {
+        $orig = $path;
+        extract(parse_url($path) + array('port' => 22));
+        if (isset($query)) {
+            $path.= '?' . $query;
+        } elseif (preg_match('/(\?|\?#)$/', $orig)) {
+            $path.= '?';
+        }
+        if (isset($fragment)) {
+            $path.= '#' . $fragment;
+        } elseif ($orig[strlen($orig) - 1] == '#') {
+            $path.= '#';
+        }
+
+        if (!isset($host)) {
+            return false;
+        }
+
+        if (isset($this->context)) {
+            $context = stream_context_get_params($this->context);
+            if (isset($context['notification'])) {
+                $this->notification = $context['notification'];
+            }
+        }
+
+        if ($host[0] == '$') {
+            $host = substr($host, 1);
+            global $$host;
+            if (!is_object($$host) || get_class($$host) != 'Net_SFTP') {
+                return false;
+            }
+            $this->sftp = $$host;
+        } else {
+            if (isset($this->context)) {
+                $context = stream_context_get_options($this->context);
+            }
+            if (isset($context[$scheme]['session'])) {
+                $sftp = $context[$scheme]['session'];
+            }
+            if (isset($context[$scheme]['sftp'])) {
+                $sftp = $context[$scheme]['sftp'];
+            }
+            if (isset($sftp) && is_object($sftp) && get_class($sftp) == 'Net_SFTP') {
+                $this->sftp = $sftp;
+                return $path;
+            }
+            if (isset($context[$scheme]['username'])) {
+                $user = $context[$scheme]['username'];
+            }
+            if (isset($context[$scheme]['password'])) {
+                $pass = $context[$scheme]['password'];
+            }
+            if (isset($context[$scheme]['privkey']) && is_object($context[$scheme]['privkey']) && get_Class($context[$scheme]['privkey']) == 'Crypt_RSA') {
+                $pass = $context[$scheme]['privkey'];
+            }
+
+            if (!isset($user) || !isset($pass)) {
+                return false;
+            }
+
+            // casting $pass to a string is necessary in the event that it's a Crypt_RSA object
+            if (isset(self::$instances[$host][$port][$user][(string) $pass])) {
+                $this->sftp = self::$instances[$host][$port][$user][(string) $pass];
+            } else {
+                $this->sftp = new Net_SFTP($host, $port);
+                $this->sftp->disableStatCache();
+                if (isset($this->notification) && is_callable($this->notification)) {
+                    /* if !is_callable($this->notification) we could do this:
+
+                       user_error('fopen(): failed to call user notifier', E_USER_WARNING);
+
+                       the ftp wrapper gives errors like that when the notifier isn't callable.
+                       i've opted not to do that, however, since the ftp wrapper gives the line
+                       on which the fopen occurred as the line number - not the line that the
+                       user_error is on.
+                    */
+                    call_user_func($this->notification, STREAM_NOTIFY_CONNECT, STREAM_NOTIFY_SEVERITY_INFO, '', 0, 0, 0);
+                    call_user_func($this->notification, STREAM_NOTIFY_AUTH_REQUIRED, STREAM_NOTIFY_SEVERITY_INFO, '', 0, 0, 0);
+                    if (!$this->sftp->login($user, $pass)) {
+                        call_user_func($this->notification, STREAM_NOTIFY_AUTH_RESULT, STREAM_NOTIFY_SEVERITY_ERR, 'Login Failure', NET_SSH2_MSG_USERAUTH_FAILURE, 0, 0);
+                        return false;
+                    }
+                    call_user_func($this->notification, STREAM_NOTIFY_AUTH_RESULT, STREAM_NOTIFY_SEVERITY_INFO, 'Login Success', NET_SSH2_MSG_USERAUTH_SUCCESS, 0, 0);
+                } else {
+                    if (!$this->sftp->login($user, $pass)) {
+                        return false;
+                    }
+                }
+                self::$instances[$host][$port][$user][(string) $pass] = $this->sftp;
+            }
+        }
+
+        return $path;
+    }
+
+    /**
+     * Opens file or URL
+     *
+     * @param string $path
+     * @param string $mode
+     * @param int $options
+     * @param string $opened_path
+     * @return bool
+     * @access public
+     */
+    function _stream_open($path, $mode, $options, &$opened_path)
+    {
+        $path = $this->_parse_path($path);
+
+        if ($path === false) {
+            return false;
+        }
+        $this->path = $path;
+
+        $this->size = $this->sftp->size($path);
+        $this->mode = preg_replace('#[bt]$#', '', $mode);
+        $this->eof = false;
+
+        if ($this->size === false) {
+            if ($this->mode[0] == 'r') {
+                return false;
+            } else {
+                $this->sftp->touch($path);
+                $this->size = 0;
+            }
+        } else {
+            switch ($this->mode[0]) {
+                case 'x':
+                    return false;
+                case 'w':
+                    $this->sftp->truncate($path, 0);
+                    $this->size = 0;
+            }
+        }
+
+        $this->pos = $this->mode[0] != 'a' ? 0 : $this->size;
+
+        return true;
+    }
+
+    /**
+     * Read from stream
+     *
+     * @param int $count
+     * @return mixed
+     * @access public
+     */
+    function _stream_read($count)
+    {
+        switch ($this->mode) {
+            case 'w':
+            case 'a':
+            case 'x':
+            case 'c':
+                return false;
+        }
+
+        // commented out because some files - eg. /dev/urandom - will say their size is 0 when in fact it's kinda infinite
+        //if ($this->pos >= $this->size) {
+        //    $this->eof = true;
+        //    return false;
+        //}
+
+        $result = $this->sftp->get($this->path, false, $this->pos, $count);
+        if (isset($this->notification) && is_callable($this->notification)) {
+            if ($result === false) {
+                call_user_func($this->notification, STREAM_NOTIFY_FAILURE, STREAM_NOTIFY_SEVERITY_ERR, $this->sftp->getLastSFTPError(), NET_SFTP_OPEN, 0, 0);
+                return 0;
+            }
+            // seems that PHP calls stream_read in 8k chunks
+            call_user_func($this->notification, STREAM_NOTIFY_PROGRESS, STREAM_NOTIFY_SEVERITY_INFO, '', 0, strlen($result), $this->size);
+        }
+
+        if (empty($result)) { // ie. false or empty string
+            $this->eof = true;
+            return false;
+        }
+        $this->pos+= strlen($result);
+
+        return $result;
+    }
+
+    /**
+     * Write to stream
+     *
+     * @param string $data
+     * @return mixed
+     * @access public
+     */
+    function _stream_write($data)
+    {
+        switch ($this->mode) {
+            case 'r':
+                return false;
+        }
+
+        $result = $this->sftp->put($this->path, $data, NET_SFTP_STRING, $this->pos);
+        if (isset($this->notification) && is_callable($this->notification)) {
+            if (!$result) {
+                call_user_func($this->notification, STREAM_NOTIFY_FAILURE, STREAM_NOTIFY_SEVERITY_ERR, $this->sftp->getLastSFTPError(), NET_SFTP_OPEN, 0, 0);
+                return 0;
+            }
+            // seems that PHP splits up strings into 8k blocks before calling stream_write
+            call_user_func($this->notification, STREAM_NOTIFY_PROGRESS, STREAM_NOTIFY_SEVERITY_INFO, '', 0, strlen($data), strlen($data));
+        }
+
+        if ($result === false) {
+            return false;
+        }
+        $this->pos+= strlen($data);
+        if ($this->pos > $this->size) {
+            $this->size = $this->pos;
+        }
+        $this->eof = false;
+        return strlen($data);
+    }
+
+    /**
+     * Retrieve the current position of a stream
+     *
+     * @return int
+     * @access public
+     */
+    function _stream_tell()
+    {
+        return $this->pos;
+    }
+
+    /**
+     * Tests for end-of-file on a file pointer
+     *
+     * In my testing there are four classes functions that normally effect the pointer:
+     * fseek, fputs  / fwrite, fgets / fread and ftruncate.
+     *
+     * Only fgets / fread, however, results in feof() returning true. do fputs($fp, 'aaa') on a blank file and feof()
+     * will return false. do fread($fp, 1) and feof() will then return true. do fseek($fp, 10) on ablank file and feof()
+     * will return false. do fread($fp, 1) and feof() will then return true.
+     *
+     * @return bool
+     * @access public
+     */
+    function _stream_eof()
+    {
+        return $this->eof;
+    }
+
+    /**
+     * Seeks to specific location in a stream
+     *
+     * @param int $offset
+     * @param int $whence
+     * @return bool
+     * @access public
+     */
+    function _stream_seek($offset, $whence)
+    {
+        switch ($whence) {
+            case SEEK_SET:
+                if ($offset >= $this->size || $offset < 0) {
+                    return false;
+                }
+                break;
+            case SEEK_CUR:
+                $offset+= $this->pos;
+                break;
+            case SEEK_END:
+                $offset+= $this->size;
+        }
+
+        $this->pos = $offset;
+        $this->eof = false;
+        return true;
+    }
+
+    /**
+     * Change stream options
+     *
+     * @param string $path
+     * @param int $option
+     * @param mixed $var
+     * @return bool
+     * @access public
+     */
+    function _stream_metadata($path, $option, $var)
+    {
+        $path = $this->_parse_path($path);
+        if ($path === false) {
+            return false;
+        }
+
+        // stream_metadata was introduced in PHP 5.4.0 but as of 5.4.11 the constants haven't been defined
+        // see http://www.php.net/streamwrapper.stream-metadata and https://bugs.php.net/64246
+        //     and https://github.com/php/php-src/blob/master/main/php_streams.h#L592
+        switch ($option) {
+            case 1: // PHP_STREAM_META_TOUCH
+                return $this->sftp->touch($path, $var[0], $var[1]);
+            case 2: // PHP_STREAM_OWNER_NAME
+            case 3: // PHP_STREAM_GROUP_NAME
+                return false;
+            case 4: // PHP_STREAM_META_OWNER
+                return $this->sftp->chown($path, $var);
+            case 5: // PHP_STREAM_META_GROUP
+                return $this->sftp->chgrp($path, $var);
+            case 6: // PHP_STREAM_META_ACCESS
+                return $this->sftp->chmod($path, $var) !== false;
+        }
+    }
+
+    /**
+     * Retrieve the underlaying resource
+     *
+     * @param int $cast_as
+     * @return resource
+     * @access public
+     */
+    function _stream_cast($cast_as)
+    {
+        return $this->sftp->fsock;
+    }
+
+    /**
+     * Advisory file locking
+     *
+     * @param int $operation
+     * @return bool
+     * @access public
+     */
+    function _stream_lock($operation)
+    {
+        return false;
+    }
+
+    /**
+     * Renames a file or directory
+     *
+     * Attempts to rename oldname to newname, moving it between directories if necessary.
+     * If newname exists, it will be overwritten.  This is a departure from what Net_SFTP
+     * does.
+     *
+     * @param string $path_from
+     * @param string $path_to
+     * @return bool
+     * @access public
+     */
+    function _rename($path_from, $path_to)
+    {
+        $path1 = parse_url($path_from);
+        $path2 = parse_url($path_to);
+        unset($path1['path'], $path2['path']);
+        if ($path1 != $path2) {
+            return false;
+        }
+
+        $path_from = $this->_parse_path($path_from);
+        $path_to = parse_url($path_to);
+        if ($path_from === false) {
+            return false;
+        }
+
+        $path_to = $path_to['path']; // the $component part of parse_url() was added in PHP 5.1.2
+        // "It is an error if there already exists a file with the name specified by newpath."
+        //  -- http://tools.ietf.org/html/draft-ietf-secsh-filexfer-02#section-6.5
+        if (!$this->sftp->rename($path_from, $path_to)) {
+            if ($this->sftp->stat($path_to)) {
+                return $this->sftp->delete($path_to, true) && $this->sftp->rename($path_from, $path_to);
+            }
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Open directory handle
+     *
+     * The only $options is "whether or not to enforce safe_mode (0x04)". Since safe mode was deprecated in 5.3 and
+     * removed in 5.4 I'm just going to ignore it.
+     *
+     * Also, nlist() is the best that this function is realistically going to be able to do. When an SFTP client
+     * sends a SSH_FXP_READDIR packet you don't generally get info on just one file but on multiple files. Quoting
+     * the SFTP specs:
+     *
+     *    The SSH_FXP_NAME response has the following format:
+     *
+     *        uint32     id
+     *        uint32     count
+     *        repeats count times:
+     *                string     filename
+     *                string     longname
+     *                ATTRS      attrs
+     *
+     * @param string $path
+     * @param int $options
+     * @return bool
+     * @access public
+     */
+    function _dir_opendir($path, $options)
+    {
+        $path = $this->_parse_path($path);
+        if ($path === false) {
+            return false;
+        }
+        $this->pos = 0;
+        $this->entries = $this->sftp->nlist($path);
+        return $this->entries !== false;
+    }
+
+    /**
+     * Read entry from directory handle
+     *
+     * @return mixed
+     * @access public
+     */
+    function _dir_readdir()
+    {
+        if (isset($this->entries[$this->pos])) {
+            return $this->entries[$this->pos++];
+        }
+        return false;
+    }
+
+    /**
+     * Rewind directory handle
+     *
+     * @return bool
+     * @access public
+     */
+    function _dir_rewinddir()
+    {
+        $this->pos = 0;
+        return true;
+    }
+
+    /**
+     * Close directory handle
+     *
+     * @return bool
+     * @access public
+     */
+    function _dir_closedir()
+    {
+        return true;
+    }
+
+    /**
+     * Create a directory
+     *
+     * Only valid $options is STREAM_MKDIR_RECURSIVE
+     *
+     * @param string $path
+     * @param int $mode
+     * @param int $options
+     * @return bool
+     * @access public
+     */
+    function _mkdir($path, $mode, $options)
+    {
+        $path = $this->_parse_path($path);
+        if ($path === false) {
+            return false;
+        }
+
+        return $this->sftp->mkdir($path, $mode, $options & STREAM_MKDIR_RECURSIVE);
+    }
+
+    /**
+     * Removes a directory
+     *
+     * Only valid $options is STREAM_MKDIR_RECURSIVE per <http://php.net/streamwrapper.rmdir>, however,
+     * <http://php.net/rmdir>  does not have a $recursive parameter as mkdir() does so I don't know how
+     * STREAM_MKDIR_RECURSIVE is supposed to be set. Also, when I try it out with rmdir() I get 8 as
+     * $options. What does 8 correspond to?
+     *
+     * @param string $path
+     * @param int $mode
+     * @param int $options
+     * @return bool
+     * @access public
+     */
+    function _rmdir($path, $options)
+    {
+        $path = $this->_parse_path($path);
+        if ($path === false) {
+            return false;
+        }
+
+        return $this->sftp->rmdir($path);
+    }
+
+    /**
+     * Flushes the output
+     *
+     * See <http://php.net/fflush>. Always returns true because Net_SFTP doesn't cache stuff before writing
+     *
+     * @return bool
+     * @access public
+     */
+    function _stream_flush()
+    {
+        return true;
+    }
+
+    /**
+     * Retrieve information about a file resource
+     *
+     * @return mixed
+     * @access public
+     */
+    function _stream_stat()
+    {
+        $results = $this->sftp->stat($this->path);
+        if ($results === false) {
+            return false;
+        }
+        return $results;
+    }
+
+    /**
+     * Delete a file
+     *
+     * @param string $path
+     * @return bool
+     * @access public
+     */
+    function _unlink($path)
+    {
+        $path = $this->_parse_path($path);
+        if ($path === false) {
+            return false;
+        }
+
+        return $this->sftp->delete($path, false);
+    }
+
+    /**
+     * Retrieve information about a file
+     *
+     * Ignores the STREAM_URL_STAT_QUIET flag because the entirety of Net_SFTP_Stream is quiet by default
+     * might be worthwhile to reconstruct bits 12-16 (ie. the file type) if mode doesn't have them but we'll
+     * cross that bridge when and if it's reached
+     *
+     * @param string $path
+     * @param int $flags
+     * @return mixed
+     * @access public
+     */
+    function _url_stat($path, $flags)
+    {
+        $path = $this->_parse_path($path);
+        if ($path === false) {
+            return false;
+        }
+
+        $results = $flags & STREAM_URL_STAT_LINK ? $this->sftp->lstat($path) : $this->sftp->stat($path);
+        if ($results === false) {
+            return false;
+        }
+
+        return $results;
+    }
+
+    /**
+     * Truncate stream
+     *
+     * @param int $new_size
+     * @return bool
+     * @access public
+     */
+    function _stream_truncate($new_size)
+    {
+        if (!$this->sftp->truncate($this->path, $new_size)) {
+            return false;
+        }
+
+        $this->eof = false;
+        $this->size = $new_size;
+
+        return true;
+    }
+
+    /**
+     * Change stream options
+     *
+     * STREAM_OPTION_WRITE_BUFFER isn't supported for the same reason stream_flush isn't.
+     * The other two aren't supported because of limitations in Net_SFTP.
+     *
+     * @param int $option
+     * @param int $arg1
+     * @param int $arg2
+     * @return bool
+     * @access public
+     */
+    function _stream_set_option($option, $arg1, $arg2)
+    {
+        return false;
+    }
+
+    /**
+     * Close an resource
+     *
+     * @access public
+     */
+    function _stream_close()
+    {
+    }
+
+    /**
+     * __call Magic Method
+     *
+     * When you're utilizing an SFTP stream you're not calling the methods in this class directly - PHP is calling them for you.
+     * Which kinda begs the question... what methods is PHP calling and what parameters is it passing to them? This function
+     * lets you figure that out.
+     *
+     * If NET_SFTP_STREAM_LOGGING is defined all calls will be output on the screen and then (regardless of whether or not
+     * NET_SFTP_STREAM_LOGGING is enabled) the parameters will be passed through to the appropriate method.
+     *
+     * @param string
+     * @param array
+     * @return mixed
+     * @access public
+     */
+    function __call($name, $arguments)
+    {
+        if (defined('NET_SFTP_STREAM_LOGGING')) {
+            echo $name . '(';
+            $last = count($arguments) - 1;
+            foreach ($arguments as $i => $argument) {
+                var_export($argument);
+                if ($i != $last) {
+                    echo ',';
+                }
+            }
+            echo ")\r\n";
+        }
+        $name = '_' . $name;
+        if (!method_exists($this, $name)) {
+            return false;
+        }
+        return call_user_func_array(array($this, $name), $arguments);
+    }
+}
+
+Net_SFTP_Stream::register();

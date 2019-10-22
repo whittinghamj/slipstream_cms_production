@@ -2,7 +2,7 @@
 @reboot /usr/local/nginx/sbin/nginx
 
 # Slipstream CMS Main Server - GIT Update
-* * * * * sh /var/www/html/portal/update.sh
+# * * * * * sh /var/www/html/portal/update.sh
 
 # Slipstream CMS Main Server - Customer Checks
 */10 * * * * /usr/bin/flock -w 0 /tmp/console_customer_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php customer_checks > /tmp/cron.customer_checks.log

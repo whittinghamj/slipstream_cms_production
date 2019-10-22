@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2"
+echo "SlipStream CMS Panel Server - Update Script v2.2"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -29,7 +29,6 @@ chmod 777 /var/www/html/portal/xc_uploads >> $LOG
 # cp /var/www/html/portal/get.php /var/www/html/get.php
 # cp /var/www/html/portal/portal.php /var/www/html/portal.php
 cp -R /var/www/html/portal/c /var/www/html/ >> $LOG
-cp -R /var/www/html/portal/d /var/www/html/ >> $LOG
 
 
 # mysql status check
@@ -54,6 +53,8 @@ mysql -uslipstream -padmin1372 -e "UPDATE slipstream_cms.bouquets SET \`type\` =
 mysql -uslipstream -padmin1372 -e "DELETE FROM slipstream_cms.headend_servers WHERE user_id = '0'; "; >> $LOG
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_categories\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`user_id\` int(11) DEFAULT NULL, \`name\` varchar(50) NOT NULL DEFAULT '', PRIMARY KEY (\`id\`)) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;"; >> $LOG
 mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`vod_categories\` (\`id\`, \`user_id\`, \`name\`)VALUES(1, 1, 'General'); "; >> $LOG
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.mag_devices MODIFY aspect VARCHAR(100) NULL; "; >> $LOG
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_watch\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`user_id\` int(11) DEFAULT NULL, \`server_id\` int(11) DEFAULT NULL, \`folder\` text, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; "; >> $LOG
 
 
 # stalker cleanup
@@ -70,7 +71,7 @@ sed -i 's/streamwizz_cms_production.git/slipstream_cms_production.git/' /var/www
 
 
 # update nginx conf file
-get_php_check=$(cat /usr/local/nginx/conf/nginx.conf | grep 'ss_v_2.1' | wc -l)
+get_php_check=$(cat /usr/local/nginx/conf/nginx.conf | grep 'ss_v_2.2' | wc -l)
 if [ "$get_php_check" -eq "0" ]; then
 	killall nginx >> $LOG
 
@@ -89,6 +90,7 @@ if [ "$get_php_check" -eq "0" ]; then
 	/usr/local/nginx/sbin/nginx >> $LOG
 	echo "NGINX Config file updated"
 fi
+
 
 echo "Update Complete "
 echo " "

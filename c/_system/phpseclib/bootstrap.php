@@ -1,29 +1,16 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+/**
+ * Bootstrapping File for phpseclib
+ *
+ * @license http://www.opensource.org/licenses/mit-license.html MIT License
+ */
+
+if (extension_loaded('mbstring')) {
+    // 2 - MB_OVERLOAD_STRING
+    if (ini_get('mbstring.func_overload') & 2) {
+        throw new \UnexpectedValueException(
+            'Overloading of string functions using mbstring.func_overload ' .
+            'is not supported by phpseclib.'
+        );
+    }
+}

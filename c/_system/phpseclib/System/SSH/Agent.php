@@ -1,238 +1,486 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/**
+ * Pure-PHP ssh-agent client.
+ *
+ * PHP versions 4 and 5
+ *
+ * Here are some examples of how to use this library:
+ * <code>
+ * <?php
+ *    include 'System/SSH/Agent.php';
+ *    include 'Net/SSH2.php';
+ *
+ *    $agent = new System_SSH_Agent();
+ *
+ *    $ssh = new Net_SSH2('www.domain.tld');
+ *    if (!$ssh->login('username', $agent)) {
+ *        exit('Login Failed');
+ *    }
+ *
+ *    echo $ssh->exec('pwd');
+ *    echo $ssh->exec('ls -la');
+ * ?>
+ * </code>
+ *
+ * LICENSE: Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @category  System
+ * @package   System_SSH_Agent
+ * @author    Jim Wigginton <terrafrost@php.net>
+ * @copyright 2014 Jim Wigginton
+ * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @link      http://phpseclib.sourceforge.net
+ * @internal  See http://api.libssh.org/rfc/PROTOCOL.agent
+ */
+
+/**#@+
+ * Message numbers
+ *
+ * @access private
+ */
+// to request SSH1 keys you have to use SSH_AGENTC_REQUEST_RSA_IDENTITIES (1)
+define('SYSTEM_SSH_AGENTC_REQUEST_IDENTITIES', 11);
+// this is the SSH2 response; the SSH1 response is SSH_AGENT_RSA_IDENTITIES_ANSWER (2).
+define('SYSTEM_SSH_AGENT_IDENTITIES_ANSWER', 12);
+define('SYSTEM_SSH_AGENT_FAILURE', 5);
+// the SSH1 request is SSH_AGENTC_RSA_CHALLENGE (3)
+define('SYSTEM_SSH_AGENTC_SIGN_REQUEST', 13);
+// the SSH1 response is SSH_AGENT_RSA_RESPONSE (4)
+define('SYSTEM_SSH_AGENT_SIGN_RESPONSE', 14);
+
+
+/**@+
+ * Agent forwarding status
+ *
+ * @access private
+ */
+// no forwarding requested and not active
+define('SYSTEM_SSH_AGENT_FORWARD_NONE', 0);
+// request agent forwarding when opportune
+define('SYSTEM_SSH_AGENT_FORWARD_REQUEST', 1);
+// forwarding has been request and is active
+define('SYSTEM_SSH_AGENT_FORWARD_ACTIVE', 2);
+
+/**#@-*/
+
+/**
+ * Pure-PHP ssh-agent client identity object
+ *
+ * Instantiation should only be performed by System_SSH_Agent class.
+ * This could be thought of as implementing an interface that Crypt_RSA
+ * implements. ie. maybe a Net_SSH_Auth_PublicKey interface or something.
+ * The methods in this interface would be getPublicKey, setSignatureMode
+ * and sign since those are the methods phpseclib looks for to perform
+ * public key authentication.
+ *
+ * @package System_SSH_Agent
+ * @author  Jim Wigginton <terrafrost@php.net>
+ * @access  internal
+ */
+class System_SSH_Agent_Identity
+{
+    /**
+     * Key Object
+     *
+     * @var Crypt_RSA
+     * @access private
+     * @see self::getPublicKey()
+     */
+    var $key;
+
+    /**
+     * Key Blob
+     *
+     * @var string
+     * @access private
+     * @see self::sign()
+     */
+    var $key_blob;
+
+    /**
+     * Socket Resource
+     *
+     * @var resource
+     * @access private
+     * @see self::sign()
+     */
+    var $fsock;
+
+    /**
+     * Default Constructor.
+     *
+     * @param resource $fsock
+     * @return System_SSH_Agent_Identity
+     * @access private
+     */
+    function __construct($fsock)
+    {
+        $this->fsock = $fsock;
+    }
+
+    /**
+     * PHP4 compatible Default Constructor.
+     *
+     * @see self::__construct()
+     * @param resource $fsock
+     * @access public
+     */
+    function System_SSH_Agent_Identity($fsock)
+    {
+        $this->__construct($fsock);
+    }
+
+    /**
+     * Set Public Key
+     *
+     * Called by System_SSH_Agent::requestIdentities()
+     *
+     * @param Crypt_RSA $key
+     * @access private
+     */
+    function setPublicKey($key)
+    {
+        $this->key = $key;
+        $this->key->setPublicKey();
+    }
+
+    /**
+     * Set Public Key
+     *
+     * Called by System_SSH_Agent::requestIdentities(). The key blob could be extracted from $this->key
+     * but this saves a small amount of computation.
+     *
+     * @param string $key_blob
+     * @access private
+     */
+    function setPublicKeyBlob($key_blob)
+    {
+        $this->key_blob = $key_blob;
+    }
+
+    /**
+     * Get Public Key
+     *
+     * Wrapper for $this->key->getPublicKey()
+     *
+     * @param int $format optional
+     * @return mixed
+     * @access public
+     */
+    function getPublicKey($format = null)
+    {
+        return !isset($format) ? $this->key->getPublicKey() : $this->key->getPublicKey($format);
+    }
+
+    /**
+     * Set Signature Mode
+     *
+     * Doesn't do anything as ssh-agent doesn't let you pick and choose the signature mode. ie.
+     * ssh-agent's only supported mode is CRYPT_RSA_SIGNATURE_PKCS1
+     *
+     * @param int $mode
+     * @access public
+     */
+    function setSignatureMode($mode)
+    {
+    }
+
+    /**
+     * Create a signature
+     *
+     * See "2.6.2 Protocol 2 private key signature request"
+     *
+     * @param string $message
+     * @return string
+     * @access public
+     */
+    function sign($message)
+    {
+        // the last parameter (currently 0) is for flags and ssh-agent only defines one flag (for ssh-dss): SSH_AGENT_OLD_SIGNATURE
+        $packet = pack('CNa*Na*N', SYSTEM_SSH_AGENTC_SIGN_REQUEST, strlen($this->key_blob), $this->key_blob, strlen($message), $message, 0);
+        $packet = pack('Na*', strlen($packet), $packet);
+        if (strlen($packet) != fputs($this->fsock, $packet)) {
+            user_error('Connection closed during signing');
+        }
+
+        $length = current(unpack('N', fread($this->fsock, 4)));
+        $type = ord(fread($this->fsock, 1));
+        if ($type != SYSTEM_SSH_AGENT_SIGN_RESPONSE) {
+            user_error('Unable to retreive signature');
+        }
+
+        $signature_blob = fread($this->fsock, $length - 1);
+        // the only other signature format defined - ssh-dss - is the same length as ssh-rsa
+        // the + 12 is for the other various SSH added length fields
+        return substr($signature_blob, strlen('ssh-rsa') + 12);
+    }
+}
+
+/**
+ * Pure-PHP ssh-agent client identity factory
+ *
+ * requestIdentities() method pumps out System_SSH_Agent_Identity objects
+ *
+ * @package System_SSH_Agent
+ * @author  Jim Wigginton <terrafrost@php.net>
+ * @access  internal
+ */
+class System_SSH_Agent
+{
+    /**
+     * Socket Resource
+     *
+     * @var resource
+     * @access private
+     */
+    var $fsock;
+
+    /**
+     * Agent forwarding status
+     *
+     * @access private
+     */
+    var $forward_status = SYSTEM_SSH_AGENT_FORWARD_NONE;
+
+    /**
+     * Buffer for accumulating forwarded authentication
+     * agent data arriving on SSH data channel destined
+     * for agent unix socket
+     *
+     * @access private
+     */
+    var $socket_buffer = '';
+
+    /**
+     * Tracking the number of bytes we are expecting
+     * to arrive for the agent socket on the SSH data
+     * channel
+     */
+    var $expected_bytes = 0;
+
+    /**
+     * Default Constructor
+     *
+     * @return System_SSH_Agent
+     * @access public
+     */
+    function __construct()
+    {
+        switch (true) {
+            case isset($_SERVER['SSH_AUTH_SOCK']):
+                $address = $_SERVER['SSH_AUTH_SOCK'];
+                break;
+            case isset($_ENV['SSH_AUTH_SOCK']):
+                $address = $_ENV['SSH_AUTH_SOCK'];
+                break;
+            default:
+                user_error('SSH_AUTH_SOCK not found');
+                return false;
+        }
+
+        $this->fsock = fsockopen('unix://' . $address, 0, $errno, $errstr);
+        if (!$this->fsock) {
+            user_error("Unable to connect to ssh-agent (Error $errno: $errstr)");
+        }
+    }
+
+    /**
+     * PHP4 compatible Default Constructor.
+     *
+     * @see self::__construct()
+     * @access public
+     */
+    function System_SSH_Agent()
+    {
+        $this->__construct();
+    }
+
+    /**
+     * Request Identities
+     *
+     * See "2.5.2 Requesting a list of protocol 2 keys"
+     * Returns an array containing zero or more System_SSH_Agent_Identity objects
+     *
+     * @return array
+     * @access public
+     */
+    function requestIdentities()
+    {
+        if (!$this->fsock) {
+            return array();
+        }
+
+        $packet = pack('NC', 1, SYSTEM_SSH_AGENTC_REQUEST_IDENTITIES);
+        if (strlen($packet) != fputs($this->fsock, $packet)) {
+            user_error('Connection closed while requesting identities');
+        }
+
+        $length = current(unpack('N', fread($this->fsock, 4)));
+        $type = ord(fread($this->fsock, 1));
+        if ($type != SYSTEM_SSH_AGENT_IDENTITIES_ANSWER) {
+            user_error('Unable to request identities');
+        }
+
+        $identities = array();
+        $keyCount = current(unpack('N', fread($this->fsock, 4)));
+        for ($i = 0; $i < $keyCount; $i++) {
+            $length = current(unpack('N', fread($this->fsock, 4)));
+            $key_blob = fread($this->fsock, $length);
+            $key_str = 'ssh-rsa ' . base64_encode($key_blob);
+            $length = current(unpack('N', fread($this->fsock, 4)));
+            if ($length) {
+                $key_str.= ' ' . fread($this->fsock, $length);
+            }
+            $length = current(unpack('N', substr($key_blob, 0, 4)));
+            $key_type = substr($key_blob, 4, $length);
+            switch ($key_type) {
+                case 'ssh-rsa':
+                    if (!class_exists('Crypt_RSA')) {
+                        include_once 'Crypt/RSA.php';
+                    }
+                    $key = new Crypt_RSA();
+                    $key->loadKey($key_str);
+                    break;
+                case 'ssh-dss':
+                    // not currently supported
+                    break;
+            }
+            // resources are passed by reference by default
+            if (isset($key)) {
+                $identity = new System_SSH_Agent_Identity($this->fsock);
+                $identity->setPublicKey($key);
+                $identity->setPublicKeyBlob($key_blob);
+                $identities[] = $identity;
+                unset($key);
+            }
+        }
+
+        return $identities;
+    }
+
+    /**
+     * Signal that agent forwarding should
+     * be requested when a channel is opened
+     *
+     * @param Net_SSH2 $ssh
+     * @return bool
+     * @access public
+     */
+    function startSSHForwarding($ssh)
+    {
+        if ($this->forward_status == SYSTEM_SSH_AGENT_FORWARD_NONE) {
+            $this->forward_status = SYSTEM_SSH_AGENT_FORWARD_REQUEST;
+        }
+    }
+
+    /**
+     * Request agent forwarding of remote server
+     *
+     * @param Net_SSH2 $ssh
+     * @return bool
+     * @access private
+     */
+    function _request_forwarding($ssh)
+    {
+        $request_channel = $ssh->_get_open_channel();
+        if ($request_channel === false) {
+            return false;
+        }
+
+        $packet = pack(
+            'CNNa*C',
+            NET_SSH2_MSG_CHANNEL_REQUEST,
+            $ssh->server_channels[$request_channel],
+            strlen('auth-agent-req@openssh.com'),
+            'auth-agent-req@openssh.com',
+            1
+        );
+
+        $ssh->channel_status[$request_channel] = NET_SSH2_MSG_CHANNEL_REQUEST;
+
+        if (!$ssh->_send_binary_packet($packet)) {
+            return false;
+        }
+
+        $response = $ssh->_get_channel_packet($request_channel);
+        if ($response === false) {
+            return false;
+        }
+
+        $ssh->channel_status[$request_channel] = NET_SSH2_MSG_CHANNEL_OPEN;
+        $this->forward_status = SYSTEM_SSH_AGENT_FORWARD_ACTIVE;
+
+        return true;
+    }
+
+    /**
+     * On successful channel open
+     *
+     * This method is called upon successful channel
+     * open to give the SSH Agent an opportunity
+     * to take further action. i.e. request agent forwarding
+     *
+     * @param Net_SSH2 $ssh
+     * @access private
+     */
+    function _on_channel_open($ssh)
+    {
+        if ($this->forward_status == SYSTEM_SSH_AGENT_FORWARD_REQUEST) {
+            $this->_request_forwarding($ssh);
+        }
+    }
+
+    /**
+     * Forward data to SSH Agent and return data reply
+     *
+     * @param string $data
+     * @return data from SSH Agent
+     * @access private
+     */
+    function _forward_data($data)
+    {
+        if ($this->expected_bytes > 0) {
+            $this->socket_buffer.= $data;
+            $this->expected_bytes -= strlen($data);
+        } else {
+            $agent_data_bytes = current(unpack('N', $data));
+            $current_data_bytes = strlen($data);
+            $this->socket_buffer = $data;
+            if ($current_data_bytes != $agent_data_bytes + 4) {
+                $this->expected_bytes = ($agent_data_bytes + 4) - $current_data_bytes;
+                return false;
+            }
+        }
+
+        if (strlen($this->socket_buffer) != fwrite($this->fsock, $this->socket_buffer)) {
+            user_error('Connection closed attempting to forward data to SSH agent');
+        }
+
+        $this->socket_buffer = '';
+        $this->expected_bytes = 0;
+
+        $agent_reply_bytes = current(unpack('N', fread($this->fsock, 4)));
+
+        $agent_reply_data = fread($this->fsock, $agent_reply_bytes);
+        $agent_reply_data = current(unpack('a*', $agent_reply_data));
+
+        return pack('Na*', $agent_reply_bytes, $agent_reply_data);
+    }
+}

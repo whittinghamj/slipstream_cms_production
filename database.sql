@@ -396,13 +396,13 @@ CREATE TABLE `mag_devices` (
   `bright` int(10) NOT NULL DEFAULT 200,
   `contrast` int(10) NOT NULL DEFAULT 127,
   `saturation` int(10) NOT NULL DEFAULT 127,
-  `aspect` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  `aspect` mediumtext COLLATE utf8_unicode_ci DEFAULT NULL,
   `video_out` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'rca',
   `volume` int(5) NOT NULL DEFAULT 50,
   `playback_buffer_bytes` int(50) NOT NULL DEFAULT 0,
   `playback_buffer_size` int(50) NOT NULL DEFAULT 0,
   `audio_out` int(5) NOT NULL DEFAULT 1,
-  `mac` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `mac` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `ip` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `ls` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `ver` varchar(300) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -884,7 +884,15 @@ VALUES
   (5, 'cms_terms_accepted', 'no'),
   (6, 'WHMCS', 'namppW9kZJihnpqjqahjmZqhqZaYpKGkY5ikomSipJmqoZqoZKiap6uap6hkoZ6YmqOonqOcZKuap56brmOlnaU=');
 
+DROP TABLE IF EXISTS `vod_watch`;
 
+CREATE TABLE `vod_watch` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `server_id` int(11) DEFAULT NULL,
+  `folder` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
