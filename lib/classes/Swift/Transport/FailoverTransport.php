@@ -1,57 +1,88 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Contains a list of redundant Transports so when one fails, the next is used.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Transport_FailoverTransport extends Swift_Transport_LoadBalancedTransport
+{
+    /**
+     * Registered transport currently used.
+     *
+     * @var Swift_Transport
+     */
+    private $_currentTransport;
+
+    // needed as __construct is called from elsewhere explicitly
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * Send the given Message.
+     *
+     * Recipient/sender data will be retrieved from the Message API.
+     * The return value is the number of recipients who were accepted for delivery.
+     *
+     * @param Swift_Mime_Message $message
+     * @param string[]           $failedRecipients An array of failures by-reference
+     *
+     * @return int
+     */
+    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
+    {
+        $maxTransports = count($this->_transports);
+        $sent = 0;
+        $this->_lastUsedTransport = null;
+
+        for ($i = 0; $i < $maxTransports
+            && $transport = $this->_getNextTransport(); ++$i) {
+            try {
+                if (!$transport->isStarted()) {
+                    $transport->start();
+                }
+
+                if ($sent = $transport->send($message, $failedRecipients)) {
+                    $this->_lastUsedTransport = $transport;
+
+                    return $sent;
+                }
+            } catch (Swift_TransportException $e) {
+                $this->_killCurrentTransport();
+            }
+        }
+
+        if (count($this->_transports) == 0) {
+            throw new Swift_TransportException(
+                'All Transports in FailoverTransport failed, or no Transports available'
+                );
+        }
+
+        return $sent;
+    }
+
+    protected function _getNextTransport()
+    {
+        if (!isset($this->_currentTransport)) {
+            $this->_currentTransport = parent::_getNextTransport();
+        }
+
+        return $this->_currentTransport;
+    }
+
+    protected function _killCurrentTransport()
+    {
+        $this->_currentTransport = null;
+        parent::_killCurrentTransport();
+    }
+}

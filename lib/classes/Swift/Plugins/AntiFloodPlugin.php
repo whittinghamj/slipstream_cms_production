@@ -1,64 +1,141 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Reduces network flooding when sending large amounts of mail.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_AntiFloodPlugin implements Swift_Events_SendListener, Swift_Plugins_Sleeper
+{
+    /**
+     * The number of emails to send before restarting Transport.
+     *
+     * @var int
+     */
+    private $_threshold;
+
+    /**
+     * The number of seconds to sleep for during a restart.
+     *
+     * @var int
+     */
+    private $_sleep;
+
+    /**
+     * The internal counter.
+     *
+     * @var int
+     */
+    private $_counter = 0;
+
+    /**
+     * The Sleeper instance for sleeping.
+     *
+     * @var Swift_Plugins_Sleeper
+     */
+    private $_sleeper;
+
+    /**
+     * Create a new AntiFloodPlugin with $threshold and $sleep time.
+     *
+     * @param int                   $threshold
+     * @param int                   $sleep     time
+     * @param Swift_Plugins_Sleeper $sleeper   (not needed really)
+     */
+    public function __construct($threshold = 99, $sleep = 0, Swift_Plugins_Sleeper $sleeper = null)
+    {
+        $this->setThreshold($threshold);
+        $this->setSleepTime($sleep);
+        $this->_sleeper = $sleeper;
+    }
+
+    /**
+     * Set the number of emails to send before restarting.
+     *
+     * @param int $threshold
+     */
+    public function setThreshold($threshold)
+    {
+        $this->_threshold = $threshold;
+    }
+
+    /**
+     * Get the number of emails to send before restarting.
+     *
+     * @return int
+     */
+    public function getThreshold()
+    {
+        return $this->_threshold;
+    }
+
+    /**
+     * Set the number of seconds to sleep for during a restart.
+     *
+     * @param int $sleep time
+     */
+    public function setSleepTime($sleep)
+    {
+        $this->_sleep = $sleep;
+    }
+
+    /**
+     * Get the number of seconds to sleep for during a restart.
+     *
+     * @return int
+     */
+    public function getSleepTime()
+    {
+        return $this->_sleep;
+    }
+
+    /**
+     * Invoked immediately before the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
+    {
+    }
+
+    /**
+     * Invoked immediately after the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function sendPerformed(Swift_Events_SendEvent $evt)
+    {
+        ++$this->_counter;
+        if ($this->_counter >= $this->_threshold) {
+            $transport = $evt->getTransport();
+            $transport->stop();
+            if ($this->_sleep) {
+                $this->sleep($this->_sleep);
+            }
+            $transport->start();
+            $this->_counter = 0;
+        }
+    }
+
+    /**
+     * Sleep for $seconds.
+     *
+     * @param int $seconds
+     */
+    public function sleep($seconds)
+    {
+        if (isset($this->_sleeper)) {
+            $this->_sleeper->sleep($seconds);
+        } else {
+            sleep($seconds);
+        }
+    }
+}

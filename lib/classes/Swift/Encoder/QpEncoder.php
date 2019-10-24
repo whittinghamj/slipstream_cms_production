@@ -1,157 +1,300 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-JtWzgD4HisQoqqzoqQ9jY4TA+GuAkhjokVH7azK=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles Quoted Printable (QP) Encoding in Swift Mailer.
+ *
+ * Possibly the most accurate RFC 2045 QP implementation found in PHP.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Encoder_QpEncoder implements Swift_Encoder
+{
+    /**
+     * The CharacterStream used for reading characters (as opposed to bytes).
+     *
+     * @var Swift_CharacterStream
+     */
+    protected $_charStream;
+
+    /**
+     * A filter used if input should be canonicalized.
+     *
+     * @var Swift_StreamFilter
+     */
+    protected $_filter;
+
+    /**
+     * Pre-computed QP for HUGE optimization.
+     *
+     * @var string[]
+     */
+    protected static $_qpMap = array(
+        0 => '=00', 1 => '=01', 2 => '=02', 3 => '=03', 4 => '=04',
+        5 => '=05', 6 => '=06', 7 => '=07', 8 => '=08', 9 => '=09',
+        10 => '=0A', 11 => '=0B', 12 => '=0C', 13 => '=0D', 14 => '=0E',
+        15 => '=0F', 16 => '=10', 17 => '=11', 18 => '=12', 19 => '=13',
+        20 => '=14', 21 => '=15', 22 => '=16', 23 => '=17', 24 => '=18',
+        25 => '=19', 26 => '=1A', 27 => '=1B', 28 => '=1C', 29 => '=1D',
+        30 => '=1E', 31 => '=1F', 32 => '=20', 33 => '=21', 34 => '=22',
+        35 => '=23', 36 => '=24', 37 => '=25', 38 => '=26', 39 => '=27',
+        40 => '=28', 41 => '=29', 42 => '=2A', 43 => '=2B', 44 => '=2C',
+        45 => '=2D', 46 => '=2E', 47 => '=2F', 48 => '=30', 49 => '=31',
+        50 => '=32', 51 => '=33', 52 => '=34', 53 => '=35', 54 => '=36',
+        55 => '=37', 56 => '=38', 57 => '=39', 58 => '=3A', 59 => '=3B',
+        60 => '=3C', 61 => '=3D', 62 => '=3E', 63 => '=3F', 64 => '=40',
+        65 => '=41', 66 => '=42', 67 => '=43', 68 => '=44', 69 => '=45',
+        70 => '=46', 71 => '=47', 72 => '=48', 73 => '=49', 74 => '=4A',
+        75 => '=4B', 76 => '=4C', 77 => '=4D', 78 => '=4E', 79 => '=4F',
+        80 => '=50', 81 => '=51', 82 => '=52', 83 => '=53', 84 => '=54',
+        85 => '=55', 86 => '=56', 87 => '=57', 88 => '=58', 89 => '=59',
+        90 => '=5A', 91 => '=5B', 92 => '=5C', 93 => '=5D', 94 => '=5E',
+        95 => '=5F', 96 => '=60', 97 => '=61', 98 => '=62', 99 => '=63',
+        100 => '=64', 101 => '=65', 102 => '=66', 103 => '=67', 104 => '=68',
+        105 => '=69', 106 => '=6A', 107 => '=6B', 108 => '=6C', 109 => '=6D',
+        110 => '=6E', 111 => '=6F', 112 => '=70', 113 => '=71', 114 => '=72',
+        115 => '=73', 116 => '=74', 117 => '=75', 118 => '=76', 119 => '=77',
+        120 => '=78', 121 => '=79', 122 => '=7A', 123 => '=7B', 124 => '=7C',
+        125 => '=7D', 126 => '=7E', 127 => '=7F', 128 => '=80', 129 => '=81',
+        130 => '=82', 131 => '=83', 132 => '=84', 133 => '=85', 134 => '=86',
+        135 => '=87', 136 => '=88', 137 => '=89', 138 => '=8A', 139 => '=8B',
+        140 => '=8C', 141 => '=8D', 142 => '=8E', 143 => '=8F', 144 => '=90',
+        145 => '=91', 146 => '=92', 147 => '=93', 148 => '=94', 149 => '=95',
+        150 => '=96', 151 => '=97', 152 => '=98', 153 => '=99', 154 => '=9A',
+        155 => '=9B', 156 => '=9C', 157 => '=9D', 158 => '=9E', 159 => '=9F',
+        160 => '=A0', 161 => '=A1', 162 => '=A2', 163 => '=A3', 164 => '=A4',
+        165 => '=A5', 166 => '=A6', 167 => '=A7', 168 => '=A8', 169 => '=A9',
+        170 => '=AA', 171 => '=AB', 172 => '=AC', 173 => '=AD', 174 => '=AE',
+        175 => '=AF', 176 => '=B0', 177 => '=B1', 178 => '=B2', 179 => '=B3',
+        180 => '=B4', 181 => '=B5', 182 => '=B6', 183 => '=B7', 184 => '=B8',
+        185 => '=B9', 186 => '=BA', 187 => '=BB', 188 => '=BC', 189 => '=BD',
+        190 => '=BE', 191 => '=BF', 192 => '=C0', 193 => '=C1', 194 => '=C2',
+        195 => '=C3', 196 => '=C4', 197 => '=C5', 198 => '=C6', 199 => '=C7',
+        200 => '=C8', 201 => '=C9', 202 => '=CA', 203 => '=CB', 204 => '=CC',
+        205 => '=CD', 206 => '=CE', 207 => '=CF', 208 => '=D0', 209 => '=D1',
+        210 => '=D2', 211 => '=D3', 212 => '=D4', 213 => '=D5', 214 => '=D6',
+        215 => '=D7', 216 => '=D8', 217 => '=D9', 218 => '=DA', 219 => '=DB',
+        220 => '=DC', 221 => '=DD', 222 => '=DE', 223 => '=DF', 224 => '=E0',
+        225 => '=E1', 226 => '=E2', 227 => '=E3', 228 => '=E4', 229 => '=E5',
+        230 => '=E6', 231 => '=E7', 232 => '=E8', 233 => '=E9', 234 => '=EA',
+        235 => '=EB', 236 => '=EC', 237 => '=ED', 238 => '=EE', 239 => '=EF',
+        240 => '=F0', 241 => '=F1', 242 => '=F2', 243 => '=F3', 244 => '=F4',
+        245 => '=F5', 246 => '=F6', 247 => '=F7', 248 => '=F8', 249 => '=F9',
+        250 => '=FA', 251 => '=FB', 252 => '=FC', 253 => '=FD', 254 => '=FE',
+        255 => '=FF',
+        );
+
+    protected static $_safeMapShare = array();
+
+    /**
+     * A map of non-encoded ascii characters.
+     *
+     * @var string[]
+     */
+    protected $_safeMap = array();
+
+    /**
+     * Creates a new QpEncoder for the given CharacterStream.
+     *
+     * @param Swift_CharacterStream $charStream to use for reading characters
+     * @param Swift_StreamFilter    $filter     if input should be canonicalized
+     */
+    public function __construct(Swift_CharacterStream $charStream, Swift_StreamFilter $filter = null)
+    {
+        $this->_charStream = $charStream;
+        if (!isset(self::$_safeMapShare[$this->getSafeMapShareId()])) {
+            $this->initSafeMap();
+            self::$_safeMapShare[$this->getSafeMapShareId()] = $this->_safeMap;
+        } else {
+            $this->_safeMap = self::$_safeMapShare[$this->getSafeMapShareId()];
+        }
+        $this->_filter = $filter;
+    }
+
+    public function __sleep()
+    {
+        return array('_charStream', '_filter');
+    }
+
+    public function __wakeup()
+    {
+        if (!isset(self::$_safeMapShare[$this->getSafeMapShareId()])) {
+            $this->initSafeMap();
+            self::$_safeMapShare[$this->getSafeMapShareId()] = $this->_safeMap;
+        } else {
+            $this->_safeMap = self::$_safeMapShare[$this->getSafeMapShareId()];
+        }
+    }
+
+    protected function getSafeMapShareId()
+    {
+        return get_class($this);
+    }
+
+    protected function initSafeMap()
+    {
+        foreach (array_merge(
+            array(0x09, 0x20), range(0x21, 0x3C), range(0x3E, 0x7E)) as $byte) {
+            $this->_safeMap[$byte] = chr($byte);
+        }
+    }
+
+    /**
+     * Takes an unencoded string and produces a QP encoded string from it.
+     *
+     * QP encoded strings have a maximum line length of 76 characters.
+     * If the first line needs to be shorter, indicate the difference with
+     * $firstLineOffset.
+     *
+     * @param string $string           to encode
+     * @param int    $firstLineOffset, optional
+     * @param int    $maxLineLength,   optional 0 indicates the default of 76 chars
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        if ($maxLineLength > 76 || $maxLineLength <= 0) {
+            $maxLineLength = 76;
+        }
+
+        $thisLineLength = $maxLineLength - $firstLineOffset;
+
+        $lines = array();
+        $lNo = 0;
+        $lines[$lNo] = '';
+        $currentLine = &$lines[$lNo++];
+        $size = $lineLen = 0;
+
+        $this->_charStream->flushContents();
+        $this->_charStream->importString($string);
+
+        // Fetching more than 4 chars at one is slower, as is fetching fewer bytes
+        // Conveniently 4 chars is the UTF-8 safe number since UTF-8 has up to 6
+        // bytes per char and (6 * 4 * 3 = 72 chars per line) * =NN is 3 bytes
+        while (false !== $bytes = $this->_nextSequence()) {
+            // If we're filtering the input
+            if (isset($this->_filter)) {
+                // If we can't filter because we need more bytes
+                while ($this->_filter->shouldBuffer($bytes)) {
+                    // Then collect bytes into the buffer
+                    if (false === $moreBytes = $this->_nextSequence(1)) {
+                        break;
+                    }
+
+                    foreach ($moreBytes as $b) {
+                        $bytes[] = $b;
+                    }
+                }
+                // And filter them
+                $bytes = $this->_filter->filter($bytes);
+            }
+
+            $enc = $this->_encodeByteSequence($bytes, $size);
+
+            $i = strpos($enc, '=0D=0A');
+            $newLineLength = $lineLen + ($i === false ? $size : $i);
+
+            if ($currentLine && $newLineLength >= $thisLineLength) {
+                $lines[$lNo] = '';
+                $currentLine = &$lines[$lNo++];
+                $thisLineLength = $maxLineLength;
+                $lineLen = 0;
+            }
+
+            $currentLine .= $enc;
+
+            if ($i === false) {
+                $lineLen += $size;
+            } else {
+                // 6 is the length of '=0D=0A'.
+                $lineLen = $size - strrpos($enc, '=0D=0A') - 6;
+            }
+        }
+
+        return $this->_standardize(implode("=\r\n", $lines));
+    }
+
+    /**
+     * Updates the charset used.
+     *
+     * @param string $charset
+     */
+    public function charsetChanged($charset)
+    {
+        $this->_charStream->setCharacterSet($charset);
+    }
+
+    /**
+     * Encode the given byte array into a verbatim QP form.
+     *
+     * @param int[] $bytes
+     * @param int   $size
+     *
+     * @return string
+     */
+    protected function _encodeByteSequence(array $bytes, &$size)
+    {
+        $ret = '';
+        $size = 0;
+        foreach ($bytes as $b) {
+            if (isset($this->_safeMap[$b])) {
+                $ret .= $this->_safeMap[$b];
+                ++$size;
+            } else {
+                $ret .= self::$_qpMap[$b];
+                $size += 3;
+            }
+        }
+
+        return $ret;
+    }
+
+    /**
+     * Get the next sequence of bytes to read from the char stream.
+     *
+     * @param int $size number of bytes to read
+     *
+     * @return int[]
+     */
+    protected function _nextSequence($size = 4)
+    {
+        return $this->_charStream->readBytes($size);
+    }
+
+    /**
+     * Make sure CRLF is correct and HT/SPACE are in valid places.
+     *
+     * @param string $string
+     *
+     * @return string
+     */
+    protected function _standardize($string)
+    {
+        $string = str_replace(array("\t=0D=0A", ' =0D=0A', '=0D=0A'),
+            array("=09\r\n", "=20\r\n", "\r\n"), $string
+            );
+        switch ($end = ord(substr($string, -1))) {
+            case 0x09:
+            case 0x20:
+                $string = substr_replace($string, self::$_qpMap[$end], -1);
+        }
+
+        return $string;
+    }
+
+    /**
+     * Make a deep copy of object.
+     */
+    public function __clone()
+    {
+        $this->_charStream = clone $this->_charStream;
+    }
+}

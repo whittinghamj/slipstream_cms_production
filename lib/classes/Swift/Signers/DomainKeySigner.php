@@ -1,207 +1,524 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * DomainKey Signer used to apply DomainKeys Signature to a message.
+ *
+ * @author Xavier De Cock <xdecock@gmail.com>
+ */
+class Swift_Signers_DomainKeySigner implements Swift_Signers_HeaderSigner
+{
+    /**
+     * PrivateKey.
+     *
+     * @var string
+     */
+    protected $_privateKey;
+
+    /**
+     * DomainName.
+     *
+     * @var string
+     */
+    protected $_domainName;
+
+    /**
+     * Selector.
+     *
+     * @var string
+     */
+    protected $_selector;
+
+    /**
+     * Hash algorithm used.
+     *
+     * @var string
+     */
+    protected $_hashAlgorithm = 'rsa-sha1';
+
+    /**
+     * Canonisation method.
+     *
+     * @var string
+     */
+    protected $_canon = 'simple';
+
+    /**
+     * Headers not being signed.
+     *
+     * @var array
+     */
+    protected $_ignoredHeaders = array();
+
+    /**
+     * Signer identity.
+     *
+     * @var string
+     */
+    protected $_signerIdentity;
+
+    /**
+     * Must we embed signed headers?
+     *
+     * @var bool
+     */
+    protected $_debugHeaders = false;
+
+    // work variables
+    /**
+     * Headers used to generate hash.
+     *
+     * @var array
+     */
+    private $_signedHeaders = array();
+
+    /**
+     * Stores the signature header.
+     *
+     * @var Swift_Mime_Headers_ParameterizedHeader
+     */
+    protected $_domainKeyHeader;
+
+    /**
+     * Hash Handler.
+     *
+     * @var resource|null
+     */
+    private $_hashHandler;
+
+    private $_hash;
+
+    private $_canonData = '';
+
+    private $_bodyCanonEmptyCounter = 0;
+
+    private $_bodyCanonIgnoreStart = 2;
+
+    private $_bodyCanonSpace = false;
+
+    private $_bodyCanonLastChar = null;
+
+    private $_bodyCanonLine = '';
+
+    private $_bound = array();
+
+    /**
+     * Constructor.
+     *
+     * @param string $privateKey
+     * @param string $domainName
+     * @param string $selector
+     */
+    public function __construct($privateKey, $domainName, $selector)
+    {
+        $this->_privateKey = $privateKey;
+        $this->_domainName = $domainName;
+        $this->_signerIdentity = '@'.$domainName;
+        $this->_selector = $selector;
+    }
+
+    /**
+     * Instanciate DomainKeySigner.
+     *
+     * @param string $privateKey
+     * @param string $domainName
+     * @param string $selector
+     *
+     * @return self
+     */
+    public static function newInstance($privateKey, $domainName, $selector)
+    {
+        return new static($privateKey, $domainName, $selector);
+    }
+
+    /**
+     * Resets internal states.
+     *
+     * @return $this
+     */
+    public function reset()
+    {
+        $this->_hash = null;
+        $this->_hashHandler = null;
+        $this->_bodyCanonIgnoreStart = 2;
+        $this->_bodyCanonEmptyCounter = 0;
+        $this->_bodyCanonLastChar = null;
+        $this->_bodyCanonSpace = false;
+
+        return $this;
+    }
+
+    /**
+     * Writes $bytes to the end of the stream.
+     *
+     * Writing may not happen immediately if the stream chooses to buffer.  If
+     * you want to write these bytes with immediate effect, call {@link commit()}
+     * after calling write().
+     *
+     * This method returns the sequence ID of the write (i.e. 1 for first, 2 for
+     * second, etc etc).
+     *
+     * @param string $bytes
+     *
+     * @throws Swift_IoException
+     *
+     * @return $this
+     */
+    public function write($bytes)
+    {
+        $this->_canonicalizeBody($bytes);
+        foreach ($this->_bound as $is) {
+            $is->write($bytes);
+        }
+
+        return $this;
+    }
+
+    /**
+     * For any bytes that are currently buffered inside the stream, force them
+     * off the buffer.
+     *
+     * @throws Swift_IoException
+     *
+     * @return $this
+     */
+    public function commit()
+    {
+        // Nothing to do
+        return $this;
+    }
+
+    /**
+     * Attach $is to this stream.
+     * The stream acts as an observer, receiving all data that is written.
+     * All {@link write()} and {@link flushBuffers()} operations will be mirrored.
+     *
+     * @param Swift_InputByteStream $is
+     *
+     * @return $this
+     */
+    public function bind(Swift_InputByteStream $is)
+    {
+        // Don't have to mirror anything
+        $this->_bound[] = $is;
+
+        return $this;
+    }
+
+    /**
+     * Remove an already bound stream.
+     * If $is is not bound, no errors will be raised.
+     * If the stream currently has any buffered data it will be written to $is
+     * before unbinding occurs.
+     *
+     * @param Swift_InputByteStream $is
+     *
+     * @return $this
+     */
+    public function unbind(Swift_InputByteStream $is)
+    {
+        // Don't have to mirror anything
+        foreach ($this->_bound as $k => $stream) {
+            if ($stream === $is) {
+                unset($this->_bound[$k]);
+
+                break;
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * Flush the contents of the stream (empty it) and set the internal pointer
+     * to the beginning.
+     *
+     * @throws Swift_IoException
+     *
+     * @return $this
+     */
+    public function flushBuffers()
+    {
+        $this->reset();
+
+        return $this;
+    }
+
+    /**
+     * Set hash_algorithm, must be one of rsa-sha256 | rsa-sha1 defaults to rsa-sha256.
+     *
+     * @param string $hash
+     *
+     * @return $this
+     */
+    public function setHashAlgorithm($hash)
+    {
+        $this->_hashAlgorithm = 'rsa-sha1';
+
+        return $this;
+    }
+
+    /**
+     * Set the canonicalization algorithm.
+     *
+     * @param string $canon simple | nofws defaults to simple
+     *
+     * @return $this
+     */
+    public function setCanon($canon)
+    {
+        if ($canon == 'nofws') {
+            $this->_canon = 'nofws';
+        } else {
+            $this->_canon = 'simple';
+        }
+
+        return $this;
+    }
+
+    /**
+     * Set the signer identity.
+     *
+     * @param string $identity
+     *
+     * @return $this
+     */
+    public function setSignerIdentity($identity)
+    {
+        $this->_signerIdentity = $identity;
+
+        return $this;
+    }
+
+    /**
+     * Enable / disable the DebugHeaders.
+     *
+     * @param bool $debug
+     *
+     * @return $this
+     */
+    public function setDebugHeaders($debug)
+    {
+        $this->_debugHeaders = (bool) $debug;
+
+        return $this;
+    }
+
+    /**
+     * Start Body.
+     */
+    public function startBody()
+    {
+    }
+
+    /**
+     * End Body.
+     */
+    public function endBody()
+    {
+        $this->_endOfBody();
+    }
+
+    /**
+     * Returns the list of Headers Tampered by this plugin.
+     *
+     * @return array
+     */
+    public function getAlteredHeaders()
+    {
+        if ($this->_debugHeaders) {
+            return array('DomainKey-Signature', 'X-DebugHash');
+        }
+
+        return array('DomainKey-Signature');
+    }
+
+    /**
+     * Adds an ignored Header.
+     *
+     * @param string $header_name
+     *
+     * @return $this
+     */
+    public function ignoreHeader($header_name)
+    {
+        $this->_ignoredHeaders[strtolower($header_name)] = true;
+
+        return $this;
+    }
+
+    /**
+     * Set the headers to sign.
+     *
+     * @param Swift_Mime_HeaderSet $headers
+     *
+     * @return $this
+     */
+    public function setHeaders(Swift_Mime_HeaderSet $headers)
+    {
+        $this->_startHash();
+        $this->_canonData = '';
+        // Loop through Headers
+        $listHeaders = $headers->listAll();
+        foreach ($listHeaders as $hName) {
+            // Check if we need to ignore Header
+            if (!isset($this->_ignoredHeaders[strtolower($hName)])) {
+                if ($headers->has($hName)) {
+                    $tmp = $headers->getAll($hName);
+                    foreach ($tmp as $header) {
+                        if ($header->getFieldBody() != '') {
+                            $this->_addHeader($header->toString());
+                            $this->_signedHeaders[] = $header->getFieldName();
+                        }
+                    }
+                }
+            }
+        }
+        $this->_endOfHeaders();
+
+        return $this;
+    }
+
+    /**
+     * Add the signature to the given Headers.
+     *
+     * @param Swift_Mime_HeaderSet $headers
+     *
+     * @return $this
+     */
+    public function addSignature(Swift_Mime_HeaderSet $headers)
+    {
+        // Prepare the DomainKey-Signature Header
+        $params = array('a' => $this->_hashAlgorithm, 'b' => chunk_split(base64_encode($this->_getEncryptedHash()), 73, ' '), 'c' => $this->_canon, 'd' => $this->_domainName, 'h' => implode(': ', $this->_signedHeaders), 'q' => 'dns', 's' => $this->_selector);
+        $string = '';
+        foreach ($params as $k => $v) {
+            $string .= $k.'='.$v.'; ';
+        }
+        $string = trim($string);
+        $headers->addTextHeader('DomainKey-Signature', $string);
+
+        return $this;
+    }
+
+    /* Private helpers */
+
+    protected function _addHeader($header)
+    {
+        switch ($this->_canon) {
+            case 'nofws':
+                // Prepare Header and cascade
+                $exploded = explode(':', $header, 2);
+                $name = strtolower(trim($exploded[0]));
+                $value = str_replace("\r\n", '', $exploded[1]);
+                $value = preg_replace("/[ \t][ \t]+/", ' ', $value);
+                $header = $name.':'.trim($value)."\r\n";
+            case 'simple':
+                // Nothing to do
+        }
+        $this->_addToHash($header);
+    }
+
+    protected function _endOfHeaders()
+    {
+        $this->_bodyCanonEmptyCounter = 1;
+    }
+
+    protected function _canonicalizeBody($string)
+    {
+        $len = strlen($string);
+        $canon = '';
+        $nofws = ($this->_canon == 'nofws');
+        for ($i = 0; $i < $len; ++$i) {
+            if ($this->_bodyCanonIgnoreStart > 0) {
+                --$this->_bodyCanonIgnoreStart;
+                continue;
+            }
+            switch ($string[$i]) {
+                case "\r":
+                    $this->_bodyCanonLastChar = "\r";
+                    break;
+                case "\n":
+                    if ($this->_bodyCanonLastChar == "\r") {
+                        if ($nofws) {
+                            $this->_bodyCanonSpace = false;
+                        }
+                        if ($this->_bodyCanonLine == '') {
+                            ++$this->_bodyCanonEmptyCounter;
+                        } else {
+                            $this->_bodyCanonLine = '';
+                            $canon .= "\r\n";
+                        }
+                    } else {
+                        // Wooops Error
+                        throw new Swift_SwiftException('Invalid new line sequence in mail found \n without preceding \r');
+                    }
+                    break;
+                case ' ':
+                case "\t":
+                case "\x09": //HTAB
+                    if ($nofws) {
+                        $this->_bodyCanonSpace = true;
+                        break;
+                    }
+                default:
+                    if ($this->_bodyCanonEmptyCounter > 0) {
+                        $canon .= str_repeat("\r\n", $this->_bodyCanonEmptyCounter);
+                        $this->_bodyCanonEmptyCounter = 0;
+                    }
+                    $this->_bodyCanonLine .= $string[$i];
+                    $canon .= $string[$i];
+            }
+        }
+        $this->_addToHash($canon);
+    }
+
+    protected function _endOfBody()
+    {
+        if (strlen($this->_bodyCanonLine) > 0) {
+            $this->_addToHash("\r\n");
+        }
+        $this->_hash = hash_final($this->_hashHandler, true);
+    }
+
+    private function _addToHash($string)
+    {
+        $this->_canonData .= $string;
+        hash_update($this->_hashHandler, $string);
+    }
+
+    private function _startHash()
+    {
+        // Init
+        switch ($this->_hashAlgorithm) {
+            case 'rsa-sha1':
+                $this->_hashHandler = hash_init('sha1');
+                break;
+        }
+        $this->_bodyCanonLine = '';
+    }
+
+    /**
+     * @throws Swift_SwiftException
+     *
+     * @return string
+     */
+    private function _getEncryptedHash()
+    {
+        $signature = '';
+        $pkeyId = openssl_get_privatekey($this->_privateKey);
+        if (!$pkeyId) {
+            throw new Swift_SwiftException('Unable to load DomainKey Private Key ['.openssl_error_string().']');
+        }
+        if (openssl_sign($this->_canonData, $signature, $pkeyId, OPENSSL_ALGO_SHA1)) {
+            return $signature;
+        }
+        throw new Swift_SwiftException('Unable to sign DomainKey Hash  ['.openssl_error_string().']');
+    }
+}

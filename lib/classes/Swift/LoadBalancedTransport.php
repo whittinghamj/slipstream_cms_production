@@ -1,39 +1,45 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Redundantly and rotationally uses several Transport implementations when sending.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_LoadBalancedTransport extends Swift_Transport_LoadBalancedTransport
+{
+    /**
+     * Creates a new LoadBalancedTransport with $transports.
+     *
+     * @param array $transports
+     */
+    public function __construct($transports = array())
+    {
+        call_user_func_array(
+            array($this, 'Swift_Transport_LoadBalancedTransport::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('transport.loadbalanced')
+            );
+
+        $this->setTransports($transports);
+    }
+
+    /**
+     * Create a new LoadBalancedTransport instance.
+     *
+     * @param array $transports
+     *
+     * @return self
+     */
+    public static function newInstance($transports = array())
+    {
+        return new self($transports);
+    }
+}

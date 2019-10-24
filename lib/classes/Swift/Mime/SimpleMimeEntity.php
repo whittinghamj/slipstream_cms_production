@@ -1,399 +1,843 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-hT5NaMkslElQRvG=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A MIME entity, in a multipart message.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_SimpleMimeEntity implements Swift_Mime_MimeEntity
+{
+    /** A collection of Headers for this mime entity */
+    private $_headers;
+
+    /** The body as a string, or a stream */
+    private $_body;
+
+    /** The encoder that encodes the body into a streamable format */
+    private $_encoder;
+
+    /** The grammar to use for id validation */
+    private $_grammar;
+
+    /** A mime boundary, if any is used */
+    private $_boundary;
+
+    /** Mime types to be used based on the nesting level */
+    private $_compositeRanges = array(
+        'multipart/mixed' => array(self::LEVEL_TOP, self::LEVEL_MIXED),
+        'multipart/alternative' => array(self::LEVEL_MIXED, self::LEVEL_ALTERNATIVE),
+        'multipart/related' => array(self::LEVEL_ALTERNATIVE, self::LEVEL_RELATED),
+    );
+
+    /** A set of filter rules to define what level an entity should be nested at */
+    private $_compoundLevelFilters = array();
+
+    /** The nesting level of this entity */
+    private $_nestingLevel = self::LEVEL_ALTERNATIVE;
+
+    /** A KeyCache instance used during encoding and streaming */
+    private $_cache;
+
+    /** Direct descendants of this entity */
+    private $_immediateChildren = array();
+
+    /** All descendants of this entity */
+    private $_children = array();
+
+    /** The maximum line length of the body of this entity */
+    private $_maxLineLength = 78;
+
+    /** The order in which alternative mime types should appear */
+    private $_alternativePartOrder = array(
+        'text/plain' => 1,
+        'text/html' => 2,
+        'multipart/related' => 3,
+    );
+
+    /** The CID of this entity */
+    private $_id;
+
+    /** The key used for accessing the cache */
+    private $_cacheKey;
+
+    protected $_userContentType;
+
+    /**
+     * Create a new SimpleMimeEntity with $headers, $encoder and $cache.
+     *
+     * @param Swift_Mime_HeaderSet      $headers
+     * @param Swift_Mime_ContentEncoder $encoder
+     * @param Swift_KeyCache            $cache
+     * @param Swift_Mime_Grammar        $grammar
+     */
+    public function __construct(Swift_Mime_HeaderSet $headers, Swift_Mime_ContentEncoder $encoder, Swift_KeyCache $cache, Swift_Mime_Grammar $grammar)
+    {
+        $this->_cacheKey = md5(uniqid(getmypid().mt_rand(), true));
+        $this->_cache = $cache;
+        $this->_headers = $headers;
+        $this->_grammar = $grammar;
+        $this->setEncoder($encoder);
+        $this->_headers->defineOrdering(array('Content-Type', 'Content-Transfer-Encoding'));
+
+        // This array specifies that, when the entire MIME document contains
+        // $compoundLevel, then for each child within $level, if its Content-Type
+        // is $contentType then it should be treated as if it's level is
+        // $neededLevel instead.  I tried to write that unambiguously! :-\
+        // Data Structure:
+        // array (
+        //   $compoundLevel => array(
+        //     $level => array(
+        //       $contentType => $neededLevel
+        //     )
+        //   )
+        // )
+
+        $this->_compoundLevelFilters = array(
+            (self::LEVEL_ALTERNATIVE + self::LEVEL_RELATED) => array(
+                self::LEVEL_ALTERNATIVE => array(
+                    'text/plain' => self::LEVEL_ALTERNATIVE,
+                    'text/html' => self::LEVEL_RELATED,
+                    ),
+                ),
+            );
+
+        $this->_id = $this->getRandomId();
+    }
+
+    /**
+     * Generate a new Content-ID or Message-ID for this MIME entity.
+     *
+     * @return string
+     */
+    public function generateId()
+    {
+        $this->setId($this->getRandomId());
+
+        return $this->_id;
+    }
+
+    /**
+     * Get the {@link Swift_Mime_HeaderSet} for this entity.
+     *
+     * @return Swift_Mime_HeaderSet
+     */
+    public function getHeaders()
+    {
+        return $this->_headers;
+    }
+
+    /**
+     * Get the nesting level of this entity.
+     *
+     * @see LEVEL_TOP, LEVEL_MIXED, LEVEL_RELATED, LEVEL_ALTERNATIVE
+     *
+     * @return int
+     */
+    public function getNestingLevel()
+    {
+        return $this->_nestingLevel;
+    }
+
+    /**
+     * Get the Content-type of this entity.
+     *
+     * @return string
+     */
+    public function getContentType()
+    {
+        return $this->_getHeaderFieldModel('Content-Type');
+    }
+
+    /**
+     * Set the Content-type of this entity.
+     *
+     * @param string $type
+     *
+     * @return $this
+     */
+    public function setContentType($type)
+    {
+        $this->_setContentTypeInHeaders($type);
+        // Keep track of the value so that if the content-type changes automatically
+        // due to added child entities, it can be restored if they are later removed
+        $this->_userContentType = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get the CID of this entity.
+     *
+     * The CID will only be present in headers if a Content-ID header is present.
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        $tmp = (array) $this->_getHeaderFieldModel($this->_getIdField());
+
+        return $this->_headers->has($this->_getIdField()) ? current($tmp) : $this->_id;
+    }
+
+    /**
+     * Set the CID of this entity.
+     *
+     * @param string $id
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        if (!$this->_setHeaderFieldModel($this->_getIdField(), $id)) {
+            $this->_headers->addIdHeader($this->_getIdField(), $id);
+        }
+        $this->_id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the description of this entity.
+     *
+     * This value comes from the Content-Description header if set.
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->_getHeaderFieldModel('Content-Description');
+    }
+
+    /**
+     * Set the description of this entity.
+     *
+     * This method sets a value in the Content-ID header.
+     *
+     * @param string $description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        if (!$this->_setHeaderFieldModel('Content-Description', $description)) {
+            $this->_headers->addTextHeader('Content-Description', $description);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the maximum line length of the body of this entity.
+     *
+     * @return int
+     */
+    public function getMaxLineLength()
+    {
+        return $this->_maxLineLength;
+    }
+
+    /**
+     * Set the maximum line length of lines in this body.
+     *
+     * Though not enforced by the library, lines should not exceed 1000 chars.
+     *
+     * @param int $length
+     *
+     * @return $this
+     */
+    public function setMaxLineLength($length)
+    {
+        $this->_maxLineLength = $length;
+
+        return $this;
+    }
+
+    /**
+     * Get all children added to this entity.
+     *
+     * @return Swift_Mime_MimeEntity[]
+     */
+    public function getChildren()
+    {
+        return $this->_children;
+    }
+
+    /**
+     * Set all children of this entity.
+     *
+     * @param Swift_Mime_MimeEntity[] $children
+     * @param int                     $compoundLevel For internal use only
+     *
+     * @return $this
+     */
+    public function setChildren(array $children, $compoundLevel = null)
+    {
+        // TODO: Try to refactor this logic
+
+        $compoundLevel = isset($compoundLevel) ? $compoundLevel : $this->_getCompoundLevel($children);
+        $immediateChildren = array();
+        $grandchildren = array();
+        $newContentType = $this->_userContentType;
+
+        foreach ($children as $child) {
+            $level = $this->_getNeededChildLevel($child, $compoundLevel);
+            if (empty($immediateChildren)) {
+                //first iteration
+                $immediateChildren = array($child);
+            } else {
+                $nextLevel = $this->_getNeededChildLevel($immediateChildren[0], $compoundLevel);
+                if ($nextLevel == $level) {
+                    $immediateChildren[] = $child;
+                } elseif ($level < $nextLevel) {
+                    // Re-assign immediateChildren to grandchildren
+                    $grandchildren = array_merge($grandchildren, $immediateChildren);
+                    // Set new children
+                    $immediateChildren = array($child);
+                } else {
+                    $grandchildren[] = $child;
+                }
+            }
+        }
+
+        if ($immediateChildren) {
+            $lowestLevel = $this->_getNeededChildLevel($immediateChildren[0], $compoundLevel);
+
+            // Determine which composite media type is needed to accommodate the
+            // immediate children
+            foreach ($this->_compositeRanges as $mediaType => $range) {
+                if ($lowestLevel > $range[0] && $lowestLevel <= $range[1]) {
+                    $newContentType = $mediaType;
+
+                    break;
+                }
+            }
+
+            // Put any grandchildren in a subpart
+            if (!empty($grandchildren)) {
+                $subentity = $this->_createChild();
+                $subentity->_setNestingLevel($lowestLevel);
+                $subentity->setChildren($grandchildren, $compoundLevel);
+                array_unshift($immediateChildren, $subentity);
+            }
+        }
+
+        $this->_immediateChildren = $immediateChildren;
+        $this->_children = $children;
+        $this->_setContentTypeInHeaders($newContentType);
+        $this->_fixHeaders();
+        $this->_sortChildren();
+
+        return $this;
+    }
+
+    /**
+     * Get the body of this entity as a string.
+     *
+     * @return string
+     */
+    public function getBody()
+    {
+        return $this->_body instanceof Swift_OutputByteStream ? $this->_readStream($this->_body) : $this->_body;
+    }
+
+    /**
+     * Set the body of this entity, either as a string, or as an instance of
+     * {@link Swift_OutputByteStream}.
+     *
+     * @param mixed  $body
+     * @param string $contentType optional
+     *
+     * @return $this
+     */
+    public function setBody($body, $contentType = null)
+    {
+        if ($body !== $this->_body) {
+            $this->_clearCache();
+        }
+
+        $this->_body = $body;
+        if (isset($contentType)) {
+            $this->setContentType($contentType);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the encoder used for the body of this entity.
+     *
+     * @return Swift_Mime_ContentEncoder
+     */
+    public function getEncoder()
+    {
+        return $this->_encoder;
+    }
+
+    /**
+     * Set the encoder used for the body of this entity.
+     *
+     * @param Swift_Mime_ContentEncoder $encoder
+     *
+     * @return $this
+     */
+    public function setEncoder(Swift_Mime_ContentEncoder $encoder)
+    {
+        if ($encoder !== $this->_encoder) {
+            $this->_clearCache();
+        }
+
+        $this->_encoder = $encoder;
+        $this->_setEncoding($encoder->getName());
+        $this->_notifyEncoderChanged($encoder);
+
+        return $this;
+    }
+
+    /**
+     * Get the boundary used to separate children in this entity.
+     *
+     * @return string
+     */
+    public function getBoundary()
+    {
+        if (!isset($this->_boundary)) {
+            $this->_boundary = '_=_swift_v4_'.time().'_'.md5(getmypid().mt_rand().uniqid('', true)).'_=_';
+        }
+
+        return $this->_boundary;
+    }
+
+    /**
+     * Set the boundary used to separate children in this entity.
+     *
+     * @param string $boundary
+     *
+     * @throws Swift_RfcComplianceException
+     *
+     * @return $this
+     */
+    public function setBoundary($boundary)
+    {
+        $this->_assertValidBoundary($boundary);
+        $this->_boundary = $boundary;
+
+        return $this;
+    }
+
+    /**
+     * Receive notification that the charset of this entity, or a parent entity
+     * has changed.
+     *
+     * @param string $charset
+     */
+    public function charsetChanged($charset)
+    {
+        $this->_notifyCharsetChanged($charset);
+    }
+
+    /**
+     * Receive notification that the encoder of this entity or a parent entity
+     * has changed.
+     *
+     * @param Swift_Mime_ContentEncoder $encoder
+     */
+    public function encoderChanged(Swift_Mime_ContentEncoder $encoder)
+    {
+        $this->_notifyEncoderChanged($encoder);
+    }
+
+    /**
+     * Get this entire entity as a string.
+     *
+     * @return string
+     */
+    public function toString()
+    {
+        $string = $this->_headers->toString();
+        $string .= $this->_bodyToString();
+
+        return $string;
+    }
+
+    /**
+     * Get this entire entity as a string.
+     *
+     * @return string
+     */
+    protected function _bodyToString()
+    {
+        $string = '';
+
+        if (isset($this->_body) && empty($this->_immediateChildren)) {
+            if ($this->_cache->hasKey($this->_cacheKey, 'body')) {
+                $body = $this->_cache->getString($this->_cacheKey, 'body');
+            } else {
+                $body = "\r\n".$this->_encoder->encodeString($this->getBody(), 0, $this->getMaxLineLength());
+                $this->_cache->setString($this->_cacheKey, 'body', $body, Swift_KeyCache::MODE_WRITE);
+            }
+            $string .= $body;
+        }
+
+        if (!empty($this->_immediateChildren)) {
+            foreach ($this->_immediateChildren as $child) {
+                $string .= "\r\n\r\n--".$this->getBoundary()."\r\n";
+                $string .= $child->toString();
+            }
+            $string .= "\r\n\r\n--".$this->getBoundary()."--\r\n";
+        }
+
+        return $string;
+    }
+
+    /**
+     * Returns a string representation of this object.
+     *
+     * @see toString()
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->toString();
+    }
+
+    /**
+     * Write this entire entity to a {@see Swift_InputByteStream}.
+     *
+     * @param Swift_InputByteStream
+     */
+    public function toByteStream(Swift_InputByteStream $is)
+    {
+        $is->write($this->_headers->toString());
+        $is->commit();
+
+        $this->_bodyToByteStream($is);
+    }
+
+    /**
+     * Write this entire entity to a {@link Swift_InputByteStream}.
+     *
+     * @param Swift_InputByteStream
+     */
+    protected function _bodyToByteStream(Swift_InputByteStream $is)
+    {
+        if (empty($this->_immediateChildren)) {
+            if (isset($this->_body)) {
+                if ($this->_cache->hasKey($this->_cacheKey, 'body')) {
+                    $this->_cache->exportToByteStream($this->_cacheKey, 'body', $is);
+                } else {
+                    $cacheIs = $this->_cache->getInputByteStream($this->_cacheKey, 'body');
+                    if ($cacheIs) {
+                        $is->bind($cacheIs);
+                    }
+
+                    $is->write("\r\n");
+
+                    if ($this->_body instanceof Swift_OutputByteStream) {
+                        $this->_body->setReadPointer(0);
+
+                        $this->_encoder->encodeByteStream($this->_body, $is, 0, $this->getMaxLineLength());
+                    } else {
+                        $is->write($this->_encoder->encodeString($this->getBody(), 0, $this->getMaxLineLength()));
+                    }
+
+                    if ($cacheIs) {
+                        $is->unbind($cacheIs);
+                    }
+                }
+            }
+        }
+
+        if (!empty($this->_immediateChildren)) {
+            foreach ($this->_immediateChildren as $child) {
+                $is->write("\r\n\r\n--".$this->getBoundary()."\r\n");
+                $child->toByteStream($is);
+            }
+            $is->write("\r\n\r\n--".$this->getBoundary()."--\r\n");
+        }
+    }
+
+    /**
+     * Get the name of the header that provides the ID of this entity.
+     */
+    protected function _getIdField()
+    {
+        return 'Content-ID';
+    }
+
+    /**
+     * Get the model data (usually an array or a string) for $field.
+     */
+    protected function _getHeaderFieldModel($field)
+    {
+        if ($this->_headers->has($field)) {
+            return $this->_headers->get($field)->getFieldBodyModel();
+        }
+    }
+
+    /**
+     * Set the model data for $field.
+     */
+    protected function _setHeaderFieldModel($field, $model)
+    {
+        if ($this->_headers->has($field)) {
+            $this->_headers->get($field)->setFieldBodyModel($model);
+
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * Get the parameter value of $parameter on $field header.
+     */
+    protected function _getHeaderParameter($field, $parameter)
+    {
+        if ($this->_headers->has($field)) {
+            return $this->_headers->get($field)->getParameter($parameter);
+        }
+    }
+
+    /**
+     * Set the parameter value of $parameter on $field header.
+     */
+    protected function _setHeaderParameter($field, $parameter, $value)
+    {
+        if ($this->_headers->has($field)) {
+            $this->_headers->get($field)->setParameter($parameter, $value);
+
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * Re-evaluate what content type and encoding should be used on this entity.
+     */
+    protected function _fixHeaders()
+    {
+        if (count($this->_immediateChildren)) {
+            $this->_setHeaderParameter('Content-Type', 'boundary',
+                $this->getBoundary()
+                );
+            $this->_headers->remove('Content-Transfer-Encoding');
+        } else {
+            $this->_setHeaderParameter('Content-Type', 'boundary', null);
+            $this->_setEncoding($this->_encoder->getName());
+        }
+    }
+
+    /**
+     * Get the KeyCache used in this entity.
+     *
+     * @return Swift_KeyCache
+     */
+    protected function _getCache()
+    {
+        return $this->_cache;
+    }
+
+    /**
+     * Get the grammar used for validation.
+     *
+     * @return Swift_Mime_Grammar
+     */
+    protected function _getGrammar()
+    {
+        return $this->_grammar;
+    }
+
+    /**
+     * Empty the KeyCache for this entity.
+     */
+    protected function _clearCache()
+    {
+        $this->_cache->clearKey($this->_cacheKey, 'body');
+    }
+
+    /**
+     * Returns a random Content-ID or Message-ID.
+     *
+     * @return string
+     */
+    protected function getRandomId()
+    {
+        $idLeft = md5(getmypid().'.'.time().'.'.uniqid(mt_rand(), true));
+        $idRight = !empty($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : 'swift.generated';
+        $id = $idLeft.'@'.$idRight;
+
+        try {
+            $this->_assertValidId($id);
+        } catch (Swift_RfcComplianceException $e) {
+            $id = $idLeft.'@swift.generated';
+        }
+
+        return $id;
+    }
+
+    private function _readStream(Swift_OutputByteStream $os)
+    {
+        $string = '';
+        while (false !== $bytes = $os->read(8192)) {
+            $string .= $bytes;
+        }
+
+        $os->setReadPointer(0);
+
+        return $string;
+    }
+
+    private function _setEncoding($encoding)
+    {
+        if (!$this->_setHeaderFieldModel('Content-Transfer-Encoding', $encoding)) {
+            $this->_headers->addTextHeader('Content-Transfer-Encoding', $encoding);
+        }
+    }
+
+    private function _assertValidBoundary($boundary)
+    {
+        if (!preg_match('/^[a-z0-9\'\(\)\+_\-,\.\/:=\?\ ]{0,69}[a-z0-9\'\(\)\+_\-,\.\/:=\?]$/Di', $boundary)) {
+            throw new Swift_RfcComplianceException('Mime boundary set is not RFC 2046 compliant.');
+        }
+    }
+
+    private function _setContentTypeInHeaders($type)
+    {
+        if (!$this->_setHeaderFieldModel('Content-Type', $type)) {
+            $this->_headers->addParameterizedHeader('Content-Type', $type);
+        }
+    }
+
+    private function _setNestingLevel($level)
+    {
+        $this->_nestingLevel = $level;
+    }
+
+    private function _getCompoundLevel($children)
+    {
+        $level = 0;
+        foreach ($children as $child) {
+            $level |= $child->getNestingLevel();
+        }
+
+        return $level;
+    }
+
+    private function _getNeededChildLevel($child, $compoundLevel)
+    {
+        $filter = array();
+        foreach ($this->_compoundLevelFilters as $bitmask => $rules) {
+            if (($compoundLevel & $bitmask) === $bitmask) {
+                $filter = $rules + $filter;
+            }
+        }
+
+        $realLevel = $child->getNestingLevel();
+        $lowercaseType = strtolower($child->getContentType());
+
+        if (isset($filter[$realLevel]) && isset($filter[$realLevel][$lowercaseType])) {
+            return $filter[$realLevel][$lowercaseType];
+        }
+
+        return $realLevel;
+    }
+
+    private function _createChild()
+    {
+        return new self($this->_headers->newInstance(), $this->_encoder, $this->_cache, $this->_grammar);
+    }
+
+    private function _notifyEncoderChanged(Swift_Mime_ContentEncoder $encoder)
+    {
+        foreach ($this->_immediateChildren as $child) {
+            $child->encoderChanged($encoder);
+        }
+    }
+
+    private function _notifyCharsetChanged($charset)
+    {
+        $this->_encoder->charsetChanged($charset);
+        $this->_headers->charsetChanged($charset);
+        foreach ($this->_immediateChildren as $child) {
+            $child->charsetChanged($charset);
+        }
+    }
+
+    private function _sortChildren()
+    {
+        $shouldSort = false;
+        foreach ($this->_immediateChildren as $child) {
+            // NOTE: This include alternative parts moved into a related part
+            if ($child->getNestingLevel() == self::LEVEL_ALTERNATIVE) {
+                $shouldSort = true;
+                break;
+            }
+        }
+
+        // Sort in order of preference, if there is one
+        if ($shouldSort) {
+            usort($this->_immediateChildren, array($this, '_childSortAlgorithm'));
+        }
+    }
+
+    private function _childSortAlgorithm($a, $b)
+    {
+        $typePrefs = array();
+        $types = array(strtolower($a->getContentType()), strtolower($b->getContentType()));
+
+        foreach ($types as $type) {
+            $typePrefs[] = array_key_exists($type, $this->_alternativePartOrder) ? $this->_alternativePartOrder[$type] : max($this->_alternativePartOrder) + 1;
+        }
+
+        return $typePrefs[0] >= $typePrefs[1] ? 1 : -1;
+    }
+
+    /**
+     * Empties it's own contents from the cache.
+     */
+    public function __destruct()
+    {
+        if ($this->_cache instanceof Swift_KeyCache) {
+            $this->_cache->clearAll($this->_cacheKey);
+        }
+    }
+
+    /**
+     * Throws an Exception if the id passed does not comply with RFC 2822.
+     *
+     * @param string $id
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    private function _assertValidId($id)
+    {
+        if (!preg_match('/^'.$this->_grammar->getDefinition('id-left').'@'.$this->_grammar->getDefinition('id-right').'$/D', $id)) {
+            throw new Swift_RfcComplianceException('Invalid ID given <'.$id.'>');
+        }
+    }
+
+    /**
+     * Make a deep copy of object.
+     */
+    public function __clone()
+    {
+        $this->_headers = clone $this->_headers;
+        $this->_encoder = clone $this->_encoder;
+        $this->_cacheKey = md5(uniqid(getmypid().mt_rand(), true));
+        $children = array();
+        foreach ($this->_children as $pos => $child) {
+            $children[$pos] = clone $child;
+        }
+        $this->setChildren($children);
+    }
+}

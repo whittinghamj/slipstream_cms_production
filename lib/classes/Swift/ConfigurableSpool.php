@@ -1,36 +1,63 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-RqR79qFHYXYWvzHHR0==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Base class for Spools (implements time and message limits).
+ *
+ * @author Fabien Potencier
+ */
+abstract class Swift_ConfigurableSpool implements Swift_Spool
+{
+    /** The maximum number of messages to send per flush */
+    private $_message_limit;
+
+    /** The time limit per flush */
+    private $_time_limit;
+
+    /**
+     * Sets the maximum number of messages to send per flush.
+     *
+     * @param int $limit
+     */
+    public function setMessageLimit($limit)
+    {
+        $this->_message_limit = (int) $limit;
+    }
+
+    /**
+     * Gets the maximum number of messages to send per flush.
+     *
+     * @return int The limit
+     */
+    public function getMessageLimit()
+    {
+        return $this->_message_limit;
+    }
+
+    /**
+     * Sets the time limit (in seconds) per flush.
+     *
+     * @param int $limit The limit
+     */
+    public function setTimeLimit($limit)
+    {
+        $this->_time_limit = (int) $limit;
+    }
+
+    /**
+     * Gets the time limit (in seconds) per flush.
+     *
+     * @return int The limit
+     */
+    public function getTimeLimit()
+    {
+        return $this->_time_limit;
+    }
+}

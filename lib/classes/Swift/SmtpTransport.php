@@ -1,42 +1,58 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-g3xDox5xRdJHvN8CRXP//+s+ITTze2ELLXW=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Sends Messages over SMTP with ESMTP support.
+ *
+ * @author Chris Corbyn
+ *
+ * @method Swift_SmtpTransport setUsername(string $username) Set the username to authenticate with.
+ * @method string              getUsername()                 Get the username to authenticate with.
+ * @method Swift_SmtpTransport setPassword(string $password) Set the password to authenticate with.
+ * @method string              getPassword()                 Get the password to authenticate with.
+ * @method Swift_SmtpTransport setAuthMode(string $mode)     Set the auth mode to use to authenticate.
+ * @method string              getAuthMode()                 Get the auth mode to use to authenticate.
+ */
+class Swift_SmtpTransport extends Swift_Transport_EsmtpTransport
+{
+    /**
+     * Create a new SmtpTransport, optionally with $host, $port and $security.
+     *
+     * @param string $host
+     * @param int    $port
+     * @param string $security
+     */
+    public function __construct($host = 'localhost', $port = 25, $security = null)
+    {
+        call_user_func_array(
+            array($this, 'Swift_Transport_EsmtpTransport::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('transport.smtp')
+            );
+
+        $this->setHost($host);
+        $this->setPort($port);
+        $this->setEncryption($security);
+    }
+
+    /**
+     * Create a new SmtpTransport instance.
+     *
+     * @param string $host
+     * @param int    $port
+     * @param string $security
+     *
+     * @return self
+     */
+    public static function newInstance($host = 'localhost', $port = 25, $security = null)
+    {
+        return new self($host, $port, $security);
+    }
+}

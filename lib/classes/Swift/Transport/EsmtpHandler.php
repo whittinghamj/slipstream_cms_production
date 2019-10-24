@@ -1,38 +1,86 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * An ESMTP handler.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Transport_EsmtpHandler
+{
+    /**
+     * Get the name of the ESMTP extension this handles.
+     *
+     * @return bool
+     */
+    public function getHandledKeyword();
+
+    /**
+     * Set the parameters which the EHLO greeting indicated.
+     *
+     * @param string[] $parameters
+     */
+    public function setKeywordParams(array $parameters);
+
+    /**
+     * Runs immediately after a EHLO has been issued.
+     *
+     * @param Swift_Transport_SmtpAgent $agent to read/write
+     */
+    public function afterEhlo(Swift_Transport_SmtpAgent $agent);
+
+    /**
+     * Get params which are appended to MAIL FROM:<>.
+     *
+     * @return string[]
+     */
+    public function getMailParams();
+
+    /**
+     * Get params which are appended to RCPT TO:<>.
+     *
+     * @return string[]
+     */
+    public function getRcptParams();
+
+    /**
+     * Runs when a command is due to be sent.
+     *
+     * @param Swift_Transport_SmtpAgent $agent            to read/write
+     * @param string                    $command          to send
+     * @param int[]                     $codes            expected in response
+     * @param string[]                  $failedRecipients to collect failures
+     * @param bool                      $stop             to be set true  by-reference if the command is now sent
+     */
+    public function onCommand(Swift_Transport_SmtpAgent $agent, $command, $codes = array(), &$failedRecipients = null, &$stop = false);
+
+    /**
+     * Returns +1, -1 or 0 according to the rules for usort().
+     *
+     * This method is called to ensure extensions can be execute in an appropriate order.
+     *
+     * @param string $esmtpKeyword to compare with
+     *
+     * @return int
+     */
+    public function getPriorityOver($esmtpKeyword);
+
+    /**
+     * Returns an array of method names which are exposed to the Esmtp class.
+     *
+     * @return string[]
+     */
+    public function exposeMixinMethods();
+
+    /**
+     * Tells this handler to clear any buffers and reset its state.
+     */
+    public function resetState();
+}

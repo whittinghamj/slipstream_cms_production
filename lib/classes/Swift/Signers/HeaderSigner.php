@@ -1,39 +1,65 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Header Signer Interface used to apply Header-Based Signature to a message.
+ *
+ * @author Xavier De Cock <xdecock@gmail.com>
+ */
+interface Swift_Signers_HeaderSigner extends Swift_Signer, Swift_InputByteStream
+{
+    /**
+     * Exclude an header from the signed headers.
+     *
+     * @param string $header_name
+     *
+     * @return self
+     */
+    public function ignoreHeader($header_name);
+
+    /**
+     * Prepare the Signer to get a new Body.
+     *
+     * @return self
+     */
+    public function startBody();
+
+    /**
+     * Give the signal that the body has finished streaming.
+     *
+     * @return self
+     */
+    public function endBody();
+
+    /**
+     * Give the headers already given.
+     *
+     * @param Swift_Mime_SimpleHeaderSet $headers
+     *
+     * @return self
+     */
+    public function setHeaders(Swift_Mime_HeaderSet $headers);
+
+    /**
+     * Add the header(s) to the headerSet.
+     *
+     * @param Swift_Mime_HeaderSet $headers
+     *
+     * @return self
+     */
+    public function addSignature(Swift_Mime_HeaderSet $headers);
+
+    /**
+     * Return the list of header a signer might tamper.
+     *
+     * @return array
+     */
+    public function getAlteredHeaders();
+}

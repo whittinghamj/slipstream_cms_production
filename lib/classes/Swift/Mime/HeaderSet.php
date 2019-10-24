@@ -1,62 +1,169 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A collection of MIME headers.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Mime_HeaderSet extends Swift_Mime_CharsetObserver
+{
+    /**
+     * Add a new Mailbox Header with a list of $addresses.
+     *
+     * @param string       $name
+     * @param array|string $addresses
+     */
+    public function addMailboxHeader($name, $addresses = null);
+
+    /**
+     * Add a new Date header using $timestamp (UNIX time).
+     *
+     * @param string $name
+     * @param int    $timestamp
+     */
+    public function addDateHeader($name, $timestamp = null);
+
+    /**
+     * Add a new basic text header with $name and $value.
+     *
+     * @param string $name
+     * @param string $value
+     */
+    public function addTextHeader($name, $value = null);
+
+    /**
+     * Add a new ParameterizedHeader with $name, $value and $params.
+     *
+     * @param string $name
+     * @param string $value
+     * @param array  $params
+     */
+    public function addParameterizedHeader($name, $value = null, $params = array());
+
+    /**
+     * Add a new ID header for Message-ID or Content-ID.
+     *
+     * @param string       $name
+     * @param string|array $ids
+     */
+    public function addIdHeader($name, $ids = null);
+
+    /**
+     * Add a new Path header with an address (path) in it.
+     *
+     * @param string $name
+     * @param string $path
+     */
+    public function addPathHeader($name, $path = null);
+
+    /**
+     * Returns true if at least one header with the given $name exists.
+     *
+     * If multiple headers match, the actual one may be specified by $index.
+     *
+     * @param string $name
+     * @param int    $index
+     *
+     * @return bool
+     */
+    public function has($name, $index = 0);
+
+    /**
+     * Set a header in the HeaderSet.
+     *
+     * The header may be a previously fetched header via {@link get()} or it may
+     * be one that has been created separately.
+     *
+     * If $index is specified, the header will be inserted into the set at this
+     * offset.
+     *
+     * @param Swift_Mime_Header $header
+     * @param int               $index
+     */
+    public function set(Swift_Mime_Header $header, $index = 0);
+
+    /**
+     * Get the header with the given $name.
+     * If multiple headers match, the actual one may be specified by $index.
+     * Returns NULL if none present.
+     *
+     * @param string $name
+     * @param int    $index
+     *
+     * @return Swift_Mime_Header
+     */
+    public function get($name, $index = 0);
+
+    /**
+     * Get all headers with the given $name.
+     *
+     * @param string $name
+     *
+     * @return array
+     */
+    public function getAll($name = null);
+
+    /**
+     * Return the name of all Headers.
+     *
+     * @return array
+     */
+    public function listAll();
+
+    /**
+     * Remove the header with the given $name if it's set.
+     *
+     * If multiple headers match, the actual one may be specified by $index.
+     *
+     * @param string $name
+     * @param int    $index
+     */
+    public function remove($name, $index = 0);
+
+    /**
+     * Remove all headers with the given $name.
+     *
+     * @param string $name
+     */
+    public function removeAll($name);
+
+    /**
+     * Create a new instance of this HeaderSet.
+     *
+     * @return self
+     */
+    public function newInstance();
+
+    /**
+     * Define a list of Header names as an array in the correct order.
+     *
+     * These Headers will be output in the given order where present.
+     *
+     * @param array $sequence
+     */
+    public function defineOrdering(array $sequence);
+
+    /**
+     * Set a list of header names which must always be displayed when set.
+     *
+     * Usually headers without a field value won't be output unless set here.
+     *
+     * @param array $names
+     */
+    public function setAlwaysDisplayed(array $names);
+
+    /**
+     * Returns a string with a representation of all headers.
+     *
+     * @return string
+     */
+    public function toString();
+}

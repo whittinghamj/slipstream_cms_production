@@ -1,54 +1,97 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-4nirsBuvT/A/VScLy0==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Provides fixed-width byte sizes for reading fixed-width character sets.
+ *
+ * @author Chris Corbyn
+ * @author Xavier De Cock <xdecock@gmail.com>
+ */
+class Swift_CharacterReader_GenericFixedWidthReader implements Swift_CharacterReader
+{
+    /**
+     * The number of bytes in a single character.
+     *
+     * @var int
+     */
+    private $_width;
+
+    /**
+     * Creates a new GenericFixedWidthReader using $width bytes per character.
+     *
+     * @param int $width
+     */
+    public function __construct($width)
+    {
+        $this->_width = $width;
+    }
+
+    /**
+     * Returns the complete character map.
+     *
+     * @param string $string
+     * @param int    $startOffset
+     * @param array  $currentMap
+     * @param mixed  $ignoredChars
+     *
+     * @return int
+     */
+    public function getCharPositions($string, $startOffset, &$currentMap, &$ignoredChars)
+    {
+        $strlen = strlen($string);
+        // % and / are CPU intensive, so, maybe find a better way
+        $ignored = $strlen % $this->_width;
+        $ignoredChars = $ignored ? substr($string, -$ignored) : '';
+        $currentMap = $this->_width;
+
+        return ($strlen - $ignored) / $this->_width;
+    }
+
+    /**
+     * Returns the mapType.
+     *
+     * @return int
+     */
+    public function getMapType()
+    {
+        return self::MAP_TYPE_FIXED_LEN;
+    }
+
+    /**
+     * Returns an integer which specifies how many more bytes to read.
+     *
+     * A positive integer indicates the number of more bytes to fetch before invoking
+     * this method again.
+     *
+     * A value of zero means this is already a valid character.
+     * A value of -1 means this cannot possibly be a valid character.
+     *
+     * @param string $bytes
+     * @param int    $size
+     *
+     * @return int
+     */
+    public function validateByteSequence($bytes, $size)
+    {
+        $needed = $this->_width - $size;
+
+        return $needed > -1 ? $needed : -1;
+    }
+
+    /**
+     * Returns the number of bytes which should be read to start each character.
+     *
+     * @return int
+     */
+    public function getInitialByteSize()
+    {
+        return $this->_width;
+    }
+}

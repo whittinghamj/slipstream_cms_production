@@ -1,46 +1,74 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+<?php 
+
+/**
+ * Vimeo
+ *
+ * with help of the API this class delivers all kind of Images/Videos from Vimeo
+ *
+ * @package    socialstreams
+ * @subpackage socialstreams/vimeo
+ * @author     ThemePunch <info@themepunch.com>
+ */
+
+class TP_vimeo {
+	/**
+	 * Stream Array
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      array    $stream    Stream Data Array
+	 */
+	private $stream;
+
+	/**
+	 * Get Vimeo User Videos
+	 *
+	 * @since    1.0.0
+	 */
+	public function get_vimeo_videos($type,$value){
+		//call the API and decode the response
+		if($type=="user"){
+			$url = "https://vimeo.com/api/v2/".$value."/videos.json";
+		}
+		else{
+			$url = "https://vimeo.com/api/v2/".$type."/".$value."/videos.json";
+		}
+		
+		$rsp = json_decode(file_get_contents($url));
+		
+		return $rsp;
+	}
+
+	/**
+	 * Prepare output array $stream for Vimeo videos
+	 *
+	 * @since    1.0.0
+	 * @param    string    $videos 	Vimeo Output Data
+	 */
+	private function vimeo_output_array($videos,$count){
+		foreach ($videos as $video) {
+			if($count-- == 0) break;
+
+			$stream = array();
+
+			$image_url = @array(
+				'thumbnail_small' 	=> 	array($video->thumbnail_small),
+				'thumbnail_medium' 	=> 	array($video->thumbnail_medium),
+				'thumbnail_large' 	=> 	array($video->thumbnail_large),
+			);
+
+			$stream['custom-image-url'] = $image_url; //image for entry
+			$stream['custom-type'] = 'vimeo'; //image, vimeo, youtube, soundcloud, html
+			$stream['custom-vimeo'] = $video->id;
+			$stream['post_url'] = $video->url;
+			$stream['post_link'] = $video->url;
+			$stream['title'] = $video->title;
+			$stream['content'] = $video->description;
+			$stream['date_modified'] = $video->upload_date;
+			$stream['author_name'] = $video->user_name;
+			
+			$this->stream[] = $stream;
+		}
+	}
+}
 ?>
-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
-XhrDJsUckECBQG==

@@ -1,64 +1,127 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-IG==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Writes data to a KeyCache using a stream.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_KeyCache_SimpleKeyCacheInputStream implements Swift_KeyCache_KeyCacheInputStream
+{
+    /** The KeyCache being written to */
+    private $_keyCache;
+
+    /** The nsKey of the KeyCache being written to */
+    private $_nsKey;
+
+    /** The itemKey of the KeyCache being written to */
+    private $_itemKey;
+
+    /** A stream to write through on each write() */
+    private $_writeThrough = null;
+
+    /**
+     * Set the KeyCache to wrap.
+     *
+     * @param Swift_KeyCache $keyCache
+     */
+    public function setKeyCache(Swift_KeyCache $keyCache)
+    {
+        $this->_keyCache = $keyCache;
+    }
+
+    /**
+     * Specify a stream to write through for each write().
+     *
+     * @param Swift_InputByteStream $is
+     */
+    public function setWriteThroughStream(Swift_InputByteStream $is)
+    {
+        $this->_writeThrough = $is;
+    }
+
+    /**
+     * Writes $bytes to the end of the stream.
+     *
+     * @param string                $bytes
+     * @param Swift_InputByteStream $is    optional
+     */
+    public function write($bytes, Swift_InputByteStream $is = null)
+    {
+        $this->_keyCache->setString(
+            $this->_nsKey, $this->_itemKey, $bytes, Swift_KeyCache::MODE_APPEND
+            );
+        if (isset($is)) {
+            $is->write($bytes);
+        }
+        if (isset($this->_writeThrough)) {
+            $this->_writeThrough->write($bytes);
+        }
+    }
+
+    /**
+     * Not used.
+     */
+    public function commit()
+    {
+    }
+
+    /**
+     * Not used.
+     */
+    public function bind(Swift_InputByteStream $is)
+    {
+    }
+
+    /**
+     * Not used.
+     */
+    public function unbind(Swift_InputByteStream $is)
+    {
+    }
+
+    /**
+     * Flush the contents of the stream (empty it) and set the internal pointer
+     * to the beginning.
+     */
+    public function flushBuffers()
+    {
+        $this->_keyCache->clearKey($this->_nsKey, $this->_itemKey);
+    }
+
+    /**
+     * Set the nsKey which will be written to.
+     *
+     * @param string $nsKey
+     */
+    public function setNsKey($nsKey)
+    {
+        $this->_nsKey = $nsKey;
+    }
+
+    /**
+     * Set the itemKey which will be written to.
+     *
+     * @param string $itemKey
+     */
+    public function setItemKey($itemKey)
+    {
+        $this->_itemKey = $itemKey;
+    }
+
+    /**
+     * Any implementation should be cloneable, allowing the clone to access a
+     * separate $nsKey and $itemKey.
+     */
+    public function __clone()
+    {
+        $this->_writeThrough = null;
+    }
+}

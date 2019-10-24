@@ -1,34 +1,45 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-SZxKc8MBY+D5YF+nhp2Fph2ShLuo
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Listens for changes within the Transport system.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Events_TransportChangeListener extends Swift_Events_EventListener
+{
+    /**
+     * Invoked just before a Transport is started.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function beforeTransportStarted(Swift_Events_TransportChangeEvent $evt);
+
+    /**
+     * Invoked immediately after the Transport is started.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function transportStarted(Swift_Events_TransportChangeEvent $evt);
+
+    /**
+     * Invoked just before a Transport is stopped.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function beforeTransportStopped(Swift_Events_TransportChangeEvent $evt);
+
+    /**
+     * Invoked immediately after the Transport is stopped.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function transportStopped(Swift_Events_TransportChangeEvent $evt);
+}

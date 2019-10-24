@@ -1,132 +1,273 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Makes sure a connection to a POP3 host has been established prior to connecting to SMTP.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_PopBeforeSmtpPlugin implements Swift_Events_TransportChangeListener, Swift_Plugins_Pop_Pop3Connection
+{
+    /** A delegate connection to use (mostly a test hook) */
+    private $_connection;
+
+    /** Hostname of the POP3 server */
+    private $_host;
+
+    /** Port number to connect on */
+    private $_port;
+
+    /** Encryption type to use (if any) */
+    private $_crypto;
+
+    /** Username to use (if any) */
+    private $_username;
+
+    /** Password to use (if any) */
+    private $_password;
+
+    /** Established connection via TCP socket */
+    private $_socket;
+
+    /** Connect timeout in seconds */
+    private $_timeout = 10;
+
+    /** SMTP Transport to bind to */
+    private $_transport;
+
+    /**
+     * Create a new PopBeforeSmtpPlugin for $host and $port.
+     *
+     * @param string $host
+     * @param int    $port
+     * @param string $crypto as "tls" or "ssl"
+     */
+    public function __construct($host, $port = 110, $crypto = null)
+    {
+        $this->_host = $host;
+        $this->_port = $port;
+        $this->_crypto = $crypto;
+    }
+
+    /**
+     * Create a new PopBeforeSmtpPlugin for $host and $port.
+     *
+     * @param string $host
+     * @param int    $port
+     * @param string $crypto as "tls" or "ssl"
+     *
+     * @return self
+     */
+    public static function newInstance($host, $port = 110, $crypto = null)
+    {
+        return new self($host, $port, $crypto);
+    }
+
+    /**
+     * Set a Pop3Connection to delegate to instead of connecting directly.
+     *
+     * @param Swift_Plugins_Pop_Pop3Connection $connection
+     *
+     * @return $this
+     */
+    public function setConnection(Swift_Plugins_Pop_Pop3Connection $connection)
+    {
+        $this->_connection = $connection;
+
+        return $this;
+    }
+
+    /**
+     * Bind this plugin to a specific SMTP transport instance.
+     *
+     * @param Swift_Transport
+     */
+    public function bindSmtp(Swift_Transport $smtp)
+    {
+        $this->_transport = $smtp;
+    }
+
+    /**
+     * Set the connection timeout in seconds (default 10).
+     *
+     * @param int $timeout
+     *
+     * @return $this
+     */
+    public function setTimeout($timeout)
+    {
+        $this->_timeout = (int) $timeout;
+
+        return $this;
+    }
+
+    /**
+     * Set the username to use when connecting (if needed).
+     *
+     * @param string $username
+     *
+     * @return $this
+     */
+    public function setUsername($username)
+    {
+        $this->_username = $username;
+
+        return $this;
+    }
+
+    /**
+     * Set the password to use when connecting (if needed).
+     *
+     * @param string $password
+     *
+     * @return $this
+     */
+    public function setPassword($password)
+    {
+        $this->_password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Connect to the POP3 host and authenticate.
+     *
+     * @throws Swift_Plugins_Pop_Pop3Exception if connection fails
+     */
+    public function connect()
+    {
+        if (isset($this->_connection)) {
+            $this->_connection->connect();
+        } else {
+            if (!isset($this->_socket)) {
+                if (!$socket = fsockopen(
+                    $this->_getHostString(), $this->_port, $errno, $errstr, $this->_timeout)) {
+                    throw new Swift_Plugins_Pop_Pop3Exception(
+                        sprintf('Failed to connect to POP3 host [%s]: %s', $this->_host, $errstr)
+                    );
+                }
+                $this->_socket = $socket;
+
+                if (false === $greeting = fgets($this->_socket)) {
+                    throw new Swift_Plugins_Pop_Pop3Exception(
+                        sprintf('Failed to connect to POP3 host [%s]', trim($greeting))
+                    );
+                }
+
+                $this->_assertOk($greeting);
+
+                if ($this->_username) {
+                    $this->_command(sprintf("USER %s\r\n", $this->_username));
+                    $this->_command(sprintf("PASS %s\r\n", $this->_password));
+                }
+            }
+        }
+    }
+
+    /**
+     * Disconnect from the POP3 host.
+     */
+    public function disconnect()
+    {
+        if (isset($this->_connection)) {
+            $this->_connection->disconnect();
+        } else {
+            $this->_command("QUIT\r\n");
+            if (!fclose($this->_socket)) {
+                throw new Swift_Plugins_Pop_Pop3Exception(
+                    sprintf('POP3 host [%s] connection could not be stopped', $this->_host)
+                );
+            }
+            $this->_socket = null;
+        }
+    }
+
+    /**
+     * Invoked just before a Transport is started.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function beforeTransportStarted(Swift_Events_TransportChangeEvent $evt)
+    {
+        if (isset($this->_transport)) {
+            if ($this->_transport !== $evt->getTransport()) {
+                return;
+            }
+        }
+
+        $this->connect();
+        $this->disconnect();
+    }
+
+    /**
+     * Not used.
+     */
+    public function transportStarted(Swift_Events_TransportChangeEvent $evt)
+    {
+    }
+
+    /**
+     * Not used.
+     */
+    public function beforeTransportStopped(Swift_Events_TransportChangeEvent $evt)
+    {
+    }
+
+    /**
+     * Not used.
+     */
+    public function transportStopped(Swift_Events_TransportChangeEvent $evt)
+    {
+    }
+
+    private function _command($command)
+    {
+        if (!fwrite($this->_socket, $command)) {
+            throw new Swift_Plugins_Pop_Pop3Exception(
+                sprintf('Failed to write command [%s] to POP3 host', trim($command))
+            );
+        }
+
+        if (false === $response = fgets($this->_socket)) {
+            throw new Swift_Plugins_Pop_Pop3Exception(
+                sprintf('Failed to read from POP3 host after command [%s]', trim($command))
+            );
+        }
+
+        $this->_assertOk($response);
+
+        return $response;
+    }
+
+    private function _assertOk($response)
+    {
+        if (substr($response, 0, 3) != '+OK') {
+            throw new Swift_Plugins_Pop_Pop3Exception(
+                sprintf('POP3 command failed [%s]', trim($response))
+            );
+        }
+    }
+
+    private function _getHostString()
+    {
+        $host = $this->_host;
+        switch (strtolower($this->_crypto)) {
+            case 'ssl':
+                $host = 'ssl://'.$host;
+                break;
+
+            case 'tls':
+                $host = 'tls://'.$host;
+                break;
+        }
+
+        return $host;
+    }
+}

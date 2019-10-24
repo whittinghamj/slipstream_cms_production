@@ -1,30 +1,33 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-MKUTwAvmBBLx8F8N
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Body Signer Interface used to apply Body-Based Signature to a message.
+ *
+ * @author Xavier De Cock <xdecock@gmail.com>
+ */
+interface Swift_Signers_BodySigner extends Swift_Signer
+{
+    /**
+     * Change the Swift_Signed_Message to apply the singing.
+     *
+     * @param Swift_Message $message
+     *
+     * @return self
+     */
+    public function signMessage(Swift_Message $message);
+
+    /**
+     * Return the list of header a signer might tamper.
+     *
+     * @return array
+     */
+    public function getAlteredHeaders();
+}

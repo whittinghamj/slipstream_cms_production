@@ -1,96 +1,176 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Analyzes UTF-8 characters.
+ *
+ * @author Chris Corbyn
+ * @author Xavier De Cock <xdecock@gmail.com>
+ */
+class Swift_CharacterReader_Utf8Reader implements Swift_CharacterReader
+{
+    /** Pre-computed for optimization */
+    private static $length_map = array(
+        // N=0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x0N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x1N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x2N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x3N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x4N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x5N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x6N
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, // 0x7N
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, // 0x8N
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, // 0x9N
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, // 0xAN
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, // 0xBN
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, // 0xCN
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, // 0xDN
+        3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, // 0xEN
+        4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 0, 0,  // 0xFN
+    );
+
+    private static $s_length_map = array(
+        "\x00" => 1, "\x01" => 1, "\x02" => 1, "\x03" => 1, "\x04" => 1, "\x05" => 1, "\x06" => 1, "\x07" => 1,
+        "\x08" => 1, "\x09" => 1, "\x0a" => 1, "\x0b" => 1, "\x0c" => 1, "\x0d" => 1, "\x0e" => 1, "\x0f" => 1,
+        "\x10" => 1, "\x11" => 1, "\x12" => 1, "\x13" => 1, "\x14" => 1, "\x15" => 1, "\x16" => 1, "\x17" => 1,
+        "\x18" => 1, "\x19" => 1, "\x1a" => 1, "\x1b" => 1, "\x1c" => 1, "\x1d" => 1, "\x1e" => 1, "\x1f" => 1,
+        "\x20" => 1, "\x21" => 1, "\x22" => 1, "\x23" => 1, "\x24" => 1, "\x25" => 1, "\x26" => 1, "\x27" => 1,
+        "\x28" => 1, "\x29" => 1, "\x2a" => 1, "\x2b" => 1, "\x2c" => 1, "\x2d" => 1, "\x2e" => 1, "\x2f" => 1,
+        "\x30" => 1, "\x31" => 1, "\x32" => 1, "\x33" => 1, "\x34" => 1, "\x35" => 1, "\x36" => 1, "\x37" => 1,
+        "\x38" => 1, "\x39" => 1, "\x3a" => 1, "\x3b" => 1, "\x3c" => 1, "\x3d" => 1, "\x3e" => 1, "\x3f" => 1,
+        "\x40" => 1, "\x41" => 1, "\x42" => 1, "\x43" => 1, "\x44" => 1, "\x45" => 1, "\x46" => 1, "\x47" => 1,
+        "\x48" => 1, "\x49" => 1, "\x4a" => 1, "\x4b" => 1, "\x4c" => 1, "\x4d" => 1, "\x4e" => 1, "\x4f" => 1,
+        "\x50" => 1, "\x51" => 1, "\x52" => 1, "\x53" => 1, "\x54" => 1, "\x55" => 1, "\x56" => 1, "\x57" => 1,
+        "\x58" => 1, "\x59" => 1, "\x5a" => 1, "\x5b" => 1, "\x5c" => 1, "\x5d" => 1, "\x5e" => 1, "\x5f" => 1,
+        "\x60" => 1, "\x61" => 1, "\x62" => 1, "\x63" => 1, "\x64" => 1, "\x65" => 1, "\x66" => 1, "\x67" => 1,
+        "\x68" => 1, "\x69" => 1, "\x6a" => 1, "\x6b" => 1, "\x6c" => 1, "\x6d" => 1, "\x6e" => 1, "\x6f" => 1,
+        "\x70" => 1, "\x71" => 1, "\x72" => 1, "\x73" => 1, "\x74" => 1, "\x75" => 1, "\x76" => 1, "\x77" => 1,
+        "\x78" => 1, "\x79" => 1, "\x7a" => 1, "\x7b" => 1, "\x7c" => 1, "\x7d" => 1, "\x7e" => 1, "\x7f" => 1,
+        "\x80" => 0, "\x81" => 0, "\x82" => 0, "\x83" => 0, "\x84" => 0, "\x85" => 0, "\x86" => 0, "\x87" => 0,
+        "\x88" => 0, "\x89" => 0, "\x8a" => 0, "\x8b" => 0, "\x8c" => 0, "\x8d" => 0, "\x8e" => 0, "\x8f" => 0,
+        "\x90" => 0, "\x91" => 0, "\x92" => 0, "\x93" => 0, "\x94" => 0, "\x95" => 0, "\x96" => 0, "\x97" => 0,
+        "\x98" => 0, "\x99" => 0, "\x9a" => 0, "\x9b" => 0, "\x9c" => 0, "\x9d" => 0, "\x9e" => 0, "\x9f" => 0,
+        "\xa0" => 0, "\xa1" => 0, "\xa2" => 0, "\xa3" => 0, "\xa4" => 0, "\xa5" => 0, "\xa6" => 0, "\xa7" => 0,
+        "\xa8" => 0, "\xa9" => 0, "\xaa" => 0, "\xab" => 0, "\xac" => 0, "\xad" => 0, "\xae" => 0, "\xaf" => 0,
+        "\xb0" => 0, "\xb1" => 0, "\xb2" => 0, "\xb3" => 0, "\xb4" => 0, "\xb5" => 0, "\xb6" => 0, "\xb7" => 0,
+        "\xb8" => 0, "\xb9" => 0, "\xba" => 0, "\xbb" => 0, "\xbc" => 0, "\xbd" => 0, "\xbe" => 0, "\xbf" => 0,
+        "\xc0" => 2, "\xc1" => 2, "\xc2" => 2, "\xc3" => 2, "\xc4" => 2, "\xc5" => 2, "\xc6" => 2, "\xc7" => 2,
+        "\xc8" => 2, "\xc9" => 2, "\xca" => 2, "\xcb" => 2, "\xcc" => 2, "\xcd" => 2, "\xce" => 2, "\xcf" => 2,
+        "\xd0" => 2, "\xd1" => 2, "\xd2" => 2, "\xd3" => 2, "\xd4" => 2, "\xd5" => 2, "\xd6" => 2, "\xd7" => 2,
+        "\xd8" => 2, "\xd9" => 2, "\xda" => 2, "\xdb" => 2, "\xdc" => 2, "\xdd" => 2, "\xde" => 2, "\xdf" => 2,
+        "\xe0" => 3, "\xe1" => 3, "\xe2" => 3, "\xe3" => 3, "\xe4" => 3, "\xe5" => 3, "\xe6" => 3, "\xe7" => 3,
+        "\xe8" => 3, "\xe9" => 3, "\xea" => 3, "\xeb" => 3, "\xec" => 3, "\xed" => 3, "\xee" => 3, "\xef" => 3,
+        "\xf0" => 4, "\xf1" => 4, "\xf2" => 4, "\xf3" => 4, "\xf4" => 4, "\xf5" => 4, "\xf6" => 4, "\xf7" => 4,
+        "\xf8" => 5, "\xf9" => 5, "\xfa" => 5, "\xfb" => 5, "\xfc" => 6, "\xfd" => 6, "\xfe" => 0, "\xff" => 0,
+     );
+
+    /**
+     * Returns the complete character map.
+     *
+     * @param string $string
+     * @param int    $startOffset
+     * @param array  $currentMap
+     * @param mixed  $ignoredChars
+     *
+     * @return int
+     */
+    public function getCharPositions($string, $startOffset, &$currentMap, &$ignoredChars)
+    {
+        if (!isset($currentMap['i']) || !isset($currentMap['p'])) {
+            $currentMap['p'] = $currentMap['i'] = array();
+        }
+
+        $strlen = strlen($string);
+        $charPos = count($currentMap['p']);
+        $foundChars = 0;
+        $invalid = false;
+        for ($i = 0; $i < $strlen; ++$i) {
+            $char = $string[$i];
+            $size = self::$s_length_map[$char];
+            if ($size == 0) {
+                /* char is invalid, we must wait for a resync */
+                $invalid = true;
+                continue;
+            } else {
+                if ($invalid == true) {
+                    /* We mark the chars as invalid and start a new char */
+                    $currentMap['p'][$charPos + $foundChars] = $startOffset + $i;
+                    $currentMap['i'][$charPos + $foundChars] = true;
+                    ++$foundChars;
+                    $invalid = false;
+                }
+                if (($i + $size) > $strlen) {
+                    $ignoredChars = substr($string, $i);
+                    break;
+                }
+                for ($j = 1; $j < $size; ++$j) {
+                    $char = $string[$i + $j];
+                    if ($char > "\x7F" && $char < "\xC0") {
+                        // Valid - continue parsing
+                    } else {
+                        /* char is invalid, we must wait for a resync */
+                        $invalid = true;
+                        continue 2;
+                    }
+                }
+                /* Ok we got a complete char here */
+                $currentMap['p'][$charPos + $foundChars] = $startOffset + $i + $size;
+                $i += $j - 1;
+                ++$foundChars;
+            }
+        }
+
+        return $foundChars;
+    }
+
+    /**
+     * Returns mapType.
+     *
+     * @return int mapType
+     */
+    public function getMapType()
+    {
+        return self::MAP_TYPE_POSITIONS;
+    }
+
+    /**
+     * Returns an integer which specifies how many more bytes to read.
+     *
+     * A positive integer indicates the number of more bytes to fetch before invoking
+     * this method again.
+     * A value of zero means this is already a valid character.
+     * A value of -1 means this cannot possibly be a valid character.
+     *
+     * @param string $bytes
+     * @param int    $size
+     *
+     * @return int
+     */
+    public function validateByteSequence($bytes, $size)
+    {
+        if ($size < 1) {
+            return -1;
+        }
+        $needed = self::$length_map[$bytes[0]] - $size;
+
+        return $needed > -1 ? $needed : -1;
+    }
+
+    /**
+     * Returns the number of bytes which should be read to start each character.
+     *
+     * @return int
+     */
+    public function getInitialByteSize()
+    {
+        return 1;
+    }
+}

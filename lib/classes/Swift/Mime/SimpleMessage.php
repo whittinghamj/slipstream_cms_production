@@ -1,234 +1,655 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * The default email message class.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_SimpleMessage extends Swift_Mime_MimePart implements Swift_Mime_Message
+{
+    const PRIORITY_HIGHEST = 1;
+    const PRIORITY_HIGH = 2;
+    const PRIORITY_NORMAL = 3;
+    const PRIORITY_LOW = 4;
+    const PRIORITY_LOWEST = 5;
+
+    /**
+     * Create a new SimpleMessage with $headers, $encoder and $cache.
+     *
+     * @param Swift_Mime_HeaderSet      $headers
+     * @param Swift_Mime_ContentEncoder $encoder
+     * @param Swift_KeyCache            $cache
+     * @param Swift_Mime_Grammar        $grammar
+     * @param string                    $charset
+     */
+    public function __construct(Swift_Mime_HeaderSet $headers, Swift_Mime_ContentEncoder $encoder, Swift_KeyCache $cache, Swift_Mime_Grammar $grammar, $charset = null)
+    {
+        parent::__construct($headers, $encoder, $cache, $grammar, $charset);
+        $this->getHeaders()->defineOrdering(array(
+            'Return-Path',
+            'Received',
+            'DKIM-Signature',
+            'DomainKey-Signature',
+            'Sender',
+            'Message-ID',
+            'Date',
+            'Subject',
+            'From',
+            'Reply-To',
+            'To',
+            'Cc',
+            'Bcc',
+            'MIME-Version',
+            'Content-Type',
+            'Content-Transfer-Encoding',
+            ));
+        $this->getHeaders()->setAlwaysDisplayed(array('Date', 'Message-ID', 'From'));
+        $this->getHeaders()->addTextHeader('MIME-Version', '1.0');
+        $this->setDate(time());
+        $this->setId($this->getId());
+        $this->getHeaders()->addMailboxHeader('From');
+    }
+
+    /**
+     * Always returns {@link LEVEL_TOP} for a message instance.
+     *
+     * @return int
+     */
+    public function getNestingLevel()
+    {
+        return self::LEVEL_TOP;
+    }
+
+    /**
+     * Set the subject of this message.
+     *
+     * @param string $subject
+     *
+     * @return $this
+     */
+    public function setSubject($subject)
+    {
+        if (!$this->_setHeaderFieldModel('Subject', $subject)) {
+            $this->getHeaders()->addTextHeader('Subject', $subject);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the subject of this message.
+     *
+     * @return string
+     */
+    public function getSubject()
+    {
+        return $this->_getHeaderFieldModel('Subject');
+    }
+
+    /**
+     * Set the date at which this message was created.
+     *
+     * @param int $date
+     *
+     * @return $this
+     */
+    public function setDate($date)
+    {
+        if (!$this->_setHeaderFieldModel('Date', $date)) {
+            $this->getHeaders()->addDateHeader('Date', $date);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the date at which this message was created.
+     *
+     * @return int
+     */
+    public function getDate()
+    {
+        return $this->_getHeaderFieldModel('Date');
+    }
+
+    /**
+     * Set the return-path (the bounce address) of this message.
+     *
+     * @param string $address
+     *
+     * @return $this
+     */
+    public function setReturnPath($address)
+    {
+        if (!$this->_setHeaderFieldModel('Return-Path', $address)) {
+            $this->getHeaders()->addPathHeader('Return-Path', $address);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the return-path (bounce address) of this message.
+     *
+     * @return string
+     */
+    public function getReturnPath()
+    {
+        return $this->_getHeaderFieldModel('Return-Path');
+    }
+
+    /**
+     * Set the sender of this message.
+     *
+     * This does not override the From field, but it has a higher significance.
+     *
+     * @param string $address
+     * @param string $name    optional
+     *
+     * @return $this
+     */
+    public function setSender($address, $name = null)
+    {
+        if (!is_array($address) && isset($name)) {
+            $address = array($address => $name);
+        }
+
+        if (!$this->_setHeaderFieldModel('Sender', (array) $address)) {
+            $this->getHeaders()->addMailboxHeader('Sender', (array) $address);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the sender of this message.
+     *
+     * @return string
+     */
+    public function getSender()
+    {
+        return $this->_getHeaderFieldModel('Sender');
+    }
+
+    /**
+     * Add a From: address to this message.
+     *
+     * If $name is passed this name will be associated with the address.
+     *
+     * @param string $address
+     * @param string $name    optional
+     *
+     * @return $this
+     */
+    public function addFrom($address, $name = null)
+    {
+        $current = $this->getFrom();
+        $current[$address] = $name;
+
+        return $this->setFrom($current);
+    }
+
+    /**
+     * Set the from address of this message.
+     *
+     * You may pass an array of addresses if this message is from multiple people.
+     *
+     * If $name is passed and the first parameter is a string, this name will be
+     * associated with the address.
+     *
+     * @param string|array $addresses
+     * @param string       $name      optional
+     *
+     * @return $this
+     */
+    public function setFrom($addresses, $name = null)
+    {
+        if (!is_array($addresses) && isset($name)) {
+            $addresses = array($addresses => $name);
+        }
+
+        if (!$this->_setHeaderFieldModel('From', (array) $addresses)) {
+            $this->getHeaders()->addMailboxHeader('From', (array) $addresses);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the from address of this message.
+     *
+     * @return mixed
+     */
+    public function getFrom()
+    {
+        return $this->_getHeaderFieldModel('From');
+    }
+
+    /**
+     * Add a Reply-To: address to this message.
+     *
+     * If $name is passed this name will be associated with the address.
+     *
+     * @param string $address
+     * @param string $name    optional
+     *
+     * @return $this
+     */
+    public function addReplyTo($address, $name = null)
+    {
+        $current = $this->getReplyTo();
+        $current[$address] = $name;
+
+        return $this->setReplyTo($current);
+    }
+
+    /**
+     * Set the reply-to address of this message.
+     *
+     * You may pass an array of addresses if replies will go to multiple people.
+     *
+     * If $name is passed and the first parameter is a string, this name will be
+     * associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     *
+     * @return $this
+     */
+    public function setReplyTo($addresses, $name = null)
+    {
+        if (!is_array($addresses) && isset($name)) {
+            $addresses = array($addresses => $name);
+        }
+
+        if (!$this->_setHeaderFieldModel('Reply-To', (array) $addresses)) {
+            $this->getHeaders()->addMailboxHeader('Reply-To', (array) $addresses);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the reply-to address of this message.
+     *
+     * @return string
+     */
+    public function getReplyTo()
+    {
+        return $this->_getHeaderFieldModel('Reply-To');
+    }
+
+    /**
+     * Add a To: address to this message.
+     *
+     * If $name is passed this name will be associated with the address.
+     *
+     * @param string $address
+     * @param string $name    optional
+     *
+     * @return $this
+     */
+    public function addTo($address, $name = null)
+    {
+        $current = $this->getTo();
+        $current[$address] = $name;
+
+        return $this->setTo($current);
+    }
+
+    /**
+     * Set the to addresses of this message.
+     *
+     * If multiple recipients will receive the message an array should be used.
+     * Example: array('receiver@domain.org', 'other@domain.org' => 'A name')
+     *
+     * If $name is passed and the first parameter is a string, this name will be
+     * associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     *
+     * @return $this
+     */
+    public function setTo($addresses, $name = null)
+    {
+        if (!is_array($addresses) && isset($name)) {
+            $addresses = array($addresses => $name);
+        }
+
+        if (!$this->_setHeaderFieldModel('To', (array) $addresses)) {
+            $this->getHeaders()->addMailboxHeader('To', (array) $addresses);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the To addresses of this message.
+     *
+     * @return array
+     */
+    public function getTo()
+    {
+        return $this->_getHeaderFieldModel('To');
+    }
+
+    /**
+     * Add a Cc: address to this message.
+     *
+     * If $name is passed this name will be associated with the address.
+     *
+     * @param string $address
+     * @param string $name    optional
+     *
+     * @return $this
+     */
+    public function addCc($address, $name = null)
+    {
+        $current = $this->getCc();
+        $current[$address] = $name;
+
+        return $this->setCc($current);
+    }
+
+    /**
+     * Set the Cc addresses of this message.
+     *
+     * If $name is passed and the first parameter is a string, this name will be
+     * associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     *
+     * @return $this
+     */
+    public function setCc($addresses, $name = null)
+    {
+        if (!is_array($addresses) && isset($name)) {
+            $addresses = array($addresses => $name);
+        }
+
+        if (!$this->_setHeaderFieldModel('Cc', (array) $addresses)) {
+            $this->getHeaders()->addMailboxHeader('Cc', (array) $addresses);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the Cc address of this message.
+     *
+     * @return array
+     */
+    public function getCc()
+    {
+        return $this->_getHeaderFieldModel('Cc');
+    }
+
+    /**
+     * Add a Bcc: address to this message.
+     *
+     * If $name is passed this name will be associated with the address.
+     *
+     * @param string $address
+     * @param string $name    optional
+     *
+     * @return $this
+     */
+    public function addBcc($address, $name = null)
+    {
+        $current = $this->getBcc();
+        $current[$address] = $name;
+
+        return $this->setBcc($current);
+    }
+
+    /**
+     * Set the Bcc addresses of this message.
+     *
+     * If $name is passed and the first parameter is a string, this name will be
+     * associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     *
+     * @return $this
+     */
+    public function setBcc($addresses, $name = null)
+    {
+        if (!is_array($addresses) && isset($name)) {
+            $addresses = array($addresses => $name);
+        }
+
+        if (!$this->_setHeaderFieldModel('Bcc', (array) $addresses)) {
+            $this->getHeaders()->addMailboxHeader('Bcc', (array) $addresses);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the Bcc addresses of this message.
+     *
+     * @return array
+     */
+    public function getBcc()
+    {
+        return $this->_getHeaderFieldModel('Bcc');
+    }
+
+    /**
+     * Set the priority of this message.
+     *
+     * The value is an integer where 1 is the highest priority and 5 is the lowest.
+     *
+     * @param int $priority
+     *
+     * @return $this
+     */
+    public function setPriority($priority)
+    {
+        $priorityMap = array(
+            self::PRIORITY_HIGHEST => 'Highest',
+            self::PRIORITY_HIGH => 'High',
+            self::PRIORITY_NORMAL => 'Normal',
+            self::PRIORITY_LOW => 'Low',
+            self::PRIORITY_LOWEST => 'Lowest',
+            );
+        $pMapKeys = array_keys($priorityMap);
+        if ($priority > max($pMapKeys)) {
+            $priority = max($pMapKeys);
+        } elseif ($priority < min($pMapKeys)) {
+            $priority = min($pMapKeys);
+        }
+        if (!$this->_setHeaderFieldModel('X-Priority',
+            sprintf('%d (%s)', $priority, $priorityMap[$priority]))) {
+            $this->getHeaders()->addTextHeader('X-Priority',
+                sprintf('%d (%s)', $priority, $priorityMap[$priority]));
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the priority of this message.
+     *
+     * The returned value is an integer where 1 is the highest priority and 5
+     * is the lowest.
+     *
+     * @return int
+     */
+    public function getPriority()
+    {
+        list($priority) = sscanf($this->_getHeaderFieldModel('X-Priority'),
+            '%[1-5]'
+            );
+
+        return isset($priority) ? $priority : 3;
+    }
+
+    /**
+     * Ask for a delivery receipt from the recipient to be sent to $addresses.
+     *
+     * @param array $addresses
+     *
+     * @return $this
+     */
+    public function setReadReceiptTo($addresses)
+    {
+        if (!$this->_setHeaderFieldModel('Disposition-Notification-To', $addresses)) {
+            $this->getHeaders()
+                ->addMailboxHeader('Disposition-Notification-To', $addresses);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the addresses to which a read-receipt will be sent.
+     *
+     * @return string
+     */
+    public function getReadReceiptTo()
+    {
+        return $this->_getHeaderFieldModel('Disposition-Notification-To');
+    }
+
+    /**
+     * Attach a {@link Swift_Mime_MimeEntity} such as an Attachment or MimePart.
+     *
+     * @param Swift_Mime_MimeEntity $entity
+     *
+     * @return $this
+     */
+    public function attach(Swift_Mime_MimeEntity $entity)
+    {
+        $this->setChildren(array_merge($this->getChildren(), array($entity)));
+
+        return $this;
+    }
+
+    /**
+     * Remove an already attached entity.
+     *
+     * @param Swift_Mime_MimeEntity $entity
+     *
+     * @return $this
+     */
+    public function detach(Swift_Mime_MimeEntity $entity)
+    {
+        $newChildren = array();
+        foreach ($this->getChildren() as $child) {
+            if ($entity !== $child) {
+                $newChildren[] = $child;
+            }
+        }
+        $this->setChildren($newChildren);
+
+        return $this;
+    }
+
+    /**
+     * Attach a {@link Swift_Mime_MimeEntity} and return it's CID source.
+     * This method should be used when embedding images or other data in a message.
+     *
+     * @param Swift_Mime_MimeEntity $entity
+     *
+     * @return string
+     */
+    public function embed(Swift_Mime_MimeEntity $entity)
+    {
+        $this->attach($entity);
+
+        return 'cid:'.$entity->getId();
+    }
+
+    /**
+     * Get this message as a complete string.
+     *
+     * @return string
+     */
+    public function toString()
+    {
+        if (count($children = $this->getChildren()) > 0 && $this->getBody() != '') {
+            $this->setChildren(array_merge(array($this->_becomeMimePart()), $children));
+            $string = parent::toString();
+            $this->setChildren($children);
+        } else {
+            $string = parent::toString();
+        }
+
+        return $string;
+    }
+
+    /**
+     * Returns a string representation of this object.
+     *
+     * @see toString()
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->toString();
+    }
+
+    /**
+     * Write this message to a {@link Swift_InputByteStream}.
+     *
+     * @param Swift_InputByteStream $is
+     */
+    public function toByteStream(Swift_InputByteStream $is)
+    {
+        if (count($children = $this->getChildren()) > 0 && $this->getBody() != '') {
+            $this->setChildren(array_merge(array($this->_becomeMimePart()), $children));
+            parent::toByteStream($is);
+            $this->setChildren($children);
+        } else {
+            parent::toByteStream($is);
+        }
+    }
+
+    /** @see Swift_Mime_SimpleMimeEntity::_getIdField() */
+    protected function _getIdField()
+    {
+        return 'Message-ID';
+    }
+
+    /** Turn the body of this message into a child of itself if needed */
+    protected function _becomeMimePart()
+    {
+        $part = new parent($this->getHeaders()->newInstance(), $this->getEncoder(),
+            $this->_getCache(), $this->_getGrammar(), $this->_userCharset
+            );
+        $part->setContentType($this->_userContentType);
+        $part->setBody($this->getBody());
+        $part->setFormat($this->_userFormat);
+        $part->setDelSp($this->_userDelSp);
+        $part->_setNestingLevel($this->_getTopNestingLevel());
+
+        return $part;
+    }
+
+    /** Get the highest nesting level nested inside this message */
+    private function _getTopNestingLevel()
+    {
+        $highestLevel = $this->getNestingLevel();
+        foreach ($this->getChildren() as $child) {
+            $childLevel = $child->getNestingLevel();
+            if ($highestLevel < $childLevel) {
+                $highestLevel = $childLevel;
+            }
+        }
+
+        return $highestLevel;
+    }
+}

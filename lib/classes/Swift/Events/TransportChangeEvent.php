@@ -1,29 +1,27 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPr0cldkz3GDyHP0hMCXf6BqWIAx0QAEGHL0hXly3RQkzueRP9x/Xs43i26nwhZ0AwVo5Qtzb
-i/gcYrXUC2BorwULt9T8CTiilklAVfMaYNeSM7K3j4f8iCJ9p4zN/iQ7FMz9ZxojUFEmDwjMJOqB
-V1XABf+ZjM+qF/Q3roNLKarMSjE0jHze9Usa0rj7GsSOq6I3xMikfrdajm/y1oTLYg7CMMB8P8Lu
-NIGqAfodPai7owSaMYiF4uE1EmmZM/U0rQJeh3TA8xXGOSYc3h20YCki4TyVF/6cuqMyByHomdD3
-0SeeKvssnyrQcLIXEa7A1DbMc/jkRpiPlnC/em2hObpLgapWrGvBeMc/I+3oUwrnQ+LCH0kozio6
-ozr10jzlltWccJl1XP4d4CkmG7Pdfv8VmSZtG+TiUjB1mE2VdO7RBWcZJeEE/X5RrZ83JUqrXzBP
-XYcL7VA+s5LnmtCczR6bnw/ik6EwV6uG6hX5Q6qfRZUR6lXqzMxLMad+UBn9qU3mS8IwV/wZzIMS
-DojCr0b6d2hxijaS1w8XgTMI2y4Fw6GwBpPVlKDIUuqu8v0funyuAm2/1epQH11Dr4TJ44DHBmSI
-XroJ005Tlieiel4EcyD/sAzNmJQtXMOl37hYIGqhpsJr7u5xKZRtcfgfyUAaCGOGsduqBtcsc4KG
-ZCv9Da+OAcTRoI8wcdEGg0+NzYDZm7P4CVXVAgGd8dVcZcrJemWnNlbAY2Yqs2TVFq3xfiup7qHa
-Ngpau+ZTh4kE0nSsOZLqK1+TI9jVAyIYcdbYl/CYgdJtS+O6maAbRnxz44EcGLecuQOMQw+5o/2O
-+VCaIZStUFy7Ya202e5lDAbUElC/xjx2tMr/xk7CiudmuHwJBqI7t1EHc/DQdLAbrDyuI91Hvjfm
-z4otwLG8hsqVBSYvorHxcfs1OAWrHIBr0xj3au1fjXu4a95sMjihcv58gzeiTE4bqRVX/2mjgqEY
-BP5DlBvn+CkQP079kFeChcmlysIVTQ9nD5R+pMbFIJ2Cv2bu7mKvgWBGi2rsyO4uH2l2xrJCRH3e
-d3sbWm6j1XgxjbIXoP24zY/TOuOPIT8bGkEuYq3v6PTgKbMOodFLM2LbO0dmx4HJX9+ovZGgQDky
-d1DLlOJ/3hgDJAiM+PkNQ55iUHliTkC248nRstwm9qeFzSS7IeFWt9IyJwDr7pS1wwnz9D7+V2HQ
-mxMff26gEY+zjI6FwoWlP4mfs83bXkZ2vRzqCp/SnQ0eVj2CgPy5EM77DYt+PIio3xVadQq1X/aE
-2wy1IrzSzHONeXAAZjbggDWJvYxGOfWgNNgu4MBVBu+9ljjNzm20tskw3zKFssbz4WR5Q0yDmRHV
-pUf7imeMfr7JcxlxrZSKkA7bzLp5seHeWS7QK6in87yRxmTewp5VRCu+iF+ReK0YjBWB6QQiv33V
-jH0qiQWnb0mem1PNCEF2G60J1YxTFzRXim9WM1wwoCq/vwg+BiuXd9jBXdrRfyqUWAz5pU+kSG5z
-J5Tnp0MPTyONp11ZcYN/hJMzhgkoAbgzv7r1/2BNepUOeIfUTxGnKWcGyliOlBQhhFp4RlnzccS2
-OyCYwN6/fuQgV6BY3l85LDYDIrVPsBSkHs4nABAcml1b6hb8+zRTxSoBljvtwkZvOAni3hwf+xE6
-CCd4mUHHsTh+LdkxKAbgaIfnE25m9k5QU9ZpUFJZb9sTFgWBIGAIMHo3ateWrS/ANdE8nI7kgtY3
-T2Kzr/i1HAWvNO1xVMiBmM5Jk0b4b8ZK9lTGsnh2769y2pxVHUskoymX9O/d8Smb55kX7S3wiijE
-Gz0N0oOdy1Lblk543JgXdUenVtRNbfgi4hF+DJL7jvigeybReVv3c5aLT2AdksYKeDIFeGnMrSqc
-EEvV+gstxPbJxhe9cRGBZoz7/ACJeAyJQTy=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Generated when the state of a Transport is changed (i.e. stopped/started).
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Events_TransportChangeEvent extends Swift_Events_EventObject
+{
+    /**
+     * Get the Transport.
+     *
+     * @return Swift_Transport
+     */
+    public function getTransport()
+    {
+        return $this->getSource();
+    }
+}

@@ -1,36 +1,36 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPqDQAfrIfwxIrkg/lZxN6AiQcboFVyu+iVbTEebgcFo//vhyZmsULNIJqhfZMBNI7604NR67
-xXy0IM2tdHIiJBk3E0QTZRFRAaKKb+GO5xJOABWaAe7i7PAH492X8EnBxdeiMmMkoKia+GfReyZ2
-Htynh1d5t9XgGxhpk5BbQSIhHky5PPFONEuF50DR6bCf4S9lAk/HzMpUB5V/kJVows54BY7vsS1F
-ZYABE3gGCcYVdRFE2GxMWnSBDQ0mwHpoCrvAIp2QEW6PcMjjCmuVRn3B2c8UB6QA2c9JCPeFhVuz
-WGyoJp90A7J7Kg6LvAgJBS7OENbDhZTmSSJdSojJWl82UIgYfWt0AVpOhmrP3bbQMbmA54gIoaFE
-184XMOvm63XZ79yxE24qfPARepW1H1mwVMRLTbcK0LUdv6cbqY5AwFzbsXygoM1CU4zhhHWjOTc6
-APKTyhxOLN73SxS49lMnfIwYnr0WhIip0SVjhKZVT6ye/mghOZWVOPHmPXU1PedG3oxtE+VGx5/Z
-ZY7NDEVREncMRRVm/VcU7+TkQsEMLvp7dOVkYvAE1TIHqTEvWe66bC9Dgran2TljqrQusoLLke0e
-kkSFKbcWjvBPdN9WC/qvWaDIw8HKAeptXjnizXWHgBdnBUzoZHJ8xYdYIdI+bVEqDM3V+y0Qdwc6
-Fg+B0nDM1VpmJ3DyuSG2Izm49QKZ5n2w0JUGnzu/fafdTjNVUBdgISZPoeoJqbqz+I9HN8u6Byb1
-LynGOa45dq7aM+3X21Ts96QNWsqJSXJjKPH4wB/A+TleCohTpmTOpCHnxsQw09FABJ4eTeoc+9xj
-+6IPMr5ZXP6HERSPW4sWq3iqoVFRBLeCoMu3Q/6lcD5dAtlu+Rv0Rl8FdxyK3lGiClviZE5bR2FW
-Q9g+rOVwI6DLMO9S4pAEefcLlHsds3H6Vh0Wzmw2tiezqJlT/6+tc0iZWGksT4AZaMn9HHOdOJX8
-DDZXQhz/k9TE3HcJN2rGQZq9+oIBOOiBQ8gLKuknT5vMmbFAIj+ICH2+8tjIbH8phAKmaP3aRLHh
-oUfVMMUrsecM9rLucMJv4UWPplQz9cC8h5QyosRVCOU3s/InndgULJVToaCXg3VRbRygEBKmzqnW
-41PhwcUpcBIq1WSgnPe/0FbK8OD6+KR68v0JO1g4nrCMRIkPgRzmKDCeiOos8Bf58j/MNEl/3TM0
-md55wRqadcQXq2u47MUMbPkytmF9bypNgjYa8t+9DBAklJYdmxIbIPS2DJbR4m55n27I9Cx2uZ4r
-7UJeZoadBssA8g4gPkTIJTGP1t+oo7mhhzdD6QZBHdAcyC1DCD2LQO9ImMkfVgPv6r7y6jd4U0gB
-3DWAjNGG1+Gm/+BKC7Tzx4vgcjzsNy+/7shNLX186ww6ZJG6DyK20V7+OvMDKnIbzsmXqL5VLlO9
-ayMHV5es3u95FmCvAaBuzhjifsyqz4ScaCSOAplkCF/Ln5WXidUzhPPzWwSLNsXF3pQC3ywbeY/b
-kgTApmDx8ncbAW2TEGT+/qWAUp0auAbA77W9H/TPGduM+H0iUs2Rxljp9c2nxIDIqztqxbVgzNJ3
-aPz0mVPOelAut+qjv52kZo8AEZyvsnLUXDlkiX4hhubo8cwy8M6QIZDzHo2M+vOUOKQDAJMF3/a4
-AnwDmT7GN8m2rY01U7DRtpVGiLEQ2yrT7GuiDIVELgrJChgNHfL5dCihlLmm4wX3fras/gIxn9jK
-JAJ1TDROg0EPucb0isWJ/IKLvauiMeEypM/FhjzRxx1mmhWfQFU1gxVqAPBt7JuIKG3bx6JHBmG0
-iy20Uptc9cLs3hAnIq+uBat1ulhE64o+cXLOZTGrBCa4viSxLpZntn9DmLepeChOFWZ2um7jlmBW
-hnOlD3hE/LZhKrQcYHpQfWwZRLRywbi/UFEXS8e6Mr5X/pvvpbVyckjwGbFTNROJnN9RJmMcysSR
-LtTAdLImDOhX1mezwnRDZOqOnIvKnGXKf+bVC45K5DANf9n9SDd0y+WCCupNIKc6HEiZmPhiNOZ7
-1VtGmVLknmLQ2CinALwW/uqYWy2UXr/mizOcMvfj6WZzNBjFvBrJk6Okrh612oIaHAn0doGIwBvX
-irZeucWHa+si8kDiq69lmA2+Blq9+xdfjdLkBhdMUQ+PmpU07QDBLPgxdJWEyJKItKmP+TImGaYa
-GarPtMYMf0TAGFmaiUNBG5swMvJFN9MPwb70KuoKL5cuUnkamZGz6zUWi2eSEqkPbNbaMaxVbT0K
-vNwZY03PKJ91QP+8lu7GOoy7n7fdKRO2Z+etsLdHexHFaj8BDZYsSVyb1L11VpG0sFBa4vY2p+WE
-3jr0DyGD/FOKUZsISgelRSUZPTKT5hz/K06cppZVL0gZxZbf1rv18xZRWNslJ+kWqlAVSXPKnqeD
-5Pp/6W72ieFB6lW=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Pretends messages have been sent, but just ignores them.
+ *
+ * @author Fabien Potencier
+ */
+class Swift_NullTransport extends Swift_Transport_NullTransport
+{
+    public function __construct()
+    {
+        call_user_func_array(
+            array($this, 'Swift_Transport_NullTransport::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('transport.null')
+        );
+    }
+
+    /**
+     * Create a new NullTransport instance.
+     *
+     * @return self
+     */
+    public static function newInstance()
+    {
+        return new self();
+    }
+}

@@ -1,47 +1,71 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Attachment class for attaching files to a {@link Swift_Mime_Message}.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Attachment extends Swift_Mime_Attachment
+{
+    /**
+     * Create a new Attachment.
+     *
+     * Details may be optionally provided to the constructor.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     */
+    public function __construct($data = null, $filename = null, $contentType = null)
+    {
+        call_user_func_array(
+            array($this, 'Swift_Mime_Attachment::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('mime.attachment')
+            );
+
+        $this->setBody($data);
+        $this->setFilename($filename);
+        if ($contentType) {
+            $this->setContentType($contentType);
+        }
+    }
+
+    /**
+     * Create a new Attachment.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     *
+     * @return Swift_Mime_Attachment
+     */
+    public static function newInstance($data = null, $filename = null, $contentType = null)
+    {
+        return new self($data, $filename, $contentType);
+    }
+
+    /**
+     * Create a new Attachment from a filesystem path.
+     *
+     * @param string $path
+     * @param string $contentType optional
+     *
+     * @return Swift_Mime_Attachment
+     */
+    public static function fromPath($path, $contentType = null)
+    {
+        return self::newInstance()->setFile(
+            new Swift_ByteStream_FileByteStream($path),
+            $contentType
+            );
+    }
+}

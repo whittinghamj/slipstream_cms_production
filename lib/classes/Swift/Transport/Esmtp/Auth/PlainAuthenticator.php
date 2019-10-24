@@ -1,48 +1,50 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-7hMnR1mC10==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles PLAIN authentication.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Transport_Esmtp_Auth_PlainAuthenticator implements Swift_Transport_Esmtp_Authenticator
+{
+    /**
+     * Get the name of the AUTH mechanism this Authenticator handles.
+     *
+     * @return string
+     */
+    public function getAuthKeyword()
+    {
+        return 'PLAIN';
+    }
+
+    /**
+     * Try to authenticate the user with $username and $password.
+     *
+     * @param Swift_Transport_SmtpAgent $agent
+     * @param string                    $username
+     * @param string                    $password
+     *
+     * @return bool
+     */
+    public function authenticate(Swift_Transport_SmtpAgent $agent, $username, $password)
+    {
+        try {
+            $message = base64_encode($username.chr(0).$username.chr(0).$password);
+            $agent->executeCommand(sprintf("AUTH PLAIN %s\r\n", $message), array(235));
+
+            return true;
+        } catch (Swift_TransportException $e) {
+            $agent->executeCommand("RSET\r\n", array(250));
+
+            return false;
+        }
+    }
+}

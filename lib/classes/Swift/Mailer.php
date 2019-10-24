@@ -1,48 +1,114 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Swift Mailer class.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mailer
+{
+    /** The Transport used to send messages */
+    private $_transport;
+
+    /**
+     * Create a new Mailer using $transport for delivery.
+     *
+     * @param Swift_Transport $transport
+     */
+    public function __construct(Swift_Transport $transport)
+    {
+        $this->_transport = $transport;
+    }
+
+    /**
+     * Create a new Mailer instance.
+     *
+     * @param Swift_Transport $transport
+     *
+     * @return self
+     */
+    public static function newInstance(Swift_Transport $transport)
+    {
+        return new self($transport);
+    }
+
+    /**
+     * Create a new class instance of one of the message services.
+     *
+     * For example 'mimepart' would create a 'message.mimepart' instance
+     *
+     * @param string $service
+     *
+     * @return object
+     */
+    public function createMessage($service = 'message')
+    {
+        return Swift_DependencyContainer::getInstance()
+            ->lookup('message.'.$service);
+    }
+
+    /**
+     * Send the given Message like it would be sent in a mail client.
+     *
+     * All recipients (with the exception of Bcc) will be able to see the other
+     * recipients this message was sent to.
+     *
+     * Recipient/sender data will be retrieved from the Message object.
+     *
+     * The return value is the number of recipients who were accepted for
+     * delivery.
+     *
+     * @param Swift_Mime_Message $message
+     * @param array              $failedRecipients An array of failures by-reference
+     *
+     * @return int The number of successful recipients. Can be 0 which indicates failure
+     */
+    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
+    {
+        $failedRecipients = (array) $failedRecipients;
+
+        if (!$this->_transport->isStarted()) {
+            $this->_transport->start();
+        }
+
+        $sent = 0;
+
+        try {
+            $sent = $this->_transport->send($message, $failedRecipients);
+        } catch (Swift_RfcComplianceException $e) {
+            foreach ($message->getTo() as $address => $name) {
+                $failedRecipients[] = $address;
+            }
+        }
+
+        return $sent;
+    }
+
+    /**
+     * Register a plugin using a known unique key (e.g. myPlugin).
+     *
+     * @param Swift_Events_EventListener $plugin
+     */
+    public function registerPlugin(Swift_Events_EventListener $plugin)
+    {
+        $this->_transport->registerPlugin($plugin);
+    }
+
+    /**
+     * The Transport used to send messages.
+     *
+     * @return Swift_Transport
+     */
+    public function getTransport()
+    {
+        return $this->_transport;
+    }
+}

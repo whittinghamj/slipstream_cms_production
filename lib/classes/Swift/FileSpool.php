@@ -1,117 +1,208 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-/W==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Stores Messages on the filesystem.
+ *
+ * @author Fabien Potencier
+ * @author Xavier De Cock <xdecock@gmail.com>
+ */
+class Swift_FileSpool extends Swift_ConfigurableSpool
+{
+    /** The spool directory */
+    private $_path;
+
+    /**
+     * File WriteRetry Limit.
+     *
+     * @var int
+     */
+    private $_retryLimit = 10;
+
+    /**
+     * Create a new FileSpool.
+     *
+     * @param string $path
+     *
+     * @throws Swift_IoException
+     */
+    public function __construct($path)
+    {
+        $this->_path = $path;
+
+        if (!file_exists($this->_path)) {
+            if (!mkdir($this->_path, 0777, true)) {
+                throw new Swift_IoException(sprintf('Unable to create path "%s".', $this->_path));
+            }
+        }
+    }
+
+    /**
+     * Tests if this Spool mechanism has started.
+     *
+     * @return bool
+     */
+    public function isStarted()
+    {
+        return true;
+    }
+
+    /**
+     * Starts this Spool mechanism.
+     */
+    public function start()
+    {
+    }
+
+    /**
+     * Stops this Spool mechanism.
+     */
+    public function stop()
+    {
+    }
+
+    /**
+     * Allow to manage the enqueuing retry limit.
+     *
+     * Default, is ten and allows over 64^20 different fileNames
+     *
+     * @param int $limit
+     */
+    public function setRetryLimit($limit)
+    {
+        $this->_retryLimit = $limit;
+    }
+
+    /**
+     * Queues a message.
+     *
+     * @param Swift_Mime_Message $message The message to store
+     *
+     * @throws Swift_IoException
+     *
+     * @return bool
+     */
+    public function queueMessage(Swift_Mime_Message $message)
+    {
+        $ser = serialize($message);
+        $fileName = $this->_path.'/'.$this->getRandomString(10);
+        for ($i = 0; $i < $this->_retryLimit; ++$i) {
+            /* We try an exclusive creation of the file. This is an atomic operation, it avoid locking mechanism */
+            $fp = @fopen($fileName.'.message', 'x');
+            if (false !== $fp) {
+                if (false === fwrite($fp, $ser)) {
+                    return false;
+                }
+
+                return fclose($fp);
+            } else {
+                /* The file already exists, we try a longer fileName */
+                $fileName .= $this->getRandomString(1);
+            }
+        }
+
+        throw new Swift_IoException(sprintf('Unable to create a file for enqueuing Message in "%s".', $this->_path));
+    }
+
+    /**
+     * Execute a recovery if for any reason a process is sending for too long.
+     *
+     * @param int $timeout in second Defaults is for very slow smtp responses
+     */
+    public function recover($timeout = 900)
+    {
+        foreach (new DirectoryIterator($this->_path) as $file) {
+            $file = $file->getRealPath();
+
+            if (substr($file, -16) == '.message.sending') {
+                $lockedtime = filectime($file);
+                if ((time() - $lockedtime) > $timeout) {
+                    rename($file, substr($file, 0, -8));
+                }
+            }
+        }
+    }
+
+    /**
+     * Sends messages using the given transport instance.
+     *
+     * @param Swift_Transport $transport        A transport instance
+     * @param string[]        $failedRecipients An array of failures by-reference
+     *
+     * @return int The number of sent e-mail's
+     */
+    public function flushQueue(Swift_Transport $transport, &$failedRecipients = null)
+    {
+        $directoryIterator = new DirectoryIterator($this->_path);
+
+        /* Start the transport only if there are queued files to send */
+        if (!$transport->isStarted()) {
+            foreach ($directoryIterator as $file) {
+                if (substr($file->getRealPath(), -8) == '.message') {
+                    $transport->start();
+                    break;
+                }
+            }
+        }
+
+        $failedRecipients = (array) $failedRecipients;
+        $count = 0;
+        $time = time();
+        foreach ($directoryIterator as $file) {
+            $file = $file->getRealPath();
+
+            if (substr($file, -8) != '.message') {
+                continue;
+            }
+
+            /* We try a rename, it's an atomic operation, and avoid locking the file */
+            if (rename($file, $file.'.sending')) {
+                $message = unserialize(file_get_contents($file.'.sending'));
+
+                $count += $transport->send($message, $failedRecipients);
+
+                unlink($file.'.sending');
+            } else {
+                /* This message has just been catched by another process */
+                continue;
+            }
+
+            if ($this->getMessageLimit() && $count >= $this->getMessageLimit()) {
+                break;
+            }
+
+            if ($this->getTimeLimit() && (time() - $time) >= $this->getTimeLimit()) {
+                break;
+            }
+        }
+
+        return $count;
+    }
+
+    /**
+     * Returns a random string needed to generate a fileName for the queue.
+     *
+     * @param int $count
+     *
+     * @return string
+     */
+    protected function getRandomString($count)
+    {
+        // This string MUST stay FS safe, avoid special chars
+        $base = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-';
+        $ret = '';
+        $strlen = strlen($base);
+        for ($i = 0; $i < $count; ++$i) {
+            $ret .= $base[((int) rand(0, $strlen - 1))];
+        }
+
+        return $ret;
+    }
+}

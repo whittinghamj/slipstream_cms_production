@@ -1,49 +1,70 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles XOAUTH2 authentication.
+ *
+ * Example:
+ * <code>
+ * $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, 'tls')
+ *   ->setAuthMode('XOAUTH2')
+ *   ->setUsername('YOUR_EMAIL_ADDRESS')
+ *   ->setPassword('YOUR_ACCESS_TOKEN');
+ * </code>
+ *
+ * @author xu.li<AthenaLightenedMyPath@gmail.com>
+ *
+ * @see        https://developers.google.com/google-apps/gmail/xoauth2_protocol
+ */
+class Swift_Transport_Esmtp_Auth_XOAuth2Authenticator implements Swift_Transport_Esmtp_Authenticator
+{
+    /**
+     * Get the name of the AUTH mechanism this Authenticator handles.
+     *
+     * @return string
+     */
+    public function getAuthKeyword()
+    {
+        return 'XOAUTH2';
+    }
+
+    /**
+     * Try to authenticate the user with $email and $token.
+     *
+     * @param Swift_Transport_SmtpAgent $agent
+     * @param string                    $email
+     * @param string                    $token
+     *
+     * @return bool
+     */
+    public function authenticate(Swift_Transport_SmtpAgent $agent, $email, $token)
+    {
+        try {
+            $param = $this->constructXOAuth2Params($email, $token);
+            $agent->executeCommand('AUTH XOAUTH2 '.$param."\r\n", array(235));
+
+            return true;
+        } catch (Swift_TransportException $e) {
+            $agent->executeCommand("RSET\r\n", array(250));
+
+            return false;
+        }
+    }
+
+    /**
+     * Construct the auth parameter.
+     *
+     * @see https://developers.google.com/google-apps/gmail/xoauth2_protocol#the_sasl_xoauth2_mechanism
+     */
+    protected function constructXOAuth2Params($email, $token)
+    {
+        return base64_encode("user=$email\1auth=Bearer $token\1\1");
+    }
+}

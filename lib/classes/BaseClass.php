@@ -1,110 +1,124 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPtzdTv6d+4kdGwVYiaqR5YQlx1aiDC0DxDcT0FitkD8uDqeZR3joIJf1sPXF3SV58ZDew7vA
-8AdVdIjePDPTM2cGdDcmhrkwCgA8CTA+G+5fGHDLj0T/pdODsqJOjVqYHzNhJEaD20u3tIlSU+Ob
-BDACd3MMQFdV84VKtUfe1VP+W4g3aGU8StNTITG+EJ7n6FkWs/h9wBpWol5qWx0h44oTMFF4q39G
-hVg42tKaEt1HFfa8khhyKku4MsJa0OUYmGc9314wsT6YxmEnVW/atxr2dHM4m6Jri9mwSXalNGop
-A6wDu65MqDrntywadBdJfO1hKyJ6m5B1D7VAKbyrnDx+DysKQpaK0lwOR3Gx8KC3KQEvK9FP0K1D
-qQlDRdeOIZxwEm9KIeTb1tc6blVvZrQYFirwMg84ObhowPFEr/kDS7m4pyrjst/QKYFF9JHwf5dP
-XYcL7VA+s5LnmtCczR6b8h6UfIFMocVbeJ9Uk04IRZx48Tjp4JvCeWnWZXKJxMjRIj9ASogZVyG+
-gHnnZ1qTIK0IiQLIyXo9QUM8V3SXrXiqD5oNnndnLBOXFh6Lq2zff0fJZOhSbIx+rLuxz8n/oavK
-CtXcJi1yaBU1oHyw2185qRzGoIhMEpVdA2fTVCF2dMnBMjaMz+TM7nuU1plCpggEeHHFonjnMhes
-pyNMUlntTw7rEeKKz4urcrEudRXenrd15z58Y3Oj8dq3r/I/WqylxHWi7+eiGmuYs3/keTTVYLNj
-YvxXBZfMyIftXUq2mUfEWsphOu7o4M05oyi/qeo+hwsKgH3RDg2/cLfHtMkXG7iWG/lR3NE1ZMOm
-LV2QJNIsPsH6oMxoIJu4PvS9ypQRZZOSK0SjZCkRTQ37S7xqBa38SHt9+dEEkPeheLsBWVJD2vtr
-tY0wKwhrbqOapZtq9azW3zF4kYkArx3P8T4AE3M3OcxBKJx1MysMWLsZInRjXzaY9w6aX/WKcX1R
-m2AE7Dap7S6A4SfT2t9wnsKGzme2Ph1rje07/z2KYOLZmN8AvhArtvStwAoZx7lFgD1LIVAw81zY
-aHPy0LMEVMgIlOWxMVzi7+KiUMkLvJuOJe11+AJcGInrE/5D9bgaFRqcbFhmoRMt9x3Mar7ei2+z
-uOxEE5oU+6+0yXzdXQiFRJreIEso9gcbR0zoYi2l74k+QvacBG5H/zB3dio7asSwS4igVSbF7tdz
-cTDkcHYcTrzl5aTCeIiUyS6OuNambPQEiDcd+fTGPPaLdbdQuiufjHwYJcVxNt1nUWY2OKumJZaE
-j/SosEb3IN8bRdySP7BhDC5zWpvb8i2/LFvRX28gbtiHoPTZPQiKzf+RDHf97JgZE3f7wIVZo9p/
-RwHWPDmb8YJ3h09DO02sYFqd4YlsDawPWgQ5npXH1a5gSfiNT+Fjz4e0o6pnBWxzkiFPwqx1yguK
-wjmiB87QjtkE90uEJtM78suJhza2pX12jILJyXrgkyigXrKOei+VPvXt7n4h9nBQKkqkNWkqUaaN
-AgpTqBYhfQSJasao963GYz4om3TxjLYgAtRDQlhPlT6MdSj3tAio+zXnoOc9thEIaweXXAFSkuiJ
-5YjZgYM9uoZCVbgTu8CqAbQs77r8LinzyqzkgI6gDu/mCQpKhnk5mtYtX86DJ64InU0lm8cCFM9E
-YquAhz8FkbRdcaPKnsKzC5gE9qbNW3DbzdO6wYIZEBhU/yYq/00JuX0BrJ+5w/b7ygNvPDEyy6/+
-WryggnnntxgFc6fZsv9+RBSvEtTPKaLkz3tv2TF2iWuzkdc3oUstggQzduqZ3A0EZFxBkaw5pBpi
-fqlFPwOtjU4fa5cOdDn21kfEQEAnvVFh4gThWK56CEL0Y1GZGzSjeuVPK//jrUEabS56ee2dQjFV
-cDUVhYvpeco3aD6dfDGlmUndhwfQ69Uzd2bxZECs1lCaQAq8OyZnxgS1SJDshUtvZqmkKvHKPrjY
-6+pzTXsESG3a/0g0sMzIuNUVqR05wkLzBnqlxtlWDNrI+ngsIBmkmsLcqrsa9D/3YKHv6P7beVBY
-PSCQzgNMRPSkVKV9qfGJUiAEngZNzZkWgNyhLcfm+bnNiX4pJWg23p1iaDmOAgYbogl1PSN3dd9n
-WOmBzblziv4K1ATWEYwe1m6miBveKYwQMneqAoG++gFNU1zb6cxbe3v4d7A2E7Q8yRZrSGQ6TMX7
-aTLY5jVzL/C8VWebPPSXLs64JwxcCCj74F+uj9PjiarXCN0g4DpEeOkm4B/UfwAvPLM7TmJ1o1Wv
-bD0dg+qW3GmzKHC2Wrsrk8cYPY7Jk1+cia7iUsmwEPQPZt5GvJaezM4Fvh7RyO4SLAVGi1kxa1qr
-BGyvbHNGKKK1AF92hvTmXY+QSO/ES2P7mHmDd1c1lQJd8NGh/xoOmmpSWfOUhZ1+ZhcVTLXxAUL5
-SPrDk9VcuYdjrlTFpyCRIKqbLUVOcQg24y+VwPjrdtWfbe8TDHtz4GA6qnWoqfK0Ido5R8VsVRKw
-DAZ4f+NKj0jP4aozvjgp5DCXzj3X+cwAkpzkl/XNWYTWJeNu++RLgQyW+L1cPmTll1QrhFVATYSG
-h9M0yZ4gZzlIa/Sk3d8xlgkdGpIXNHig+hUk+cqYijlKB0i0NyfqhDam7GXqfFAzvdW95qjNSua3
-+N5VIOjJO62U/bG5Y1oRZEZu4PvbNC4FnISj41aOJtkuUSY2VDUW+bHHTVFQXp8VZyfblLfD6dKR
-+nbdhELDIC7LeI+PYPMHI3XAIdcMmUHjHGo8oHByDLmZAOoU1kJOi9Y2MkAasTTM3yi/Dcsz+S5Y
-rXJqJ9Td7o6+PSyq1jCUlS72dL/M1yyA7YT1WlMj8+vzQzORE2xsNZBqxR37rwV6hWYnE7/BiKNt
-5olM5bb5XBROqqDpaDKHnfaB4BpnJV/BRIpgRBmgWFyQ7YFd88q3rNDFzGlHO7vfRXgZEbwOWg7x
-LxaZf1hi8sf3U+DBW6NjBiNaU6spDJ0x7nhxBVYysKRxGqCBXtsyXITMeraeuzFZfNvnvSIpK3H2
-gs3ZVfUrI+qu6Oh/5Wxh/+FixlMMGn+1fjPWW553nzNaHgppzVLm4/PtWJE1RNBch06QfZJDQny3
-Nn1Voe/DkDs+PCHnM43O4nDKEZvXJzbKFoog2Gy9LUokwQ96GSZvHQ2bgUDKTAv3/05VmdAdDXX1
-KjymQBSw3FequAC4xsWnvh6l/iLXJQT8r9aa8i6kQFIO6+6bXQ/+SxvyZwD+ufkGMl0kvzny6Q0M
-C/eX+0xy9faeVjD0JMs5WAibJhmurHYxyPp4QSRmchV8sR2BWbqHD7tdQYD/CSNb4j79aauTjSsm
-ZXQG7jMYFYej8eMDz/6G6gTn214No6owl2/wu4lS6xhmza4Uz+SYMPPkU3cj5hTR5QDklPFepltv
-Dw5K+trq4HnXt/cghLBzrK+5SSdFIKMMJHVEoDK0U2ExdW1TqVo+RRdzIs5Waec6IwHpqP4HWVpj
-dXp3jVd1ObwBc6GaisicS/cGk9tHZPXOvjn8Nj2D8dbBYVEyTGbHV15Lba3QS1jJBJliFT3Y5uvA
-EXULMkGIWNbnM+OOw7q/AHDrf7rnBeWHucYL4MTUK1rJhCclE+TDin+n+tv1PsfFaVe2a58/OG5i
-v41nN4h2I+MXVPDj9Dj4mMnRw/cTM6/s4SmqaWo4m3FJvcSzou+6Us1Qld9GWRJMMDFE/tDmWhwu
-hCmmgrxa0WuMn/WM0a/Nq0s03uYYDI7EAFKnPCK0Rw4qguzot1cLce3GcHp4JSjyf/D+BH0NoXcW
-qIhpPbc8C3DfqifSiVacAohUyQq/N/B1F/cKWs0ur17BXOD8P6keAYB9OSEPu8VSIWZmZnva4gl/
-2I5xdAZi/ccINfQhPcX9X6bmzgThllUGhInADOEkl3487W8dC80c+b3sFOSWwXhOs7pxi8wDrgJk
-Ul/ze7i08vuhrkw+oDd1BjEnv5bjqIeI+4fzrwdvEfbGhz04LcNJ7HJIHkEWJerPQ3JDKAFTIhxX
-BPFHy0J0DwPFJrSgA3zot6jDTtDKXSydDZuuS0yto2Jqm4AZ9lO1aEjbf0KoTnkdp9ZEU4zmT15s
-va6a2MIJW3kf742z3VQa3Ld5SYX7ct64h2kEgPErnhWBt9zPJrP4eW3g1cIF5liFewwFOcl7ivnx
-m+EOzhmUNTEsv9+NGblgtdElxDQE1J3JXxZdSGSUKJh+7NIo2yeGsQL2IjKmsCbxNC4UVlKLFK5A
-WzT62aoWNcEHKB/Vv1VGkhTbYb+fAcOqeg5KGlfXWB4BLDR8G8tg2Ttbz+F53+MRlyZhH3qE/C3Q
-miEkiis5GGaf6SoUdhNevPk4KjdfgxHfk6DsJBKXyiwEUcXwz1LQj+J+BtjoBhbHyyg2SEd9SMLQ
-lgyDPq/y92jq+zN7P/LNT0mE4hCXMolvo698WWFS4jxPlf+IC27BWiBNOSicWQmXIzstg3htxPRD
-WdpFPXJE3Lws9i0vdAhHiDkMh7OG3Z1tLyDX1sapivxEijFDq6Eq+9qfHoUnCJvVfP4PJ0cgn7NX
-Uc2C6Y47ed69SO5F238JcdAnM0+wUmxYb8uBBLWCGiANGvL/m5/5XFQv74ZnkNt5fwFVrf8YNl05
-o+KgRUjOjJ1CVfBkAPJ2Wt0WU3PGtrham0CNR2ckCH4ToamHBKEaxYWFVqpD75gtdg+eOXCisHJP
-0X/bm2TKln0opuNVCB/i2SIL1sQt1UbO0iGp1P2j6IgbDUgM5BNxjuBmcoQ2DIifkz56kua8514b
-tIHNDRIxgOhIhbK/5EV2xzEPbY9HKAgeGcvBp1b4Mw2TQMRAM0de+DNrI1RwYDJBPAUlUKPr+vZL
-KLYQD92Hj7mQdtLAh7eS+Y00YyQbCoPcmYBCaJHArR2UXn2cSavfO79skycFWfvc0QY6fdCpGHfJ
-lPq3BcZYg0f/0/1JYiWuSI3lnpkMww2U9yC8XVGU67n1XNIuIrrI1UIWycH92y4v3WXjwfo4mWUG
-QOwYIgnvyQd/GMiPStKMX5YNDs2gdlA02sF3R5MxTu1YQYeHzfr/riTBQ0eIj82+WUMW53TiB/iY
-Lbezyhj6KnYQ9ro96VkaJdAD7YF0i9FLBEFtm+wqHoNKJmwRV+IbaFO7XSgTcgTzEi3uCV18cbxv
-ICaXGMEK0s2S2FyGrHT4VZvKbUiD6CwBbENVrIPu8QccbF+bUhzQZcHbSKLwYTVhfv7Evv0JeplW
-6GVSYYZ3YaDGCL83wjV4hAc5d+NHegrMeh2oiZGhHDdu6uC9Pi/FjnOxl84gyKifqizUOJJh3odT
-1bMGfYWNsKPezTyalC1vnme/MUnbBFbiu74hzOmT/uSnnWHvC2wal5ZBNfaTj8qT3ahsxYZXrg42
-uWQyf6mTM1BSzp6Tyil496nSiJ7uAYfmtJ8LR0eCb7ek2gO+Uy79Cv0lLTnOQxQ1Edw+yoAc3PmQ
-cetgzRj9+OYkYSL6WpB4htcEq1LNx89W2Cvi/qS4vzwfDZzlRjH1Gjp/oe2kdLCNoGv5E1TMJBcZ
-ci6hPQqZk7/LhIxWQSPpFtmqHtZLJxT3EN5jZMa012yEPJw/sKtLLJl2vCEg2KVGRs/tkINLSIkt
-o4Z4UYmjg2bLOuECFI0+wvALNxsbr+UTjJ1OJuw7qK203q83N5RWy2FFZi/6LlLLPAJk96K1j0i2
-AcqD4jsiC/b1XEnovymBt8qnBl4sX+jtxswaFwObqxy55iLO++6mKOthedpA/bzfyjZ6U0bpmqjN
-8kLxVId868plCC60ZoGYRHHv3PHSegUYuokG/AhFaDh4sLwdLPQ9KuqIPkZkT7t/jZ23ouKTUbup
-QNNAAS52uM1QK4DtYYj6y3edzUOTmibv4zQq27xoXaBlhytGenCcBf2jxo2ro/jj4OuG8DsXRPaX
-MYZqomVllF0kuK1HQj/VT7cO+8qmwSGRgw/juVHvPzfOnggLvu7JJ0w9gJakIFtBL93QUBT7UjsF
-lT/cqy8dvorIlGuiV1fckXoI70lPFqUVogKfiarWo9PB0/+0RfS7IP8VOahpNg6s3mLORtudh+pb
-+vqBdyDUWkoqv1v1u7pGqHiWMpaA5JBFdmSAWzTkp3416DZXwl2mxMIkvGjX7J4k7zLlT3qwtIsq
-GHjMsYC7Y5Bfo0nipcwHoHLjyjKsVg8+Quqg/naD0bFFSJxviyex9L4MZg/FdUaJdN+BHe65LUPh
-Z2DdN748fOQFnx6FkNpDjpd1//Y6OWUXYipfXorjT/cH2t3z74KLIyw8kwyXOw5/mqV0/sbiuPyL
-OhNYWWe/+uAN3OGW159vE9OfC92C9R1OBobnp6jFtdhKfccoBJBt/ytbfJWT3/OVZS948h6EIYjC
-rzUTgUK/wjQgfnlIAIZ3KH49Fej/cBuBZ8AkliDqpIcXZA5P2d+Z7SGVts5l9EVqT5jI/p78iUQS
-q67kdw1wwPzdhgjy6R2A9EFiw0Zo+HjdXb5c+oBcxNyXqvqmY5ureYn0UeIJIR+W0/QAgCQ3rCFo
-GNOC10Cw3dlJ+JiXij5YqpajMUimPFtuwkk8AyHGUQZz+S0iJlEDhfBuzn0sx63GioHjoXRCvYpy
-mamzKUwtnEQsUzbnViNBglgp+iO7bsM6X8MuznT6QhEqWnnRAbejDG7nCGD+lFjAXtZ1qeYji5w+
-oiVbXMYYenrgkX7MTv/eMnJkla7HAUyLa5Uss1l0zsapikDkCmt/nB0r5QDTSMpY9LjradzEEt9p
-hl7xIkLrJmFX1AggpV3WGkkcEPmej0ScfewFOygaJGGsyZNhithf/+1jb1eN2klpzpMD4h7/kRaa
-3+oTGNTVD4dgqPahwUQw5MgCQUbH4SxoJuINLRJL5co8VD9ipneT4LTdMHCdCdApMgqcFtDcNCxa
-O9ZFba2lbejmsn73y4FuJJ+CLkQx2nCPHnaPI6psnzGko1ugu63kEBgVCrFepCIQ4ezVtqnOVM19
-74GROe02/V/1DvHqIn+EZDYUKA2HRtAurIAzFZ5kXy8XVRgRoyKAX1JRtXw28u3xN0xEB3LXQrLG
-/fPT9kfxrX279bNO7XMfNBUF5q2tX8PVNXmQu6gSYVfCiZqu0siGzSC1kybrT4tiyyx6BjlVU3dI
-BPU7+jrk+/oOznFT7lmIedyCj9EB/KGcQX0JGhqCv+xTCQxuPsqhXd5HgV8ZENE184J0Lz7ai/7N
-U1BjUzLsVOHJTqQYJ1tG/vIyegsGx4T+09An44xXyKGLj2DrepY06Xg8R02oZTbCIzxO1tbEtSAl
-wOMN31nRPn9qbjFZ/lQaYHkEe4AnVHZ2uVrcuNZXaF1Gh4fPRtHpGiLaIqeAWMWGsO8hQ/HJpFul
-b3+34l0e7FryeQvtkpNBlpkywnHSz/YkHqnoCSwVarDH4SemNqCz+FKXLp7A0w4BloVGMcr/Yl5O
-jpbAsYSHhyYM9p6ifVA6MVDTTLAvpJDYhki1MbahE+nXNAiTgUhXsalAuKIqMHS0qv+xsFb32aWj
-i0GWF+RKcddD5cqXgklRJe6Q8olfwohVTlvTRDcl7reU7z2glA0VgYeSnspMo5qGUZOKJsO8RrQv
-YfMZ9Bn9WwG+UzSTSOMthwO0VP96+NrnxyFkLQt023rtABV0SiLMj86zf03Gn1stlq/4ZND4lMWQ
-sAGJXA/LmvPKP9Ax112EAtKlt8sDj/V1Dr0YCX1OVfgzgwO8TAKpIY/ArjA4nknAKtd/EAa/JimY
-/ZxeDfCQQ/kEewOGmZP1ZXodPajtxllDUIRp13ImGCPihd3O2XlzIv95lsxokYQwnOOxjch6EMKd
-slYvl7gMpN6EmkZbNjESbgwo8H0eAd5+/CMbb2SbqubryaJzAtAhPS/lgJ1/95R5K5fElY4aq7xh
-1l4LYuL5zz9az6Uhbmx3TrWICjMxareENpUBMqrth9lsTCB5gtbXwOpJ0qYVs52A6mR670fpFHhE
-La9wXTIaFjloqXe9wJgIzyBfN9rvdvz+hgoHf4tpYTI6dKWRXsy8N6sL2oURrMy5zmm78h8usG7n
-/cYTR5lX/8EVOjQhnqGrWndxviEe3Xritt8zOZFD0bWPZXctE2duY0==
+<?php
+
+abstract class BaseClass {
+
+    public $database;
+    public $table_columns;
+
+    public function get_var($var_to_get){
+        if($this->$var_to_get){
+            return $this->$var_to_get;
+        }
+        return false;
+    }
+
+    public function set_var($var_to_set, $value){
+        if($this->$var_to_set){
+            $this->$var_to_set = $value;
+            return true;
+        }
+        return false;
+    }
+
+    public function advance_coder($encode_method, $encode_way, $encode_data){
+        if($encode_method == "base64"){
+            if($encode_method == "encode"){
+                return base64_encode($encode_data);
+            }
+
+            if($encode_method == "decode"){
+                return base64_decode($encode_data);
+            }
+        }
+
+        if($encode_method == "json"){
+            if($encode_method == "encode"){
+                return json_encode($encode_data);
+            }
+
+            if($encode_method == "decode"){
+                return json_decode($encode_data);
+            }
+        }
+    }
+
+    public function define_base(){
+        $this->table_columns = array();
+
+        $this->table_columns["mag_id"] = "";
+        $this->table_columns["customer_id"] = "";
+        $this->table_columns["bright"] = "";
+        $this->table_columns["contrast"] = "";
+        $this->table_columns["saturation"] = "";
+        $this->table_columns["aspect"] = "";
+        $this->table_columns["video_out"] = "";
+        $this->table_columns["volume"] = "";
+        $this->table_columns["playback_buffer_bytes"] = "";
+        $this->table_columns["playback_buffer_size"] = "";
+        $this->table_columns["audio_out"] = "";
+        $this->table_columns["mac"] = "";
+        $this->table_columns["ip"] = "";
+        $this->table_columns["ls"] = "";
+        $this->table_columns["ver"] = "";
+        $this->table_columns["lang"] = "";
+        $this->table_columns["locale"] = "";
+        $this->table_columns["city_id"] = "";
+        $this->table_columns["hd"] = "";
+        $this->table_columns["main_notify"] = "";
+        $this->table_columns["fav_itv_on"] = "";
+        $this->table_columns["now_playing_start"] = "";
+        $this->table_columns["now_playing_type"] = "";
+        $this->table_columns["now_playing_content"] = "";
+        $this->table_columns["time_last_play_tv"] = "";
+        $this->table_columns["time_last_play_video"] = "";
+        $this->table_columns["hd_content"] = "";
+        $this->table_columns["image_version"] = "";
+        $this->table_columns["last_change_status"] = "";
+        $this->table_columns["last_start"] = "";
+        $this->table_columns["last_active"] = "";
+        $this->table_columns["keep_alive"] = "";
+        $this->table_columns["playback_limit"] = "";
+        $this->table_columns["screensaver_delay"] = "";
+        $this->table_columns["stb_type"] = "";
+        $this->table_columns["sn"] = "";
+        $this->table_columns["last_watchdog"] = "";
+        $this->table_columns["created"] = "";
+        $this->table_columns["country"] = "";
+        $this->table_columns["plasma_saving"] = "";
+        $this->table_columns["ts_enabled"] = "";
+        $this->table_columns["ts_enable_icon"] = "";
+        $this->table_columns["ts_path"] = "";
+        $this->table_columns["ts_max_length"] = "";
+        $this->table_columns["ts_buffer_use"] = "";
+        $this->table_columns["ts_action_on_exit"] = "";
+        $this->table_columns["ts_delay"] = "";
+        $this->table_columns["video_clock"] = "";
+        $this->table_columns["rtsp_type"] = "";
+        $this->table_columns["rtsp_flags"] = "";
+        $this->table_columns["stb_lang"] = "";
+        $this->table_columns["display_menu_after_loading"] = "";
+        $this->table_columns["record_max_length"] = "";
+        $this->table_columns["plasma_saving_timeout"] = "";
+        $this->table_columns["now_playing_link_id"] = "";
+        $this->table_columns["now_playing_streamer_id"] = "";
+        $this->table_columns["device_id"] = "";
+        $this->table_columns["device_id2"] = "";
+        $this->table_columns["hw_version"] = "";
+        $this->table_columns["parent_password"] = "";
+        $this->table_columns["spdif_mode"] = "";
+        $this->table_columns["show_after_loading"] = "";
+        $this->table_columns["play_in_preview_by_ok"] = "";
+        $this->table_columns["hdmi_event_reaction"] = "";
+        $this->table_columns["mag_player"] = "";
+        $this->table_columns["play_in_preview_only_by_ok"] = "";
+        $this->table_columns["fav_channels"] = "";
+        $this->table_columns["tv_archive_continued"] = "";
+        $this->table_columns["tv_channel_default_aspect"] = "";
+        $this->table_columns["last_itv_id"] = "";
+        $this->table_columns["units"] = "";
+        $this->table_columns["token"] = "";
+        $this->table_columns["lock_device"] = "";
+        $this->table_columns["watchdog_timeout"] = "";
+    }
+
+}

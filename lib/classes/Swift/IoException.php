@@ -1,30 +1,29 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPtsvfkgsWXlDiWupoRWLJ9RbNUsUDyRs5y9E9M82tf/gmBnTE3Ly6lZ7hOxD2pCI+jOTGNZw
-U97cQCCbstM64lqoldabiOT5HRiv18ik1eJTnNyzM4Q2iMqNYwYzQhee3OkZEH7+eVpHrC13E4Pc
-CA57OlPjd9z935mYCy252EAFMqWYuWWlAvs/hpr4klobuXdFf4MPgHcvZK9OqR4HDI19XMUWmovY
-msiBB+UKmIf/6+n+mdfHs0fqj2rOc/i7NqTx+yCmcEiE54Oz9xbzSXeOu0NXas33dOhry8TSvVUM
-ElZgoBl40VmdBoKsUkShBpUTB+EWGhoirgeGgWdHaDYJKm3/gK8qyfretb5Vnj+EOSP5dIeZ0FFq
-GQ7RMoWGZWx5KHNEz8aoySYgDSuT+qa5Pfxr8grfXAyUFX8YaF760AKc2ob/iA18X+hmduB9+1dP
-XYcL7VA+s5LnmtCczR6bBQ/VE1tkoiLRsTuTE7ueRWuiXaGO6r7RNrO5ARHYLUK3ZrZcnUmGygk6
-6h0Fhz14ncExDj/aKh5b/sykNPwEb1tIVSLy0JSRP1DHZzTDsEAptyM0fcKStwv2aO4e4KDmkBvG
-+ZCFhKlk2pB0YjSxUS3fDaYCH2qghLW5BySVhMUk7pcMKiADEeDcTsuMSLnsNz3N+mV1JrMDYNcr
-dJ1NP8esfFTifGCVCXEhehcW2yX9CLMIP1YSY6EP0R5EkxeoQM/6XlhdIX4KXnyt71vY7KNK9/5S
-Q0s1hBxnxdYY2iZ1+fqk8UjYiqQMJCXuNCpRJRDNbSxkWp2G/VE5Hp0EqKnuLhFhP8yTGDdMZt5U
-vTqPLyRFFKwobCm7pKKthdzhAlPpVH+eB8GfPtam1ei/Yu1iOScdgEgwvX4q2V9oMCnY1Ebv3kAj
-BjRHC+xmXPZrMoCc7Indw1EiuJJIcnf1sIGtnRETFNChelK7yknp6rnWkxn9dr3fQ0qr2PRbuw83
-v4W/UFXVX3IxDjxvectPgBeAs9E3IeHcTY1SKi9jGxUVgUy5Dn4GQ0dQvQUq3Wj4EfnfnF/j2ZQr
-blaGfS68RikdJ1yMT7CRqSNPhX4G7V39PSyb5G55w/KUd8aE7xL/LA2lBfVvDNBDM5/inQuTuQGs
-yGLlhBOAPxkLkeXQBrzlImr2qMqU8RFEEgtpMSPRRXZM9HrnS0RYyvmr/+EiDWQ0AdJMejbso6nL
-9DcTiWz9J8oq18kR2UrqMgPr0KwqYQuOIMW+w6dg8+xL0mdUlXfTrNMjJ0ab7Z99+1y2qDak+G8f
-VHlk3UU/prkLtvk8IDhZ7WuFiZ3Kg0TvukOvl7pAqvJJf8uDsHkP9yb7/dsL7iSXnwi3geibqbwD
-gUPckJjpyR4jY+V/K0CHg+8bVqtE8snC5QzAQy8AwJPi9gVfR4NaI/uTPYa3aGX8Mi2wgPbpqB8c
-5b7HkS7ELFdTuCbzYw0kdJLp7zi+6KAjkI2YKugcO453bLj28D3870EFmoJKEaUeJ3VyYEYtzmuX
-RgO3AA9c5v3FZF0Y5Wyj1HIYf6IS/ktOiCjkmQrdDDTXdYK4164RPA2slOLbGAf240lGg5/mmmsQ
-mIMtZyCD7ZhN81mN3ChQ59S12uB/9rPW3b1fPaOZAVR7Vx8YXuqeNvXU1q0O140HRKIGnsXQFOoR
-NhD2ct8nSuhcDbLSQTrDc1doCZD79s1dVmhTMsI5zi9kXnOShZ63CTPoPxKJ9IbjawWrhn/XYIGS
-n1i6xFKNM5QQcArYA/jNo2QCH81m8ozYovdTrG0jpH8hazNTAmDxsoY9p8dIKtjKHSi/yWWIumFk
-4lcrP8m8Z5TL4bROxbXamCp01MyTB9+891dRwAQjw5f9U6F366eZztuzrl4bXT0jP5T/QGdzoh8w
-5KB9mGk9u3vIfs6octBgS6IjOd4bEDq9RegywEkMb40YTWzmZZLxD1/geeMtuR6nRwlbbdLBXXdT
-nwf/8Hq9NOwIneHl4EG9WrVK783np10MRkztstnczNywARuI7H1z
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * I/O Exception class.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_IoException extends Swift_SwiftException
+{
+    /**
+     * Create a new IoException with $message.
+     *
+     * @param string    $message
+     * @param int       $code
+     * @param Exception $previous
+     */
+    public function __construct($message, $code = 0, Exception $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+    }
+}

@@ -1,81 +1,180 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * An ID MIME Header for something like Message-ID or Content-ID.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_Headers_IdentificationHeader extends Swift_Mime_Headers_AbstractHeader
+{
+    /**
+     * The IDs used in the value of this Header.
+     *
+     * This may hold multiple IDs or just a single ID.
+     *
+     * @var string[]
+     */
+    private $_ids = array();
+
+    /**
+     * Creates a new IdentificationHeader with the given $name and $id.
+     *
+     * @param string             $name
+     * @param Swift_Mime_Grammar $grammar
+     */
+    public function __construct($name, Swift_Mime_Grammar $grammar)
+    {
+        $this->setFieldName($name);
+        parent::__construct($grammar);
+    }
+
+    /**
+     * Get the type of Header that this instance represents.
+     *
+     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
+     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
+     *
+     * @return int
+     */
+    public function getFieldType()
+    {
+        return self::TYPE_ID;
+    }
+
+    /**
+     * Set the model for the field body.
+     *
+     * This method takes a string ID, or an array of IDs.
+     *
+     * @param mixed $model
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    public function setFieldBodyModel($model)
+    {
+        $this->setId($model);
+    }
+
+    /**
+     * Get the model for the field body.
+     *
+     * This method returns an array of IDs
+     *
+     * @return array
+     */
+    public function getFieldBodyModel()
+    {
+        return $this->getIds();
+    }
+
+    /**
+     * Set the ID used in the value of this header.
+     *
+     * @param string|array $id
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    public function setId($id)
+    {
+        $this->setIds(is_array($id) ? $id : array($id));
+    }
+
+    /**
+     * Get the ID used in the value of this Header.
+     *
+     * If multiple IDs are set only the first is returned.
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        if (count($this->_ids) > 0) {
+            return $this->_ids[0];
+        }
+    }
+
+    /**
+     * Set a collection of IDs to use in the value of this Header.
+     *
+     * @param string[] $ids
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    public function setIds(array $ids)
+    {
+        $actualIds = array();
+
+        foreach ($ids as $id) {
+            $this->_assertValidId($id);
+            $actualIds[] = $id;
+        }
+
+        $this->clearCachedValueIf($this->_ids != $actualIds);
+        $this->_ids = $actualIds;
+    }
+
+    /**
+     * Get the list of IDs used in this Header.
+     *
+     * @return string[]
+     */
+    public function getIds()
+    {
+        return $this->_ids;
+    }
+
+    /**
+     * Get the string value of the body in this Header.
+     *
+     * This is not necessarily RFC 2822 compliant since folding white space will
+     * not be added at this stage (see {@see toString()} for that).
+     *
+     * @see toString()
+     *
+     * @throws Swift_RfcComplianceException
+     *
+     * @return string
+     */
+    public function getFieldBody()
+    {
+        if (!$this->getCachedValue()) {
+            $angleAddrs = array();
+
+            foreach ($this->_ids as $id) {
+                $angleAddrs[] = '<'.$id.'>';
+            }
+
+            $this->setCachedValue(implode(' ', $angleAddrs));
+        }
+
+        return $this->getCachedValue();
+    }
+
+    /**
+     * Throws an Exception if the id passed does not comply with RFC 2822.
+     *
+     * @param string $id
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    private function _assertValidId($id)
+    {
+        if (!preg_match(
+            '/^'.$this->getGrammar()->getDefinition('id-left').'@'.
+            $this->getGrammar()->getDefinition('id-right').'$/D',
+            $id
+            )) {
+            throw new Swift_RfcComplianceException(
+                'Invalid ID given <'.$id.'>'
+                );
+        }
+    }
+}

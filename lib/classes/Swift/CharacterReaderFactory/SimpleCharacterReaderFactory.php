@@ -1,81 +1,124 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Standard factory for creating CharacterReaders.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_CharacterReaderFactory_SimpleCharacterReaderFactory implements Swift_CharacterReaderFactory
+{
+    /**
+     * A map of charset patterns to their implementation classes.
+     *
+     * @var array
+     */
+    private static $_map = array();
+
+    /**
+     * Factories which have already been loaded.
+     *
+     * @var Swift_CharacterReaderFactory[]
+     */
+    private static $_loaded = array();
+
+    /**
+     * Creates a new CharacterReaderFactory.
+     */
+    public function __construct()
+    {
+        $this->init();
+    }
+
+    public function __wakeup()
+    {
+        $this->init();
+    }
+
+    public function init()
+    {
+        if (count(self::$_map) > 0) {
+            return;
+        }
+
+        $prefix = 'Swift_CharacterReader_';
+
+        $singleByte = array(
+            'class' => $prefix.'GenericFixedWidthReader',
+            'constructor' => array(1),
+            );
+
+        $doubleByte = array(
+            'class' => $prefix.'GenericFixedWidthReader',
+            'constructor' => array(2),
+            );
+
+        $fourBytes = array(
+            'class' => $prefix.'GenericFixedWidthReader',
+            'constructor' => array(4),
+            );
+
+        // Utf-8
+        self::$_map['utf-?8'] = array(
+            'class' => $prefix.'Utf8Reader',
+            'constructor' => array(),
+            );
+
+        //7-8 bit charsets
+        self::$_map['(us-)?ascii'] = $singleByte;
+        self::$_map['(iso|iec)-?8859-?[0-9]+'] = $singleByte;
+        self::$_map['windows-?125[0-9]'] = $singleByte;
+        self::$_map['cp-?[0-9]+'] = $singleByte;
+        self::$_map['ansi'] = $singleByte;
+        self::$_map['macintosh'] = $singleByte;
+        self::$_map['koi-?7'] = $singleByte;
+        self::$_map['koi-?8-?.+'] = $singleByte;
+        self::$_map['mik'] = $singleByte;
+        self::$_map['(cork|t1)'] = $singleByte;
+        self::$_map['v?iscii'] = $singleByte;
+
+        //16 bits
+        self::$_map['(ucs-?2|utf-?16)'] = $doubleByte;
+
+        //32 bits
+        self::$_map['(ucs-?4|utf-?32)'] = $fourBytes;
+
+        // Fallback
+        self::$_map['.*'] = $singleByte;
+    }
+
+    /**
+     * Returns a CharacterReader suitable for the charset applied.
+     *
+     * @param string $charset
+     *
+     * @return Swift_CharacterReader
+     */
+    public function getReaderFor($charset)
+    {
+        $charset = trim(strtolower($charset));
+        foreach (self::$_map as $pattern => $spec) {
+            $re = '/^'.$pattern.'$/D';
+            if (preg_match($re, $charset)) {
+                if (!array_key_exists($pattern, self::$_loaded)) {
+                    $reflector = new ReflectionClass($spec['class']);
+                    if ($reflector->getConstructor()) {
+                        $reader = $reflector->newInstanceArgs($spec['constructor']);
+                    } else {
+                        $reader = $reflector->newInstance();
+                    }
+                    self::$_loaded[$pattern] = $reader;
+                }
+
+                return self::$_loaded[$pattern];
+            }
+        }
+    }
+}

@@ -1,47 +1,70 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-2FrMIZrx+M3wiuCRnje=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Processes bytes as they pass through a buffer and replaces sequences in it.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_StreamFilters_StringReplacementFilter implements Swift_StreamFilter
+{
+    /** The needle(s) to search for */
+    private $_search;
+
+    /** The replacement(s) to make */
+    private $_replace;
+
+    /**
+     * Create a new StringReplacementFilter with $search and $replace.
+     *
+     * @param string|array $search
+     * @param string|array $replace
+     */
+    public function __construct($search, $replace)
+    {
+        $this->_search = $search;
+        $this->_replace = $replace;
+    }
+
+    /**
+     * Returns true if based on the buffer passed more bytes should be buffered.
+     *
+     * @param string $buffer
+     *
+     * @return bool
+     */
+    public function shouldBuffer($buffer)
+    {
+        if ('' === $buffer) {
+            return false;
+        }
+
+        $endOfBuffer = substr($buffer, -1);
+        foreach ((array) $this->_search as $needle) {
+            if (false !== strpos($needle, $endOfBuffer)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Perform the actual replacements on $buffer and return the result.
+     *
+     * @param string $buffer
+     *
+     * @return string
+     */
+    public function filter($buffer)
+    {
+        return str_replace($this->_search, $this->_replace, $buffer);
+    }
+}

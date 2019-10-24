@@ -1,49 +1,129 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-AHiMElm0iyRQcFcJW5JquVC5ByP0Rw5NNn5P
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Generated when a message is being sent.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Events_SendEvent extends Swift_Events_EventObject
+{
+    /** Sending has yet to occur */
+    const RESULT_PENDING = 0x0001;
+
+    /** Email is spooled, ready to be sent */
+    const RESULT_SPOOLED = 0x0011;
+
+    /** Sending was successful */
+    const RESULT_SUCCESS = 0x0010;
+
+    /** Sending worked, but there were some failures */
+    const RESULT_TENTATIVE = 0x0100;
+
+    /** Sending failed */
+    const RESULT_FAILED = 0x1000;
+
+    /**
+     * The Message being sent.
+     *
+     * @var Swift_Mime_Message
+     */
+    private $_message;
+
+    /**
+     * Any recipients which failed after sending.
+     *
+     * @var string[]
+     */
+    private $_failedRecipients = array();
+
+    /**
+     * The overall result as a bitmask from the class constants.
+     *
+     * @var int
+     */
+    private $_result;
+
+    /**
+     * Create a new SendEvent for $source and $message.
+     *
+     * @param Swift_Transport    $source
+     * @param Swift_Mime_Message $message
+     */
+    public function __construct(Swift_Transport $source, Swift_Mime_Message $message)
+    {
+        parent::__construct($source);
+        $this->_message = $message;
+        $this->_result = self::RESULT_PENDING;
+    }
+
+    /**
+     * Get the Transport used to send the Message.
+     *
+     * @return Swift_Transport
+     */
+    public function getTransport()
+    {
+        return $this->getSource();
+    }
+
+    /**
+     * Get the Message being sent.
+     *
+     * @return Swift_Mime_Message
+     */
+    public function getMessage()
+    {
+        return $this->_message;
+    }
+
+    /**
+     * Set the array of addresses that failed in sending.
+     *
+     * @param array $recipients
+     */
+    public function setFailedRecipients($recipients)
+    {
+        $this->_failedRecipients = $recipients;
+    }
+
+    /**
+     * Get an recipient addresses which were not accepted for delivery.
+     *
+     * @return string[]
+     */
+    public function getFailedRecipients()
+    {
+        return $this->_failedRecipients;
+    }
+
+    /**
+     * Set the result of sending.
+     *
+     * @param int $result
+     */
+    public function setResult($result)
+    {
+        $this->_result = $result;
+    }
+
+    /**
+     * Get the result of this Event.
+     *
+     * The return value is a bitmask from
+     * {@see RESULT_PENDING, RESULT_SUCCESS, RESULT_TENTATIVE, RESULT_FAILED}
+     *
+     * @return int
+     */
+    public function getResult()
+    {
+        return $this->_result;
+    }
+}

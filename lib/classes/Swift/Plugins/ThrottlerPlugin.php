@@ -1,85 +1,200 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPm/YxiflUjFjYobxwNshHuQgUUiq9ZC2dWKVbJW32tzN2EKYBtQqXgu3z7Up/ViFpE7Vlx7H
-flSE+CtogUkmziCrTd8+FcX0SSNLtoBLZVRp2X71dfKkeYLhLlsuyD0xVlHJv5xv2KdgTqsWDjB+
-FYfJst0DRotHNzrtyEaU8gfpAG3Zw0YdVaCiIeMyVphK+J6pNiRzWnLcLa4tR9WMobsn1Us5eV2j
-GOCrxmjQ5ZJnuai08p9BAZqQ/+blcRlDFpett5iLJL2R069ItIMaeBgMka2Qc/YybZkzQvJ1NFF1
-AiPmkdUbQE3gHaqc6JaWwVXSMDxpDkaQ+83DALM2Ob+YPY9oVWdUZltSXwC4p01mHRVmnU96gE5U
-BugOE0ZCQ9lMQaQyCMTYZ0ZINV5BWBD6fqfgrSrtfFt0UrIVqQ31o96C1sEzhuzv8dT3g/0DmuxP
-XYcL7VA+s5LnmtCczR6bpBQi+8xx7vIvfW5tI51dpG89e5UgCWvYbxU4WeH46PTD+CqFC9r5CAnB
-tOdLjPLc6hlG9mGQdt2401JRxM2I+G003s1JFPcMjOE6cGvc3IbZtaim/llz+mCm1j/gc6X1uLWu
-OedtYjK7XapJiidxhFwgUT6kasdKkiQ/v+xwJ4wUBGyE5XrjuX0mWIQwfhdPwdsEg/53uxalvQOX
-JO1x1gjb4EFMvCO//pMq9l+AFQ74hsWX6ucm6vwYjpcQU9Tk4F2zl8g9ZW/ytHEcyQQvNOlewLgN
-zTKz/yMhRvJGIln+ZdDpGP+YA4l4wBRkptDZGpiFFgxFQB+09SUtLsEdzKtwl20Wg1aLJefAPkgx
-++3exlrUDBYJ4WBhWP9FKKWiq9HCfXGmuWMO6RYOJx09nPlHLjhzOf98b8y0qrHs4qUTp1ZCYd4Q
-UkH3emQeXG4lIEp4bTXycmZzepdvVysGpVl59RqXBCsHJM4LlX9wjburpy+4oA/NPNj/W/pF9J89
-WUCJGDWqz0RF/M3jeyYesCbwXMAL91OYI7sun7c2TuSIg9AI8z3BD4jMxnDfKxx3IEDh6pMTuwYP
-jXI9vqZ26eIoe6YJ/5fSAMS3WitKG99CyDe/n6WI4bPeSsf6d0PRTqqHLolAznTk7gbnPFB/pGE/
-NZitabVrB7HU3vG4KDPzLhg2AASGfl4T4xFOwJ62t2eaqBDpZsD4a2HORIxyFmlXZ8uW/zGUhqW6
-A8gE+JsawY4Z25rXpxz+fys+hrg2Z2umCDcLMJUYpCRb1IaIICATVPS+ZckVYm07ZVgXUNi52hyB
-KMPTlltonhzG79QdJaTWXa9hW4OXSoENLH8tmLmrZ1dTuKw/vsKRUp7EApObVY/6ug82v74ZFQWl
-pWzLabsMdQqHMM2TZcf8qvCBbAdYYV2DIsNL7nHgL+MgJ0Q8FdQyntmPFndNSHGjyP5e5v8TKRQs
-Yat25IqbzodxyEn5lu4uTYwbnGeAm9YUEXfbu62zM08+OpP2CJX24Nk7H7fO5liDvXzMeIMR3dJU
-yzKXchiEOVgqs3DCzYk4Ky0W0WP7SKTd+VuReVt3caC49g9YYMrLVUmCTTgU6cpO7sfR/8hkac6+
-XE+jUhtA2obINfOdgjvhzaG5y6Cl4J91d0MNSwMYSZ2IyU2V1WoXd3T+vc8V9RD1Nkl2WSmY3B5I
-AXE+Kexbhrqde2H8zOUOKN0a3z54qndYFzsCq9kdcxMifjRmxh0PphD+MYTx8VzDSUr6oX1Aamxl
-hgcqYxBtJ1iZNMCopWcIMjNUJV0gOy6qnj4oWUOliFVWvixNpMGPe/W7u1HG9rPGtkz5xqV6Wn2E
-Gr4azKp2pC0Le9it97IjaVS99kpU5RWsusWQoPu+zwVXm8Gxb4s9yQ68s38BmL63B3J0iQ8qri0U
-4VzvdtwvqhqMVaYndIkUzMSSp7/gtfPguZq+5KJz8MecW8B4BJc5jJ+JS1pH/OkMf6H/l/+fjLES
-TR2eFJK+0y/SB617gDNkLxa+MQR2O46sacRe9HjVsQvB3UZtIvlWYzdaHwZ5BE4o6zRu2801X6ds
-OkpoJ8QBv3kwoRZyXDY3Tr1VAAOuhnQi4rW3kx60N6afCOTfnTwMu7EesQJSJJ1OmCC6gGQU1cET
-qulQkxRIE1fipRZ+GRbeH6aUgKPB9sOmNWhKrtM0Y9Lumg5rx8mV7A/VL43PZFUKMbtdXu3QKINU
-CHo0leh+xYERxweYBq5DEaVaFd5Jtm4pMlXS6PChNQDZ1s9sza5BFrpDfnXwvvX3xhqbuCmx6UUw
-E8aNcqv9geR1w7e4Az08aXbzKEdskxsz3Kc/rY7/dEGoSSiq5bEtKboX/4X3B053tkdKLtUFCWCc
-T45EgKvW3iCOo8lVBA5R00N6nhsoyJNzlrq2yzq6xPC284yuVAnUfXM8+FypvnpCx9VzHhEufI8s
-tairdcc1EFKAjLHKX+Op0LBOYX09aIsaB3TuBhsWMSXCQKWr6dvcEnEIepGQVH4naaHcpsMk1aJ/
-6uiQvpDIxF7U+zqcKIhIMAX7bzzvkot11pK2vnG/oo92YfSZJijnVTiWJhe/q19oLOiIvXGFBlyN
-bo5Tk1SLWfqZRbq5eSSbNTMp/JTkZB9M64rSbyGNRInDc95MmNPAQF1RQ2AzKrGZoX+doDicOCPC
-fiQRMo8Fmeaq0KGqe1iP346XUTWK7lGcmlo4Qs1h+Rs7Yl6j42LGrBPVysqGhzg7dEKB3ipQoeRO
-cVCDSyzEVcFi1SwwtKw/VpXVHYcClhDQr2QNW2DxOXNGDZF4L7topJGQhmgdqOdr1lyj0hX9o47F
-3oGWNlXEjiNTKKAjlDApG0GYn9q4D+dEiScVEIZg5kS54aT+D1rBHr9W0A6x9w4eRuVxJSXMLQmR
-CbpasLAOIVu3mJNQFNaiS6DxpharSJkPOvZmhL7lyoSs4PJcC42A5VQsdCxzHUI86Dx/ySOGZLhX
-1UqeMWyTJoM/ZPiZi14iC6uWyN3Qu2G+8g9b60hUbYzlaTDXZPEbXZCOC2t0a4xz03j3FYsSJvQk
-j+HHWyBsWwUs0m2n3IPAARqZLrgT1rUvrNXNsb8rcZL0cIXQMqcYIm+5mfnktOe1QfNr54Qm4NzJ
-q4uJ5Av2Bt5iAXveW+N5b/bpUvwG97b4FgGiKJZtxXq6wrL08pHSGQdV6ynOhlRSwTw2heZ9wE9U
-k9/J7+swKPaFSRWJDlfBdVrU/O+gzHRJskSX9oExpDh6UmGp5PcUBof/TNBYSy5CI4Qtqbu+tSXc
-8pcLnoe8Lh37CUmTzleF/nIO73FPZudqxxJHPmP4/ttoem8Qx1ep7jmEaFwMbKn2PIvMZEG3euqX
-w7cGG2NB0r3WsJ7txag6AL0iBNt/CTm2lcKhnCy1CsI7mCDMJkn3bKRo86RzkiSTFjwYlJJPDQzV
-RyyDjA2t9QCZKo/KNOGgjVAX0LNxmI6EBKizljAmNpvmYF5XBgjGMEnJKzJ1ClWY13xhJ+94NXQR
-QCaEgA6mE2uBfVgIRn+5l90RdGbHg2ASIk8k5GCkTZIj3t6uwjgucEQ7M9oDx2ebRnZwlLbSjpsw
-XE691W6lDErY9CbuxpY2HtHxaA6EP4x5jNZhlZ8NG1fhe9cmLxi6VZA3A3GLXqkZKHoQpCP2fUys
-aVTgYrv/UwGQb7DTwPYNmID9tRuT0wPuw9BRh2huimdTjjSoOmr9Nf/pov0+QP9jBHXPz4swS7P7
-qgg93fOe1kIAqrE0pgSfKpZEg8sxPnX/59Aa5YPod0rv3eCCA4tDZ4WKakVepHKh8SoQax6PArn0
-shjTOJMM6YdbOOEJWqvJMEzXQY+ninM5EsWb3DEDqht3cbhTZexwj2zq7xGUaJlBwaqOFpMdQDNS
-xhqQ8WEazhakpdkX+Vhd4jDQtrdG3ifKc+pQeZepwfdBPz5XyUrTiKpluaFcVtXyllahfubyN4Is
-l7erJEELaq/DMG/GkkFTSDmHLgqVailDtX0l0jOYGzVZS+5hFkpmQS/Dda9yej1zf2Q0hffaTNG4
-5//a2r7GW2Agox8X2Odzcf/VrxRyf7+n1t6/K1V+hDkIO8y8G79wLWj4xPZ4i6idMW5OQyFIpD9K
-tLm4CCpSAv+eqv/6zLuzJdrELDBm7CGREVqo8pxnj3/jRvi99ZYbP1OcCxtD8WdbsE1PMx8HFNa+
-ZuPkMk1hijOM1pAUzHczoCNymcGh1PPuAb5pNFF83JjvW2Tm3TGnExP7V188CWSfV23tyaiTfcZ6
-YpL7bMjBMNHfxb+dUxdtGZd/4gmmzaQNcykqiXen1frsEg+Ri8tS57Y1XKXggbZaNNnt/yjIQ5YG
-ip54/uHStAuHhraSEiZ0qeGg/vBTbE5uQFzcr/s3YlP9VFGobgtFAWQQj2x7QTYktpYCcxUEJ+/w
-WTCu9HxIWTgui4tPeWIkAe7yBCoA+GnTYXb5qHK3YDk+shSHYNFFB6T4zKkJ0ErcMNpdHO5HNj7R
-mOSlx4COfhfvgTqNWi2fQyPjny6hricfh8Cm1XMfjJ89UKMovWRNWHlGp1DVM0oauyHO5oGVl3E3
-qgQqkz2k5udIbpTBMpxQ3laLFoVDD1NFTMPA1xrnBhPuzUK8aBKCYfbQ/La+cJVg1ip5FXjMBnYr
-qOXkcmzGFlkQwzuYgDXoKEd7IwL5fXh/xSM2HjvFXgsGNQEx69Y5jyfx5NQierwFGebo8aTnRRtc
-0ilFfj337vqYuquOBwhtnbe2uDz8SOv2BSqXm8l1L/bP0gSwbgUYus0OaRNIvwEIsBEHqBjG0Hxa
-HlhgvMXCecqEPn2kwJv5MSJK8OoGh/2h4EIRApDy5gQBfgyPrePyM4ikUhKaJSn9w5ybt6Ri3LW7
-lql71sm7+9FCnyxsplgD4nMpQ55jxMkH827aghttLl8NtDhfpsGD02wgrsmXnVkQ4Hhr74PsyzVl
-rZPdyFiHHgjA/NJj/8ryIxZqlIW9LWF734JiNyKprPEbY88Weec3Jl35H1PgVpg+/pxQPVyanQ0Y
-rKuxfs7hztl/Y2J+Mh19AmFffFMWURMgrr8VcI5EaEyIT4CTqUMoxFKloaUR1IJBYnYnAe1UkEsY
-HBWA5ipOU3RDEl8Yv2aqwb57doToDDJi4cA4bqcV5+7E82uQIK3meCd3a3Gj3E6QfDtd6PEqJqwJ
-EAgusFbOXcVKm3XfDOaVaxBnCnCoctF3mA1/u3Pff/Iibjisfa5IXBib6umc60OHhpyrUmKM+AA9
-i7eu6p2hAU+Yxzs7MaYLGLUaqE2APBHfCM/+/Nl8Pj/mQBhn3E+qc5Rs2TzI0dlbWJZFl9QTcUTf
-LSdI054+VtKCdmenZzq5V40qJuRVO6T04eyWc+NzVnc/IVhs+d4LKyOgOe0pJruPNlvZNe+nlom8
-CLYk0zKIiBpSlXMFB2uSVqDgwnakFoHpexCgVT1zo09wBA5G5amJ8CoKmz7jfsVhIy1IJgC3Qw+6
-FwBf0+VlByUVNq0de94cnEJYaQKLmJVfuU+wZxqGZKj+A1XvkSFZPrajiJzSOngkOckmqcgK/YJt
-4owvDrjWxaEsKCx9W8ryetiRLo2HyW3pDc2n6lyIO7HXlUV9WzWlADrhtqPTJclKJiB/Il7S2mAn
-/zuzH8mSlijx9f/+xWB+u0b0kFW0HNQb1yfOnI09ZzHvV54KGSb81cpRJvSkicl8sgNqEFEZ+toa
-OdlTnkvnGEqPNXdVMxHTmrnixV0uNW6nm4oLqxfq97DXcnxXvywkB2//hsJsdfpYCINILPsf0O7Y
-KlL0hHzkntN27eZTscvCzEdOEkMzcFKN5z+c6sw41SHbNBuRk2OtoJcE7So295ngrfKSHRHP8WSA
-n6EonEeZ0w1T1Io3t1E2OGV48+NztwtNkRYGWiYKujz1ECNfDT5+LNmTBi3g6lkeWu/MNNlAYRmn
-Wc6DdzuWXr3cOTqxFcUNyMCNB425fnQEEahaqH8LjTqpKND39XWeIR9AMy3D5dFB6g0gPFgRxMOX
-JC4vrTvwSS1tuaoWaMt0SCvu8w4IJXWThv/a5o+ktL14UtjROUSarSnt3UIYk30Re4klJ7aHbiAo
-fJA8gnygAmeElGuMvdpsO4WuQ8bpc26N7S1y4WLjdQINgQ3BdeWp3LKfKPgNCBI9ac+ZdYh3r4nb
-Hmpuc8wrVbdu9xDgrryOW7HtdUfeg3Uys5btglNE99yMbfIU3rtx6VcvM7QrA4KRj0==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Throttles the rate at which emails are sent.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_ThrottlerPlugin extends Swift_Plugins_BandwidthMonitorPlugin implements Swift_Plugins_Sleeper, Swift_Plugins_Timer
+{
+    /** Flag for throttling in bytes per minute */
+    const BYTES_PER_MINUTE = 0x01;
+
+    /** Flag for throttling in emails per second (Amazon SES) */
+    const MESSAGES_PER_SECOND = 0x11;
+
+    /** Flag for throttling in emails per minute */
+    const MESSAGES_PER_MINUTE = 0x10;
+
+    /**
+     * The Sleeper instance for sleeping.
+     *
+     * @var Swift_Plugins_Sleeper
+     */
+    private $_sleeper;
+
+    /**
+     * The Timer instance which provides the timestamp.
+     *
+     * @var Swift_Plugins_Timer
+     */
+    private $_timer;
+
+    /**
+     * The time at which the first email was sent.
+     *
+     * @var int
+     */
+    private $_start;
+
+    /**
+     * The rate at which messages should be sent.
+     *
+     * @var int
+     */
+    private $_rate;
+
+    /**
+     * The mode for throttling.
+     *
+     * This is {@link BYTES_PER_MINUTE} or {@link MESSAGES_PER_MINUTE}
+     *
+     * @var int
+     */
+    private $_mode;
+
+    /**
+     * An internal counter of the number of messages sent.
+     *
+     * @var int
+     */
+    private $_messages = 0;
+
+    /**
+     * Create a new ThrottlerPlugin.
+     *
+     * @param int                   $rate
+     * @param int                   $mode,   defaults to {@link BYTES_PER_MINUTE}
+     * @param Swift_Plugins_Sleeper $sleeper (only needed in testing)
+     * @param Swift_Plugins_Timer   $timer   (only needed in testing)
+     */
+    public function __construct($rate, $mode = self::BYTES_PER_MINUTE, Swift_Plugins_Sleeper $sleeper = null, Swift_Plugins_Timer $timer = null)
+    {
+        $this->_rate = $rate;
+        $this->_mode = $mode;
+        $this->_sleeper = $sleeper;
+        $this->_timer = $timer;
+    }
+
+    /**
+     * Invoked immediately before the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
+    {
+        $time = $this->getTimestamp();
+        if (!isset($this->_start)) {
+            $this->_start = $time;
+        }
+        $duration = $time - $this->_start;
+
+        switch ($this->_mode) {
+            case self::BYTES_PER_MINUTE:
+                $sleep = $this->_throttleBytesPerMinute($duration);
+                break;
+            case self::MESSAGES_PER_SECOND:
+                $sleep = $this->_throttleMessagesPerSecond($duration);
+                break;
+            case self::MESSAGES_PER_MINUTE:
+                $sleep = $this->_throttleMessagesPerMinute($duration);
+                break;
+            default:
+                $sleep = 0;
+                break;
+        }
+
+        if ($sleep > 0) {
+            $this->sleep($sleep);
+        }
+    }
+
+    /**
+     * Invoked when a Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function sendPerformed(Swift_Events_SendEvent $evt)
+    {
+        parent::sendPerformed($evt);
+        ++$this->_messages;
+    }
+
+    /**
+     * Sleep for $seconds.
+     *
+     * @param int $seconds
+     */
+    public function sleep($seconds)
+    {
+        if (isset($this->_sleeper)) {
+            $this->_sleeper->sleep($seconds);
+        } else {
+            sleep($seconds);
+        }
+    }
+
+    /**
+     * Get the current UNIX timestamp.
+     *
+     * @return int
+     */
+    public function getTimestamp()
+    {
+        if (isset($this->_timer)) {
+            return $this->_timer->getTimestamp();
+        }
+
+        return time();
+    }
+
+    /**
+     * Get a number of seconds to sleep for.
+     *
+     * @param int $timePassed
+     *
+     * @return int
+     */
+    private function _throttleBytesPerMinute($timePassed)
+    {
+        $expectedDuration = $this->getBytesOut() / ($this->_rate / 60);
+
+        return (int) ceil($expectedDuration - $timePassed);
+    }
+
+    /**
+     * Get a number of seconds to sleep for.
+     *
+     * @param int $timePassed
+     *
+     * @return int
+     */
+    private function _throttleMessagesPerSecond($timePassed)
+    {
+        $expectedDuration = $this->_messages / ($this->_rate);
+
+        return (int) ceil($expectedDuration - $timePassed);
+    }
+
+    /**
+     * Get a number of seconds to sleep for.
+     *
+     * @param int $timePassed
+     *
+     * @return int
+     */
+    private function _throttleMessagesPerMinute($timePassed)
+    {
+        $expectedDuration = $this->_messages / ($this->_rate / 60);
+
+        return (int) ceil($expectedDuration - $timePassed);
+    }
+}

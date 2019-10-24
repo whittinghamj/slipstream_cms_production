@@ -1,38 +1,30 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-pz03FIGVpmuhumRYBbqJ7l1sjL+w/0VV0m==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/*
+ * Autoloader and dependency injection initialization for Swift Mailer.
+ */
+
+if (class_exists('Swift', false)) {
+    return;
+}
+
+// Load Swift utility class
+require __DIR__.'/classes/Swift.php';
+
+if (!function_exists('_swiftmailer_init')) {
+    function _swiftmailer_init()
+    {
+        require __DIR__.'/swift_init.php';
+    }
+}
+
+// Start the autoloader and lazy-load the init script to set up dependency injection
+Swift::registerAutoload('_swiftmailer_init');

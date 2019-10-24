@@ -1,50 +1,100 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Changes some global preference settings in Swift Mailer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Preferences
+{
+    /** Singleton instance */
+    private static $_instance = null;
+
+    /** Constructor not to be used */
+    private function __construct()
+    {
+    }
+
+    /**
+     * Gets the instance of Preferences.
+     *
+     * @return self
+     */
+    public static function getInstance()
+    {
+        if (!isset(self::$_instance)) {
+            self::$_instance = new self();
+        }
+
+        return self::$_instance;
+    }
+
+    /**
+     * Set the default charset used.
+     *
+     * @param string $charset
+     *
+     * @return $this
+     */
+    public function setCharset($charset)
+    {
+        Swift_DependencyContainer::getInstance()->register('properties.charset')->asValue($charset);
+
+        return $this;
+    }
+
+    /**
+     * Set the directory where temporary files can be saved.
+     *
+     * @param string $dir
+     *
+     * @return $this
+     */
+    public function setTempDir($dir)
+    {
+        Swift_DependencyContainer::getInstance()->register('tempdir')->asValue($dir);
+
+        return $this;
+    }
+
+    /**
+     * Set the type of cache to use (i.e. "disk" or "array").
+     *
+     * @param string $type
+     *
+     * @return $this
+     */
+    public function setCacheType($type)
+    {
+        Swift_DependencyContainer::getInstance()->register('cache')->asAliasOf(sprintf('cache.%s', $type));
+
+        return $this;
+    }
+
+    /**
+     * Set the QuotedPrintable dot escaper preference.
+     *
+     * @param bool $dotEscape
+     *
+     * @return $this
+     */
+    public function setQPDotEscape($dotEscape)
+    {
+        $dotEscape = !empty($dotEscape);
+        Swift_DependencyContainer::getInstance()
+            ->register('mime.qpcontentencoder')
+            ->asNewInstanceOf('Swift_Mime_ContentEncoder_QpContentEncoder')
+            ->withDependencies(array('mime.charstream', 'mime.bytecanonicalizer'))
+            ->addConstructorValue($dotEscape);
+
+        return $this;
+    }
+}

@@ -1,58 +1,93 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+/**
+ * @author   Albert Kozlowski <vojant@gmail.com>
+ * @license  MIT License
+ * @link     https://github.com/vojant/Twitter-php
+ */
+
+namespace TwitterPhp;
+
+use \TwitterPhp\Connection\Application;
+use \TwitterPhp\Connection\User;
+
+require_once 'connection/ConnectionAbstract.php';
+require_once 'connection/Application.php';
+require_once 'connection/User.php';
+
+/**
+ * Class TwitterRestApiException
+ */
+class RestApiException extends \Exception {};
+
+/**
+ * Class RestApi
+ * @package TwitterPhp
+ */
+class RestApi
+{
+    /**
+     * @var string
+     */
+    private $_consumerKey;
+
+    /**
+     * @var string
+     */
+    private $_consumerSecret;
+
+    /**
+     * @var string
+     */
+    private $_accessToken;
+
+    /**
+     * @var string
+     */
+    private $_accessTokenSecret;
+
+
+    /**
+     * @param string $consumerKey
+     * @param string $consumerSecret
+     * @param null|string $accessToken
+     * @param null|string $accessTokenSecret
+     * @throws TwitterRestApiException
+     */
+    public function __construct($consumerKey,$consumerSecret,$accessToken = null,$accessTokenSecret = null)
+    {
+        if (!function_exists('curl_init')) {
+            throw new TwitterRestApiException('You must have the cURL extension enabled to use this library');
+        }
+        $this->_consumerKey = $consumerKey;
+        $this->_consumerSecret = $consumerSecret;
+        $this->_accessToken = $accessToken;
+        $this->_accessTokenSecret = $accessTokenSecret;
+    }
+
+    /**
+     * Connect to Twitter API as application.
+     * @link https://dev.twitter.com/docs/auth/application-only-auth
+     *
+     * @return \TwitterPhp\Connection\Application
+     */
+    public function connectAsApplication()
+    {
+        return new Application($this->_consumerKey,$this->_consumerSecret);
+    }
+
+    /**
+     * Connect to Twitter API as user.
+     * @link https://dev.twitter.com/docs/auth/oauth/single-user-with-examples
+     *
+     * @return \TwitterPhp\Connection\User
+     * @throws TwitterRestApiException
+     */
+    public function connectAsUser()
+    {
+        if (!$this->_accessToken || !$this->_accessTokenSecret) {
+            throw new TwitterRestApiException('Missing ACCESS_TOKEN OR ACCESS_TOKEN_SECRET');
+        }
+        return new User($this->_consumerKey,$this->_consumerSecret,$this->_accessToken,$this->_accessTokenSecret);
+    }
+
+}

@@ -1,49 +1,84 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-kcy5teq1HH1RMoY2kzjEsdKS9uiR0IY2iQOz37O=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Analyzes US-ASCII characters.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_CharacterReader_UsAsciiReader implements Swift_CharacterReader
+{
+    /**
+     * Returns the complete character map.
+     *
+     * @param string $string
+     * @param int    $startOffset
+     * @param array  $currentMap
+     * @param string $ignoredChars
+     *
+     * @return int
+     */
+    public function getCharPositions($string, $startOffset, &$currentMap, &$ignoredChars)
+    {
+        $strlen = strlen($string);
+        $ignoredChars = '';
+        for ($i = 0; $i < $strlen; ++$i) {
+            if ($string[$i] > "\x07F") {
+                // Invalid char
+                $currentMap[$i + $startOffset] = $string[$i];
+            }
+        }
+
+        return $strlen;
+    }
+
+    /**
+     * Returns mapType.
+     *
+     * @return int mapType
+     */
+    public function getMapType()
+    {
+        return self::MAP_TYPE_INVALID;
+    }
+
+    /**
+     * Returns an integer which specifies how many more bytes to read.
+     *
+     * A positive integer indicates the number of more bytes to fetch before invoking
+     * this method again.
+     * A value of zero means this is already a valid character.
+     * A value of -1 means this cannot possibly be a valid character.
+     *
+     * @param string $bytes
+     * @param int    $size
+     *
+     * @return int
+     */
+    public function validateByteSequence($bytes, $size)
+    {
+        $byte = reset($bytes);
+        if (1 == count($bytes) && $byte >= 0x00 && $byte <= 0x7F) {
+            return 0;
+        }
+
+        return -1;
+    }
+
+    /**
+     * Returns the number of bytes which should be read to start each character.
+     *
+     * @return int
+     */
+    public function getInitialByteSize()
+    {
+        return 1;
+    }
+}

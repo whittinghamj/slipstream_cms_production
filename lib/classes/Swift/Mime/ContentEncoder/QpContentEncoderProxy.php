@@ -1,62 +1,98 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Proxy for quoted-printable content encoders.
+ *
+ * Switches on the best QP encoder implementation for current charset.
+ *
+ * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
+ */
+class Swift_Mime_ContentEncoder_QpContentEncoderProxy implements Swift_Mime_ContentEncoder
+{
+    /**
+     * @var Swift_Mime_ContentEncoder_QpContentEncoder
+     */
+    private $safeEncoder;
+
+    /**
+     * @var Swift_Mime_ContentEncoder_NativeQpContentEncoder
+     */
+    private $nativeEncoder;
+
+    /**
+     * @var null|string
+     */
+    private $charset;
+
+    /**
+     * Constructor.
+     *
+     * @param Swift_Mime_ContentEncoder_QpContentEncoder       $safeEncoder
+     * @param Swift_Mime_ContentEncoder_NativeQpContentEncoder $nativeEncoder
+     * @param string|null                                      $charset
+     */
+    public function __construct(Swift_Mime_ContentEncoder_QpContentEncoder $safeEncoder, Swift_Mime_ContentEncoder_NativeQpContentEncoder $nativeEncoder, $charset)
+    {
+        $this->safeEncoder = $safeEncoder;
+        $this->nativeEncoder = $nativeEncoder;
+        $this->charset = $charset;
+    }
+
+    /**
+     * Make a deep copy of object.
+     */
+    public function __clone()
+    {
+        $this->safeEncoder = clone $this->safeEncoder;
+        $this->nativeEncoder = clone $this->nativeEncoder;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function charsetChanged($charset)
+    {
+        $this->charset = $charset;
+        $this->safeEncoder->charsetChanged($charset);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function encodeByteStream(Swift_OutputByteStream $os, Swift_InputByteStream $is, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        $this->getEncoder()->encodeByteStream($os, $is, $firstLineOffset, $maxLineLength);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return 'quoted-printable';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        return $this->getEncoder()->encodeString($string, $firstLineOffset, $maxLineLength);
+    }
+
+    /**
+     * @return Swift_Mime_ContentEncoder
+     */
+    private function getEncoder()
+    {
+        return 'utf-8' === $this->charset ? $this->nativeEncoder : $this->safeEncoder;
+    }
+}

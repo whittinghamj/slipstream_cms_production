@@ -1,29 +1,28 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cP/tZHn91JhmbuLNICIvpggTf4j6ZQqKeWU211j0pqQP1jxIm2r1rYtIjFWS3+wguk1x5haMX
-ItQTRZffNbYVfFEcJBN50m4zmKB4CXRbA2hs6EcU3vL+pdiPqlHkx1eqeDSSvZg6q070ury1capL
-8KbYeMGDRlrl2AzYuTBBk+Uk8kpJeCv5WCffedn6fkG63Wot3scp5nhLs74KbyFEIGkMdMRnmLL5
-tt9Uaykw5/T4/ZBj4uHkmhxtxxnm3dBfGMDWaeJJ/PB6Fx8476C/kS25xzlx9qRTsKkf1KlznP1C
-xBtlBuMzkHI4H96xnudo/Bty6LG/bVP6wAjjkxPznWdBOH/3aEYctdGnLovYRPhptxITQcNN1Ing
-evvPsv6qnYpPGjaLiuuHkvE3/KNWWwHTy/YS9jdXoDwWYNJEqgh+ftCe+873czES2HthsA41Qjc6
-APKTyhxOLN73SoRriQKSl3qtcy4ii4xJCbHOJlvjKFzI7Y+eN05zQk+Pmvva0vst7udGESumDRjI
-Jzll3c0OdfTZmtQBmsT9w0ccRqbbWe4P8n4nf+omPpMeTyCfCHT02vS3PTMavQ10OECuFfeejr6S
-zG7KoS1TUYhlux60JSSpcw53vug6Nq/eTPxTvbOGKrWo+ClMFYGfODY7LUT0itZTe//9zynx9sRr
-xFxQdDvrJsVwST+2vdbkc8WjcGXXyuFFoLrJVaHOlbCT3qv/QIAMh6q34BvSGx496aJBMXT6DYFy
-YyfmHI0pGTEgRemHnrPmngBu9Ry1FzUXSuXatz8Rgx6nqK0Th4W7Fwa/O7LCpn1h82YLTtRO7Pfv
-JwnTQItewo2KhvpDJUI+//DhIgQK5sng2ruBg4OsrA8ju3cqOp2J+WTCJO1XKNpohS7vw8sq6g8U
-x9v5fp3FXNkjkDc7hWZ2y9tsfi3WOzsQUPa1WyizwuUNK5i7Gsgv7D0Q5ZtffifFUm54IvqKJb2x
-S5LZheWfscYlKZR3x8UrgvYRsIkflPwxADygUGK4GVgD2SI+ioHeB0FhbhhlarugNeEHaHi/DKjN
-wPe55s/Hebh2ve7zXbnmUpv/5RJowuwI04Gl1OF4M1VRLMPRkaljfW3DHkMDtgKXG6BVZX/J6ALa
-JLyPFkx/Wjp2RN8FZsW+wct1yMjaC1TNxqBfMEV4xpsDsrjSsb3/8hqohcU1wDleVnwTS3hYJ0X9
-NBEUAZQ7ktTdKGPevJHTx1QUf29Bp4/6f+1Zg0BM0YC5LLxxHIbVtn3Hd5LSglkfTQCiJIgFRNRA
-rP/+dmqOCiTADTaIydPbdOJMtoOPPfZ4ys8TQqIJ1UIKilxKYjzZhn4OA+3xTztB+tzrJ8M73fp3
-RykH5nJVQfM8DH6Al0yS0B+Zsd8cBHe/kjOtO1EAiHFCyvhQVQqdFq9xa0oFwPaHxgAYwqEN4WUv
-eBj99HJ4Lg6m7ksf3Y5rxUR7xrfLlMOaTAeXNTslZt9FX7nMrrOYvDuAvdca3hLnUzPvwu254P/+
-BOQUduWRn3NwNjyYdtHoOxOUQBPUmwz6PtOIQc1wwDgFYNw+4MUuR//LkEfyoj/rbLNCc01WYUkA
-bAUrisG84YkEH4iLuWUjApID+GfbXbDZrue2ws9V71JsNz8DTAOPso/0261SyilkcTdGlL+SHY9v
-csOv7zCRvAU7avBfDJZmcpGKI7UYuphICg2sMkhKdwNt1QSihx603uJu1ANQsRtrHxJAYLmDBgMR
-B3qkkVDJevirZfE/33OxxXrSZz9b50RqhA2Fuwz/xkhJjfGGzvF9+CyHZgXIDOO3msc/m5ZBGrRE
-HEAgQFHfdirk7vKYq6hAcO7kbi001g5avVVnzeFmX4rR8SLtW3bnVFu+6gjS9DQr+UU2AysAnXCr
-lnftmHNxur+OaC47jaGNL1i=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Interface for all Encoder schemes.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Encoder extends Swift_Mime_CharsetObserver
+{
+    /**
+     * Encode a given string to produce an encoded string.
+     *
+     * @param string $string
+     * @param int    $firstLineOffset if first line needs to be shorter
+     * @param int    $maxLineLength   - 0 indicates the default length for this encoding
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0);
+}

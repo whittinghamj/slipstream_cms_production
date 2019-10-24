@@ -1,88 +1,162 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPzSlCRLMkOcwqkIabfwzt9WwD93iRmhYGz8TMFQvOezlTF5auHA6Ao/SlHANm4+cyfkAxLYe
-x/BMLkd7W2EtOURiAilOIVwLTQ7AAe00sZR2/KuoDUVDmbV6GcnCinDePD2bFpvr1EXJmV2u4Kvc
-AnpTjV9Bf689rwMSB01m54Fdkcu/4kzXuDark/OTkdF8wItHWcp06PJGcLGNsLNH5byDoRFU3PcM
-WNn3Nbe3tLYYf/xrLWNblMO4XbAltb/rTcCJo6cMfN0XBFjDRfUrKRRkgV6YOKZI367chVErXCZ6
-PcbfX62DBXN2wy8D/OCOEtsxSCJ4xNLbDnGIs9Dhf1/Sa9UDl7odjQAljyDvRS7AKbTs/6GNWQud
-eWi03phkAW2z3pEHNe+fvfQygVeAr4rqnlYfTiIaA/6lc0VBc+CeT6NAQ9vnRhyUh8srA7Sf2GNB
-tjc6APKTyhxOLN73SoRriQM1kxFmcwt3jcuiJ0keS1ZMEc/Y1OvAdztFyjrflDBuVDv980XAaznP
-/D1jk4yujY577nRi3U6D0cs0iL4Z50DNLAh7Q7OPJjx6ollcy0Rku4QS1MWlBiXaB9LNPk8vtdby
-Ojj4LjpcYnX/83zDKWrLzFOlzmd0rOn6j+Jy1LE1GAYQcHUFbYwOvb2l5Lb4QDP7TIpIJh/Hv6xN
-c47Q6JfQU5TtbD3US104QgTdCBrhcsxokiU3oWEtjn9rE2tZBqlysXKiRNOQJtMXTfF2cuZnRVlp
-jb8go08zJqLma8Zhr1HDDPkrGfii2B/zYZYiP4pxHWYogFeHhzNDC2SVJzLTJ/JnWP3M5kPgNUqd
-P20+I0EppC4H/owLN2Gm42wW8w9UXA/Pm3ehyfu7I4I8UFHD/gAVDhC/iwYHORPhdtnBx1rz8Y5I
-pFFmURjcwA+5vWJipliVic5+tOqmydEkl9rSo+SFxjULMISKM932/BmfsiBaUFyJgLBmhYV9S3U1
-PLsaGrcSeT9tp7HEq8wxpgsgiIXWo8OcySd/kaal734m/oSDzi5km/Kl4rN/y/fZx4ZTZGE2aaDB
-Vz3P5sIVwUHfpTmvdMpR+RsrMI27wRxzIKPEH3X7FHxKTFuChB9G4W5Ggd6kj+wEeRvAhu95KwF0
-VS00oapzWroInnj67/uD3fNtTfAue7scAbM4mgEIatENBJuO3GF/cwiL+ymOSmFW9pbsfPzZnBBA
-nUnDXpNWdwIGTZjcyXkcnsbw4NSYujVRb0nYThI4cTuu2omRI7ZRKrxl6KJZTRaMobQrfrimo7W8
-kbLo90XrDjw8Qw1paZgSib0WKmXgQRUDzhq+HmmmwSRga7ZNNOvtTTvC3yrdR5M5V4EziBMFb3jX
-2VSMc7SKmzHwDzXfdM/ah17IBzPdEt34X/6LoXPjXfDVIUroThVyYJ8z0G901C6UJd840iKLWl5o
-dtMFrHJjvARveLSZTH9B6dO8UoKTWpNye6yBoA6UpLZh7DMjYYsuVwtadnZm/seuNAtePwNbFTlw
-taefNK9WM85HMqY4WYKY3+YnYLFB4O8SrroEwN4cGu8ttFpV5N2bAJdvqbwipRHtGOe8LTrffHk7
-4cMxB+9GSUIAISxUBwcVFXu9E7099xCvr9oRj5QsZNb1QevEt+lL7Lf7HdaUoySTcaSnXY9OSi8B
-mAwzO0BfsGJe2upcnSbVP+lIV2LiTkgvn4IRN6uIg099fNHKN0YlEu1IKNUPda6sUqBNxf8qM46J
-zNHSnz4ksh9u36a6Pae6LEqvObynMg/e2UV/QbE7SdL9M1cdDMbEEJL2BYe5TxHAWRe92I7jo1KZ
-byUAlcpOoAtKAwBoyOTiBlljAKedJxh730imBLJCf5TpVn+jKm+3SHyCWTcNXPkCoK07LANfvanR
-UaFZNt4F4m/5qHHpKZZqwu+WAHUfZUHodbtV/esV49deVgqxXmbXfLNosLlY69aCD785nHOkpMmg
-QOKZ0oFMgDHZo+t4ZuSY0G8fYbHlyk2dszbly6SBEh8ShMnxjrpn1LnQ/6KzrT0mcLncHwcoyn4E
-HuniSaJZ5COX5JJwas67yOAJXZNTxXuDfI+HJcl9mJe8we8jVRHuokyw1CuqmfF3NOfGQevNUTca
-QilVu++Pk9EDKw0J1PKSHPAm7ZYAMIxO8bfFL3C8AhfOzw3CrZBBZHqiX0+4yWwy2ji3s+fspjFu
-8BOp3y3Dr2viqVoA9pOqBbQ6kWCHVZyu19drm5epDlWqL6Ct85o33YuvT0G7DuwXaX35hvRdy/Ag
-BylJT+lr3/tQsgjGkKFl1OnvVjHoEXIXkw9mJ125SRog4NAM9Yys7QjxZYDAVK/r1l4B9C/tID67
-FY7v8y6XlBLHLK9qHg3AzLyBQjglvwqgzPDO4SMIK4PrEQJ/dY+s9OzlEb7DQTh1ef+qsZQSejhk
-R4vXGRhwht0NLNIADFJWkE1gy59Hgz6CzpX2ZbwkthrRucbEDFxOPZxgNvjiLj3LrIgSSGdiqoyz
-YgrtDP4gnj7zgKCmanz5Uqnvqs3pxs+Z+oFbq2o4jKb22pGbCXL83U0EQSjK5ujThcn3x/urQg+m
-4uyXCLDl84RvTn4YI7dW7dzId/EoXZZHQk0CpUAhho48plEm81xIw+aLPnUFJqh/VRb0nLdHwW0Q
-LANKhzbDMcoILGk+xE9iD9AjlIYdEE3i+gqPu6Fluwu3zBL2tCL8h4iN+SlV/CBFNAEgvfyzo4ZP
-mlC2pOU1FLoZycxrfvBHRxdDZgYJC0469RESS2PcdvF7VsyMrwwWr6A+axRiYR9BvCq7YcElkJbB
-vtoETQ4QknO10pHA5XDk+U5yiJ4zmGBnLvVrmh7zbFo57SqNe0oe6eGFzcGUsN0pmPBgo4MxJ4re
-13+n05J7VPTUixPQVd8Qw42mJ2SQO9j4dfUM7cj8sKrB/uMwsTV86lQHL9eD70Zae3dEkyLWqsms
-Jm62kNNg+mht/ECzV12WAmwzZj/Vh1Pr5ZVU5vOKMR9Fj+vaHX3tW8ok8+3aApqv1mj/b9tKfqRq
-dhxVm2RG10qu/VMLQKvsxqVd0siV3VnOoYbsuWsq4yo+R7APgd74VdIIUNWCM75tTrOWgVbkY25j
-IJMRTU2JNuzyp+Y0oN0pXmXiKJBOmSQy+v2821r+pFQSYSFoL+Iait54rDdGu7UTJlXTt0ApjODg
-Vaeg+fmKZ4x5LG4M85JKC0lcRYjL+IULqiUbY5zHiePIHBIe8gy4OLFWJFBQRil/ky29vkYyadbZ
-ZvDhy2//vnHGvaMrd9FJkLtGDqVUJp7C4P4b9cnX5oDWYpkvoP9lKIlOSrjUCT26ygSU5NYhT4Tn
-/2NEOo4sS63euVxowczyqmI4OHPo6NuGJIYFBcq2Mhysc3+pAJQXoJvMnB0T9yAgWCOIL0kE5Y+T
-FvQMJ6uqPfuZidOGuPxIw8/CRWecgvU4ErNTlx329xvSKhAohnKKLWR0zdgYHo+OjfMkP+u5bDda
-Jhfus9phnn2v6tlWI3AkZSgkHwupoZ1wiSD6blxBCfFrb8P9rQTem4wwya2YxUjLL+EBdNGcACAQ
-JxMS8btbLMNPzAekdVPQy+VTDHt9GTHaOOkyJn1NJRMEGFy9pG88tgrk/VryK2kZBJ4P+GdorSRe
-fNJrSJ53e6CJEuBdx5Yf1fLwjcnklwBq7cuhPz9DIH0psNmVy/hO0UWGK4TyzQgFaH59AKqBdxCf
-LchpcwU/2D3ZlDY14QdkPw1Lk0WHC2meU+8YtnoWY4odjgjFC6TMk5da8nmEDDe87b2L+953xKY6
-M/sk9aqwd3jSlPKV02B46skssW+83LB873C7emE+hvh5UemMDzTLvGOFFS0P640uyWsdiBT9YNHP
-rMbM79ZobqvY8s+aOLa+iVKeKQNcx3x+3wY3FQipkqy15vnXBI3tU+vog3L7iLk5aquiqqMNq4oK
-YodHkdOR/zzvZBdTY/6vzklCsX+WZGtmcUEsRmksxyWlY09K/sH9DgQ95ZOLfvJuPeNNiKB7MBsF
-ra/CMK3cax99mAJVx3MPgnx7a8JlCtQuQikNvJL4oFarM7cCCI6WNGdwck5naNU+zf3jL8VNPqIs
-NoWU0MgWlAYDQ8cfiROS4VbFZoTgDiUzHbHRn29+r1rSSRdO5uAgE1EiE7r5CtnjXa3ntv2by/2l
-2en3zEdK9VssJGQgJs+xxcd71jDhRsYGFrT9C0Xi8eDdwnfB5pT4A5N9NIk14uaFnIyOPVRTaPII
-bTZnz3wAgV4JUHNyaJ2kv8KU7EPh/JRRhFWPnfLwdnRUAmUBrIDkB46eRStLKDW3+CyoD6moFQJ8
-6omayhe/ZzVAc2ihOThujJDhumwvdei/z8tUVeFqVnW7jkpZWVCorkH0zX5VG23S18wZrpjDr7q9
-BnjjWT09VsfGdDpUYmPq4YknbvZjETtPOtgfpmKbtJSGEv4n0bfVFTuQZofiMkPBQtQMyb76BqDk
-6rlJtuSJKbEenc4AjOwuA5MrVOcyaRlzoAAvpnCJpjUUspgoOBMkTQYyYC+xRd94lJtAriy9AxWv
-vkVPN2YvXsISTNfxE8/cBZdddFy0dYYKKWCi8HsLue45D9BkIH/Khl4Fj1Ew0DYzmbbjC3+ufr9N
-l96EXY3k4iwRwWVPQdc3N41CxUGOYz7wTF2W7ZVmHgVj8OB8RV4zHLUGEC7xS+/4FwwD+S0kcoSS
-6Cs762O++CY/waYW+Ua9ciEHz2PpRJLm/TRf05ZdDPNy6ALOMOESMB5hKXdpOziQpMAgL04m7dU6
-O+hWNyUInhxn/+9Gg2p9ul+ogDVHYlXVT8dtujOBz5bXEvaOhhqxvMmAcT8iUXseuybGYj9UDUcN
-iXtxxBjC8vlErr7b7yQLAepn0Pybqvb0DkVe5+na8DnB0AyHPmVQFcyIW/yBhW0uTkzFhjmt/ztJ
-Ms+GQJKDnXbni2HaC3BraSG8vbfcUhVCz5gndnrI46jBWMKEhBPaeg7qhgPpFNnUtXmxBqS2KFs/
-hBLiZSL4VHx8Al6VRXbUrEOWA/2aYkK/iAkZYGbbvFMdqvMQ9XiFjXZJHs0cYRCTW7Qea2D14ij2
-z1vdKZx3KfrPx2SnO7TcwgN7noh6BkEWm/xh1CGfK+PupvlQEd2W4BLeOfyFpRq6eVort2MxZEPO
-S/lbtHALDExuU25XajHlg+bceUQw3dKnNCaG5fTh0UsoaEhnIOjyvjvwKmdo3Gc+X2MWW0lfPENu
-rRMAT1EICe7eVTYuGYAfMZEi7MJjT3fkkBsaBKK18uUShsETahzsQ6/m4PufMo2O1Uq0Smff1zd1
-e8P/nv3GWzgJUYw4if7oiy8su4Q9FpF/6GIfMGnKHlT00Ge2tXKOWK6d5okKlgEktoeRWc81UIOu
-yiQeqzS7X87UnHTBoQEgfGYDydwIL/xEKMHqXym4TfHmcHDxOBblMtxca1kExGb2nu4Bz804cwgb
-euOrWXgrD3l0GxGmVy2nJCT922AS/auaGqYPQo4IHOa6phfZmDn0K4HsOxhby9XMoVe+tTuAwq2p
-c6DVumgMiRyr5s6v1z+lNNIkx2oKePwCAEpO4g/Qu/5zS6piKTzwsMV4ufIaaLNG2VNhml4tw1sK
-+SV+n9KvfDwTGLLCpf5o7CvyrgvZlPARClyRzBevHG4pCj2yi93ko2ojFrFufk74TtvvHF+lWLBn
-GiVc2/BSJMDGFKKz7owwgSoU3BsSKJEIba6Ml7ntYiH53Y6C4KTJ/qCoRggVOv+wDdfmmWgNeANE
-VfkpBjLb/tEcWSuEKOsgDBHbezWUG/7cxrOfUBb1Is6LRPTtb8dD0SkHAjNZTL0B/o6W6uuekEAk
-wvOk8SMbcjfmlzozGEMSQy+JsHTwtS8xpyouWPlIHVO3crLfGAY9lJU77G7k6yTGdqvfvsdZoYA7
-TYiL63lpgzIc4Ww2xK1tdwbtOuyWUK4CwdwLhRUaMFBRoW2CQcXLs9yd2dsH6H18A1LB7wM4TTJx
-GUTFKIZr0XO0TQHTszIFMAjEq83oiB8Ud+wOIo3rdjVhbwO15JdIfAOIoB/Gfy7xZpRcGR/2re1Q
-an4jHGVugelxxIk/y63GHBqbyVBv6cZStUNI97gujuHNupJnaFPUqSSxj8kXovo2RF4jNGOZofAx
-YSG5fzWV8eVELuOsiT3LG8+iI3BtxygEko6aB6/dT/2sNx8VfT5kx2Aax+HroYpoSL8a0X2Dobm3
-geJwBDgzSUUuDAOAJvvD6b+LOLDxkRZcojslxNBfJOXfEzvkWn+LrYSFTPgfL/SY5hph0CQhuREE
-VMLt5XHI0p1PNormDWIuCH2oM2Dl2uI93Dh6OdaiyqoL7CrJ+BOHTfyT4Aq1YR8A8qq49weVQmK2
-zYsb7gVMjW==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles binary/7/8-bit Transfer Encoding in Swift Mailer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_ContentEncoder_PlainContentEncoder implements Swift_Mime_ContentEncoder
+{
+    /**
+     * The name of this encoding scheme (probably 7bit or 8bit).
+     *
+     * @var string
+     */
+    private $_name;
+
+    /**
+     * True if canonical transformations should be done.
+     *
+     * @var bool
+     */
+    private $_canonical;
+
+    /**
+     * Creates a new PlainContentEncoder with $name (probably 7bit or 8bit).
+     *
+     * @param string $name
+     * @param bool   $canonical If canonicalization transformation should be done.
+     */
+    public function __construct($name, $canonical = false)
+    {
+        $this->_name = $name;
+        $this->_canonical = $canonical;
+    }
+
+    /**
+     * Encode a given string to produce an encoded string.
+     *
+     * @param string $string
+     * @param int    $firstLineOffset ignored
+     * @param int    $maxLineLength   - 0 means no wrapping will occur
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        if ($this->_canonical) {
+            $string = $this->_canonicalize($string);
+        }
+
+        return $this->_safeWordWrap($string, $maxLineLength, "\r\n");
+    }
+
+    /**
+     * Encode stream $in to stream $out.
+     *
+     * @param Swift_OutputByteStream $os
+     * @param Swift_InputByteStream  $is
+     * @param int                    $firstLineOffset ignored
+     * @param int                    $maxLineLength   optional, 0 means no wrapping will occur
+     */
+    public function encodeByteStream(Swift_OutputByteStream $os, Swift_InputByteStream $is, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        $leftOver = '';
+        while (false !== $bytes = $os->read(8192)) {
+            $toencode = $leftOver.$bytes;
+            if ($this->_canonical) {
+                $toencode = $this->_canonicalize($toencode);
+            }
+            $wrapped = $this->_safeWordWrap($toencode, $maxLineLength, "\r\n");
+            $lastLinePos = strrpos($wrapped, "\r\n");
+            $leftOver = substr($wrapped, $lastLinePos);
+            $wrapped = substr($wrapped, 0, $lastLinePos);
+
+            $is->write($wrapped);
+        }
+        if (strlen($leftOver)) {
+            $is->write($leftOver);
+        }
+    }
+
+    /**
+     * Get the name of this encoding scheme.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->_name;
+    }
+
+    /**
+     * Not used.
+     */
+    public function charsetChanged($charset)
+    {
+    }
+
+    /**
+     * A safer (but weaker) wordwrap for unicode.
+     *
+     * @param string $string
+     * @param int    $length
+     * @param string $le
+     *
+     * @return string
+     */
+    private function _safeWordwrap($string, $length = 75, $le = "\r\n")
+    {
+        if (0 >= $length) {
+            return $string;
+        }
+
+        $originalLines = explode($le, $string);
+
+        $lines = array();
+        $lineCount = 0;
+
+        foreach ($originalLines as $originalLine) {
+            $lines[] = '';
+            $currentLine = &$lines[$lineCount++];
+
+            //$chunks = preg_split('/(?<=[\ \t,\.!\?\-&\+\/])/', $originalLine);
+            $chunks = preg_split('/(?<=\s)/', $originalLine);
+
+            foreach ($chunks as $chunk) {
+                if (0 != strlen($currentLine)
+                    && strlen($currentLine.$chunk) > $length) {
+                    $lines[] = '';
+                    $currentLine = &$lines[$lineCount++];
+                }
+                $currentLine .= $chunk;
+            }
+        }
+
+        return implode("\r\n", $lines);
+    }
+
+    /**
+     * Canonicalize string input (fix CRLF).
+     *
+     * @param string $string
+     *
+     * @return string
+     */
+    private function _canonicalize($string)
+    {
+        return str_replace(
+            array("\r\n", "\r", "\n"),
+            array("\n", "\n", "\r\n"),
+            $string
+            );
+    }
+}

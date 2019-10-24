@@ -1,29 +1,27 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPnIKy/3xVyZ7Vo9cqwZW5Qs6wixWEJqPWiK8+whFg601XIVQHARDbqZLOkJovS9JsQvcslr5
-sYnoeIW8tDEuSBMPEzzdEbK9SWaVO9/Pg+Sp1aGHdRbrpqvKtrtfw7QAEkjQJIwPS8usw1AP5jcA
-HZ+3e9wiwJkXhosHjFpFaHRwv+lfv6nhbni5oDlT5CKENTLx7e73KGJKBB4xiMj67w4wfcRG4nxQ
-b5CCIrIBGkyzIqnAjJLvg/2cumSSbbhIEc2En2CXlUgnPANOKYeKUhhhiRE2tOQCnurTOobZ6+zh
-7fyWSJFRTTQYbgooAmijqvPB+4LtJDgaXRl6T2QXNBSpzijq8MXBxYmkb1BdrywXKcxam+ESXQwC
-wfRzJmphRgR2hutN/Sisorlpk4IbL3koJnT2OLaHEpyg64te8CLkq3bYnHdW03ciEE0WyEuwwMtt
-Ozc6APKTyhxOLN73SoRriQMZk3M2Aw23T4YK9oFu1znlN7317+9ozSCA601RZ6Xks9N5jpYA9BXb
-mRtOCZZxGopYi9JVai6bcg5vTEE5AZSgPRLVb+LY9anSmGFyNKBIZOOYOEQJACaTQI10g75zgaQn
-lbn88Tbwo9l5KGDyncqgpG6YdHpQ3krJBQqcfx29Kb5Id4zyZe1aJno3LePdNcCi8P0Hdby5PdkQ
-/w0Zi34rrJNgemDob6vneFeo/18EC0barGne+6386AQBsX3/AipErXbLKBxM31MMa16DcIy6sNXq
-Mkv0xTuE7zjVDanp0TVfjQxNN3anJGR5LhekoiI77CH0g1MXtaTApXRCyLulbAPRTsU61yGbV7nP
-G0qNKpqniWv3/yhc6PgU/k57xEVTRmURznOoVRLtX8wP7PfnITodDxRKX/Tjq+plkn1AU+2NZ1NF
-E3Al9Pw3LRHEgywTBetSjdPaHH+1aXCUkwzrcxHZXwVnLfgrr8t71dcKLdBg0Lr9u3a8kiN4RyiG
-I9HI942Oal/oqmbmuR3jM1vYapjpjMZsrmX8nw/8oRqHeHomCUloufg9efZ2OKlndwDlUeBtFyRk
-Uf85VRQfIdPUxqKLB6eDOMfOKMk4QPkVOnufOaUF/dNmQYU88ABpppH5YbeMHnYr19Wo6lEO//5i
-+oTV0fajoVH8Yb6dWBm/uyjyTTi1k5o45jfREJBWLdaD8QZKHch/fZJZyJAR++mz3/6ozqvBKsQ4
-U1/Ko/341/5dCWMrdOJlIjlVflAWTfihLmntgEGw8xxhxg8Fqh4LqnCP+nuFYijR0OPVH9PtSs2t
-Bq3ASBXlQ2//3HHN1pLRpspN59wgEU8dYYZ5LixCVISlByYx1c65Zf9YFLGq92VzVbvl1rdYErf9
-Qieaof50RMwpuVAGo50tHkx9ig6fe5+ck9PLwEv6fZBXeTVA9POev1JVMzzHByGzbsoVj2jSS0rY
-M5oW6f1FayV7tSb80VEclw+kzgJjT/kSDL09nDtrWSBFWMDgeQzjfwDkgpcNMlYvoDSWOW8RQHhJ
-A/UernRZ0kAHNi9aCfctwgMsFMox0iRwOKSzFSto3m5RMKjmwiJrroLifDfdgbkzNAweZWO3ad4u
-7W+we0YR0OvsZWMsCHzs0YdR4QsvxctZoOaFpWvxmDkCE9r7jh4OwRNMjxngE9Ad3Gx3RtQb0IWc
-JFjFmTtiUXz7osUWbMAH7HoHdCdorPZPNvnlXU/pqa1iNO5x1Ez7NznWdL5bDOYCgV21bHVm4juD
-nQCwy0HypCfqIJRRA4+UyW1bSLH+8RPg/8AaJ4YT5CR3xvwWOJjSSq/+of3n+M+RL7px9XNXohgD
-wtR4MpXTZNE0Q2M/fvuasM0Z8GMh9Zs7CzUpAjNqMyoxf84LZTodpdK1UqeB6NNnD/zjkI6KqIMu
-YWhqq0==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * RFC Compliance Exception class.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_RfcComplianceException extends Swift_SwiftException
+{
+    /**
+     * Create a new RfcComplianceException with $message.
+     *
+     * @param string $message
+     */
+    public function __construct($message)
+    {
+        parent::__construct($message);
+    }
+}

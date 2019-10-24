@@ -1,33 +1,34 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-f9PQICsrjQxllSakOe1Q3DVOkAjtnCq=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Interface for all Transfer Encoding schemes.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Mime_ContentEncoder extends Swift_Encoder
+{
+    /**
+     * Encode $in to $out.
+     *
+     * @param Swift_OutputByteStream $os              to read from
+     * @param Swift_InputByteStream  $is              to write to
+     * @param int                    $firstLineOffset
+     * @param int                    $maxLineLength   - 0 indicates the default length for this encoding
+     */
+    public function encodeByteStream(Swift_OutputByteStream $os, Swift_InputByteStream $is, $firstLineOffset = 0, $maxLineLength = 0);
+
+    /**
+     * Get the MIME name of this content encoding scheme.
+     *
+     * @return string
+     */
+    public function getName();
+}

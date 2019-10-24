@@ -1,38 +1,57 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-SfBNOWsosYBlAeRKyiirTamehpqVcry=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * An image, embedded in a multipart message.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Image extends Swift_EmbeddedFile
+{
+    /**
+     * Create a new EmbeddedFile.
+     *
+     * Details may be optionally provided to the constructor.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     */
+    public function __construct($data = null, $filename = null, $contentType = null)
+    {
+        parent::__construct($data, $filename, $contentType);
+    }
+
+    /**
+     * Create a new Image.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     *
+     * @return self
+     */
+    public static function newInstance($data = null, $filename = null, $contentType = null)
+    {
+        return new self($data, $filename, $contentType);
+    }
+
+    /**
+     * Create a new Image from a filesystem path.
+     *
+     * @param string $path
+     *
+     * @return self
+     */
+    public static function fromPath($path)
+    {
+        return self::newInstance()->setFile(new Swift_ByteStream_FileByteStream($path));
+    }
+}

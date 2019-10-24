@@ -1,42 +1,59 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A reporter which "collects" failures for the Reporter plugin.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_Reporters_HitReporter implements Swift_Plugins_Reporter
+{
+    /**
+     * The list of failures.
+     *
+     * @var array
+     */
+    private $_failures = array();
+
+    private $_failures_cache = array();
+
+    /**
+     * Notifies this ReportNotifier that $address failed or succeeded.
+     *
+     * @param Swift_Mime_Message $message
+     * @param string             $address
+     * @param int                $result  from {@link RESULT_PASS, RESULT_FAIL}
+     */
+    public function notify(Swift_Mime_Message $message, $address, $result)
+    {
+        if (self::RESULT_FAIL == $result && !isset($this->_failures_cache[$address])) {
+            $this->_failures[] = $address;
+            $this->_failures_cache[$address] = true;
+        }
+    }
+
+    /**
+     * Get an array of addresses for which delivery failed.
+     *
+     * @return array
+     */
+    public function getFailedRecipients()
+    {
+        return $this->_failures;
+    }
+
+    /**
+     * Clear the buffer (empty the list).
+     */
+    public function clear()
+    {
+        $this->_failures = $this->_failures_cache = array();
+    }
+}

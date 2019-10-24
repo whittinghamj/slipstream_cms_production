@@ -1,59 +1,92 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-VAOrf8Lzj8NbUymsEbaxee91VKG=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles RFC 2231 specified Encoding in Swift Mailer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Encoder_Rfc2231Encoder implements Swift_Encoder
+{
+    /**
+     * A character stream to use when reading a string as characters instead of bytes.
+     *
+     * @var Swift_CharacterStream
+     */
+    private $_charStream;
+
+    /**
+     * Creates a new Rfc2231Encoder using the given character stream instance.
+     *
+     * @param Swift_CharacterStream
+     */
+    public function __construct(Swift_CharacterStream $charStream)
+    {
+        $this->_charStream = $charStream;
+    }
+
+    /**
+     * Takes an unencoded string and produces a string encoded according to
+     * RFC 2231 from it.
+     *
+     * @param string $string
+     * @param int    $firstLineOffset
+     * @param int    $maxLineLength   optional, 0 indicates the default of 75 bytes
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        $lines = array();
+        $lineCount = 0;
+        $lines[] = '';
+        $currentLine = &$lines[$lineCount++];
+
+        if (0 >= $maxLineLength) {
+            $maxLineLength = 75;
+        }
+
+        $this->_charStream->flushContents();
+        $this->_charStream->importString($string);
+
+        $thisLineLength = $maxLineLength - $firstLineOffset;
+
+        while (false !== $char = $this->_charStream->read(4)) {
+            $encodedChar = rawurlencode($char);
+            if (0 != strlen($currentLine)
+                && strlen($currentLine.$encodedChar) > $thisLineLength) {
+                $lines[] = '';
+                $currentLine = &$lines[$lineCount++];
+                $thisLineLength = $maxLineLength;
+            }
+            $currentLine .= $encodedChar;
+        }
+
+        return implode("\r\n", $lines);
+    }
+
+    /**
+     * Updates the charset used.
+     *
+     * @param string $charset
+     */
+    public function charsetChanged($charset)
+    {
+        $this->_charStream->setCharacterSet($charset);
+    }
+
+    /**
+     * Make a deep copy of object.
+     */
+    public function __clone()
+    {
+        $this->_charStream = clone $this->_charStream;
+    }
+}

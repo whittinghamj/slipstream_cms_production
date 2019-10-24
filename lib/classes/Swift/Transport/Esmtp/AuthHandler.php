@@ -1,99 +1,263 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * An ESMTP handler for AUTH support.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Transport_Esmtp_AuthHandler implements Swift_Transport_EsmtpHandler
+{
+    /**
+     * Authenticators available to process the request.
+     *
+     * @var Swift_Transport_Esmtp_Authenticator[]
+     */
+    private $_authenticators = array();
+
+    /**
+     * The username for authentication.
+     *
+     * @var string
+     */
+    private $_username;
+
+    /**
+     * The password for authentication.
+     *
+     * @var string
+     */
+    private $_password;
+
+    /**
+     * The auth mode for authentication.
+     *
+     * @var string
+     */
+    private $_auth_mode;
+
+    /**
+     * The ESMTP AUTH parameters available.
+     *
+     * @var string[]
+     */
+    private $_esmtpParams = array();
+
+    /**
+     * Create a new AuthHandler with $authenticators for support.
+     *
+     * @param Swift_Transport_Esmtp_Authenticator[] $authenticators
+     */
+    public function __construct(array $authenticators)
+    {
+        $this->setAuthenticators($authenticators);
+    }
+
+    /**
+     * Set the Authenticators which can process a login request.
+     *
+     * @param Swift_Transport_Esmtp_Authenticator[] $authenticators
+     */
+    public function setAuthenticators(array $authenticators)
+    {
+        $this->_authenticators = $authenticators;
+    }
+
+    /**
+     * Get the Authenticators which can process a login request.
+     *
+     * @return Swift_Transport_Esmtp_Authenticator[]
+     */
+    public function getAuthenticators()
+    {
+        return $this->_authenticators;
+    }
+
+    /**
+     * Set the username to authenticate with.
+     *
+     * @param string $username
+     */
+    public function setUsername($username)
+    {
+        $this->_username = $username;
+    }
+
+    /**
+     * Get the username to authenticate with.
+     *
+     * @return string
+     */
+    public function getUsername()
+    {
+        return $this->_username;
+    }
+
+    /**
+     * Set the password to authenticate with.
+     *
+     * @param string $password
+     */
+    public function setPassword($password)
+    {
+        $this->_password = $password;
+    }
+
+    /**
+     * Get the password to authenticate with.
+     *
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->_password;
+    }
+
+    /**
+     * Set the auth mode to use to authenticate.
+     *
+     * @param string $mode
+     */
+    public function setAuthMode($mode)
+    {
+        $this->_auth_mode = $mode;
+    }
+
+    /**
+     * Get the auth mode to use to authenticate.
+     *
+     * @return string
+     */
+    public function getAuthMode()
+    {
+        return $this->_auth_mode;
+    }
+
+    /**
+     * Get the name of the ESMTP extension this handles.
+     *
+     * @return bool
+     */
+    public function getHandledKeyword()
+    {
+        return 'AUTH';
+    }
+
+    /**
+     * Set the parameters which the EHLO greeting indicated.
+     *
+     * @param string[] $parameters
+     */
+    public function setKeywordParams(array $parameters)
+    {
+        $this->_esmtpParams = $parameters;
+    }
+
+    /**
+     * Runs immediately after a EHLO has been issued.
+     *
+     * @param Swift_Transport_SmtpAgent $agent to read/write
+     */
+    public function afterEhlo(Swift_Transport_SmtpAgent $agent)
+    {
+        if ($this->_username) {
+            $count = 0;
+            foreach ($this->_getAuthenticatorsForAgent() as $authenticator) {
+                if (in_array(strtolower($authenticator->getAuthKeyword()),
+                    array_map('strtolower', $this->_esmtpParams))) {
+                    ++$count;
+                    if ($authenticator->authenticate($agent, $this->_username, $this->_password)) {
+                        return;
+                    }
+                }
+            }
+            throw new Swift_TransportException(
+                'Failed to authenticate on SMTP server with username "'.
+                $this->_username.'" using '.$count.' possible authenticators'
+                );
+        }
+    }
+
+    /**
+     * Not used.
+     */
+    public function getMailParams()
+    {
+        return array();
+    }
+
+    /**
+     * Not used.
+     */
+    public function getRcptParams()
+    {
+        return array();
+    }
+
+    /**
+     * Not used.
+     */
+    public function onCommand(Swift_Transport_SmtpAgent $agent, $command, $codes = array(), &$failedRecipients = null, &$stop = false)
+    {
+    }
+
+    /**
+     * Returns +1, -1 or 0 according to the rules for usort().
+     *
+     * This method is called to ensure extensions can be execute in an appropriate order.
+     *
+     * @param string $esmtpKeyword to compare with
+     *
+     * @return int
+     */
+    public function getPriorityOver($esmtpKeyword)
+    {
+        return 0;
+    }
+
+    /**
+     * Returns an array of method names which are exposed to the Esmtp class.
+     *
+     * @return string[]
+     */
+    public function exposeMixinMethods()
+    {
+        return array('setUsername', 'getUsername', 'setPassword', 'getPassword', 'setAuthMode', 'getAuthMode');
+    }
+
+    /**
+     * Not used.
+     */
+    public function resetState()
+    {
+    }
+
+    /**
+     * Returns the authenticator list for the given agent.
+     *
+     * @param Swift_Transport_SmtpAgent $agent
+     *
+     * @return array
+     */
+    protected function _getAuthenticatorsForAgent()
+    {
+        if (!$mode = strtolower($this->_auth_mode)) {
+            return $this->_authenticators;
+        }
+
+        foreach ($this->_authenticators as $authenticator) {
+            if (strtolower($authenticator->getAuthKeyword()) == $mode) {
+                return array($authenticator);
+            }
+        }
+
+        throw new Swift_TransportException('Auth mode '.$mode.' is invalid');
+    }
+}

@@ -1,83 +1,156 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-JLMUNCJSEvNsgaTxG6HKUD2KrQBQ2Sxq
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * The EventDispatcher which handles the event dispatching layer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Events_SimpleEventDispatcher implements Swift_Events_EventDispatcher
+{
+    /** A map of event types to their associated listener types */
+    private $_eventMap = array();
+
+    /** Event listeners bound to this dispatcher */
+    private $_listeners = array();
+
+    /** Listeners queued to have an Event bubbled up the stack to them */
+    private $_bubbleQueue = array();
+
+    /**
+     * Create a new EventDispatcher.
+     */
+    public function __construct()
+    {
+        $this->_eventMap = array(
+            'Swift_Events_CommandEvent' => 'Swift_Events_CommandListener',
+            'Swift_Events_ResponseEvent' => 'Swift_Events_ResponseListener',
+            'Swift_Events_SendEvent' => 'Swift_Events_SendListener',
+            'Swift_Events_TransportChangeEvent' => 'Swift_Events_TransportChangeListener',
+            'Swift_Events_TransportExceptionEvent' => 'Swift_Events_TransportExceptionListener',
+            );
+    }
+
+    /**
+     * Create a new SendEvent for $source and $message.
+     *
+     * @param Swift_Transport $source
+     * @param Swift_Mime_Message
+     *
+     * @return Swift_Events_SendEvent
+     */
+    public function createSendEvent(Swift_Transport $source, Swift_Mime_Message $message)
+    {
+        return new Swift_Events_SendEvent($source, $message);
+    }
+
+    /**
+     * Create a new CommandEvent for $source and $command.
+     *
+     * @param Swift_Transport $source
+     * @param string          $command      That will be executed
+     * @param array           $successCodes That are needed
+     *
+     * @return Swift_Events_CommandEvent
+     */
+    public function createCommandEvent(Swift_Transport $source, $command, $successCodes = array())
+    {
+        return new Swift_Events_CommandEvent($source, $command, $successCodes);
+    }
+
+    /**
+     * Create a new ResponseEvent for $source and $response.
+     *
+     * @param Swift_Transport $source
+     * @param string          $response
+     * @param bool            $valid    If the response is valid
+     *
+     * @return Swift_Events_ResponseEvent
+     */
+    public function createResponseEvent(Swift_Transport $source, $response, $valid)
+    {
+        return new Swift_Events_ResponseEvent($source, $response, $valid);
+    }
+
+    /**
+     * Create a new TransportChangeEvent for $source.
+     *
+     * @param Swift_Transport $source
+     *
+     * @return Swift_Events_TransportChangeEvent
+     */
+    public function createTransportChangeEvent(Swift_Transport $source)
+    {
+        return new Swift_Events_TransportChangeEvent($source);
+    }
+
+    /**
+     * Create a new TransportExceptionEvent for $source.
+     *
+     * @param Swift_Transport          $source
+     * @param Swift_TransportException $ex
+     *
+     * @return Swift_Events_TransportExceptionEvent
+     */
+    public function createTransportExceptionEvent(Swift_Transport $source, Swift_TransportException $ex)
+    {
+        return new Swift_Events_TransportExceptionEvent($source, $ex);
+    }
+
+    /**
+     * Bind an event listener to this dispatcher.
+     *
+     * @param Swift_Events_EventListener $listener
+     */
+    public function bindEventListener(Swift_Events_EventListener $listener)
+    {
+        foreach ($this->_listeners as $l) {
+            // Already loaded
+            if ($l === $listener) {
+                return;
+            }
+        }
+        $this->_listeners[] = $listener;
+    }
+
+    /**
+     * Dispatch the given Event to all suitable listeners.
+     *
+     * @param Swift_Events_EventObject $evt
+     * @param string                   $target method
+     */
+    public function dispatchEvent(Swift_Events_EventObject $evt, $target)
+    {
+        $this->_prepareBubbleQueue($evt);
+        $this->_bubble($evt, $target);
+    }
+
+    /** Queue listeners on a stack ready for $evt to be bubbled up it */
+    private function _prepareBubbleQueue(Swift_Events_EventObject $evt)
+    {
+        $this->_bubbleQueue = array();
+        $evtClass = get_class($evt);
+        foreach ($this->_listeners as $listener) {
+            if (array_key_exists($evtClass, $this->_eventMap)
+                && ($listener instanceof $this->_eventMap[$evtClass])) {
+                $this->_bubbleQueue[] = $listener;
+            }
+        }
+    }
+
+    /** Bubble $evt up the stack calling $target() on each listener */
+    private function _bubble(Swift_Events_EventObject $evt, $target)
+    {
+        if (!$evt->bubbleCancelled() && $listener = array_shift($this->_bubbleQueue)) {
+            $listener->$target($evt);
+            $this->_bubble($evt, $target);
+        }
+    }
+}

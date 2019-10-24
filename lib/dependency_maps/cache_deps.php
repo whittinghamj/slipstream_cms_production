@@ -1,69 +1,23 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-K47BSkwUAZ8BGqZFWKWSgRg6v5ox/N5vFW==
+<?php
+
+Swift_DependencyContainer::getInstance()
+    ->register('cache')
+    ->asAliasOf('cache.array')
+
+    ->register('tempdir')
+    ->asValue('/tmp')
+
+    ->register('cache.null')
+    ->asSharedInstanceOf('Swift_KeyCache_NullKeyCache')
+
+    ->register('cache.array')
+    ->asSharedInstanceOf('Swift_KeyCache_ArrayKeyCache')
+    ->withDependencies(array('cache.inputstream'))
+
+    ->register('cache.disk')
+    ->asSharedInstanceOf('Swift_KeyCache_DiskKeyCache')
+    ->withDependencies(array('cache.inputstream', 'tempdir'))
+
+    ->register('cache.inputstream')
+    ->asNewInstanceOf('Swift_KeyCache_SimpleKeyCacheInputStream')
+;

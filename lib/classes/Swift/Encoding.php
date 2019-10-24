@@ -1,31 +1,62 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Provides quick access to each encoding type.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Encoding
+{
+    /**
+     * Get the Encoder that provides 7-bit encoding.
+     *
+     * @return Swift_Mime_ContentEncoder
+     */
+    public static function get7BitEncoding()
+    {
+        return self::_lookup('mime.7bitcontentencoder');
+    }
+
+    /**
+     * Get the Encoder that provides 8-bit encoding.
+     *
+     * @return Swift_Mime_ContentEncoder
+     */
+    public static function get8BitEncoding()
+    {
+        return self::_lookup('mime.8bitcontentencoder');
+    }
+
+    /**
+     * Get the Encoder that provides Quoted-Printable (QP) encoding.
+     *
+     * @return Swift_Mime_ContentEncoder
+     */
+    public static function getQpEncoding()
+    {
+        return self::_lookup('mime.qpcontentencoder');
+    }
+
+    /**
+     * Get the Encoder that provides Base64 encoding.
+     *
+     * @return Swift_Mime_ContentEncoder
+     */
+    public static function getBase64Encoding()
+    {
+        return self::_lookup('mime.base64contentencoder');
+    }
+
+    private static function _lookup($key)
+    {
+        return Swift_DependencyContainer::getInstance()->lookup($key);
+    }
+}

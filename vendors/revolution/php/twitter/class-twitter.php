@@ -1,56 +1,122 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+<?php 
+include 'RestApi.php';
+/**
+ * Twitter
+ *
+ * with help of the API this class delivers all kind of tweeted images from twitter
+ *
+ * @package    socialstreams
+ * @subpackage socialstreams/twitter
+ * @author     ThemePunch <info@themepunch.com>
+ */
+
+class TP_twitter {
+
+  /**
+   * Consumer Key
+   *
+   * @since    1.0.0
+   * @access   private
+   * @var      string    $consumer_key    Consumer Key
+   */
+  private $consumer_key;
+
+  /**
+   * Consumer Secret
+   *
+   * @since    1.0.0
+   * @access   private
+   * @var      string    $consumer_secret    Consumer Secret
+   */
+  private $consumer_secret;
+
+  /**
+   * Access Token
+   *
+   * @since    1.0.0
+   * @access   private
+   * @var      string    $access_token    Access Token
+   */
+  private $access_token;
+
+  /**
+   * Access Token Secret
+   *
+   * @since    1.0.0
+   * @access   private
+   * @var      string    $access_token_secret    Access Token Secret
+   */
+  private $access_token_secret;
+
+  /**
+   * Initialize the class and set its properties.
+   *
+   * @since    1.0.0
+   * @param      string    $api_key flickr API key.
+   */
+  public function __construct($consumer_key,$consumer_secret,$access_token,$access_token_secret) {
+    $this->consumer_key         =   $consumer_key;
+    $this->consumer_secret      =   $consumer_secret;
+    $this->access_token         =   $access_token;
+    $this->access_token_secret  =   $access_token_secret;
+  }
+
+  /**
+   * Get Tweets
+   *
+   * @since    1.0.0
+   * @param    string    $twitter_account   Twitter account without trailing @ char
+   */
+  public function get_public_photos($twitter_account){
+    $twitter = new \TwitterPhp\RestApi($this->consumer_key,$this->consumer_secret,$this->access_token,$this->access_token_secret);
+    /*
+     * Connect as application
+     * https://dev.twitter.com/docs/auth/application-only-auth
+     */
+    $connection = $twitter->connectAsApplication();
+
+    /*
+     * Collection of the most recent Tweets posted by the user indicated by the screen_name, without replies
+     * https://dev.twitter.com/docs/api/1.1/get/statuses/user_timeline
+     */
+    $tweets = $connection->get('/statuses/user_timeline',array('screen_name' => $twitter_account,  'entities' => 1, 'trim_user' => 0 , 'exclude_replies' => 'true'));
+    //var_dump($tweets);
+    return $tweets;
+  }
+
+
+  /**
+   * Find Key in array and return value (multidim array possible)
+   *
+   * @since    1.0.0
+   * @param    string    $key   Needle
+   * @param    array     $form  Haystack
+   */
+  public static function array_find_element_by_key($key, $form) {
+      if (array_key_exists($key, $form)) {
+        $ret =& $form[$key];
+        return $ret;
+      }
+      foreach ($form as $k => $v) {
+        if (is_array($v)) {
+          $ret =TP_twitter::array_find_element_by_key($key, $form[$k]);
+          if ($ret) {
+            return $ret;
+          }
+        }
+      }
+      return FALSE;
+  }
+
+  /**
+   * Prepare output array $stream
+   *
+   * @since    1.0.0
+   * @param    string    $tweets  Twitter Output Data
+   */
+  public static function makeClickableLinks($s) {
+    return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $s);
+  }
+  
+}
 ?>
-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
-2z27YwvQzTV/bbt6+Zt1TmNFdOJz

@@ -1,48 +1,69 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-SfMVZqBzNwmndNxOv1SSM7DRQeiz5rgxRYlfL0==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Replaces the sender of a message.
+ *
+ * @author Arjen Brouwer
+ */
+class Swift_Plugins_ImpersonatePlugin implements Swift_Events_SendListener
+{
+    /**
+     * The sender to impersonate.
+     *
+     * @var string
+     */
+    private $_sender;
+
+    /**
+     * Create a new ImpersonatePlugin to impersonate $sender.
+     *
+     * @param string $sender address
+     */
+    public function __construct($sender)
+    {
+        $this->_sender = $sender;
+    }
+
+    /**
+     * Invoked immediately before the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
+    {
+        $message = $evt->getMessage();
+        $headers = $message->getHeaders();
+
+        // save current recipients
+        $headers->addPathHeader('X-Swift-Return-Path', $message->getReturnPath());
+
+        // replace them with the one to send to
+        $message->setReturnPath($this->_sender);
+    }
+
+    /**
+     * Invoked immediately after the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function sendPerformed(Swift_Events_SendEvent $evt)
+    {
+        $message = $evt->getMessage();
+
+        // restore original headers
+        $headers = $message->getHeaders();
+
+        if ($headers->has('X-Swift-Return-Path')) {
+            $message->setReturnPath($headers->get('X-Swift-Return-Path')->getAddress());
+            $headers->removeAll('X-Swift-Return-Path');
+        }
+    }
+}

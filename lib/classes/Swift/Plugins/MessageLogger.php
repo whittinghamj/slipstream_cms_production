@@ -1,46 +1,74 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-0L6zJG69KW==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2011 Fabien Potencier
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Stores all sent emails for further usage.
+ *
+ * @author Fabien Potencier
+ */
+class Swift_Plugins_MessageLogger implements Swift_Events_SendListener
+{
+    /**
+     * @var Swift_Mime_Message[]
+     */
+    private $messages;
+
+    public function __construct()
+    {
+        $this->messages = array();
+    }
+
+    /**
+     * Get the message list.
+     *
+     * @return Swift_Mime_Message[]
+     */
+    public function getMessages()
+    {
+        return $this->messages;
+    }
+
+    /**
+     * Get the message count.
+     *
+     * @return int count
+     */
+    public function countMessages()
+    {
+        return count($this->messages);
+    }
+
+    /**
+     * Empty the message list.
+     */
+    public function clear()
+    {
+        $this->messages = array();
+    }
+
+    /**
+     * Invoked immediately before the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
+    {
+        $this->messages[] = clone $evt->getMessage();
+    }
+
+    /**
+     * Invoked immediately after the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function sendPerformed(Swift_Events_SendEvent $evt)
+    {
+    }
+}

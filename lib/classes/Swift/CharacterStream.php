@@ -1,35 +1,89 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-jgZc0LvbBP8/IS2txhoKjv6W
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * An abstract means of reading and writing data in terms of characters as opposed
+ * to bytes.
+ *
+ * Classes implementing this interface may use a subsystem which requires less
+ * memory than working with large strings of data.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_CharacterStream
+{
+    /**
+     * Set the character set used in this CharacterStream.
+     *
+     * @param string $charset
+     */
+    public function setCharacterSet($charset);
+
+    /**
+     * Set the CharacterReaderFactory for multi charset support.
+     *
+     * @param Swift_CharacterReaderFactory $factory
+     */
+    public function setCharacterReaderFactory(Swift_CharacterReaderFactory $factory);
+
+    /**
+     * Overwrite this character stream using the byte sequence in the byte stream.
+     *
+     * @param Swift_OutputByteStream $os output stream to read from
+     */
+    public function importByteStream(Swift_OutputByteStream $os);
+
+    /**
+     * Import a string a bytes into this CharacterStream, overwriting any existing
+     * data in the stream.
+     *
+     * @param string $string
+     */
+    public function importString($string);
+
+    /**
+     * Read $length characters from the stream and move the internal pointer
+     * $length further into the stream.
+     *
+     * @param int $length
+     *
+     * @return string
+     */
+    public function read($length);
+
+    /**
+     * Read $length characters from the stream and return a 1-dimensional array
+     * containing there octet values.
+     *
+     * @param int $length
+     *
+     * @return int[]
+     */
+    public function readBytes($length);
+
+    /**
+     * Write $chars to the end of the stream.
+     *
+     * @param string $chars
+     */
+    public function write($chars);
+
+    /**
+     * Move the internal pointer to $charOffset in the stream.
+     *
+     * @param int $charOffset
+     */
+    public function setPointer($charOffset);
+
+    /**
+     * Empty the stream and reset the internal pointer.
+     */
+    public function flushContents();
+}

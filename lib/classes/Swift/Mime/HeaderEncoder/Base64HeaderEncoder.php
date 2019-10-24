@@ -1,48 +1,55 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPuhGy+QTFiZ9fM9cnIyPyZh22MYbsPMJU0P2ZOoum/cmYA9jVh+ua4jSmOcpWUnfindgHQhd
-3mwA/z58k/kV/4WMBp0Dd88VFZqbcxTbgcRFrN/Wj9R+rCHE1GcH6LFG9i3cGa5FujX2JR0pliDm
-co0IbGE3LFJAS43OIkzoVbk6xlwYPNpKensfKrvjWWRikEZgLpBKxR78l68dFMgUiZkQC3VZHdq9
-VzDlK+zFmYZzuYcxbkNCn4kLtkNI2KRPC7XWM1gMBz6Pm1of8h92VUtXoFrJk01azy4Algh7LDee
-1d9FNSK6r/E1HPG5usPih73Nf0/KbfaBmQepv3sNOf9vs4wLlMy6SJYlRTwPK2+O/bkVrv5MZywG
-Cm2MzwOA4KF7ehpzfKdtz//Wdf1+LcncxaVyAnkCNIbKaTXahWatC3d/KpkymfOKylAHc1QijF3P
-XYcL7VA+s5LnmtCczR6bThiljFpN251DzxPw6B/+RLCR8bVESEM6HnZatkavosezlgZYl1gzNN+3
-RmH0arXWCcLEyDQjg8sy7l3VCxK5s6HxrWbpeawlwBEWsoexwAwD+rmlkdE+xXSHvmA1CWz2B0dO
-WAqEi7Cp8aQ+LVCEp2Mmqf9QGQxzfJOnxK/vquVmhXHU1vrgtUzzzz+Z1BvKkJYfVZTndO5zLLJr
-fL6HbxCSOusvyJSH3LDjp4NZd0jBWw0aB7JOiXS9DJDHj2OMQU7iclq9q8L2qZbxZkZt4pvXuUJh
-IsaVF+BOw9IFQPuE160W+WuffJ+USNsPsjsFp7bDH7krnRSRBZ4T1y8ic3HBUEhPvAxEs0n6GRBG
-26NQSX9SMzZsUe5y3dvBjOxw2t3yZaj0bDsLJi+FJl3V+/w/lJf7ZJgKggKVjMybFJGW32ZyhPo+
-t2pU872dS7Ny0cY3eWKiCO8tv/TTGQ6FuEwLpXbVH/crf8Hm99g5P0l+SmRo4H0zEBh76VXo7iYb
-qUac2WAZoPUiFzzfB5B7LGyKq+y4D1uSn32Q+HjzBySR9RlSDuVvvo66lu3/CwqxlOEYYPH1mIhR
-e/mLslY87BqHLkIL1G6jBlu3ytvQRcgUkjBDTob9/0H52SZ9WtAt8zg8FWxOJXt6N/Fhe3tiUL4H
-HrjYYn49ZVd31rySbWqt5K/x9LRN4cnPVint0cvTou9EulGOOukc5Gz5DcOU/KhVyEV0KDGaITne
-sr5XIF5O1XrvWfdQ4txbyr2BA4S397dde05hQmVbPCUI+WE4bflalOKo3OC/3ft+AAeZVYTdNb2m
-KVAC6ejHExTwW9vZlt1CUXTddzc087yS6JgsBRhBL59dJRxsCbSQsvwQhh6qFi/A56jR328A15/F
-lBdyk20zkNwfYK9iV0ddU9utAd68rS3A5NtRRPbgbMw8ECg4bKNYlg67UQCreNp8VmHYOZ2/gCML
-s3K6h8s99qGN5Y4LuRO3rj8RwlyqeeIsASfaTlt1/7EdWLJ4ekfW46Y1VFFJzy8LA2qb/gjP6QEE
-SzHHAHoNCBwnLa6v9Etc6X92L1sOiSCBFZtT1U3loBgF4sH4961HZFu7NlDO8DhoeCnm0guKIpK7
-UaZwJkmL9QqGjvKARB8WMTwWPs4LfrbHWgXv2LWhMSOBa6cPtvGhPcNhYHzC/cTWIpfgnHeqG7AF
-4mZOEIvmazXwqmMqc41XGCiODJriSNVci5X8+Dy+Q7N4o98psMJyngiC8Mbr3y4+KcveAc/A0VU8
-hzsTbpTceNR28/1OPlaESD8BGJbuxD/i5xb35Q1N6niH+VcWoRsjAi1uoAY+eOVLvcpy22q6TpuS
-2QWeCbmb+7Hp6JsgyhTbsfv7OHasmLaB3MCSNfRMgOuShuce52q7PTama9rrP9nQh+uM5lyjc1To
-zGl8R4sX3mv9UYsMWQLG95lXnXp/08rQRvtdGZ19r9IkNg5q/+XB1i2spI0Jw+rlybm6sT2tPdma
-eIjzii32Wl9G5Fx7XI6siKSM7PbwfBRs63O7h+410BHJ1VJVHMRXb87WCTREyggioS0R0LC9BMUc
-xP/4caD9izna6zvUuWO5QmwMDEAbmLlbv/aK5RbIejl/PnO10GtJ8wjqOKag2fJzJpve1wFzrvf2
-/k2Nn3C2U6/mIcIFgeBKUfzPEyiRNK36nCWlr8gUOFVgrW3Gi+R11rIsAXWXBSd1m0cUKmaBca6d
-CkMQKr4TWgSw9eIxnxfmwxB4X9PxCaeJ17gP80oJ8cAUNUMhHOvq54IBh5ZalDz4ee/2mZ8dURw0
-2fd82muqpHrMyZu/NmSHuBwrn1b5wcpxySYvuI+fBYGN0h2cFu8vn7Hp9NSclFk7PgoBGJq7LbO3
-Zb+gDfGtfCkm45ynjVGTvjusKWu+2dA0OK2jXz7JIKac2bDUi/wk3eC4kWv62zvyCT4B2+lcX7Na
-/CrXLvjPsrNwEeP/SQsBLkVrT+c24IyLANfyUfDnp/Wd0W8ApdDQgOAyitkCZyfRHTT9PUqpRNMj
-473k2nlr5Y9rUxbsJAnNGCX3rSb86Rv89yIkn3AYXRusfWhx+eCRZf1kvHMOg5rNRctvbaD2mmA6
-3oWrVmR/hAY4pEh7YQpi6dFjpaluHVTyphSAAdTRedr+EMuRM3WgUkwz9xh3tLuNmLAVnRJXpkjk
-0LnCSza7T8x43LFUXg/+2smOGTIGO+/0DnrMKmDuNtYjkuABSzG0AVyc8QG2TdS9S7NtIM4ZU+Kw
-hopZwOKOkHHryB63BFPmI925GjHoXgXOMg0W4KA4CLyk4cjAX+kjxyEP9+H1YyDpwUxmLdQKDTGC
-A29Nw0qf4GWWu5xamTUjNsc1QiEJXKblcn3zjRkus553mrr530sbuouEOb+m5dmpMb/R87i5+qLD
-2Lhn4gLeJVPo6yPwc96BkkmYOk1bCI3NVHBcR9SNueyB0lyXepyY3ohFoeIs9nz/YEduDHMyU+ow
-kuyiEZuw1uj0eInc1AKEZG75TsCIuAGFkjdAjVtrIIsm40vTAQdK9md688XALSubPpRThUP7OEEK
-65sOwOx7EAY0O+uTb3ciBhifnG3Lh+YzNmc8V3VxTQYzWiTyIi5gWIJA6NhzIVvifJgLNhzLVYON
-spIAb5IFL7PG2folCHrnDqJ6FoKkrduV1Demj/FPnxWZRp85oKcHuZKgaW3atbYseqYiepL8HTSk
-IW67tB2BEyD2EVISUVKr6snCyKFBoCkwS/nkkDH1pwsHUBxiFuNAptX+eKYCXjusTXViUAnpvk2R
-J6Gby1LQCXm2cRpI4ww9BxYDn13+wj6LB+zVuE9GSOLI4lDCavPaEqPfwULQJaG+cGmOtCbkqNKs
-gBi49yu=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles Base64 (B) Header Encoding in Swift Mailer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_HeaderEncoder_Base64HeaderEncoder extends Swift_Encoder_Base64Encoder implements Swift_Mime_HeaderEncoder
+{
+    /**
+     * Get the name of this encoding scheme.
+     * Returns the string 'B'.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'B';
+    }
+
+    /**
+     * Takes an unencoded string and produces a Base64 encoded string from it.
+     *
+     * If the charset is iso-2022-jp, it uses mb_encode_mimeheader instead of
+     * default encodeString, otherwise pass to the parent method.
+     *
+     * @param string $string          string to encode
+     * @param int    $firstLineOffset
+     * @param int    $maxLineLength   optional, 0 indicates the default of 76 bytes
+     * @param string $charset
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0, $charset = 'utf-8')
+    {
+        if (strtolower($charset) === 'iso-2022-jp') {
+            $old = mb_internal_encoding();
+            mb_internal_encoding('utf-8');
+            $newstring = mb_encode_mimeheader($string, $charset, $this->getName(), "\r\n");
+            mb_internal_encoding($old);
+
+            return $newstring;
+        }
+
+        return parent::encodeString($string, $firstLineOffset, $maxLineLength);
+    }
+}

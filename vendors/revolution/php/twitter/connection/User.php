@@ -1,85 +1,92 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-wPCu7Bl0Rvt2wb+0YkXRfkX2lA4mkPa=
+<?php
+namespace TwitterPhp\Connection;
+
+class User extends Base
+{
+    /**
+     * @var string
+     */
+    private $_consumerKey;
+
+    /**
+     * @var string
+     */
+    private $_consumerSecret;
+
+    /**
+     * @var string
+     */
+    private $_accessToken;
+
+    /**
+     * @var string
+     */
+    private $_accessTokenSecret;
+
+    /**
+     * @param string $consumerKey
+     * @param string $consumerSecret
+     * @param string $accessToken
+     * @param string $accessTokenSecret
+     */
+    public function __construct($consumerKey,$consumerSecret,$accessToken,$accessTokenSecret)
+    {
+        $this->_consumerKey = $consumerKey;
+        $this->_consumerSecret = $consumerSecret;
+        $this->_accessToken = $accessToken;
+        $this->_accessTokenSecret = $accessTokenSecret;
+    }
+
+    /**
+     * @param string $url
+     * @param array $parameters
+     * @param $method
+     * @return array
+     */
+    protected function _buildHeaders($url,array $parameters = null,$method)
+    {
+        $oauthHeaders = array(
+            'oauth_version' => '1.0',
+            'oauth_consumer_key' => $this->_consumerKey,
+            'oauth_nonce' => time(),
+            'oauth_signature_method' => 'HMAC-SHA1',
+            'oauth_token' => $this->_accessToken,
+            'oauth_timestamp' => time()
+        );
+
+        $data = $oauthHeaders;
+        if ($method == self::METHOD_GET) {
+            $data = array_merge($oauthHeaders,$parameters);
+        }
+        $oauthHeaders['oauth_signature'] = $this->_buildOauthSignature($url,$data,$method);
+        ksort($oauthHeaders);
+        $oauthHeader = array();
+
+        foreach($oauthHeaders as $key => $value) {
+            $oauthHeader[] = $key . '="' . rawurlencode($value) . '"';
+        }
+
+        $headers[] = 'Authorization: OAuth ' . implode(', ', $oauthHeader);
+        return $headers;
+    }
+
+    /**
+     * @param $url
+     * @param array $params
+     * @param $method
+     * @return string
+     */
+    private function _buildOauthSignature($url,array $params,$method)
+    {
+        ksort($params);
+        $sortedParams = array();
+
+        foreach($params as $key=>$value) {
+            $sortedParams[] = $key . '=' . $value;
+        }
+
+        $signatureBaseString =  $method . "&" . rawurlencode($url) . '&' . rawurlencode(implode('&', $sortedParams));
+        $compositeKey = rawurlencode($this->_consumerSecret) . '&' . rawurlencode($this->_accessTokenSecret);
+        return base64_encode(hash_hmac('sha1', $signatureBaseString, $compositeKey, true));
+    }
+}

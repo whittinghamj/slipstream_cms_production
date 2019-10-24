@@ -1,73 +1,81 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cP/GObm5XpMisWT028co+mpEzsjp7n009PkkP1aqOJiLhFXtLiHX78sfmAElI6xx6xSIdRWCU
-Is+ccnRZ4tmbqsFRggrkO7CXIdJjI7miUqMkoPlKLswHLVsldw/kCOAjeXUkSfTfzecGid7qAZbB
-8pPfVp9/u/37riA2zLFI9G4laDs8BDnje7p1HO7cSgU+L8NdOchaWSmLBKQK00o/1MvNJa1dOwSO
-EBJHlPb2pWCLCgulXwjvS1iId3sbnGiw8rEqzPCIfmOrP6RI14/QAdi2oF49J0jxd34GA9dDz406
-C13eY0O6J74XMr3ScQ7Tvi2arNtFmiupKZiiAVawshb7RVj/WzQ1jgRqSpikr6Vs81aDaQCT8+wE
-dObrSgCqJEziC0ZWGXN0GHpv4nAMk8NQQbMI1PBUnO/k4REVJveSxNelRh5Zcv49pTvJIyNasTc6
-APKTyhxOLN73SoRriQNzgMtSQNxNKeM8JH9OoSLlN6XUHRcWMy5KM6IuJwAWt2niOC3TaobNm3zB
-SDHiJTIi/ume1p7PWcwdTMD56TAKmPp241KutKo480fzIm86EVTjH4o7UzeShQEL4dR2lGsz+6FT
-DDm4Te5ixwnFVBRnei+5MLQ+ftXsMvm+VvRvYgCgud+wNsYWZ8lNXsHuju9YkThv8arsYI6LMG63
-PaExfYhIhHs+i5uZWmwyhIGCeiGHjohkng4SFIS3vILBxszhYNLdrL46JdOWj6dxhIlsRyY269HV
-OQyooLkr1IbInSl4S1rO5rFXz83VFcP5ltMiCIGAAQVAOGd9+udvqykZezqHtDnkh9b3w5DoYzpJ
-M9uYu6XJ/uHN156QFfsbVVZ690e+cv9JqAq/+OEaWcHBlxXc9uKm0T65zlu1H2X9ZghadI+CEci4
-m/0/eQk3bPpqkbfVhaQVBcscvq0qYojxqlXq/7zMKfL5uElnOCPEBJHUKIKSkHo6B7sVTthdLW1Z
-8uwCRkcryk30AgyKetGZLzaF2KP3XuNPRcT1TTrotEBVVwv76CEIW+NI9hbnnzIHqbcoSWOSN+um
-wEwPIjJ1JIuCzGFYIsnCVhCqnkwUkVjYEx4F+mfi80KoeNgKaSUINpuXYKLotKZ6G7duNAV2vvqO
-E9P8jyNGW8TE/0cDspK4QedC4UiH/PelBmWNqzK/FgAP3NXJOwDWPhdCwS79CHkQ039u3/I5a7dB
-vHNzUMoxnuTFHTUb/UaWD+rN/vo64uDgHp238q+CaLAEe/rrLIX5gc3MuqJUHtP3dwz4A2CcghRd
-WmFTic2OM0sh2oa/TZq4SY/O//J65JXmTyLndlgGt9ueG77PVUmbIR6r3VJuVmDlR4jYfaaI1W/C
-dAu2Fw8S9+7OsEbGjJ4XrsvCcFVAjQGw7rSNSsfICNepQ4elv2Pv3MSfp5OMQdRPNSM76eIOnry+
-KwYdSFYNdSfGW5VEBUsOw+u36yWYTXzLdafyjzYPp3KG5yLiT9kZfutZzh19NYfMpdKkY1wqYihC
-SRdk+wuLSrF3OXqecaPTcwqWcbnbUl//voL1JP0CR4bzc6Zc+DzGde8oJk7XvUByRdrP3orq1MAU
-Il78/1WfCP/BRt5lQYkuGPBZZHvs6GF2HT1O2H/MradgSLFWOsvvRj8cbRoRfY0+6ULgkUP3oqUM
-B32TqAvtyakh4LuRxLMoHB6fGqyTs3TBHJ4TYUCnS6jeser06tLdMATE2KtfsAg3sMw+bu2Ixwxc
-ypM0NCSTUTDiRjT3wOKbj3UBicFumDZJ1IvY5yTMODdDZooL5quf4vKETqCKhJ2zHXTKuZMoa+ke
-Z11TMHCe6lf4S9JY7MmIDQuJYwdnXkR4ZIQ9M0sLs5nvQwA/rT1b/2vjv/v5aPOYpEb3BeSmyfVN
-aBusPZEsSV4YSlbubi0uXCBzaAt97s30A06Gq+YfXfKk7y+C70cShW3BZ0XFjix9207Jql0bwxFf
-KCBVNDZmJDqztZ97EtSQpPKfmm8s3wJpHJLwBzS9pYbIXcsv4nXjygp5Hde2hfDzjjJdQKlSjcas
-9cITO3ryNSLtwYmU1y+Mq8QKA5812j1z1Q4CPmILo3UMwidRFPfVXh+TnfJTzhBihfxZJKtk+zOG
-wgchbb48id/5X+YKi8KJPnGcknKorBJclQwjIKwhO7PIOLx8VEv6CK56Erl90esKOXSBPilKVNKU
-9ql7wLFfEyLJwVykPJ4AXrt/WaGKQVKhsWaqLptkwvA49mFgN1IrNn34+yEfNAxqsz07K41JquXY
-NB+ZpbapBg41krX/9IVRDp0jZG0IMtolXDN0RI5S/GO08l7xzc/wnKQ8lhnrxsPlrWzw0JfoAf8l
-OeiQFdbfTufaYw6NGbq6u62w+fcEktUUMdFcJC83+ijuCuJpKRVIiBaFGdR3t/uwJsnWf3Ro7aUD
-IqxPUW1nEVqag9RD5gmldj5yLoak5xf6TXsv20F8pVbVZB4VwLK3qX3y5yTWNv8OI9Fs2kHjTL8X
-9NcTAJJw1oGhez1EQ35dXpKWxg92vRPe1GWh3KdUh5BrY1eAtpauGInTbCEu4F+uJGuGQqaQe+u9
-4PPJQUYdTecAUxN8p6QdgizdvEpUUqsPY9a4gV6PA4eG9ss8fkVIY+0PjhBcGxKvYofMLAZKyiCv
-bwqtog+AAda7Ux7rUCyuVgSVVYX8XBnJm9X2o/bT61kXvVeDLQzCgkq68XERhTbSLANrN3584xSu
-Mg8OSsq2ofkaQ4qEpx72zwK/jiSdozLlnfwzyrs8TFpoVyygBWbsaobmaNDk0ZRBgl10gTdOIm65
-E3LekWQKCKe+8W1iUv3fgI7NPcTdrKg6UI5dAaj2i7N0uZTDxf0SJIli7O9/TynZtCmxSDHBRtDo
-f6eG0KikBWl6P8SUtlvBQUiJfrilzr7JbMFBH/ptWVtIVP8Ueflp3oEjjTBQtS7BrbTHNFANPrtE
-bg5IR4e9qQpjStyE4biG6WrLRFaLzFl4Aaq9/h9+r3y/w+6/mIiATh+1OmN4vxbGc5Ddmoj+Sx0x
-3P96UHlPoQGIrYbjbhNP72VzsHx1qgxq6Iz+ywhZK4H5dia4kGvcmVmfY0ckTKxISjA8CtsSt2k8
-9/IAXDaE9zrtUKSgcnRNayT7LzIIpCrO58otbPbeE4GGWGtmTV0eCKwVjC30EKsDGGKBAayEPwPE
-/ehs3QRCVCpFuQDVT03w46LaaAmfLTGiBevN3be3buiNVhiwEMFfe0vmhknhz2H5A3F/tRm1SSOc
-GXMth2S981/vLMGrJAUyXPeBj3cLHXMw6PhXHhOXKjEstmJQ5ALdSJB4LIFLBgKL9HMAFyUK/6Ue
-4lam07OmCI0R3tEE9+9xEk5BN4mPEzdYaFqb1aibxxyJxza02VKF4AX5zQLiGQPHV/3cHdehsr/X
-j598X6mXYgO9GEV38oW6ga8T3N3YsPt0Op+LeySpuhic2g567Xqkx1VT0dvPGi17MTJUYU4WJfDx
-EGzxKYhYbLO7HFjSBI7cELxGZ5GX4AhaEEJWjH772FizcdVUKwMVF/dtFfgI+fJ2sSZb+QEaksiY
-55zUvfArRrOG7BbQ4vLl5DQEPePT0Y7DByYmJ0GXL2JxGaZU6SsoEKrJd8QfssfLADwEMbu2ZGA2
-6rb1MJhZBxfnvWca1z+Qzutqb8JLzG5/BU6IaKZFiTDsyNlar7uPqhFPJpKtMmHmXUsInSZDEtiE
-wIEsmYJ7nLhDt1APVWn0/ntkqdhSj3eOPDkJP1W9KLejR057uk25H5sTmkIUa1I8POUL/PifGexP
-vw53h1XAiiYob+8SaGDCn9bSiK6Nu8ps6LhWSyOJuIML0lCLL3Mq3ywnAFasclzGnrxl9M2Z897q
-Hl968el85ZS6wS+XyZe6k6ifLbyQBuLb3ovRNK/CNJYLB6lx9wCFWxgtLJxJTOzmLqSqtevTKQyB
-+wP8E/c/YZ+lyP0k/qjZ35NVxc5gA3P7uQhaEBaMn+oesJP0X8ZBLzobJXjvPR/CMV3ecWZ0sLjJ
-3XSqjamhY8rWmySZdaHtAqV16hY8vJ6tORk6Wb8JJNMhiB4n5aDlXMqLvB5nkbY9NimrG9uCJzWZ
-vBFF1LNJgDaBTcIPHe8xFc5uvYvICmK0DkiaXeYViv4/3wUzOlMigP2sWBMNYuELD8KUETe94XcD
-6/YVnut4u7493VWf88/TOVS1TXCwC7IN14+VlnwXHwpouh/K59X8ugVw2UNo/VHwtS0DrWJnkTld
-j0tAIT5C1nd8Xe2089avEp6zeTOZuMF2XR/3rjUxDKCYHHrmuWAoXnsIE9otIIUV9Fom4u1N0M3s
-+lZTAaqKdcjxyKnGTRDVXTbGhaa+gKaQ2EXta8WozDKbkatHNIEQILiXVuBy+W+HNnecM0KzmSDp
-0k0x51Rj2KMENHCj94CUDClVyu4bzHI8dq7gCikhvuOaJ9qRFtaZyBDPy4qqOddkgxsRywXwFGtS
-h8a36UuUyMu6z4yGsFVa1vqx/OydDzYb43qnQnSFZVzUXkKz4nwfyp06zOd98mO5KGerfXd+b4/D
-WSh2k/7hq9Ez0N071GeHrmGrFtS7gjQjyjkqXOKkuLnLqir07GfvgFxxGj+mdtbA52/MSFa9pjUW
-Icuny8e5tPHA3xyLGgnMwiJLyx4UY9XW00I3TT5MVJhcd4QhfJzZWUDPOZSa3my158snEMxFS5AA
-QPMs8h9/AYlZ9UpIbUcq4B+4CMbqnVMZhKA/9fmIHoVWc9/xiuJitju7AIte+oYfC8AsNQVVD8fs
-nQ8XfPkqD3V9wR/0fP2BmeF4BNcKwM3nZh+6SpXyMeaDL1RtNndrdYsZkZ5+ORdepIWimdQATJSA
-3aq14BZt9SNxThiWE4MhWheBKj/1SyW/LgXKCA+P69xRBnTrV1w3qeYw95Ghh5wt9nwj6rPwHjs/
-ZFnmhBZNmv/sinWAhBtp3FoGK5nsL9Lz+84ALZT6kM0Ps6V5EeiaDDLsbxv3LTzhUHcr98w/Bwdv
-bRTt5EM7yc9HeRPTpQ7p04ypyROiPiqjxHywmIDosHXZcCgONXajVOhCNmoaXzxDMmXD/EgQybtC
-sDi7I+5Qea7kgWVvPZWkVuo3tHM66QTHfqlMU4eYsUDQxIO4XaygiCQ1VuAREOXF5AbcaD3Qdd7l
-78gFtUw+/0DrD7DpGoWihiejXOl3cqXd5KBff1ImccJlWykiv/hnXCQcb0lweoQIDp5prChs6BEv
-GLu+TB15gSGQ+wWkkpI4sikNHnco2zY+j4XEDl+X6Qq3Vk6q888XLiYcmj/y1m==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles CRAM-MD5 authentication.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Transport_Esmtp_Auth_CramMd5Authenticator implements Swift_Transport_Esmtp_Authenticator
+{
+    /**
+     * Get the name of the AUTH mechanism this Authenticator handles.
+     *
+     * @return string
+     */
+    public function getAuthKeyword()
+    {
+        return 'CRAM-MD5';
+    }
+
+    /**
+     * Try to authenticate the user with $username and $password.
+     *
+     * @param Swift_Transport_SmtpAgent $agent
+     * @param string                    $username
+     * @param string                    $password
+     *
+     * @return bool
+     */
+    public function authenticate(Swift_Transport_SmtpAgent $agent, $username, $password)
+    {
+        try {
+            $challenge = $agent->executeCommand("AUTH CRAM-MD5\r\n", array(334));
+            $challenge = base64_decode(substr($challenge, 4));
+            $message = base64_encode(
+                $username.' '.$this->_getResponse($password, $challenge)
+                );
+            $agent->executeCommand(sprintf("%s\r\n", $message), array(235));
+
+            return true;
+        } catch (Swift_TransportException $e) {
+            $agent->executeCommand("RSET\r\n", array(250));
+
+            return false;
+        }
+    }
+
+    /**
+     * Generate a CRAM-MD5 response from a server challenge.
+     *
+     * @param string $secret
+     * @param string $challenge
+     *
+     * @return string
+     */
+    private function _getResponse($secret, $challenge)
+    {
+        if (strlen($secret) > 64) {
+            $secret = pack('H32', md5($secret));
+        }
+
+        if (strlen($secret) < 64) {
+            $secret = str_pad($secret, 64, chr(0));
+        }
+
+        $k_ipad = substr($secret, 0, 64) ^ str_repeat(chr(0x36), 64);
+        $k_opad = substr($secret, 0, 64) ^ str_repeat(chr(0x5C), 64);
+
+        $inner = pack('H32', md5($k_ipad.$challenge));
+        $digest = md5($k_opad.$inner);
+
+        return $digest;
+    }
+}

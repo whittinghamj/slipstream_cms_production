@@ -1,107 +1,213 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Redirects all email to a single recipient.
+ *
+ * @author Fabien Potencier
+ */
+class Swift_Plugins_RedirectingPlugin implements Swift_Events_SendListener
+{
+    /**
+     * The recipient who will receive all messages.
+     *
+     * @var mixed
+     */
+    private $_recipient;
+
+    /**
+     * List of regular expression for recipient whitelisting.
+     *
+     * @var array
+     */
+    private $_whitelist = array();
+
+    /**
+     * Create a new RedirectingPlugin.
+     *
+     * @param mixed $recipient
+     * @param array $whitelist
+     */
+    public function __construct($recipient, array $whitelist = array())
+    {
+        $this->_recipient = $recipient;
+        $this->_whitelist = $whitelist;
+    }
+
+    /**
+     * Set the recipient of all messages.
+     *
+     * @param mixed $recipient
+     */
+    public function setRecipient($recipient)
+    {
+        $this->_recipient = $recipient;
+    }
+
+    /**
+     * Get the recipient of all messages.
+     *
+     * @return mixed
+     */
+    public function getRecipient()
+    {
+        return $this->_recipient;
+    }
+
+    /**
+     * Set a list of regular expressions to whitelist certain recipients.
+     *
+     * @param array $whitelist
+     */
+    public function setWhitelist(array $whitelist)
+    {
+        $this->_whitelist = $whitelist;
+    }
+
+    /**
+     * Get the whitelist.
+     *
+     * @return array
+     */
+    public function getWhitelist()
+    {
+        return $this->_whitelist;
+    }
+
+    /**
+     * Invoked immediately before the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
+    {
+        $message = $evt->getMessage();
+        $headers = $message->getHeaders();
+
+        // conditionally save current recipients
+
+        if ($headers->has('to')) {
+            $headers->addMailboxHeader('X-Swift-To', $message->getTo());
+        }
+
+        if ($headers->has('cc')) {
+            $headers->addMailboxHeader('X-Swift-Cc', $message->getCc());
+        }
+
+        if ($headers->has('bcc')) {
+            $headers->addMailboxHeader('X-Swift-Bcc', $message->getBcc());
+        }
+
+        // Filter remaining headers against whitelist
+        $this->_filterHeaderSet($headers, 'To');
+        $this->_filterHeaderSet($headers, 'Cc');
+        $this->_filterHeaderSet($headers, 'Bcc');
+
+        // Add each hard coded recipient
+        $to = $message->getTo();
+        if (null === $to) {
+            $to = array();
+        }
+
+        foreach ((array) $this->_recipient as $recipient) {
+            if (!array_key_exists($recipient, $to)) {
+                $message->addTo($recipient);
+            }
+        }
+    }
+
+    /**
+     * Filter header set against a whitelist of regular expressions.
+     *
+     * @param Swift_Mime_HeaderSet $headerSet
+     * @param string               $type
+     */
+    private function _filterHeaderSet(Swift_Mime_HeaderSet $headerSet, $type)
+    {
+        foreach ($headerSet->getAll($type) as $headers) {
+            $headers->setNameAddresses($this->_filterNameAddresses($headers->getNameAddresses()));
+        }
+    }
+
+    /**
+     * Filtered list of addresses => name pairs.
+     *
+     * @param array $recipients
+     *
+     * @return array
+     */
+    private function _filterNameAddresses(array $recipients)
+    {
+        $filtered = array();
+
+        foreach ($recipients as $address => $name) {
+            if ($this->_isWhitelisted($address)) {
+                $filtered[$address] = $name;
+            }
+        }
+
+        return $filtered;
+    }
+
+    /**
+     * Matches address against whitelist of regular expressions.
+     *
+     * @param $recipient
+     *
+     * @return bool
+     */
+    protected function _isWhitelisted($recipient)
+    {
+        if (in_array($recipient, (array) $this->_recipient)) {
+            return true;
+        }
+
+        foreach ($this->_whitelist as $pattern) {
+            if (preg_match($pattern, $recipient)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Invoked immediately after the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function sendPerformed(Swift_Events_SendEvent $evt)
+    {
+        $this->_restoreMessage($evt->getMessage());
+    }
+
+    private function _restoreMessage(Swift_Mime_Message $message)
+    {
+        // restore original headers
+        $headers = $message->getHeaders();
+
+        if ($headers->has('X-Swift-To')) {
+            $message->setTo($headers->get('X-Swift-To')->getNameAddresses());
+            $headers->removeAll('X-Swift-To');
+        } else {
+            $message->setTo(null);
+        }
+
+        if ($headers->has('X-Swift-Cc')) {
+            $message->setCc($headers->get('X-Swift-Cc')->getNameAddresses());
+            $headers->removeAll('X-Swift-Cc');
+        }
+
+        if ($headers->has('X-Swift-Bcc')) {
+            $message->setBcc($headers->get('X-Swift-Bcc')->getNameAddresses());
+            $headers->removeAll('X-Swift-Bcc');
+        }
+    }
+}

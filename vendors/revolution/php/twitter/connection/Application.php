@@ -1,66 +1,80 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+namespace TwitterPhp\Connection;
+
+use TwitterPhp\RestApiException;
+
+class Application extends Base
+{
+    /**
+     * @var string
+     */
+    private $_consumerKey;
+
+    /**
+     * @var string
+     */
+    private $_consumerSecret;
+
+    /**
+     * @var string
+     */
+    private $_bearersToken = null;
+
+    /**
+     * @param string $consumerKey
+     * @param string $consumerSecret
+     */
+    public function __construct($consumerKey,$consumerSecret)
+    {
+        $this->_consumerKey = $consumerKey;
+        $this->_consumerSecret = $consumerSecret;
+    }
+
+    /**
+     * @param string $url
+     * @param array $parameters
+     * @param $method
+     * @return array
+     */
+    protected function _buildHeaders($url,array $parameters = null,$method)
+    {
+        return $headers = array(
+                    "Authorization: Bearer " . $this->_getBearerToken()
+                );
+    }
+
+    /**
+     * Get Bearer token
+     *
+     * @link https://dev.twitter.com/docs/auth/application-only-auth
+     *
+     * @throws \TwitterPhp\RestApiException
+     * @return string
+     */
+    private function _getBearerToken() {
+        if (!$this->_bearersToken) {
+            $token = urlencode($this->_consumerKey) . ':' . urlencode($this->_consumerSecret);
+            $token = base64_encode($token);
+
+            $headers = array(
+                "Authorization: Basic " . $token
+            );
+
+            $options = array (
+                CURLOPT_URL => self::TWITTER_API_AUTH_URL,
+                CURLOPT_HTTPHEADER => $headers,
+                CURLOPT_POST => 1,
+                CURLOPT_POSTFIELDS => "grant_type=client_credentials"
+            );
+
+            $response = $this->_callApi($options);
+
+            if (isset($response["token_type"]) && $response["token_type"] == 'bearer') {
+                $this->_bearersToken = $response["access_token"];
+            } else {
+                throw new RestApiException('Error while getting access token');
+            }
+        }
+        return $this->_bearersToken;
+    }
+}

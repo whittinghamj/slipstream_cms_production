@@ -1,77 +1,123 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles Quoted Printable (QP) Transfer Encoding in Swift Mailer using the PHP core function.
+ *
+ * @author Lars Strojny
+ */
+class Swift_Mime_ContentEncoder_NativeQpContentEncoder implements Swift_Mime_ContentEncoder
+{
+    /**
+     * @var null|string
+     */
+    private $charset;
+
+    /**
+     * @param null|string $charset
+     */
+    public function __construct($charset = null)
+    {
+        $this->charset = $charset ? $charset : 'utf-8';
+    }
+
+    /**
+     * Notify this observer that the entity's charset has changed.
+     *
+     * @param string $charset
+     */
+    public function charsetChanged($charset)
+    {
+        $this->charset = $charset;
+    }
+
+    /**
+     * Encode $in to $out.
+     *
+     * @param Swift_OutputByteStream $os              to read from
+     * @param Swift_InputByteStream  $is              to write to
+     * @param int                    $firstLineOffset
+     * @param int                    $maxLineLength   0 indicates the default length for this encoding
+     *
+     * @throws RuntimeException
+     */
+    public function encodeByteStream(Swift_OutputByteStream $os, Swift_InputByteStream $is, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        if ($this->charset !== 'utf-8') {
+            throw new RuntimeException(
+                sprintf('Charset "%s" not supported. NativeQpContentEncoder only supports "utf-8"', $this->charset));
+        }
+
+        $string = '';
+
+        while (false !== $bytes = $os->read(8192)) {
+            $string .= $bytes;
+        }
+
+        $is->write($this->encodeString($string));
+    }
+
+    /**
+     * Get the MIME name of this content encoding scheme.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'quoted-printable';
+    }
+
+    /**
+     * Encode a given string to produce an encoded string.
+     *
+     * @param string $string
+     * @param int    $firstLineOffset if first line needs to be shorter
+     * @param int    $maxLineLength   0 indicates the default length for this encoding
+     *
+     * @throws RuntimeException
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        if ($this->charset !== 'utf-8') {
+            throw new RuntimeException(
+                sprintf('Charset "%s" not supported. NativeQpContentEncoder only supports "utf-8"', $this->charset));
+        }
+
+        return $this->_standardize(quoted_printable_encode($string));
+    }
+
+    /**
+     * Make sure CRLF is correct and HT/SPACE are in valid places.
+     *
+     * @param string $string
+     *
+     * @return string
+     */
+    protected function _standardize($string)
+    {
+        // transform CR or LF to CRLF
+        $string = preg_replace('~=0D(?!=0A)|(?<!=0D)=0A~', '=0D=0A', $string);
+        // transform =0D=0A to CRLF
+        $string = str_replace(array("\t=0D=0A", ' =0D=0A', '=0D=0A'), array("=09\r\n", "=20\r\n", "\r\n"), $string);
+
+        switch ($end = ord(substr($string, -1))) {
+            case 0x09:
+                $string = substr_replace($string, '=09', -1);
+                break;
+            case 0x20:
+                $string = substr_replace($string, '=20', -1);
+                break;
+        }
+
+        return $string;
+    }
+}

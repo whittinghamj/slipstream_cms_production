@@ -1,30 +1,29 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * TransportException thrown when an error occurs in the Transport subsystem.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_TransportException extends Swift_IoException
+{
+    /**
+     * Create a new TransportException with $message.
+     *
+     * @param string    $message
+     * @param int       $code
+     * @param Exception $previous
+     */
+    public function __construct($message, $code = 0, Exception $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+    }
+}

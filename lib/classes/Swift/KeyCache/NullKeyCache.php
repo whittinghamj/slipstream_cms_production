@@ -1,48 +1,115 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A null KeyCache that does not cache at all.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_KeyCache_NullKeyCache implements Swift_KeyCache
+{
+    /**
+     * Set a string into the cache under $itemKey for the namespace $nsKey.
+     *
+     * @see MODE_WRITE, MODE_APPEND
+     *
+     * @param string $nsKey
+     * @param string $itemKey
+     * @param string $string
+     * @param int    $mode
+     */
+    public function setString($nsKey, $itemKey, $string, $mode)
+    {
+    }
+
+    /**
+     * Set a ByteStream into the cache under $itemKey for the namespace $nsKey.
+     *
+     * @see MODE_WRITE, MODE_APPEND
+     *
+     * @param string                 $nsKey
+     * @param string                 $itemKey
+     * @param Swift_OutputByteStream $os
+     * @param int                    $mode
+     */
+    public function importFromByteStream($nsKey, $itemKey, Swift_OutputByteStream $os, $mode)
+    {
+    }
+
+    /**
+     * Provides a ByteStream which when written to, writes data to $itemKey.
+     *
+     * NOTE: The stream will always write in append mode.
+     *
+     * @param string                $nsKey
+     * @param string                $itemKey
+     * @param Swift_InputByteStream $writeThrough
+     *
+     * @return Swift_InputByteStream
+     */
+    public function getInputByteStream($nsKey, $itemKey, Swift_InputByteStream $writeThrough = null)
+    {
+    }
+
+    /**
+     * Get data back out of the cache as a string.
+     *
+     * @param string $nsKey
+     * @param string $itemKey
+     *
+     * @return string
+     */
+    public function getString($nsKey, $itemKey)
+    {
+    }
+
+    /**
+     * Get data back out of the cache as a ByteStream.
+     *
+     * @param string                $nsKey
+     * @param string                $itemKey
+     * @param Swift_InputByteStream $is      to write the data to
+     */
+    public function exportToByteStream($nsKey, $itemKey, Swift_InputByteStream $is)
+    {
+    }
+
+    /**
+     * Check if the given $itemKey exists in the namespace $nsKey.
+     *
+     * @param string $nsKey
+     * @param string $itemKey
+     *
+     * @return bool
+     */
+    public function hasKey($nsKey, $itemKey)
+    {
+        return false;
+    }
+
+    /**
+     * Clear data for $itemKey in the namespace $nsKey if it exists.
+     *
+     * @param string $nsKey
+     * @param string $itemKey
+     */
+    public function clearKey($nsKey, $itemKey)
+    {
+    }
+
+    /**
+     * Clear all data in the namespace $nsKey if it exists.
+     *
+     * @param string $nsKey
+     */
+    public function clearAll($nsKey)
+    {
+    }
+}

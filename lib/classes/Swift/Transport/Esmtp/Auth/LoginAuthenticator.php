@@ -1,48 +1,51 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-IdNelN5Km4WTRDw08m9hUsWls/TehPQjUYfFgW==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles LOGIN authentication.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Transport_Esmtp_Auth_LoginAuthenticator implements Swift_Transport_Esmtp_Authenticator
+{
+    /**
+     * Get the name of the AUTH mechanism this Authenticator handles.
+     *
+     * @return string
+     */
+    public function getAuthKeyword()
+    {
+        return 'LOGIN';
+    }
+
+    /**
+     * Try to authenticate the user with $username and $password.
+     *
+     * @param Swift_Transport_SmtpAgent $agent
+     * @param string                    $username
+     * @param string                    $password
+     *
+     * @return bool
+     */
+    public function authenticate(Swift_Transport_SmtpAgent $agent, $username, $password)
+    {
+        try {
+            $agent->executeCommand("AUTH LOGIN\r\n", array(334));
+            $agent->executeCommand(sprintf("%s\r\n", base64_encode($username)), array(334));
+            $agent->executeCommand(sprintf("%s\r\n", base64_encode($password)), array(235));
+
+            return true;
+        } catch (Swift_TransportException $e) {
+            $agent->executeCommand("RSET\r\n", array(250));
+
+            return false;
+        }
+    }
+}

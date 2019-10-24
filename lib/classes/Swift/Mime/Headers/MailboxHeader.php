@@ -1,113 +1,351 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A Mailbox Address MIME Header for something like From or Sender.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
+{
+    /**
+     * The mailboxes used in this Header.
+     *
+     * @var string[]
+     */
+    private $_mailboxes = array();
+
+    /**
+     * Creates a new MailboxHeader with $name.
+     *
+     * @param string                   $name    of Header
+     * @param Swift_Mime_HeaderEncoder $encoder
+     * @param Swift_Mime_Grammar       $grammar
+     */
+    public function __construct($name, Swift_Mime_HeaderEncoder $encoder, Swift_Mime_Grammar $grammar)
+    {
+        $this->setFieldName($name);
+        $this->setEncoder($encoder);
+        parent::__construct($grammar);
+    }
+
+    /**
+     * Get the type of Header that this instance represents.
+     *
+     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
+     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
+     *
+     * @return int
+     */
+    public function getFieldType()
+    {
+        return self::TYPE_MAILBOX;
+    }
+
+    /**
+     * Set the model for the field body.
+     *
+     * This method takes a string, or an array of addresses.
+     *
+     * @param mixed $model
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    public function setFieldBodyModel($model)
+    {
+        $this->setNameAddresses($model);
+    }
+
+    /**
+     * Get the model for the field body.
+     *
+     * This method returns an associative array like {@link getNameAddresses()}
+     *
+     * @throws Swift_RfcComplianceException
+     *
+     * @return array
+     */
+    public function getFieldBodyModel()
+    {
+        return $this->getNameAddresses();
+    }
+
+    /**
+     * Set a list of mailboxes to be shown in this Header.
+     *
+     * The mailboxes can be a simple array of addresses, or an array of
+     * key=>value pairs where (email => personalName).
+     * Example:
+     * <code>
+     * <?php
+     * //Sets two mailboxes in the Header, one with a personal name
+     * $header->setNameAddresses(array(
+     *  'chris@swiftmailer.org' => 'Chris Corbyn',
+     *  'mark@swiftmailer.org' //No associated personal name
+     *  ));
+     * ?>
+     * </code>
+     *
+     * @see __construct()
+     * @see setAddresses()
+     * @see setValue()
+     *
+     * @param string|string[] $mailboxes
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    public function setNameAddresses($mailboxes)
+    {
+        $this->_mailboxes = $this->normalizeMailboxes((array) $mailboxes);
+        $this->setCachedValue(null); //Clear any cached value
+    }
+
+    /**
+     * Get the full mailbox list of this Header as an array of valid RFC 2822 strings.
+     *
+     * Example:
+     * <code>
+     * <?php
+     * $header = new Swift_Mime_Headers_MailboxHeader('From',
+     *  array('chris@swiftmailer.org' => 'Chris Corbyn',
+     *  'mark@swiftmailer.org' => 'Mark Corbyn')
+     *  );
+     * print_r($header->getNameAddressStrings());
+     * // array (
+     * // 0 => Chris Corbyn <chris@swiftmailer.org>,
+     * // 1 => Mark Corbyn <mark@swiftmailer.org>
+     * // )
+     * ?>
+     * </code>
+     *
+     * @see getNameAddresses()
+     * @see toString()
+     *
+     * @throws Swift_RfcComplianceException
+     *
+     * @return string[]
+     */
+    public function getNameAddressStrings()
+    {
+        return $this->_createNameAddressStrings($this->getNameAddresses());
+    }
+
+    /**
+     * Get all mailboxes in this Header as key=>value pairs.
+     *
+     * The key is the address and the value is the name (or null if none set).
+     * Example:
+     * <code>
+     * <?php
+     * $header = new Swift_Mime_Headers_MailboxHeader('From',
+     *  array('chris@swiftmailer.org' => 'Chris Corbyn',
+     *  'mark@swiftmailer.org' => 'Mark Corbyn')
+     *  );
+     * print_r($header->getNameAddresses());
+     * // array (
+     * // chris@swiftmailer.org => Chris Corbyn,
+     * // mark@swiftmailer.org => Mark Corbyn
+     * // )
+     * ?>
+     * </code>
+     *
+     * @see getAddresses()
+     * @see getNameAddressStrings()
+     *
+     * @return string[]
+     */
+    public function getNameAddresses()
+    {
+        return $this->_mailboxes;
+    }
+
+    /**
+     * Makes this Header represent a list of plain email addresses with no names.
+     *
+     * Example:
+     * <code>
+     * <?php
+     * //Sets three email addresses as the Header data
+     * $header->setAddresses(
+     *  array('one@domain.tld', 'two@domain.tld', 'three@domain.tld')
+     *  );
+     * ?>
+     * </code>
+     *
+     * @see setNameAddresses()
+     * @see setValue()
+     *
+     * @param string[] $addresses
+     *
+     * @throws Swift_RfcComplianceException
+     */
+    public function setAddresses($addresses)
+    {
+        $this->setNameAddresses(array_values((array) $addresses));
+    }
+
+    /**
+     * Get all email addresses in this Header.
+     *
+     * @see getNameAddresses()
+     *
+     * @return string[]
+     */
+    public function getAddresses()
+    {
+        return array_keys($this->_mailboxes);
+    }
+
+    /**
+     * Remove one or more addresses from this Header.
+     *
+     * @param string|string[] $addresses
+     */
+    public function removeAddresses($addresses)
+    {
+        $this->setCachedValue(null);
+        foreach ((array) $addresses as $address) {
+            unset($this->_mailboxes[$address]);
+        }
+    }
+
+    /**
+     * Get the string value of the body in this Header.
+     *
+     * This is not necessarily RFC 2822 compliant since folding white space will
+     * not be added at this stage (see {@link toString()} for that).
+     *
+     * @see toString()
+     *
+     * @throws Swift_RfcComplianceException
+     *
+     * @return string
+     */
+    public function getFieldBody()
+    {
+        // Compute the string value of the header only if needed
+        if (null === $this->getCachedValue()) {
+            $this->setCachedValue($this->createMailboxListString($this->_mailboxes));
+        }
+
+        return $this->getCachedValue();
+    }
+
+    /**
+     * Normalizes a user-input list of mailboxes into consistent key=>value pairs.
+     *
+     * @param string[] $mailboxes
+     *
+     * @return string[]
+     */
+    protected function normalizeMailboxes(array $mailboxes)
+    {
+        $actualMailboxes = array();
+
+        foreach ($mailboxes as $key => $value) {
+            if (is_string($key)) {
+                //key is email addr
+                $address = $key;
+                $name = $value;
+            } else {
+                $address = $value;
+                $name = null;
+            }
+            $this->_assertValidAddress($address);
+            $actualMailboxes[$address] = $name;
+        }
+
+        return $actualMailboxes;
+    }
+
+    /**
+     * Produces a compliant, formatted display-name based on the string given.
+     *
+     * @param string $displayName as displayed
+     * @param bool   $shorten     the first line to make remove for header name
+     *
+     * @return string
+     */
+    protected function createDisplayNameString($displayName, $shorten = false)
+    {
+        return $this->createPhrase($this, $displayName, $this->getCharset(), $this->getEncoder(), $shorten);
+    }
+
+    /**
+     * Creates a string form of all the mailboxes in the passed array.
+     *
+     * @param string[] $mailboxes
+     *
+     * @throws Swift_RfcComplianceException
+     *
+     * @return string
+     */
+    protected function createMailboxListString(array $mailboxes)
+    {
+        return implode(', ', $this->_createNameAddressStrings($mailboxes));
+    }
+
+    /**
+     * Redefine the encoding requirements for mailboxes.
+     *
+     * All "specials" must be encoded as the full header value will not be quoted
+     *
+     * @see RFC 2822 3.2.1
+     *
+     * @param string $token
+     *
+     * @return bool
+     */
+    protected function tokenNeedsEncoding($token)
+    {
+        return preg_match('/[()<>\[\]:;@\,."]/', $token) || parent::tokenNeedsEncoding($token);
+    }
+
+    /**
+     * Return an array of strings conforming the the name-addr spec of RFC 2822.
+     *
+     * @param string[] $mailboxes
+     *
+     * @return string[]
+     */
+    private function _createNameAddressStrings(array $mailboxes)
+    {
+        $strings = array();
+
+        foreach ($mailboxes as $email => $name) {
+            $mailboxStr = $email;
+            if (null !== $name) {
+                $nameStr = $this->createDisplayNameString($name, empty($strings));
+                $mailboxStr = $nameStr.' <'.$mailboxStr.'>';
+            }
+            $strings[] = $mailboxStr;
+        }
+
+        return $strings;
+    }
+
+    /**
+     * Throws an Exception if the address passed does not comply with RFC 2822.
+     *
+     * @param string $address
+     *
+     * @throws Swift_RfcComplianceException If invalid.
+     */
+    private function _assertValidAddress($address)
+    {
+        if (!preg_match('/^'.$this->getGrammar()->getDefinition('addr-spec').'$/D',
+            $address)) {
+            throw new Swift_RfcComplianceException(
+                'Address in mailbox given ['.$address.
+                '] does not comply with RFC 2822, 3.6.2.'
+                );
+        }
+    }
+}

@@ -1,39 +1,83 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-SAUvgJPSvScOWfDGql7AhZx8Adf3k5qcgwm=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Interface for the EventDispatcher which handles the event dispatching layer.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Events_EventDispatcher
+{
+    /**
+     * Create a new SendEvent for $source and $message.
+     *
+     * @param Swift_Transport $source
+     * @param Swift_Mime_Message
+     *
+     * @return Swift_Events_SendEvent
+     */
+    public function createSendEvent(Swift_Transport $source, Swift_Mime_Message $message);
+
+    /**
+     * Create a new CommandEvent for $source and $command.
+     *
+     * @param Swift_Transport $source
+     * @param string          $command      That will be executed
+     * @param array           $successCodes That are needed
+     *
+     * @return Swift_Events_CommandEvent
+     */
+    public function createCommandEvent(Swift_Transport $source, $command, $successCodes = array());
+
+    /**
+     * Create a new ResponseEvent for $source and $response.
+     *
+     * @param Swift_Transport $source
+     * @param string          $response
+     * @param bool            $valid    If the response is valid
+     *
+     * @return Swift_Events_ResponseEvent
+     */
+    public function createResponseEvent(Swift_Transport $source, $response, $valid);
+
+    /**
+     * Create a new TransportChangeEvent for $source.
+     *
+     * @param Swift_Transport $source
+     *
+     * @return Swift_Events_TransportChangeEvent
+     */
+    public function createTransportChangeEvent(Swift_Transport $source);
+
+    /**
+     * Create a new TransportExceptionEvent for $source.
+     *
+     * @param Swift_Transport          $source
+     * @param Swift_TransportException $ex
+     *
+     * @return Swift_Events_TransportExceptionEvent
+     */
+    public function createTransportExceptionEvent(Swift_Transport $source, Swift_TransportException $ex);
+
+    /**
+     * Bind an event listener to this dispatcher.
+     *
+     * @param Swift_Events_EventListener $listener
+     */
+    public function bindEventListener(Swift_Events_EventListener $listener);
+
+    /**
+     * Dispatch the given Event to all suitable listeners.
+     *
+     * @param Swift_Events_EventObject $evt
+     * @param string                   $target method
+     */
+    public function dispatchEvent(Swift_Events_EventObject $evt, $target);
+}

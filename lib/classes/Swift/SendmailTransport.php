@@ -1,39 +1,45 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * SendmailTransport for sending mail through a Sendmail/Postfix (etc..) binary.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_SendmailTransport extends Swift_Transport_SendmailTransport
+{
+    /**
+     * Create a new SendmailTransport, optionally using $command for sending.
+     *
+     * @param string $command
+     */
+    public function __construct($command = '/usr/sbin/sendmail -bs')
+    {
+        call_user_func_array(
+            array($this, 'Swift_Transport_SendmailTransport::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('transport.sendmail')
+            );
+
+        $this->setCommand($command);
+    }
+
+    /**
+     * Create a new SendmailTransport instance.
+     *
+     * @param string $command
+     *
+     * @return self
+     */
+    public static function newInstance($command = '/usr/sbin/sendmail -bs')
+    {
+        return new self($command);
+    }
+}

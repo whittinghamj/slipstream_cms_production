@@ -1,56 +1,112 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-2JMD5tc+cBpZQPfT1CTZioUv3/yCCpW=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A Simple MIME Header.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_Headers_UnstructuredHeader extends Swift_Mime_Headers_AbstractHeader
+{
+    /**
+     * The value of this Header.
+     *
+     * @var string
+     */
+    private $_value;
+
+    /**
+     * Creates a new SimpleHeader with $name.
+     *
+     * @param string                   $name
+     * @param Swift_Mime_HeaderEncoder $encoder
+     * @param Swift_Mime_Grammar       $grammar
+     */
+    public function __construct($name, Swift_Mime_HeaderEncoder $encoder, Swift_Mime_Grammar $grammar)
+    {
+        $this->setFieldName($name);
+        $this->setEncoder($encoder);
+        parent::__construct($grammar);
+    }
+
+    /**
+     * Get the type of Header that this instance represents.
+     *
+     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
+     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
+     *
+     * @return int
+     */
+    public function getFieldType()
+    {
+        return self::TYPE_TEXT;
+    }
+
+    /**
+     * Set the model for the field body.
+     *
+     * This method takes a string for the field value.
+     *
+     * @param string $model
+     */
+    public function setFieldBodyModel($model)
+    {
+        $this->setValue($model);
+    }
+
+    /**
+     * Get the model for the field body.
+     *
+     * This method returns a string.
+     *
+     * @return string
+     */
+    public function getFieldBodyModel()
+    {
+        return $this->getValue();
+    }
+
+    /**
+     * Get the (unencoded) value of this header.
+     *
+     * @return string
+     */
+    public function getValue()
+    {
+        return $this->_value;
+    }
+
+    /**
+     * Set the (unencoded) value of this header.
+     *
+     * @param string $value
+     */
+    public function setValue($value)
+    {
+        $this->clearCachedValueIf($this->_value != $value);
+        $this->_value = $value;
+    }
+
+    /**
+     * Get the value of this header prepared for rendering.
+     *
+     * @return string
+     */
+    public function getFieldBody()
+    {
+        if (!$this->getCachedValue()) {
+            $this->setCachedValue(
+                $this->encodeWords($this, $this->_value)
+                );
+        }
+
+        return $this->getCachedValue();
+    }
+}

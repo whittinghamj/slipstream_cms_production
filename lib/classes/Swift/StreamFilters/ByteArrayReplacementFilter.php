@@ -1,95 +1,170 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-xqCWh8DJAv8=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Processes bytes as they pass through a buffer and replaces sequences in it.
+ *
+ * This stream filter deals with Byte arrays rather than simple strings.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_StreamFilters_ByteArrayReplacementFilter implements Swift_StreamFilter
+{
+    /** The needle(s) to search for */
+    private $_search;
+
+    /** The replacement(s) to make */
+    private $_replace;
+
+    /** The Index for searching */
+    private $_index;
+
+    /** The Search Tree */
+    private $_tree = array();
+
+    /**  Gives the size of the largest search */
+    private $_treeMaxLen = 0;
+
+    private $_repSize;
+
+    /**
+     * Create a new ByteArrayReplacementFilter with $search and $replace.
+     *
+     * @param array $search
+     * @param array $replace
+     */
+    public function __construct($search, $replace)
+    {
+        $this->_search = $search;
+        $this->_index = array();
+        $this->_tree = array();
+        $this->_replace = array();
+        $this->_repSize = array();
+
+        $tree = null;
+        $i = null;
+        $last_size = $size = 0;
+        foreach ($search as $i => $search_element) {
+            if ($tree !== null) {
+                $tree[-1] = min(count($replace) - 1, $i - 1);
+                $tree[-2] = $last_size;
+            }
+            $tree = &$this->_tree;
+            if (is_array($search_element)) {
+                foreach ($search_element as $k => $char) {
+                    $this->_index[$char] = true;
+                    if (!isset($tree[$char])) {
+                        $tree[$char] = array();
+                    }
+                    $tree = &$tree[$char];
+                }
+                $last_size = $k + 1;
+                $size = max($size, $last_size);
+            } else {
+                $last_size = 1;
+                if (!isset($tree[$search_element])) {
+                    $tree[$search_element] = array();
+                }
+                $tree = &$tree[$search_element];
+                $size = max($last_size, $size);
+                $this->_index[$search_element] = true;
+            }
+        }
+        if ($i !== null) {
+            $tree[-1] = min(count($replace) - 1, $i);
+            $tree[-2] = $last_size;
+            $this->_treeMaxLen = $size;
+        }
+        foreach ($replace as $rep) {
+            if (!is_array($rep)) {
+                $rep = array($rep);
+            }
+            $this->_replace[] = $rep;
+        }
+        for ($i = count($this->_replace) - 1; $i >= 0; --$i) {
+            $this->_replace[$i] = $rep = $this->filter($this->_replace[$i], $i);
+            $this->_repSize[$i] = count($rep);
+        }
+    }
+
+    /**
+     * Returns true if based on the buffer passed more bytes should be buffered.
+     *
+     * @param array $buffer
+     *
+     * @return bool
+     */
+    public function shouldBuffer($buffer)
+    {
+        $endOfBuffer = end($buffer);
+
+        return isset($this->_index[$endOfBuffer]);
+    }
+
+    /**
+     * Perform the actual replacements on $buffer and return the result.
+     *
+     * @param array $buffer
+     * @param int   $_minReplaces
+     *
+     * @return array
+     */
+    public function filter($buffer, $_minReplaces = -1)
+    {
+        if ($this->_treeMaxLen == 0) {
+            return $buffer;
+        }
+
+        $newBuffer = array();
+        $buf_size = count($buffer);
+        $last_size = 0;
+        for ($i = 0; $i < $buf_size; ++$i) {
+            $search_pos = $this->_tree;
+            $last_found = PHP_INT_MAX;
+            // We try to find if the next byte is part of a search pattern
+            for ($j = 0; $j <= $this->_treeMaxLen; ++$j) {
+                // We have a new byte for a search pattern
+                if (isset($buffer[$p = $i + $j]) && isset($search_pos[$buffer[$p]])) {
+                    $search_pos = $search_pos[$buffer[$p]];
+                    // We have a complete pattern, save, in case we don't find a better match later
+                    if (isset($search_pos[-1]) && $search_pos[-1] < $last_found
+                        && $search_pos[-1] > $_minReplaces) {
+                        $last_found = $search_pos[-1];
+                        $last_size = $search_pos[-2];
+                    }
+                }
+                // We got a complete pattern
+                elseif ($last_found !== PHP_INT_MAX) {
+                    // Adding replacement datas to output buffer
+                    $rep_size = $this->_repSize[$last_found];
+                    for ($j = 0; $j < $rep_size; ++$j) {
+                        $newBuffer[] = $this->_replace[$last_found][$j];
+                    }
+                    // We Move cursor forward
+                    $i += $last_size - 1;
+                    // Edge Case, last position in buffer
+                    if ($i >= $buf_size) {
+                        $newBuffer[] = $buffer[$i];
+                    }
+
+                    // We start the next loop
+                    continue 2;
+                } else {
+                    // this byte is not in a pattern and we haven't found another pattern
+                    break;
+                }
+            }
+            // Normal byte, move it to output buffer
+            $newBuffer[] = $buffer[$i];
+        }
+
+        return $newBuffer;
+    }
+}

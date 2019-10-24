@@ -1,42 +1,78 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-h8J3E0==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Creates MIME headers.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Mime_HeaderFactory extends Swift_Mime_CharsetObserver
+{
+    /**
+     * Create a new Mailbox Header with a list of $addresses.
+     *
+     * @param string       $name
+     * @param array|string $addresses
+     *
+     * @return Swift_Mime_Header
+     */
+    public function createMailboxHeader($name, $addresses = null);
+
+    /**
+     * Create a new Date header using $timestamp (UNIX time).
+     *
+     * @param string $name
+     * @param int    $timestamp
+     *
+     * @return Swift_Mime_Header
+     */
+    public function createDateHeader($name, $timestamp = null);
+
+    /**
+     * Create a new basic text header with $name and $value.
+     *
+     * @param string $name
+     * @param string $value
+     *
+     * @return Swift_Mime_Header
+     */
+    public function createTextHeader($name, $value = null);
+
+    /**
+     * Create a new ParameterizedHeader with $name, $value and $params.
+     *
+     * @param string $name
+     * @param string $value
+     * @param array  $params
+     *
+     * @return Swift_Mime_ParameterizedHeader
+     */
+    public function createParameterizedHeader($name, $value = null, $params = array());
+
+    /**
+     * Create a new ID header for Message-ID or Content-ID.
+     *
+     * @param string       $name
+     * @param string|array $ids
+     *
+     * @return Swift_Mime_Header
+     */
+    public function createIdHeader($name, $ids = null);
+
+    /**
+     * Create a new Path header with an address (path) in it.
+     *
+     * @param string $name
+     * @param string $path
+     *
+     * @return Swift_Mime_Header
+     */
+    public function createPathHeader($name, $path = null);
+}

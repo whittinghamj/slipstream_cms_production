@@ -1,64 +1,117 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-lkMkgkf+wdPAiDFtBsi=
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Stores Messages in a queue.
+ *
+ * @author Fabien Potencier
+ */
+class Swift_Transport_SpoolTransport implements Swift_Transport
+{
+    /** The spool instance */
+    private $_spool;
+
+    /** The event dispatcher from the plugin API */
+    private $_eventDispatcher;
+
+    /**
+     * Constructor.
+     */
+    public function __construct(Swift_Events_EventDispatcher $eventDispatcher, Swift_Spool $spool = null)
+    {
+        $this->_eventDispatcher = $eventDispatcher;
+        $this->_spool = $spool;
+    }
+
+    /**
+     * Sets the spool object.
+     *
+     * @param Swift_Spool $spool
+     *
+     * @return $this
+     */
+    public function setSpool(Swift_Spool $spool)
+    {
+        $this->_spool = $spool;
+
+        return $this;
+    }
+
+    /**
+     * Get the spool object.
+     *
+     * @return Swift_Spool
+     */
+    public function getSpool()
+    {
+        return $this->_spool;
+    }
+
+    /**
+     * Tests if this Transport mechanism has started.
+     *
+     * @return bool
+     */
+    public function isStarted()
+    {
+        return true;
+    }
+
+    /**
+     * Starts this Transport mechanism.
+     */
+    public function start()
+    {
+    }
+
+    /**
+     * Stops this Transport mechanism.
+     */
+    public function stop()
+    {
+    }
+
+    /**
+     * Sends the given message.
+     *
+     * @param Swift_Mime_Message $message
+     * @param string[]           $failedRecipients An array of failures by-reference
+     *
+     * @return int The number of sent e-mail's
+     */
+    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
+    {
+        if ($evt = $this->_eventDispatcher->createSendEvent($this, $message)) {
+            $this->_eventDispatcher->dispatchEvent($evt, 'beforeSendPerformed');
+            if ($evt->bubbleCancelled()) {
+                return 0;
+            }
+        }
+
+        $success = $this->_spool->queueMessage($message);
+
+        if ($evt) {
+            $evt->setResult($success ? Swift_Events_SendEvent::RESULT_SPOOLED : Swift_Events_SendEvent::RESULT_FAILED);
+            $this->_eventDispatcher->dispatchEvent($evt, 'sendPerformed');
+        }
+
+        return 1;
+    }
+
+    /**
+     * Register a plugin.
+     *
+     * @param Swift_Events_EventListener $plugin
+     */
+    public function registerPlugin(Swift_Events_EventListener $plugin)
+    {
+        $this->_eventDispatcher->bindEventListener($plugin);
+    }
+}

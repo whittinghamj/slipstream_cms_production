@@ -1,58 +1,223 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-BTgVNiO09YYOz9v+e+t/Zn2g
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A Message (RFC 2822) object.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Mime_Message extends Swift_Mime_MimeEntity
+{
+    /**
+     * Generates a valid Message-ID and switches to it.
+     *
+     * @return string
+     */
+    public function generateId();
+
+    /**
+     * Set the subject of the message.
+     *
+     * @param string $subject
+     */
+    public function setSubject($subject);
+
+    /**
+     * Get the subject of the message.
+     *
+     * @return string
+     */
+    public function getSubject();
+
+    /**
+     * Set the origination date of the message as a UNIX timestamp.
+     *
+     * @param int $date
+     */
+    public function setDate($date);
+
+    /**
+     * Get the origination date of the message as a UNIX timestamp.
+     *
+     * @return int
+     */
+    public function getDate();
+
+    /**
+     * Set the return-path (bounce-detect) address.
+     *
+     * @param string $address
+     */
+    public function setReturnPath($address);
+
+    /**
+     * Get the return-path (bounce-detect) address.
+     *
+     * @return string
+     */
+    public function getReturnPath();
+
+    /**
+     * Set the sender of this message.
+     *
+     * If multiple addresses are present in the From field, this SHOULD be set.
+     *
+     * According to RFC 2822 it is a requirement when there are multiple From
+     * addresses, but Swift itself does not require it directly.
+     *
+     * An associative array (with one element!) can be used to provide a display-
+     * name: i.e. array('email@address' => 'Real Name').
+     *
+     * If the second parameter is provided and the first is a string, then $name
+     * is associated with the address.
+     *
+     * @param mixed  $address
+     * @param string $name    optional
+     */
+    public function setSender($address, $name = null);
+
+    /**
+     * Get the sender address for this message.
+     *
+     * This has a higher significance than the From address.
+     *
+     * @return string
+     */
+    public function getSender();
+
+    /**
+     * Set the From address of this message.
+     *
+     * It is permissible for multiple From addresses to be set using an array.
+     *
+     * If multiple From addresses are used, you SHOULD set the Sender address and
+     * according to RFC 2822, MUST set the sender address.
+     *
+     * An array can be used if display names are to be provided: i.e.
+     * array('email@address.com' => 'Real Name').
+     *
+     * If the second parameter is provided and the first is a string, then $name
+     * is associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     */
+    public function setFrom($addresses, $name = null);
+
+    /**
+     * Get the From address(es) of this message.
+     *
+     * This method always returns an associative array where the keys are the
+     * addresses.
+     *
+     * @return string[]
+     */
+    public function getFrom();
+
+    /**
+     * Set the Reply-To address(es).
+     *
+     * Any replies from the receiver will be sent to this address.
+     *
+     * It is permissible for multiple reply-to addresses to be set using an array.
+     *
+     * This method has the same synopsis as {@link setFrom()} and {@link setTo()}.
+     *
+     * If the second parameter is provided and the first is a string, then $name
+     * is associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     */
+    public function setReplyTo($addresses, $name = null);
+
+    /**
+     * Get the Reply-To addresses for this message.
+     *
+     * This method always returns an associative array where the keys provide the
+     * email addresses.
+     *
+     * @return string[]
+     */
+    public function getReplyTo();
+
+    /**
+     * Set the To address(es).
+     *
+     * Recipients set in this field will receive a copy of this message.
+     *
+     * This method has the same synopsis as {@link setFrom()} and {@link setCc()}.
+     *
+     * If the second parameter is provided and the first is a string, then $name
+     * is associated with the address.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     */
+    public function setTo($addresses, $name = null);
+
+    /**
+     * Get the To addresses for this message.
+     *
+     * This method always returns an associative array, whereby the keys provide
+     * the actual email addresses.
+     *
+     * @return string[]
+     */
+    public function getTo();
+
+    /**
+     * Set the Cc address(es).
+     *
+     * Recipients set in this field will receive a 'carbon-copy' of this message.
+     *
+     * This method has the same synopsis as {@link setFrom()} and {@link setTo()}.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     */
+    public function setCc($addresses, $name = null);
+
+    /**
+     * Get the Cc addresses for this message.
+     *
+     * This method always returns an associative array, whereby the keys provide
+     * the actual email addresses.
+     *
+     * @return string[]
+     */
+    public function getCc();
+
+    /**
+     * Set the Bcc address(es).
+     *
+     * Recipients set in this field will receive a 'blind-carbon-copy' of this
+     * message.
+     *
+     * In other words, they will get the message, but any other recipients of the
+     * message will have no such knowledge of their receipt of it.
+     *
+     * This method has the same synopsis as {@link setFrom()} and {@link setTo()}.
+     *
+     * @param mixed  $addresses
+     * @param string $name      optional
+     */
+    public function setBcc($addresses, $name = null);
+
+    /**
+     * Get the Bcc addresses for this message.
+     *
+     * This method always returns an associative array, whereby the keys provide
+     * the actual email addresses.
+     *
+     * @return string[]
+     */
+    public function getBcc();
+}

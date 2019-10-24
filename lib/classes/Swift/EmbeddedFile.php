@@ -1,47 +1,69 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * An embedded file, in a multipart message.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_EmbeddedFile extends Swift_Mime_EmbeddedFile
+{
+    /**
+     * Create a new EmbeddedFile.
+     *
+     * Details may be optionally provided to the constructor.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     */
+    public function __construct($data = null, $filename = null, $contentType = null)
+    {
+        call_user_func_array(
+            array($this, 'Swift_Mime_EmbeddedFile::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('mime.embeddedfile')
+            );
+
+        $this->setBody($data);
+        $this->setFilename($filename);
+        if ($contentType) {
+            $this->setContentType($contentType);
+        }
+    }
+
+    /**
+     * Create a new EmbeddedFile.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     *
+     * @return Swift_Mime_EmbeddedFile
+     */
+    public static function newInstance($data = null, $filename = null, $contentType = null)
+    {
+        return new self($data, $filename, $contentType);
+    }
+
+    /**
+     * Create a new EmbeddedFile from a filesystem path.
+     *
+     * @param string $path
+     *
+     * @return Swift_Mime_EmbeddedFile
+     */
+    public static function fromPath($path)
+    {
+        return self::newInstance()->setFile(
+            new Swift_ByteStream_FileByteStream($path)
+            );
+    }
+}

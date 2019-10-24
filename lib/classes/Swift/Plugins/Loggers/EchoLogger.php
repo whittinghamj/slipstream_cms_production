@@ -1,45 +1,58 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-ym==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Prints all log messages in real time.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_Loggers_EchoLogger implements Swift_Plugins_Logger
+{
+    /** Whether or not HTML should be output */
+    private $_isHtml;
+
+    /**
+     * Create a new EchoLogger.
+     *
+     * @param bool $isHtml
+     */
+    public function __construct($isHtml = true)
+    {
+        $this->_isHtml = $isHtml;
+    }
+
+    /**
+     * Add a log entry.
+     *
+     * @param string $entry
+     */
+    public function add($entry)
+    {
+        if ($this->_isHtml) {
+            printf('%s%s%s', htmlspecialchars($entry, ENT_QUOTES), '<br />', PHP_EOL);
+        } else {
+            printf('%s%s', $entry, PHP_EOL);
+        }
+    }
+
+    /**
+     * Not implemented.
+     */
+    public function clear()
+    {
+    }
+
+    /**
+     * Not implemented.
+     */
+    public function dump()
+    {
+    }
+}

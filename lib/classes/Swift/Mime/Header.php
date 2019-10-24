@@ -1,30 +1,93 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A MIME Header.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Mime_Header
+{
+    /** Text headers */
+    const TYPE_TEXT = 2;
+
+    /**  headers (text + params) */
+    const TYPE_PARAMETERIZED = 6;
+
+    /** Mailbox and address headers */
+    const TYPE_MAILBOX = 8;
+
+    /** Date and time headers */
+    const TYPE_DATE = 16;
+
+    /** Identification headers */
+    const TYPE_ID = 32;
+
+    /** Address path headers */
+    const TYPE_PATH = 64;
+
+    /**
+     * Get the type of Header that this instance represents.
+     *
+     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
+     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
+     *
+     * @return int
+     */
+    public function getFieldType();
+
+    /**
+     * Set the model for the field body.
+     *
+     * The actual types needed will vary depending upon the type of Header.
+     *
+     * @param mixed $model
+     */
+    public function setFieldBodyModel($model);
+
+    /**
+     * Set the charset used when rendering the Header.
+     *
+     * @param string $charset
+     */
+    public function setCharset($charset);
+
+    /**
+     * Get the model for the field body.
+     *
+     * The return type depends on the specifics of the Header.
+     *
+     * @return mixed
+     */
+    public function getFieldBodyModel();
+
+    /**
+     * Get the name of this header (e.g. Subject).
+     *
+     * The name is an identifier and as such will be immutable.
+     *
+     * @return string
+     */
+    public function getFieldName();
+
+    /**
+     * Get the field body, prepared for folding into a final header value.
+     *
+     * @return string
+     */
+    public function getFieldBody();
+
+    /**
+     * Get this Header rendered as a compliant string.
+     *
+     * @return string
+     */
+    public function toString();
+}

@@ -1,40 +1,67 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Buffers input and output to a resource.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Transport_IoBuffer extends Swift_InputByteStream, Swift_OutputByteStream
+{
+    /** A socket buffer over TCP */
+    const TYPE_SOCKET = 0x0001;
+
+    /** A process buffer with I/O support */
+    const TYPE_PROCESS = 0x0010;
+
+    /**
+     * Perform any initialization needed, using the given $params.
+     *
+     * Parameters will vary depending upon the type of IoBuffer used.
+     *
+     * @param array $params
+     */
+    public function initialize(array $params);
+
+    /**
+     * Set an individual param on the buffer (e.g. switching to SSL).
+     *
+     * @param string $param
+     * @param mixed  $value
+     */
+    public function setParam($param, $value);
+
+    /**
+     * Perform any shutdown logic needed.
+     */
+    public function terminate();
+
+    /**
+     * Set an array of string replacements which should be made on data written
+     * to the buffer.
+     *
+     * This could replace LF with CRLF for example.
+     *
+     * @param string[] $replacements
+     */
+    public function setWriteTranslations(array $replacements);
+
+    /**
+     * Get a line of output (including any CRLF).
+     *
+     * The $sequence number comes from any writes and may or may not be used
+     * depending upon the implementation.
+     *
+     * @param int $sequence of last write to scan from
+     *
+     * @return string
+     */
+    public function readLine($sequence);
+}

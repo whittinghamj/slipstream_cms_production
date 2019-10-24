@@ -1,47 +1,42 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-+3sUEV/FZmmNPr5Je819TxU92F06
+<?php
+
+/*
+* This file is part of SwiftMailer.
+* (c) 2004-2009 Chris Corbyn
+*
+* For the full copyright and license information, please view the LICENSE
+* file that was distributed with this source code.
+*/
+
+/**
+ * @author Romain-Geissler
+ */
+class Swift_ByteStream_TemporaryFileByteStream extends Swift_ByteStream_FileByteStream
+{
+    public function __construct()
+    {
+        $filePath = tempnam(sys_get_temp_dir(), 'FileByteStream');
+
+        if ($filePath === false) {
+            throw new Swift_IoException('Failed to retrieve temporary file name.');
+        }
+
+        parent::__construct($filePath, true);
+    }
+
+    public function getContent()
+    {
+        if (($content = file_get_contents($this->getPath())) === false) {
+            throw new Swift_IoException('Failed to get temporary file content.');
+        }
+
+        return $content;
+    }
+
+    public function __destruct()
+    {
+        if (file_exists($this->getPath())) {
+            @unlink($this->getPath());
+        }
+    }
+}

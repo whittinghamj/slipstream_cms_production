@@ -1,158 +1,176 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Defines the grammar to use for validation, implements the RFC 2822 (and friends) ABNF grammar definitions.
+ *
+ * @author     Fabien Potencier
+ * @author     Chris Corbyn
+ */
+class Swift_Mime_Grammar
+{
+    /**
+     * Special characters used in the syntax which need to be escaped.
+     *
+     * @var string[]
+     */
+    private static $_specials = array();
+
+    /**
+     * Tokens defined in RFC 2822 (and some related RFCs).
+     *
+     * @var string[]
+     */
+    private static $_grammar = array();
+
+    /**
+     * Initialize some RFC 2822 (and friends) ABNF grammar definitions.
+     */
+    public function __construct()
+    {
+        $this->init();
+    }
+
+    public function __wakeup()
+    {
+        $this->init();
+    }
+
+    protected function init()
+    {
+        if (count(self::$_specials) > 0) {
+            return;
+        }
+
+        self::$_specials = array(
+            '(', ')', '<', '>', '[', ']',
+            ':', ';', '@', ',', '.', '"',
+            );
+
+        /*** Refer to RFC 2822 for ABNF grammar ***/
+
+        // All basic building blocks
+        self::$_grammar['NO-WS-CTL'] = '[\x01-\x08\x0B\x0C\x0E-\x19\x7F]';
+        self::$_grammar['WSP'] = '[ \t]';
+        self::$_grammar['CRLF'] = '(?:\r\n)';
+        self::$_grammar['FWS'] = '(?:(?:'.self::$_grammar['WSP'].'*'.
+                self::$_grammar['CRLF'].')?'.self::$_grammar['WSP'].')';
+        self::$_grammar['text'] = '[\x00-\x08\x0B\x0C\x0E-\x7F]';
+        self::$_grammar['quoted-pair'] = '(?:\\\\'.self::$_grammar['text'].')';
+        self::$_grammar['ctext'] = '(?:'.self::$_grammar['NO-WS-CTL'].
+                '|[\x21-\x27\x2A-\x5B\x5D-\x7E])';
+        // Uses recursive PCRE (?1) -- could be a weak point??
+        self::$_grammar['ccontent'] = '(?:'.self::$_grammar['ctext'].'|'.
+                self::$_grammar['quoted-pair'].'|(?1))';
+        self::$_grammar['comment'] = '(\((?:'.self::$_grammar['FWS'].'|'.
+                self::$_grammar['ccontent'].')*'.self::$_grammar['FWS'].'?\))';
+        self::$_grammar['CFWS'] = '(?:(?:'.self::$_grammar['FWS'].'?'.
+                self::$_grammar['comment'].')*(?:(?:'.self::$_grammar['FWS'].'?'.
+                self::$_grammar['comment'].')|'.self::$_grammar['FWS'].'))';
+        self::$_grammar['qtext'] = '(?:'.self::$_grammar['NO-WS-CTL'].
+                '|[\x21\x23-\x5B\x5D-\x7E])';
+        self::$_grammar['qcontent'] = '(?:'.self::$_grammar['qtext'].'|'.
+                self::$_grammar['quoted-pair'].')';
+        self::$_grammar['quoted-string'] = '(?:'.self::$_grammar['CFWS'].'?"'.
+                '('.self::$_grammar['FWS'].'?'.self::$_grammar['qcontent'].')*'.
+                self::$_grammar['FWS'].'?"'.self::$_grammar['CFWS'].'?)';
+        self::$_grammar['atext'] = '[a-zA-Z0-9!#\$%&\'\*\+\-\/=\?\^_`\{\}\|~]';
+        self::$_grammar['atom'] = '(?:'.self::$_grammar['CFWS'].'?'.
+                self::$_grammar['atext'].'+'.self::$_grammar['CFWS'].'?)';
+        self::$_grammar['dot-atom-text'] = '(?:'.self::$_grammar['atext'].'+'.
+                '(\.'.self::$_grammar['atext'].'+)*)';
+        self::$_grammar['dot-atom'] = '(?:'.self::$_grammar['CFWS'].'?'.
+                self::$_grammar['dot-atom-text'].'+'.self::$_grammar['CFWS'].'?)';
+        self::$_grammar['word'] = '(?:'.self::$_grammar['atom'].'|'.
+                self::$_grammar['quoted-string'].')';
+        self::$_grammar['phrase'] = '(?:'.self::$_grammar['word'].'+?)';
+        self::$_grammar['no-fold-quote'] = '(?:"(?:'.self::$_grammar['qtext'].
+                '|'.self::$_grammar['quoted-pair'].')*")';
+        self::$_grammar['dtext'] = '(?:'.self::$_grammar['NO-WS-CTL'].
+                '|[\x21-\x5A\x5E-\x7E])';
+        self::$_grammar['no-fold-literal'] = '(?:\[(?:'.self::$_grammar['dtext'].
+                '|'.self::$_grammar['quoted-pair'].')*\])';
+
+        // Message IDs
+        self::$_grammar['id-left'] = '(?:'.self::$_grammar['dot-atom-text'].'|'.
+                self::$_grammar['no-fold-quote'].')';
+        self::$_grammar['id-right'] = '(?:'.self::$_grammar['dot-atom-text'].'|'.
+                self::$_grammar['no-fold-literal'].')';
+
+        // Addresses, mailboxes and paths
+        self::$_grammar['local-part'] = '(?:'.self::$_grammar['dot-atom'].'|'.
+                self::$_grammar['quoted-string'].')';
+        self::$_grammar['dcontent'] = '(?:'.self::$_grammar['dtext'].'|'.
+                self::$_grammar['quoted-pair'].')';
+        self::$_grammar['domain-literal'] = '(?:'.self::$_grammar['CFWS'].'?\[('.
+                self::$_grammar['FWS'].'?'.self::$_grammar['dcontent'].')*?'.
+                self::$_grammar['FWS'].'?\]'.self::$_grammar['CFWS'].'?)';
+        self::$_grammar['domain'] = '(?:'.self::$_grammar['dot-atom'].'|'.
+                self::$_grammar['domain-literal'].')';
+        self::$_grammar['addr-spec'] = '(?:'.self::$_grammar['local-part'].'@'.
+                self::$_grammar['domain'].')';
+    }
+
+    /**
+     * Get the grammar defined for $name token.
+     *
+     * @param string $name exactly as written in the RFC
+     *
+     * @return string
+     */
+    public function getDefinition($name)
+    {
+        if (array_key_exists($name, self::$_grammar)) {
+            return self::$_grammar[$name];
+        }
+
+        throw new Swift_RfcComplianceException(
+            "No such grammar '".$name."' defined."
+        );
+    }
+
+    /**
+     * Returns the tokens defined in RFC 2822 (and some related RFCs).
+     *
+     * @return array
+     */
+    public function getGrammarDefinitions()
+    {
+        return self::$_grammar;
+    }
+
+    /**
+     * Returns the current special characters used in the syntax which need to be escaped.
+     *
+     * @return array
+     */
+    public function getSpecials()
+    {
+        return self::$_specials;
+    }
+
+    /**
+     * Escape special characters in a string (convert to quoted-pairs).
+     *
+     * @param string   $token
+     * @param string[] $include additional chars to escape
+     * @param string[] $exclude chars from escaping
+     *
+     * @return string
+     */
+    public function escapeSpecials($token, $include = array(), $exclude = array())
+    {
+        foreach (array_merge(array('\\'), array_diff(self::$_specials, $exclude), $include) as $char) {
+            $token = str_replace($char, '\\'.$char, $token);
+        }
+
+        return $token;
+    }
+}

@@ -1,132 +1,373 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-HwDBb7bQXeRMs+EXSe89nW==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Dependency Injection container.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_DependencyContainer
+{
+    /** Constant for literal value types */
+    const TYPE_VALUE = 0x0001;
+
+    /** Constant for new instance types */
+    const TYPE_INSTANCE = 0x0010;
+
+    /** Constant for shared instance types */
+    const TYPE_SHARED = 0x0100;
+
+    /** Constant for aliases */
+    const TYPE_ALIAS = 0x1000;
+
+    /** Singleton instance */
+    private static $_instance = null;
+
+    /** The data container */
+    private $_store = array();
+
+    /** The current endpoint in the data container */
+    private $_endPoint;
+
+    /**
+     * Constructor should not be used.
+     *
+     * Use {@link getInstance()} instead.
+     */
+    public function __construct()
+    {
+    }
+
+    /**
+     * Returns a singleton of the DependencyContainer.
+     *
+     * @return self
+     */
+    public static function getInstance()
+    {
+        if (!isset(self::$_instance)) {
+            self::$_instance = new self();
+        }
+
+        return self::$_instance;
+    }
+
+    /**
+     * List the names of all items stored in the Container.
+     *
+     * @return array
+     */
+    public function listItems()
+    {
+        return array_keys($this->_store);
+    }
+
+    /**
+     * Test if an item is registered in this container with the given name.
+     *
+     * @see register()
+     *
+     * @param string $itemName
+     *
+     * @return bool
+     */
+    public function has($itemName)
+    {
+        return array_key_exists($itemName, $this->_store)
+            && isset($this->_store[$itemName]['lookupType']);
+    }
+
+    /**
+     * Lookup the item with the given $itemName.
+     *
+     * @see register()
+     *
+     * @param string $itemName
+     *
+     * @throws Swift_DependencyException If the dependency is not found
+     *
+     * @return mixed
+     */
+    public function lookup($itemName)
+    {
+        if (!$this->has($itemName)) {
+            throw new Swift_DependencyException(
+                'Cannot lookup dependency "'.$itemName.'" since it is not registered.'
+                );
+        }
+
+        switch ($this->_store[$itemName]['lookupType']) {
+            case self::TYPE_ALIAS:
+                return $this->_createAlias($itemName);
+            case self::TYPE_VALUE:
+                return $this->_getValue($itemName);
+            case self::TYPE_INSTANCE:
+                return $this->_createNewInstance($itemName);
+            case self::TYPE_SHARED:
+                return $this->_createSharedInstance($itemName);
+        }
+    }
+
+    /**
+     * Create an array of arguments passed to the constructor of $itemName.
+     *
+     * @param string $itemName
+     *
+     * @return array
+     */
+    public function createDependenciesFor($itemName)
+    {
+        $args = array();
+        if (isset($this->_store[$itemName]['args'])) {
+            $args = $this->_resolveArgs($this->_store[$itemName]['args']);
+        }
+
+        return $args;
+    }
+
+    /**
+     * Register a new dependency with $itemName.
+     *
+     * This method returns the current DependencyContainer instance because it
+     * requires the use of the fluid interface to set the specific details for the
+     * dependency.
+     *
+     * @see asNewInstanceOf(), asSharedInstanceOf(), asValue()
+     *
+     * @param string $itemName
+     *
+     * @return $this
+     */
+    public function register($itemName)
+    {
+        $this->_store[$itemName] = array();
+        $this->_endPoint = &$this->_store[$itemName];
+
+        return $this;
+    }
+
+    /**
+     * Specify the previously registered item as a literal value.
+     *
+     * {@link register()} must be called before this will work.
+     *
+     * @param mixed $value
+     *
+     * @return $this
+     */
+    public function asValue($value)
+    {
+        $endPoint = &$this->_getEndPoint();
+        $endPoint['lookupType'] = self::TYPE_VALUE;
+        $endPoint['value'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * Specify the previously registered item as an alias of another item.
+     *
+     * @param string $lookup
+     *
+     * @return $this
+     */
+    public function asAliasOf($lookup)
+    {
+        $endPoint = &$this->_getEndPoint();
+        $endPoint['lookupType'] = self::TYPE_ALIAS;
+        $endPoint['ref'] = $lookup;
+
+        return $this;
+    }
+
+    /**
+     * Specify the previously registered item as a new instance of $className.
+     *
+     * {@link register()} must be called before this will work.
+     * Any arguments can be set with {@link withDependencies()},
+     * {@link addConstructorValue()} or {@link addConstructorLookup()}.
+     *
+     * @see withDependencies(), addConstructorValue(), addConstructorLookup()
+     *
+     * @param string $className
+     *
+     * @return $this
+     */
+    public function asNewInstanceOf($className)
+    {
+        $endPoint = &$this->_getEndPoint();
+        $endPoint['lookupType'] = self::TYPE_INSTANCE;
+        $endPoint['className'] = $className;
+
+        return $this;
+    }
+
+    /**
+     * Specify the previously registered item as a shared instance of $className.
+     *
+     * {@link register()} must be called before this will work.
+     *
+     * @param string $className
+     *
+     * @return $this
+     */
+    public function asSharedInstanceOf($className)
+    {
+        $endPoint = &$this->_getEndPoint();
+        $endPoint['lookupType'] = self::TYPE_SHARED;
+        $endPoint['className'] = $className;
+
+        return $this;
+    }
+
+    /**
+     * Specify a list of injected dependencies for the previously registered item.
+     *
+     * This method takes an array of lookup names.
+     *
+     * @see addConstructorValue(), addConstructorLookup()
+     *
+     * @param array $lookups
+     *
+     * @return $this
+     */
+    public function withDependencies(array $lookups)
+    {
+        $endPoint = &$this->_getEndPoint();
+        $endPoint['args'] = array();
+        foreach ($lookups as $lookup) {
+            $this->addConstructorLookup($lookup);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Specify a literal (non looked up) value for the constructor of the
+     * previously registered item.
+     *
+     * @see withDependencies(), addConstructorLookup()
+     *
+     * @param mixed $value
+     *
+     * @return $this
+     */
+    public function addConstructorValue($value)
+    {
+        $endPoint = &$this->_getEndPoint();
+        if (!isset($endPoint['args'])) {
+            $endPoint['args'] = array();
+        }
+        $endPoint['args'][] = array('type' => 'value', 'item' => $value);
+
+        return $this;
+    }
+
+    /**
+     * Specify a dependency lookup for the constructor of the previously
+     * registered item.
+     *
+     * @see withDependencies(), addConstructorValue()
+     *
+     * @param string $lookup
+     *
+     * @return $this
+     */
+    public function addConstructorLookup($lookup)
+    {
+        $endPoint = &$this->_getEndPoint();
+        if (!isset($this->_endPoint['args'])) {
+            $endPoint['args'] = array();
+        }
+        $endPoint['args'][] = array('type' => 'lookup', 'item' => $lookup);
+
+        return $this;
+    }
+
+    /** Get the literal value with $itemName */
+    private function _getValue($itemName)
+    {
+        return $this->_store[$itemName]['value'];
+    }
+
+    /** Resolve an alias to another item */
+    private function _createAlias($itemName)
+    {
+        return $this->lookup($this->_store[$itemName]['ref']);
+    }
+
+    /** Create a fresh instance of $itemName */
+    private function _createNewInstance($itemName)
+    {
+        $reflector = new ReflectionClass($this->_store[$itemName]['className']);
+        if ($reflector->getConstructor()) {
+            return $reflector->newInstanceArgs(
+                $this->createDependenciesFor($itemName)
+                );
+        }
+
+        return $reflector->newInstance();
+    }
+
+    /** Create and register a shared instance of $itemName */
+    private function _createSharedInstance($itemName)
+    {
+        if (!isset($this->_store[$itemName]['instance'])) {
+            $this->_store[$itemName]['instance'] = $this->_createNewInstance($itemName);
+        }
+
+        return $this->_store[$itemName]['instance'];
+    }
+
+    /** Get the current endpoint in the store */
+    private function &_getEndPoint()
+    {
+        if (!isset($this->_endPoint)) {
+            throw new BadMethodCallException(
+                'Component must first be registered by calling register()'
+                );
+        }
+
+        return $this->_endPoint;
+    }
+
+    /** Get an argument list with dependencies resolved */
+    private function _resolveArgs(array $args)
+    {
+        $resolved = array();
+        foreach ($args as $argDefinition) {
+            switch ($argDefinition['type']) {
+                case 'lookup':
+                    $resolved[] = $this->_lookupRecursive($argDefinition['item']);
+                    break;
+                case 'value':
+                    $resolved[] = $argDefinition['item'];
+                    break;
+            }
+        }
+
+        return $resolved;
+    }
+
+    /** Resolve a single dependency with an collections */
+    private function _lookupRecursive($item)
+    {
+        if (is_array($item)) {
+            $collection = array();
+            foreach ($item as $k => $v) {
+                $collection[$k] = $this->_lookupRecursive($v);
+            }
+
+            return $collection;
+        }
+
+        return $this->lookup($item);
+    }
+}

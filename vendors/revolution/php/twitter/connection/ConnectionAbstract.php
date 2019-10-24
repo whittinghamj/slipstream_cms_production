@@ -1,80 +1,120 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-1t443nLS1Yx7a4WJWU35qntPIIj6WqI/VBC5B0==
+<?php
+namespace TwitterPhp\Connection;
+
+/**
+ * Class Base
+ * @package TwitterPhp
+ * @subpackage Connection
+ */
+abstract class Base
+{
+    /**
+     * Url for Twitter api
+     */
+    const TWITTER_API_URL = 'https://api.twitter.com';
+
+    /**
+     * Twitter URL that authenticates bearer tokens
+     */
+    const TWITTER_API_AUTH_URL = 'https://api.twitter.com/oauth2/token/';
+
+    /**
+     * Version of Twitter api
+     */
+    const TWITTER_API_VERSION = '1.1';
+
+    /**
+     * Timeout value for curl connections
+     */
+    const DEFAULT_TIMEOUT = 10;
+
+    /**
+     * METHOD GET
+     */
+    const METHOD_GET = 'GET';
+
+    /**
+     * METHOD POST
+     */
+    const METHOD_POST = 'POST';
+
+    /**
+     * @param string $url
+     * @param array $parameters
+     * @param $method
+     * @return array
+     */
+    abstract protected function _buildHeaders($url,array $parameters = null,$method);
+
+
+    /**
+     * Do GET request to Twitter api
+     *
+     * @link https://dev.twitter.com/docs/api/1.1
+     *
+     * @param $resource
+     * @param array $parameters
+     * @return mixed
+     */
+    public function get($resource, array $parameters = array())
+    {
+        $url = $this->_prepareUrl($resource);
+        $headers = $this->_buildHeaders($url,$parameters,self::METHOD_GET);
+        $url = $url . '?' . http_build_query($parameters);
+        $curlParams = array (
+            CURLOPT_URL => $url,
+            CURLOPT_HTTPHEADER => $headers
+        );
+
+        return $this->_callApi($curlParams);
+    }
+
+    /**
+     * Do POST request to Twitter api
+     *
+     * @link https://dev.twitter.com/docs/api/1.1
+     *
+     * @param $resource
+     * @param array $parameters
+     * @return mixed
+     */
+    public function post($resource, array $parameters = array())
+    {
+        $url = $this->_prepareUrl($resource);
+        $headers = $this->_buildHeaders($url,$parameters,self::METHOD_POST);
+        $curlParams = array (
+            CURLOPT_URL => $url,
+            CURLOPT_POST => 1,
+            CURLOPT_POSTFIELDS => $parameters,
+            CURLOPT_HTTPHEADER => $headers
+        );
+
+        return $this->_callApi($curlParams);
+    }
+
+    /**
+     * Call Twitter api
+     *
+     * @param array $params
+     * @return array
+     */
+    protected function _callApi(array $params)
+    {
+        $curl = curl_init();
+        curl_setopt_array($curl,$params);
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, self::DEFAULT_TIMEOUT);
+        $response = curl_exec($curl);
+        return json_decode($response,true);
+    }
+
+    /**
+     * @param string $resource
+     * @return string
+     */
+    private function _prepareUrl($resource)
+    {
+        return self::TWITTER_API_URL . '/' . self::TWITTER_API_VERSION . '/' . ltrim($resource,'/') . '.json';
+    }
+}

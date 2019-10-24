@@ -1,44 +1,64 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles raw Transfer Encoding in Swift Mailer.
+ *
+ *
+ * @author Sebastiaan Stok <s.stok@rollerscapes.net>
+ */
+class Swift_Mime_ContentEncoder_RawContentEncoder implements Swift_Mime_ContentEncoder
+{
+    /**
+     * Encode a given string to produce an encoded string.
+     *
+     * @param string $string
+     * @param int    $firstLineOffset ignored
+     * @param int    $maxLineLength   ignored
+     *
+     * @return string
+     */
+    public function encodeString($string, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        return $string;
+    }
+
+    /**
+     * Encode stream $in to stream $out.
+     *
+     * @param Swift_OutputByteStream $in
+     * @param Swift_InputByteStream  $out
+     * @param int                    $firstLineOffset ignored
+     * @param int                    $maxLineLength   ignored
+     */
+    public function encodeByteStream(Swift_OutputByteStream $os, Swift_InputByteStream $is, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        while (false !== ($bytes = $os->read(8192))) {
+            $is->write($bytes);
+        }
+    }
+
+    /**
+     * Get the name of this encoding scheme.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'raw';
+    }
+
+    /**
+     * Not used.
+     */
+    public function charsetChanged($charset)
+    {
+    }
+}

@@ -1,96 +1,142 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Does real time logging of Transport level information.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_LoggerPlugin implements Swift_Events_CommandListener, Swift_Events_ResponseListener, Swift_Events_TransportChangeListener, Swift_Events_TransportExceptionListener, Swift_Plugins_Logger
+{
+    /** The logger which is delegated to */
+    private $_logger;
+
+    /**
+     * Create a new LoggerPlugin using $logger.
+     *
+     * @param Swift_Plugins_Logger $logger
+     */
+    public function __construct(Swift_Plugins_Logger $logger)
+    {
+        $this->_logger = $logger;
+    }
+
+    /**
+     * Add a log entry.
+     *
+     * @param string $entry
+     */
+    public function add($entry)
+    {
+        $this->_logger->add($entry);
+    }
+
+    /**
+     * Clear the log contents.
+     */
+    public function clear()
+    {
+        $this->_logger->clear();
+    }
+
+    /**
+     * Get this log as a string.
+     *
+     * @return string
+     */
+    public function dump()
+    {
+        return $this->_logger->dump();
+    }
+
+    /**
+     * Invoked immediately following a command being sent.
+     *
+     * @param Swift_Events_CommandEvent $evt
+     */
+    public function commandSent(Swift_Events_CommandEvent $evt)
+    {
+        $command = $evt->getCommand();
+        $this->_logger->add(sprintf('>> %s', $command));
+    }
+
+    /**
+     * Invoked immediately following a response coming back.
+     *
+     * @param Swift_Events_ResponseEvent $evt
+     */
+    public function responseReceived(Swift_Events_ResponseEvent $evt)
+    {
+        $response = $evt->getResponse();
+        $this->_logger->add(sprintf('<< %s', $response));
+    }
+
+    /**
+     * Invoked just before a Transport is started.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function beforeTransportStarted(Swift_Events_TransportChangeEvent $evt)
+    {
+        $transportName = get_class($evt->getSource());
+        $this->_logger->add(sprintf('++ Starting %s', $transportName));
+    }
+
+    /**
+     * Invoked immediately after the Transport is started.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function transportStarted(Swift_Events_TransportChangeEvent $evt)
+    {
+        $transportName = get_class($evt->getSource());
+        $this->_logger->add(sprintf('++ %s started', $transportName));
+    }
+
+    /**
+     * Invoked just before a Transport is stopped.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function beforeTransportStopped(Swift_Events_TransportChangeEvent $evt)
+    {
+        $transportName = get_class($evt->getSource());
+        $this->_logger->add(sprintf('++ Stopping %s', $transportName));
+    }
+
+    /**
+     * Invoked immediately after the Transport is stopped.
+     *
+     * @param Swift_Events_TransportChangeEvent $evt
+     */
+    public function transportStopped(Swift_Events_TransportChangeEvent $evt)
+    {
+        $transportName = get_class($evt->getSource());
+        $this->_logger->add(sprintf('++ %s stopped', $transportName));
+    }
+
+    /**
+     * Invoked as a TransportException is thrown in the Transport system.
+     *
+     * @param Swift_Events_TransportExceptionEvent $evt
+     */
+    public function exceptionThrown(Swift_Events_TransportExceptionEvent $evt)
+    {
+        $e = $evt->getException();
+        $message = $e->getMessage();
+        $code = $e->getCode();
+        $this->_logger->add(sprintf('!! %s (code: %s)', $message, $code));
+        $message .= PHP_EOL;
+        $message .= 'Log data:'.PHP_EOL;
+        $message .= $this->_logger->dump();
+        $evt->cancelBubble();
+        throw new Swift_TransportException($message, $code, $e->getPrevious());
+    }
+}

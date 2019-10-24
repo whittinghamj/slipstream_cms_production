@@ -1,44 +1,25 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-RaLrnsCqP8of/CxWh+/EmtW=
+<?php
+
+/****************************************************************************/
+/*                                                                          */
+/* YOU MAY WISH TO MODIFY OR REMOVE THE FOLLOWING LINES WHICH SET DEFAULTS  */
+/*                                                                          */
+/****************************************************************************/
+
+$preferences = Swift_Preferences::getInstance();
+
+// Sets the default charset so that setCharset() is not needed elsewhere
+$preferences->setCharset('utf-8');
+
+// Without these lines the default caching mechanism is "array" but this uses a lot of memory.
+// If possible, use a disk cache to enable attaching large attachments etc.
+// You can override the default temporary directory by setting the TMPDIR environment variable.
+if (@is_writable($tmpDir = sys_get_temp_dir())) {
+    $preferences->setTempDir($tmpDir)->setCacheType('disk');
+}
+
+// this should only be done when Swiftmailer won't use the native QP content encoder
+// see mime_deps.php
+if (PHP_VERSION_ID < 50407) {
+    $preferences->setQPDotEscape(false);
+}

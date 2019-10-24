@@ -1,34 +1,46 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Generated when a TransportException is thrown from the Transport system.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Events_TransportExceptionEvent extends Swift_Events_EventObject
+{
+    /**
+     * The Exception thrown.
+     *
+     * @var Swift_TransportException
+     */
+    private $_exception;
+
+    /**
+     * Create a new TransportExceptionEvent for $transport.
+     *
+     * @param Swift_Transport          $transport
+     * @param Swift_TransportException $ex
+     */
+    public function __construct(Swift_Transport $transport, Swift_TransportException $ex)
+    {
+        parent::__construct($transport);
+        $this->_exception = $ex;
+    }
+
+    /**
+     * Get the TransportException thrown.
+     *
+     * @return Swift_TransportException
+     */
+    public function getException()
+    {
+        return $this->_exception;
+    }
+}

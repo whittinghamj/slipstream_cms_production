@@ -1,31 +1,34 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPpCbwwDO3z2Ks99+WCs3r0NHOUjX8JsX+z4JFj3Pxb3LwJaApyiAvEXlu/Jo0zuoJiDtxzNc
-pa6KEjLElsz1R6ysFKL8NkMJONuiqw1MuaGe6ust7FLjGhyzQWVL1MNSB5NUJTun6QKlr5LzK1tc
-uCHi3fogAXIQBMvMfB8g5Pg5w48QWoSg+CSDDkqtYJ86f8lC/f1EEKyvJ1+i8otKOujsA8y85xig
-rdwnOiUhYVpMzmIvM99PYgl8JroUUz+2O+Z4/GR+QNnyyZ3qxHa7hyGJ8ykvA8HC1hZM64CobbTC
-UrLHWbHDkAxKpIoXS53HcEwHnxSRGwuEr/FWlCRmgoIqKC0wXNJ9ukwxQnx2GW+4fSnPypiRC74k
-uFC5rdiF1KKdiVKoy5QkPI0/qL6cI5/W6AoPSA3JOmqR8Xj8GxfHPngSubw9k27dPD1KDEA6b4mA
-Jzc6APKTyhxOLN73SoRriQLci874C0hD2zXDToX8FiTl8IpBN105334DDdsgZXegnOf2Ark5721u
-zD0fRdIp8/vxmKAqixcpp2PjtMbwoe5DJIK/Czg2TZi+qNjqoe117Oc/FiVxZXL8bbi5ZEdWdAtO
-Z29L5aPWZVnchDiFviYFZVJ8GaCW+eEUxpNbEqnVm/swG6aKV1qh9GNEVh3kQ3fO2+s0v6zcjeVq
-MKRUarAnbr2ckKuRBjKjWdKBz5uZyLLdAoHkylcGq/hJLBve5+tTRz6Zl+BIyP7Paqpy3+855GPH
-4BsMEidP7R4+BJRIiAbK1eJJGZuj9cRebrOHguwyJwDmjUNE/3UgUb/1r+ha92g7h7X5cbw5psNS
-Zq8FFlMGpveIE1TK/w6+H0+QJta68zSYo7oWd6+JreaYRg8m3GphTQkiXjtOi6OiFxwmT8vkV4qG
-PFrS52YR46WYlRJlDSxCQQLS5knxWXEv0hLeZc5pPmMnYlfMwlLB754Bf5OKiEm/T9DZs9C98A1q
-QlLmzudt0zMxrY0z0FbCeFRN56CJh3LvK0CqLLLtkP1BY/z+rBOp8af8UDog7o7Y7AYoyr7K0aPg
-SftVT9uid9YaafB33wk2Y6bEiSUpVplGJSVGCq7ei/JZD7Hmz+3QHKdf9rt6O1REjaUDjkLLYLOB
-fnPFoM5ryZ6X7cJkDREe0xizB2DRYfRo1oOO9oZKgkx3535/IGfz/7FupqSS8c7A1UDZgTVi9JPR
-oVhQnaRFrCgIww1Hyv/SVjgOS+jjLCu+++HJpmhSwDcZtnF8ocA4MTu2RrecTtiRd/3VlACT8mGK
-a3snwHhE4j8BC2sLqPrL0N1hzLN0p/fEZ4wdqc8Dl3q7bgr/6ngqwCTE/pxZnfpxRPkBeFLu+qb1
-K0fLEcovo22ZY0Qljm1iDW2tY+m2pnwL39Ve0t02dw9Lun4DcN3mGK6s+JVJERMRvebTpp5GZAjn
-5GFBFac4r+mIbGmsEVfP+LrQi0AyiBxhD0qEw2OtzajZlVz7t/8ZnUd/sMCWtZa+ktxjI10Mi1GT
-KBUZphQJDmK6kBRdsWZ1Ma9pzgO6Jd4x7g4RriuXo4woahbY7AKDdjg+f7wya9JmjoInFXdzySI6
-Clw7+WcLUb3qoYxB0U/9qnZ+hDcAapj0tUMQtnW2z3EODMCeDjfwPkKRU091pSVndhYo6r0LiBAD
-WOioqlXBWfnf626C+8yq7zT76eEbAP0mRUK3morP8Seuz67d5DbdDVltaFTDt5EP/PY0zz3K/EZ6
-GZ4SEVg914OZBCoJxP8AgBfPYBuv67r3OeYhmlOIsOczi/7tyJCkKnPazjKCkiVxTlXptqQGCNwE
-kna7kgx51ngveY8kQuvDxzncQxzjI1OHrCZaSYXkXiV/dqpLU3ya4RmdgDH71auOlhauBoLwWH0a
-Pp3DghE4VlyAVAgx4Aloh2KwfplW/Fzbxewk/fWvgRiArjeCzoAOA1JzTl+YLLzbJDPeKwBPBvLK
-N0OjSb6Y+QIHXhBQCo7H0SKUUTQEz/lfdN4j8Lcd7GEActUOeqCdG7U2Usv6UYBRUVLLPyl9mOLe
-bnLMMgFgsYkbMnSw6AuAJjYV
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A MIME Header with parameters.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Mime_ParameterizedHeader extends Swift_Mime_Header
+{
+    /**
+     * Set the value of $parameter.
+     *
+     * @param string $parameter
+     * @param string $value
+     */
+    public function setParameter($parameter, $value);
+
+    /**
+     * Get the value of $parameter.
+     *
+     * @param string $parameter
+     *
+     * @return string
+     */
+    public function getParameter($parameter);
+}

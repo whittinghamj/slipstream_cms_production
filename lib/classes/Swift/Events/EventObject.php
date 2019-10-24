@@ -1,38 +1,63 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-ct0qB0BeSAzJ3BOa
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A base Event which all Event classes inherit from.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Events_EventObject implements Swift_Events_Event
+{
+    /** The source of this Event */
+    private $_source;
+
+    /** The state of this Event (should it bubble up the stack?) */
+    private $_bubbleCancelled = false;
+
+    /**
+     * Create a new EventObject originating at $source.
+     *
+     * @param object $source
+     */
+    public function __construct($source)
+    {
+        $this->_source = $source;
+    }
+
+    /**
+     * Get the source object of this event.
+     *
+     * @return object
+     */
+    public function getSource()
+    {
+        return $this->_source;
+    }
+
+    /**
+     * Prevent this Event from bubbling any further up the stack.
+     *
+     * @param bool $cancel, optional
+     */
+    public function cancelBubble($cancel = true)
+    {
+        $this->_bubbleCancelled = $cancel;
+    }
+
+    /**
+     * Returns true if this Event will not bubble any further up the stack.
+     *
+     * @return bool
+     */
+    public function bubbleCancelled()
+    {
+        return $this->_bubbleCancelled;
+    }
+}

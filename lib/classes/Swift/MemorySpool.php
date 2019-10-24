@@ -1,55 +1,110 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2011 Fabien Potencier <fabien.potencier@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Stores Messages in memory.
+ *
+ * @author Fabien Potencier
+ */
+class Swift_MemorySpool implements Swift_Spool
+{
+    protected $messages = array();
+    private $flushRetries = 3;
+
+    /**
+     * Tests if this Transport mechanism has started.
+     *
+     * @return bool
+     */
+    public function isStarted()
+    {
+        return true;
+    }
+
+    /**
+     * Starts this Transport mechanism.
+     */
+    public function start()
+    {
+    }
+
+    /**
+     * Stops this Transport mechanism.
+     */
+    public function stop()
+    {
+    }
+
+    /**
+     * @param int $retries
+     */
+    public function setFlushRetries($retries)
+    {
+        $this->flushRetries = $retries;
+    }
+
+    /**
+     * Stores a message in the queue.
+     *
+     * @param Swift_Mime_Message $message The message to store
+     *
+     * @return bool Whether the operation has succeeded
+     */
+    public function queueMessage(Swift_Mime_Message $message)
+    {
+        //clone the message to make sure it is not changed while in the queue
+        $this->messages[] = clone $message;
+
+        return true;
+    }
+
+    /**
+     * Sends messages using the given transport instance.
+     *
+     * @param Swift_Transport $transport        A transport instance
+     * @param string[]        $failedRecipients An array of failures by-reference
+     *
+     * @return int The number of sent emails
+     */
+    public function flushQueue(Swift_Transport $transport, &$failedRecipients = null)
+    {
+        if (!$this->messages) {
+            return 0;
+        }
+
+        if (!$transport->isStarted()) {
+            $transport->start();
+        }
+
+        $count = 0;
+        $retries = $this->flushRetries;
+        while ($retries--) {
+            try {
+                while ($message = array_pop($this->messages)) {
+                    $count += $transport->send($message, $failedRecipients);
+                }
+            } catch (Swift_TransportException $exception) {
+                if ($retries) {
+                    // re-queue the message at the end of the queue to give a chance
+                    // to the other messages to be sent, in case the failure was due to
+                    // this message and not just the transport failing
+                    array_unshift($this->messages, $message);
+
+                    // wait half a second before we try again
+                    usleep(500000);
+                } else {
+                    throw $exception;
+                }
+            }
+        }
+
+        return $count;
+    }
+}

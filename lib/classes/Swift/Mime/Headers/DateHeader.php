@@ -1,56 +1,125 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-0gfiiG6/gYs7NRP5/Yak
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A Date MIME Header for Swift Mailer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_Headers_DateHeader extends Swift_Mime_Headers_AbstractHeader
+{
+    /**
+     * The UNIX timestamp value of this Header.
+     *
+     * @var int
+     */
+    private $_timestamp;
+
+    /**
+     * Creates a new DateHeader with $name and $timestamp.
+     *
+     * Example:
+     * <code>
+     * <?php
+     * $header = new Swift_Mime_Headers_DateHeader('Date', time());
+     * ?>
+     * </code>
+     *
+     * @param string             $name    of Header
+     * @param Swift_Mime_Grammar $grammar
+     */
+    public function __construct($name, Swift_Mime_Grammar $grammar)
+    {
+        $this->setFieldName($name);
+        parent::__construct($grammar);
+    }
+
+    /**
+     * Get the type of Header that this instance represents.
+     *
+     * @see TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX
+     * @see TYPE_DATE, TYPE_ID, TYPE_PATH
+     *
+     * @return int
+     */
+    public function getFieldType()
+    {
+        return self::TYPE_DATE;
+    }
+
+    /**
+     * Set the model for the field body.
+     *
+     * This method takes a UNIX timestamp.
+     *
+     * @param int $model
+     */
+    public function setFieldBodyModel($model)
+    {
+        $this->setTimestamp($model);
+    }
+
+    /**
+     * Get the model for the field body.
+     *
+     * This method returns a UNIX timestamp.
+     *
+     * @return mixed
+     */
+    public function getFieldBodyModel()
+    {
+        return $this->getTimestamp();
+    }
+
+    /**
+     * Get the UNIX timestamp of the Date in this Header.
+     *
+     * @return int
+     */
+    public function getTimestamp()
+    {
+        return $this->_timestamp;
+    }
+
+    /**
+     * Set the UNIX timestamp of the Date in this Header.
+     *
+     * @param int $timestamp
+     */
+    public function setTimestamp($timestamp)
+    {
+        if (null !== $timestamp) {
+            $timestamp = (int) $timestamp;
+        }
+        $this->clearCachedValueIf($this->_timestamp != $timestamp);
+        $this->_timestamp = $timestamp;
+    }
+
+    /**
+     * Get the string value of the body in this Header.
+     *
+     * This is not necessarily RFC 2822 compliant since folding white space will
+     * not be added at this stage (see {@link toString()} for that).
+     *
+     * @see toString()
+     *
+     * @return string
+     */
+    public function getFieldBody()
+    {
+        if (!$this->getCachedValue()) {
+            if (isset($this->_timestamp)) {
+                $this->setCachedValue(date('r', $this->_timestamp));
+            }
+        }
+
+        return $this->getCachedValue();
+    }
+}

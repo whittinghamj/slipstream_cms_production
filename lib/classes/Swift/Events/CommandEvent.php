@@ -1,38 +1,65 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Generated when a command is sent over an SMTP connection.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Events_CommandEvent extends Swift_Events_EventObject
+{
+    /**
+     * The command sent to the server.
+     *
+     * @var string
+     */
+    private $_command;
+
+    /**
+     * An array of codes which a successful response will contain.
+     *
+     * @var int[]
+     */
+    private $_successCodes = array();
+
+    /**
+     * Create a new CommandEvent for $source with $command.
+     *
+     * @param Swift_Transport $source
+     * @param string          $command
+     * @param array           $successCodes
+     */
+    public function __construct(Swift_Transport $source, $command, $successCodes = array())
+    {
+        parent::__construct($source);
+        $this->_command = $command;
+        $this->_successCodes = $successCodes;
+    }
+
+    /**
+     * Get the command which was sent to the server.
+     *
+     * @return string
+     */
+    public function getCommand()
+    {
+        return $this->_command;
+    }
+
+    /**
+     * Get the numeric response codes which indicate success for this command.
+     *
+     * @return int[]
+     */
+    public function getSuccessCodes()
+    {
+        return $this->_successCodes;
+    }
+}

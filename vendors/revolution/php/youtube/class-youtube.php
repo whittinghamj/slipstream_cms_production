@@ -1,47 +1,85 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+<?php 
+
+/**
+ * Youtube
+ *
+ * with help of the API this class delivers all kind of Images/Videos from youtube
+ *
+ * @package    socialstreams
+ * @subpackage socialstreams/youtube
+ * @author     ThemePunch <info@themepunch.com>
+ */
+
+class TP_youtube {
+
+	/**
+	 * API key
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $api_key    Youtube API key
+	 */
+	private $api_key;
+
+	/**
+	 * Channel ID
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $channel_id    Youtube Channel ID
+	 */
+	private $channel_id;
+
+	/**
+	 * Initialize the class and set its properties.
+	 *
+	 * @since    1.0.0
+	 * @param      string    $api_key	Youtube API key.
+	 */
+	public function __construct($api_key,$channel_id) {
+		$this->api_key = $api_key;
+		$this->channel_id = $channel_id;
+	}
+
+
+	/**
+	 * Get Youtube Playlists
+	 *
+	 * @since    1.0.0
+	 */
+	public function get_playlists(){
+		//call the API and decode the response
+		$url = "https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=".$this->channel_id."&key=".$this->api_key;
+		$rsp = json_decode(file_get_contents($url));
+		return $rsp->items;
+	}
+
+	/**
+	 * Get Youtube Playlist Items
+	 *
+	 * @since    1.0.0
+	 * @param    string    $playlist_id 	Youtube Playlist ID
+	 * @param    integer    $count 	Max videos count
+	 */
+	public function show_playlist_videos($playlist_id,$count=50){
+		//call the API and decode the response
+		$url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=".$playlist_id."&maxResults=".$count."&fields=items%2Fsnippet&key=".$this->api_key;
+		$rsp = json_decode(file_get_contents($url));
+		return $rsp->items;
+	}
+
+	/**
+	 * Get Youtube Channel Items
+	 *
+	 * @since    1.0.0
+	 * @param    integer    $count 	Max videos count
+	 */
+	public function show_channel_videos($count=50){
+		//call the API and decode the response
+		$url = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=".$this->channel_id."&maxResults=".$count."&key=".$this->api_key."&order=date";
+		echo $url;
+		$rsp = json_decode(file_get_contents($url));
+		return $rsp->items;
+	}
+}
 ?>
-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
-DVblyGS0gQuiepzkrALQLRzP6KkF

@@ -1,43 +1,39 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A HTML output reporter for the Reporter plugin.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_Reporters_HtmlReporter implements Swift_Plugins_Reporter
+{
+    /**
+     * Notifies this ReportNotifier that $address failed or succeeded.
+     *
+     * @param Swift_Mime_Message $message
+     * @param string             $address
+     * @param int                $result  from {@see RESULT_PASS, RESULT_FAIL}
+     */
+    public function notify(Swift_Mime_Message $message, $address, $result)
+    {
+        if (self::RESULT_PASS == $result) {
+            echo '<div style="color: #fff; background: #006600; padding: 2px; margin: 2px;">'.PHP_EOL;
+            echo 'PASS '.$address.PHP_EOL;
+            echo '</div>'.PHP_EOL;
+            flush();
+        } else {
+            echo '<div style="color: #fff; background: #880000; padding: 2px; margin: 2px;">'.PHP_EOL;
+            echo 'FAIL '.$address.PHP_EOL;
+            echo '</div>'.PHP_EOL;
+            flush();
+        }
+    }
+}

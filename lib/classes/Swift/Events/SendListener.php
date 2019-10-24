@@ -1,30 +1,31 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Listens for Messages being sent from within the Transport system.
+ *
+ * @author Chris Corbyn
+ */
+interface Swift_Events_SendListener extends Swift_Events_EventListener
+{
+    /**
+     * Invoked immediately before the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt);
+
+    /**
+     * Invoked immediately after the Message is sent.
+     *
+     * @param Swift_Events_SendEvent $evt
+     */
+    public function sendPerformed(Swift_Events_SendEvent $evt);
+}

@@ -1,38 +1,47 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-FOM25qBrPT4uXc13tM2OXYfNaxWc4z+K
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2009 Fabien Potencier <fabien.potencier@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Stores Messages in a queue.
+ *
+ * @author Fabien Potencier
+ */
+class Swift_SpoolTransport extends Swift_Transport_SpoolTransport
+{
+    /**
+     * Create a new SpoolTransport.
+     *
+     * @param Swift_Spool $spool
+     */
+    public function __construct(Swift_Spool $spool)
+    {
+        $arguments = Swift_DependencyContainer::getInstance()
+            ->createDependenciesFor('transport.spool');
+
+        $arguments[] = $spool;
+
+        call_user_func_array(
+            array($this, 'Swift_Transport_SpoolTransport::__construct'),
+            $arguments
+        );
+    }
+
+    /**
+     * Create a new SpoolTransport instance.
+     *
+     * @param Swift_Spool $spool
+     *
+     * @return self
+     */
+    public static function newInstance(Swift_Spool $spool)
+    {
+        return new self($spool);
+    }
+}

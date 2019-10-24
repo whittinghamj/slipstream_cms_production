@@ -1,105 +1,265 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+<?php 
+
+/**
+ * Flickr
+ *
+ * with help of the API this class delivers all kind of Images from flickr
+ *
+ * @package    socialstreams
+ * @subpackage socialstreams/flickr
+ * @author     ThemePunch <info@themepunch.com>
+ */
+
+class TP_flickr {
+
+	/**
+	 * API key
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $api_key    flickr API key
+	 */
+	private $api_key;
+
+	/**
+	 * API params
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      array    $api_param_defaults    Basic params to call with API
+	 */
+	private $api_param_defaults;
+
+	/**
+	 * Basic URL
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $url    Url to fetch user from
+	 */
+	private $flickr_url;
+
+	/**
+	 * Initialize the class and set its properties.
+	 *
+	 * @since    1.0.0
+	 * @param      string    $api_key	flickr API key.
+	 */
+	public function __construct($api_key) {
+		$this->api_key = $api_key;
+		$this->api_param_defaults = array(
+		  'api_key' => $this->api_key,
+		  'format' => 'json',
+		  'nojsoncallback' => 1,
+		);
+	}
+
+	/**
+	 * Calls Flicker API with set of params, returns json
+	 *
+	 * @since    1.0.0
+	 * @param    array    $params 	Parameter build for API request
+	 */
+	private function call_flickr_api($params){
+		//build url
+		$encoded_params = array();
+		foreach ($params as $k => $v){
+		  $encoded_params[] = urlencode($k).'='.urlencode($v);
+		}
+
+		//call the API and decode the response
+		$url = "https://api.flickr.com/services/rest/?".implode('&', $encoded_params);
+		$rsp = json_decode(file_get_contents($url));
+		return $rsp;
+	}
+
+	/**
+	 * Get User ID from its URL
+	 *
+	 * @since    1.0.0
+	 * @param    string    $user_url URL of the Gallery
+	 */
+	public function get_user_from_url($user_url){
+		//gallery params
+		$user_params = $this->api_param_defaults + array(
+			'method'  => 'flickr.urls.lookupUser',
+  			'url' => $user_url,
+		);
+		
+		//set User Url
+		$this->flickr_url = $user_url;
+
+		//get gallery info
+		$user_info = $this->call_flickr_api($user_params);
+		return $user_info->user->id;
+	}
+
+	/**
+	 * Get Group ID from its URL
+	 *
+	 * @since    1.0.0
+	 * @param    string    $group_url URL of the Gallery
+	 */
+	public function get_group_from_url($group_url){
+		//gallery params
+		$group_params = $this->api_param_defaults + array(
+			'method'  => 'flickr.urls.lookupGroup',
+  			'url' => $group_url,
+		);
+		
+		//set User Url
+		$this->flickr_url = $group_url;
+
+		//get gallery info
+		$group_info = $this->call_flickr_api($group_params);
+		return $group_info->group->id;
+	}
+
+	/**
+	 * Get Public Photos
+	 *
+	 * @since    1.0.0
+	 * @param    string    $user_id 	flicker User id (not name)
+	 * @param    int       $item_count 	number of photos to pull
+	 */
+	public function get_public_photos($user_id,$item_count=10){
+		//public photos params
+		$public_photo_params = $this->api_param_defaults + array(
+			'method'  => 'flickr.people.getPublicPhotos',
+  			'user_id' => $user_id,
+  			'extras'  => 'description, license, date_upload, date_taken, owner_name, icon_server, original_format, last_update, geo, tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s, url_q, url_m, url_n, url_z, url_c, url_l, url_o',
+  			'per_page'=> $item_count,
+  			'page' => 1
+		);
+		
+		//get photo list
+		$public_photos_list = $this->call_flickr_api($public_photo_params);
+		return $public_photos_list->photos->photo;
+	}
+
+	/**
+	 * Get Photosets List from User
+	 *
+	 * @since    1.0.0
+	 * @param    string    $user_id 	flicker User id (not name)
+	 * @param    int       $item_count 	number of photos to pull
+	 */
+	public function get_photo_sets($user_id,$item_count=10){
+		//photoset params
+		$photo_set_params = $this->api_param_defaults + array(
+			'method'  => 'flickr.photosets.getList',
+  			'user_id' => $user_id,
+  			'per_page'=> $item_count,
+  			'page'    => 1
+		);
+		
+		//get photoset list
+		$photo_sets_list = $this->call_flickr_api($photo_set_params);
+		return $photo_sets_list->photosets->photoset;
+	}
+
+	/**
+	 * Get Photoset Photos
+	 *
+	 * @since    1.0.0
+	 * @param    string    $photo_set_id 	Photoset ID
+	 * @param    int       $item_count 	number of photos to pull
+	 */
+	public function get_photo_set_photos($photo_set_id,$item_count=10){
+		//photoset photos params
+		$photo_set_params = $this->api_param_defaults + array(
+			'method'  		=> 'flickr.photosets.getPhotos',
+  			'photoset_id' 	=> $photo_set_id,
+  			'per_page'		=> $item_count,
+  			'page'    		=> 1,
+  			'extras'		=> 'license, date_upload, date_taken, owner_name, icon_server, original_format, last_update, geo, tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s, url_q, url_m, url_n, url_z, url_c, url_l, url_o'
+		);
+		
+		//get photo list
+		$photo_set_photos = $this->call_flickr_api($photo_set_params);
+		return $photo_set_photos->photoset->photo;
+	}
+
+	/**
+	 * Get Groop Pool Photos
+	 *
+	 * @since    1.0.0
+	 * @param    string    $group_id 	Photoset ID
+	 * @param    int       $item_count 	number of photos to pull
+	 */
+	public function get_group_photos($group_id,$item_count=10){
+		//photoset photos params
+		$group_pool_params = $this->api_param_defaults + array(
+			'method'  		=> 'flickr.groups.pools.getPhotos',
+  			'group_id' 	=> $group_id,
+  			'per_page'		=> $item_count,
+  			'page'    		=> 1,
+  			'extras'		=> 'license, date_upload, date_taken, owner_name, icon_server, original_format, last_update, geo, tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s, url_q, url_m, url_n, url_z, url_c, url_l, url_o'
+		);
+		
+		//get photo list
+		$group_pool_photos = $this->call_flickr_api($group_pool_params);
+		return $group_pool_photos->photos->photo;
+	}
+
+	/**
+	 * Get Gallery ID from its URL
+	 *
+	 * @since    1.0.0
+	 * @param    string    $gallery_url URL of the Gallery
+	 * @param    int       $item_count 	number of photos to pull
+	 */
+	public function get_gallery_from_url($gallery_url){
+		//gallery params
+		$gallery_params = $this->api_param_defaults + array(
+			'method'  => 'flickr.urls.lookupGallery',
+  			'url' => $gallery_url,
+		);
+		
+		//get gallery info
+		$gallery_info = $this->call_flickr_api($gallery_params);
+		return $gallery_info->gallery->id;
+	}
+
+	/**
+	 * Get Gallery Photos
+	 *
+	 * @since    1.0.0
+	 * @param    string    $gallery_id 	flicker Gallery id (not name)
+	 * @param    int       $item_count 	number of photos to pull
+	 */
+	public function get_gallery_photos($gallery_id,$item_count=10){
+		//gallery photos params
+		$gallery_photo_params = $this->api_param_defaults + array(
+			'method'  => 'flickr.galleries.getPhotos',
+  			'gallery_id' => $gallery_id,
+  			'extras'  => 'description, license, date_upload, date_taken, owner_name, icon_server, original_format, last_update, geo, tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s, url_q, url_m, url_n, url_z, url_c, url_l, url_o',
+  			'per_page'=> $item_count,
+  			'page' => 1
+		);
+		
+		//get photo list
+		$gallery_photos_list = $this->call_flickr_api($gallery_photo_params);
+		return $gallery_photos_list->photos->photo;
+	}
+
+	/**
+	 * Encode the flickr ID for URL (base58)
+	 *
+	 * @since    1.0.0
+	 * @param    string    $num 	flickr photo id
+	 */
+	public static function base_encode($num, $alphabet='123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ') {
+		$base_count = strlen($alphabet);
+		$encoded = '';
+		while ($num >= $base_count) {
+			$div = $num/$base_count;
+			$mod = ($num-($base_count*intval($div)));
+			$encoded = $alphabet[$mod] . $encoded;
+			$num = intval($div);
+		}
+		if ($num) $encoded = $alphabet[$num] . $encoded;
+		return $encoded;
+	}
+}
 ?>
-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
-zYsdka+MGAK=

@@ -1,63 +1,104 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-zDVdV9qJKe6PN6suhj/HDG==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Handles Base 64 Transfer Encoding in Swift Mailer.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mime_ContentEncoder_Base64ContentEncoder extends Swift_Encoder_Base64Encoder implements Swift_Mime_ContentEncoder
+{
+    /**
+     * Encode stream $in to stream $out.
+     *
+     * @param Swift_OutputByteStream $os
+     * @param Swift_InputByteStream  $is
+     * @param int                    $firstLineOffset
+     * @param int                    $maxLineLength,  optional, 0 indicates the default of 76 bytes
+     */
+    public function encodeByteStream(Swift_OutputByteStream $os, Swift_InputByteStream $is, $firstLineOffset = 0, $maxLineLength = 0)
+    {
+        if (0 >= $maxLineLength || 76 < $maxLineLength) {
+            $maxLineLength = 76;
+        }
+
+        $remainder = 0;
+        $base64ReadBufferRemainderBytes = null;
+
+        // To reduce memory usage, the output buffer is streamed to the input buffer like so:
+        //   Output Stream => base64encode => wrap line length => Input Stream
+        // HOWEVER it's important to note that base64_encode() should only be passed whole triplets of data (except for the final chunk of data)
+        // otherwise it will assume the input data has *ended* and it will incorrectly pad/terminate the base64 data mid-stream.
+        // We use $base64ReadBufferRemainderBytes to carry over 1-2 "remainder" bytes from the each chunk from OutputStream and pre-pend those onto the
+        // chunk of bytes read in the next iteration.
+        // When the OutputStream is empty, we must flush any remainder bytes.
+        while (true) {
+            $readBytes = $os->read(8192);
+            $atEOF = ($readBytes === false);
+
+            if ($atEOF) {
+                $streamTheseBytes = $base64ReadBufferRemainderBytes;
+            } else {
+                $streamTheseBytes = $base64ReadBufferRemainderBytes.$readBytes;
+            }
+            $base64ReadBufferRemainderBytes = null;
+            $bytesLength = strlen($streamTheseBytes);
+
+            if ($bytesLength === 0) { // no data left to encode
+                break;
+            }
+
+            // if we're not on the last block of the ouput stream, make sure $streamTheseBytes ends with a complete triplet of data
+            // and carry over remainder 1-2 bytes to the next loop iteration
+            if (!$atEOF) {
+                $excessBytes = $bytesLength % 3;
+                if ($excessBytes !== 0) {
+                    $base64ReadBufferRemainderBytes = substr($streamTheseBytes, -$excessBytes);
+                    $streamTheseBytes = substr($streamTheseBytes, 0, $bytesLength - $excessBytes);
+                }
+            }
+
+            $encoded = base64_encode($streamTheseBytes);
+            $encodedTransformed = '';
+            $thisMaxLineLength = $maxLineLength - $remainder - $firstLineOffset;
+
+            while ($thisMaxLineLength < strlen($encoded)) {
+                $encodedTransformed .= substr($encoded, 0, $thisMaxLineLength)."\r\n";
+                $firstLineOffset = 0;
+                $encoded = substr($encoded, $thisMaxLineLength);
+                $thisMaxLineLength = $maxLineLength;
+                $remainder = 0;
+            }
+
+            if (0 < $remainingLength = strlen($encoded)) {
+                $remainder += $remainingLength;
+                $encodedTransformed .= $encoded;
+                $encoded = null;
+            }
+
+            $is->write($encodedTransformed);
+
+            if ($atEOF) {
+                break;
+            }
+        }
+    }
+
+    /**
+     * Get the name of this encoding scheme.
+     * Returns the string 'base64'.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'base64';
+    }
+}

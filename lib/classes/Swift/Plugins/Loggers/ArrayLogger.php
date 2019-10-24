@@ -1,46 +1,72 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Logs to an Array backend.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Plugins_Loggers_ArrayLogger implements Swift_Plugins_Logger
+{
+    /**
+     * The log contents.
+     *
+     * @var array
+     */
+    private $_log = array();
+
+    /**
+     * Max size of the log.
+     *
+     * @var int
+     */
+    private $_size = 0;
+
+    /**
+     * Create a new ArrayLogger with a maximum of $size entries.
+     *
+     * @var int
+     */
+    public function __construct($size = 50)
+    {
+        $this->_size = $size;
+    }
+
+    /**
+     * Add a log entry.
+     *
+     * @param string $entry
+     */
+    public function add($entry)
+    {
+        $this->_log[] = $entry;
+        while (count($this->_log) > $this->_size) {
+            array_shift($this->_log);
+        }
+    }
+
+    /**
+     * Clear the log contents.
+     */
+    public function clear()
+    {
+        $this->_log = array();
+    }
+
+    /**
+     * Get this log as a string.
+     *
+     * @return string
+     */
+    public function dump()
+    {
+        return implode(PHP_EOL, $this->_log);
+    }
+}

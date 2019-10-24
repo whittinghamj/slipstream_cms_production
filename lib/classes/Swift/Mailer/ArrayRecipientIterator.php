@@ -1,38 +1,55 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * Wraps a standard PHP array in an iterator.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_Mailer_ArrayRecipientIterator implements Swift_Mailer_RecipientIterator
+{
+    /**
+     * The list of recipients.
+     *
+     * @var array
+     */
+    private $_recipients = array();
+
+    /**
+     * Create a new ArrayRecipientIterator from $recipients.
+     *
+     * @param array $recipients
+     */
+    public function __construct(array $recipients)
+    {
+        $this->_recipients = $recipients;
+    }
+
+    /**
+     * Returns true only if there are more recipients to send to.
+     *
+     * @return bool
+     */
+    public function hasNext()
+    {
+        return !empty($this->_recipients);
+    }
+
+    /**
+     * Returns an array where the keys are the addresses of recipients and the
+     * values are the names. e.g. ('foo@bar' => 'Foo') or ('foo@bar' => NULL).
+     *
+     * @return array
+     */
+    public function nextRecipient()
+    {
+        return array_splice($this->_recipients, 0, 1);
+    }
+}

@@ -1,45 +1,59 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-NG==
+<?php
+
+/*
+ * This file is part of SwiftMailer.
+ * (c) 2004-2009 Chris Corbyn
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * A MIME part, in a multipart message.
+ *
+ * @author Chris Corbyn
+ */
+class Swift_MimePart extends Swift_Mime_MimePart
+{
+    /**
+     * Create a new MimePart.
+     *
+     * Details may be optionally passed into the constructor.
+     *
+     * @param string $body
+     * @param string $contentType
+     * @param string $charset
+     */
+    public function __construct($body = null, $contentType = null, $charset = null)
+    {
+        call_user_func_array(
+            array($this, 'Swift_Mime_MimePart::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('mime.part')
+            );
+
+        if (!isset($charset)) {
+            $charset = Swift_DependencyContainer::getInstance()
+                ->lookup('properties.charset');
+        }
+        $this->setBody($body);
+        $this->setCharset($charset);
+        if ($contentType) {
+            $this->setContentType($contentType);
+        }
+    }
+
+    /**
+     * Create a new MimePart.
+     *
+     * @param string $body
+     * @param string $contentType
+     * @param string $charset
+     *
+     * @return self
+     */
+    public static function newInstance($body = null, $contentType = null, $charset = null)
+    {
+        return new self($body, $contentType, $charset);
+    }
+}
