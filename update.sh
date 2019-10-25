@@ -28,7 +28,7 @@ chmod 777 /var/www/html/portal/xc_uploads >> $LOG
 # copy files over
 # cp /var/www/html/portal/get.php /var/www/html/get.php
 # cp /var/www/html/portal/portal.php /var/www/html/portal.php
-cp -R /var/www/html/portal/c /var/www/html/ >> $LOG
+# cp -R /var/www/html/portal/c /var/www/html/ >> $LOG
 
 
 # mysql status check
@@ -55,7 +55,6 @@ mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`
 mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`vod_categories\` (\`id\`, \`user_id\`, \`name\`)VALUES(1, 1, 'General'); "; >> $LOG
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.mag_devices MODIFY aspect VARCHAR(100) NULL; "; >> $LOG
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_watch\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`user_id\` int(11) DEFAULT NULL, \`server_id\` int(11) DEFAULT NULL, \`folder\` text, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; "; >> $LOG
-
 
 # stalker cleanup
 old_stalker=$(cat /usr/local/nginx/conf/nginx.conf | grep '/home/xapicode/iptv_xapicode/wwwdir/_c;' | wc -l)
@@ -88,6 +87,17 @@ if [ "$get_php_check" -eq "0" ]; then
 	sed -i 's/EDIT_RTMP_PORT/'$RTMPPORT'/' /usr/local/nginx/conf/nginx.conf >> $LOG
 
 	/usr/local/nginx/sbin/nginx >> $LOG
+	echo "NGINX Config file updated"
+fi
+
+
+# check mysql bind-address
+check_mysql_bind=$(cat /etc/mysql/mariadb.conf.d/50-server.cnf | grep '#bind-address' | wc -l)
+if [ "$check_mysql_bind" -eq "0" ]; then
+	mv /etc/mysql/mariadb.conf.d/50-server.cnf /etc/mysql/mariadb.conf.d/50-server.cnf.bak &> $LOG
+	wget -O /etc/mysql/mariadb.conf.d/50-server.cnf http://slipstreamiptv.com/downloads/50-server.txt &> $LOG
+	service mysql restart &> $LOG
+	service mysqld restart &> $LOG
 	echo "NGINX Config file updated"
 fi
 
