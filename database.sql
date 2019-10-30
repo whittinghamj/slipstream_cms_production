@@ -197,6 +197,7 @@ CREATE TABLE `customers` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `reseller_id` int(11) NOT NULL DEFAULT 0,
+  `package_id` int(11) NOT NULL DEFAULT 1,
   `updated` bigint(20) NOT NULL,
   `status` varchar(20) NOT NULL DEFAULT 'enabled',
   `first_name` varchar(50) DEFAULT '',
@@ -492,7 +493,7 @@ CREATE TABLE `packages` (
   KEY `is_trial` (`is_trial`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-
+INSERT IGNORE INTO `packages` (`id`, `user_id`, `name`) VALUES (1, 1, 'Default Package'); 
 
 # Dump of table remote_playlists
 # ------------------------------------------------------------
@@ -588,6 +589,7 @@ CREATE TABLE `stream_categories` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `stream_categories` (`id`, `user_id`, `name`) VALUES (1, 1, 'Default Category');
 
 DROP TABLE IF EXISTS `vod_categories`;
 
@@ -598,9 +600,7 @@ CREATE TABLE `vod_categories` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `vod_categories` (`id`, `user_id`, `name`)
-VALUES
-  (1, 1, 'General');
+INSERT INTO `vod_categories` (`id`, `user_id`, `name`) VALUES (1, 1, 'General');
 
 
 # Dump of table stream_progress

@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.2"
+echo "SlipStream CMS Panel Server - Update Script v2.2.2"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -48,13 +48,29 @@ fi
 
 
 # mysql updates
+# add 'type' to bouquets
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.bouquets ADD COLUMN IF NOT EXISTS \`type\` VARCHAR(20); "; >> $LOG
+# set default field value for field 'type'
 mysql -uslipstream -padmin1372 -e "UPDATE slipstream_cms.bouquets SET \`type\` = 'live' WHERE \`type\` = '' OR \`type\` IS NULL; "; >> $LOG
+# delete servers where user_id != 0
 mysql -uslipstream -padmin1372 -e "DELETE FROM slipstream_cms.headend_servers WHERE user_id = '0'; "; >> $LOG
+# create vod_categories
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_categories\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`user_id\` int(11) DEFAULT NULL, \`name\` varchar(50) NOT NULL DEFAULT '', PRIMARY KEY (\`id\`)) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;"; >> $LOG
+# create default vod_category
 mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`vod_categories\` (\`id\`, \`user_id\`, \`name\`)VALUES(1, 1, 'General'); "; >> $LOG
+# change mag_devices.aspect field type
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.mag_devices MODIFY aspect VARCHAR(100) NULL; "; >> $LOG
+# create vod_watch table
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_watch\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`user_id\` int(11) DEFAULT NULL, \`server_id\` int(11) DEFAULT NULL, \`folder\` text, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; "; >> $LOG
+# add default stream_category
+mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`stream_categories\` (\`id\`, \`user_id\`, \`name\`) VALUES (1, 1, 'Default Category'); "; >> $LOG
+# change all streams with no category to new default
+mysql -uslipstream -padmin1372 -e "UPDATE slipstream_cms.streams SET \`category_id\` = '1' WHERE \`category_id\` = '0'; "; >> $LOG
+# create default package
+mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`packages\` (\`id\`, \`user_id\`, \`name\`) VALUES (1, 1, 'Default Package'); "; >> $LOG
+# add package field to customer table
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.customers ADD COLUMN IF NOT EXISTS \`package_id\` VARCHAR(20) DEFAULT 1; "; >> $LOG
+
 
 # stalker cleanup
 old_stalker=$(cat /usr/local/nginx/conf/nginx.conf | grep '/home/xapicode/iptv_xapicode/wwwdir/_c;' | wc -l)
@@ -101,6 +117,62 @@ if [ "$check_mysql_bind" -eq "0" ]; then
 	echo "NGINX Config file updated"
 fi
 
+
+# crontab check
+cron_1=$(crontab -l | grep '@reboot /usr/local/nginx/sbin/nginx' | wc -l)
+if [ "$cron_1" -eq "0" ]; then
+	echo "Updating cron jobs"
+	echo "# Slipstream CMS Main Server - HTTP Server" >> /tmp/slipstream_cms.cron
+	echo "@reboot /usr/local/nginx/sbin/nginx" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Main Server - Customer Checks" >> /tmp/slipstream_cms.cron
+	echo "*/10 * * * * /usr/bin/flock -w 0 /tmp/console_customer_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php customer_checks > /tmp/cron.customer_checks.log" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Main Server - Server Checks" >> /tmp/slipstream_cms.cron
+	echo "*/10 * * * * /usr/bin/flock -w 0 /tmp/console_node_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php node_checks > /tmp/cron.customer_checks.log" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - Stalker Portal" >> /tmp/slipstream_cms.cron
+	echo "@reboot sh /var/www/html/portal/scripts/stalker_start.sh" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - GIT Update" >> /tmp/slipstream_cms.cron
+	echo "* * * * * sh /root/slipstream/node/update.sh" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - Crons" >> /tmp/slipstream_cms.cron
+	echo "* * * * * php -q /root/slipstream/node/console/console.php cron >> /root/slipstream/node/logs/cron.log" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - Roku Channel Manager" >> /tmp/slipstream_cms.cron
+	echo "0 */4 * * * php -q /root/slipstream/node/console/console.php roku_channel_manager >> /root/slipstream/node/logs/cron.log" >> /tmp/slipstream_cms.cron
+
+	crontab /tmp/slipstream_cms.cron
+	rm /tmp/slipstream_cms.cron
+fi
+cron_2=$(crontab -l | grep '@reboot sh /var/www/html/portal/scripts/stalker_start.sh' | wc -l)
+if [ "$cron_2" -eq "0" ]; then
+	echo "Updating cron jobs"
+	echo "# Slipstream CMS Main Server - HTTP Server" >> /tmp/slipstream_cms.cron
+	echo "@reboot /usr/local/nginx/sbin/nginx" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Main Server - Customer Checks" >> /tmp/slipstream_cms.cron
+	echo "*/10 * * * * /usr/bin/flock -w 0 /tmp/console_customer_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php customer_checks > /tmp/cron.customer_checks.log" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Main Server - Server Checks" >> /tmp/slipstream_cms.cron
+	echo "*/10 * * * * /usr/bin/flock -w 0 /tmp/console_node_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php node_checks > /tmp/cron.customer_checks.log" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - Stalker Portal" >> /tmp/slipstream_cms.cron
+	echo "@reboot sh /var/www/html/portal/scripts/stalker_start.sh " >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - GIT Update" >> /tmp/slipstream_cms.cron
+	echo "* * * * * sh /root/slipstream/node/update.sh" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - Crons" >> /tmp/slipstream_cms.cron
+	echo "* * * * * php -q /root/slipstream/node/console/console.php cron >> /root/slipstream/node/logs/cron.log" >> /tmp/slipstream_cms.cron
+	echo " " >> /tmp/slipstream_cms.cron
+	echo "# Slipstream CMS Streaming Server - Roku Channel Manager" >> /tmp/slipstream_cms.cron
+	echo "0 */4 * * * php -q /root/slipstream/node/console/console.php roku_channel_manager >> /root/slipstream/node/logs/cron.log" >> /tmp/slipstream_cms.cron
+
+	crontab /tmp/slipstream_cms.cron
+	rm /tmp/slipstream_cms.cron
+fi
 
 echo "Update Complete "
 echo " "
