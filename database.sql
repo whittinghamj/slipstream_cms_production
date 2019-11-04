@@ -688,6 +688,7 @@ CREATE TABLE `streams` (
   `transcoding_profile_id` int(11) DEFAULT 0,
   `old_xc_id` int(11) DEFAULT NULL,
   `order` int(11) DEFAULT 0,
+  `ondemand` int(11) DEFAULT 'no',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -757,6 +758,7 @@ CREATE TABLE `tv_series` (
   `cover_photo` varchar(250) NOT NULL DEFAULT 'img/no_image_available.jpg',
   `status` varchar(20) NOT NULL DEFAULT 'offline',
   `enable` varchar(3) NOT NULL DEFAULT 'yes',
+  `watch_folder` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -846,6 +848,8 @@ CREATE TABLE `vod` (
   `genre` varchar(100) DEFAULT NULL,
   `runtime` varchar(20) DEFAULT NULL,
   `language` varchar(200) DEFAULT NULL,
+  `category_id` varchar(20) NOT NULL DEFAULT '1',
+  `watch_folder` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -891,6 +895,15 @@ CREATE TABLE `vod_watch` (
   `user_id` int(11) DEFAULT NULL,
   `server_id` int(11) DEFAULT NULL,
   `folder` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS `customers_ips`;
+
+CREATE TABLE `customers_ips` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` int(11) DEFAULT NULL,
+  `ip_address` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

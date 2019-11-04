@@ -1,5 +1,8 @@
-# Slipstream CMS Main Server - HTTP Server
+# Slipstream CMS Main Server - Start HTTP Server
 @reboot /usr/local/nginx/sbin/nginx
+
+# Slipstream CMS Main Server - Start Stalker Portal
+@reboot sh /var/www/html/portal/scripts/stalker_start.sh
 
 # Slipstream CMS Main Server - GIT Update
 * * * * * sh /var/www/html/portal/update.sh
@@ -10,11 +13,13 @@
 # Slipstream CMS Main Server - Server Checks
 */10 * * * * /usr/bin/flock -w 0 /tmp/console_node_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php node_checks > /tmp/cron.customer_checks.log
 
-# Slipstream CMS Streaming Server - Stalker Portal
-@reboot sh /var/www/html/portal/scripts/stalker_start.sh
+# Slipstream CMS Main Server - 24/7 Channel Manager
+0 * * * * /usr/bin/flock -w 0 /tmp/console_channel_watch.lock /usr/bin/php -q /var/www/html/portal/console/console.php channel_watch > /tmp/cron.channel_watch.log
 
 # Slipstream CMS Main Server - On-Demand Checks
 */10 * * * * /usr/bin/flock -w 0 /tmp/stream_ondemand_check.lock /usr/bin/php -q /var/www/html/portal/console/console.php stream_ondemand_check > /tmp/cron.stream_ondemand_check.log
+
+
 
 # Slipstream CMS Streaming Server - GIT Update
 * * * * * sh /root/slipstream/node/update.sh

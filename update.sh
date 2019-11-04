@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.3.1"
+echo "SlipStream CMS Panel Server - Update Script v2.3.3"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -72,6 +72,24 @@ mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`packa
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.customers ADD COLUMN IF NOT EXISTS \`package_id\` VARCHAR(20) DEFAULT 1; "; >> $LOG
 # add ondemand field for streams
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`ondemand\` VARCHAR(20) DEFAULT 'no'; "; >> $LOG
+# add watch folder field for channels
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.channels ADD COLUMN IF NOT EXISTS \`watch_folder\` VARCHAR(500) DEFAULT NULL; "; >> $LOG
+# create customers_ips
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`customers_ips\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`customer_id\` int(11) DEFAULT NULL, \`ip_address\` varchar(15) DEFAULT NULL, PRIMARY KEY (\`id\`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; "; >> $LOG
+# add category_id to vod table
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.vod ADD COLUMN IF NOT EXISTS \`category_id\` VARCHAR(10) DEFAULT 1; "; >> $LOG
+# add watch _older field for tv_series
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series ADD COLUMN IF NOT EXISTS \`watch_folder\` VARCHAR(500) DEFAULT NULL; "; >> $LOG
+# add year field for tv_series_files
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files ADD COLUMN IF NOT EXISTS \`year\` VARCHAR(20) DEFAULT NULL; "; >> $LOG
+# add rating field for tv_series_files
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files ADD COLUMN IF NOT EXISTS \`rating\` VARCHAR(20) DEFAULT NULL; "; >> $LOG
+# add release_date field for tv_series_files
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files ADD COLUMN IF NOT EXISTS \`release_date\` VARCHAR(30) DEFAULT NULL; "; >> $LOG
+# add plot field for tv_series_files
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files ADD COLUMN IF NOT EXISTS \`plot\` TEXT DEFAULT NULL; "; >> $LOG
+# add posted field for tv_series_files
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files ADD COLUMN IF NOT EXISTS \`cover_photo\` VARCHAR(250) DEFAULT NULL; "; >> $LOG
 
 
 # stalker cleanup
@@ -127,14 +145,20 @@ if [ "$cron_1" -eq "0" ]; then
 	crontab /var/www/html/portal/crontab.txt
 fi
 
-cron_1=$(crontab -l | grep 'stream_ondemand_check' | wc -l)
-if [ "$cron_1" -eq "0" ]; then
+cron_2=$(crontab -l | grep 'stream_ondemand_check' | wc -l)
+if [ "$cron_2" -eq "0" ]; then
 	echo "Updating cron jobs"
 	crontab /var/www/html/portal/crontab.txt
 fi
 
-cron_2=$(crontab -l | grep '@reboot sh /var/www/html/portal/scripts/stalker_start.sh' | wc -l)
-if [ "$cron_2" -eq "0" ]; then
+cron_3=$(crontab -l | grep '@reboot sh /var/www/html/portal/scripts/stalker_start.sh' | wc -l)
+if [ "$cron_3" -eq "0" ]; then
+	echo "Updating cron jobs"
+	crontab /var/www/html/portal/crontab.txt
+fi
+
+cron_4=$(crontab -l | grep 'channel_watch' | wc -l)
+if [ "$cron_4" -eq "0" ]; then
 	echo "Updating cron jobs"
 	crontab /var/www/html/portal/crontab.txt
 fi
