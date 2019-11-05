@@ -688,7 +688,7 @@ CREATE TABLE `streams` (
   `transcoding_profile_id` int(11) DEFAULT 0,
   `old_xc_id` int(11) DEFAULT NULL,
   `order` int(11) DEFAULT 0,
-  `ondemand` int(11) DEFAULT 'no',
+  `ondemand` varchar(11) DEFAULT 'no',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
