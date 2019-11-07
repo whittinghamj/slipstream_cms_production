@@ -7,24 +7,16 @@
 # Slipstream CMS Main Server - GIT Update
 * * * * * sh /var/www/html/portal/update.sh
 
-# Slipstream CMS Main Server - Customer Checks
-*/10 * * * * /usr/bin/flock -w 0 /tmp/console_customer_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php customer_checks > /tmp/cron.customer_checks.log
+# Slipstream CMS Main Server - Cron Manager
+* * * * * /usr/bin/php -q /var/www/html/portal/console/console.php cron > /tmp/cron.cron.log
 
-# Slipstream CMS Main Server - Server Checks
-*/10 * * * * /usr/bin/flock -w 0 /tmp/console_node_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php node_checks > /tmp/cron.customer_checks.log
-
-# Slipstream CMS Main Server - 24/7 Channel Manager
-0 * * * * /usr/bin/flock -w 0 /tmp/console_channel_watch.lock /usr/bin/php -q /var/www/html/portal/console/console.php channel_watch > /tmp/cron.channel_watch.log
-
-# Slipstream CMS Main Server - On-Demand Checks
-*/10 * * * * /usr/bin/flock -w 0 /tmp/stream_ondemand_check.lock /usr/bin/php -q /var/www/html/portal/console/console.php stream_ondemand_check > /tmp/cron.stream_ondemand_check.log
-
-
+# Slipstream CMS Main Server - old flock example
+# */10 * * * * /usr/bin/flock -w 0 /tmp/console_node_checks.lock /usr/bin/php -q /var/www/html/portal/console/console.php node_checks > /tmp/cron.customer_checks.log
 
 # Slipstream CMS Streaming Server - GIT Update
 * * * * * sh /root/slipstream/node/update.sh
 
-# Slipstream CMS Streaming Server - Crons
+# Slipstream CMS Streaming Server - Cron Manager
 * * * * * php -q /root/slipstream/node/console/console.php cron >> /root/slipstream/node/logs/cron.log
 
 # Slipstream CMS Streaming Server - Roku Channel Manager
