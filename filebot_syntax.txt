@@ -10,3 +10,5 @@ filebot --q 'Bones' -rename /media/plex/tv/Firefly --db TheTVDB -non-strict --fo
 /media/plex/tv/Mr.Bean
 
 filebot --q 'VICE' -rename /media/plex/tv/VICE --db TheTVDB -non-strict -r --format "{n.space('.')}.{'s'+s.pad(2)}e{e.pad(2)}.{t.space('.')}"
+
+filebot -rename -r /media/plex/staging/movies/fgig.ir/movie/2019 --db TheMovieDB -non-strict --format "{n.upperInitial().space('.')}.{y}.{source}.{vc}{'-'+group}"

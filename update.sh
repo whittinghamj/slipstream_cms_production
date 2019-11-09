@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.3.7"
+echo "SlipStream CMS Panel Server - Update Script v2.3.8"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -111,7 +111,7 @@ mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.channels ADD COLUM
 
 
 # check if streamlink is installed, if not, install it.
-command -v streamlink >/dev/null 2>&1 || { sudo add-apt-repository ppa:nilarimogard/webupd8 -y; sudo apt-get update -y -qq; sudo apt-get install -y -qq streamlink; } >> $LOG
+command -v streamlink >/dev/null 2>&1 || { sudo apt-get install software-properties-common -y -qq; sudo add-apt-repository ppa:nilarimogard/webupd8 -y; sudo apt-get update -y -qq; sudo apt-get install -y -qq streamlink; } >> $LOG
 
 
 # stalker cleanup
