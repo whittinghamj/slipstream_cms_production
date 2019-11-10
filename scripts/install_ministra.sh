@@ -28,6 +28,9 @@ sudo apt-get install -y docker-ce >> $LOG
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose >> $LOG
 sudo chmod +x /usr/local/bin/docker-compose >> $LOG
 
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
 wget -q -O /opt/slipstream/ss_ministra_53.tar.gz http://slipstreamiptv.com/downloads/ss_ministra_53.tar.gz >> $LOG
 cd /opt/slipstream >> $LOG
 gunzip -c ss_ministra_53.tar.gz | docker load >> $LOG

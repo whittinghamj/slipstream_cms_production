@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.3.8"
+echo "SlipStream CMS Panel Server - Update Script v2.3.8.2"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -108,6 +108,8 @@ mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series ADD COLU
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files ADD COLUMN IF NOT EXISTS \`cover_photo\` VARCHAR(500) DEFAULT NULL; "; >> $LOG
 # add transcoding_profile_id field for channels
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.channels ADD COLUMN IF NOT EXISTS \`transcoding_profile_id\` VARCHAR(5) DEFAULT '0'; "; >> $LOG
+# add deint field for streams
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`deint\` VARCHAR(20) DEFAULT 'no'; "; >> $LOG
 
 
 # check if streamlink is installed, if not, install it.
