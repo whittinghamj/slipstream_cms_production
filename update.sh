@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.3.8.2"
+echo "SlipStream CMS Panel Server - Update Script v2.3.9"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -20,8 +20,7 @@ mkdir -p /opt/slipstream/backups >> $LOG
 
 
 # confirm folder permissions
-chmod 777 /var/www/html/portal/m3u_uploads >> $LOG
-mkdir -p /var/www/html/portal/xc_uploads >> $LOG
+chmod 777 /var/www/html/portal/m3u_uploads/ >> $LOG
 chmod 777 /var/www/html/portal/xc_uploads >> $LOG
 
 
