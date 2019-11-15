@@ -113,6 +113,8 @@ mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.channels ADD COLUM
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`deint\` VARCHAR(20) DEFAULT 'no'; "; >> $LOG
 # create epg_setting
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`epg_setting\` ( \`id\` int(11) NOT NULL AUTO_INCREMENT, \`uri\` varchar(255) NOT NULL DEFAULT '', \`etag\` varchar(255) NOT NULL DEFAULT '', \`updated\` datetime DEFAULT NULL, \`id_prefix\` varchar(64) NOT NULL DEFAULT '', \`status\` tinyint(4) NOT NULL DEFAULT '1', \`lang_code\` varchar(20) DEFAULT NULL, PRIMARY KEY (\`id\`), UNIQUE KEY \`uri\` (\`uri\`) ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8; "; >> $LOG
+# add name field for epg_setting
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.epg_setting ADD COLUMN IF NOT EXISTS \`name\` VARCHAR(50) DEFAULT ''; "; >> $LOG
 # create epg_xml_ids
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`epg_xml_ids\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`epg_source_id\` int(11) DEFAULT '0', \`xml_id\` varchar(30) DEFAULT '', \`xml_name\` varchar(50) DEFAULT '', \`xml_language\` varchar(20) DEFAULT 'en', PRIMARY KEY (\`id\`), UNIQUE KEY \`xml_id\` (\`xml_id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4; "; >> $LOG
 # add epg_xml_id field for streams
