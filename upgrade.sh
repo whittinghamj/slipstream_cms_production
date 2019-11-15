@@ -27,5 +27,5 @@ sh update.sh >> $LOG
 # crontab update
 crontab /var/www/html/portal/crontab.txt >> $LOG
 
-echo "Upgrade Complete "
+echo "Upgrade Complete"
 echo " "

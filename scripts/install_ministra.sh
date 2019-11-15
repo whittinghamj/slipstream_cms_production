@@ -38,4 +38,5 @@ docker run -d --net=host -d ministra_5.3 bash -c "/etc/init.d/apache2 restart; t
 
 ufw allow 88/tcp >> $LOG
 
-cd /root >> $LOG
+echo "Install Complete"
+echo " "

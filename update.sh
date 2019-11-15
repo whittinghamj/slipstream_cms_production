@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.3.9"
+echo "SlipStream CMS Panel Server - Update Script v2.4.1"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -55,6 +55,8 @@ mysql -uslipstream -padmin1372 -e "UPDATE slipstream_cms.bouquets SET \`type\` =
 mysql -uslipstream -padmin1372 -e "DELETE FROM slipstream_cms.headend_servers WHERE user_id = '0'; "; >> $LOG
 # create vod_categories
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_categories\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`user_id\` int(11) DEFAULT NULL, \`name\` varchar(50) NOT NULL DEFAULT '', PRIMARY KEY (\`id\`)) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;"; >> $LOG
+# create bouquets_content
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`bouquets_content\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`bouquet_id\` int(11) DEFAULT '0', \`content_id\` int(11) DEFAULT '0', \`order\` int(11) DEFAULT '999999', PRIMARY KEY (\`id\`), UNIQUE KEY \`bouquet_content\` (\`bouquet_id\`,\`content_id\`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;"; >> $LOG
 # create default vod_category
 mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`vod_categories\` (\`id\`, \`user_id\`, \`name\`)VALUES(1, 1, 'General'); "; >> $LOG
 # change mag_devices.aspect field type
@@ -109,6 +111,12 @@ mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.tv_series_files AD
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.channels ADD COLUMN IF NOT EXISTS \`transcoding_profile_id\` VARCHAR(5) DEFAULT '0'; "; >> $LOG
 # add deint field for streams
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`deint\` VARCHAR(20) DEFAULT 'no'; "; >> $LOG
+# create epg_setting
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`epg_setting\` ( \`id\` int(11) NOT NULL AUTO_INCREMENT, \`uri\` varchar(255) NOT NULL DEFAULT '', \`etag\` varchar(255) NOT NULL DEFAULT '', \`updated\` datetime DEFAULT NULL, \`id_prefix\` varchar(64) NOT NULL DEFAULT '', \`status\` tinyint(4) NOT NULL DEFAULT '1', \`lang_code\` varchar(20) DEFAULT NULL, PRIMARY KEY (\`id\`), UNIQUE KEY \`uri\` (\`uri\`) ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8; "; >> $LOG
+# create epg_xml_ids
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`epg_xml_ids\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`epg_source_id\` int(11) DEFAULT '0', \`xml_id\` varchar(30) DEFAULT '', \`xml_name\` varchar(50) DEFAULT '', \`xml_language\` varchar(20) DEFAULT 'en', PRIMARY KEY (\`id\`), UNIQUE KEY \`xml_id\` (\`xml_id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4; "; >> $LOG
+# add epg_xml_id field for streams
+mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`epg_xml_id\` VARCHAR(50) DEFAULT ''; "; >> $LOG
 
 
 # check if streamlink is installed, if not, install it.
@@ -169,5 +177,5 @@ if [ "$cron_1" -eq "0" ]; then
 fi
 
 
-echo "Update Complete "
+echo "Update Complete"
 echo " "

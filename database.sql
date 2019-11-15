@@ -907,6 +907,42 @@ CREATE TABLE `customers_ips` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+DROP TABLE IF EXISTS `bouquets_content`;
+
+CREATE TABLE `bouquets_content` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `bouquet_id` int(11) DEFAULT '0',
+  `content_id` int(11) DEFAULT '0',
+  `order` int(11) DEFAULT '999999',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `bouquet_content` (`bouquet_id`,`content_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS `epg_setting`;
+
+CREATE TABLE `epg_setting` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uri` varchar(255) NOT NULL DEFAULT '',
+  `etag` varchar(255) NOT NULL DEFAULT '',
+  `updated` datetime DEFAULT NULL,
+  `id_prefix` varchar(64) NOT NULL DEFAULT '',
+  `status` tinyint(4) NOT NULL DEFAULT '1',
+  `lang_code` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uri` (`uri`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `epg_xml_ids`;
+
+CREATE TABLE `epg_xml_ids` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `epg_source_id` int(11) DEFAULT '0',
+  `xml_id` varchar(30) DEFAULT '',
+  `xml_name` varchar(50) DEFAULT '',
+  `xml_language` varchar(20) DEFAULT 'en',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `xml_id` (`xml_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
