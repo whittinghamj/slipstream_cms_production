@@ -122,7 +122,7 @@ mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`
 # add epg_xml_id field for streams
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`epg_xml_id\` VARCHAR(50) DEFAULT ''; "; >> $LOG
 # add master_token to global_settings
-mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`global_settings\` (\`id\`, \`config_name\`, \`config_value\`) VALUES (24, 'master_token', '1372'); "; >> $LOG
+mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`global_settings\` (\`id\`, \`config_name\`, \`config_value\`) VALUES (100, 'master_token', '1372'); "; >> $LOG
 
 
 # check if streamlink is installed, if not, install it.
