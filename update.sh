@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.4.2"
+echo "SlipStream CMS Panel Server - Update Script v2.4.4"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -121,6 +121,8 @@ mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.epg_setting ADD CO
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`epg_xml_ids\` ( \`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`epg_source_id\` int(11) DEFAULT '0', \`xml_id\` varchar(30) DEFAULT '', \`xml_name\` varchar(50) DEFAULT '', \`xml_language\` varchar(20) DEFAULT 'en', PRIMARY KEY (\`id\`), UNIQUE KEY \`xml_id\` (\`xml_id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4; "; >> $LOG
 # add epg_xml_id field for streams
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`epg_xml_id\` VARCHAR(50) DEFAULT ''; "; >> $LOG
+# add master_token to global_settings
+mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`global_settings\` (\`id\`, \`config_name\`, \`config_value\`) VALUES (24, 'master_token', '1372'); "; >> $LOG
 
 
 # check if streamlink is installed, if not, install it.

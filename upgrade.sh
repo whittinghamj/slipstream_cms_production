@@ -11,21 +11,26 @@ echo "SlipStream CMS Panel Server - Upgrade Script"
 # go into staging area
 cd /var/www/html/portal >> $LOG
 
+# force cms update
+sh update.sh >> $LOG
 
 # force nginx update
 sh scripts/force_nginx_update.sh >> $LOG
 
-
 # force cms update
 sh update.sh >> $LOG
-
-
-# force cms update
-sh update.sh >> $LOG
-
 
 # crontab update
 crontab /var/www/html/portal/crontab.txt >> $LOG
+
+# go into staging area
+cd /root/slipstream/node >> $LOG
+
+# force cms update
+sh update.sh >> $LOG
+
+# force cms update
+sh update.sh >> $LOG
 
 echo "Upgrade Complete"
 echo " "
