@@ -2,7 +2,7 @@
 
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.4.4"
+echo "SlipStream CMS Panel Server - Update Script v2.4.5"
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
@@ -123,7 +123,10 @@ mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`epg_xml_id\` VARCHAR(50) DEFAULT ''; "; >> $LOG
 # add master_token to global_settings
 mysql -uslipstream -padmin1372 -e "INSERT IGNORE INTO \`slipstream_cms\`.\`global_settings\` (\`id\`, \`config_name\`, \`config_value\`) VALUES (100, 'master_token', '1372'); "; >> $LOG
-
+# create vod_connection_log
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`vod_connection_logs\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`timestamp\` bigint(11) DEFAULT NULL, \`server_id\` varchar(100) DEFAULT NULL, \`vod_id\` int(11) DEFAULT NULL, \`stream_name\` varchar(50) DEFAULT NULL, \`client_ip\` varchar(15) DEFAULT NULL, \`customer_id\` int(11) DEFAULT NULL, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1; "; >> $LOG
+# create series_connection_log
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`series_connection_logs\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`timestamp\` bigint(11) DEFAULT NULL, \`server_id\` varchar(100) DEFAULT NULL, \`series_id\` int(11) DEFAULT NULL, \`stream_name\` varchar(50) DEFAULT NULL, \`client_ip\` varchar(15) DEFAULT NULL, \`customer_id\` int(11) DEFAULT NULL, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1; "; >> $LOG
 
 # check if streamlink is installed, if not, install it.
 command -v streamlink >/dev/null 2>&1 || { sudo apt-get install software-properties-common -y -qq; sudo add-apt-repository ppa:nilarimogard/webupd8 -y; sudo apt-get update -y -qq; sudo apt-get install -y -qq streamlink; } >> $LOG

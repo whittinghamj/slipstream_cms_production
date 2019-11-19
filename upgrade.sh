@@ -32,5 +32,8 @@ sh update.sh >> $LOG
 # force cms update
 sh update.sh >> $LOG
 
-echo "Upgrade Complete"
+echo "Upgrade Complete, Rebooting Server"
 echo " "
+
+sudo /sbin/reboot 
+sudo /sbin/shutdown -r now

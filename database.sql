@@ -943,6 +943,33 @@ CREATE TABLE `epg_xml_ids` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `xml_id` (`xml_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS `vod_connection_logs`;
+
+CREATE TABLE `vod_connection_logs` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `timestamp` bigint(11) DEFAULT NULL,
+  `server_id` varchar(100) DEFAULT NULL,
+  `vod_id` int(11) DEFAULT NULL,
+  `stream_name` varchar(50) DEFAULT NULL,
+  `client_ip` varchar(15) DEFAULT NULL,
+  `customer_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `series_connection_logs`;
+
+CREATE TABLE `series_connection_logs` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `timestamp` bigint(11) DEFAULT NULL,
+  `server_id` varchar(100) DEFAULT NULL,
+  `series_id` int(11) DEFAULT NULL,
+  `stream_name` varchar(50) DEFAULT NULL,
+  `client_ip` varchar(15) DEFAULT NULL,
+  `customer_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
