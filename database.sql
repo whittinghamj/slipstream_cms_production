@@ -689,6 +689,7 @@ CREATE TABLE `streams` (
   `old_xc_id` int(11) DEFAULT NULL,
   `order` int(11) DEFAULT 0,
   `ondemand` varchar(11) DEFAULT 'no',
+  `direct` varchar(3) DEFAULT 'no',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
