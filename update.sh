@@ -1,8 +1,11 @@
 #!/bin/bash
 
+
 LOG=/tmp/slipstream.log
 
-echo "SlipStream CMS Panel Server - Update Script v2.4.5.1"
+
+echo "SlipStream CMS Panel Server - Update Script v2.5"
+
 
 # set git repo
 # git remote set-url origin https://github.com/whittinghamj/slistream_cms_production.git
