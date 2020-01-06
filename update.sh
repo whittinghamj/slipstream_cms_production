@@ -132,6 +132,8 @@ mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`
 mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`series_connection_logs\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`timestamp\` bigint(11) DEFAULT NULL, \`server_id\` varchar(100) DEFAULT NULL, \`series_id\` int(11) DEFAULT NULL, \`stream_name\` varchar(50) DEFAULT NULL, \`client_ip\` varchar(15) DEFAULT NULL, \`customer_id\` int(11) DEFAULT NULL, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1; "; >> $LOG
 # add direct field for streams
 mysql -uslipstream -padmin1372 -e "ALTER TABLE slipstream_cms.streams ADD COLUMN IF NOT EXISTS \`direct\` VARCHAR(3) DEFAULT 'no'; "; >> $LOG
+# addons
+mysql -uslipstream -padmin1372 -e "CREATE TABLE IF NOT EXISTS \`slipstream_cms\`.\`addon_licenses\` (\`id\` int(11) unsigned NOT NULL AUTO_INCREMENT, \`product\` varchar(250) DEFAULT NULL, \`license\` varchar(250) DEFAULT NULL, PRIMARY KEY (\`id\`) ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1; "; >> $LOG
 
 # check if streamlink is installed, if not, install it.
 command -v streamlink >/dev/null 2>&1 || { sudo apt-get install software-properties-common -y -qq; sudo add-apt-repository ppa:nilarimogard/webupd8 -y; sudo apt-get update -y -qq; sudo apt-get install -y -qq streamlink; } >> $LOG
