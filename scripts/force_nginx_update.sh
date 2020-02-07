@@ -24,6 +24,7 @@ wget -O /etc/php/7.2/fpm/php.ini http://slipstreamiptv.com/downloads/php-fpm.txt
 
 sudo service php7.2-fpm restart >> $LOG
 /usr/local/nginx/sbin/nginx >> $LOG
+sudo service php7.2-fpm restart >> $LOG
 
 echo "Done "
 echo " "
