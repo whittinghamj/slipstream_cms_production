@@ -1,7 +1,0 @@
-rewrite ^/streams/(.*)/(.*)$ /streams/index.php?server_id=$1&stream_id=$2 break;
-rewrite ^/cdn_streams/(.*)/(.*)$ /cdn_streams/index.php?server_id=$1&link_id=$2 break;
-rewrite ^/customers/(.*)/(.*)/(.*)$ /customers/index.php?username=$1&password=$2&type=$3 break;
-rewrite ^/customer_streams/(.*)/(.*)/(.*)/(.*)$ /customer_streams/index.php?username=$1&password=$2&server_id=$3&stream_id=$4 break;
-rewrite ^/customer_series/(.*)/(.*)/(.*)/(.*)$ /customer_series/index.php?username=$1&password=$2&server_id=$3&series_id=$4 break;
-rewrite ^/customer_vod/(.*)/(.*)/(.*)/(.*)$ /customer_vod/index.php?username=$1&password=$2&server_id=$3&vod_id=$4 break;
-rewrite ^/customer_channels/(.*)/(.*)/(.*)/(.*)$ /customer_channels/index.php?username=$1&password=$2&server_id=$3&channel_id=$4 break;

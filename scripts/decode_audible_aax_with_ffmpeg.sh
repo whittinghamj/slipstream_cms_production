@@ -1,1 +1,0 @@
-ffmpeg -activation_bytes 1CEB00DA -i test.aax -vn -c:a copy output.mp4
