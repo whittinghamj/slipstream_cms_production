@@ -4,7 +4,7 @@
 LOG=/tmp/slipstream.log
 
 
-echo "SlipStream CMS Panel Server - Update Script v2.6"
+echo "SlipStream CMS Panel Server - Update Script v2.6.1"
 
 
 # set git repo
